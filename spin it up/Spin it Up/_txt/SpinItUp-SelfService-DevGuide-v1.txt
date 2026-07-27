@@ -1,0 +1,758 @@
+
+SPIN IT UP LAUNDRY
+SELF-SERVICE LAUNDRYDEVELOPER GUIDE
+Section-by-Section Implementation Specification
+
+URL: spinituplaundry.net/services/self-service/
+Prepared by: TradeWorks AI  |  Version 1.0  |  May 2026
+Classification: Client Confidential
+
+Table of Contents
+1  How to Use This Guide
+2  Page Identity & Architecture
+3  Keyword Strategy & Content Map
+4  Complete <head> Section
+5  Section 1: Site Header & Navigation
+6  Section 2: Hero Banner
+7  Section 3: AEO Introduction
+8  Section 4: Our Machine Fleet
+9  Section 5: Machine Pricing Table
+10  Section 6: Amenities & What to Expect
+11  Section 7: EBT & Payment Methods
+12  Section 8: Tips for Your Visit
+13  Section 9: Related Services
+14  Section 10: FAQ Section
+15  Section 11: Final CTA Block
+16  Section 12: Footer
+17  Section 13: Sticky Mobile CTA Bar
+18  Reference: Image Asset Inventory
+19  Reference: GA4 Event Tracking
+20  Reference: Implementation Checklist
+
+1. How to Use This Guide
+This developer guide provides the complete implementation specification for the Self-Service Laundry page (/services/self-service/). This is a service child page within the Services silo, targeting walk-in customers searching for a laundromat with large machines, transparent pricing, and amenities in the Avondale/Irving Park/Logan Square area.
+This guide references the Website Strategy & Architecture Document (v1.0) for brand system and design tokens, and the Services Hub Developer Guide (v1.0) for shared component specifications (header, footer, sticky CTA bar).
+Label Legend
+Label
+Meaning
+NEW
+New content or element not present on the current website
+DEV ACTION
+Specific technical implementation instruction for the developer
+NOTE
+Context, rationale, or clarification for editorial or strategic decisions
+Content Authoring Rules
+All content written fresh. No content from the current GoDaddy site or competitor sites.
+AEO opening paragraph within the first 100–150 words directly answers “self-service laundromat in Avondale Chicago.”
+All phone numbers render as clickable tel: links.
+Exact copy provided for every text element. Word counts noted.
+
+2. Page Identity & Architecture
+URL Path
+/services/self-service/
+Page Type
+Child — Services Silo
+Canonical URL
+https://spinituplaundry.net/services/self-service/
+Breadcrumb
+Home > Services > Self-Service Laundry
+Parent Page
+/services/ (Services Hub)
+Sibling Pages
+/services/wash-and-fold/, /services/pickup-delivery/, /services/commercial/, /services/ironing-pressing/
+Primary Keyword
+self service laundry avondale chicago (30–70/mo)
+Secondary Keywords
+coin laundry avondale, laundromat avondale chicago, large capacity laundromat chicago, EBT laundromat chicago
+Search Intent
+Local / Navigational
+Target Word Count
+800–1,000 words
+Primary Conversion Goal
+Walk-in visit (driven by hours, pricing, amenity info)
+Secondary Conversion Goals
+Phone call (tap-to-call), Cents app order for pickup alternative
+Robots Directive
+index, follow
+XML Sitemap
+Include — priority 0.8
+Content Update Frequency
+Evergreen; update pricing when rates change
+hreflang
+<link rel="alternate" hreflang="es" href="https://spinituplaundry.net/es/servicios/autoservicio/">
+Internal Linking Requirements
+Direction
+Link
+Anchor Text
+Up → Hub
+/services/
+All Services, Back to Services
+Sibling
+/services/wash-and-fold/
+Wash & Fold (related service callout)
+Sibling
+/services/pickup-delivery/
+Pickup & Delivery (related service callout)
+Sibling
+/services/commercial/
+Commercial Services (related service callout)
+Cross-silo
+/pricing/
+View Full Pricing, See Pricing Details
+Cross-silo
+/faq/
+See All FAQs
+Cross-silo
+/areas/avondale/
+Avondale area page
+Cross-silo
+/contact/
+Contact Us
+Up → Root
+/ 
+Home (breadcrumb)
+
+3. Keyword Strategy & Content Map
+Keyword
+Est. Volume
+Difficulty
+Intent
+Placement
+self service laundry avondale chicago
+30–70
+Low
+Local
+H1, title, AEO paragraph, schema
+coin laundry avondale
+30–70
+Low
+Local
+Title tag, body content
+laundromat avondale chicago
+70–140
+Low
+Local
+AEO paragraph, body content
+large capacity laundromat chicago
+50–110
+Low–Med
+Local/Info
+Machine Fleet section
+EBT laundromat chicago
+50–110
+Low
+Local/Info
+Payment section, FAQ
+laundromat with big machines near me
+170–320
+Med (local)
+Local
+Machine Fleet section, hero
+coin laundry near me
+6,600
+High (local)
+Local
+Served via GBP + this page
+laundromat open late chicago
+30–70
+Low
+Local/Info
+Hours in AEO, hero, FAQ
+free drying laundromat chicago
+110–210
+Low
+Transactional
+Tips section, FAQ
+comforter washing laundromat
+170–320
+Low–Med
+Info/Trans
+Machine Fleet section, FAQ
+3.2 Semantic/LSI Terms
+Use naturally throughout: coin-operated laundry, self-serve washers, large-load washing machines, commercial-capacity dryers, 130 lb washer, king-size comforter washing, laundry card system, EBT accepted laundromat, free WiFi laundromat, free coffee, free parking, attendant on duty, clean laundromat, modern machines, Kimball Ave, Avondale neighborhood, Irving Park, Logan Square, 60618.
+
+4. Complete <head> Section
+4.1 Meta Tags
+Tag
+Content
+<title>
+Self-Service Laundry in Avondale | Spin It Up — 41 Washers, EBT Accepted (60 characters)
+<meta name="description">
+Self-service laundromat in Avondale, Chicago with 41 washers & 52 dryers including 130 lb machines. EBT accepted. Free WiFi, coffee & parking. Open 6 AM–11 PM daily. (154 characters)
+<meta name="robots">
+index, follow
+<meta name="viewport">
+width=device-width, initial-scale=1
+<meta charset>
+UTF-8
+<html lang>
+en
+<link rel="canonical">
+https://spinituplaundry.net/services/self-service/
+<link rel="alternate" hreflang="es">
+https://spinituplaundry.net/es/servicios/autoservicio/
+<link rel="alternate" hreflang="en">
+https://spinituplaundry.net/services/self-service/
+4.2 Open Graph & Twitter
+Tag
+Content
+og:title
+Self-Service Laundry | Spin It Up Laundry — Avondale, Chicago
+og:description
+41 washers, 52 dryers, 130 lb machines. EBT accepted. Free WiFi, coffee & parking. Open 6 AM–11 PM daily in Avondale.
+og:type
+website
+og:url
+https://spinituplaundry.net/services/self-service/
+og:image
+https://spinituplaundry.net/images/og-self-service.jpg (1200x630, <200KB)
+og:locale
+en_US
+og:site_name
+Spin It Up Laundry
+twitter:card
+summary_large_image
+twitter:title
+Self-Service Laundry | Spin It Up Laundry — Avondale
+twitter:description
+41 washers, 52 dryers, 130 lb machines. EBT accepted. Free WiFi & parking. Open daily.
+twitter:image
+https://spinituplaundry.net/images/og-self-service.jpg
+4.3 JSON-LD Structured Data
+Two schema blocks: Service schema for Self-Service Laundry and BreadcrumbList.
+
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Self-Service Laundry",
+  "description": "Coin-operated self-service laundry with 41 washers and 52 dryers including 130 lb commercial-capacity machines. EBT, cash, credit, debit, and laundry cards accepted.",
+  "url": "https://spinituplaundry.net/services/self-service/",
+  "provider": {
+    "@type": "Laundromat",
+    "name": "Spin It Up Laundry",
+    "telephone": "+1-773-654-1275",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "3710 N Kimball Ave",
+      "addressLocality": "Chicago",
+      "addressRegion": "IL",
+      "postalCode": "60618"
+    }
+  },
+  "areaServed": [
+    { "@type": "Neighborhood", "name": "Avondale" },
+    { "@type": "Neighborhood", "name": "Irving Park" },
+    { "@type": "Neighborhood", "name": "Logan Square" },
+    { "@type": "Neighborhood", "name": "Hermosa" },
+    { "@type": "Neighborhood", "name": "Albany Park" }
+  ],
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "USD",
+    "price": "3.25",
+    "description": "Starting price for standard washer load"
+  },
+  "serviceType": "Self-Service Laundry"
+}
+
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://spinituplaundry.net/" },
+    { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://spinituplaundry.net/services/" },
+    { "@type": "ListItem", "position": 3, "name": "Self-Service Laundry", "item": "https://spinituplaundry.net/services/self-service/" }
+  ]
+}
+
+DEV ACTION:  Validate Service + BreadcrumbList + FAQPage (Section 14) schemas via Google Rich Results Test after deployment.
+
+5. Section 1: Site Header & Navigation
+Global header component — identical to Homepage Developer Guide (Section 5). Solid white background from initial load. “Services” nav item shows as active parent. In the mobile hamburger menu, “Services” is expanded and “Self-Service Laundry” is highlighted as the current page.
+
+6. Section 2: Hero Banner
+Section Overview
+Compact hero banner with breadcrumb. Same structural pattern as the Services Hub hero but with service-specific messaging. Background: Spin Blue gradient (#1E40AF → #1E3A8A).
+Layout Specifications
+Property
+Desktop
+Tablet
+Mobile
+Height
+Auto, padding 64px 0
+padding 48px 0
+padding 40px 16px
+Background
+linear-gradient(135deg, #1E40AF 0%, #1E3A8A 100%)
+Same
+Same
+Container
+max-width 1280px, centered, padding 0 48px
+padding 0 24px
+padding 0 16px
+Content Alignment
+Center
+Center
+Center
+Content Specifications
+Breadcrumb: Home > Services > Self-Service Laundry — “Home” links to /. “Services” links to /services/. “Self-Service Laundry” is current page (no link, weight 600). Font: 14px/500, color rgba(255,255,255,0.7). Margin-bottom 20px.
+
+H1 Headline: "Self-Service Laundry in Avondale, Chicago" — 6 words, 42 characters. Font: 40px/800 (desktop), 32px (tablet), 28px (mobile). Color: white. Line-height: 1.15. Margin-bottom 12px. Primary keyword present.
+
+Subheadline: "41 washers. 52 dryers. The largest machines in the neighborhood. Open 6 AM to 11 PM, seven days a week." — 18 words. Font: 18px/400 (desktop), 16px (mobile). Color: rgba(255,255,255,0.85). Max-width: 640px, centered.
+
+Hero CTA: "View Machine Pricing" button — ghost/outline white style. Scrolls to the pricing table section (#pricing) on this page. Padding 12px 24px, border-radius 8px, font 16px/600. Plus: phone icon + "(773) 654-1275" as a secondary inline tel: link in 15px/500 rgba(255,255,255,0.8).
+HTML Code
+<section class="page-hero" aria-label="Self-Service Laundry">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <ol>
+        <li><a href="/">Home</a></li>
+        <li><a href="/services/">Services</a></li>
+        <li aria-current="page">Self-Service Laundry</li>
+      </ol>
+    </nav>
+    <h1 class="page-hero__title">Self-Service Laundry in Avondale, Chicago</h1>
+    <p class="page-hero__subtitle">41 washers. 52 dryers. The largest machines in the neighborhood. Open 6 AM to 11 PM, seven days a week.</p>
+    <div class="page-hero__ctas">
+      <a href="#pricing" class="btn btn--outline-white">View Machine Pricing</a>
+      <a href="tel:+17736541275" class="page-hero__phone">
+        <svg class="icon" aria-hidden="true"><!-- Phone icon --></svg>
+        (773) 654-1275
+      </a>
+    </div>
+  </div>
+</section>
+
+7. Section 3: AEO Introduction
+Section Overview
+Direct-answer paragraph optimized for AI extraction and featured snippets. Answers “self-service laundromat in Avondale Chicago” within the first 100 words. Background: White (#FFFFFF).
+Content Specifications
+NEW:  AEO opening paragraph — new content.
+
+"Spin It Up Laundry offers self-service laundry at 3710 N Kimball Ave in Avondale, Chicago with the largest machines in the neighborhood. Our facility has 41 brand-new washers and 52 dryers, including two 130 lb commercial-capacity machines designed for king-size comforters, sleeping bags, and oversized loads that standard laundromat machines cannot handle. We accept laundry cards, credit cards, debit cards, cash, and EBT. Free WiFi, free coffee, free parking, and gaming machines make your wait comfortable. An attendant is on duty during all operating hours. We are open seven days a week, 6:00 AM to 11:00 PM, with last wash at 9:30 PM." — 107 words.
+
+Font: 18px/400 Body Text (#334155). Line-height: 1.65. Max-width: 800px, centered. Section padding: 48px 0 (desktop), 32px 16px (mobile).
+NOTE:  This paragraph establishes the page’s AEO anchor. It names the business, address, service type, machine count and capacity, payment methods, amenities, staffing, and hours — all within the first 110 words. This is the text AI systems will extract for “self-service laundromat Avondale” queries.
+
+8. Section 4: Our Machine Fleet
+Section Overview
+Detailed breakdown of available machines by size and capacity. This section targets “large capacity laundromat” and “comforter washing” queries and is the primary differentiator content on this page. Background: Ice Blue (#F0F9FF).
+Layout Specifications
+Property
+Desktop
+Tablet
+Mobile
+Section Padding
+80px 0
+64px 0
+48px 16px
+Layout
+H2 + intro paragraph, then machine cards in 2-column grid
+2 columns
+1 column stacked
+Container
+max-width 1280px, centered
+Same
+Same
+Card Gap
+24px
+20px
+16px
+Content Specifications
+H2: "Washers and Dryers for Every Load Size" — 7 words. Font: 36px/700, Dark Slate. Margin-bottom 16px.
+Intro: "Whether you’re washing a week’s worth of clothes or a king-size comforter, we have a machine that fits. Every washer and dryer in our facility is brand new, regularly maintained, and built for performance." — 34 words. Font: 18px/400 Body Text. Margin-bottom 40px.
+
+Machine category cards:
+Category
+Capacity
+Count
+Best For
+Starting Price
+Standard Washers
+20–25 lb
+~20 machines
+Everyday laundry — a week’s worth of clothes for one person
+$3.25/load
+Large Washers
+35–50 lb
+~12 machines
+Family-size loads, bedding sets, multiple loads combined
+$5.50/load
+Extra-Large Washers
+60–80 lb
+~7 machines
+Comforters, sleeping bags, heavy blankets, small commercial loads
+$8.00/load
+Commercial Washers
+Up to 130 lb
+2 machines
+King-size comforters, bulk commercial loads, items too large for any other laundromat in the area
+$12.00/load
+Standard Dryers
+30 lb
+~35 machines
+All standard drying needs
+$0.25/8 min
+Large Dryers
+50–75 lb
+~17 machines
+Comforters, blankets, bulk loads
+$0.25/8 min
+NOTE:  Pricing shown here is approximate and based on audit data. Client must confirm exact pricing before publication. The /pricing/ page will have the authoritative pricing tables. This page provides directional pricing for SEO value and user convenience.
+Each card: bg white, border 1px #E2E8F0, border-radius 12px, padding 24px. Category name as H3: 20px/700 Dark Slate. Capacity: 16px/600 Spin Blue badge pill. Count: 15px/500 Caption Gray. “Best For” text: 16px/400 Body Text. Price: 22px/800 Spin Blue. Cards hover with shadow lift (same spec as service cards).
+Below cards: "Free Drying Every Tuesday, Wednesday, and Thursday" — callout banner, bg Fresh Cyan (#06B6D4), white text, 18px/700, padding 16px 24px, border-radius 8px, centered. Gift icon left of text.
+
+9. Section 5: Machine Pricing Table
+Section Overview
+Structured pricing table for featured snippet extraction. This section carries the id="pricing" anchor for the hero CTA scroll link. Background: White (#FFFFFF).
+Content Specifications
+H2: "Self-Service Pricing" — 2 words. Font: 36px/700, Dark Slate. Margin-bottom 16px.
+Subtext: "Transparent pricing with no hidden fees. Load your laundry card at the front counter or pay with credit, debit, cash, or EBT." — 21 words. 16px/400 Body Text. Margin-bottom 32px.
+
+Machine Type
+Capacity
+Price
+Cycle Time
+Notes
+Standard Washer
+20–25 lb
+$3.25
+~30 min
+Everyday loads
+Large Washer
+35–50 lb
+$5.50
+~35 min
+Family loads, bedding
+Extra-Large Washer
+60–80 lb
+$8.00
+~40 min
+Comforters, sleeping bags
+Commercial Washer
+Up to 130 lb
+$12.00
+~45 min
+Largest in Avondale
+Standard Dryer
+30 lb
+$0.25/8 min
+Variable
+Add time as needed
+Large Dryer
+50–75 lb
+$0.25/8 min
+Variable
+For oversized items
+DEV ACTION:  Wrap this table in a <div id="pricing"> for the hero anchor link. On mobile, the table should reflow as stacked cards (each row becomes a card) rather than a horizontally scrolling table. Use CSS Grid or Flexbox for the card layout at <768px.
+Below table: "View complete pricing for all services →" — links to /pricing/. Font: 16px/600 Spin Blue. Plus: "Free drying Tue–Wed–Thu" reminder in 14px/500 Fresh Cyan with Gift icon.
+
+10. Section 6: Amenities & What to Expect
+Section Overview
+Visual amenity grid plus a short narrative about the customer experience. Targets “laundromat with WiFi”, “laundromat with parking” type queries and builds trust. Background: Ice Blue (#F0F9FF).
+Content Specifications
+H2: "What to Expect When You Visit" — 6 words. Font: 36px/700, Dark Slate. Margin-bottom 40px.
+
+Two-column layout on desktop: amenity icon grid left (55%), experience narrative right (45%). Stacked on mobile.
+Amenity Grid (6 items)
+Icon (Lucide)
+Amenity
+Detail
+Wifi
+Free WiFi
+High-speed WiFi throughout the facility. Connect, stream, or work while your laundry runs.
+Coffee
+Free Coffee
+Complimentary coffee available at the front counter during all operating hours.
+Car
+Free Parking
+Dedicated parking directly in front of the laundromat, plus free street parking on Kimball Ave.
+Gamepad2
+Gaming Machines
+Arcade-style gaming machines to keep you entertained during your visit.
+UserCheck
+Attendant on Duty
+A friendly attendant is on-site during all operating hours to help with machines, make change, and answer questions.
+Clock
+Open 6 AM–11 PM
+Seven days a week, including holidays. Last wash starts at 9:30 PM.
+Each amenity item: flex row, icon 32px in Fresh Cyan, right content. Amenity name: 16px/700 Dark Slate. Detail: 15px/400 Body Text. Items spaced 20px apart.
+Experience Narrative
+"Walking into Spin It Up Laundry feels different from your average coin laundry. The facility is bright, clean, and air-conditioned. Every machine is brand new — no old, shaking washers or dryers that eat quarters without heating up. Our attendant greets you, helps you find the right machine size for your load, and is available throughout your visit if anything comes up. Grab a free coffee, connect to WiFi, and let the machines do the work. Most standard loads are washed and dried in under 90 minutes." — 85 words.
+Font: 17px/400 Body Text, line-height 1.65, max-width 480px.
+
+11. Section 7: EBT & Payment Methods
+Section Overview
+Dedicated section highlighting EBT acceptance — a significant local differentiator. This targets “EBT laundromat” queries directly. Background: White (#FFFFFF).
+Content Specifications
+H2: "We Accept EBT — One of the Few Laundromats in Avondale That Does" — 12 words. Font: 32px/700, Dark Slate. Margin-bottom 16px.
+
+"Spin It Up Laundry is one of the only laundromats in the Avondale area that accepts EBT (Electronic Benefit Transfer) for self-service washing and drying. If you receive SNAP benefits, you can use your EBT card at our facility just like cash. No special arrangements needed — swipe your card at the front counter to load a laundry card and use any machine in the building." — 61 words.
+Font: 17px/400 Body Text, line-height 1.65. Max-width: 800px.
+
+Payment Methods Grid: 
+Method
+Icon
+Notes
+EBT
+CreditCard (green badge)
+Self-service washing and drying
+Credit Card
+CreditCard
+Visa, Mastercard, Amex, Discover
+Debit Card
+CreditCard
+All major networks
+Cash
+Banknote
+Bills and coins accepted; change available at counter
+Laundry Card
+IdCard
+Reloadable card loaded at front counter; use at any machine
+Layout: inline badges/pills in a horizontal row (desktop), wrapped grid (mobile). Each method: icon 24px + label, bg #F8FAFC, border 1px #E2E8F0, padding 8px 16px, border-radius 8px. EBT badge gets a green highlight: bg #ECFDF5, border-color #16A34A.
+
+12. Section 8: Tips for Your Visit
+Section Overview
+Practical guidance section that adds unique content value and targets long-tail informational queries. Builds trust by demonstrating expertise and care. Background: Ice Blue (#F0F9FF).
+Content Specifications
+H2: "Tips for a Better Laundry Day" — 6 words. Font: 32px/700, Dark Slate. Margin-bottom 32px.
+
+Tip #
+Title
+Content
+1
+Pick the Right Machine Size
+Don’t overload — clothes need room to tumble. A good rule: fill the drum about three-quarters full. If your load fills a standard washer to the brim, step up to a large. For comforters and sleeping bags, go straight to extra-large or commercial.
+2
+Come on Free Drying Days
+Every Tuesday, Wednesday, and Thursday, all dryers are free when you wash with us. That’s a real savings of $2–$5 per visit. Plan your laundry week around it.
+3
+Last Wash Is at 9:30 PM
+We’re open until 11 PM, but the last wash cycle starts at 9:30 to make sure all loads finish before closing. Plan to arrive by 9:00 PM for evening visits.
+4
+Bring Your Own Detergent (or Buy Here)
+We sell individual-use detergent pods and fabric softener at the front counter if you forget. But bringing your own is cheaper.
+5
+Use a Laundry Card for Convenience
+Skip counting quarters. Load a reloadable laundry card at the counter with cash, credit, debit, or EBT and use it at any machine. It’s faster and tracks your balance.
+Layout: numbered list format or vertical card stack. Each tip: number circle (32px, bg Fresh Cyan, white text), title in 18px/700 Dark Slate, content in 16px/400 Body Text. Tips spaced 24px apart. Max-width 800px, centered.
+
+13. Section 9: Related Services
+Section Overview
+Cross-linking section connecting this child page to sibling service pages. Supports the hub-and-spoke silo structure and captures visitors whose intent may shift from self-service to a done-for-you option. Background: White (#FFFFFF).
+Content Specifications
+H2: "Don’t Want to Wait? Let Us Do It for You." — 9 words. Font: 32px/700, Dark Slate. Centered. Margin-bottom 16px.
+Subtext: "Self-service is great — but if you’d rather drop off and go, or have it picked up from your door, we’ve got you covered." — 24 words. 16px/400 Body Text. Centered. Margin-bottom 40px.
+
+Three compact cards in a row (desktop), stacked (mobile):
+Card
+Title
+One-Liner
+CTA
+Link
+1
+Wash & Fold
+Drop off dirty, pick up clean. Starting at $1.50/lb.
+Learn More →
+/services/wash-and-fold/
+2
+Pickup & Delivery
+Schedule from your phone via the Cents app. We come to you.
+Schedule Pickup →
+/services/pickup-delivery/
+3
+Commercial Services
+Bulk laundry for Airbnb hosts, salons, gyms & restaurants.
+Commercial Info →
+/services/commercial/
+Cards: smaller than the Services Hub cards. Bg white, border 1px #E2E8F0, border-radius 12px, padding 20px. Title: 18px/700 Dark Slate. One-liner: 15px/400 Body Text. CTA: 15px/600 Spin Blue. Hover: shadow lift.
+
+14. Section 10: FAQ Section
+Section Overview
+Self-service-specific FAQ targeting long-tail queries about machine use, pricing, and logistics. FAQPage schema required. Background: Ice Blue (#F0F9FF).
+Content Specifications
+H2: "Self-Service Laundry FAQ" — 4 words. Centered. Font: 32px/700, Dark Slate. Margin-bottom 40px.
+
+#
+Question
+Answer
+1
+Can I wash a king-size comforter at your laundromat?
+Yes. Our extra-large and commercial machines handle king-size comforters, sleeping bags, heavy blankets, and oversized items. The 130 lb commercial washers are the largest in the Avondale area and can fit items that standard laundromat machines cannot accommodate.
+2
+What time is last wash?
+Last wash starts at 9:30 PM. We are open until 11:00 PM to allow time for all wash and dry cycles to complete. We recommend arriving by 9:00 PM for evening visits to ensure you have time for a full wash-and-dry cycle.
+3
+Do I need quarters?
+No. You can use a reloadable laundry card, credit card, debit card, cash, or EBT. Load your laundry card at the front counter with any payment method and use it at any machine. The card stores your balance and works across all washers and dryers.
+4
+Is there an attendant available to help?
+Yes. A staff attendant is on duty during all operating hours (6:00 AM to 11:00 PM). They can help you select the right machine size, make change, troubleshoot any machine issues, and answer questions about our services.
+5
+What is the free drying special?
+Every Tuesday, Wednesday, and Thursday, all dryers are free when you use our washers. There is no minimum wash requirement. Wash any load on a free-drying day and dry for free in any dryer, any size, all day from 6:00 AM to 11:00 PM.
+6
+Can I stay and wait for my laundry?
+Absolutely. Our facility offers free WiFi, free coffee, gaming machines, and a clean, well-lit environment. Most standard loads complete in 60–90 minutes including wash and dry time. Many customers bring a laptop or phone and use the WiFi while they wait.
+DEV ACTION:  Implement FAQPage JSON-LD schema as an additional script block. Each Q&A pair maps to a Question entity with acceptedAnswer. This is separate from the Service and BreadcrumbList schemas. Validate with Google Rich Results Test.
+Same accordion design specification as the Homepage and Services Hub FAQ sections. First item default-expanded on desktop, all collapsed on mobile. Max-width 800px, centered.
+Below FAQ: "View All FAQs" link centered, links to /faq/.
+
+15. Section 11: Final CTA Block
+Content Specifications
+H2: "Come Wash With Us" — 4 words. White text. Centered. Font: 36px/700.
+Subtitle: "3710 N Kimball Ave, Avondale — open 6 AM to 11 PM, seven days a week. Free drying Tue–Wed–Thu." — 18 words. Centered. 18px/400 rgba(255,255,255,0.85).
+
+Three CTA buttons centered, inline desktop, stacked mobile:
+Button
+Text
+Link
+Style
+1
+Get Directions
+Google Maps URL
+CTA Orange (primary)
+2
+Call (773) 654-1275
+tel:+17736541275
+White outline
+3
+Schedule Pickup Instead
+Cents app URL
+Ghost/outline white
+Background: Spin Blue gradient. Section padding: 80px 0 desktop, 48px 16px mobile. “Schedule Pickup Instead” acknowledges that some self-service page visitors may convert to the pickup service — don’t lose them.
+
+16. Section 12: Footer
+Global footer component — identical to Homepage Developer Guide (Section 16). No page-specific modifications.
+
+17. Section 13: Sticky Mobile CTA Bar
+Global component — identical to Homepage Developer Guide (Section 17). Buttons: “Call Now” (orange, tel: link) and “Get Directions” (blue, Google Maps link). Note: on this page, the secondary button links to Google Maps directions rather than the Cents app, since the primary conversion goal is a walk-in visit.
+DEV ACTION:  Override the sticky bar’s second button on this page only: change from “Schedule Pickup” to “Get Directions” linking to Google Maps directions to 3710 N Kimball Ave, Chicago IL 60618. Implement via a data attribute on the <body> tag or a page-specific JS config.
+
+18. Reference: Image Asset Inventory
+Image ID
+Section
+Dimensions
+Format
+Max Size
+Alt Text
+Loading
+og-self-service
+Social share
+1200x630
+JPEG
+<200KB
+Self-service laundry at Spin It Up with rows of modern washers
+N/A (meta)
+machines-standard
+Machine Fleet
+600x400
+WebP+JPEG
+<100KB
+Standard-capacity washers at Spin It Up Laundry
+lazy
+machines-commercial
+Machine Fleet
+600x400
+WebP+JPEG
+<100KB
+130 lb commercial-capacity washer at Spin It Up Laundry
+lazy
+amenities-interior
+Amenities
+800x500
+WebP+JPEG
+<120KB
+Clean, well-lit interior of Spin It Up Laundry with free WiFi and coffee station
+lazy
+logo-light
+Header/Footer
+SVG
+SVG
+<10KB
+Spin It Up Laundry logo
+inline
+NOTE:  Machine category photos should show the actual machines at Spin It Up Laundry. If professional photography is not yet available, use high-quality photos from the Yelp listing or Instagram as interim. Schedule professional photography for Phase 2.
+
+19. Reference: GA4 Event Tracking
+Self-Service page-specific GA4 events. Implement via GTM.
+Event Name
+Trigger
+Parameters
+Section
+phone_click
+Click on any tel: link
+phone_number, page_section
+Global
+directions_click
+Click “Get Directions”
+page_section
+CTA Block, Sticky Bar
+schedule_pickup
+Click “Schedule Pickup Instead”
+page_section
+CTA Block
+cta_click
+Click any CTA button
+button_text, destination_url, page_section
+All
+pricing_scroll
+Scroll to #pricing section (via hero CTA)
+source: hero_cta
+Machine Pricing
+faq_expand
+Expand FAQ accordion item
+question_text
+FAQ
+related_service_click
+Click a related service card
+service_name, destination_url
+Related Services
+pricing_link_click
+Click “View complete pricing”
+destination_url
+Pricing Table
+
+20. Reference: Implementation Checklist
+Technical Validation
+HTML validates (W3C validator clean)
+All JSON-LD validates: Service + BreadcrumbList + FAQPage
+HTTPS enforced, no mixed content
+Mobile PageSpeed score >90
+Desktop PageSpeed score >95
+All internal links return 200
+All tel: links functional on mobile
+Hero CTA anchor (#pricing) scrolls to pricing table correctly
+OG tags render correctly
+Hreflang points to /es/servicios/autoservicio/
+Content & SEO
+All copy matches this guide exactly
+Title tag within 60 characters
+Meta description within 155 characters
+Single H1 containing primary keyword
+Heading hierarchy: H1 > H2 (sections) > H3 (machine categories)
+AEO paragraph present within first 110 words
+Breadcrumb: Home > Services > Self-Service Laundry
+Canonical URL: https://spinituplaundry.net/services/self-service/
+Pricing table responsive (card layout on mobile)
+Related services link to correct sibling pages
+XML sitemap includes this page at priority 0.8
+Accessibility
+Skip-to-content link present
+Breadcrumb: <nav aria-label="Breadcrumb"> with <ol>
+Pricing table accessible: proper <th> headers with scope
+Color contrast WCAG 2.1 AA on all combinations
+FAQ accordion keyboard-operable
+ARIA landmarks: banner, navigation, main, contentinfo
+Sticky bar buttons 48px minimum tap target
+Analytics
+GA4 + GTM events verified in debug mode
+phone_click confirmed on all tel: links
+directions_click confirmed on Get Directions CTA
+related_service_click firing with correct service_name
+
+
+End of Document
+TradeWorks AI — Spin It Up Laundry Self-Service Developer Guide v1.0
+Prepared by TradeWorks AI — May 2026

@@ -1,0 +1,435 @@
+﻿PAGE DEVELOPER GUIDE
+About Us
+Easy Clean Service
+
+
+easycleaningservice.com/about/
+Easy Clean Service • (813) 534-9216
+
+
+Complete developer guide for the About Us page including Kessia’s founder story,
+company values, team standards, trust signals, E-E-A-T content, meta tags,
+schema markup, and technical SEO requirements.
+Version 1.0 • March 2026
+1. Page Strategy & Purpose
+1.1 Why This Page Matters
+The About Us page serves a fundamentally different purpose than service or location pages. While those pages drive transactional conversions, the About Us page builds the trust that makes those conversions possible. In Google’s E-E-A-T framework (Experience, Expertise, Authoritativeness, Trustworthiness), this is the single most important page for establishing who is behind the business – and for a service where strangers enter your home, handle your belongings, and work in the spaces where your family lives, trust is everything.
+This page also serves AI answer engines. When Perplexity, ChatGPT search, or Google’s AI Overviews are asked “who owns Easy Clean Service in Tampa” or “is Easy Clean Service a good cleaning company,” this page provides the source material for their answers. The structured, factual content here – the founder’s name, years in business, service philosophy, insurance status, and community involvement – feeds directly into the knowledge graphs these systems build about local businesses.
+1.2 URL & Breadcrumb
+URL: https://easycleaningservice.com/about/
+Breadcrumb: Home > About Us
+1.3 Keyword Targets
+Keyword
+	Type
+	Est. Vol.
+	Diff.
+	Intent
+	Easy Clean Service Tampa
+	Branded
+	30
+	Low
+	Navigational
+	about Easy Clean Service
+	Branded
+	10
+	Low
+	Informational
+	locally owned cleaning service Tampa
+	Secondary
+	90
+	Low
+	Transactional
+	best cleaning service Tampa FL
+	Secondary
+	320
+	Low-Med
+	Transactional
+	eco-friendly cleaning service Tampa
+	Secondary
+	110
+	Low
+	Transactional
+	pet-safe cleaning service Tampa
+	Long-tail
+	50
+	Low
+	Transactional
+	insured house cleaning Tampa
+	Long-tail
+	40
+	Low
+	Transactional
+	bilingual cleaning service Tampa
+	Niche
+	20
+	Low
+	Transactional
+	
+
+1.4 Content Targets
+Word count: 1,000–1,500 words of original body copy
+Tone: Warm, personal, confident. This page should sound like Kessia talking directly to a potential client over coffee – not a corporate mission statement. Authentic and specific over polished and generic.
+E-E-A-T signals: Founder name, years in business, personal photo, specific experience claims, insurance and vetting details, community ties, bilingual capability, and direct contact information.
+________________
+
+
+2. HTML Head – Meta Tags & Structured Data
+2.1 Title Tag
+
+
+<title>About Easy Clean Service | Locally Owned House
+  Cleaning in Tampa, FL</title>
+
+
+Character count: 62 characters. Leads with the brand name for navigational queries, includes “Locally Owned” as a trust differentiator, and closes with the service + geo-modifier.
+2.2 Meta Description
+
+
+<meta name="description" content="Meet Kessia Marquez, founder
+  of Easy Clean Service. Locally owned since 2014, serving
+  Tampa homes with eco-friendly products, insured teams,
+  and a 100% satisfaction guarantee. Se habla español.
+  (813) 534-9216" />
+
+
+2.3 Canonical & Open Graph
+
+
+<link rel="canonical" href="https://easycleaningservice
+  .com/about/" />
+<meta property="og:title" content="About Easy Clean Service |
+  Tampa FL House Cleaning" />
+<meta property="og:description" content="Locally owned by
+  Kessia Marquez since 2014. 10+ years serving Tampa homes.
+  Eco-friendly, insured, bilingual." />
+<meta property="og:url" content="https://easycleaningservice
+  .com/about/" />
+<meta property="og:image" content="https://easycleaningservice
+  .com/images/kessia-marquez-easy-clean-tampa.jpg" />
+
+
+NOTE: The og:image should be a professional headshot or candid photo of Kessia. This is the image that appears when someone shares the About page on social media.
+2.4 Schema – Person + Organization
+This page should include a Person schema for Kessia linked to the HousekeepingService schema, establishing the founder-to-business relationship that E-E-A-T systems evaluate.
+
+
+{
+  "@context": "https://schema.org",
+  "@type": "HousekeepingService",
+  "name": "Easy Clean Service",
+  "url": "https://easycleaningservice.com",
+  "telephone": "+1-813-534-9216",
+  "foundingDate": "2014",
+  "founder": {
+    "@type": "Person",
+    "name": "Kessia Marquez",
+    "jobTitle": "Owner & Founder",
+    "knowsLanguage": ["en", "es"],
+    "image": "https://easycleaningservice.com/images/
+      kessia-marquez-easy-clean-tampa.jpg"
+  },
+  "description": "Locally owned residential and commercial
+    cleaning service serving Tampa, FL since 2014. Founded
+    by Kessia Marquez. Eco-friendly products, insured teams,
+    bilingual service.",
+  "areaServed": {
+    "@type": "City", "name": "Tampa",
+    "containedInPlace": {
+      "@type": "State", "name": "Florida" }
+  },
+  "hasCredential": {
+    "@type": "EducationalOccupationalCredential",
+    "credentialCategory": "Business Insurance",
+    "name": "General Liability Insurance"
+  },
+  "availableLanguage": ["en", "es"],
+  "slogan": "Trusted House Cleaning for Tampa Homes Since 2014"
+}
+
+
+DEV ACTION: Also include BreadcrumbList schema: Home (1) → About Us (2). Confirm Kessia’s exact founding year and update if different from 2014.
+________________
+
+
+3. Page Layout, Headings & Body Copy
+3.1 Hero Section
+  SECTION ID: #about-hero  
+H1 Heading
+About Easy Clean Service – Locally Owned House Cleaning in Tampa, FL
+Hero Subheading
+Easy Clean Service is not a franchise. It is not a faceless booking platform that sends a different stranger to your home every visit. It is a locally owned Tampa cleaning company founded and personally managed by Kessia Marquez – someone who has been cleaning Tampa homes with her own hands since 2014 and who treats every client’s home with the same care and respect she gives her own. When you call Easy Clean, you talk to the owner. When something needs attention, the owner handles it. That level of personal accountability is what sets us apart from every corporate cleaning chain in the market.
+Hero Image
+Subject: Professional headshot or candid working photo of Kessia Marquez. Should feel authentic and approachable – not a generic stock photo. Ideally Kessia at a Tampa home, with cleaning supplies visible, smiling and confident. A second option is Kessia with her team.
+Alt text: "Kessia Marquez, founder and owner of Easy Clean Service, Tampa FL house cleaning company"
+DEV ACTION: This photo is critical. It appears in the og:image, in Google Knowledge Panel results, and in AI answer engine responses. Commission a professional headshot session for Kessia if one does not already exist.
+3.2 Meet Kessia Marquez – Founder’s Story
+  SECTION ID: #our-story  
+H2 Heading
+Meet the Owner: Kessia Marquez
+Kessia Marquez started Easy Clean Service in 2014 with a simple belief: that every Tampa family deserves a clean, healthy home and the time to actually enjoy it. What began as one woman with a work ethic, a reliable car, and a commitment to doing the job right has grown into a trusted cleaning team that serves homes across 12 Tampa-area neighborhoods, from the historic bungalows of Seminole Heights to the waterfront estates of Hyde Park.
+More than a decade later, Kessia still personally manages every client relationship. She answers the phone when you call. She builds your cleaning plan based on your specific home, your schedule, and your priorities. She selects and trains every member of the cleaning team, and she holds them to the same standard she held herself when she was the one walking through your front door with a bucket of supplies and a checklist. That hands-on involvement is not a marketing slogan – it is how Kessia runs her business every single day.
+Kessia speaks fluent Spanish and English, making Easy Clean one of the few Tampa cleaning services where every client can communicate comfortably in their preferred language. In a city as culturally diverse as Tampa – especially in communities like Town ’N’ Country where over 60 percent of residents speak Spanish at home – this bilingual capability is not just a convenience; it is a meaningful differentiator that builds trust from the very first phone call.
+DEV ACTION: If Kessia has additional personal details she would like included – where she grew up, her family, what motivates her, a specific moment that shaped her cleaning philosophy – add them here. Authentic personal details dramatically increase the emotional connection and E-E-A-T strength of this section. The copy above is a framework; personalize it with Kessia’s own words.
+3.3 What We Believe – Company Values
+  SECTION ID: #our-values  
+H2 Heading
+What Sets Easy Clean Apart
+* Personal Accountability, Not Corporate Scripts: When you hire Easy Clean, you work directly with the owner. Kessia builds your cleaning plan, assigns your team, and personally ensures the quality of every visit. If something is not right, you do not file a ticket with a call center – you tell Kessia, and she makes it right. This level of owner involvement is impossible at franchise operations that cycle through hundreds of clients with rotating crews.
+* Same Trusted Team on Every Visit: We assign the same cleaner or team to your home on every recurring appointment. They learn your home’s layout, your preferences, which areas need extra attention, and the specific surfaces and materials in your home. That familiarity produces faster, better, more consistent results – and it means you are never surprised by an unfamiliar face at your door.
+* Eco-Friendly and Pet-Safe Products – Always: Every product we use is non-toxic, environmentally responsible, and completely safe for children, pets, and people with sensitivities. We made this decision years ago and have never wavered. Tampa families should not have to choose between a clean home and a safe one. We use professional-grade products that are effective on grease, grime, mold, and hard water stains without leaving behind harsh chemical residues or strong fumes.
+* No Contracts, No Pressure: We do not lock you into long-term agreements. We do not charge cancellation fees. We do not make it difficult to pause, skip, or change your schedule. We earn your continued business through the quality of our work, not the fine print of a contract. Book when you need us, adjust when your life changes, and never worry about being stuck in something you cannot get out of.
+* 100% Satisfaction Guarantee: If any area of your home does not meet your expectations after a cleaning visit, let us know within 24 hours and we will return to address it at no additional charge. We have maintained this guarantee since day one because we believe in the quality of our work – and because it keeps us accountable to the standard our clients expect.
+* Bilingual Service – Se Habla Español: Kessia speaks fluent Spanish, and many of our team members do as well. You can request your estimate, communicate your cleaning preferences, ask questions, and provide instructions in whichever language is most comfortable for you. In Tampa’s diverse communities, this matters.
+________________
+
+
+3.4 Our Team – Hiring, Training & Trust
+  SECTION ID: #our-team  
+H2 Heading
+The People Who Clean Your Home
+1. Background Verification: Every team member is background-checked before they are hired. We verify identity, employment history, and references. We do not cut corners on this step because your safety and peace of mind are non-negotiable.
+2. Hands-On Training: New team members train alongside experienced cleaners before working independently. They learn our cleaning checklist, our product usage protocols, our surface-specific techniques (hardwood vs. tile vs. natural stone), and our client communication standards.
+3. Product Knowledge: Our team is trained on every product we use – what it does, what surfaces it is safe for, and what to avoid. This is especially important in Tampa’s diverse housing market, where a single day’s work might include a 1920s terrazzo floor in Temple Terrace, a modern quartz countertop in Wesley Chapel, and a marble vanity in Hyde Park. The wrong product on the wrong surface causes permanent damage.
+4. Quality Standards: Every cleaning visit follows a structured checklist. Kessia reviews client feedback regularly and addresses any quality concerns immediately. The same-team-every-visit model means your cleaner develops expertise in your specific home over time.
+5. Full Insurance Coverage: Easy Clean Service carries general liability insurance that protects both our team and your property. In the unlikely event of accidental damage during a cleaning, you are fully covered. We provide proof of insurance upon request.
+3.5 Rooted in Tampa
+  SECTION ID: #our-community  
+H2 Heading
+A Tampa Business Serving Tampa Families
+Easy Clean Service is not headquartered in another state. We are not a franchise paying licensing fees to a national brand. Every dollar you spend with Easy Clean stays in the Tampa Bay economy – supporting local jobs, local families, and a local business owner who lives in the same community she serves.
+Over the past decade, we have built relationships across the Tampa area that go beyond cleaning. We know the neighborhoods because we work in them every day. We understand the specific challenges of Tampa homes – the humidity that accelerates mold growth in bathrooms, the hard water that stains fixtures and shower glass, the pollen that coats every surface during spring, and the sandy floors that come with Florida living. We clean Tampa homes the way Tampa homes need to be cleaned, because this is our home too.
+We currently serve 12 neighborhoods across Hillsborough and Pasco Counties, covering over 150 sub-communities from South Tampa to Wesley Chapel and everywhere in between. Our goal is to continue growing our reach across the Tampa Bay area while maintaining the personal, owner-managed quality that our existing clients count on.
+3.6 Easy Clean by the Numbers
+  SECTION ID: #by-the-numbers  
+H2 Heading
+Easy Clean Service at a Glance
+DEV ACTION: Display these as a visual stats bar or icon grid (similar to the trust indicator bar on the homepage). Each number should be large and prominent with a brief label below.
+Stat
+	Value
+	Stat
+	Value
+	Years in Business
+	10+
+	Neighborhoods Served
+	12
+	Sub-Communities
+	150+
+	Satisfaction Guarantee
+	100%
+	Languages Spoken
+	English & Spanish
+	Contracts Required
+	Zero
+	
+
+NOTE: Update these numbers as the business grows. If Kessia can provide data on total homes cleaned, years of combined team experience, or customer retention rate, those make powerful additional stats.
+3.7 Ready to Experience the Difference?
+  SECTION ID: #about-cta  
+H2 Heading
+Ready to See What Personal, Professional Cleaning Feels Like?
+* Primary CTA: "Get Your Free Estimate" → /contact/ or #estimate-form on homepage
+* Secondary CTA: "Call (813) 534-9216" → tel:+18135349216
+* Tertiary CTA: "Explore Our Services" → /services/
+* Tertiary CTA: "Find Your Neighborhood" → /service-areas/
+________________
+
+
+4. Image Strategy & Alt Text
+#
+	Placement
+	Subject
+	Alt Text
+	Loading
+	1
+	Hero / Founder
+	Professional photo of Kessia Marquez – headshot or candid working shot
+	"Kessia Marquez, owner of Easy Clean Service Tampa FL"
+	Preload
+	2
+	Story section
+	Kessia interacting with a client at their home, warm and personal
+	"Easy Clean owner Kessia Marquez with a Tampa homeowner client"
+	Lazy
+	3
+	Values section
+	Close-up of eco-friendly cleaning products being used on a surface
+	"Eco-friendly pet-safe cleaning products used by Easy Clean Tampa"
+	Lazy
+	4
+	Team section
+	Easy Clean team photo – 2–4 team members in branded shirts or with supplies
+	"Easy Clean Service cleaning team serving Tampa FL homes"
+	Lazy
+	5
+	Community section
+	Tampa skyline, Bayshore Boulevard, or recognizable local landmark
+	"Tampa FL skyline – home of Easy Clean Service"
+	Lazy
+	6
+	CTA section
+	Clean Tampa home interior – the result of Easy Clean’s work
+	"Spotless Tampa home cleaned by Easy Clean Service"
+	Lazy
+	
+
+WARNING: The Kessia headshot (image #1) is the most important image on this page and arguably on the entire website. It humanizes the brand, establishes E-E-A-T, and appears in social sharing, Google Knowledge Panel, and AI answer engine results. Do NOT use a stock photo. Invest in a professional photographer for a 30-minute session that produces both a headshot and several candid working shots.
+5. On-Page SEO, Internal Linking & Conversion
+5.1 Keyword Placement Map
+Keyword
+	Title
+	H1
+	H2
+	Body
+	Alt
+	Schema
+	URL
+	Easy Clean Service Tampa
+	✓
+	✓
+	
+
+	✓
+	✓
+	✓
+	
+
+	locally owned cleaning Tampa
+	✓
+	
+
+	✓
+	✓
+	
+
+	✓
+	
+
+	best cleaning service Tampa
+	
+
+	
+
+	
+
+	✓
+	
+
+	
+
+	
+
+	eco-friendly cleaning Tampa
+	
+
+	
+
+	✓
+	✓
+	✓
+	✓
+	
+
+	pet-safe cleaning Tampa
+	
+
+	
+
+	
+
+	✓
+	
+
+	
+
+	
+
+	insured cleaning service Tampa
+	
+
+	
+
+	
+
+	✓
+	
+
+	✓
+	
+
+	bilingual cleaning Tampa
+	
+
+	
+
+	
+
+	✓
+	
+
+	✓
+	
+
+	Kessia Marquez Tampa
+	
+
+	
+
+	✓
+	✓
+	✓
+	✓
+	
+
+	
+
+5.2 Internal Linking Strategy
+* Homepage: "About Us" nav link
+* Footer: "About Us" quick link in all page footers
+* Service pages: "Founded and run by Kessia Marquez" text should link here from Why Choose Us sections
+* Neighborhood pages: "Locally Owned, Personally Managed" trust points should link here
+* /services/: "Explore Our Services" CTA button
+* /service-areas/: "Find Your Neighborhood" CTA + community references
+* Town ’N’ Country page: Contextual link from the bilingual section referencing Spanish-speaking communities
+* Homepage: Via breadcrumb and logo
+* /contact/: "Get Your Free Estimate" CTA
+1. Title tag unique with brand name + "Locally Owned" differentiator
+2. Meta description includes founder name, years in business, and bilingual capability
+3. Canonical self-referencing to /about/
+4. H1 is the only H1, contains brand + service + location
+5. Person schema for Kessia linked to HousekeepingService schema
+6. Founder’s full name appears in body copy, H2, alt text, and schema
+7. Professional photo of Kessia with descriptive alt text
+8. availableLanguage: ["en", "es"] in schema
+9. Insurance and vetting details stated explicitly for E-E-A-T
+10. BreadcrumbList schema validated
+11. All images have descriptive alt text with name and location
+12. Page loads under 3 seconds on mobile
+5.4 E-E-A-T Optimization Checklist
+1. Founder’s full name (Kessia Marquez) appears prominently and early in the content
+2. Professional photograph of the founder is present (not a stock photo)
+3. Specific founding year stated (2014)
+4. Specific experience claim (10+ years) with enough context to be verifiable
+5. Insurance status explicitly stated
+6. Team vetting process described in detail (background checks, training)
+7. Geographic specificity (Tampa, Hillsborough County, Pasco County, named neighborhoods)
+8. Bilingual capability mentioned with specific language (Spanish)
+9. Direct contact information (phone number) visible on the page
+10. Satisfaction guarantee terms clearly stated (24-hour callback)
+11. No-contract policy clearly stated
+12. Community connection established (not a franchise, lives in the community, local jobs)
+13. Person schema connects founder to business entity
+14. Page content would answer the question "Who owns Easy Clean Service?" if asked by an AI
+* Sticky mobile CTA + WhatsApp: Same as all pages.
+* Multiple CTA paths: The CTA section (3.7) offers four paths: estimate form, phone call, services page, and service areas page. This accommodates visitors at different stages of the decision funnel.
+* Trust reinforcement: The “by the numbers” section provides scannable proof points that reinforce the detailed copy above it.
+* Photo credibility: Kessia’s photo is the single most powerful conversion element on this page. People hire people they can see and relate to.
+* Create as WordPress Page: slug "about"
+* No parent page – this is a top-level page
+* Yoast/Rank Math focus keyword: "Easy Clean Service Tampa"
+* Add Kessia’s photo as a featured image for social sharing
+* After publishing, update nav to link "About Us" to /about/
+* After GBP is created, link to the About page from the GBP business description
+
+
+End of About Us Page Developer Guide
+Version 1.0 • March 2026 • All content is original and proprietary

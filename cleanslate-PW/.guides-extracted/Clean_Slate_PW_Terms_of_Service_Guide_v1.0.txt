@@ -1,0 +1,114 @@
+﻿
+
+ 
+
+TERMS OF SERVICE PAGE GUIDE
+
+Terms of Service
+
+
+ 
+
+Legal / Utility Page Specifications
+
+Clean Slate Pressure Washing
+
+A Fresh Start for Every Surface
+
+Brandon, Florida  |  Hillsborough County
+
+cleanslatepw.com
+
+Prepared by TradeWorks AI
+
+Version 1.0  |  April 2026
+
+Client Confidential
+
+
+
+
+
+
+
+
+Section 1: Terms of Service Page Guide
+
+URL: /terms-of-service/. Linked from footer on every page. Governs use of the website and sets expectations for the service relationship.
+
+
+
+Section 2: Page Specifications
+
+Attribute
+
+Value
+
+URL Path
+
+/terms-of-service/
+
+Canonical URL
+
+https://cleanslatepw.com/terms-of-service/
+
+&lt;title&gt;
+
+Terms of Service | Clean Slate Pressure Washing
+
+&lt;meta description&gt;
+
+Terms of service for Clean Slate Pressure Washing. Website usage terms, service agreements, and liability information.
+
+Robots
+
+index, follow
+
+
+
+Section 3: Required Content Sections
+
+
+Acceptance of Terms: By using this website, you agree to these terms.
+
+
+Service Description: Clean Slate Pressure Washing provides exterior cleaning services. Estimates are non-binding until a written service agreement is executed.
+
+
+Estimates &amp; Pricing: All estimates are free and valid for 30 days. Final pricing may adjust if on-site conditions differ materially from the information provided in the estimate request.
+
+
+Satisfaction Guarantee: If you are not satisfied with any completed service, contact us within 7 days. We will return and address the issue at no additional charge.
+
+
+Liability Limitations: Clean Slate Pressure Washing carries $2M general liability in general liability insurance. Our liability for any single claim shall not exceed the amount paid for the specific service in question.
+
+
+Property Access: Customer grants access to exterior areas of the property for the purpose of performing agreed-upon services. Customer is responsible for securing pets, removing personal items from work areas, and ensuring gate/access codes are provided.
+
+
+Cancellation: Cancellations made 24+ hours before scheduled service incur no charge. Cancellations within 24 hours may incur a trip fee if the crew has been dispatched.
+
+
+Weather: Services may be rescheduled due to inclement weather at no charge. We will contact you to reschedule within 48 hours.
+
+
+Intellectual Property: All website content, including text, images, and design, is owned by Clean Slate Pressure Washing or its licensors.
+
+
+Governing Law: These terms are governed by the laws of the State of Florida, Hillsborough County.
+
+
+Contact: info@cleanslatepw.com or (813) 555-0283.
+
+
+Section 4: Design
+
+Same clean single-column layout as Privacy Policy. H2 per section. Last updated date at top.
+
+
+
+— End of Terms of Service Guide —
+
+
+

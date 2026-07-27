@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <title>Seasonal Services</title>
+  <!-- sun -->
+  <circle cx="80" cy="70" r="26" fill="#D4A744"/>
+  <!-- sun rays -->
+  <line x1="80" y1="28" x2="80" y2="18" stroke="#D4A744" stroke-width="5" stroke-linecap="round"/>
+  <line x1="80" y1="112" x2="80" y2="122" stroke="#D4A744" stroke-width="5" stroke-linecap="round"/>
+  <line x1="38" y1="70" x2="28" y2="70" stroke="#D4A744" stroke-width="5" stroke-linecap="round"/>
+  <line x1="122" y1="70" x2="132" y2="70" stroke="#D4A744" stroke-width="5" stroke-linecap="round"/>
+  <line x1="50" y1="40" x2="42" y2="32" stroke="#D4A744" stroke-width="5" stroke-linecap="round"/>
+  <line x1="110" y1="40" x2="118" y2="32" stroke="#D4A744" stroke-width="5" stroke-linecap="round"/>
+  <line x1="50" y1="100" x2="42" y2="108" stroke="#D4A744" stroke-width="5" stroke-linecap="round"/>
+  <line x1="110" y1="100" x2="118" y2="108" stroke="#D4A744" stroke-width="5" stroke-linecap="round"/>
+  <!-- leaf -->
+  <path d="M152 168 Q98 162 92 122 Q132 110 168 122 Q176 146 152 168 Z" fill="#6BAA45"/>
+  <!-- leaf vein -->
+  <path d="M92 122 Q128 132 168 122" stroke="#1A3826" stroke-width="1.5" fill="none"/>
+  <!-- leaf side veins -->
+  <path d="M108 124 Q118 134 122 148" stroke="#1A3826" stroke-width="1" fill="none" opacity="0.6"/>
+  <path d="M128 128 Q138 138 142 154" stroke="#1A3826" stroke-width="1" fill="none" opacity="0.6"/>
+  <path d="M148 126 Q156 134 158 148" stroke="#1A3826" stroke-width="1" fill="none" opacity="0.6"/>
+</svg>

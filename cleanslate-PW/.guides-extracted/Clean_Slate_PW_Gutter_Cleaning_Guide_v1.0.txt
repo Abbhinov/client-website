@@ -1,0 +1,538 @@
+﻿
+
+ 
+
+GUTTER CLEANING &amp; BRIGHTENING DEVELOPER GUIDE
+
+Gutter Cleaning &amp; Brightening
+
+
+ 
+
+Section-by-Section Implementation Specifications
+
+Clean Slate Pressure Washing
+
+A Fresh Start for Every Surface
+
+Brandon, Florida  |  Hillsborough County
+
+cleanslatepw.com
+
+Prepared by TradeWorks AI
+
+Version 1.0  |  April 2026
+
+Client Confidential
+
+
+
+
+
+
+
+
+Table of Contents
+
+
+
+OVERVIEW
+
+1.  How to Use This Guide
+
+2.  Page Identity &amp; Architecture
+
+3.  Complete &lt;head&gt; Section
+
+
+
+PAGE SECTIONS
+
+4.  Breadcrumb
+
+5.  Hero Section
+
+6.  AEO Introduction Paragraph
+
+7.  The Problem — What Homeowners Experience
+
+8.  Our Process (5 Steps)
+
+9.  Why Choose Clean Slate PW
+
+10.  Before &amp; After Examples
+
+11.  Related Services
+
+12.  Service Areas Callout
+
+13.  FAQ Section
+
+14.  Final CTA Block
+
+15.  Footer
+
+
+
+REFERENCE
+
+16.  Image Specs
+
+17.  GA4 Events
+
+18.  Implementation Checklist
+
+
+
+Section 1: How to Use This Guide
+
+This guide provides everything needed to build the Gutter Cleaning &amp; Brightening service page (/services/gutter-cleaning/) from scratch. This is a child page in the Services silo, sitting under the Services Hub (/services/). Content here goes deep on this single service — 1,500–2,500 words of production-ready copy with exact specifications for every section.
+
+Content differentiation: The homepage introduces this service in ~15 words. The services hub expands to ~60 words. This page delivers the full depth — methodology, process steps, FAQ, and service-specific trust signals.
+
+
+
+Section 2: Page Identity &amp; Architecture
+
+Attribute
+
+Value
+
+URL Path
+
+/services/gutter-cleaning/
+
+Canonical URL
+
+https://cleanslatepw.com/services/gutter-cleaning/
+
+Page Type
+
+Service Child Page
+
+Parent
+
+/services/ (Services Hub)
+
+Breadcrumb
+
+Home › Services › Gutter Cleaning &amp; Brightening
+
+Primary Keyword
+
+Gutter cleaning Brandon FL
+
+Secondary Keywords
+
+gutter brightening Tampa, gutter cleaning near me, tiger stripe removal gutters, gutter cleanout Brandon, downspout cleaning Florida
+
+Search Intent
+
+Commercial / Transactional
+
+Target Word Count
+
+1,500–2,500 words
+
+Primary Conversion Goal
+
+Free Estimate form submission OR phone call
+
+Content Update Frequency
+
+Evergreen with annual review
+
+
+
+
+2.2 Related Service Links (Siblings)
+
+
+Roof Soft Washing: /services/roof-cleaning/ — linked in Related Services section and inline where natural.
+
+
+House Soft Washing: /services/house-washing/ — linked in Related Services section and inline where natural.
+
+
+Lanai &amp; Screen Cleaning: /services/lanai-screen-cleaning/ — linked in Related Services section and inline where natural.
+
+
+
+Section 3: Complete &lt;head&gt; Section
+
+Tag
+
+Value
+
+&lt;title&gt;
+
+Gutter Cleaning &amp; Brightening Brandon FL | Tiger Stripe Removal | Clean Slate PW
+
+&lt;meta description&gt;
+
+Professional gutter cleaning and exterior brightening in Brandon, FL. Interior cleanout plus tiger stripe removal. Prevent water damage and fascia rot. Call (813) 555-0283.
+
+&lt;link rel=canonical&gt;
+
+https://cleanslatepw.com/services/gutter-cleaning/
+
+&lt;meta name=robots&gt;
+
+index, follow
+
+og:title
+
+Gutter Cleaning &amp; Brightening Brandon FL | Tiger Stripe Removal | Clean Slate PW
+
+og:description
+
+Professional gutter cleaning and exterior brightening in Brandon, FL. Interior cleanout plus tiger stripe removal. Prevent water damage and fascia rot
+
+og:image
+
+https://cleanslatepw.com/images/og-gutter-cleaning-1200x630.jpg
+
+og:url
+
+https://cleanslatepw.com/services/gutter-cleaning/
+
+
+
+
+3.2 JSON-LD
+
+Deploy Service schema with @type &quot;Service&quot;, serviceType &quot;Gutter Cleaning &amp; Brightening&quot;, provider referencing LocalBusiness @id. Deploy BreadcrumbList (3 items: Home → Services → Gutter Cleaning &amp; Brightening). Deploy FAQPage mirroring the 5 Q&amp;As in Section 13.
+
+
+
+Section 4: Breadcrumb
+
+Display: Home › Services › Gutter Cleaning &amp; Brightening. &quot;Home&quot; links to /. &quot;Services&quot; links to /services/. &quot;Gutter Cleaning &amp; Brightening&quot; is current page (unlinked). Font 14px, #6C757D for links, #2B2B2B for current.
+
+
+
+Section 5: Hero Section
+
+Property
+
+Value
+
+Min Height
+
+380px desktop / 320px tablet / 280px mobile
+
+Background
+
+Service-specific hero image with navy gradient overlay
+
+Content
+
+Left-aligned on desktop, centered on mobile
+
+Padding
+
+72px top/bottom desktop, 48px mobile
+
+
+5.1 H1
+
+Gutter Cleaning &amp; Exterior Brightening in Brandon, FL
+
+44px desktop / 36px tablet / 28px mobile. Weight 700. White.
+
+
+5.2 Hero Image
+
+Alt text: Before and after gutter brightening showing tiger stripe removal on a home in Brandon, Florida
+
+1920×800 WebP, under 150KB. Preloaded for LCP.
+
+
+5.3 Hero CTA
+
+&apos;Get a Free Gutter Cleaning &amp; Brightening Estimate&apos; → /free-estimate/?service=gutter-cleaning. Orange button. GA4: cta_click (location: gutter-cleaning_hero).
+
+
+
+Section 6: AEO Introduction Paragraph
+
+Direct-answer paragraph targeting the page&apos;s primary query. Centered max-width 880px. No images, no CTAs.
+
+
+6.1 H2
+
+Gutter Cleaning &amp; Exterior Brightening
+
+
+6.2 AEO Body — Exact Copy
+
+Clean Slate Pressure Washing provides professional gutter cleaning and exterior gutter brightening services for homeowners throughout Brandon, Riverview, Valrico, and the Tampa Bay area. Gutter service includes two distinct components: interior cleanout (removing leaves, debris, pine needles, and standing water from inside the gutter channel and downspouts) and exterior brightening (removing the dark vertical streaks — called tiger stripes — that form on the outer face of aluminum gutters). Tiger stripes are caused by electrostatic bonding between airborne pollutants, oxidation residue, and the aluminum gutter surface during water runoff. These streaks cannot be removed with regular pressure washing alone — they require a specialized oxidation-dissolving cleaning agent applied by hand and rinsed at low pressure. Both interior and exterior gutter services are performed in a single visit.
+
+
+
+Section 7: The Problem — What Homeowners Experience
+
+This section empathizes with the customer&apos;s situation before presenting the solution. It describes in specific, relatable terms what the homeowner is seeing on their property and why it is happening — framed through Florida&apos;s climate and the specific surface type this service addresses. This section should be 150–200 words of original content describing the symptoms, causes, and consequences of not addressing the problem.
+
+[Content to be written fresh for each service page during implementation — not templated. The developer guide provides the structural framework; the content writer fills this section with service-specific problem-state copy that connects emotionally with the homeowner&apos;s frustration.]
+
+
+
+Section 8: Our Process (5 Steps)
+
+Numbered 5-step process showing exactly how the gutter cleaning &amp; brightening service is performed. Each step has a bold heading and 1–2 sentence description. This section builds trust through transparency — homeowners want to know what will happen on their property before they commit.
+
+
+8.1 Process Steps
+
+Step 1 — Interior cleanout: All leaves, twigs, pine needles, shingle granules, and standing water are removed from the gutter channel by hand. Debris is bagged and removed from the property.
+
+Step 2 — Downspout flush: Each downspout is flushed with a garden hose to confirm unobstructed flow. Clogged downspouts are cleared using a plumber&apos;s snake or pressurized water jet.
+
+Step 3 — Flow test: Water is run through the entire gutter system to verify proper drainage slope and identify any sagging sections, loose brackets, or leaking seams.
+
+Step 4 — Exterior brightening: A specialized gutter-brightening solution is applied to the outer face of the gutters using a soft scrub pad. The solution dissolves the electrostatic bond holding tiger stripe deposits to the aluminum.
+
+Step 5 — Rinse and inspection: Gutters are rinsed clean and inspected for any remaining streaks. Problem areas receive a second application. Fascia boards behind gutters are inspected for signs of water damage or rot.
+
+
+
+Section 9: Why Choose Clean Slate PW
+
+Four compact trust differentiators. Same component pattern as services hub Section 10 — 48px orange icon, H3, 2-line description. Differentiators are: Method-Matched Cleaning, Licensed &amp; Insured, 24-Hour Estimates, Satisfaction Guaranteed. Refer to Services Hub Guide Section 10 for exact copy and design specs.
+
+
+
+Section 10: Before &amp; After Examples
+
+Two before/after slider pairs specific to this service type. Same interactive slider component as homepage Section 11. Each slider shows a real project photo pair with caption including city and property type.
+
+Alt text format: &quot;Before/After: gutter cleaning &amp; brightening on a [property type] in [city], FL&quot;.
+
+Images: 1080×720 WebP, under 120KB each. loading=&apos;lazy&apos;.
+
+
+
+Section 11: Related Services
+
+Three sibling service cards in a horizontal row linking to the most relevant cross-sell services. Same card component as services hub — image, H3, 2-line description, &apos;Learn More →&apos; link.
+
+
+11.1 Related Services for This Page
+
+
+Roof Soft Washing → /services/roof-cleaning/
+
+
+House Soft Washing → /services/house-washing/
+
+
+Lanai &amp; Screen Cleaning → /services/lanai-screen-cleaning/
+
+
+
+Section 12: Service Areas Callout
+
+Same compact block as services hub Section 11. Background #E8EEF2. Lists 10 service cities as inline links. Links to /service-areas/. Refer to Services Hub Guide for exact specs.
+
+
+
+Section 13: FAQ Section
+
+Five questions specific to gutter cleaning &amp; brightening. These must match the FAQPage JSON-LD schema exactly.
+
+
+Q: What causes tiger stripes on gutters?
+
+Tiger stripes are dark vertical streaks on the exterior face of aluminum gutters. They are caused by a chemical reaction between aluminum oxidation, airborne pollutants, and the water that runs over the gutter lip during rain. The resulting residue bonds electrostatically to the aluminum surface and cannot be removed by pressure washing alone — it requires a specialized chemical treatment.
+
+
+Q: How often should I clean my gutters in Florida?
+
+We recommend interior gutter cleanout twice per year in Florida — once in late fall after leaf drop and once in late spring before hurricane season. Homes with heavy pine tree coverage may need quarterly cleanout. Exterior gutter brightening is typically needed every 2–3 years depending on the home&apos;s exposure.
+
+
+Q: Do you install gutter guards?
+
+We do not install gutter guards, but we can assess whether your gutters would benefit from them and recommend a local installer if appropriate. In our experience, gutter guards reduce but do not eliminate the need for periodic cleanout, particularly in areas with heavy pine needle debris.
+
+
+Q: Can dirty gutters cause damage to my home?
+
+Yes. Clogged gutters cause water to overflow and pool against the fascia board, leading to wood rot, soffit damage, and foundation erosion. Standing water in gutters also breeds mosquitoes — a significant concern in Florida. Regular gutter maintenance prevents these costly issues.
+
+
+Q: Do you clean gutters on two-story homes?
+
+Yes. We clean gutters on homes of any height using extension ladders and stabilizer bars that protect your gutters from denting. Our technicians are trained in ladder safety and carry appropriate fall protection equipment for two-story and higher work.
+
+
+
+Section 14: Final CTA Block
+
+Same pattern as services hub and homepage — full-width navy background, centered content, dual CTAs.
+
+H2: Get a Free Gutter Cleaning &amp; Brightening Estimate Today.
+
+Primary: &apos;Get My Free Estimate&apos; → /free-estimate/?service=gutter-cleaning
+
+Secondary: &apos;Call (813) 555-0283&apos; → tel:+18135550283
+
+
+
+Section 15: Footer
+
+Shared component — identical to all pages. Refer to Homepage Guide Section 18.
+
+
+
+Section 16: Image Specifications
+
+#
+
+Asset
+
+Dimensions
+
+Alt Text
+
+1
+
+Hero background
+
+1920×800 WebP
+
+Before and after gutter brightening showing tiger stripe removal on a home in Brandon, Florida
+
+2-3
+
+Before/After pairs (2)
+
+1080×720 WebP ×2 each
+
+Before/After: gutter cleaning &amp; brightening on a Florida home
+
+4-6
+
+Related service cards (3)
+
+800×533 WebP (3:2)
+
+Per sibling service image
+
+7
+
+OG image
+
+1200×630 JPG
+
+Gutter Cleaning &amp; Brightening — Clean Slate Pressure Washing
+
+
+
+Section 17: GA4 Event Tracking
+
+Event
+
+Trigger
+
+Parameters
+
+Type
+
+page_view
+
+Load (auto)
+
+page_location
+
+Standard
+
+cta_click
+
+Any CTA
+
+cta_label, cta_location
+
+Engagement
+
+phone_click
+
+tel: link
+
+phone_number
+
+Conversion
+
+faq_expand
+
+FAQ open
+
+question_text, index
+
+Engagement
+
+before_after_interact
+
+Slider drag
+
+project_name
+
+Engagement
+
+related_service_click
+
+Sibling card click
+
+service_name, service_url
+
+Engagement
+
+
+
+Section 18: Implementation Checklist
+
+
+H1 matches: &quot;Gutter Cleaning &amp; Exterior Brightening in Brandon, FL&quot;
+
+
+AEO body paragraph matches word-for-word.
+
+
+All 5 process steps match exact copy.
+
+
+All 5 FAQ answers match and are mirrored in FAQPage schema.
+
+
+Phone (813) 555-0283 is working tel: link.
+
+
+Canonical points to https://cleanslatepw.com/services/gutter-cleaning/
+
+
+Breadcrumb displays: Home › Services › Gutter Cleaning &amp; Brightening
+
+
+OG image renders correctly on share preview.
+
+
+Hero preloaded. Below-fold images lazy-loaded.
+
+
+PageSpeed mobile &gt;85, desktop &gt;95.
+
+
+Schema validates at validator.schema.org.
+
+
+All 3 related service URLs resolve.
+
+
+
+— End of Gutter Cleaning &amp; Brightening Developer Guide —
+
+Clean Slate Pressure Washing — Gutter Cleaning &amp; Brightening Guide v1.0 | Prepared by TradeWorks AI | April 2026
+
+
+

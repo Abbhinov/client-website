@@ -1,0 +1,23 @@
+Header
+Hero Image
+4 tiles
+    Satisfaction Guarantee
+    - 10 Years of Service
+    - Personalized Clean
+    - Trusted Team Members
+Trusted Team Members
+    Center Heading
+    - Paragraph text left - Image of Kessia on the right
+Services
+    - Recurring Cleaning
+    - Deep Cleaning
+    - Commercial Cleaning
+    - Specialty Cleaning
+Quote Banner
+Reviews
+FAQs
+Footer
+
+
+White Blue and Green
+

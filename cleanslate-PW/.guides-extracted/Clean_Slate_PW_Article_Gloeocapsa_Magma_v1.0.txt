@@ -1,0 +1,260 @@
+﻿
+
+ 
+
+RESOURCE ARTICLE GUIDE
+
+What Causes Black Streaks on Your Roof? ...
+
+
+ 
+
+/gloeocapsa-magma-roof-streaks/ — AEO/GEO Content
+
+Clean Slate Pressure Washing
+
+A Fresh Start for Every Surface
+
+Brandon, Florida  |  Hillsborough County
+
+cleanslatepw.com
+
+Prepared by TradeWorks AI
+
+Version 1.0  |  April 2026
+
+Client Confidential
+
+
+
+
+
+
+
+
+Section 1: Page Identity &amp; Architecture
+
+Attribute
+
+Value
+
+URL Path
+
+/resources/gloeocapsa-magma-roof-streaks/
+
+Canonical URL
+
+https://cleanslatepw.com/resources/gloeocapsa-magma-roof-streaks/
+
+Page Type
+
+Resource Article
+
+Parent
+
+/resources/
+
+Breadcrumb
+
+Home → Resources → What Causes Black Streaks on Your Roof
+
+Primary Keyword
+
+Black streaks on roof Florida
+
+Search Intent
+
+Informational / AEO
+
+Target Word Count
+
+1,800–2,500 words
+
+Category
+
+CHEMISTRY
+
+Read Time
+
+7 min read
+
+&lt;title&gt;
+
+Black Streaks on Roof | Gloeocapsa Magma Removal | Clean Slate PW
+
+&lt;meta description&gt;
+
+Those dark streaks on your Florida roof are Gloeocapsa magma — a cyanobacteria requiring specific chemistry to remove safely. Learn what it is and how to fix it.
+
+JSON-LD: Article schema (headline, author &quot;Jason Caldwell&quot;, publisher &quot;Clean Slate Pressure Washing&quot;, datePublished, dateModified). FAQPage (3 Q&amp;As). BreadcrumbList (3 items).
+
+
+
+Section 2: Article Layout
+
+Single-column article layout, max-width 780px centered. Featured image at top (16:9, 1200×675 WebP). Author byline below image. Table of contents for articles over 1,500 words (auto-generated from H2 headings). Publication date and last-updated date displayed.
+
+Element
+
+Value
+
+Featured Image
+
+1200×675 WebP. Alt: &apos;[Topic-specific descriptive alt text]&apos;. loading=&apos;eager&apos; (above fold).
+
+Author Byline
+
+By Jason Caldwell, Clean Slate Pressure Washing
+
+Date
+
+Published: [launch date]. Updated: [last edit date].
+
+Reading Time
+
+7 min read
+
+Category Badge
+
+CHEMISTRY — pill badge in #3E6990 (Slate)
+
+
+
+Section 3: AEO Opening Paragraph (~150 words)
+
+This is the critical AEO/GEO paragraph. It must directly answer the page&apos;s primary query within the first 150 words. Every sentence is self-contained, factually verifiable, and avoids pronouns requiring prior context.
+
+
+3.1 Exact Copy
+
+The dark black streaks visible on most Florida roofs are caused by Gloeocapsa magma, a photosynthetic cyanobacteria (often incorrectly called algae or mold) that feeds on the limestone filler in asphalt shingles. Gloeocapsa magma produces a dark pigmented outer sheath to protect itself from ultraviolet radiation, and it is this protective sheath — not the organism itself — that creates the visible black discoloration homeowners see from the ground. The organism spreads across roof surfaces via airborne spores, which is why neighboring homes in Florida subdivisions often develop dark streaks within the same 1–2 year window. Gloeocapsa magma cannot be removed by pressure washing — it requires a sodium hypochlorite-based soft wash solution applied at under 100 PSI that kills the organism at its root without damaging shingle granules.
+
+
+
+Section 4: Article Body — H2 Outline
+
+Each H2 section below should be expanded to 200–400 words of original, educational content during implementation. Tone is informational — not sales copy. First-person references to Clean Slate PW are limited to 1–2 per article in the context of methodology expertise.
+
+
+What Is Gloeocapsa Magma?
+
+Biology: photosynthetic cyanobacteria (not mold, not algae in the traditional sense). Feeds on calcium carbonate (limestone filler) in asphalt shingles. UV-protective dark pigmented sheath creates visible staining. Airborne spore transmission. Thrives in humidity above 70% and temperatures above 75°F — Florida&apos;s default climate.
+
+
+Why Florida Roofs Are Especially Vulnerable
+
+Climate factors, shingle composition (limestone filler content varies by manufacturer), north-facing slope exposure (less UV = faster growth), tree canopy shade, proximity to water bodies. Tampa Bay&apos;s specific climate data supporting accelerated growth rates.
+
+
+Is Gloeocapsa Magma Dangerous?
+
+Not directly harmful to humans. Damaging to roofs: feeds on limestone filler weakening shingle structure over years, reduces reflectivity increasing cooling costs, retains moisture accelerating granule loss. Insurance and HOA implications.
+
+
+How to Safely Remove Black Streaks
+
+Professional soft wash process: sodium hypochlorite solution at 1–3% concentration, applied at under 100 PSI, 15–20 minute dwell time, low-pressure rinse. Why pressure washing fails (removes visible staining but not the root structure — regrowth within months). Why bleach-and-garden-hose DIY is risky (uncontrolled concentration, no surfactant, landscaping damage, no kill at root level).
+
+
+Prevention After Cleaning
+
+Growth-inhibiting treatments applied during soft wash. Zinc or copper strip installation at ridge line (galvanic runoff inhibits regrowth). Tree trimming to increase UV exposure on north-facing slopes. Realistic expectations: no prevention method is permanent in Florida — plan for 2–3 year cleaning cycles.
+
+
+
+Section 5: FAQ Section (3 Questions)
+
+Three questions in FAQ accordion format with FAQPage schema. Questions target voice search and AI query patterns.
+
+
+Q: Are the black streaks on my roof mold?
+
+No. The dark streaks are caused by Gloeocapsa magma, a cyanobacteria — not mold. While mold can grow on roofs in rare cases (typically in areas with standing water or severe shade), the characteristic streaking pattern running vertically down roof slopes is almost always Gloeocapsa magma.
+
+
+Q: Can I remove black streaks with a pressure washer?
+
+No. High-pressure washing will remove the visible dark staining from the surface but will not kill the Gloeocapsa magma organism embedded in the shingle surface. The streaks will return within 3–6 months. Additionally, pressure washing strips protective granules from shingles and voids manufacturer warranties.
+
+
+Q: How long do results last after professional cleaning?
+
+Professional soft washing with growth-inhibiting post-treatment typically keeps Florida roofs streak-free for 2–3 years. Results vary based on tree coverage, shade exposure, and proximity to water. Homes with heavy shade or lake-adjacent locations may see regrowth sooner.
+
+
+
+Section 6: Article CTA Block
+
+Below the FAQ, a compact CTA block connecting the educational content to the relevant service.
+
+H3: Need This Service for Your Home?
+
+&apos;Get a Free Estimate&apos; → /free-estimate/. &apos;Call (813) 555-0283&apos; secondary. Compact inline format, not full-width block.
+
+
+
+
+Section 7: Related Content
+
+
+7.1 Related Services
+
+
+/services/roof-cleaning/
+
+
+/services/soft-washing/
+
+
+7.2 Related Articles
+
+
+/resources/florida-roof-cleaning-frequency/
+
+
+/resources/shingle-warranty-cleaning/
+
+Display as 2–3 card previews (same component as homepage resource preview) below the CTA block.
+
+
+
+Section 8: Implementation Checklist
+
+
+AEO opening paragraph matches exact copy.
+
+
+All 5 H2 sections contain 200–400 words of original educational content.
+
+
+All 3 FAQ answers match FAQPage schema.
+
+
+Article schema validates (headline, author, datePublished, dateModified).
+
+
+Featured image present with descriptive alt text.
+
+
+At least 2 internal links to service pages within body.
+
+
+At least 1 internal link to related article.
+
+
+Canonical: https://cleanslatepw.com/resources/gloeocapsa-magma-roof-streaks/
+
+
+Publication and last-updated dates displayed.
+
+
+Social sharing buttons functional (optional).
+
+
+
+— End of &quot;What Causes Black Streaks on Your Roof? (And How t...&quot; Guide —
+
+Clean Slate Pressure Washing — Resource Article v1.0 | TradeWorks AI | April 2026
+
+
+

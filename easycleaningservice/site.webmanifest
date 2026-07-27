@@ -1,0 +1,9 @@
+{
+  "name": "Easy Clean Service",
+  "short_name": "Easy Clean",
+  "icons": [{ "src": "favicon.svg", "sizes": "any", "type": "image/svg+xml" }],
+  "theme_color": "#1B4F72",
+  "background_color": "#f0f7fa",
+  "display": "standalone",
+  "start_url": "."
+}

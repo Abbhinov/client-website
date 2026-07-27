@@ -1,0 +1,772 @@
+
+SPIN IT UP LAUNDRY
+COMMERCIAL SERVICESDEVELOPER GUIDE
+Section-by-Section Implementation Specification
+
+URL: spinituplaundry.net/services/commercial/
+Prepared by: TradeWorks AI  |  Version 1.0  |  May 2026
+Classification: Client Confidential
+
+Table of Contents
+1  How to Use This Guide
+2  Page Identity & Architecture
+3  Keyword Strategy & Content Map
+4  Complete <head> Section
+5  Section 1: Site Header & Navigation
+6  Section 2: Hero Banner
+7  Section 3: AEO Introduction
+8  Section 4: Industries We Serve
+9  Section 5: How Commercial Service Works
+10  Section 6: What’s Included
+11  Section 7: Why Businesses Choose Us
+12  Section 8: Pricing & Custom Quotes
+13  Section 9: Commercial Inquiry Form
+14  Section 10: Related Services
+15  Section 11: FAQ Section
+16  Section 12: Final CTA Block
+17  Section 13: Footer & Sticky Mobile CTA
+18  Reference: Image Asset Inventory
+19  Reference: GA4 Event Tracking
+20  Reference: Implementation Checklist
+
+1. How to Use This Guide
+This developer guide provides the complete implementation specification for the Commercial Laundry Services page (/services/commercial/). This page targets business customers — Airbnb hosts, salons, gyms, restaurants, property managers, and small hotels — who need reliable, high-volume laundry on a recurring schedule. The audit identified the existing Commercial Services page as better than 80% of competitors but undermined by Gmail as the business email and a confusing .com domain. This rebuilt page resolves those issues and expands the content to convert commercial leads.
+Commercial visitors have different decision criteria than residential customers: they care about reliability, turnaround SLAs, volume pricing, and professional credibility. The page tone is accordingly more B2B-oriented while maintaining Spin It Up’s friendly brand voice.
+Content Authoring Rules
+All content written fresh. No content from the current site or competitors.
+AEO opening paragraph within the first 100–150 words answers “commercial laundry service in Chicago.”
+Phone number and email render as clickable links (tel: and mailto:).
+This page includes a dedicated commercial inquiry form — not just the generic contact form.
+
+2. Page Identity & Architecture
+URL Path
+/services/commercial/
+Page Type
+Child — Services Silo
+Canonical URL
+https://spinituplaundry.net/services/commercial/
+Breadcrumb
+Home > Services > Commercial Services
+Parent Page
+/services/ (Services Hub)
+Sibling Pages
+/services/self-service/, /services/wash-and-fold/, /services/pickup-delivery/, /services/ironing-pressing/
+Primary Keyword
+commercial laundry service chicago (210/mo)
+Secondary Keywords
+airbnb laundry service chicago, bulk laundry service near me, restaurant linen service chicago, commercial laundry avondale
+Search Intent
+Commercial / Transactional
+Target Word Count
+1,000–1,200 words
+Primary Conversion Goal
+Commercial inquiry form submission or phone call
+Secondary Conversion Goals
+Email inquiry (mailto: link)
+Robots Directive
+index, follow
+XML Sitemap
+Include — priority 0.8
+Content Update Frequency
+Evergreen; update when commercial terms change
+hreflang
+None for Phase 1 (commercial page is English-only initially)
+Internal Linking Requirements
+Direction
+Link
+Anchor Text
+Up → Hub
+/services/
+All Services, Back to Services
+Sibling
+/services/pickup-delivery/
+Pickup & Delivery (overlapping service)
+Sibling
+/services/wash-and-fold/
+Wash & Fold (residential alternative)
+Sibling
+/services/ironing-pressing/
+Ironing & Pressing (add-on)
+Cross-silo
+/pricing/
+View Residential Pricing
+Cross-silo
+/contact/
+Contact Us
+Cross-silo
+/faq/
+See All FAQs
+Up → Root
+/
+Home (breadcrumb)
+
+3. Keyword Strategy & Content Map
+Keyword
+Est. Volume
+Difficulty
+Intent
+Placement
+commercial laundry service chicago
+210
+Low–Med
+Commercial
+H1, title, AEO paragraph, schema
+airbnb laundry service chicago
+50–110
+Low
+Commercial
+Industries section, body content
+bulk laundry service near me
+210–320
+Med (local)
+Commercial
+Served via GBP + this page
+restaurant linen service chicago
+50–110
+Low
+Commercial
+Industries section
+commercial laundry pickup chicago
+30–70
+Low
+Commercial
+How It Works section
+gym towel laundry service
+50–110
+Low
+Commercial
+Industries section
+hotel laundry service chicago
+50–110
+Low–Med
+Commercial
+Industries section
+laundry service for business
+320
+Med
+Commercial
+AEO paragraph, body content
+volume laundry pricing
+30–70
+Low
+Informational
+Pricing section, FAQ
+commercial laundry near me
+590
+Med (local)
+Commercial
+Served via GBP + this page
+3.2 Semantic/LSI Terms
+Use naturally: bulk laundry, commercial accounts, business laundry, linen service, towel service, turnover laundry, Airbnb turnover, vacation rental laundry, salon towels, gym towels, restaurant linens, volume pricing, recurring schedule, consistent turnaround, pickup and delivery, 130 lb machines, commercial-capacity, Avondale, Northwest Side Chicago, 60618.
+
+4. Complete <head> Section
+4.1 Meta Tags
+Tag
+Content
+<title>
+Commercial Laundry Service in Chicago | Spin It Up — Bulk & Pickup (59 characters)
+<meta name="description">
+Commercial laundry for Airbnb hosts, salons, gyms & restaurants in Chicago. Volume pricing, 130 lb machines, pickup & delivery. Call (773) 654-1275. (150 characters)
+<meta name="robots">
+index, follow
+<meta name="viewport">
+width=device-width, initial-scale=1
+<meta charset>
+UTF-8
+<html lang>
+en
+<link rel="canonical">
+https://spinituplaundry.net/services/commercial/
+4.2 Open Graph & Twitter
+Tag
+Content
+og:title
+Commercial Laundry Service | Spin It Up Laundry — Chicago
+og:description
+Bulk laundry for businesses. Volume pricing, 130 lb machines, scheduled pickup & delivery. Airbnb, salons, gyms, restaurants.
+og:type
+website
+og:url
+https://spinituplaundry.net/services/commercial/
+og:image
+https://spinituplaundry.net/images/og-commercial.jpg (1200x630, <200KB)
+og:locale
+en_US
+og:site_name
+Spin It Up Laundry
+twitter:card
+summary_large_image
+twitter:title
+Commercial Laundry | Spin It Up — Chicago
+twitter:description
+Bulk laundry for businesses. Volume pricing, 130 lb machines, pickup & delivery.
+twitter:image
+https://spinituplaundry.net/images/og-commercial.jpg
+4.3 JSON-LD Structured Data
+Service schema for Commercial Laundry + BreadcrumbList.
+
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Commercial Laundry Services",
+  "alternateName": "Business Laundry Service",
+  "description": "Bulk commercial laundry service for Airbnb hosts, salons, gyms, restaurants, and businesses in Chicago. Volume pricing, 130 lb commercial machines, scheduled pickup and delivery available.",
+  "url": "https://spinituplaundry.net/services/commercial/",
+  "provider": {
+    "@type": "Laundromat",
+    "name": "Spin It Up Laundry",
+    "telephone": "+1-773-654-1275",
+    "email": "info@spinituplaundry.net",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "3710 N Kimball Ave",
+      "addressLocality": "Chicago",
+      "addressRegion": "IL",
+      "postalCode": "60618"
+    }
+  },
+  "areaServed": {
+    "@type": "City",
+    "name": "Chicago",
+    "addressRegion": "IL"
+  },
+  "audience": {
+    "@type": "BusinessAudience",
+    "audienceType": "Small businesses, Airbnb hosts, salons, gyms, restaurants"
+  },
+  "serviceType": "Commercial Laundry"
+}
+
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://spinituplaundry.net/" },
+    { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://spinituplaundry.net/services/" },
+    { "@type": "ListItem", "position": 3, "name": "Commercial Services", "item": "https://spinituplaundry.net/services/commercial/" }
+  ]
+}
+
+DEV ACTION:  Validate Service + BreadcrumbList + FAQPage schemas via Google Rich Results Test.
+
+5. Section 1: Site Header & Navigation
+Global header. Solid white. “Services” nav item active. Mobile: “Services” expanded, “Commercial” highlighted.
+
+6. Section 2: Hero Banner
+Section Overview
+B2B-oriented hero with a more professional tone than the residential service pages. The hero immediately communicates that this is a business service, not consumer. Background: Spin Blue gradient.
+Content Specifications
+Breadcrumb: Home > Services > Commercial Services — standard spec. Margin-bottom 20px.
+
+H1 Headline: "Commercial Laundry Services in Chicago" — 5 words, 42 characters. Font: 40px/800 (desktop), 32px (tablet), 28px (mobile). Color: white.
+
+Subheadline: "Reliable bulk laundry for Airbnb hosts, salons, gyms, restaurants, and property managers. Volume pricing. 130 lb machines. Pickup and delivery available." — 22 words. Font: 18px/400, rgba(255,255,255,0.85). Max-width: 660px, centered.
+
+Hero CTAs: 
+Button
+Text
+Link
+Style
+Primary
+Get a Commercial Quote
+#inquiry-form (scroll to form)
+CTA Orange
+Secondary
+Call (773) 654-1275
+tel:+17736541275
+White outline
+Below buttons: "info@spinituplaundry.net" as a mailto: link in 15px/500 rgba(255,255,255,0.7).
+HTML Code
+<section class="page-hero" aria-label="Commercial Laundry Services">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <ol>
+        <li><a href="/">Home</a></li>
+        <li><a href="/services/">Services</a></li>
+        <li aria-current="page">Commercial Services</li>
+      </ol>
+    </nav>
+    <h1 class="page-hero__title">Commercial Laundry Services in Chicago</h1>
+    <p class="page-hero__subtitle">Reliable bulk laundry for Airbnb hosts, salons, gyms, restaurants, and property managers. Volume pricing. 130 lb machines. Pickup and delivery available.</p>
+    <div class="page-hero__ctas">
+      <a href="#inquiry-form" class="btn btn--primary">Get a Commercial Quote</a>
+      <a href="tel:+17736541275" class="btn btn--outline-white">Call (773) 654-1275</a>
+    </div>
+    <p class="page-hero__email">
+      <a href="mailto:info@spinituplaundry.net">info@spinituplaundry.net</a>
+    </p>
+  </div>
+</section>
+
+7. Section 3: AEO Introduction
+Content Specifications
+NEW:  AEO opening paragraph — new content.
+
+"Spin It Up Laundry provides commercial laundry services for businesses across Chicago, operating out of our facility at 3710 N Kimball Ave in Avondale. We serve Airbnb and vacation rental hosts, hair salons and barbershops, gyms and fitness studios, restaurants, small hotels, and property management companies that need reliable, high-volume laundry on a recurring schedule. Our facility includes two 130 lb commercial-capacity washing machines — the largest in the Avondale area — capable of handling bulk loads that standard laundromats cannot process. We offer volume-based pricing, consistent turnaround times, and pickup and delivery for commercial accounts." — 102 words.
+
+Font: 18px/400 Body Text. Line-height: 1.65. Max-width: 800px, centered. Background: White.
+NOTE:  This paragraph answers “commercial laundry service Chicago” and “airbnb laundry service Chicago” simultaneously. It names business types served, facility location, machine capacity advantage, and service terms. The B2B tone is more direct and specification-oriented than the residential pages.
+
+8. Section 4: Industries We Serve
+Section Overview
+Industry-specific cards showing that Spin It Up understands each business type’s unique laundry needs. This is the primary content differentiator — most competitor commercial pages are generic. Background: Ice Blue (#F0F9FF).
+Content Specifications
+H2: "Industries We Serve" — 3 words. Font: 36px/700, Dark Slate. Centered. Margin-bottom 48px.
+
+Card
+Industry
+Icon
+What We Handle
+Why It Matters
+1
+Airbnb & Vacation Rentals
+Home
+Sheets, towels, pillowcases, duvet covers, bath mats between guest turnovers
+Fast turnaround means your property is guest-ready on time. We understand back-to-back booking pressure.
+2
+Hair Salons & Barbershops
+Scissors
+Towels, capes, smocks, headrest covers
+Clean towels signal professionalism. We return salon-grade clean with consistent folding every time.
+3
+Gyms & Fitness Studios
+Dumbbell
+Towels, sweat rags, uniform shirts, yoga mats covers
+High-volume, daily need. Our 130 lb machines mean we process your entire weekly load in fewer cycles.
+4
+Restaurants & Cafes
+UtensilsCrossed
+Table linens, napkins, kitchen towels, aprons, chef coats
+Health-code clean, grease-treated, folded and ready. We handle kitchen-grade soil levels.
+5
+Small Hotels & B&Bs
+Building
+Bed linens, bath towels, pool towels, robes
+Consistent, reliable service that matches your check-in/check-out schedule.
+6
+Property Management
+Key
+Turnover cleaning linens, common area towels, maintenance uniforms
+We service multiple properties on a coordinated schedule. One point of contact for all your buildings.
+Each card: bg white, border 1px #E2E8F0, border-radius 12px, padding 28px. Icon: 40px in Spin Blue, top-left. Industry name as H3: 20px/700 Dark Slate. “What We Handle”: 15px/400 Body Text. “Why It Matters”: 15px/400 italic, Spin Blue text, separated by a thin divider. Layout: 3x2 grid (desktop), 2x3 (tablet), stacked (mobile). Card gap: 24px.
+
+9. Section 5: How Commercial Service Works
+Section Overview
+Process section tailored for B2B buyers. More formal than the residential How It Works — emphasizes consultation, custom quoting, and account setup. Background: White (#FFFFFF).
+Content Specifications
+H2: "Getting Started Is Simple" — 4 words. Font: 36px/700, Dark Slate. Centered. Margin-bottom 48px.
+
+Step
+Number
+Title
+Description
+1
+01
+Tell Us About Your Business
+Fill out the inquiry form below or call (773) 654-1275. Share your business type, estimated weekly volume, item types, and any scheduling requirements. We’ll respond within one business day.
+2
+02
+Get a Custom Quote
+We’ll put together a volume-based pricing proposal tailored to your needs. Pricing scales with volume — the more you send, the more you save compared to standard per-pound rates.
+3
+03
+Set Up Your Account
+Once you approve the quote, we set up your commercial account with your preferred schedule, pickup location, and billing method. No long-term contracts required — service continues as long as it works for you.
+4
+04
+We Handle Your Laundry
+Drop off at our facility or schedule recurring pickup and delivery. We process your laundry with the same care as every order: wash, dry, fold, bag, and return on schedule.
+Same step card layout pattern as other service pages. Title: 22px/700, description: 16px/400. Step numbers in Fresh Cyan.
+Below steps: "Most commercial accounts are set up within 48 hours of first contact." — centered, 16px/600 Fresh Cyan, with Clock icon.
+
+10. Section 6: What’s Included
+Section Overview
+Value proposition for commercial accounts. Emphasizes what’s different from standard residential service. Background: Ice Blue (#F0F9FF).
+Content Specifications
+H2: "What Every Commercial Account Includes" — 5 words. Font: 32px/700, Dark Slate. Margin-bottom 40px.
+
+Icon
+Item
+Detail
+Check
+Volume-Based Pricing
+Custom rates that scale with your weekly volume. Typical savings: 15–25% vs. standard per-pound pricing.
+Check
+Dedicated Account Contact
+One point of contact for scheduling, billing, and service questions. No phone trees, no repeating yourself.
+Check
+Consistent Turnaround
+Your laundry is returned on the schedule you set. We build your account into our production workflow.
+Check
+130 lb Machine Access
+Our commercial-capacity machines handle bulk loads in fewer cycles, reducing turnaround time on large orders.
+Check
+Pickup & Delivery Available
+We pick up and deliver on your schedule. Available for all commercial accounts within our service area.
+Check
+Stain & Grease Treatment
+Commercial-grade stain treatment included. Restaurant grease, salon dye, gym sweat — we handle it.
+Check
+Flexible Terms
+No long-term contracts. Month-to-month service. Scale up or down as your business needs change.
+Check
+Professional Invoicing
+Clean, detailed invoices sent monthly or per-service. Compatible with your bookkeeping workflow.
+Same green Check icon layout as prior What’s Included sections. Max-width 800px, centered.
+
+11. Section 7: Why Businesses Choose Us
+Section Overview
+Trust and credibility section specifically for B2B buyers. Addresses the audit’s finding that commercial credibility was undermined by Gmail email and confused branding. Background: White (#FFFFFF).
+Content Specifications
+H2: "Why Chicago Businesses Choose Spin It Up" — 7 words. Font: 32px/700, Dark Slate. Centered. Margin-bottom 40px.
+
+Icon
+Differentiator
+Description
+Maximize
+Largest Machines in the Area
+Two 130 lb commercial washers — the biggest in Avondale. We process bulk loads that competitors literally cannot fit in their machines. Fewer cycles, faster turnaround.
+Clock
+Reliable, On-Schedule Service
+Your business depends on clean linens being ready when you need them. We build your account into our daily production schedule with buffer time for same-day issues.
+ShieldCheck
+Professional Operations
+Branded business email, professional invoicing, consistent communication. We run our business the way you run yours.
+TrendingUp
+Pricing That Scales
+The more volume you bring, the better your per-pound rate. We want long-term accounts, not one-time transactions. Our pricing reflects that.
+Each item: flex row, icon 40px in Spin Blue, content right. Differentiator: 18px/700 Dark Slate. Description: 16px/400 Body Text. Items spaced 28px apart.
+
+12. Section 8: Pricing & Custom Quotes
+Section Overview
+Pricing guidance without committing to specific rates (commercial pricing is volume-negotiated). Provides enough information for the visitor to understand the value and submit an inquiry. Background: Ice Blue (#F0F9FF).
+Content Specifications
+H2: "Commercial Pricing" — 2 words. Font: 36px/700, Dark Slate. Margin-bottom 16px.
+Intro: "Every commercial account gets custom pricing based on volume, item types, and schedule. Here’s how it generally works:" — 18 words. 17px/400 Body Text. Margin-bottom 32px.
+
+Volume Tier
+Estimated Savings
+Details
+Under 50 lb/week
+Standard rates apply
+Same pricing as our residential wash-and-fold service ($1.50–$1.75/lb). Good for Airbnb hosts with 1–2 properties.
+50–150 lb/week
+10–15% below standard
+Custom per-pound rate. Typical for salons, small restaurants, hosts with 3–5 properties.
+150–500 lb/week
+15–25% below standard
+Significant volume discount. Dedicated processing slot. Typical for gyms, larger restaurants, property managers.
+500+ lb/week
+25%+ below standard
+Best available rates. Priority scheduling. Dedicated account manager. Typical for hotels, multi-unit property managers.
+NOTE:  These tiers are directional for the website visitor. Actual pricing is confirmed during the consultation and may vary based on item type (linens vs. towels vs. uniforms), turnaround requirements, and pickup frequency. Client should confirm these ranges before publication.
+Below table: 
+"Ready for a quote? Fill out the form below or call (773) 654-1275. We’ll respond within one business day." — centered, with phone as tel: link and “form below” as anchor link to #inquiry-form. Font: 17px/600, Spin Blue.
+
+13. Section 9: Commercial Inquiry Form
+Section Overview
+Dedicated commercial inquiry form — more detailed than the generic contact form because it collects the information needed to prepare a custom quote. This section carries the id="inquiry-form" anchor. Background: White (#FFFFFF).
+Layout Specifications
+Property
+Desktop
+Tablet
+Mobile
+Layout
+Two columns: form left (55%), trust panel right (45%)
+Stacked: trust panel top, form below
+Stacked
+Section Padding
+80px 0
+64px 0
+48px 16px
+Form Max Width
+560px
+100%
+100%
+Form Fields
+Field
+Type
+Required
+Validation
+Notes
+Business Name
+text
+Yes
+Min 2 chars
+autocomplete="organization"
+Contact Name
+text
+Yes
+Min 2 chars
+autocomplete="name"
+Email
+email
+Yes
+RFC 5322
+autocomplete="email"
+Phone
+tel
+Yes
+US format
+autocomplete="tel", inputmode="tel"
+Business Type
+select
+Yes
+—
+Options: Airbnb / Vacation Rental, Salon / Barbershop, Gym / Fitness, Restaurant / Cafe, Hotel / B&B, Property Management, Other
+Estimated Weekly Volume
+select
+No
+—
+Options: Under 50 lb, 50–150 lb, 150–500 lb, 500+ lb, Not Sure
+Pickup & Delivery Needed?
+radio
+No
+—
+Options: Yes — we need pickup, No — we’ll drop off, Not sure yet
+Additional Details
+textarea
+No
+Max 1000 chars
+Placeholder: “Tell us about your laundry needs, schedule preferences, or any questions...”
+Submit Button: "Request a Commercial Quote" — CTA Orange, full-width within form column. Font: 16px/600.
+
+Trust Panel (Right Column)
+Vertical stack of trust elements displayed alongside the form:
+"We’ll respond within 1 business day" — with Clock icon, 16px/600 Dark Slate.
+"No long-term contracts required" — with FileCheck icon.
+"130 lb commercial machines" — with Maximize icon.
+"Pickup & delivery available" — with Truck icon.
+"Or call: (773) 654-1275" — tel: link, with Phone icon, 18px/700 Spin Blue.
+"Or email: info@spinituplaundry.net" — mailto: link, 16px/500 Spin Blue.
+Form Submission Handling
+Submission endpoint: same backend as the /contact/ form, but with a “commercial” flag for routing.
+Email routing: submissions go to info@spinituplaundry.net with subject line “Commercial Inquiry: [Business Name]”.
+Auto-response: branded email confirming receipt, stating “we’ll respond within 1 business day,” and including the phone number for urgent needs.
+GA4 event: form_submit with parameters request_type: commercial, business_type: [selected type].
+On-page confirmation: success message replaces form (no redirect). “Thank you, [Contact Name]. We’ve received your commercial inquiry and will contact you within one business day.”
+Spam prevention: honeypot field + reCAPTCHA v3.
+DEV ACTION:  The form carries id="inquiry-form" for the hero CTA scroll anchor. Ensure smooth scroll behavior. On mobile, the trust panel displays above the form (not below) so trust signals are visible before the user starts filling out fields.
+
+14. Section 10: Related Services
+Content Specifications
+H2: "Also Available for Your Business" — 5 words. Centered. Font: 32px/700. Margin-bottom 40px.
+
+Card
+Title
+One-Liner
+CTA
+Link
+1
+Pickup & Delivery
+Scheduled door-to-door service for commercial accounts. Order via app or phone.
+Schedule Pickup →
+/services/pickup-delivery/
+2
+Ironing & Pressing
+Professional pressing for uniforms, dress shirts, and linens. Combine with bulk wash.
+View Pressing →
+/services/ironing-pressing/
+3
+Self-Service (Large Loads)
+Need to process a one-time large load yourself? Our 130 lb machines are available.
+View Self-Service →
+/services/self-service/
+Same compact card spec. Background: Ice Blue (#F0F9FF).
+
+15. Section 11: FAQ Section
+Section Overview
+Commercial-specific FAQ. Addresses B2B concerns: contracts, billing, volume thresholds, turnaround guarantees, and insurance. FAQPage schema required. Background: White (#FFFFFF).
+Content Specifications
+H2: "Commercial Laundry FAQ" — 3 words. Centered. Font: 32px/700. Margin-bottom 40px.
+
+#
+Question
+Answer
+1
+Is there a minimum volume for commercial accounts?
+There is no strict minimum, but volume-based pricing discounts begin at approximately 50 lb per week. Orders below that threshold are processed at our standard wash-and-fold rates ($1.50–$1.75/lb), which are still competitive for small businesses.
+2
+Do I need to sign a contract?
+No. All commercial accounts operate on a month-to-month basis. There are no long-term contracts, cancellation fees, or setup charges. Service continues for as long as it works for your business.
+3
+How fast is turnaround for commercial orders?
+Standard commercial turnaround is 24 hours from drop-off or pickup. For accounts on a recurring schedule, we build your laundry into our daily production workflow so it is ready at the same time each cycle. Rush turnaround is available by arrangement.
+4
+Do you pick up and deliver for commercial accounts?
+Yes. Pickup and delivery is available for all commercial accounts within our service area (Avondale, Irving Park, Logan Square, Hermosa, Albany Park). We can arrange scheduled recurring pickups or on-demand pickups based on your needs.
+5
+How do you handle stains and heavily soiled items?
+We pre-treat all visible stains before washing using commercial-grade stain removers. For restaurant accounts, we use high-temperature wash cycles and grease-cutting detergents. If an item cannot be fully cleaned, we will notify you before returning it.
+6
+How does billing work?
+Commercial accounts receive monthly invoices based on actual volume processed. Invoices include itemized details by date and weight. Payment is accepted via credit card, ACH transfer, or check. We can accommodate your preferred billing format.
+7
+Can you match my Airbnb check-in schedule?
+Yes. Many of our Airbnb host clients have back-to-back bookings with tight turnover windows. We prioritize turnover loads and can offer expedited turnaround for linen sets that need to be guest-ready by a specific time. Contact us to discuss your booking schedule.
+DEV ACTION:  Implement FAQPage JSON-LD schema. Seven Q&A pairs. Validate via Google Rich Results Test.
+Same accordion design spec. Max-width 800px, centered.
+Below FAQ: "View All FAQs" link to /faq/.
+
+16. Section 12: Final CTA Block
+Content Specifications
+H2: "Let’s Talk About Your Business’s Laundry" — 7 words. White. Centered. Font: 36px/700.
+Subtitle: "Custom pricing. No contracts. Pickup and delivery available. We’ll have a quote to you within one business day." — 17 words. 18px/400 rgba(255,255,255,0.85).
+
+Button
+Text
+Link
+Style
+1
+Get a Commercial Quote
+#inquiry-form (scroll to form)
+CTA Orange
+2
+Call (773) 654-1275
+tel:+17736541275
+White outline
+3
+Email Us
+mailto:info@spinituplaundry.net
+Ghost white
+Background: Spin Blue gradient. Section padding: 80px 0 desktop, 48px 16px mobile.
+
+17. Section 13: Footer & Sticky Mobile CTA
+Global footer: no modifications.
+
+Sticky Mobile CTA Bar: override for this page:
+Button
+Text
+Link
+Style
+1
+Call Now
+tel:+17736541275
+CTA Orange
+2
+Get a Quote
+#inquiry-form
+Spin Blue
+The secondary button scrolls to the inquiry form rather than linking to the Cents app, since this page’s conversion target is a commercial inquiry, not a residential pickup order.
+
+18. Reference: Image Asset Inventory
+Image ID
+Section
+Dimensions
+Format
+Max Size
+Alt Text
+Loading
+og-commercial
+Social share
+1200x630
+JPEG
+<200KB
+Commercial laundry service at Spin It Up Laundry
+N/A (meta)
+commercial-machines
+Why Choose
+600x400
+WebP+JPEG
+<100KB
+130 lb commercial washing machines at Spin It Up Laundry
+lazy
+folded-linens
+Industries
+600x400
+WebP+JPEG
+<100KB
+Professionally folded commercial linens
+lazy
+logo-light
+Header/Footer
+SVG
+SVG
+<10KB
+Spin It Up Laundry logo
+inline
+NOTE:  Commercial-specific photos (folded linens, bulk loads, 130 lb machines in use) would significantly strengthen this page. If professional photos aren’t available at launch, use the best machine photos from the facility and schedule a commercial-focused photo session for Phase 2.
+
+19. Reference: GA4 Event Tracking
+Event Name
+Trigger
+Parameters
+Section
+form_submit
+Submit commercial inquiry form
+request_type: commercial, business_type, volume_tier
+Inquiry Form
+form_start
+First field interaction on inquiry form
+form_type: commercial
+Inquiry Form
+phone_click
+Click any tel: link
+phone_number, page_section
+Global
+email_click
+Click mailto: link
+email_address, page_section
+Hero, Trust Panel, CTA Block
+cta_click
+Click any CTA button
+button_text, destination_url, page_section
+All
+faq_expand
+Expand FAQ accordion
+question_text
+FAQ
+related_service_click
+Click related service card
+service_name, destination_url
+Related Services
+form_scroll
+Scroll to #inquiry-form via CTA
+source: hero_cta / cta_block / sticky_bar
+Various
+
+20. Reference: Implementation Checklist
+Pre-Development
+Confirm Google Workspace email is live (info@spinituplaundry.net)
+Confirm commercial pricing tiers with client
+Confirm form submission endpoint and email routing
+Confirm auto-response email template
+Technical Validation
+HTML validates
+All JSON-LD validates: Service + BreadcrumbList + FAQPage
+HTTPS enforced, no mixed content
+Mobile PageSpeed >90, Desktop >95
+All links return 200
+tel: and mailto: links functional
+#inquiry-form anchor scrolls correctly from hero and CTA block
+OG tags render correctly
+Form submission delivers to correct email with correct subject line
+Auto-response email sends on submission
+Content & SEO
+All copy matches this guide
+Title tag within 60 characters
+Meta description within 155 characters
+Single H1 with “commercial laundry” + “Chicago”
+AEO paragraph within first 110 words
+Breadcrumb: Home > Services > Commercial Services
+Canonical URL correct
+All industry cards render correctly (6 cards, 3x2 grid)
+XML sitemap includes at priority 0.8
+Accessibility & Forms
+Skip-to-content link present
+All form fields have associated <label> elements
+Form error messages: specific, below errored field
+Form keyboard-navigable (Tab between fields, Enter to submit)
+Color contrast WCAG 2.1 AA
+FAQ accordion keyboard-operable
+ARIA landmarks: banner, navigation, main, contentinfo
+Analytics
+form_submit event fires with request_type: commercial
+form_start event fires on first field interaction
+phone_click and email_click confirmed
+form_scroll event fires from hero CTA and sticky bar
+
+
+End of Document
+TradeWorks AI — Spin It Up Laundry Commercial Services Developer Guide v1.0
+Prepared by TradeWorks AI — May 2026

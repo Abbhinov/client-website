@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <!-- English -->
+  <url><loc>https://spinituplaundry.net/</loc><priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://spinituplaundry.net/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://spinituplaundry.net/es/"/>
+  </url>
+  <url><loc>https://spinituplaundry.net/services/</loc><priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://spinituplaundry.net/es/servicios/"/>
+  </url>
+  <url><loc>https://spinituplaundry.net/services/self-service/</loc><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://spinituplaundry.net/es/servicios/autoservicio/"/>
+  </url>
+  <url><loc>https://spinituplaundry.net/services/wash-and-fold/</loc><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://spinituplaundry.net/es/servicios/lavado-y-doblado/"/>
+  </url>
+  <url><loc>https://spinituplaundry.net/services/pickup-delivery/</loc><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://spinituplaundry.net/es/servicios/recogida-y-entrega/"/>
+  </url>
+  <url><loc>https://spinituplaundry.net/services/commercial/</loc><priority>0.8</priority></url>
+  <url><loc>https://spinituplaundry.net/services/ironing-pressing/</loc><priority>0.7</priority></url>
+  <url><loc>https://spinituplaundry.net/pricing/</loc><priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://spinituplaundry.net/es/precios/"/>
+  </url>
+  <url><loc>https://spinituplaundry.net/areas/</loc><priority>0.8</priority></url>
+  <url><loc>https://spinituplaundry.net/areas/avondale/</loc><priority>0.7</priority></url>
+  <url><loc>https://spinituplaundry.net/areas/irving-park/</loc><priority>0.7</priority></url>
+  <url><loc>https://spinituplaundry.net/areas/logan-square/</loc><priority>0.7</priority></url>
+  <url><loc>https://spinituplaundry.net/areas/hermosa/</loc><priority>0.7</priority></url>
+  <url><loc>https://spinituplaundry.net/areas/albany-park/</loc><priority>0.7</priority></url>
+  <url><loc>https://spinituplaundry.net/resources/</loc><priority>0.6</priority></url>
+  <url><loc>https://spinituplaundry.net/resources/how-to-use-cents-app/</loc><priority>0.6</priority></url>
+  <url><loc>https://spinituplaundry.net/resources/laundry-tips-chicago-winter/</loc><priority>0.5</priority></url>
+  <url><loc>https://spinituplaundry.net/resources/how-to-wash-a-comforter/</loc><priority>0.5</priority></url>
+  <url><loc>https://spinituplaundry.net/resources/airbnb-laundry-guide-chicago/</loc><priority>0.5</priority></url>
+  <url><loc>https://spinituplaundry.net/resources/ebt-laundry-assistance/</loc><priority>0.5</priority></url>
+  <url><loc>https://spinituplaundry.net/contact/</loc><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://spinituplaundry.net/es/contacto/"/>
+  </url>
+  <url><loc>https://spinituplaundry.net/faq/</loc><priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://spinituplaundry.net/es/preguntas-frecuentes/"/>
+  </url>
+  <url><loc>https://spinituplaundry.net/about/</loc><priority>0.6</priority></url>
+  <url><loc>https://spinituplaundry.net/privacy-policy/</loc><priority>0.3</priority></url>
+  <url><loc>https://spinituplaundry.net/terms-of-service/</loc><priority>0.3</priority></url>
+  <url><loc>https://spinituplaundry.net/accessibility/</loc><priority>0.3</priority></url>
+  <!-- Spanish -->
+  <url><loc>https://spinituplaundry.net/es/</loc><priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://spinituplaundry.net/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://spinituplaundry.net/es/"/>
+  </url>
+  <url><loc>https://spinituplaundry.net/es/servicios/</loc><priority>0.9</priority></url>
+  <url><loc>https://spinituplaundry.net/es/servicios/autoservicio/</loc><priority>0.8</priority></url>
+  <url><loc>https://spinituplaundry.net/es/servicios/lavado-y-doblado/</loc><priority>0.8</priority></url>
+  <url><loc>https://spinituplaundry.net/es/servicios/recogida-y-entrega/</loc><priority>0.8</priority></url>
+  <url><loc>https://spinituplaundry.net/es/precios/</loc><priority>0.9</priority></url>
+  <url><loc>https://spinituplaundry.net/es/contacto/</loc><priority>0.8</priority></url>
+  <url><loc>https://spinituplaundry.net/es/preguntas-frecuentes/</loc><priority>0.7</priority></url>
+</urlset>

@@ -1,0 +1,67 @@
+/* =================================================================
+   SPIN IT UP — Service pages SKIN (minimal / modern, calm color)
+   Page-scoped under .wf-skin (added to <main> on service pages).
+   Restyles existing components only — no markup/content changes —
+   and leaves the shared global main.css untouched. Hero is excluded
+   (button tweaks are scoped to .section, which the .page-hero is not).
+   Linked only on the service pages, so other pages are unaffected.
+   ================================================================= */
+.wf-skin{ --wf-edge:#BFD6EE; --wf-line:#9FC1E4; --wf-soft:#EAF3FC; --wf-tint:#DCEBF9; --wf-accent:var(--spin-blue); --wf-cyan:var(--fresh-cyan); }
+
+/* --- Rhythm: more breathing room, soft blue alternating tint --- */
+.wf-skin .section{ padding:clamp(56px,8vw,112px) 0; }
+.wf-skin .section--alt{ background:var(--wf-soft); }
+/* Hairline accent under section headings */
+.wf-skin .section__head h2{ display:inline-block; padding-bottom:var(--space-3); border-bottom:3px solid var(--wf-cyan); }
+
+/* --- Section headings: tighter, more confident --- */
+.wf-skin .section__head{ margin-bottom:clamp(32px,5vw,56px); }
+.wf-skin .section h2{ letter-spacing:-0.02em; }
+.wf-skin .section h3{ letter-spacing:-0.01em; }
+.wf-skin .section__subtext{ color:var(--caption-gray); }
+
+/* --- Steps: drop the boxes, go type-led with a colored top rule --- */
+.wf-skin .steps{ gap:clamp(24px,4vw,48px); }
+.wf-skin .step{ background:transparent; border:0; border-top:4px solid var(--wf-cyan); border-radius:0; padding:var(--space-6) 0 0; }
+.wf-skin .step__num{ font-size:40px; font-weight:800; color:var(--wf-cyan); letter-spacing:-0.03em; margin-bottom:var(--space-4); }
+.wf-skin .step__title{ font-size:1.1875rem; }
+
+/* --- Media split: softer corners with a defined edge --- */
+.wf-skin .media-split img{ border-radius:16px; border:1.5px solid var(--wf-edge); }
+
+/* --- Icon lists: a touch more air --- */
+.wf-skin .icon-list{ gap:var(--space-4); }
+
+/* --- Note / info callouts: soft tint with a visible colored edge --- */
+.wf-skin .note-box{ background:var(--wf-tint); border:1.5px solid var(--wf-edge); border-left:5px solid var(--wf-cyan); border-radius:12px; padding:var(--space-6); }
+.wf-skin .info-box{ border:1.5px solid var(--wf-edge); border-radius:14px; background:var(--wf-tint); }
+.wf-skin .info-box svg{ color:var(--wf-cyan); }
+
+/* --- Price tables: tinted header, visible hairline rows, roomy cells --- */
+.wf-skin .price-table{ margin:var(--space-8) 0; }
+@media (min-width:768px){
+  .wf-skin .price-table thead th{ background:var(--wf-tint); color:var(--spin-blue); font-weight:700; font-size:12px; text-transform:uppercase; letter-spacing:.08em; border-bottom:1px solid var(--wf-edge); }
+  .wf-skin .price-table thead th:first-child{ border-radius:10px 0 0 0; }
+  .wf-skin .price-table thead th:last-child{ border-radius:0 10px 0 0; }
+  .wf-skin .price-table th, .wf-skin .price-table td{ padding:16px 18px; border-bottom:1px solid var(--wf-edge); }
+  .wf-skin .price-table tbody tr:hover{ background:var(--wf-soft); }
+  .wf-skin .price-table tbody tr:last-child td{ border-bottom:0; }
+}
+
+/* --- Cards: soft tint, visible border, quiet cyan hover --- */
+.wf-skin .card{ background:var(--wf-soft); border:1.5px solid var(--wf-edge); border-radius:16px; box-shadow:none; padding:clamp(24px,3vw,32px); transition:border-color 200ms ease, transform 200ms ease, box-shadow 200ms ease; }
+.wf-skin .service-card:hover{ transform:translateY(-3px); border-color:var(--wf-cyan); box-shadow:0 6px 18px rgba(30,64,175,0.10); }
+.wf-skin .card__title{ letter-spacing:-0.01em; }
+
+/* --- FAQ: visible hairline rows (accordion JS/mechanism unchanged) --- */
+.wf-skin .faq__item:first-child{ border-top:1px solid var(--wf-edge); }
+.wf-skin .faq__item{ border-bottom:1px solid var(--wf-edge); }
+.wf-skin .faq__q{ padding:22px 0; font-size:1.0625rem; }
+
+/* --- Final CTA: soft on-brand blue gradient anchors the page --- */
+.wf-skin .band-blue{ background:linear-gradient(135deg, var(--spin-blue) 0%, #2563EB 55%, var(--fresh-cyan) 140%); }
+
+/* --- Buttons in content sections: flat & modern (hero untouched) --- */
+.wf-skin .section .btn{ border-radius:10px; }
+.wf-skin .section .btn--primary{ box-shadow:none; }
+.wf-skin .section .btn--primary:hover{ box-shadow:none; }

@@ -1,0 +1,538 @@
+﻿
+
+ 
+
+ROOF SOFT WASHING DEVELOPER GUIDE
+
+Roof Soft Washing
+
+
+ 
+
+Section-by-Section Implementation Specifications
+
+Clean Slate Pressure Washing
+
+A Fresh Start for Every Surface
+
+Brandon, Florida  |  Hillsborough County
+
+cleanslatepw.com
+
+Prepared by TradeWorks AI
+
+Version 1.0  |  April 2026
+
+Client Confidential
+
+
+
+
+
+
+
+
+Table of Contents
+
+
+
+OVERVIEW
+
+1.  How to Use This Guide
+
+2.  Page Identity &amp; Architecture
+
+3.  Complete &lt;head&gt; Section
+
+
+
+PAGE SECTIONS
+
+4.  Breadcrumb
+
+5.  Hero Section
+
+6.  AEO Introduction Paragraph
+
+7.  The Problem — What Homeowners Experience
+
+8.  Our Process (5 Steps)
+
+9.  Why Choose Clean Slate PW
+
+10.  Before &amp; After Examples
+
+11.  Related Services
+
+12.  Service Areas Callout
+
+13.  FAQ Section
+
+14.  Final CTA Block
+
+15.  Footer
+
+
+
+REFERENCE
+
+16.  Image Specs
+
+17.  GA4 Events
+
+18.  Implementation Checklist
+
+
+
+Section 1: How to Use This Guide
+
+This guide provides everything needed to build the Roof Soft Washing service page (/services/roof-cleaning/) from scratch. This is a child page in the Services silo, sitting under the Services Hub (/services/). Content here goes deep on this single service — 1,500–2,500 words of production-ready copy with exact specifications for every section.
+
+Content differentiation: The homepage introduces this service in ~15 words. The services hub expands to ~60 words. This page delivers the full depth — methodology, process steps, FAQ, and service-specific trust signals.
+
+
+
+Section 2: Page Identity &amp; Architecture
+
+Attribute
+
+Value
+
+URL Path
+
+/services/roof-cleaning/
+
+Canonical URL
+
+https://cleanslatepw.com/services/roof-cleaning/
+
+Page Type
+
+Service Child Page
+
+Parent
+
+/services/ (Services Hub)
+
+Breadcrumb
+
+Home › Services › Roof Soft Washing
+
+Primary Keyword
+
+Roof cleaning Brandon FL
+
+Secondary Keywords
+
+roof soft wash Tampa, roof algae removal Florida, black streak removal roof, shingle cleaning Brandon, tile roof cleaning Riverview
+
+Search Intent
+
+Commercial / Transactional
+
+Target Word Count
+
+1,500–2,500 words
+
+Primary Conversion Goal
+
+Free Estimate form submission OR phone call
+
+Content Update Frequency
+
+Evergreen with annual review
+
+
+
+
+2.2 Related Service Links (Siblings)
+
+
+House Soft Washing: /services/house-washing/ — linked in Related Services section and inline where natural.
+
+
+Gutter Cleaning: /services/gutter-cleaning/ — linked in Related Services section and inline where natural.
+
+
+Soft Washing Methods: /services/soft-washing/ — linked in Related Services section and inline where natural.
+
+
+
+Section 3: Complete &lt;head&gt; Section
+
+Tag
+
+Value
+
+&lt;title&gt;
+
+Roof Cleaning Brandon FL | Soft Wash Algae Removal | Clean Slate PW
+
+&lt;meta description&gt;
+
+Safe roof soft washing in Brandon, FL. Removes Gloeocapsa magma algae, black streaks, and mildew from shingle, tile, and metal roofs. Warranty-safe. Free estimates — call (813) 555-0283.
+
+&lt;link rel=canonical&gt;
+
+https://cleanslatepw.com/services/roof-cleaning/
+
+&lt;meta name=robots&gt;
+
+index, follow
+
+og:title
+
+Roof Cleaning Brandon FL | Soft Wash Algae Removal | Clean Slate PW
+
+og:description
+
+Safe roof soft washing in Brandon, FL. Removes Gloeocapsa magma algae, black streaks, and mildew from shingle, tile, and metal roofs. Warranty-safe. F
+
+og:image
+
+https://cleanslatepw.com/images/og-roof-cleaning-1200x630.jpg
+
+og:url
+
+https://cleanslatepw.com/services/roof-cleaning/
+
+
+
+
+3.2 JSON-LD
+
+Deploy Service schema with @type &quot;Service&quot;, serviceType &quot;Roof Soft Washing&quot;, provider referencing LocalBusiness @id. Deploy BreadcrumbList (3 items: Home → Services → Roof Soft Washing). Deploy FAQPage mirroring the 5 Q&amp;As in Section 13.
+
+
+
+Section 4: Breadcrumb
+
+Display: Home › Services › Roof Soft Washing. &quot;Home&quot; links to /. &quot;Services&quot; links to /services/. &quot;Roof Soft Washing&quot; is current page (unlinked). Font 14px, #6C757D for links, #2B2B2B for current.
+
+
+
+Section 5: Hero Section
+
+Property
+
+Value
+
+Min Height
+
+380px desktop / 320px tablet / 280px mobile
+
+Background
+
+Service-specific hero image with navy gradient overlay
+
+Content
+
+Left-aligned on desktop, centered on mobile
+
+Padding
+
+72px top/bottom desktop, 48px mobile
+
+
+5.1 H1
+
+Safe Roof Soft Washing — Algae &amp; Black Streak Removal in Brandon
+
+44px desktop / 36px tablet / 28px mobile. Weight 700. White.
+
+
+5.2 Hero Image
+
+Alt text: Roof soft washing in progress on an asphalt shingle roof in Brandon, Florida showing before and after contrast
+
+1920×800 WebP, under 150KB. Preloaded for LCP.
+
+
+5.3 Hero CTA
+
+&apos;Get a Free Roof Soft Washing Estimate&apos; → /free-estimate/?service=roof-cleaning. Orange button. GA4: cta_click (location: roof-cleaning_hero).
+
+
+
+Section 6: AEO Introduction Paragraph
+
+Direct-answer paragraph targeting the page&apos;s primary query. Centered max-width 880px. No images, no CTAs.
+
+
+6.1 H2
+
+Safe Roof Soft Washing in Brandon, FL
+
+
+6.2 AEO Body — Exact Copy
+
+Clean Slate Pressure Washing provides professional roof soft washing services for residential and commercial properties throughout Brandon, Riverview, Valrico, and the Tampa Bay region. Roof soft washing is the only manufacturer-approved method for cleaning asphalt shingle roofs without voiding the warranty — GAF, CertainTeed, Owens Corning, and Atlas all require low-pressure cleaning at under 100 PSI. The dark black streaks visible on most Florida roofs are caused by Gloeocapsa magma, a photosynthetic cyanobacteria that feeds on the limestone filler in asphalt shingles and spreads across the roof surface via airborne spores. Our soft wash treatment kills this organism at the root using sodium hypochlorite-based solutions applied at extremely low pressure, then rinsed gently to reveal the original shingle color underneath. Results are visible within 24 hours and last 2–3 years.
+
+
+
+Section 7: The Problem — What Homeowners Experience
+
+This section empathizes with the customer&apos;s situation before presenting the solution. It describes in specific, relatable terms what the homeowner is seeing on their property and why it is happening — framed through Florida&apos;s climate and the specific surface type this service addresses. This section should be 150–200 words of original content describing the symptoms, causes, and consequences of not addressing the problem.
+
+[Content to be written fresh for each service page during implementation — not templated. The developer guide provides the structural framework; the content writer fills this section with service-specific problem-state copy that connects emotionally with the homeowner&apos;s frustration.]
+
+
+
+Section 8: Our Process (5 Steps)
+
+Numbered 5-step process showing exactly how the roof soft washing service is performed. Each step has a bold heading and 1–2 sentence description. This section builds trust through transparency — homeowners want to know what will happen on their property before they commit.
+
+
+8.1 Process Steps
+
+Step 1 — Roof inspection: We assess the roof type (asphalt shingle, concrete tile, barrel tile, metal), algae severity, and any pre-existing damage. We photograph problem areas for before-and-after documentation.
+
+Step 2 — Landscaping protection: All plants, shrubs, and grass below the roofline are pre-rinsed and covered as needed. Gutters are checked to ensure proper drainage of the rinse water.
+
+Step 3 — Soft wash application: Our proprietary cleaning solution is applied from ridge to eave using calibrated low-pressure spray equipment operating at under 100 PSI. Solution dwell time is 15–20 minutes.
+
+Step 4 — Gentle rinse: The roof is rinsed with low-pressure water to remove the solution and loosened organic material. No high-pressure wands, no walking on shingles, no surface agitation.
+
+Step 5 — Post-treatment landscaping rinse: All adjacent landscaping receives a thorough fresh-water rinse. Downspouts are checked for proper flow.
+
+
+
+Section 9: Why Choose Clean Slate PW
+
+Four compact trust differentiators. Same component pattern as services hub Section 10 — 48px orange icon, H3, 2-line description. Differentiators are: Method-Matched Cleaning, Licensed &amp; Insured, 24-Hour Estimates, Satisfaction Guaranteed. Refer to Services Hub Guide Section 10 for exact copy and design specs.
+
+
+
+Section 10: Before &amp; After Examples
+
+Two before/after slider pairs specific to this service type. Same interactive slider component as homepage Section 11. Each slider shows a real project photo pair with caption including city and property type.
+
+Alt text format: &quot;Before/After: roof soft washing on a [property type] in [city], FL&quot;.
+
+Images: 1080×720 WebP, under 120KB each. loading=&apos;lazy&apos;.
+
+
+
+Section 11: Related Services
+
+Three sibling service cards in a horizontal row linking to the most relevant cross-sell services. Same card component as services hub — image, H3, 2-line description, &apos;Learn More →&apos; link.
+
+
+11.1 Related Services for This Page
+
+
+House Soft Washing → /services/house-washing/
+
+
+Gutter Cleaning → /services/gutter-cleaning/
+
+
+Soft Washing Methods → /services/soft-washing/
+
+
+
+Section 12: Service Areas Callout
+
+Same compact block as services hub Section 11. Background #E8EEF2. Lists 10 service cities as inline links. Links to /service-areas/. Refer to Services Hub Guide for exact specs.
+
+
+
+Section 13: FAQ Section
+
+Five questions specific to roof soft washing. These must match the FAQPage JSON-LD schema exactly.
+
+
+Q: What are the black streaks on my roof?
+
+Those dark streaks are Gloeocapsa magma — a cyanobacteria (blue-green algae) that feeds on the limestone filler in asphalt shingles. It is not dirt, mold, or tree sap. Gloeocapsa spreads via airborne spores, which is why neighboring roofs often develop streaks around the same time. It does not physically damage shingles immediately, but over years it accelerates granule loss and reduces roof reflectivity, increasing cooling costs.
+
+
+Q: Will roof cleaning void my shingle warranty?
+
+Our soft wash method will not void your warranty — in fact, high-pressure washing is what voids most shingle warranties. GAF, CertainTeed, Owens Corning, and Atlas all explicitly require that roofs be cleaned using low-pressure methods only. Our process stays under 100 PSI, well within every major manufacturer&apos;s guidelines.
+
+
+Q: How often should I clean my roof in Florida?
+
+Most Florida roofs benefit from soft washing every 2–3 years. Roofs with heavy tree coverage, north-facing slopes, or proximity to lakes and ponds may need cleaning every 18–24 months. Our treatment includes growth-inhibiting agents that slow algae return.
+
+
+Q: Can you clean tile roofs?
+
+Yes. We clean concrete tile, barrel tile (S-tile), and flat tile roofs using the same soft wash process. Tile roofs require slightly longer dwell times and more solution but respond excellently to soft washing. We never use high-pressure or mechanical scrubbing on tile roofs.
+
+
+Q: How long does a roof cleaning take?
+
+Most residential roof cleanings take 2–4 hours depending on roof size, pitch, and algae severity. The visual improvement continues for 24–48 hours after cleaning as the remaining dead algae washes away with natural rainfall.
+
+
+
+Section 14: Final CTA Block
+
+Same pattern as services hub and homepage — full-width navy background, centered content, dual CTAs.
+
+H2: Get a Free Roof Soft Washing Estimate Today.
+
+Primary: &apos;Get My Free Estimate&apos; → /free-estimate/?service=roof-cleaning
+
+Secondary: &apos;Call (813) 555-0283&apos; → tel:+18135550283
+
+
+
+Section 15: Footer
+
+Shared component — identical to all pages. Refer to Homepage Guide Section 18.
+
+
+
+Section 16: Image Specifications
+
+#
+
+Asset
+
+Dimensions
+
+Alt Text
+
+1
+
+Hero background
+
+1920×800 WebP
+
+Roof soft washing in progress on an asphalt shingle roof in Brandon, Florida showing before and after contrast
+
+2-3
+
+Before/After pairs (2)
+
+1080×720 WebP ×2 each
+
+Before/After: roof soft washing on a Florida home
+
+4-6
+
+Related service cards (3)
+
+800×533 WebP (3:2)
+
+Per sibling service image
+
+7
+
+OG image
+
+1200×630 JPG
+
+Roof Soft Washing — Clean Slate Pressure Washing
+
+
+
+Section 17: GA4 Event Tracking
+
+Event
+
+Trigger
+
+Parameters
+
+Type
+
+page_view
+
+Load (auto)
+
+page_location
+
+Standard
+
+cta_click
+
+Any CTA
+
+cta_label, cta_location
+
+Engagement
+
+phone_click
+
+tel: link
+
+phone_number
+
+Conversion
+
+faq_expand
+
+FAQ open
+
+question_text, index
+
+Engagement
+
+before_after_interact
+
+Slider drag
+
+project_name
+
+Engagement
+
+related_service_click
+
+Sibling card click
+
+service_name, service_url
+
+Engagement
+
+
+
+Section 18: Implementation Checklist
+
+
+H1 matches: &quot;Safe Roof Soft Washing — Algae &amp; Black Streak Removal in Brandon&quot;
+
+
+AEO body paragraph matches word-for-word.
+
+
+All 5 process steps match exact copy.
+
+
+All 5 FAQ answers match and are mirrored in FAQPage schema.
+
+
+Phone (813) 555-0283 is working tel: link.
+
+
+Canonical points to https://cleanslatepw.com/services/roof-cleaning/
+
+
+Breadcrumb displays: Home › Services › Roof Soft Washing
+
+
+OG image renders correctly on share preview.
+
+
+Hero preloaded. Below-fold images lazy-loaded.
+
+
+PageSpeed mobile &gt;85, desktop &gt;95.
+
+
+Schema validates at validator.schema.org.
+
+
+All 3 related service URLs resolve.
+
+
+
+— End of Roof Soft Washing Developer Guide —
+
+Clean Slate Pressure Washing — Roof Soft Washing Guide v1.0 | Prepared by TradeWorks AI | April 2026
+
+
+

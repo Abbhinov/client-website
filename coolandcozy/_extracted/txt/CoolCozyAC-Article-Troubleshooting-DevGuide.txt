@@ -1,0 +1,135 @@
+﻿
+DEVELOPER IMPLEMENTATION GUIDE
+
+COOL & COZY AC REPAIR
+Licensed HVAC Contractor  ·  Jacksonville, Florida
+
+RESOURCE ARTICLE
+AC Not Cooling? 7 Things to Check Before You Call
+
+URL: coolcozyac.com/resources/ac-not-cooling-troubleshooting
+Prepared by: TradeWorks AI  |  Version 1.0  |  May 2026
+
+1. Page Identity
+URL: /resources/ac-not-cooling-troubleshooting
+Primary Keyword: AC not cooling troubleshooting
+Secondary: AC not blowing cold air, why is my AC not cooling, AC running but not cooling Jacksonville
+Intent: Informational / Emergency-adjacent (visitor has an active problem)
+Word Count: 1,400–1,800 words
+Conversion: Phone call for professional diagnosis
+Sitemap: Priority 0.6
+
+1.1 Internal Linking
+TO /services/ac-repair: “if these steps don’t fix it” CTA (at least 2x)
+TO /services/emergency-ac-repair: emergency-specific cross-link for dangerous heat
+TO /resources/ac-repair-cost-jacksonville: “what a professional repair costs”
+TO /services/ac-maintenance: “prevent this from happening” cross-link
+
+2. <head> Section
+Title: AC Not Cooling? 7 Things to Check Before Calling a Technician | Jacksonville
+Meta Desc: Your Jacksonville AC stopped cooling. Before you call, check these 7 things — some are free fixes you can do right now. If none work, call (904) 555-0199.
+Canonical: https://coolcozyac.com/resources/ac-not-cooling-troubleshooting
+JSON-LD: Article + BreadcrumbList + HowTo schema (7 steps) + FAQPage (3 questions).
+This article gets BOTH Article schema AND HowTo schema. The HowTo schema targets the “how to fix AC not cooling” voice search query with step-by-step instructions.
+
+3. Article Content
+
+H1: AC Not Cooling? 7 Things to Check Before You Call a Technician
+Published: May 2026
+Author: Cool & Cozy AC Repair
+Reading Time: 6 minutes
+
+3.1 AEO Opening
+If your AC is not cooling your Jacksonville home, check these seven things before calling a technician: verify your thermostat is set to “Cool” and the temperature is set below current room temperature, check your circuit breaker panel for a tripped HVAC breaker, replace your air filter if it is dirty or clogged, check that supply and return vents are open and unobstructed, inspect the outdoor unit for debris or vegetation blocking airflow, verify the condensate drain is not clogged (which triggers a safety shutoff on many systems), and check whether ice has formed on the indoor coil or outdoor unit. These seven checks resolve approximately 15–20% of “AC not cooling” calls and cost nothing to perform.
+Word Count: 124 words
+Snippet Target: List snippet for “AC not cooling what to check”
+
+3.2 Important Safety Note
+⚠️ Before checking anything: if you smell burning or electrical odors, hear loud banging or grinding noises, or see sparks or smoke near your AC equipment, do NOT attempt any troubleshooting. Turn off the system at the thermostat AND the circuit breaker, and call a licensed technician immediately. These are signs of electrical failure or mechanical damage that require professional handling. Call Cool & Cozy at (904) 555-0199 or, if you suspect immediate danger, call 911.
+Cross-link: For AC emergencies → /services/emergency-ac-repair
+
+3.3 The 7 Checks
+Check 1: Your Thermostat
+It sounds obvious, but thermostats are the #1 false alarm in AC troubleshooting. Verify that the thermostat is set to “Cool” (not “Heat,” “Off,” or “Fan Only”), the set temperature is at least 3–5 degrees below the current room temperature displayed, and the batteries are not dead (if your thermostat uses batteries — a blank screen usually means dead batteries, not a dead AC system). If you have a smart thermostat, check whether a schedule or geofencing setting has changed the target temperature without your knowledge.
+Fixes: Thermostat set incorrectly, dead batteries, schedule override
+Cost: Free
+
+Check 2: Your Circuit Breaker
+Locate your electrical panel and check the HVAC breaker (it may be labeled “AC,” “HVAC,” “Compressor,” or “Air Handler” — some systems have two breakers). If the breaker is tripped (in the middle position, not fully “On”), reset it by flipping it fully to “Off” and then back to “On.” Wait 3–5 minutes for the system to restart. If the breaker trips again immediately, do NOT reset it a second time — this indicates an electrical fault that requires professional diagnosis. Repeated resetting can cause further damage.
+Fixes: Power interruption from storm, momentary overload
+Cost: Free
+When to stop: Breaker trips again immediately = call a technician
+
+Check 3: Your Air Filter
+A clogged air filter is the single most common preventable cause of AC performance problems. A severely restricted filter reduces airflow to the point where the evaporator coil freezes over, the system runs continuously without reaching temperature, or the blower motor overheats and shuts down. Remove your filter and hold it up to a light source: if you cannot see light through it, it needs replacement. In Jacksonville’s environment, standard 1-inch filters should be replaced every 30–60 days during summer and every 60–90 days during mild seasons.
+Fixes: Reduced airflow, frozen coil (secondary), blower motor strain
+Cost: $5–$25 for a replacement filter
+
+Check 4: Your Vents
+Walk through your home and verify that all supply vents (the ones that blow air) and return vents (the ones that pull air) are fully open and not blocked by furniture, curtains, rugs, or stored items. A single blocked return vent can reduce system airflow significantly. Also check that the vent louvers are angled open, not closed — a well-intentioned family member or cleaning service may have closed vents in unused rooms, creating pressure imbalances that affect the entire system.
+Fixes: Airflow restriction from blocked or closed vents
+Cost: Free
+
+Check 5: Your Outdoor Unit
+Go outside and look at the outdoor condenser unit. Is it running? Can you hear the fan and compressor? If it is silent while the indoor system is running, the outdoor unit may have lost power (check its dedicated breaker), the contactor may have failed, or the capacitor may have died — the latter two require professional repair. If the unit is running, check for debris: leaves, grass clippings, dirt, and vegetation within 2 feet of the unit restrict airflow and reduce efficiency. Clear any obstructions and rinse the coils gently with a garden hose (power the system off first).
+Fixes: Debris restriction, separate breaker tripped
+Cost: Free (debris clearing) or professional repair (contactor/capacitor)
+
+Check 6: Your Condensate Drain
+The condensate drain carries moisture removed from your home’s air to the outside. In Jacksonville’s humidity, this drain handles a significant volume of water daily. If it clogs with algae, mold, or debris, many modern systems have a safety float switch that shuts the system down to prevent water damage. Find where the PVC drain line exits your home (usually near the outdoor unit or along the foundation) and verify water is dripping during operation. If the system is off and the drain appears clogged, you can try flushing it with a cup of white vinegar or dilute bleach poured into the access point on the indoor drain pan. If you cannot locate the drain or are unsure, this is a quick professional fix.
+Fixes: Safety shutoff from clogged drain (very common in Jacksonville)
+Cost: Free (DIY flush) or $100–$200 professional clearing
+Condensate drain clogs are disproportionately common in Jacksonville’s humidity. This check alone resolves a meaningful percentage of summer “AC not cooling” calls.
+
+Check 7: Ice on the System
+Look at the indoor evaporator coil (visible through the air handler access panel) and the outdoor refrigerant lines (the copper lines running between indoor and outdoor units). If you see ice forming on either, your system is freezing up. Common causes: dirty filter (restricting airflow — see Check 3), low refrigerant from a leak, or a failing blower motor. If ice is present, turn the system OFF at the thermostat and set the fan to “On” (not “Auto”) to circulate warm air over the frozen coil and melt the ice. This takes 2–4 hours. Do NOT continue running the system in cooling mode with ice present — it forces the compressor to work against restricted airflow and can cause permanent compressor damage.
+Fixes: Frozen coil from filter, low refrigerant, or blower issue
+Cost: Free (if filter was the cause) or professional repair (refrigerant leak, blower motor)
+Wait time: 2–4 hours for ice to melt before restarting
+
+3.4 If None of These Worked
+H2: When to Call a Professional
+If you have checked all seven items and your AC is still not cooling, the problem is beyond DIY troubleshooting. Common professional-diagnosis issues include failed capacitors, failed contactors, refrigerant leaks, compressor failure, control board malfunctions, and electrical wiring faults. These require licensed handling — AC systems contain high-voltage electrical components and pressurized refrigerant that are dangerous for untrained individuals.
+Cool & Cozy provides same-day diagnostic service for Jacksonville homes. We diagnose the problem, explain what failed, provide a written quote, and only proceed with repair after you approve. Call (904) 555-0199.
+CTA: Schedule AC Repair → /contact?service=ac-repair
+Emergency CTA: For dangerous heat conditions → /services/emergency-ac-repair
+
+3.5 FAQ (3 Questions)
+FAQ 1
+Q: Why is my AC running but not blowing cold air?
+A: The most common causes are a dirty air filter restricting airflow (the evaporator coil cannot absorb heat), low refrigerant from a leak (the system cannot transfer heat effectively), or a failed compressor (the component that pressurizes refrigerant has stopped working). Check your filter first — if it’s clean and the system is still blowing warm air, call a technician for a refrigerant and compressor evaluation.
+
+FAQ 2
+Q: Can I fix a frozen AC coil myself?
+A: You can defrost the coil by turning the system off and running the fan on “On” mode for 2–4 hours. Then replace the air filter if it is dirty and restart the system. If the coil freezes again after a clean filter and defrost, the cause is likely a refrigerant leak or blower motor issue that requires professional diagnosis. Do not continue running a system with a frozen coil — it can damage the compressor.
+
+FAQ 3
+Q: How much does it cost to have a technician diagnose AC problems?
+A: Diagnostic fees in Jacksonville typically range from $75 to $125. This covers the technician’s travel, system evaluation, and identification of the failed component. Some contractors apply the diagnostic fee toward the repair cost if you proceed. Cool & Cozy provides a clear diagnostic fee upfront before scheduling and a written repair quote before any work begins. Call (904) 555-0199 for current pricing.
+Cross-link: Full repair cost breakdown → /resources/ac-repair-cost-jacksonville
+
+3.6 Article CTA & Related
+Tried everything and still sweating? Call Cool & Cozy at (904) 555-0199 for same-day professional diagnosis. Written quote before any work. Licensed, bilingual, honest.
+
+Related
+Link
+How Much Does AC Repair Cost in Jacksonville?
+/resources/ac-repair-cost-jacksonville
+How Often Should You Maintain Your AC in Florida?
+/resources/how-often-ac-maintenance
+8 Signs Your AC Needs Replacement
+/resources/signs-ac-needs-replacement
+
+4. Checklist
+Article + HowTo + FAQPage + BreadcrumbList schema validates
+HowTo schema includes all 7 steps with name, text, and estimated time
+Safety warning appears before any troubleshooting steps
+All 7 checks are safe for homeowners (no refrigerant handling, no electrical panel work beyond breaker reset)
+Condensate drain advice includes Jacksonville humidity context
+Frozen coil instructions explicitly warn against running system with ice present
+Cross-links to repair, emergency, cost article, maintenance verified
+Click-to-call on all phone instances
+
+— End of Document —
+Prepared by TradeWorks AI  ·  May 2026  ·  v1.0
+

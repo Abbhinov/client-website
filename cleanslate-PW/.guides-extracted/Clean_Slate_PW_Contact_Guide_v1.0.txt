@@ -1,0 +1,314 @@
+﻿
+
+ 
+
+CONTACT PAGE DEVELOPER GUIDE
+
+Contact
+
+
+ 
+
+Contact Page Implementation Specifications
+
+Clean Slate Pressure Washing
+
+A Fresh Start for Every Surface
+
+Brandon, Florida  |  Hillsborough County
+
+cleanslatepw.com
+
+Prepared by TradeWorks AI
+
+Version 1.0  |  April 2026
+
+Client Confidential
+
+
+
+
+
+
+
+
+Section 1: How to Use This Guide
+
+This guide covers the Contact page (/contact/). It provides all contact methods (phone, email, form, map), business hours, and a streamlined general inquiry form. The Contact page has a stricter LCP target (&lt;1.5s) because it is a direct conversion page — visitors arriving here have high intent.
+
+
+
+Section 2: Page Identity &amp; Architecture
+
+Attribute
+
+Value
+
+URL Path
+
+/contact/
+
+Canonical URL
+
+https://cleanslatepw.com/contact/
+
+Page Type
+
+Conversion / Contact
+
+Parent
+
+/ (Homepage)
+
+Breadcrumb
+
+Home → Contact
+
+Primary Keyword
+
+Contact Clean Slate Pressure Washing Brandon FL
+
+Search Intent
+
+Navigational / Transactional
+
+Target Word Count
+
+400–600 words (minimal — form-first design)
+
+LCP Target
+
+&lt;1.5s (stricter than standard 2.5s)
+
+Primary Conversion Goal
+
+Phone call OR form submission
+
+
+
+Section 3: &lt;head&gt; Section
+
+Tag
+
+Value
+
+&lt;title&gt;
+
+Contact Clean Slate PW | Brandon FL | (813) 555-0283
+
+&lt;meta description&gt;
+
+Contact Clean Slate Pressure Washing in Brandon, FL. Call (813) 555-0283, email info@cleanslatepw.com, or fill out our contact form. Free estimates within 24 hours. Mon–Sat 7:00 AM – 6:00 PM | Sun: By Appointment.
+
+&lt;link rel=canonical&gt;
+
+https://cleanslatepw.com/contact/
+
+JSON-LD: ContactPage schema type. BreadcrumbList (Home → Contact).
+
+
+
+Section 4: Page Layout — Form First
+
+Two-column layout on desktop: contact form (left, 55%) and business information block (right, 45%). Stacked on mobile: form first, business info below. No hero image — clean white background with minimal distraction. The form is the hero.
+
+
+4.1 H1
+
+Get in Touch
+
+32px desktop, weight 700, #0B2545. Subheadline below:
+
+Have a question or ready to schedule? Fill out the form below, call us at (813) 555-0283, or email info@cleanslatepw.com. We respond within 4 business hours.
+
+
+
+Section 5: Contact Form Specification
+
+
+5.1 Form Fields
+
+Field
+
+Type
+
+Required
+
+Validation
+
+Full Name
+
+text
+
+Yes
+
+Min 2 chars, autocomplete=&apos;name&apos;
+
+Email
+
+email
+
+Yes
+
+RFC 5322, autocomplete=&apos;email&apos;
+
+Phone
+
+tel
+
+Yes
+
+10-digit US format, autocomplete=&apos;tel&apos;
+
+Subject
+
+select
+
+Yes
+
+Options: General Inquiry, Request Estimate, Commercial Quote, Schedule Service, Other
+
+Message
+
+textarea
+
+No
+
+Max 1000 chars, 4 rows visible
+
+Honeypot
+
+hidden
+
+—
+
+Hidden field — if filled, reject submission
+
+
+5.2 Form Behavior
+
+
+Inline validation on blur. Specific error messages per field.
+
+
+reCAPTCHA v3 (invisible, score-based).
+
+
+Submission endpoint: Cloud Functions API → Zoho CRM + email notification.
+
+
+On-page success confirmation (no redirect): &apos;Thank you, [Name]! We received your message and will respond within 4 business hours.&apos;
+
+
+Failure fallback: &apos;Something went wrong — please call us directly at (813) 555-0283.&apos;
+
+
+GA4 events: form_start (first field focus), form_submit (successful submission).
+
+
+Submit button: &apos;Send Message&apos;, orange (#E8761A), full-width on mobile, 52px height.
+
+
+
+Section 6: Business Information Block
+
+Right column on desktop, below form on mobile. Contains all contact methods, map, and hours.
+
+
+6.1 Contact Details
+
+Element
+
+Value
+
+Implementation
+
+Phone
+
+(813) 555-0283
+
+&lt;a href=&quot;tel:+18135550283&quot;&gt; with phone icon
+
+Email
+
+info@cleanslatepw.com
+
+&lt;a href=&quot;mailto:info@cleanslatepw.com&quot;&gt; with email icon
+
+Address
+
+712 W Lumsden Rd, Suite 4, Brandon, FL 33511
+
+Map-pin icon. Links to Google Maps directions.
+
+Hours
+
+Mon–Sat 7:00 AM – 6:00 PM | Sun: By Appointment
+
+Clock icon. Non-clickable.
+
+License
+
+FL Lic. #BL-2021-04417
+
+Shield icon.
+
+
+6.2 Embedded Map
+
+Google Maps iframe below contact details. Centered on business address. 100% width, 280px height. loading=&apos;lazy&apos;. 12px border-radius.
+
+
+6.3 Trust Reinforcement
+
+Below map: 3 compact trust badges — Licensed &amp; Insured, 4.9★ Google Rating, Satisfaction Guaranteed. Same style as homepage trust bar at reduced scale.
+
+
+
+Section 7: Emergency Contact Banner
+
+If the business offers emergency or same-day service, display a persistent banner above the form:
+
+&apos;Need same-day service? Call us directly at (813) 555-0283 for priority scheduling.&apos;
+
+Background #E8761A (Orange), white text, 48px height, click-to-call on the entire bar.
+
+
+
+Section 8: Implementation Checklist
+
+
+Form submits successfully and delivers to correct endpoint.
+
+
+Auto-response email fires within 60 seconds of submission.
+
+
+All contact methods (phone, email, address) match NAP exactly.
+
+
+Map renders with correct pin location.
+
+
+Phone (813) 555-0283 is working tel: link everywhere.
+
+
+LCP under 1.5 seconds (stricter target for conversion page).
+
+
+form_start and form_submit GA4 events fire correctly.
+
+
+reCAPTCHA v3 active and scoring submissions.
+
+
+Honeypot field hidden and rejecting bot submissions.
+
+
+
+— End of Contact Page Guide —
+
+Clean Slate Pressure Washing — Contact Page v1.0 | TradeWorks AI | April 2026
+
+
+

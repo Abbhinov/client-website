@@ -1,0 +1,569 @@
+﻿
+DEVELOPER IMPLEMENTATION GUIDE
+
+COOL & COZY AC REPAIR
+Licensed HVAC Contractor  ·  Jacksonville, Florida
+
+COMMERCIAL HVAC
+Complete Page Build — Single Document
+
+URL: coolcozyac.com/services/commercial-hvac
+Prepared by: TradeWorks AI  |  Version 1.0  |  May 2026
+Classification: Client Confidential
+
+Table of Contents
+
+1.  How to Use This Guide
+2.  Page Identity & Architecture
+3.  Keyword Strategy
+4.  Complete <head> Section
+5.  Section-by-Section Build
+5.1  Page Hero
+5.2  AEO Introduction Block
+5.3  Who We Serve (Client Types)
+5.4  Commercial Services Grid
+5.5  Property Manager Partnership Model
+5.6  Why Property Managers Choose Cool & Cozy
+5.7  Commercial Systems We Service
+5.8  FAQ Section (6 Questions)
+5.9  Related Services & Final CTA
+6.  Reference: Assets, GA4 & Checklist
+
+1. How to Use This Guide
+This guide defines the Commercial HVAC service child page at /services/commercial-hvac. This is the property manager flagship page — the destination for every PM-specific CTA across the site (“Discuss Your Properties,” “Get a Multi-Unit Quote,” “Build Your Portfolio Plan”). While it serves all commercial HVAC needs, its primary audience is property managers and landlords managing multi-unit residential portfolios in Duval County.
+This page has a different tone than residential service pages. Property managers are professional buyers who evaluate contractors based on reliability, communication quality, pricing transparency, and operational efficiency — not on emergency urgency or emotional comfort messaging. The content is structured, metrics-forward, and speaks to business outcomes: reduced tenant complaints, predictable maintenance costs, extended equipment life, and professional communication.
+Cool & Cozy’s specific expertise with property managers is the single biggest differentiator documented in this guide. No Tier 1 Jacksonville HVAC competitor has a dedicated commercial/PM page with this depth. This page establishes Cool & Cozy as the obvious choice for property managers seeking a reliable HVAC partner.
+1.1 Content Rules
+All content fresh and original. No duplication from PM callout sections on homepage, repair, installation, or maintenance pages.
+Tone is professional, direct, and outcome-focused. No casual language, no emergency urgency. This audience makes deliberate decisions.
+Proof points are specific and verifiable: license number, BuildZoom ranking, permit count, founding year.
+Property manager pain points addressed directly: tenant communication, access coordination, response time, invoicing, portfolio reporting.
+Commercial system expertise demonstrated through specific equipment types, not just “we do commercial too.”
+Bilingual capability framed as a business advantage for tenant communication, not just a cultural nicety.
+
+2. Page Identity & Architecture
+Property
+Specification
+URL Path
+/services/commercial-hvac
+Canonical URL
+https://coolcozyac.com/services/commercial-hvac
+Page Type
+Service child page (commercial/PM variant)
+Parent Page
+/services
+Breadcrumb
+Home > Services > Commercial HVAC
+Primary Keyword
+commercial HVAC Jacksonville FL
+Secondary Keywords
+property management HVAC Jacksonville, multi-unit AC service Jacksonville, commercial AC repair Duval County, HVAC contractor property managers
+Search Intent
+Commercial investigation (professional buyer evaluating contractor)
+Target Word Count
+2,000–2,400 words
+Primary Conversion Goal
+Phone call or form submission for portfolio/commercial consultation
+Secondary Conversion Goals
+Maintenance agreement inquiry, multi-unit installation quote
+Robots Directive
+index, follow
+XML Sitemap
+Included, priority 0.8
+
+2.1 Internal Linking
+TO /services/ac-repair: commercial repair cross-link
+TO /services/ac-installation: fleet replacement cross-link
+TO /services/ac-maintenance: portfolio maintenance agreements
+TO /contact?service=commercial: at least 4 CTAs throughout the page
+FROM homepage PM section: “Discuss Your Properties” links here
+FROM services hub commercial cards: both cards link here
+FROM every service child PM section: all “Discuss Your Properties” CTAs link here
+FROM AC Maintenance plan section: PM portfolio plan links here
+This page is the convergence point for ALL property management traffic across the site. Every PM callout, every commercial mention, every “Discuss Your Properties” CTA points to this page or to /contact?service=commercial.
+
+3. Keyword Strategy
+Keyword
+Est. Vol.
+Intent
+Placement
+commercial HVAC Jacksonville
+100–250
+Comm.
+H1, title, meta, AEO
+property management HVAC Jacksonville
+30–80
+Comm.
+PM partnership section, H2
+commercial AC repair Jacksonville
+50–150
+Trans.
+Services grid, AEO
+HVAC contractor property managers Jax
+20–60
+Comm.
+Why Choose Us section
+multi-unit AC service Jacksonville
+20–50
+Comm.
+Who We Serve section
+commercial AC installation Jacksonville
+30–80
+Comm.
+Services grid
+restaurant HVAC Jacksonville
+20–50
+Niche
+Who We Serve section
+Airbnb HVAC service Jacksonville
+10–30
+Niche
+Who We Serve section
+commercial HVAC maintenance agreement
+20–50
+Comm.
+PM partnership section
+
+3.1 Semantic Terms
+Multi-unit, rental property, rental portfolio, tenant, landlord, property management company, Airbnb host, short-term rental, commercial building, office space, retail, restaurant, medical office, dental practice
+Maintenance agreement, service contract, preventive maintenance, portfolio plan, fleet replacement, priority response, response time guarantee, per-unit pricing, volume discount, coordinated scheduling, block scheduling
+Rooftop unit (RTU), PTAC, VRF system, commercial split system, walk-in cooler, make-up air unit, exhaust fan, commercial thermostat, zone control, BAS/building automation
+Tenant communication, bilingual service, access coordination, lockbox, key management, professional invoicing, portfolio reporting, system condition scoring
+
+4. Complete <head> Section
+Property
+Specification
+Title Tag
+Commercial HVAC Jacksonville FL | Property Management AC Service | Cool & Cozy
+Title Chars
+76 characters
+Meta Description
+Commercial HVAC services for Jacksonville property managers, landlords & businesses. Multi-unit maintenance, fleet replacement, priority emergency response. Licensed CAC1819948. Call (904) 555-0199.
+Meta Desc. Chars
+155 characters
+Canonical URL
+https://coolcozyac.com/services/commercial-hvac
+og:title
+Commercial HVAC Jacksonville | Property Management AC | Cool & Cozy
+og:description
+Licensed commercial HVAC for Jacksonville property managers and businesses. Maintenance agreements, fleet replacement, priority emergency response.
+og:url
+https://coolcozyac.com/services/commercial-hvac
+
+4.1 JSON-LD
+Service schema with serviceType: [“Commercial HVAC”, “Property Management HVAC”, “Commercial Air Conditioning Repair”, “Commercial AC Installation”, “Commercial HVAC Maintenance”]. Add audience: { "@type": "Audience", "audienceType": "Property Managers" } to signal the primary audience. BreadcrumbList (3-level) and FAQPage (6 questions).
+4.2 Preload
+Hero image: <link rel="preload" href="/images/hero-commercial.webp" as="image">
+
+5. Section-by-Section Build
+The Commercial HVAC page contains 9 content blocks. The visual tone is slightly more structured than residential pages — more tables, more metrics, more proof points. The Evergreen palette is used more heavily than on residential pages to convey professional authority.
+
+5.1 Page Hero
+Overview
+The commercial hero speaks to a professional buyer. The tone is confident and direct: “we serve property managers” stated plainly, not implied. The hero image should show a commercial or multi-unit property context, not a single-family home.
+Layout
+Property
+Specification
+Desktop
+Full-width, 380px height, left-aligned content within 1280px
+Mobile
+Auto height (min 280px), centered, stacked CTAs
+Background
+Photo bg with Evergreen overlay OR solid Evergreen with subtle geometric pattern. The commercial page can afford a darker, more authoritative visual feel than residential pages.
+Content
+Breadcrumb
+Home > Services > Commercial HVAC
+H1
+Commercial HVAC Services for Jacksonville Property Managers & Businesses
+Character Count: 72 characters
+Style: Poppins 34px/700, #FFFFFF, max-width 680px
+Subheadline
+Multi-unit maintenance agreements, fleet replacement planning, priority emergency response, and bilingual tenant communication. One licensed contractor for your entire Jacksonville portfolio.
+Word Count: 27 words
+Dual CTAs
+Property
+Specification
+Primary
+“Discuss Your Properties” — Coral bg, white text, pill, /contact?service=commercial
+Secondary
+“Call (904) 555-0199” — white border, pill, tel: link
+The primary CTA is the form button (not the phone call). Property managers are planners — they typically prefer to submit an inquiry and schedule a conversation rather than call cold. This matches the AC Installation pattern.
+Trust Indicators
+✓ FL License CAC1819948  ·  ✓ BuildZoom Top 13%  ·  ✓ 21 Permitted Projects  ·  ✓ Bilingual Team
+Image
+Property
+Specification
+Subject
+Multi-unit apartment complex exterior, commercial building, or technician working on a rooftop commercial unit. Florida architecture preferred.
+Alt Text
+Commercial HVAC service by Cool & Cozy AC Repair at a multi-unit property in Jacksonville, Florida
+DEV ACTION: PLACEHOLDER: Source a commercial/multi-unit property image. Apartment complex exterior with visible HVAC equipment is ideal. Licensed stock acceptable.
+
+5.2 AEO Introduction Block
+Layout
+Property
+Specification
+Container
+#FFFFFF, 720px centered, 56px/40px padding
+Content
+H2
+Licensed Commercial HVAC Contractor in Jacksonville, FL
+AEO Paragraph
+Cool & Cozy AC Repair provides commercial HVAC services for property managers, landlords, Airbnb operators, and business owners throughout Jacksonville and Duval County. The company is a Florida-licensed contractor (CAC1819948) ranked in the top 13% of state contractors by BuildZoom, with 21 permitted building projects documenting commercial and residential work. Commercial services include multi-unit AC repair and installation, rooftop unit (RTU) service, PTAC maintenance, commercial ductwork, zone control systems, and portfolio-wide maintenance agreements with priority scheduling and per-unit pricing. Cool & Cozy’s bilingual team communicates directly with tenants in English and Spanish, coordinates access through property management procedures, and delivers professional invoicing with detailed per-unit documentation. Call (904) 555-0199 or request a commercial consultation online.
+Word Count: 125 words
+AEO Targets: “Who does commercial HVAC in Jacksonville?” “Which HVAC company serves property managers in Jacksonville?” “Does Cool & Cozy handle commercial AC systems?”
+
+5.3 Who We Serve
+Overview
+A client-type grid that shows prospective commercial clients exactly where they fit. Each card describes a specific client type with their unique HVAC needs and how Cool & Cozy addresses them. This section validates the visitor’s identity: “they serve businesses like mine.”
+Layout
+Property
+Specification
+Container
+#EAF3F2 (Sky Mist)
+Content Width
+1280px centered
+Grid
+3 columns desktop, 1 column mobile
+Content
+H2
+Commercial & Property Management Clients We Serve
+
+Client Type
+How We Help
+Multi-Unit Property Managers
+Portfolio maintenance agreements, coordinated block scheduling, system condition reports across all units, priority emergency response for tenant AC failures, bilingual tenant communication, replacement planning with lifecycle cost analysis.
+Single-Unit Landlords
+Reliable repair and maintenance between tenants, pre-leasing system inspections, turnover-ready HVAC service, direct tenant coordination during occupancy, transparent invoicing for expense tracking.
+Airbnb & Short-Term Rental Hosts
+Fast response to guest complaints (a bad review about a hot room costs more than any repair), pre-season tune-ups to prevent mid-stay failures, smart thermostat installation for remote temperature monitoring between guests.
+Restaurants & Food Service
+Kitchen exhaust and make-up air systems, walk-in cooler/freezer service, dining area comfort management, hood ventilation compliance, after-hours service to avoid business disruption.
+Retail & Office Spaces
+Zone control for multi-tenant buildings, tenant build-out HVAC, after-hours installation to prevent business disruption, energy efficiency optimization for leased spaces.
+Medical & Dental Practices
+Precise temperature and humidity control for patient comfort and instrument sterilization, HEPA filtration for clinical air quality, minimal-disruption service scheduling around patient hours.
+
+Design
+Property
+Specification
+Cards
+White bg, 16px radius, 28px padding, icon left (48×48 SVG)
+Icons
+Building (PM), house-key (landlord), star/map-pin (Airbnb), utensils (restaurant), briefcase (office), medical-cross (medical)
+Title
+Poppins 18px/600, #2C2C2C
+Body
+Poppins 14px/400, #3D3D3D, line-height 1.55
+The Airbnb card is a strategic inclusion. Airbnb hosts in Jacksonville are a growing segment who need fast, reliable HVAC service and are highly motivated by review impact. No competitor targets this audience specifically.
+
+5.4 Commercial HVAC Services
+Overview
+The commercial services offered by Cool & Cozy, presented as cards with enough detail to demonstrate expertise. These overlap with residential services but are framed in commercial context with commercial-specific additions.
+Layout
+Property
+Specification
+Container
+#FFFFFF, 1280px centered
+Grid
+2 columns desktop, 1 column mobile
+Content
+H2
+HVAC Services for Commercial Properties
+
+Service
+Commercial Description
+Link
+Commercial AC Repair
+Diagnosis and repair for commercial split systems, RTUs, PTACs, VRF systems, and multi-zone configurations. Same-day emergency response for tenant AC failures and business-critical cooling.
+/services/ac-repair
+Commercial Installation & Replacement
+New system installation for commercial spaces, fleet replacement across multi-unit portfolios, equipment standardization, load calculation for commercial occupancy patterns, and after-hours installation to minimize business disruption.
+/services/ac-installation
+Portfolio Maintenance Agreements
+Scheduled preventive maintenance across your entire property portfolio. Coordinated block scheduling, per-unit pricing with volume discounts, system condition reporting, and replacement planning. Priority scheduling for agreement members.
+/services/ac-maintenance
+Commercial Ductwork
+Duct repair, sealing, and replacement for commercial spaces. Addressing zoning issues, balancing airflow between tenant spaces, and modifying ductwork for tenant build-outs or space reconfigurations.
+/services/ductwork
+Commercial IAQ Solutions
+Whole-building air purification, UV germicidal systems for medical/dental offices, commercial-grade dehumidification, and ventilation upgrades for code compliance and occupant health.
+/services/indoor-air-quality
+Smart Controls & Zone Management
+Commercial programmable thermostats, multi-zone control for tenant spaces, remote monitoring systems for property managers, and building automation integration for larger properties.
+/services/thermostat-installation
+
+Each card links to the corresponding service page, which contains both residential and commercial detail. The commercial framing here drives the visitor to the full service page with their commercial context already established.
+
+5.5 The Cool & Cozy Property Manager Partnership Model
+Overview
+This is the core section of the page — the deepest treatment of Cool & Cozy’s PM capability anywhere on the site. It goes beyond the callout sections on other pages to describe a structured partnership model with specific operational commitments. This section is what converts a property manager from “interested” to “calling.”
+Layout
+Property
+Specification
+Container
+#1A5653 (Evergreen) background — full PM section depth
+Content Width
+1080px centered
+Padding
+80px top/bottom desktop, 48px mobile
+Desktop
+Full-width text content with feature cards below
+Content
+Section Eyebrow
+OUR APPROACH TO PROPERTY MANAGEMENT HVAC
+H2
+A True HVAC Partnership for Your Portfolio
+Style: Poppins 32px/700, #FFFFFF
+Intro Paragraph
+Most HVAC companies treat commercial and property management work as an afterthought — the same residential technician, the same scheduling process, the same invoicing. Cool & Cozy builds a structured partnership around your portfolio’s specific needs: dedicated contact, documented procedures, and operational commitments that make HVAC one less thing you have to manage.
+Word Count: 55 words
+Style: Poppins 16px/400, #F0E6D3, line-height 1.7
+
+Partnership Features (6 Feature Cards on Evergreen bg)
+Feature
+Details
+Single Point of Contact
+You get one dedicated contact at Cool & Cozy who knows your properties, your procedures, and your expectations. No explaining your portfolio from scratch every time you call. Your contact knows which units have older systems, which tenants prefer Spanish communication, and which properties use lockbox access.
+Documented Access Procedures
+We document your preferred access method for every property: lockbox codes, tenant scheduling requirements, management-escorted access, gate codes, and after-hours entry procedures. Our technicians arrive prepared, reducing tenant disruption and eliminating the “who has the key?” scramble.
+Bilingual Tenant Communication
+In Jacksonville’s diverse communities, a significant percentage of tenants prefer Spanish-language communication. Cool & Cozy’s bilingual technicians communicate directly with tenants in English or Spanish — scheduling access, explaining the repair, and following up — so your tenants feel heard and your office doesn’t need to translate.
+Priority Emergency Response
+A tenant AC emergency is your emergency. Portfolio partners get priority dispatching above standard residential calls. We understand that a broken AC in a rental means a phone call from an unhappy tenant, a potential lease issue, and a problem that needs resolution today — not Thursday.
+Transparent Per-Unit Invoicing
+Every invoice is itemized per unit with service details, parts used, and technician notes. No bundled invoices that force you to allocate costs yourself. Each line item matches to a specific property address and unit number for clean expense tracking and owner reporting.
+Portfolio Health Reporting
+After each maintenance cycle, you receive a portfolio-wide system condition report: each unit scored green (good), yellow (monitor — aging component or efficiency decline), or red (plan for replacement). This lets you budget capital expenditures proactively instead of reacting to emergency failures.
+
+Metrics Panel
+Metric
+Value
+Context
+Licensed Since
+2018
+Florida CAC1819948 — verified active, covering residential and commercial work
+BuildZoom Ranking
+Top 13%
+Of 191,428 licensed contractors in Florida — independently verified score of 100
+Documented Projects
+21
+Permitted building projects on file with Duval County, totaling ~$59,700 in documented work
+Bilingual Team
+English + Spanish
+Full service delivery in both languages: phone, scheduling, on-site communication, follow-up
+
+CTA
+Primary: “Schedule a Portfolio Consultation” — Coral bg, white text, pill, /contact?service=commercial
+Secondary: “Call (904) 555-0199” — #F0E6D3 text, underline, tel: link
+Body text below CTA: “We’ll discuss your portfolio, your current pain points, and how we can structure a partnership that works for your properties and your budget.”
+Design
+Property
+Specification
+Section bg
+#1A5653 (Evergreen)
+Feature cards
+rgba(255,255,255,0.06) bg, 1px solid rgba(255,255,255,0.10) border, 16px radius, 24px padding
+Card title
+Poppins 16px/600, #FFFFFF
+Card body
+Poppins 14px/400, #F0E6D3, line-height 1.55
+Metrics table
+Same glass-panel styling as homepage/repair/maintenance PM sections
+Grid
+2-column desktop (3 rows of 2), 1-column mobile
+This is the longest single section on any page across the entire site. That is intentional. A property manager evaluating Cool & Cozy needs to see depth, specificity, and operational detail — not marketing generalities. The 6 partnership features answer the 6 most common PM evaluation criteria: communication, access, language, response time, billing, and reporting.
+
+5.6 Why Property Managers Choose Cool & Cozy
+Overview
+A concise benefits section that summarizes the PM value proposition for the visitor who doesn’t read every word of the partnership model section above. This is the “skim-reader” version.
+Layout
+Property
+Specification
+Container
+#FFFFFF, 1280px centered, 3-column card grid
+Content
+Card Title
+Body
+One Contractor, All Properties
+Stop juggling multiple HVAC vendors. Cool & Cozy handles repair, maintenance, and installation across your entire Jacksonville portfolio — residential and commercial — under one agreement, one contact, one invoice.
+We Handle the Tenant
+Scheduling, access, on-site communication in English or Spanish, and follow-up. Your tenants get professional service, and your office doesn’t get pulled into the middle of every AC call.
+Predictable Costs
+Per-unit maintenance pricing, no surprise service call fees for agreement members, and lifecycle reporting that lets you budget replacements before emergencies force your hand.
+Licensed and Documented
+Florida CAC1819948, BuildZoom top 13%, 21 permitted projects. Every visit documented with technician notes, photos, and per-unit invoicing for your records.
+Built for Your Scale
+Whether you manage 5 duplexes or 50 apartment units, the partnership model scales. Volume pricing, coordinated block scheduling, and portfolio health reporting — sized to your operation.
+
+Same card design as other Why Choose sections: white cards, 16px radius, Poppins typography.
+
+5.7 Commercial HVAC Systems We Service
+Overview
+Demonstrates expertise with commercial equipment types that residential-only contractors cannot service. This builds credibility with property managers and business owners who need assurance that their specific equipment is within Cool & Cozy’s capability.
+Layout
+Property
+Specification
+Container
+#F0E6D3 (Warm Sand), 1080px centered
+Content
+H2
+Commercial HVAC Equipment We Repair, Install & Maintain
+
+Rooftop Units (RTUs) — Self-contained heating and cooling systems installed on commercial rooftops. Common in strip malls, restaurants, and small office buildings. We service, repair, and replace RTUs from all major commercial manufacturers.
+PTAC / PTHP Units — Packaged terminal air conditioners and heat pumps — the individual wall units found in hotels, assisted living facilities, and some apartment buildings. We service, clean, and replace PTACs across multi-unit properties.
+Commercial Split Systems — Larger-capacity versions of residential split systems, used in offices, medical practices, and mid-size commercial spaces. We handle systems up to 25 tons.
+VRF/VRV Systems — Variable refrigerant flow systems that provide zone-level control across large commercial buildings. We service Daikin, Mitsubishi, and LG VRF systems.
+Ductless Multi-Zone Commercial — Multi-head mini-split installations for commercial spaces without ductwork, including converted historic buildings and mixed-use properties.
+Make-Up Air & Exhaust Systems — Kitchen ventilation make-up air units and commercial exhaust systems for restaurants and food service. Required for code compliance and indoor air quality.
+Walk-In Coolers & Freezers — Refrigeration systems for restaurants, convenience stores, and food storage operations. We diagnose compressor, evaporator, and defrost system issues.
+
+The VRF and make-up air entries signal advanced commercial capability. Most small HVAC contractors cannot service VRF systems. Listing them explicitly positions Cool & Cozy above residential-only competitors in the PM’s evaluation.
+DEV ACTION: PLACEHOLDER: Confirm with client which commercial system types they actively service. Remove any they do not. It is critical to list only equipment the team can actually work on — a PM calling about a VRF system Cool & Cozy can’t handle damages trust irreparably.
+
+5.8 FAQ Section (6 Questions)
+Layout
+Property
+Specification
+Container
+#EAF3F2 (Sky Mist) — using Sky Mist instead of Warm Sand for visual variety on this longer page, 800px centered
+Content
+FAQ 1
+Q: Do you serve both residential and commercial HVAC?
+A: Yes. Cool & Cozy’s Florida contractor license CAC1819948 covers both residential and commercial HVAC work. We serve single-family homeowners, multi-unit property managers, landlords, Airbnb hosts, restaurants, retail spaces, offices, and medical practices throughout Jacksonville and Duval County. Many property managers appreciate having one contractor who handles both their personal home and their investment properties.
+
+FAQ 2
+Q: How do your property management maintenance agreements work?
+A: We build a custom maintenance plan around your portfolio. Each unit receives two preventive maintenance visits per year (spring pre-cooling and fall pre-heating), scheduled in coordinated blocks to minimize per-visit costs. Agreement members receive priority scheduling for repair calls, discounted diagnostics, bilingual tenant communication, and post-cycle system condition reports that score each unit green, yellow, or red. Per-unit pricing with volume discounts for portfolios of 10 or more units. Call (904) 555-0199 to discuss your specific portfolio.
+
+FAQ 3
+Q: How do you handle tenant access and communication?
+A: We document your preferred access procedure for each property: lockbox codes, tenant-scheduled appointments, management-escorted visits, or gate/building entry codes. Our technicians arrive prepared and communicate directly with tenants in English or Spanish. We schedule around tenant preferences when possible and always clean up after completing work. Your office does not need to be involved in the day-of coordination.
+
+FAQ 4
+Q: What happens if a tenant has an AC emergency after hours?
+A: Portfolio maintenance agreement members receive priority emergency dispatching. Call (904) 555-0199 and identify yourself as a portfolio partner. We prioritize your tenant’s emergency above standard residential calls and coordinate access using your documented procedures. If after-hours dispatch is not available, we schedule your tenant as the first priority call the following morning and communicate the timeline directly with the tenant so they know what to expect.
+
+FAQ 5
+Q: Can you help me plan AC replacements across my portfolio?
+A: Absolutely. Our portfolio health reporting includes system age, condition scoring, and estimated remaining lifespan for every unit. We help you plan phased replacements — prioritizing the oldest or worst-performing systems first — so you can budget capital expenditures annually instead of reacting to surprise failures. We also provide volume pricing on equipment and labor for multi-unit replacement projects and can standardize equipment across your portfolio for simpler ongoing maintenance.
+
+FAQ 6
+Q: Do you provide invoicing that works for property management accounting?
+A: Yes. Every invoice is itemized per property address and unit number with service details, parts used, labor time, and technician notes. This format is designed for direct expense allocation to individual properties or units without manual reprocessing. We can also provide summary reports across your entire portfolio for periodic financial review.
+
+FAQPage JSON-LD
+6-question FAQPage schema embedded in <head> with full answer text.
+
+5.9 Related Services & Final CTA
+Related Services
+3 cards linking to the service pages most relevant to commercial clients:
+Service
+Description
+Link
+AC Repair
+When a tenant’s AC fails, fast commercial repair service gets the problem resolved before it becomes a complaint — or a lease issue.
+/services/ac-repair
+AC Installation
+Fleet replacement, new unit installations, and efficiency upgrades for your portfolio. Free estimates with volume pricing for multi-unit projects.
+/services/ac-installation
+AC Maintenance
+Preventive maintenance agreements built for property portfolios. Two visits per unit per year, priority scheduling, and system condition reporting.
+/services/ac-maintenance
+
+Final CTA Block
+H2
+Ready to Simplify Your Portfolio’s HVAC?
+Body
+One call. One contractor. Every property in your Jacksonville portfolio covered — repair, maintenance, replacement, and emergency response. Let’s build a partnership that works for your properties and your budget.
+Word Count: 34 words
+CTAs
+Property
+Specification
+Primary
+“Schedule a Portfolio Consultation” — Coral bg, pill, /contact?service=commercial
+Secondary
+“Call (904) 555-0199” — white border, pill, tel: link
+Evergreen solid bg, 720px centered, 72px/40px padding.
+
+6. Reference: Assets, GA4 & Checklist
+6.1 Image Assets
+Image
+Section
+Format
+KB
+Status
+hero-commercial
+5.1 Hero
+WebP+JPEG 1920px
+180
+PLACEHOLDER
+og-commercial
+OG
+WebP+JPEG 1200×630
+200
+PLACEHOLDER
+6 client type icons
+5.3 Who
+SVG 48×48
+3 ea
+Create
+6 service icons
+5.4 Services
+SVG 48×48
+3 ea
+Reuse
+6 partnership icons
+5.5 PM
+SVG 32×32
+2 ea
+Create
+5 benefit icons
+5.6 Why
+SVG 40×40
+2 ea
+Create
+
+The 6 client type icons and 6 partnership feature icons are unique to this page. Service icons reuse from the hub.
+6.2 GA4 Events
+Event
+Triggers
+Parameters
+cta_click
+Hero, PM partnership CTA, final CTA, service cards, header
+button_text, destination_url, page_section, service_type: “Commercial HVAC”, client_type: “property_management”
+phone_click
+Hero, PM section, FAQ answers, final CTA, header, sticky bar
+phone_number, page_section, client_type: “property_management”
+
+Add client_type: “property_management” to all events on this page. This enables filtering PM-source conversions from general commercial conversions in GA4 reporting.
+6.3 Implementation Checklist
+Build
+HTML validates, JSON-LD validates (Service with multiple serviceTypes, audience, BreadcrumbList, FAQPage)
+Title tag unique, contains “commercial” and “property management”
+Canonical URL: https://coolcozyac.com/services/commercial-hvac
+Breadcrumb: Home > Services > Commercial HVAC
+All /contact?service=commercial links route correctly and pre-select commercial in form
+Click-to-call on all tel: links
+FAQ accordion functional
+PM partnership section renders correctly on Evergreen bg (glass cards, text contrast verified)
+Client type cards render in 3-column desktop, 1-column mobile
+Content Quality
+AEO paragraph verified within 150 words, naming commercial service types and PM capabilities
+Commercial system types confirmed with client (only list what team can actually service)
+PM partnership features accurately describe real operational capabilities (not aspirational)
+All brand/equipment claims verified
+No duplicate content with PM callout sections on other pages (deeper treatment here, summaries there)
+Performance
+PageSpeed Mobile > 90
+LCP < 2.5s
+SEO
+No cannibalization: this targets “commercial HVAC”, no other page targets this
+Inbound links from every PM CTA across the site verified
+XML sitemap includes /services/commercial-hvac, priority 0.8
+
+— End of Document —
+
+Prepared by TradeWorks AI  ·  May 2026  ·  v1.0
+Next recommended guide: Ductwork (/services/ductwork)
+

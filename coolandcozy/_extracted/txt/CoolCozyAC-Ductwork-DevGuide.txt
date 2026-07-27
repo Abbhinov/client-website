@@ -1,0 +1,406 @@
+﻿
+DEVELOPER IMPLEMENTATION GUIDE
+
+COOL & COZY AC REPAIR
+Licensed HVAC Contractor  ·  Jacksonville, Florida
+
+DUCTWORK
+Repair, Sealing & Replacement
+Complete Page Build — Single Document
+
+URL: coolcozyac.com/services/ductwork
+Prepared by: TradeWorks AI  |  Version 1.0  |  May 2026
+Classification: Client Confidential
+
+Table of Contents
+
+1.  How to Use This Guide
+2.  Page Identity & Architecture
+3.  Keyword Strategy
+4.  Complete <head> Section
+5.  Section-by-Section Build
+5.1  Page Hero
+5.2  AEO Introduction Block
+5.3  Signs Your Ductwork Needs Attention
+5.4  Our Ductwork Services
+5.5  Why Ductwork Matters in Jacksonville
+5.6  Property Manager Ductwork Services
+5.7  FAQ Section (5 Questions)
+5.8  Related Services & Final CTA
+6.  Reference: Assets, GA4 & Checklist
+
+1. How to Use This Guide
+This guide defines the Ductwork service child page at /services/ductwork. Ductwork is a supporting service that frequently accompanies AC repair, installation, and indoor air quality work. The page targets visitors who suspect their ductwork is the problem — typically because of uneven cooling, high energy bills, excessive dust, or rooms that never reach the thermostat’s set temperature.
+The page also has a strong cross-sell function: a visitor who came for AC repair but was told “your ducts are leaking 30% of your cooled air” needs a resource that explains what that means and what the fix involves. This page serves that educational need while driving ductwork service conversions.
+Jacksonville-specific context is critical here: the city’s housing stock includes significant numbers of homes built in the 1960s through 1980s (Arlington, Southside, Mandarin) with original ductwork that is now 40–60 years old and often deteriorating. Attic-routed ductwork in Florida’s extreme heat is also a specific concern this page must address.
+1.1 Content Rules
+All content fresh. No duplication from repair, installation, or IAQ pages.
+Tone is educational. Most homeowners don’t understand ductwork — the content must explain before it sells.
+Jacksonville-specific: pre-1990 housing stock, attic temperatures exceeding 140°F in summer, flex duct deterioration, rodent damage in crawlspaces.
+Energy waste framing: duct problems are money problems. Quantify the waste in JEA bill terms.
+
+2. Page Identity & Architecture
+Property
+Specification
+URL Path
+/services/ductwork
+Canonical URL
+https://coolcozyac.com/services/ductwork
+Page Type
+Service child page
+Parent Page
+/services
+Breadcrumb
+Home > Services > Ductwork
+Primary Keyword
+ductwork repair Jacksonville FL
+Secondary Keywords
+duct sealing Jacksonville, duct replacement Jacksonville, air duct repair Duval County, ductwork cleaning Jacksonville
+Search Intent
+Commercial investigation / Informational
+Target Word Count
+1,400–1,800 words
+Primary Conversion Goal
+Phone call or form for duct inspection estimate
+Robots Directive
+index, follow
+XML Sitemap
+Included, priority 0.7
+
+2.1 Internal Linking
+TO /services/ac-repair: “weak airflow” symptom cross-link (duct problems mimic AC failure)
+TO /services/ac-installation: duct modification during new system install
+TO /services/indoor-air-quality: dust/allergen connection between ducts and IAQ
+TO /services/ac-maintenance: duct connection inspection is part of maintenance
+TO /contact?service=ductwork: at least 2 CTAs
+FROM AC Repair symptom grid: “weak airflow” and “uneven cooling” cards link here
+FROM AC Installation process: duct modification mention links here
+
+3. Keyword Strategy
+Keyword
+Vol.
+Intent
+Placement
+ductwork repair Jacksonville
+50–150
+Trans.
+H1, title, meta, AEO
+duct sealing Jacksonville FL
+30–80
+Trans.
+Services section
+air duct replacement Jacksonville
+30–80
+Trans.
+Services section
+duct cleaning Jacksonville
+100–300
+Trans.
+FAQ (differentiate from cleaning-only companies)
+uneven cooling rooms Jacksonville
+30–80
+Symptom
+Signs section
+high energy bill ductwork leak
+20–60
+Info
+Why it matters section
+flex duct repair Florida
+20–50
+Specific
+Services section
+
+3.1 Semantic Terms
+Supply duct, return duct, plenum, trunk line, branch line, flex duct, rigid duct, fiberglass duct board, duct boot, register, grille, damper, air seal, mastic, duct tape (actual metal tape, not cloth tape)
+Air leak, duct leak, disconnected duct, crushed duct, rodent damage, insulation deterioration, condensation, mold in ducts, dust from ducts
+Attic ductwork, crawlspace ductwork, unconditioned space, thermal loss, R-value, duct insulation, radiant heat gain
+
+4. Complete <head> Section
+Property
+Specification
+Title Tag
+Ductwork Repair & Sealing Jacksonville FL | Cool & Cozy AC Repair
+Title Chars
+63 characters
+Meta Description
+Expert ductwork repair, sealing & replacement in Jacksonville, FL. Stop wasting 20-30% of your cooled air. Licensed contractor CAC1819948. Free duct inspections. Call (904) 555-0199.
+Meta Desc. Chars
+152 characters
+Canonical URL
+https://coolcozyac.com/services/ductwork
+og:title
+Ductwork Repair Jacksonville FL | Cool & Cozy AC Repair
+og:description
+Leaking ducts waste 20-30% of cooled air. Professional duct repair, sealing & replacement for Jacksonville homes and properties.
+4.1 JSON-LD
+Service schema (serviceType: “Ductwork Repair”), BreadcrumbList (3-level), FAQPage (5 questions). Same provider block.
+4.2 Preload
+CSS-pattern hero (same as hub/maintenance) — no hero image preload needed.
+
+5. Section-by-Section Build
+The Ductwork page contains 8 content blocks. This is a supporting service page — shorter than repair or installation but with deep Jacksonville-specific content about housing stock and attic conditions.
+
+5.1 Page Hero
+Content
+Breadcrumb
+Home > Services > Ductwork
+H1
+Ductwork Repair, Sealing & Replacement in Jacksonville, FL
+Subheadline
+Your AC system is only as good as the ducts delivering the air. Leaking, disconnected, or deteriorating ductwork wastes 20–30% of your cooled air and drives up your JEA bill every month. Cool & Cozy inspects, seals, repairs, and replaces ductwork across Jacksonville homes and commercial properties.
+Word Count: 49 words
+CTAs
+Property
+Specification
+Primary
+Schedule a Duct Inspection — Coral bg, pill, /contact?service=ductwork
+Secondary
+Call (904) 555-0199 — white border, pill, tel: link
+Trust Line
+✓ FL License CAC1819948  ·  ✓ Free Duct Inspections  ·  ✓ All Duct Types  ·  ✓ Se habla español
+Layout & Design
+Evergreen solid bg with CSS geometric pattern (same as services hub and maintenance heroes). 340px desktop, auto mobile. LCP is near-zero since there’s no hero image.
+
+5.2 AEO Introduction Block
+Content
+H2
+Professional Ductwork Services in Jacksonville, FL
+AEO Paragraph
+Cool & Cozy AC Repair provides ductwork inspection, repair, sealing, and replacement for homes, businesses, and managed properties throughout Jacksonville and Duval County. The duct system distributes cooled and heated air from your HVAC equipment to every room in your building — and when ducts leak, disconnect, collapse, or deteriorate, the result is wasted energy, uneven temperatures, excessive dust, and an AC system working significantly harder than it should. The U.S. Department of Energy estimates that typical duct systems lose 20 to 30 percent of air to leaks, holes, and poor connections. In Jacksonville’s extreme summer heat, that loss translates directly to higher JEA electricity bills and rooms that never cool properly. Cool & Cozy is a Florida-licensed contractor (CAC1819948) serving residential and commercial duct systems. Call (904) 555-0199 for a free duct inspection.
+Word Count: 138 words
+AEO Targets: “What is ductwork repair?” “Who repairs ducts in Jacksonville?” “How much air do leaky ducts waste?”
+The 20–30% air loss statistic is from the U.S. Department of Energy (energy.gov). This is a well-established figure that provides credible authority to the content.
+
+5.3 Signs Your Ductwork Needs Attention
+Overview
+Symptom-based section matching how homeowners experience duct problems. They don’t know their ducts are leaking — they know their back bedroom is always hot or their energy bill spiked. This section connects the symptom to the cause.
+Layout
+Property
+Specification
+Container
+#EAF3F2 (Sky Mist), 1080px centered
+Grid
+2 columns desktop, 1 column mobile, warning-icon cards
+Content
+H2
+How Do You Know If Your Ducts Are the Problem?
+
+Rooms that never cool evenly — If some rooms reach the thermostat’s set temperature while others stay warm, the ductwork serving those rooms may be leaking, disconnected, or undersized. This is especially common in rooms at the end of long duct runs or rooms served by flexible duct that has been crushed or kinked.
+
+Unusually high energy bills — When 20–30% of your cooled air leaks into the attic or crawlspace, your AC runs longer and harder to compensate. On a $200/month summer JEA bill, that’s $40–$60/month you’re paying to cool your attic instead of your living room.
+
+Excessive dust in the house — Leaky return ducts pull unconditioned attic or crawlspace air — along with dust, insulation fibers, and allergens — into your living space. If you’re dusting constantly and changing filters more than monthly, your ducts may be the source.
+
+Visible duct damage — If you can see your ductwork in the attic or crawlspace and notice disconnected joints, crushed flex duct, sagging runs, torn insulation, or rodent chew marks, those are direct air leaks that need repair.
+
+Whistling, rattling, or popping noises from vents — These sounds often indicate a partially blocked or kinked duct, a loose connection vibrating against framing, or sheet metal expanding and contracting from temperature changes.
+
+Musty or stale odors from vents — In Jacksonville’s humidity, condensation inside poorly insulated ducts creates conditions for mold and mildew growth. If turning on the AC produces a musty smell, the ductwork may need inspection and remediation.
+
+If any of these sound familiar, call (904) 555-0199 for a free duct inspection. We’ll find the problem and show you exactly what’s happening.
+
+5.4 Our Ductwork Services
+Overview
+Four service categories presented as cards with enough technical detail to demonstrate expertise while remaining accessible to homeowners.
+Layout
+Property
+Specification
+Container
+#FFFFFF, 1280px centered, 2-column desktop
+Content
+H2
+Ductwork Services for Jacksonville Homes and Properties
+
+Service 1: Duct Inspection & Leak Testing
+We perform a visual and pressure-based inspection of your entire duct system. This includes accessing attic and crawlspace runs, checking every connection point, measuring airflow at each supply vent, and identifying leaks, disconnections, and insulation failures. You receive a written report with findings, photos, and recommendations — before any work is proposed.
+Typical Scenario: Homeowner suspects duct issues but isn’t sure; new-to-homeowner wanting baseline assessment; pre-installation duct condition check
+
+Service 2: Duct Sealing & Repair
+We seal leaks at connections, joints, and boot-to-register transitions using mastic sealant and metal-backed tape (UL-listed, not cloth “duct tape” which fails in attic heat). Disconnected sections are reconnected and secured with mechanical fasteners. Crushed or kinked flex duct is repositioned and supported properly. Small holes and tears are patched; larger damage may require section replacement.
+Typical Scenario: Uneven cooling, high energy bills, visible duct damage, post-repair airflow improvement
+
+Service 3: Duct Replacement
+When ductwork is too deteriorated for repair — common in Jacksonville homes built before 1990 with original flex duct that has become brittle, separated from boots, or lost its insulation R-value — we replace duct runs with properly sized, insulated, and sealed new ductwork. Replacement may involve individual runs or the complete duct system depending on overall condition.
+Typical Scenario: 40–60 year old ductwork in pre-1990 homes, rodent-damaged runs, ductwork failing during AC installation
+
+Service 4: Duct Modification & New Runs
+When you add a room, convert a garage, or reconfigure living space, the existing duct system may not reach the new area. We design and install new duct runs sized to your AC system’s capacity, ensuring the added space receives adequate airflow without starving existing rooms. We also modify ductwork during new AC installations when the replacement system has different airflow requirements than the original.
+Typical Scenario: Room additions, garage conversions, layout changes, new AC system with different airflow specs
+
+Cool & Cozy positions ductwork as an HVAC service, not a standalone cleaning business. The page does not offer “duct cleaning” as a primary service because duct cleaning alone (without leak repair) is often ineffective and is a market saturated with low-quality operators. The FAQ section below addresses the duct cleaning question directly and honestly.
+
+5.5 Why Ductwork Matters More in Jacksonville Than You Think
+Overview
+Jacksonville-specific factors that make ductwork a bigger issue here than in cooler climates. This section is the local authority differentiator that generic HVAC content from national providers cannot match.
+Layout
+Property
+Specification
+Container
+#F0E6D3 (Warm Sand), 960px centered
+Content
+H2
+Why Jacksonville’s Climate Makes Your Ductwork a Critical Factor
+
+Attic temperatures exceed 140°F in summer — Most Jacksonville homes route ductwork through unconditioned attic space. When your attic hits 140°F and your supply air is 55°F, the temperature difference across the duct wall is 85 degrees. Poorly insulated or uninsulated ducts absorb that heat, delivering warm air to rooms instead of cold. Even well-insulated ducts lose efficiency in this extreme gradient.
+
+Humidity creates condensation inside poorly insulated ducts — When cold supply air moves through hot, humid attic space in ducts with inadequate insulation, condensation forms on the duct exterior — or worse, inside the duct. This moisture promotes mold growth, degrades insulation, and can drip onto ceilings below, causing water stains and structural damage.
+
+Jacksonville’s older housing stock has aging ductwork — Neighborhoods like Arlington, Southside, San Jose, and older sections of Mandarin contain significant numbers of homes built in the 1960s through 1980s. The original flex duct in these homes is now 40–60 years old. Flex duct was not designed for that lifespan — the inner liner separates, insulation compresses and loses R-value, and connections loosen over decades of thermal cycling.
+
+Rodent and pest damage is common in crawlspaces — Jacksonville’s warm climate supports year-round rodent and insect activity. Rats, mice, and squirrels commonly nest in ductwork running through crawlspaces and attics, chewing holes in flex duct and contaminating the air supply with droppings and nesting material.
+
+Your AC runs 2,500+ hours per year through these ducts — Every hour of operation with leaking ducts compounds the energy waste. Over a cooling season, a duct system leaking 25% of its air costs the equivalent of running your AC for an extra 625 hours — roughly three months of additional runtime that you’re paying JEA for without receiving any cooling benefit.
+
+5.6 Property Manager Ductwork Services
+Layout
+Property
+Specification
+Container
+#1A5653 (Evergreen), 1080px centered, 48px padding
+Content
+Eyebrow
+FOR PROPERTY MANAGERS
+H3
+Ductwork Assessment Across Your Portfolio
+Body
+Ductwork problems in rental units directly affect tenant satisfaction, energy costs (which you may or may not pass through to tenants), and the lifespan of your HVAC equipment. Cool & Cozy inspects ductwork as part of portfolio maintenance agreements and can assess duct condition across all your Jacksonville properties in a single coordinated effort. We prioritize the worst-performing units for repair or replacement and provide per-unit condition reports for your capital planning.
+Word Count: 70 words
+
+PM Features
+Portfolio-wide duct condition assessment with per-unit scoring
+Prioritized repair recommendations ranked by energy waste severity
+Duct replacement coordinated with AC system replacements for maximum efficiency
+Tenant-transparent service — we explain what we’re doing to tenants in English or Spanish
+
+CTA
+Button: “Discuss Your Properties” → /contact?service=commercial
+Same Evergreen bg, glass-card styling, Coral CTA. Compact PM section — shorter than the commercial HVAC page’s full partnership model.
+
+5.7 FAQ Section (5 Questions)
+Layout
+Property
+Specification
+Container
+#EAF3F2 (Sky Mist), 800px centered, accordion
+FAQ 1
+Q: How much does ductwork repair cost in Jacksonville?
+A: Ductwork repair costs vary widely depending on the scope. Sealing accessible leaks at connections and joints typically costs $300 to $700. Repairing or replacing individual damaged duct runs ranges from $500 to $1,500 per run depending on location and accessibility. Full duct system replacement for a typical Jacksonville home ranges from $2,000 to $5,000+. Cool & Cozy provides a free inspection with a written report and quote before any work begins.
+
+FAQ 2
+Q: How do I know if my ducts are leaking?
+A: The most common signs of duct leaks are rooms that never reach the thermostat’s set temperature, unusually high energy bills, excessive dust in the house, and visible damage to ductwork in your attic or crawlspace. Cool & Cozy performs pressure testing and visual inspection to identify and quantify duct leaks. In many cases, we can show you the leaks directly during the inspection.
+
+FAQ 3
+Q: Do you offer duct cleaning?
+A: Cool & Cozy focuses on ductwork repair, sealing, and replacement rather than standalone duct cleaning. Our perspective, based on EPA guidance, is that duct cleaning alone is rarely effective if the underlying leaks and damage are not addressed first. Cleaning ducts that are still leaking means you’re cleaning contamination that will return immediately. We do clean accessible duct surfaces as part of repair and replacement projects, and we can recommend reputable duct cleaning specialists if cleaning is appropriate for your situation after the duct system is sealed.
+Word Count: 90 words
+This FAQ is a deliberate differentiation move. The duct cleaning market is flooded with low-quality operators running $99 specials. Positioning Cool & Cozy as focused on structural duct integrity (not surface cleaning) aligns with the EPA’s published guidance and elevates the company above the cleaning-only crowd.
+
+FAQ 4
+Q: How long does ductwork repair or replacement take?
+A: Sealing and minor repairs are typically completed in half a day (3 to 4 hours). Replacing individual duct runs takes a full day. Complete duct system replacement for a typical Jacksonville home takes 1 to 2 days depending on the size of the home and accessibility of the duct routing. We provide a specific timeline during your free inspection based on the scope of work your system needs.
+
+FAQ 5
+Q: Should I repair my ducts when I install a new AC system?
+A: In most cases, yes. Installing a new high-efficiency AC system on deteriorated ductwork is like putting a new engine in a car with flat tires. The new system cannot perform to its rated efficiency if 20 to 30 percent of its output is leaking into the attic. Cool & Cozy evaluates ductwork condition as part of every installation estimate and recommends duct repair, sealing, or replacement when it would materially improve the new system’s performance. Addressing ductwork during installation is also more cost-effective than doing it as a separate project later.
+Internal Link: Cross-link opportunity to /services/ac-installation
+
+FAQPage JSON-LD
+5-question FAQPage schema in <head> with full answer text.
+
+5.8 Related Services & Final CTA
+Related Services (3 Cards)
+Service
+Description
+Link
+AC Repair
+If weak airflow or uneven cooling turns out to be an AC system issue rather than a duct problem, our technicians diagnose and repair the root cause.
+/services/ac-repair
+AC Installation
+Duct repair or replacement is most cost-effective when done alongside a new AC installation. We handle both as one coordinated project.
+/services/ac-installation
+Indoor Air Quality
+Sealed ducts are the foundation of good indoor air quality. Pair duct repair with filtration, UV lights, or dehumidification for complete IAQ improvement.
+/services/indoor-air-quality
+
+Final CTA
+H2
+Find Out What Your Ducts Are Costing You
+Body
+A free duct inspection takes less than an hour and shows you exactly where your cooled air is going — and how much you’re paying JEA to cool your attic. Call us, and we’ll show you what your ducts are actually doing.
+Word Count: 44 words
+CTAs
+Property
+Specification
+Primary
+Schedule a Free Duct Inspection — Coral bg, pill, /contact?service=ductwork
+Secondary
+Call (904) 555-0199 — white border, pill, tel: link
+Evergreen solid bg, 720px centered, 72px/40px padding.
+
+6. Reference: Assets, GA4 & Checklist
+6.1 Image Assets
+Image
+Section
+Format
+KB
+Status
+hero bg
+5.1
+CSS pattern
+0
+Ready
+og-ductwork
+OG
+WebP+JPEG 1200×630
+200
+PLACEHOLDER
+6 symptom icons
+5.3
+SVG 32×32
+2 ea
+Create
+4 service icons
+5.4
+SVG 48×48
+3 ea
+Create
+3 related icons
+5.8
+SVG 48×48
+3 ea
+Reuse
+6.2 GA4 Events
+Event
+Triggers
+Parameters
+cta_click
+Hero, PM section, related cards, final CTA
+button_text, destination_url, page_section, service_type: “Ductwork”
+phone_click
+Hero, signs section, PM, FAQ, final CTA, header, sticky bar
+phone_number, page_section
+6.3 Checklist
+Build
+HTML validates, JSON-LD validates (Service, BreadcrumbList, FAQPage — 5 questions)
+Title tag unique, contains “ductwork” + “Jacksonville”
+Canonical URL correct, breadcrumb functional
+All internal links verified: AC repair, installation, IAQ, maintenance, /contact
+Click-to-call on all tel: links
+FAQ accordion functional, duct cleaning question addresses differentiation honestly
+Content
+AEO paragraph within 150 words, cites DOE 20–30% statistic
+Jacksonville-specific content: attic temps, housing stock age, flex duct deterioration, JEA costs
+Duct cleaning positioning is honest and aligned with EPA guidance
+Pricing ranges reflect Jacksonville market
+No duplicate content with repair, installation, or IAQ pages
+SEO
+No cannibalization: this targets “ductwork repair,” no other page targets this keyword
+Cross-links from AC Repair (“weak airflow” symptom) and AC Installation (duct modification) verified
+XML sitemap includes /services/ductwork, priority 0.7
+
+— End of Document —
+
+Prepared by TradeWorks AI  ·  May 2026  ·  v1.0
+Next recommended guide: Indoor Air Quality (/services/indoor-air-quality)
+

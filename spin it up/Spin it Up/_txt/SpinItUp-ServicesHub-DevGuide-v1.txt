@@ -1,0 +1,690 @@
+
+SPIN IT UP LAUNDRY
+SERVICES HUBDEVELOPER GUIDE
+Section-by-Section Implementation Specification
+
+URL: spinituplaundry.net/services/
+Prepared by: TradeWorks AI  |  Version 1.0  |  May 2026
+Classification: Client Confidential
+
+Table of Contents
+1  How to Use This Guide
+2  Page Identity & Architecture
+3  Keyword Strategy & Content Map
+4  Complete <head> Section
+5  Section 1: Site Header & Navigation
+6  Section 2: Hero Banner
+7  Section 3: AEO Introduction Block
+8  Section 4: Services Card Grid
+9  Section 5: Why Choose Our Services
+10  Section 6: How to Get Started
+11  Section 7: FAQ Section
+12  Section 8: Final CTA Block
+13  Section 9: Footer
+14  Section 10: Sticky Mobile CTA Bar
+15  Reference: Image Asset Inventory
+16  Reference: GA4 Event Tracking
+17  Reference: Implementation Checklist
+
+1. How to Use This Guide
+This developer guide provides the complete implementation specification for the Spin It Up Laundry Services Hub page (/services/). This page functions as the top-level gateway to all five service child pages, organized as clickable cards with descriptions and CTAs. Its primary job is click-through to child pages, not direct conversion.
+This guide references the Spin It Up Laundry Website Strategy & Architecture Document (v1.0) for brand system, site architecture, and keyword strategy. The strategy document is the authoritative source for design tokens, color palette, typography scale, and component specifications. This guide applies those specifications to the Services Hub page.
+Label Legend
+Label
+Meaning
+NEW
+New content or element not present on the current website
+REVISED
+Existing content modified or restructured from the current site
+DEV ACTION
+Specific technical implementation instruction for the developer
+NOTE
+Context, rationale, or clarification for editorial or strategic decisions
+Content Authoring Rules
+All content is written fresh. No content is copied from the current GoDaddy site, competitor sites, or any prior audit documents.
+AEO opening paragraph within the first 100–150 words directly answers the query “laundry services Avondale Chicago.”
+All phone numbers render as clickable tel: links for mobile tap-to-call.
+Exact copy is provided for every text element. Developers implement the copy as written.
+
+2. Page Identity & Architecture
+URL Path
+/services/
+Page Type
+Hub — Services Silo Parent
+Canonical URL
+https://spinituplaundry.net/services/
+Breadcrumb
+Home > Services
+Parent Page
+/ (Homepage)
+Child Pages
+/services/self-service/, /services/wash-and-fold/, /services/pickup-delivery/, /services/commercial/, /services/ironing-pressing/
+Primary Keyword
+laundry services avondale chicago (50–110/mo)
+Secondary Keywords
+laundromat services chicago, wash and fold chicago, laundry pickup chicago, commercial laundry chicago
+Search Intent
+Commercial / Navigational
+Target Word Count
+600–800 words
+Primary Conversion Goal
+Click-through to service child pages
+Secondary Conversion Goals
+Phone call (tap-to-call), Cents app order
+Robots Directive
+index, follow
+XML Sitemap
+Include — priority 0.9
+Content Update Frequency
+Evergreen (update when services change)
+hreflang
+<link rel="alternate" hreflang="es" href="https://spinituplaundry.net/es/servicios/">
+Internal Linking Requirements
+Direction
+Link
+Anchor Text
+Down → Child
+/services/self-service/
+Self-Service Laundry, View Self-Service →
+Down → Child
+/services/wash-and-fold/
+Wash & Fold, View Wash & Fold →
+Down → Child
+/services/pickup-delivery/
+Pickup & Delivery, Schedule Pickup →
+Down → Child
+/services/commercial/
+Commercial Services, Commercial Info →
+Down → Child
+/services/ironing-pressing/
+Ironing & Pressing, View Pressing →
+Cross-silo
+/pricing/
+View Pricing, See Our Pricing
+Cross-silo
+/faq/
+Frequently Asked Questions
+Cross-silo
+/contact/
+Contact Us, Get in Touch
+Up → Parent
+/
+Home (breadcrumb)
+
+3. Keyword Strategy & Content Map
+3.1 Keyword Cluster
+Keyword
+Est. Volume
+Difficulty
+Intent
+Placement
+laundry services avondale chicago
+50–110
+Low
+Commercial
+H1, title tag, AEO paragraph, schema
+laundromat services chicago
+170–320
+Medium
+Commercial
+Title tag, body content
+wash and fold chicago
+590
+Medium
+Transactional
+Wash & Fold card, body content
+laundry pickup and delivery chicago
+320
+Low–Med
+Transactional
+Pickup card, body content
+commercial laundry service chicago
+210
+Low–Med
+Commercial
+Commercial card, body content
+self service laundry chicago
+170
+Low–Med
+Local
+Self-Service card, body content
+laundry drop off near me
+1,900
+High (local)
+Local/Trans
+Served via GBP + child pages
+coin laundry avondale
+30–70
+Low
+Local
+AEO paragraph, Self-Service card
+3.2 Semantic/LSI Terms
+Use naturally throughout content: full-service laundromat, professional laundry services, laundry solutions, wash dry fold, same-day laundry, next-day turnaround, pickup and delivery, commercial bulk laundry, Airbnb laundry, laundry card system, EBT accepted, 130 lb capacity, large-load washers, Cents app, Kimball Ave, Avondale neighborhood, Northwest Side Chicago, 60618.
+
+4. Complete <head> Section
+4.1 Meta Tags
+Tag
+Content
+<title>
+Laundry Services in Avondale, Chicago | Spin It Up Laundry (53 characters)
+<meta name="description">
+Full-service laundry in Avondale: self-service with 130 lb machines, wash & fold, pickup & delivery via Cents app, commercial services & pressing. EBT accepted. (155 characters)
+<meta name="robots">
+index, follow
+<meta name="viewport">
+width=device-width, initial-scale=1
+<meta charset>
+UTF-8
+<html lang>
+en
+<link rel="canonical">
+https://spinituplaundry.net/services/
+<link rel="alternate" hreflang="es">
+https://spinituplaundry.net/es/servicios/
+<link rel="alternate" hreflang="en">
+https://spinituplaundry.net/services/
+4.2 Open Graph & Twitter
+Tag
+Content
+og:title
+Laundry Services | Spin It Up Laundry — Avondale, Chicago
+og:description
+Self-service, wash & fold, pickup & delivery, commercial laundry, and pressing services. 41 washers, 52 dryers, 130 lb machines. EBT accepted.
+og:type
+website
+og:url
+https://spinituplaundry.net/services/
+og:image
+https://spinituplaundry.net/images/og-services.jpg (1200x630, <200KB)
+og:locale
+en_US
+og:site_name
+Spin It Up Laundry
+twitter:card
+summary_large_image
+twitter:title
+Laundry Services | Spin It Up Laundry — Avondale, Chicago
+twitter:description
+Self-service, wash & fold, pickup & delivery, commercial laundry, and pressing. 41 washers, 52 dryers. EBT accepted.
+twitter:image
+https://spinituplaundry.net/images/og-services.jpg
+4.3 JSON-LD Structured Data
+Two schema blocks on this page: a CollectionPage schema wrapping the service offerings and a BreadcrumbList. The individual Service schemas live on their respective child pages, not here.
+
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Laundry Services | Spin It Up Laundry",
+  "description": "Complete laundry services in Avondale, Chicago: self-service, wash and fold, pickup and delivery, commercial laundry, and ironing and pressing.",
+  "url": "https://spinituplaundry.net/services/",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Spin It Up Laundry",
+    "url": "https://spinituplaundry.net/"
+  },
+  "provider": {
+    "@type": "Laundromat",
+    "name": "Spin It Up Laundry",
+    "telephone": "+1-773-654-1275",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "3710 N Kimball Ave",
+      "addressLocality": "Chicago",
+      "addressRegion": "IL",
+      "postalCode": "60618"
+    }
+  },
+  "mainEntity": {
+    "@type": "ItemList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Self-Service Laundry", "url": "https://spinituplaundry.net/services/self-service/" },
+      { "@type": "ListItem", "position": 2, "name": "Wash and Fold", "url": "https://spinituplaundry.net/services/wash-and-fold/" },
+      { "@type": "ListItem", "position": 3, "name": "Pickup and Delivery", "url": "https://spinituplaundry.net/services/pickup-delivery/" },
+      { "@type": "ListItem", "position": 4, "name": "Commercial Laundry Services", "url": "https://spinituplaundry.net/services/commercial/" },
+      { "@type": "ListItem", "position": 5, "name": "Ironing and Pressing", "url": "https://spinituplaundry.net/services/ironing-pressing/" }
+    ]
+  }
+}
+
+BreadcrumbList schema:
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://spinituplaundry.net/" },
+    { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://spinituplaundry.net/services/" }
+  ]
+}
+
+DEV ACTION:  Validate both schema blocks using the Google Rich Results Test after deployment. The CollectionPage with ItemList helps Google understand the hub-and-spoke relationship between this page and the five child service pages.
+
+5. Section 1: Site Header & Navigation
+Global header component — identical specification to the Homepage Developer Guide (Section 5). On this page, the header renders with a solid white background from initial load (no transparent-to-solid transition since there is no full-viewport hero). The “Services” nav item displays as the active/current page.
+DEV ACTION:  Apply the active page indicator to the “Services” nav item: font-weight 700, color Spin Blue (#1E40AF), underline offset 4px in Fresh Cyan (#06B6D4). In the mobile hamburger menu, the “Services” item shows as expanded by default with all five child pages visible.
+
+6. Section 2: Hero Banner
+Section Overview
+Compact hero banner establishing the page topic and providing breadcrumb context. This is not a full-viewport hero like the homepage — it is a slim banner that orients the visitor and sets up the content below. Background: Spin Blue (#1E40AF) with subtle diagonal gradient to #1E3A8A.
+Layout Specifications
+Property
+Desktop
+Tablet
+Mobile
+Height
+Auto (content-driven), padding 64px 0
+padding 48px 0
+padding 40px 16px
+Background
+linear-gradient(135deg, #1E40AF 0%, #1E3A8A 100%)
+Same
+Same
+Container
+max-width 1280px, centered, padding 0 48px
+padding 0 24px
+padding 0 16px
+Content Alignment
+Center
+Center
+Center
+Content Specifications
+NEW:  Entire hero banner is new content.
+
+Breadcrumb: Home > Services — “Home” links to /. “Services” is current page (no link, font-weight 600). Font: 14px/500, color rgba(255,255,255,0.7). Home link hover: white. Separator: “/”. Margin-bottom 20px.
+
+H1 Headline: "Our Laundry Services" — 3 words, 21 characters. Font: 40px/800 (desktop), 32px (tablet), 28px (mobile). Color: white. Line-height: 1.15. Margin-bottom 12px.
+
+Subheadline: "From quick self-service washes to full pickup and delivery — everything your laundry needs under one roof at 3710 N Kimball Ave." — 22 words. Font: 18px/400 (desktop), 17px (tablet), 16px (mobile). Color: rgba(255,255,255,0.85). Line-height: 1.55. Max-width: 680px, centered. Margin-bottom 0.
+HTML Code
+<section class="page-hero" aria-label="Services overview">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <ol>
+        <li><a href="/">Home</a></li>
+        <li aria-current="page">Services</li>
+      </ol>
+    </nav>
+    <h1 class="page-hero__title">Our Laundry Services</h1>
+    <p class="page-hero__subtitle">From quick self-service washes to full pickup and delivery &mdash; everything your laundry needs under one roof at 3710 N Kimball Ave.</p>
+  </div>
+</section>
+
+7. Section 3: AEO Introduction Block
+Section Overview
+Direct-answer introductory paragraph optimized for AI extraction and featured snippets. This text answers the query “what laundry services does Spin It Up offer” and establishes entity context for GEO. Background: White (#FFFFFF).
+Layout Specifications
+Property
+Desktop
+Tablet
+Mobile
+Section Padding
+48px 0 0
+40px 0 0
+32px 16px 0
+Container
+max-width 800px, centered
+Same
+Same
+Text Alignment
+Center
+Center
+Center
+Content Specifications
+NEW:  AEO opening paragraph — new content.
+
+"Spin It Up Laundry at 3710 N Kimball Ave in Avondale, Chicago offers five professional laundry services: self-service laundry with 41 washers and 52 dryers including 130 lb commercial-capacity machines, professional wash-and-fold drop-off with next-day turnaround, pickup and delivery ordered through the Cents app, commercial laundry services for Airbnb hosts, salons, and restaurants, and garment ironing and pressing. We accept cash, credit, debit, EBT, and laundry cards. All services are available seven days a week from 6:00 AM to 11:00 PM." — 87 words, 556 characters.
+
+Font: 18px/400 Body Text (#334155). Line-height: 1.65. Max-width: 800px, centered. Margin-bottom 48px.
+NOTE:  This paragraph is the AEO anchor for the Services Hub. It names the business, provides the address, lists all five services with key differentiators, confirms payment methods, and states hours — all within the first 100 words. AI systems and featured snippets will extract this as the definitive answer to service-related queries.
+
+8. Section 4: Services Card Grid
+Section Overview
+The primary content section of this page. Five service cards, each linking to the dedicated child page. This is the hub’s core function: route visitors to the service that matches their need. Background: White (#FFFFFF), alternating to Ice Blue (#F0F9FF) if needed for visual rhythm.
+Layout Specifications
+Property
+Desktop
+Tablet
+Mobile
+Section Padding
+0 0 80px
+0 0 64px
+0 16px 48px
+Grid
+2 columns top row (Self-Service, Wash & Fold), 3 columns second row (Pickup, Commercial, Pressing) — OR 3+2 layout
+2 columns
+1 column stacked
+Card Gap
+24px
+20px
+16px
+Container
+max-width 1280px, centered
+Same
+Same
+Content Specifications
+Each card follows the component specification from the Strategy & Architecture document (Section 4.5). Cards are larger and more detailed here than on the homepage — this is the dedicated services page, so descriptions are longer and include pricing signals.
+
+Card 1: Self-Service Laundry
+Element
+Content
+Icon
+WashingMachine (Lucide) — 48px, Spin Blue (#1E40AF)
+H3 Title
+Self-Service Laundry
+Description
+"Walk in, load up, and let our brand-new machines do the work. We have 41 washers and 52 dryers including two 130 lb commercial-capacity machines — the largest in the Avondale area. Wash everything from everyday loads to king-size comforters and sleeping bags. We accept laundry cards, credit, debit, cash, and EBT." — 51 words
+Pricing Signal
+"Starting at $3.25/load for standard machines"
+CTA
+"View Self-Service →" — links to /services/self-service/
+Badge
+"EBT Accepted" — Fresh Cyan badge
+
+Card 2: Wash & Fold Drop-Off
+Element
+Content
+Icon
+Shirt (Lucide) — 48px, Spin Blue
+H3 Title
+Wash & Fold
+Description
+"Drop off your dirty laundry and pick it up clean, folded, and ready. Our professional attendants wash, dry, and fold your clothes using commercial-grade machines and quality detergent. Most orders are ready for pickup within 24 hours. Stain treatment is included at no extra charge." — 44 words
+Pricing Signal
+"Starting at $1.50/lb"
+CTA
+"View Wash & Fold →" — links to /services/wash-and-fold/
+Badge
+"Next-Day Turnaround" — Fresh Cyan badge
+
+Card 3: Pickup & Delivery
+Element
+Content
+Icon
+Truck (Lucide) — 48px, Spin Blue
+H3 Title
+Pickup & Delivery
+Description
+"Schedule a pickup right from your phone through the Cents app. We collect your laundry from your door, wash, dry, and fold everything at our facility, and deliver it back clean — typically within 24 hours. Available across Avondale, Irving Park, Logan Square, Hermosa, and surrounding neighborhoods." — 46 words
+Pricing Signal
+"Starting at $1.75/lb + pickup fee"
+CTA
+"Schedule Pickup →" — links to /services/pickup-delivery/
+Badge
+"Order via Cents App" — CTA Orange badge
+
+Card 4: Commercial Laundry Services
+Element
+Content
+Icon
+Building2 (Lucide) — 48px, Spin Blue
+H3 Title
+Commercial Services
+Description
+"Reliable bulk laundry for businesses that depend on clean linens, towels, and uniforms. Airbnb hosts, salons, gyms, restaurants, and property managers trust us for consistent turnaround, volume pricing, and pickup and delivery for commercial accounts. Our 130 lb machines handle loads that standard laundromats cannot." — 45 words
+Pricing Signal
+"Custom volume pricing available"
+CTA
+"Commercial Info →" — links to /services/commercial/
+Badge
+"Volume Pricing" — Fresh Cyan badge
+
+Card 5: Ironing & Pressing
+Element
+Content
+Icon
+Iron (Lucide) — 48px, Spin Blue (use a suitable Lucide icon; "Shirt" with steam or similar)
+H3 Title
+Ironing & Pressing
+Description
+"Dress shirts, suits, uniforms, and formal wear professionally pressed and finished by our experienced attendants. Drop off at our Kimball Ave location and pick up looking sharp. Combine with wash-and-fold for a complete laundry solution." — 35 words
+Pricing Signal
+"Starting at $3.00/item"
+CTA
+"View Pressing →" — links to /services/ironing-pressing/
+Badge
+"Drop-Off Service" — Fresh Cyan badge
+Card Design Specifications
+Each card: bg white, border 1px #E2E8F0, border-radius 12px, padding 32px 24px. Icon centered at top, 48px in Spin Blue, margin-bottom 20px. H3 title: 22px/700 Dark Slate, margin-bottom 8px. Description: 16px/400 Body Text, line-height 1.6, margin-bottom 16px. Pricing signal: 15px/600 Spin Blue, margin-bottom 16px. Badge: inline-flex pill, font 13px/600, padding 4px 12px, border-radius 9999px. CTA link: 16px/600 Spin Blue, no underline, hover: underline, displayed as block at card bottom. Entire card is clickable (anchor wraps card). Hover: box-shadow 0 8px 24px rgba(0,0,0,0.1), transform translateY(-3px), transition 200ms ease.
+DEV ACTION:  Ensure that the card click and the CTA link navigate to the same destination. The card-level anchor wraps the entire card for a larger click target. The CTA text link inside provides visual affordance but should not create a nested link — implement as a single <a> wrapping the card content, with the CTA styled as a visual link but not a separate <a> element.
+
+9. Section 5: Why Choose Our Services
+Section Overview
+Compact differentiator section reinforcing why Spin It Up’s services stand out. Keeps the hub page from being purely navigational by adding conversion-supporting content. Background: Ice Blue (#F0F9FF).
+Content Specifications
+H2: "Why Avondale Chooses Spin It Up" — 6 words. Centered. Font: 36px/700 (desktop), 28px (mobile). Color: Dark Slate. Margin-bottom 40px.
+
+Four differentiator tiles in a single row (desktop), 2x2 grid (tablet), stacked (mobile). Each tile: icon + title + one-sentence description.
+Icon (Lucide)
+Title
+Description
+Maximize
+Biggest Machines in the Area
+41 washers and 52 dryers including 130 lb commercial machines that handle loads no one else in Avondale can.
+Smartphone
+Order From Your Phone
+Schedule pickup and delivery through the Cents app — no phone calls, no waiting, laundry delivered to your door.
+Gift
+Free Drying Tue–Thu
+Wash any load Tuesday through Thursday and dry for free. Real weekly savings, not a one-time promotion.
+Shield
+EBT Accepted
+One of the only laundromats in the Avondale area that accepts EBT for self-service washing and drying.
+Each tile: flex column, center-aligned. Icon 40px in Fresh Cyan, margin-bottom 12px. Title: 18px/700 Dark Slate. Description: 15px/400 Body Text, line-height 1.55. Max-width per tile: 280px. Section padding: 64px 0 (desktop), 48px 16px (mobile).
+
+10. Section 6: How to Get Started
+Section Overview
+Simple three-option section guiding visitors toward the right service path. Reduces decision paralysis for visitors who aren’t sure which service fits their need. Background: White (#FFFFFF).
+Content Specifications
+H2: "Not Sure Which Service Is Right for You?" — 8 words. Centered. Font: 32px/700 (desktop), 26px (mobile). Color: Dark Slate. Margin-bottom 16px.
+Subtext: "Here’s the quick version:" — 5 words. Centered. 16px/400 Body Text. Margin-bottom 40px.
+
+Option
+If You…
+Try…
+Link
+1
+Want to do it yourself with big machines
+Self-Service Laundry
+/services/self-service/
+2
+Want to drop off and pick up later
+Wash & Fold
+/services/wash-and-fold/
+3
+Want it picked up from your door
+Pickup & Delivery
+/services/pickup-delivery/
+Layout: three side-by-side cards (desktop), stacked (mobile). Each option: border-left 4px Fresh Cyan, bg #F8FAFC, padding 24px, border-radius 0 12px 12px 0. “If You…” text: 16px/400 Body Text. “Try…” text: 18px/700 Spin Blue, clickable link to the service page. Arrow icon (→) after link text.
+Below options: "Need help for your business? See Commercial Services or call (773) 654-1275." — centered, 16px/400 Body Text. “Commercial Services” links to /services/commercial/. Phone number is a tel: link.
+
+11. Section 7: FAQ Section
+Section Overview
+Accordion FAQ section with service-level questions. These are broader than the homepage FAQ (which covers facility/logistics) — these address service selection and comparison queries. FAQPage schema required. Background: Ice Blue (#F0F9FF).
+Content Specifications
+H2: "Frequently Asked Questions About Our Services" — 7 words. Centered. Font: 32px/700 (desktop), 26px (mobile). Color: Dark Slate. Margin-bottom 40px.
+
+#
+Question
+Answer
+1
+What is the difference between wash-and-fold and pickup and delivery?
+Wash-and-fold is a drop-off service: you bring your laundry to our location at 3710 N Kimball Ave, and we wash, dry, and fold it for you to pick up later — typically within 24 hours. Pickup and delivery adds door-to-door convenience: you schedule through the Cents app, and our driver picks up and delivers your laundry to your home or office. Both services use the same professional wash process and include stain treatment.
+2
+What is the largest load you can wash?
+Our largest machines hold up to 130 pounds, making them the biggest washers in the Avondale area. These commercial-capacity machines handle king-size comforters, sleeping bags, large blankets, restaurant linens, and commercial bulk loads that standard laundromat machines cannot fit.
+3
+Do you offer same-day laundry service?
+For wash-and-fold drop-off, most orders dropped off before 10:00 AM are ready for same-day pickup by closing time. Standard turnaround is next-day. Pickup and delivery orders are typically completed within 24 hours of pickup. Contact us at (773) 654-1275 for rush service availability.
+4
+How does commercial laundry pricing work?
+Commercial accounts receive volume-based pricing tailored to your business needs. Pricing depends on load frequency, volume, and service type. Airbnb hosts, salons, gyms, and restaurants typically save 15–25% compared to standard per-pound rates. Contact us for a custom quote.
+5
+Can I use EBT for wash-and-fold or pickup service?
+EBT is accepted for self-service washing and drying at our facility. Wash-and-fold, pickup and delivery, and commercial services are paid via credit card, debit card, or cash. We are one of the few laundromats in Avondale that accepts EBT for any service.
+FAQPage Schema
+DEV ACTION:  Implement FAQPage JSON-LD schema as an additional <script type="application/ld+json"> block on this page. Each Q&A pair maps to a Question entity with acceptedAnswer. This is a separate schema block from the CollectionPage schema. Validate with Google Rich Results Test.
+Design Specifications
+Same accordion component specification as the Homepage FAQ: each question as a clickable row with chevron icon (right-aligned, rotates 180° on expand). Question: 18px/600 Dark Slate. Answer: 16px/400 Body Text, padding 16px 0, line-height 1.65. Border-bottom 1px #E2E8F0. First item default-expanded on desktop, all collapsed on mobile. Max-width 800px, centered.
+Below FAQ: "View All FAQs" link centered, 16px/600 Spin Blue, links to /faq/. Arrow icon right.
+
+12. Section 8: Final CTA Block
+Section Overview
+Full-width conversion block before the footer. Same structural pattern as the homepage CTA block but with services-specific messaging. Background: Spin Blue to dark blue gradient (#1E40AF → #1E3A8A).
+Content Specifications
+H2: "Ready to Get Started?" — 4 words. White text. Centered. Font: 36px/700 desktop, 28px mobile.
+Subtitle: "Pick a service above, schedule a pickup through the Cents app, or give us a call." — 15 words. Centered. 18px/400 rgba(255,255,255,0.85).
+
+Two CTA buttons centered, inline on desktop, stacked full-width on mobile:
+Button
+Text
+Link
+Style
+1
+Schedule Pickup
+Cents app URL
+CTA Orange (primary)
+2
+Call (773) 654-1275
+tel:+17736541275
+White outline on blue bg
+Section padding: 80px 0 desktop, 48px 16px mobile. Below buttons: "View Pricing" ghost link to /pricing/ in 16px/600 rgba(255,255,255,0.7), hover white.
+
+13. Section 9: Footer
+Global footer component — identical specification to the Homepage Developer Guide (Section 16). No page-specific modifications. See Homepage Developer Guide for complete footer specification.
+
+14. Section 10: Sticky Mobile CTA Bar
+Global component — identical specification to the Homepage Developer Guide (Section 17). Two buttons: "Call Now" (orange, tel: link) and "Schedule Pickup" (blue, Cents app link). Appears after scrolling past the hero banner. Hides when footer enters viewport. See Homepage Developer Guide for complete specification.
+
+15. Reference: Image Asset Inventory
+Image ID
+Section
+Dimensions
+Format
+Max Size
+Alt Text
+Loading
+og-services
+Social share
+1200x630
+JPEG
+<200KB
+Spin It Up Laundry services overview
+N/A (meta)
+icon-washing-machine
+Card grid
+SVG
+SVG
+<3KB
+Self-service laundry icon
+inline
+icon-shirt
+Card grid
+SVG
+SVG
+<3KB
+Wash and fold icon
+inline
+icon-truck
+Card grid
+SVG
+SVG
+<3KB
+Pickup and delivery icon
+inline
+icon-building
+Card grid
+SVG
+SVG
+<3KB
+Commercial services icon
+inline
+icon-iron
+Card grid
+SVG
+SVG
+<3KB
+Ironing and pressing icon
+inline
+logo-light
+Header/Footer
+SVG
+SVG
+<10KB
+Spin It Up Laundry logo
+inline
+NOTE:  This page is primarily text and icon-based. No hero photography is required. If the client wants to add service-specific photos to the cards in a future iteration, each card image should be 600x400, WebP+JPEG, <100KB, loaded lazy.
+
+16. Reference: GA4 Event Tracking
+All Services Hub page-specific GA4 events. Implement via Google Tag Manager.
+Event Name
+Trigger
+Parameters
+Section
+service_card_click
+Click on any service card
+service_name, destination_url
+Services Card Grid
+phone_click
+Click on any tel: link
+phone_number, page_section
+Global (header, CTA block, footer, sticky bar)
+schedule_pickup
+Click on any "Schedule Pickup" CTA
+page_section, button_text
+CTA Block, Sticky Bar
+cta_click
+Click on any CTA button
+button_text, destination_url, page_section
+All sections
+faq_expand
+Expand an FAQ accordion item
+question_text
+FAQ Section
+service_path_click
+Click on a "How to Get Started" option
+option_text, destination_url
+How to Get Started
+pricing_link_click
+Click "View Pricing" link
+page_section
+CTA Block
+
+17. Reference: Implementation Checklist
+Technical Validation
+HTML validates (W3C validator clean)
+All JSON-LD validates in Google Rich Results Test (CollectionPage + BreadcrumbList + FAQPage)
+HTTPS enforced, no mixed content warnings
+Mobile PageSpeed score >90
+Desktop PageSpeed score >95
+All internal links return 200 (no 404s)
+All tel: links functional on mobile (test tap-to-call)
+OG tags render correctly (Facebook Sharing Debugger)
+Hreflang tags validated (point to /es/servicios/)
+Content & SEO
+All copy matches this guide exactly (no placeholder text)
+Title tag within 60 characters
+Meta description within 155 characters
+Single H1 on page
+Heading hierarchy logical: H1 > H2 (section heads) > H3 (card titles)
+AEO opening paragraph present within first 100 words of visible content
+Breadcrumb displays correctly: Home > Services
+Canonical URL set to https://spinituplaundry.net/services/
+All 5 service cards link to correct child page URLs
+XML sitemap includes /services/ at priority 0.9
+Accessibility
+Skip-to-content link as first focusable element
+Breadcrumb uses <nav aria-label="Breadcrumb"> with <ol> list
+Service cards: entire card is clickable with clear focus indicator
+Color contrast meets WCAG 2.1 AA on all text/background combinations
+FAQ accordion operable via keyboard (Enter/Space to toggle)
+ARIA landmarks: banner, navigation, main, contentinfo
+All icons have aria-hidden="true" (decorative; titles provide meaning)
+Analytics
+GA4 + GTM installed and all events verified in debug mode
+service_card_click event firing with correct service_name on each card
+phone_click event confirmed on all tel: links
+schedule_pickup event confirmed on Cents app CTAs
+
+
+End of Document
+TradeWorks AI — Spin It Up Laundry Services Hub Developer Guide v1.0
+Prepared by TradeWorks AI — May 2026

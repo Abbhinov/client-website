@@ -1,0 +1,81 @@
+﻿
+DEVELOPER IMPLEMENTATION GUIDE
+
+COOL & COZY AC REPAIR
+Licensed HVAC Contractor  ·  Jacksonville, Florida
+
+ACCESSIBILITY STATEMENT
+
+URL: coolcozyac.com/accessibility
+Prepared by: TradeWorks AI  |  Version 1.0  |  May 2026
+
+1. Page Identity
+URL: /accessibility
+Canonical: https://coolcozyac.com/accessibility
+Page Type: Legal / Compliance
+Breadcrumb: Home > Accessibility
+Robots: index, follow
+Sitemap: Priority 0.3
+Title: Accessibility Statement | Cool & Cozy AC Repair Jacksonville FL
+Meta Desc: Cool & Cozy AC Repair is committed to making our website accessible to all visitors. Learn about our WCAG 2.1 AA compliance efforts and how to report accessibility issues.
+JSON-LD: BreadcrumbList only.
+
+2. Accessibility Statement Content
+Clean, readable format: Poppins 15px, 720px, white bg. This page documents the accessibility standards the site targets, current compliance status, known limitations, and how visitors can report issues.
+
+2.1 Commitment Statement
+H1: Accessibility Statement
+Last Updated: [DATE]
+Cool & Cozy AC Repair is committed to ensuring that our website is accessible to all visitors, including people with disabilities. We strive to conform to the Web Content Accessibility Guidelines (WCAG) 2.1 at the AA level, which defines requirements for making web content more accessible to people with a wide range of disabilities including visual, auditory, motor, and cognitive impairments.
+
+2.2 Standards We Follow
+WCAG 2.1 Level AA as our target conformance level
+Semantic HTML5 markup for proper document structure
+ARIA landmarks on major page sections (banner, navigation, main, contentinfo)
+Sufficient color contrast ratios (minimum 4.5:1 for normal text, 3:1 for large text)
+Keyboard navigability for all interactive elements
+Visible focus indicators on all focusable elements
+Skip-to-content link as the first focusable element on every page
+Descriptive alt text on all meaningful images
+Form labels associated with inputs via HTML for/id attributes
+Error messages that identify specific fields and describe the error
+Minimum tap/click target size of 44×44px (48×48px recommended)
+No content that flashes more than 3 times per second
+Text resizable to 200% without loss of functionality
+
+2.3 Measures We Take
+Accessibility is considered during the design and development of every page
+We test our website using keyboard-only navigation, screen readers (VoiceOver, NVDA), and browser accessibility audit tools
+We use automated accessibility testing tools (Lighthouse, axe DevTools) during development
+We periodically review our website for accessibility issues and address them as they are identified
+Our team receives guidance on creating accessible content including proper heading hierarchy, descriptive link text, and image alt text
+
+2.4 Known Limitations
+While we strive for full WCAG 2.1 AA conformance, some areas of the website may have accessibility limitations:
+Third-party embedded content (Google Maps, reCAPTCHA) is governed by the accessibility of those third-party services and may not meet all WCAG criteria
+Some older PDF documents may not be fully accessible; we are working to remediate these as they are identified
+Dynamic content loaded after initial page render (e.g., form validation messages) uses ARIA live regions, but some screen reader/browser combinations may handle these differently
+We are committed to continuously improving accessibility and welcome reports of any issues.
+
+2.5 Feedback and Contact
+If you experience any accessibility barriers while using our website, please contact us. We take all accessibility feedback seriously and will work to resolve issues promptly.
+Email: info@coolcozyac.com (subject: Accessibility)
+Phone: (904) 555-0199
+Response Time: We aim to respond to accessibility feedback within 5 business days
+If you are unable to access any content or feature on our website due to a disability, please contact us by phone or email and we will provide the information or service you need through an alternative method.
+
+2.6 Enforcement
+This accessibility statement was last reviewed on [DATE]. We review and update this statement annually or whenever significant changes are made to the website.
+
+3. Checklist
+Linked from footer on EVERY page
+Last Updated/Reviewed date displayed
+Contact method for reporting issues is functional (email + phone)
+Known limitations section is honest about third-party content
+Standards listed match actual implementation (verify against Lighthouse audit)
+BreadcrumbList schema validates
+Page itself meets WCAG AA standards (the accessibility page must be accessible)
+
+— End of Document —
+Prepared by TradeWorks AI  ·  May 2026  ·  v1.0
+

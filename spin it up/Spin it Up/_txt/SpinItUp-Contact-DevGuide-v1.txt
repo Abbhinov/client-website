@@ -1,0 +1,578 @@
+
+SPIN IT UP LAUNDRY
+CONTACT PAGEDEVELOPER GUIDE
+Section-by-Section Implementation Specification
+
+URL: spinituplaundry.net/contact/
+Prepared by: TradeWorks AI  |  Version 1.0  |  May 2026
+Classification: Client Confidential
+
+Table of Contents
+1  How to Use This Guide
+2  Page Identity & Architecture
+3  Keyword Strategy
+4  Complete <head> Section
+5  Section 1: Site Header & Navigation
+6  Section 2: Hero Banner
+7  Section 3: Contact Form & Business Info
+8  Section 4: Google Maps Embed
+9  Section 5: Hours & Quick Info
+10  Section 6: Footer & Sticky Mobile CTA
+11  Reference: Form Specification
+12  Reference: Image Asset Inventory
+13  Reference: GA4 Event Tracking
+14  Reference: Implementation Checklist
+
+1. How to Use This Guide
+This developer guide provides the complete implementation specification for the Contact page (/contact/). This is a conversion page — the strictest LCP target (<1.5s), minimal content, form-first design. The page exists to convert visitors into leads via form submission, phone call, or directions click. Every design decision prioritizes reducing friction between intent and action.
+The contact page is intentionally short (300–400 words). Visitors who arrive here have already decided to reach out — the page’s job is to make that as easy as possible, not to sell them on the service. Trust reinforcement is present but secondary to the form.
+Content Authoring Rules
+All content written fresh.
+Form-first layout: the form is the most prominent element on the page.
+LCP <1.5s: no hero images, minimal CSS, no heavy assets above the fold.
+All contact methods clickable: tel: for phone, mailto: for email, Google Maps link for address.
+
+2. Page Identity & Architecture
+URL Path
+/contact/
+Page Type
+Standalone — Company
+Canonical URL
+https://spinituplaundry.net/contact/
+Breadcrumb
+Home > Contact
+Parent Page
+/ (Homepage)
+Primary Keyword
+spin it up laundry contact (branded)
+Secondary Keywords
+laundromat avondale contact, laundromat kimball ave chicago
+Search Intent
+Navigational
+Target Word Count
+300–400 words
+Primary Conversion Goal
+Form submission or phone call
+Secondary Conversion Goals
+Directions click (walk-in), email inquiry
+Robots Directive
+index, follow
+XML Sitemap
+Include — priority 0.8
+LCP Target
+<1.5s (conversion page)
+Content Update Frequency
+Update only if contact info changes
+hreflang
+<link rel="alternate" hreflang="es" href="https://spinituplaundry.net/es/contacto/">
+
+3. Keyword Strategy
+The contact page is navigational, not a primary SEO target. Keywords are lightweight — the page ranks for branded queries and supports entity signals via NAP consistency and ContactPage schema.
+Keyword
+Intent
+Placement
+spin it up laundry contact
+Navigational
+Title tag, H1
+spin it up laundry phone number
+Navigational
+Body content, schema
+laundromat 3710 kimball ave
+Local
+Address block, schema
+laundromat avondale contact
+Local
+Body content
+
+4. Complete <head> Section
+4.1 Meta Tags
+Tag
+Content
+<title>
+Contact Spin It Up Laundry | Avondale, Chicago — (773) 654-1275 (56 characters)
+<meta name="description">
+Contact Spin It Up Laundry at 3710 N Kimball Ave, Avondale, Chicago. Call (773) 654-1275, email info@spinituplaundry.net, or visit us 6 AM–11 PM daily. (149 characters)
+<meta name="robots">
+index, follow
+<meta name="viewport">
+width=device-width, initial-scale=1
+<meta charset>
+UTF-8
+<html lang>
+en
+<link rel="canonical">
+https://spinituplaundry.net/contact/
+<link rel="alternate" hreflang="es">
+https://spinituplaundry.net/es/contacto/
+4.2 Open Graph & Twitter
+Tag
+Content
+og:title
+Contact Us | Spin It Up Laundry — Avondale, Chicago
+og:description
+Call (773) 654-1275, email info@spinituplaundry.net, or visit us at 3710 N Kimball Ave. Open 6 AM–11 PM daily.
+og:type
+website
+og:url
+https://spinituplaundry.net/contact/
+og:image
+https://spinituplaundry.net/images/og-contact.jpg (1200x630, <200KB)
+og:locale
+en_US
+og:site_name
+Spin It Up Laundry
+twitter:card
+summary_large_image
+twitter:title
+Contact Us | Spin It Up Laundry
+twitter:description
+Call (773) 654-1275 or visit 3710 N Kimball Ave, Avondale, Chicago. Open daily.
+twitter:image
+https://spinituplaundry.net/images/og-contact.jpg
+4.3 JSON-LD Structured Data
+ContactPage schema + Laundromat schema (duplicate of homepage for NAP reinforcement) + BreadcrumbList.
+
+{
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  "name": "Contact Spin It Up Laundry",
+  "description": "Contact information for Spin It Up Laundry in Avondale, Chicago.",
+  "url": "https://spinituplaundry.net/contact/",
+  "mainEntity": {
+    "@type": "Laundromat",
+    "name": "Spin It Up Laundry",
+    "telephone": "+1-773-654-1275",
+    "email": "info@spinituplaundry.net",
+    "url": "https://spinituplaundry.net/",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "3710 N Kimball Ave",
+      "addressLocality": "Chicago",
+      "addressRegion": "IL",
+      "postalCode": "60618",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 41.9485,
+      "longitude": -87.7131
+    },
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "opens": "06:00",
+      "closes": "23:00"
+    }]
+  }
+}
+
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://spinituplaundry.net/" },
+    { "@type": "ListItem", "position": 2, "name": "Contact", "item": "https://spinituplaundry.net/contact/" }
+  ]
+}
+
+DEV ACTION:  Validate ContactPage + BreadcrumbList schemas. The ContactPage schema with nested Laundromat entity reinforces NAP signals for local SEO.
+
+5. Section 1: Site Header & Navigation
+Global header. Solid white. “Contact” nav item active.
+
+6. Section 2: Hero Banner
+Section Overview
+Minimal hero — the slimmest on the site. On a conversion page, the hero’s job is orientation only. The form should be visible above the fold on desktop without scrolling. Background: Spin Blue gradient.
+Content Specifications
+Breadcrumb: Home > Contact — standard spec.
+
+H1 Headline: "Get in Touch" — 3 words, 12 characters. Font: 36px/800 (desktop), 28px (mobile). Color: white. Compact — deliberately short to maximize form visibility.
+
+Subheadline: "Questions about our services? Ready to schedule? We’re here to help." — 11 words. Font: 17px/400, rgba(255,255,255,0.85). Max-width: 500px, centered.
+Padding: 48px 0 (desktop), 36px 16px (mobile). Deliberately compact.
+HTML Code
+<section class="page-hero page-hero--compact" aria-label="Contact Us">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <ol>
+        <li><a href="/">Home</a></li>
+        <li aria-current="page">Contact</li>
+      </ol>
+    </nav>
+    <h1 class="page-hero__title">Get in Touch</h1>
+    <p class="page-hero__subtitle">Questions about our services? Ready to schedule? We&rsquo;re here to help.</p>
+  </div>
+</section>
+
+7. Section 3: Contact Form & Business Info
+Section Overview
+The primary section of the page. Two-column layout: contact form left, business information right. On mobile, business info displays first (phone/address for immediate action), then form below. Background: White (#FFFFFF).
+Layout Specifications
+Property
+Desktop
+Tablet
+Mobile
+Layout
+Two columns: form 55%, info 45%
+Same, slightly compressed
+Stacked: info first, form below
+Section Padding
+48px 0
+40px 0
+32px 16px
+Form Column
+max-width 520px
+100%
+100%
+Info Column
+padding-left 48px
+padding-left 24px
+padding-top 32px (when stacked below) or padding-bottom 32px (when stacked above)
+Gap
+48px
+24px
+0 (stacked)
+Form Specification
+Form H2: "Send Us a Message" — 4 words. Font: 28px/700, Dark Slate. Margin-bottom 24px.
+
+Field
+Type
+Required
+Validation
+HTML Attributes
+Name
+text
+Yes
+Min 2 chars
+autocomplete="name", placeholder="Your name"
+Email
+email
+Yes
+RFC 5322
+autocomplete="email", placeholder="your@email.com"
+Phone
+tel
+Yes
+US format
+autocomplete="tel", inputmode="tel", placeholder="(773) 555-0100"
+Service Interest
+select
+Yes
+—
+Options: Self-Service, Wash & Fold, Pickup & Delivery, Commercial, Ironing & Pressing, General Question, Other
+Message
+textarea
+No
+Max 1000 chars
+placeholder="How can we help?", rows="4"
+Submit Button: "Send Message" — CTA Orange, full-width within form. Font: 16px/600. Min-height: 52px.
+
+Below submit button: "We typically respond within a few hours during business hours." — 14px/400 Caption Gray. Centered.
+Form UX Specifications
+Labels: positioned above each field (not inline placeholders that disappear on focus). Font: 15px/600 Dark Slate.
+Required indicator: red asterisk (*) after label text, with visually-hidden “(required)” text for screen readers.
+Field styling: height 48px (text/email/tel/select), border 1px #E2E8F0, border-radius 8px, padding 12px 16px. Focus: border-color #1E40AF + box-shadow 0 0 0 3px rgba(30,64,175,0.15).
+Error styling: border-color #DC3545, error message immediately below field in 14px/500 #DC3545. Inline validation on blur.
+Success state: form fields replaced with confirmation message (not a redirect). “Thank you, [Name]. We’ve received your message and will be in touch shortly.” + phone number as tel: link for immediate needs.
+Spam prevention: honeypot hidden field + reCAPTCHA v3 (invisible).
+Submission throttle: prevent double-submit on double-click (disable button on first click, re-enable on error).
+Business Information Panel
+Panel H2: "Visit Us" — 2 words. Font: 28px/700, Dark Slate. Margin-bottom 24px.
+
+Element
+Content
+Specification
+Phone
+(773) 654-1275
+<a href="tel:+17736541275"> — Phone icon (Lucide), 18px/700 Spin Blue. Largest text in panel.
+Email
+info@spinituplaundry.net
+<a href="mailto:info@spinituplaundry.net"> — Mail icon, 16px/500 Spin Blue.
+Address
+3710 N Kimball Ave, Chicago, IL 60618
+<a> linking to Google Maps directions — MapPin icon, 16px/400 Body Text.
+Hours
+Open 6:00 AM – 11:00 PM, 7 Days a Week
+Clock icon, 16px/400 Body Text. Below: "Last wash at 9:30 PM" in 14px Caption Gray.
+Parking
+Free parking in front of the laundromat
+Car icon, 15px/400 Body Text.
+Each info item: flex row, icon 24px left in Fresh Cyan, content right. Items spaced 20px apart. Panel has a subtle bg: #F8FAFC, border 1px #E2E8F0, border-radius 12px, padding 28px.
+Trust Reinforcement (Below Info Panel)
+Small trust signals below the business info panel:
+"4.6★ on Google" — star icon, 15px/500 Dark Slate.
+"EBT Accepted" — CreditCard icon, green badge.
+"Se Habla Español" — links to /es/contacto/.
+Layout: horizontal inline on desktop, vertical stack on mobile. Font: 14px/500 Caption Gray. Icons 18px.
+DEV ACTION:  On mobile, the business information panel (phone, email, address, hours) must render ABOVE the form, not below. The mobile visitor’s first instinct is to call or get directions — the form is secondary on mobile. Implement with CSS order: the info column gets order: -1 at <768px.
+
+8. Section 4: Google Maps Embed
+Section Overview
+Full-width map embed showing the laundromat location. Provides a visual anchor and supports directions clicks. Background: White (#FFFFFF).
+Specifications
+Property
+Value
+Map Center
+3710 N Kimball Ave, Chicago, IL 60618
+Zoom Level
+15 (street-level, shows immediate surroundings)
+Width
+100% of container (max-width 1280px)
+Height
+400px (desktop), 320px (tablet), 280px (mobile)
+Border
+border-radius 12px, border 1px #E2E8F0, overflow hidden
+Loading
+loading="lazy" on iframe
+CSS Filter
+filter: grayscale(15%) for brand consistency
+Pin
+Standard red pin at business location
+aria-label
+"Map showing Spin It Up Laundry location at 3710 N Kimball Ave, Avondale, Chicago"
+title attribute
+"Spin It Up Laundry Location Map"
+Below map: "Get Directions" button — ghost style (outline Spin Blue), centered. Links to Google Maps directions URL. Plus: "Free parking available in front of the laundromat." in 14px/400 Caption Gray.
+DEV ACTION:  Lazy-load the map iframe. Do not load Google Maps JavaScript API unless the interactive map with directions overlay is needed. A simple iframe embed is sufficient for the contact page and avoids the API cost and performance overhead.
+
+9. Section 5: Hours & Quick Info
+Section Overview
+Compact info bar with hours and key details. Reinforces information for visitors who scrolled past the info panel. Background: Ice Blue (#F0F9FF).
+Content Specifications
+Three info tiles in a row (desktop), stacked (mobile):
+Tile
+Icon
+Content
+Hours
+Clock
+Open 6:00 AM – 11:00 PM | 7 Days a Week | Last wash at 9:30 PM
+Location
+MapPin
+3710 N Kimball Ave, Avondale, Chicago, IL 60618 | Free parking in front
+Services
+Shirt
+Self-Service • Wash & Fold • Pickup & Delivery • Commercial • Pressing
+Each tile: bg white, border 1px #E2E8F0, border-radius 12px, padding 20px 24px. Icon 32px in Fresh Cyan. Content: 16px/400 Body Text. Tile gap: 24px. Section padding: 48px 0 (desktop), 32px 16px (mobile).
+
+10. Section 6: Footer & Sticky Mobile CTA
+Global footer: no modifications.
+
+Sticky Mobile CTA Bar: override for this page:
+Button
+Text
+Link
+Style
+1
+Call Now
+tel:+17736541275
+CTA Orange
+2
+Get Directions
+Google Maps directions URL
+Spin Blue
+On the contact page, the sticky bar drives the two highest-intent mobile actions: calling and navigating to the location. The form is already visible on the page. No “Schedule Pickup” button here — that’s the wrong CTA for a contact page visitor.
+NOTE:  No Final CTA Block on this page. The contact page IS the conversion page — adding a conversion block below the form and map would be redundant. The footer follows directly after the Hours & Quick Info section.
+
+11. Reference: Form Specification
+Submission Handling
+Property
+Value
+Endpoint
+Backend API (same endpoint as commercial form, with type: "general")
+Email Routing
+All submissions → info@spinituplaundry.net
+Subject Line
+Format: "Contact Form: [Service Interest] — [Name]"
+Auto-Response
+Branded email: "Thank you for contacting Spin It Up Laundry. We’ve received your message and will respond within a few hours during business hours. For immediate assistance, call (773) 654-1275."
+Confirmation UI
+On-page success message replaces form. No redirect.
+Confirmation Text
+"Thank you, [Name]! We’ve received your message and will be in touch shortly. For immediate help, call (773) 654-1275."
+Spam Prevention
+Honeypot hidden field + reCAPTCHA v3 (score threshold 0.5)
+Rate Limiting
+Max 3 submissions per IP per hour
+Duplicate Prevention
+Disable submit button on click; re-enable on validation error only
+Mobile Form UX
+Input type="tel" for phone field → mobile numeric keyboard.
+Input type="email" for email field → mobile email keyboard.
+Labels above fields (not placeholder-only).
+Autocomplete attributes on all fields.
+Error messages below the errored field, not in a summary at top.
+Keyboard dismiss on tap outside form.
+Submit button always visible (not pushed below fold by keyboard). Use sticky positioning if needed.
+16px minimum font on all inputs to prevent iOS auto-zoom.
+HTML Code
+<form id="contact-form" class="contact-form" novalidate>
+  <h2 class="contact-form__title">Send Us a Message</h2>
+ 
+  <div class="form-group">
+    <label for="name">Name <span class="required" aria-hidden="true">*</span></label>
+    <input type="text" id="name" name="name" required minlength="2"
+           autocomplete="name" placeholder="Your name">
+    <span class="error-message" aria-live="polite"></span>
+  </div>
+ 
+  <div class="form-group">
+    <label for="email">Email <span class="required" aria-hidden="true">*</span></label>
+    <input type="email" id="email" name="email" required
+           autocomplete="email" placeholder="your@email.com">
+    <span class="error-message" aria-live="polite"></span>
+  </div>
+ 
+  <div class="form-group">
+    <label for="phone">Phone <span class="required" aria-hidden="true">*</span></label>
+    <input type="tel" id="phone" name="phone" required
+           autocomplete="tel" inputmode="tel" placeholder="(773) 555-0100">
+    <span class="error-message" aria-live="polite"></span>
+  </div>
+ 
+  <div class="form-group">
+    <label for="service">Service Interest <span class="required" aria-hidden="true">*</span></label>
+    <select id="service" name="service" required>
+      <option value="" disabled selected>Select a service...</option>
+      <option value="self-service">Self-Service Laundry</option>
+      <option value="wash-fold">Wash &amp; Fold</option>
+      <option value="pickup-delivery">Pickup &amp; Delivery</option>
+      <option value="commercial">Commercial Services</option>
+      <option value="ironing">Ironing &amp; Pressing</option>
+      <option value="general">General Question</option>
+      <option value="other">Other</option>
+    </select>
+    <span class="error-message" aria-live="polite"></span>
+  </div>
+ 
+  <div class="form-group">
+    <label for="message">Message <span class="optional">(optional)</span></label>
+    <textarea id="message" name="message" rows="4" maxlength="1000"
+              placeholder="How can we help?"></textarea>
+  </div>
+ 
+  <!-- Honeypot -->
+  <div class="form-group" style="display:none;" aria-hidden="true">
+    <input type="text" name="website" tabindex="-1" autocomplete="off">
+  </div>
+ 
+  <button type="submit" class="btn btn--primary btn--full">Send Message</button>
+  <p class="contact-form__note">We typically respond within a few hours during business hours.</p>
+</form>
+
+DEV ACTION:  Client-side validation on blur for all required fields. Server-side validation must also be implemented — never rely solely on client-side. The novalidate attribute on the form element disables browser-default validation in favor of custom styled validation.
+
+12. Reference: Image Asset Inventory
+Image ID
+Section
+Dimensions
+Format
+Max Size
+Alt Text
+Loading
+og-contact
+Social share
+1200x630
+JPEG
+<200KB
+Spin It Up Laundry storefront and contact info
+N/A (meta)
+map-embed
+Maps
+iframe
+N/A
+N/A
+Map showing Spin It Up Laundry at 3710 N Kimball Ave
+lazy
+logo-light
+Header/Footer
+SVG
+SVG
+<10KB
+Spin It Up Laundry logo
+inline
+NOTE:  No decorative images on this page. Conversion pages load fastest with minimal assets. The only visual element is the Google Maps embed, which is lazy-loaded.
+
+13. Reference: GA4 Event Tracking
+Event Name
+Trigger
+Parameters
+Section
+form_submit
+Successful form submission
+service_interest, request_type: contact
+Contact Form
+form_start
+First field interaction
+form_type: contact
+Contact Form
+phone_click
+Click tel: link
+phone_number, page_section (info_panel/sticky_bar)
+Info Panel, Sticky Bar
+email_click
+Click mailto: link
+email_address
+Info Panel
+directions_click
+Click “Get Directions”
+page_section (map/sticky_bar/info_panel)
+Map, Sticky Bar, Info Panel
+map_interact
+Click/zoom on embedded map
+interaction_type
+Map Embed
+
+14. Reference: Implementation Checklist
+Pre-Development
+Confirm Google Workspace email is live (info@spinituplaundry.net)
+Confirm form submission endpoint and email routing
+Confirm auto-response email template
+Confirm Google Maps embed URL or API key approach
+Confirm Google Maps directions URL
+Technical Validation
+HTML validates
+ContactPage + BreadcrumbList schemas validate
+HTTPS enforced
+LCP <1.5s on mobile (conversion page target)
+Mobile PageSpeed >90, Desktop >95
+Form submission tested end-to-end: validation, success state, email delivery, auto-response
+Honeypot + reCAPTCHA functioning
+All tel: and mailto: links functional
+Google Maps embed renders and is interactive
+OG tags render correctly
+Hreflang points to /es/contacto/
+Content & SEO
+NAP matches exactly: header, info panel, schema, footer, GBP
+Title tag within 60 characters
+Meta description within 155 characters
+Single H1
+Breadcrumb: Home > Contact
+Canonical URL correct
+XML sitemap includes at priority 0.8
+Accessibility & Forms
+Skip-to-content link present
+All form fields have associated <label> elements (for="id")
+Required fields indicated with asterisk + screen-reader text
+Error messages use aria-live="polite" for screen reader announcement
+Form navigable by keyboard (Tab between fields, Enter to submit)
+Input font size 16px minimum (prevents iOS zoom)
+Color contrast WCAG 2.1 AA on all elements including error states
+Map iframe has aria-label and title attribute
+ARIA landmarks: banner, navigation, main, contentinfo
+Analytics
+form_submit event fires on successful submission with service_interest parameter
+form_start event fires on first field interaction
+phone_click fires on all tel: links (info panel + sticky bar)
+email_click fires on mailto: link
+directions_click fires on all Get Directions CTAs
+Mobile-Specific
+Business info panel renders ABOVE form on mobile (CSS order: -1)
+Phone number is the most prominent element on mobile
+Sticky CTA bar shows “Call Now” + “Get Directions” (not Schedule Pickup)
+Form submit button visible when keyboard is open
+Tap targets minimum 48px on all interactive elements
+
+
+End of Document
+TradeWorks AI — Spin It Up Laundry Contact Page Developer Guide v1.0
+Prepared by TradeWorks AI — May 2026

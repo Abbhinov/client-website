@@ -1,0 +1,148 @@
+﻿
+DEVELOPER IMPLEMENTATION GUIDE
+
+COOL & COZY AC REPAIR
+Licensed HVAC Contractor  ·  Jacksonville, Florida
+
+CAREERS PAGE
+
+URL: coolcozyac.com/careers
+Prepared by: TradeWorks AI  |  Version 1.0  |  May 2026
+
+1. Page Identity
+Property
+Specification
+URL
+/careers
+Canonical
+https://coolcozyac.com/careers
+Page Type
+Careers / Recruitment (standalone)
+Parent
+/ (Homepage)
+Breadcrumb
+Home > Careers
+Primary Keyword
+HVAC jobs Jacksonville FL
+Intent
+Navigational (job seekers) / E-E-A-T signal (real company hires real people)
+Word Count
+600–900 words
+Conversion
+Application submission (email or form)
+Sitemap
+Priority 0.5
+
+1.1 E-E-A-T Value
+The careers page serves two audiences: job seekers looking for HVAC work in Jacksonville, and Google’s quality algorithms looking for signals that Cool & Cozy is a real business with real employees. A careers page with JobPosting schema signals organizational maturity and legitimacy. Even when no positions are actively open, the page should exist with a “General Interest” application option.
+
+2. <head> Section
+Property
+Specification
+Title
+HVAC Careers Jacksonville FL | Join Cool & Cozy AC Repair
+Meta Desc
+Join Cool & Cozy AC Repair in Jacksonville, FL. We’re hiring licensed HVAC technicians. Bilingual preferred. Competitive pay, family-owned culture, and a team that respects your craft.
+Canonical
+https://coolcozyac.com/careers
+JSON-LD: JobPosting schema (when active positions exist) + BreadcrumbList (2-level). When no positions are open, use Organization schema referencing the main HVACBusiness entity. JobPosting schema requires: title, description, datePosted, hiringOrganization, jobLocation, employmentType.
+
+3. Section-by-Section Build
+
+3.1 Hero
+Breadcrumb
+Home > Careers
+H1
+Build Your HVAC Career with Cool & Cozy in Jacksonville
+Subheadline
+We’re a family-owned Jacksonville HVAC company looking for technicians who take pride in their work, treat customers’ homes with respect, and want to grow with a team that values honesty and craftsmanship.
+Evergreen CSS-pattern hero, 220px desktop.
+
+3.2 Why Work at Cool & Cozy
+H2
+What Makes Cool & Cozy Different as an Employer
+
+Family-owned, not corporate — You are not a number. You work directly with the owner, you know every member of the team, and your voice matters in how we operate. There are no layers of management between you and the decision-makers.
+
+Honest work environment — We do not upsell customers on work they do not need, and we do not pressure technicians to push unnecessary repairs. If the capacitor is the problem, we replace the capacitor — we do not sell a new system to a customer who does not need one. Your integrity is never compromised for revenue.
+
+Bilingual team, diverse community — Our team serves Jacksonville’s diverse community in English and Spanish. If you are bilingual, your language skills are valued and utilized daily. If you are not, you will work alongside bilingual colleagues and serve a customer base that reflects Jacksonville’s growing diversity.
+
+Growing company, growing opportunities — Cool & Cozy is expanding. Early team members have the opportunity to grow into senior roles, lead crews, and help shape the company’s direction as we add territory and services.
+
+3.3 Open Positions
+Overview
+This section displays current openings. When no positions are actively open, display a “General Interest” listing inviting qualified technicians to submit their information for future consideration.
+Position Template: HVAC Service Technician
+Property
+Specification
+Title
+HVAC Service Technician
+Employment Type
+Full-time
+Location
+Jacksonville, FL (field-based, service area: Duval + Clay County)
+Compensation
+[PLACEHOLDER: Confirm pay range with client — competitive hourly or salary, commission structure if any]
+
+Responsibilities
+Diagnose, repair, and maintain residential and commercial AC systems throughout Jacksonville and surrounding areas
+Perform installation of new AC systems including split systems, package units, ductless mini-splits, and heat pumps
+Execute preventive maintenance tune-ups per Cool & Cozy’s 26-point checklist
+Communicate clearly with customers about diagnoses, repair options, and pricing — in English and/or Spanish
+Maintain a clean, organized service vehicle and work area
+Document all work with accurate notes and photos for customer records
+
+Requirements
+Valid Florida HVAC contractor license or EPA 608 Universal certification (CAC or registered technician under a licensed contractor)
+2+ years residential HVAC experience (commercial experience a plus)
+Valid Florida driver’s license with clean driving record
+Own basic hand tools (company provides specialty and diagnostic equipment)
+Bilingual English/Spanish strongly preferred but not required
+Reliable, punctual, and professional in customer-facing interactions
+Comfortable working in attics, crawlspaces, and Florida summer heat
+
+Benefits
+Competitive pay [PLACEHOLDER: hourly range or salary]
+Company service vehicle and fuel card
+Specialty tools and diagnostic equipment provided
+Paid training and ongoing professional development
+Flexible scheduling with no mandatory overtime
+Family-owned culture with direct owner access
+[PLACEHOLDER: Health insurance, PTO, retirement — confirm with client]
+
+DEV ACTION: PLACEHOLDER: Compensation range, specific benefits (insurance, PTO, retirement), and any sign-on bonus must be confirmed by client. Do NOT publish compensation details that are not current and accurate — misleading job postings damage employer reputation and may violate FTC guidelines.
+General Interest Listing (Always Active)
+Even when no specific positions are open, display a “General Interest” card:
+“We’re always looking for great technicians. If you’re a licensed HVAC professional in Jacksonville who values honest work and a team that respects your craft, send us your information. We’ll reach out when a position opens.”
+
+3.4 Application Method
+Option A: Email Application
+Simple email link: “Send your resume and a brief introduction to careers@coolcozyac.com”
+mailto: careers@coolcozyac.com with subject line pre-filled: “HVAC Technician Application — [Your Name]”
+Option B: Simple Application Form (Phase 2)
+If volume warrants it, add a basic form with: Name, Phone, Email, Years of Experience (number), License Type (select: CAC, EPA 608, Registered Technician, Other), Bilingual (yes/no), Resume Upload (PDF/DOC, max 5MB), Brief Message (textarea).
+At launch, Option A (email) is sufficient. Add the form when hiring volume increases.
+DEV ACTION: PLACEHOLDER: Confirm careers@coolcozyac.com email is created in Google Workspace before launch. Alternatively, route to info@coolcozyac.com with “[CAREERS]” subject prefix.
+
+3.5 CTA
+H2
+Ready to Join a Team That Does Things Right?
+Send your resume and a brief intro to careers@coolcozyac.com, or call (904) 555-0199 to speak with us directly. We look forward to hearing from you.
+Evergreen bg, 720px centered.
+
+4. Checklist
+JobPosting schema validates when positions are active (title, description, datePosted, hiringOrganization, jobLocation)
+When no positions open: Organization schema only, no JobPosting
+Compensation details confirmed with client before publishing
+Benefits list confirmed (do not publish unconfirmed benefits)
+License requirements accurate for Florida HVAC technicians
+careers@coolcozyac.com email exists and is monitored
+General Interest listing always visible regardless of active openings
+BreadcrumbList validates
+Page accessible from footer nav (“Careers” link)
+PageSpeed Mobile > 95 (text-only, minimal assets)
+
+— End of Document —
+Prepared by TradeWorks AI  ·  May 2026  ·  v1.0
+

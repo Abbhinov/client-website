@@ -1,0 +1,448 @@
+﻿
+DEVELOPER IMPLEMENTATION GUIDE
+
+COOL & COZY AC REPAIR
+Licensed HVAC Contractor  ·  Jacksonville, Florida
+
+CONTACT PAGE
+Complete Page Build — Single Document
+
+URL: coolcozyac.com/contact
+Prepared by: TradeWorks AI  |  Version 1.0  |  May 2026
+Classification: Client Confidential
+
+Table of Contents
+
+1.  Page Identity & Architecture
+2.  <head> Section
+3.  Section-by-Section Build
+3.1  Compact Hero
+3.2  Contact Methods Bar
+3.3  Primary Contact Form (Full Specification)
+3.4  Business Information & Map
+3.5  Trust Reinforcement Strip
+4.  Form Submission & Routing Logic
+5.  Reference: GA4 & Checklist
+
+1. Page Identity & Architecture
+Property
+Specification
+URL Path
+/contact
+Canonical URL
+https://coolcozyac.com/contact
+Page Type
+Conversion page (standalone)
+Parent
+/ (Homepage)
+Breadcrumb
+Home > Contact
+Primary Keyword
+contact AC repair Jacksonville
+Search Intent
+Navigational / Transactional
+Target Word Count
+400–600 words (minimal content — form-first design)
+Primary Conversion
+Form submission
+Secondary Conversion
+Phone call
+LCP Target
+< 1.5s (stricter — this is a conversion page)
+Robots
+index, follow
+Sitemap
+Priority 0.9
+
+1.1 URL Parameter Handling
+The contact form accepts a ?service= URL parameter that pre-selects the “Service Needed” dropdown. This is how every service-page CTA passes context to the form, reducing friction:
+URL Parameter
+Pre-Selects
+/contact?service=ac-repair
+AC Repair
+/contact?service=ac-installation
+AC Installation & Replacement
+/contact?service=ac-maintenance
+AC Maintenance & Tune-Up
+/contact?service=emergency-ac-repair
+Emergency AC Repair (triggers urgency messaging)
+/contact?service=commercial
+Commercial / Property Management
+/contact?service=ductwork
+Ductwork
+/contact?service=indoor-air-quality
+Indoor Air Quality
+/contact?service=thermostat-installation
+Thermostat Installation
+/contact (no param)
+Default: “Select a Service” placeholder
+
+DEV ACTION: Read the ?service= parameter on page load via JavaScript (URLSearchParams). Set the select dropdown’s value accordingly. If the parameter matches “emergency-ac-repair,” also display an inline urgency message above the form: “For immediate emergency service, call (904) 555-0199 directly. If you prefer, submit this form and we’ll prioritize your request.”
+1.2 Internal Linking
+FROM every page: header CTA “Free Estimate” links here, footer “Request a Free Estimate” button links here
+FROM every service page: hero CTAs, mid-page CTAs, final CTAs all link here with ?service= param
+FROM homepage: hero “Get a Free Estimate” and final CTA link here
+TO /services: link in form confirmation message (“Browse our services while you wait”)
+
+2. <head> Section
+Property
+Specification
+Title Tag
+Contact Cool & Cozy AC Repair | Free Estimates | Jacksonville FL
+Title Chars
+63 characters
+Meta Description
+Contact Cool & Cozy AC Repair in Jacksonville, FL. Free estimates, same-day service, bilingual support. Call (904) 555-0199 or submit the form for a fast response.
+Canonical
+https://coolcozyac.com/contact
+JSON-LD: ContactPage schema (or LocalBusiness reference to homepage schema) + BreadcrumbList (2-level: Home > Contact). No FAQPage on this page — it’s form-first, not content-first.
+Preload: No hero image (CSS-only compact hero). Inline critical CSS aggressively — the form must render in under 1 second. LCP target < 1.5s.
+
+3. Section-by-Section Build
+The Contact page is the most conversion-focused page on the site. It has minimal content and maximum form prominence. Only 5 content blocks: compact hero, contact methods bar, primary form, business info/map, and trust reinforcement. No FAQ, no testimonials, no educational content. The form IS the page.
+
+3.1 Compact Hero
+Layout
+Property
+Specification
+Desktop
+Full-width, 200px height, centered text
+Mobile
+Full-width, 160px height
+Background
+#1A5653 (Evergreen) solid, no image, no pattern
+Content
+Breadcrumb
+Home > Contact
+H1
+Contact Cool & Cozy AC Repair
+Style: Poppins 32px/700, #FFFFFF, centered
+Subheadline
+Call, email, or fill out the form below. We respond to every inquiry within 2 hours during business hours.
+Style: Poppins 16px/400, #F0E6D3, centered
+The hero is intentionally minimal. The visitor already decided to contact — they don’t need more selling. Get them to the form as fast as possible.
+
+3.2 Contact Methods Bar
+Overview
+Three contact methods presented side-by-side immediately below the hero. Each is a clickable card that provides instant access to the preferred contact channel. The phone card is visually prominent (Coral accent).
+Layout
+Property
+Specification
+Container
+#FFFFFF, 1280px centered, 3 equal columns desktop, stacked mobile
+Padding
+32px top/bottom
+Content
+Method
+Display
+Action
+Call Us
+(904) 555-0199
+tel:+19045550199 — Phone icon, Coral accent border on card
+Email Us
+info@coolcozyac.com
+mailto:info@coolcozyac.com — Mail icon, Seafoam accent
+Visit / Mail
+Jacksonville, FL [address]
+Link to Google Maps directions — Map-pin icon, Evergreen accent
+
+Design
+Property
+Specification
+Cards
+#FFFDF8 (Cream) bg, 16px radius, 24px padding, centered content
+Active/hover
+Card border-bottom 3px solid accent color, translateY(-2px)
+Icon
+32×32 SVG, accent color per card
+Label
+Poppins 14px/600, #2C2C2C
+Value
+Poppins 18px/500, accent color per card
+Subtext
+Poppins 12px/400, #7A7A7A (e.g., “Mon–Sat 7 AM – 7 PM” under phone)
+Bilingual indicator: “Se habla español” shown below the phone card
+
+3.3 Primary Contact Form
+Overview
+The centerpiece of the page. A smart form with conditional logic, service pre-selection, emergency flagging, and language preference. The form uses correct HTML input types for mobile keyboard optimization, autocomplete attributes, and real-time inline validation.
+Layout
+Property
+Specification
+Container
+Full-width, #EAF3F2 (Sky Mist) bg
+Form Width
+640px centered (narrow for focus)
+Padding
+48px top/bottom desktop, 32px mobile
+Desktop
+Single-column form, fields stacked
+Mobile
+Same single-column, full-width fields
+Form Fields
+Label
+Type
+Req’d
+Input
+Validation / Notes
+Full Name
+Text
+Yes
+text
+2–100 chars, autocomplete="name"
+Phone Number
+Tel
+Yes
+tel
+US phone format, autocomplete="tel", inputmode="tel"
+Email Address
+Email
+No
+email
+RFC 5322, autocomplete="email"
+Service Needed
+Select
+Yes
+select
+Options: AC Repair, AC Installation, AC Maintenance, Emergency AC Repair, Commercial/PM, Ductwork, IAQ, Thermostat, Other. Pre-selected via ?service= URL param.
+Property Type
+Select
+Yes
+select
+Options: Residential Home, Rental Property, Commercial Building, Multi-Unit Portfolio (5+ units). Visible always.
+Number of Units
+Number
+Cond.
+number
+CONDITIONAL: appears only when “Multi-Unit Portfolio” selected. inputmode="numeric", min=2, max=500
+Preferred Language
+Select
+No
+select
+Options: English (default), Spanish. Affects auto-response email language.
+Message / Details
+Textarea
+No
+textarea
+Max 1000 chars, 4 rows default. Placeholder: “Tell us about your situation…”
+[Honeypot]
+Text
+No
+text
+Hidden field. If filled, reject submission silently. aria-hidden, tabindex=-1, display:none.
+
+Emergency Service Detection
+When “Emergency AC Repair” is selected in the Service Needed dropdown (either manually or via ?service=emergency-ac-repair parameter):
+Display an inline alert above the Message field: “⚡ For immediate emergency service, call (904) 555-0199 directly. We prioritize phone calls for the fastest emergency response.”
+The alert is styled as a Coral-bordered card (#E8603C left border, #FFF5F0 background, Poppins 14px/500)
+The form still submits normally — the alert is informational, not a block
+Submission with Emergency selected triggers SMS alert to owner’s mobile (see Section 4)
+
+Form UX Requirements
+Labels positioned ABOVE fields (never placeholder-only)
+Required fields marked with red asterisk (*) + legend at top: “* Required field”
+Inline validation on blur: specific error messages per field (not generic “Please fill in this field”)
+Error messages appear immediately BELOW the errored field in #D43B3B, Poppins 13px
+reCAPTCHA v3 (invisible, score-based) — no checkbox. Score threshold > 0.5.
+Submit button: full-width, Coral bg (#E8603C), white text, Poppins 16px/600, 52px height, border-radius 12px
+Submit button text: “Send My Request” (not generic “Submit”)
+Submit button hover: #D04E2A, box-shadow 0 4px 12px rgba(232,96,60,0.3)
+Prevent double-submission: disable button + show spinner on click, re-enable on error
+
+Success Confirmation
+On successful submission, replace the form with an on-page confirmation message (NO redirect to a separate thank-you page):
+Property
+Specification
+Background
+#2D9F5D (Success Green) at 10% opacity, Evergreen border-left 4px
+Icon
+Checkmark circle, #2D9F5D, 48px
+Heading
+“Thank You — We’ve Received Your Request” — Poppins 22px/600, #2C2C2C
+Body
+Personalized per service type. E.g., for AC Repair: “We’ll review your request and contact you within 2 hours during business hours. For faster service, call us directly at (904) 555-0199.”
+Emergency variant
+“We’ve flagged your request as urgent. For the fastest response, call (904) 555-0199 right now — emergency calls are always prioritized.”
+Secondary link
+“Browse our services while you wait →” → /services
+DEV ACTION: The confirmation message replaces the form in the DOM (not a modal or overlay). This ensures GA4 form_submit fires correctly and the visitor sees clear confirmation without navigating away.
+Form Design
+Property
+Specification
+Field border
+1px solid #DDD8D0, border-radius 8px
+Field padding
+12px 16px
+Field font
+Poppins 16px/400 (prevents iOS zoom)
+Focus state
+border-color #5CB8B2, box-shadow 0 0 0 3px rgba(92,184,178,0.15)
+Error state
+border-color #D43B3B, box-shadow 0 0 0 3px rgba(212,59,59,0.15)
+Disabled state
+bg #F3F4F6, color #9CA3AF, cursor not-allowed
+Label
+Poppins 14px/500, #3D3D3D, 4px below previous field, 6px above its field
+Select dropdown
+Native <select> on mobile for best UX, custom-styled on desktop matching field spec
+Accessibility
+Every <input> has an associated <label for="id">
+Required fields use aria-required="true"
+Error messages linked to fields via aria-describedby
+Honeypot field uses aria-hidden="true", tabindex="-1"
+Form wrapped in <form role="form" aria-label="Contact form">
+Success confirmation region uses aria-live="polite" to announce to screen readers
+Tab order follows visual order: Name → Phone → Email → Service → Property → Units (conditional) → Language → Message → Submit
+GA4 Events
+Property
+Specification
+form_start
+Fires on first field interaction. Parameters: form_name: “contact”, service_type: selected service (or “none” if not yet selected)
+form_submit
+Fires on successful submission. Parameters: form_name, service_type, property_type, language_preference, emergency_flag (boolean)
+phone_click
+Fires on phone number clicks in the contact methods bar and emergency alert
+
+3.4 Business Information & Google Map
+Layout
+Property
+Specification
+Container
+#FFFFFF, 1280px centered, 2-column desktop (info left 40%, map right 60%)
+Mobile
+Info stacked above map, map full-width 300px height
+Content — Left Column
+Business Info Block
+Business Name: Cool & Cozy AC Repair
+Phone: (904) 555-0199 — click-to-call, Coral
+Email: info@coolcozyac.com — mailto link
+Address: [PLACEHOLDER — confirmed address], Jacksonville, FL [ZIP]
+Hours: Monday – Saturday: 7:00 AM – 7:00 PM
+License: FL CAC1819948
+Languages: English & Spanish (Se habla español)
+
+Content — Right Column: Google Map
+Property
+Specification
+Embed
+Google Maps Embed API (free, no API key for basic embed)
+Center
+[PLACEHOLDER — confirmed address coordinates]
+Zoom
+14 (shows immediate neighborhood)
+Dimensions
+100% width × 400px desktop, 100% × 300px mobile
+Border-radius
+16px, overflow hidden
+Loading
+loading="lazy" on iframe
+DEV ACTION: PLACEHOLDER: Map embed requires confirmed business address and coordinates. Do NOT use the registered agent address (Deerwood Lake Parkway suite) unless confirmed as the actual service location.
+
+3.5 Trust Reinforcement Strip
+Overview
+A compact trust bar immediately above the footer, reinforcing credibility for visitors who scrolled past the form to see the business info. Same 4-item credentials from the homepage trust bar but in a more compact single-line format.
+Content
+✓ FL License CAC1819948  ·  ✓ BuildZoom Top 13%  ·  ✓ Free Estimates  ·  ✓ Se habla español
+Design
+Property
+Specification
+Container
+#F0E6D3 (Warm Sand), full-width, 16px vertical padding
+Text
+Poppins 13px/400, #3D3D3D, centered, items separated by centered dots
+
+4. Form Submission & Routing Logic
+4.1 Submission Endpoint
+Form submissions POST to a backend endpoint (Cloud Function or Cloud Run) that handles validation, routing, and CRM integration. The endpoint returns a JSON response indicating success or error.
+Property
+Specification
+Endpoint
+https://api.coolcozyac.com/v1/contact (or Cloud Functions URL)
+Method
+POST
+Content-Type
+application/json
+Response
+{ success: true, confirmation_id: “XXX” } or { success: false, errors: [...] }
+4.2 Email Routing
+Service Selected
+Routes To
+Additional Action
+Emergency AC Repair
+info@coolcozyac.com
+SMS alert to owner’s mobile immediately
+Commercial / PM
+info@coolcozyac.com
+Flag as commercial lead in Zoho CRM
+All other services
+info@coolcozyac.com
+Standard lead in Zoho CRM
+4.3 Auto-Response Email
+Sent immediately on successful submission via SendGrid or Google Workspace
+Subject: “Cool & Cozy AC Repair — We’ve received your request”
+Body includes: service requested, expected response time (within 2 hours during business hours), phone number for faster service, brief company intro
+Language: if Preferred Language = Spanish, send Spanish-language auto-response
+Emergency variant: auto-response emphasizes calling for fastest response
+DEV ACTION: PLACEHOLDER: Auto-response email templates must be created for English and Spanish, standard and emergency variants (4 templates total). Branded with Cool & Cozy logo and colors.
+4.4 CRM Integration
+Create or update Zoho CRM lead record on every submission
+Map: Full Name → Lead Name, Phone → Phone, Email → Email, Service → Custom field, Property Type → Custom field, Number of Units → Custom field, Language → Custom field
+Lead Source: “Website Contact Form”
+Lead Status: “New”
+Emergency flag: Custom boolean field in Zoho
+4.5 Spam Prevention
+Honeypot field: if filled, reject silently (return 200 OK with no action)
+reCAPTCHA v3: score < 0.5 = reject with generic error
+Server-side validation: all fields re-validated regardless of client-side validation
+Rate limiting: max 3 submissions per IP per hour
+Email format: RFC 5322 compliance check
+Phone format: US phone number pattern (10 digits)
+
+5. Reference: GA4 & Checklist
+5.1 GA4 Events
+Event
+Triggers
+Parameters
+form_start
+First field interaction
+form_name: “contact”, service_type
+form_submit
+Successful submission
+form_name, service_type, property_type, language, emergency_flag
+phone_click
+Contact methods bar, emergency alert, hero
+phone_number, page_section
+
+form_start + form_submit enables form abandonment analysis: if form_start fires but form_submit doesn’t, the visitor started but didn’t finish. Monitor per service_type to identify which service inquiries have the highest abandonment.
+5.2 Checklist
+Build
+HTML validates, JSON-LD validates (ContactPage/BreadcrumbList)
+Title/canonical unique, breadcrumb functional
+?service= URL parameter correctly pre-selects dropdown for all 8 service values
+Emergency detection displays urgency alert when “Emergency AC Repair” selected
+Conditional field (Number of Units) appears only when Multi-Unit Portfolio selected
+All form fields have correct input types, autocomplete attributes, and aria labels
+Inline validation fires on blur with specific error messages per field
+Honeypot field hidden from visual display, screen readers, and keyboard tab order
+reCAPTCHA v3 loads and scores correctly (test with debug keys)
+Form submission delivers to info@coolcozyac.com (test end-to-end)
+Auto-response email sends in correct language variant (test English + Spanish)
+Emergency submissions trigger SMS to owner’s mobile (test with emergency flag)
+Success confirmation replaces form on page (no redirect)
+Zoho CRM record created with all fields mapped correctly
+Google Map renders, lazy-loaded, border-radius 16px
+Click-to-call on all phone instances (methods bar, emergency alert)
+Performance
+PageSpeed Mobile > 95 (minimal content, CSS-only hero, no large images)
+LCP < 1.5s (form must render in under 1 second)
+reCAPTCHA v3 script loaded async and does not block rendering
+Accessibility
+All form labels associated via for/id, required fields marked with aria-required
+Error messages linked via aria-describedby
+Success confirmation announced via aria-live
+Tab order matches visual order
+Color contrast on all form elements meets WCAG AA
+
+— End of Document —
+Prepared by TradeWorks AI  ·  May 2026  ·  v1.0
+

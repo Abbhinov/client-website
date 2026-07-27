@@ -1,0 +1,466 @@
+﻿CONTENT STRATEGY DOCUMENT
+Blog Content Strategy
+Easy Clean Service
+
+
+easycleaningservice.com/blog/
+Easy Clean Service • (813) 534-9216
+
+
+Blog hub page specifications, content pillar framework, 12 prioritized post topics
+with keyword research, internal linking strategy, post structure template,
+90-day content calendar, and GEO/AEO optimization guidelines.
+Version 1.0 • March 2026
+1. Blog Strategy Overview
+1.1 Why a Blog Matters for Easy Clean Service
+Easy Clean’s service pages target transactional keywords (“deep cleaning Tampa”) and the neighborhood pages target local keywords (“house cleaning Westchase”). But above these in the search funnel sits a massive layer of informational queries – people asking questions, researching cleaning topics, and comparing options before they are ready to hire. These searchers are future customers, and right now Easy Clean has zero content to capture them.
+A strategic blog solves four problems simultaneously. First, it captures informational search traffic that no other page on the site can rank for – queries like “how much does house cleaning cost in Tampa,” “how to remove hard water stains,” and “deep cleaning vs regular cleaning.” Second, it builds topical authority that strengthens the rankings of every service and neighborhood page by signaling to Google that Easy Clean is a genuine expert on residential cleaning, not just a thin local business listing. Third, it provides source material for AI answer engines – Perplexity, ChatGPT search, and Google AI Overviews draw heavily from well-structured informational content when assembling answers about local services. Fourth, it creates shareable content for social media that drives brand awareness and referral traffic once Easy Clean’s social accounts are established.
+* Traffic: Capture 500+ monthly organic visits from informational keywords within 6 months of consistent publishing.
+* Authority: Build topical authority for “house cleaning Tampa” semantic cluster, lifting all service and neighborhood page rankings.
+* GEO/AEO: Produce content structured for AI answer engine extraction – clear questions, definitive answers, Tampa-specific data points.
+* Conversion: Every blog post funnels readers to a relevant service page or estimate form via strategic internal links and CTAs.
+* Social: Provide a content library for Facebook and Instagram posts once social accounts are established.
+1.3 Publishing Cadence
+Recommended: 2 posts per month for the first 90 days (6 posts total), then increase to 4 per month as the blog gains traction.
+Minimum viable: 1 post per month. Anything less than this will not generate meaningful organic results.
+Post length: 1,200–2,000 words per post. Shorter posts lack the depth to rank; longer posts provide diminishing returns for this business type.
+________________
+
+
+2. Blog Hub Page Specifications
+2.1 URL & Structure
+URL: https://easycleaningservice.com/blog/
+Breadcrumb: Home > Blog
+Post URL pattern: /blog/[post-slug]/ (e.g., /blog/how-much-does-house-cleaning-cost-tampa/)
+2.2 Title Tag & Meta Description
+
+
+<title>Tampa Cleaning Tips & Guides | Easy Clean Service
+  Blog</title>
+<meta name="description" content="Cleaning tips, cost
+  guides, and home maintenance advice from Easy Clean
+  Service in Tampa, FL. Expert insights on deep cleaning,
+  regular maintenance, eco-friendly products, and more." />
+
+
+2.3 Hub Page Layout
+The /blog/ page should display posts in a responsive grid (2 columns desktop, 1 mobile). Each post card shows: featured image, post title (linked), publication date, excerpt (2–3 sentences), and a “Read More” link. Implement pagination (10 posts per page) and category filtering.
+2.4 Blog Categories
+* Cost Guides: Pricing, budgeting, value comparisons
+* Cleaning Tips: How-to guides, product advice, technique tutorials
+* Tampa Home Care: Florida-specific challenges (humidity, mold, hard water, pollen)
+* Service Comparisons: Deep cleaning vs. regular, DIY vs. professional, frequency guides
+* Seasonal: Holiday prep, spring cleaning, hurricane season, back-to-school
+2.5 Schema
+
+
+{
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  "name": "Easy Clean Service Blog",
+  "description": "Cleaning tips, cost guides, and home
+    maintenance advice for Tampa FL homeowners.",
+  "url": "https://easycleaningservice.com/blog/",
+  "publisher": {
+    "@type": "HousekeepingService",
+    "name": "Easy Clean Service",
+    "url": "https://easycleaningservice.com"
+  }
+}
+
+
+Individual posts should use Article schema with author (Kessia Marquez), datePublished, and dateModified.
+________________
+
+
+3. Content Pillar Framework
+Every blog post should map to one of four content pillars. Each pillar serves a different strategic purpose and targets a different segment of the search funnel.
+Pillar 1: Cost & Pricing Guides
+  FUNNEL STAGE: Bottom – High purchase intent  
+These posts target the highest-volume informational keywords in the cleaning space. Searchers asking about cost are typically days or weeks away from hiring someone. Every cost guide should include Tampa-specific pricing data, a comparison table, and a strong CTA to the relevant service page estimate form.
+Link strategy: Each cost post links to its corresponding service page (e.g., deep cleaning cost post → /services/deep-cleaning-tampa/).
+Pillar 2: Service Comparisons & Decision Guides
+  FUNNEL STAGE: Middle – Researching options  
+These posts help readers understand which cleaning service fits their situation. They naturally create internal links to multiple service pages per post. They are also the highest-performing content type for AI answer engines because they provide structured, definitive comparisons.
+Link strategy: Each comparison post links to 2–4 service pages. The /services/ overview page is also a natural link target.
+Pillar 3: Tampa Home Care & Maintenance
+  FUNNEL STAGE: Top – Awareness and authority building  
+These posts address the specific cleaning challenges of living in Tampa and Florida – humidity, mold, hard water stains, pollen, sandy floors, hurricane prep. They build local topical authority and position Easy Clean as the Tampa cleaning expert. They also serve as excellent social media content.
+Link strategy: Link to neighborhood pages where relevant (e.g., “old Carrollwood terrazzo floors” links to the Carrollwood page) and to the relevant service page.
+Pillar 4: Seasonal & Event-Driven Content
+  FUNNEL STAGE: Top/Middle – Timely traffic spikes  
+These posts capture predictable seasonal search surges: spring cleaning, holiday prep, back-to-school, hurricane season, snowbird arrival, end-of-lease moves. They should be published 4–6 weeks before the seasonal peak to allow time for Google to index and rank them.
+Link strategy: Seasonal posts link to multiple service pages and the /services/ overview. Holiday posts link to deep cleaning; moving posts link to move-in/out cleaning.
+________________
+
+
+4. First 12 Blog Post Topics – Prioritized by Impact
+The following 12 posts are prioritized by a combination of keyword search volume, purchase intent, internal linking value, and GEO/AEO potential. Posts #1–6 should be published in the first 90 days. Posts #7–12 complete the first six months of content.
+Post #1: How Much Does House Cleaning Cost in Tampa, FL? (2026 Guide)
+  PRIORITY: HIGHEST • Pillar: Cost Guide • Month 1  
+Detail
+	Specification
+	URL Slug
+	/blog/house-cleaning-cost-tampa/
+	Primary Keyword
+	house cleaning cost Tampa (320/mo) + how much does house cleaning cost (2,400/mo national)
+	Secondary Keywords
+	cleaning service prices Tampa, maid service cost Tampa FL, average cleaning cost Florida
+	Word Count
+	1,500–2,000 words
+	Target Service Pages
+	All 6 service pages (pricing section of each) + /services/ overview
+	GEO/AEO Value
+	Extremely high – directly answers the #1 question AI systems field about local cleaning
+	
+
+* Intro: Tampa-specific context (cost of living, typical home sizes, humidity factors)
+* Pricing table by service type: Regular (weekly/biweekly/monthly), Deep Cleaning, Move-In/Out, Airbnb, Kitchen & Bath, Commercial – all with Tampa-specific ranges
+* Pricing table by home size: 1BR through 5BR+ with ranges for each
+* Factors that affect cost: home condition, frequency, pet hair, square footage, special surfaces
+* How Tampa’s climate affects cleaning costs: humidity = more mold/mildew work, more frequent deep cleans
+* How to get the best value: start with deep cleaning then maintain with recurring visits
+* CTA: “Get your personalized estimate” → /contact/
+NOTE: This post will be the most-visited blog post and the strongest traffic driver. Include a FAQ section at the bottom targeting long-tail variants for featured snippet capture.
+________________
+
+
+Post #2: Deep Cleaning vs. Regular Cleaning: What Tampa Homeowners Need to Know
+  PRIORITY: HIGH • Pillar: Service Comparison • Month 1  
+Detail
+	Specification
+	URL Slug
+	/blog/deep-cleaning-vs-regular-cleaning/
+	Primary Keyword
+	deep cleaning vs regular cleaning (880/mo)
+	Secondary Keywords
+	what is included in deep cleaning (1,300/mo), difference between deep clean and regular clean
+	Word Count
+	1,500–1,800 words
+	Target Service Pages
+	/services/deep-cleaning-tampa/ + /services/regular-house-cleaning-tampa/
+	
+
+* Definition of each service with Tampa-specific context
+* Side-by-side comparison table (expand on the one in the deep cleaning page with more detail)
+* Scenarios: when you need deep vs. regular (first-time customer, seasonal reset, weekly maintenance)
+* Can you combine them? (Start with deep, maintain with regular – the upsell path)
+* Tampa-specific factors: humidity makes deep cleaning more important than in drier climates
+* Cost comparison with ranges for each
+* CTA: links to both service pages
+Post #3: How to Prevent Mold and Mildew in Your Tampa Home
+  PRIORITY: HIGH • Pillar: Tampa Home Care • Month 2  
+Detail
+	Specification
+	URL Slug
+	/blog/prevent-mold-mildew-tampa-home/
+	Primary Keyword
+	prevent mold Tampa home (170/mo) + mold in bathroom Tampa (140/mo)
+	Secondary Keywords
+	Florida humidity cleaning, mildew bathroom Tampa, how to stop mold Florida
+	Word Count
+	1,200–1,500 words
+	Target Service Pages
+	/services/deep-cleaning-tampa/ + /services/kitchen-bathroom-cleaning-tampa/
+	
+
+* Why Tampa’s climate creates the perfect mold environment (90%+ humidity months, warm temps year-round)
+* Room-by-room prevention tips: bathroom ventilation, kitchen moisture, bedroom AC condensation
+* DIY maintenance between professional cleanings
+* When to call a professional: signs that regular cleaning isn’t enough
+* How Easy Clean’s deep cleaning addresses mold and mildew at the source
+* Products we use: eco-friendly mold treatment that’s safe for kids and pets
+* Links to Kitchen & Bath page, Deep Cleaning page, and relevant neighborhood pages
+Post #4: How Often Should You Have Your House Cleaned? A Tampa Guide
+  PRIORITY: HIGH • Pillar: Service Comparison • Month 2  
+Detail
+	Specification
+	URL Slug
+	/blog/how-often-house-cleaned-tampa/
+	Primary Keyword
+	how often should I have my house cleaned (720/mo)
+	Secondary Keywords
+	weekly vs biweekly cleaning, cleaning frequency guide, how often deep clean
+	Word Count
+	1,200–1,500 words
+	Target Service Pages
+	/services/regular-house-cleaning-tampa/ (primary) + /services/deep-cleaning-tampa/
+	
+
+* Decision framework by household type: families with kids, pet owners, dual-income no kids, retirees, remote workers
+* Weekly vs. biweekly vs. monthly comparison (expand on the Regular Cleaning page’s frequency guide)
+* Tampa-specific factors: humidity, pollen, sandy floors mean more frequent cleaning than northern states
+* Deep cleaning frequency: every 3–6 months for most Tampa homes
+* Signs your home needs more frequent cleaning: allergy symptoms, visible dust within days, pet hair
+* Cost breakdown by frequency to help readers budget
+________________
+
+
+Post #5: The Ultimate Move-Out Cleaning Checklist for Tampa Renters
+  PRIORITY: HIGH • Pillar: Cost/Decision Guide • Month 3  
+Detail
+	Specification
+	URL Slug
+	/blog/move-out-cleaning-checklist-tampa/
+	Primary Keyword
+	move out cleaning checklist (720/mo)
+	Secondary Keywords
+	end of lease cleaning checklist, apartment move out cleaning list, get security deposit back
+	Word Count
+	1,500–1,800 words
+	Target Service Pages
+	/services/move-in-move-out-cleaning-tampa/
+	
+
+* Printable room-by-room checklist (kitchen, bathrooms, bedrooms, living areas, closets)
+* Florida-specific legal context: security deposit return timeline under FL statute
+* Common deductions Tampa landlords make for cleaning – and how to avoid them
+* DIY vs. professional: when to handle it yourself vs. hiring Easy Clean
+* Cost of professional move-out cleaning vs. cost of deposit deductions
+* CTA: “Protect your deposit” → Move-In/Out service page
+NOTE: Make the checklist downloadable as a PDF. This creates a lead magnet opportunity and earns backlinks from Tampa apartment and real estate sites.
+Post #6: Spring Cleaning Guide for Tampa Homes: What to Tackle and When
+  PRIORITY: MEDIUM-HIGH • Pillar: Seasonal • Month 3  
+Detail
+	Specification
+	URL Slug
+	/blog/spring-cleaning-guide-tampa/
+	Primary Keyword
+	spring cleaning Tampa (140/mo seasonal spike to 500+)
+	Secondary Keywords
+	spring cleaning checklist Florida, spring deep cleaning, pollen cleaning tips Tampa
+	Word Count
+	1,200–1,500 words
+	Target Service Pages
+	/services/deep-cleaning-tampa/ + /services/regular-house-cleaning-tampa/
+	
+
+* Tampa’s spring is different from the north: pollen season peaks Feb–April, humidity starts climbing
+* Room-by-room spring cleaning priorities for Florida homes
+* HVAC and vent cleaning: critical for allergy season
+* Outdoor-to-indoor dirt: screen doors, lanais, sandy entryways
+* Why spring is the ideal time for a professional deep cleaning
+* Link to deep cleaning page + seasonal scheduling CTA
+DEV ACTION: Publish by early February to capture the seasonal spike. Update and republish annually with fresh year in the title.
+________________
+
+
+Posts #7–12: Months 4–6 Content
+These posts complete the first six months of blog content. Each follows the same format as posts #1–6.
+Post #7: How to Remove Hard Water Stains in Tampa Bathrooms
+Pillar: Tampa Home Care | Slug: /blog/remove-hard-water-stains-tampa/
+Keywords: hard water stains Tampa (110/mo), remove hard water stains bathroom, Tampa water stains glass
+Links to: Kitchen & Bath page, Deep Cleaning page, Lutz page (well water staining)
+Angle: Tampa’s calcium-heavy water supply causes buildup on glass, chrome, and tile. DIY methods + when to go professional.
+Post #8: Is Hiring a House Cleaner Worth It? A Tampa Cost-Benefit Analysis
+Pillar: Cost Guide | Slug: /blog/is-hiring-house-cleaner-worth-it/
+Keywords: is hiring a cleaner worth it (590/mo), benefits professional cleaning, DIY vs professional cleaning
+Links to: Regular Cleaning page, /services/ overview
+Angle: Calculate the real cost of your time vs. hiring a pro. Include Tampa hourly wage data and time-per-task estimates.
+Post #9: Airbnb Cleaning Between Guests: A Tampa Host’s Complete Guide
+Pillar: Service Comparison | Slug: /blog/airbnb-cleaning-between-guests-tampa/
+Keywords: Airbnb cleaning checklist (480/mo), vacation rental turnover cleaning, Airbnb cleaning service Tampa
+Links to: Airbnb page, Move-In/Out page (property managers), Commercial page
+Angle: What 5-star guests expect, turnover timeline management, restocking essentials, photo-ready standards.
+Post #10: Pet Owner’s Guide to Keeping a Clean Home in Tampa
+Pillar: Tampa Home Care | Slug: /blog/pet-owner-cleaning-guide-tampa/
+Keywords: pet-safe cleaning (210/mo), pet hair cleaning tips, cleaning with dogs cats Tampa
+Links to: Regular Cleaning page (weekly frequency), Deep Cleaning page, Westchase page (pet-friendly community)
+Angle: Pet dander + Tampa humidity = amplified allergens. Safe products, high-frequency cleaning, and fur management.
+Post #11: Preparing Your Tampa Home for Hurricane Season: A Cleaning & Safety Guide
+Pillar: Seasonal | Slug: /blog/hurricane-season-cleaning-prep-tampa/
+Keywords: hurricane prep Tampa home (260/mo seasonal), storm preparation cleaning, post-hurricane cleaning
+Links to: Deep Cleaning page, /service-areas/ overview
+Angle: Pre-storm: secure outdoor items, clean drains, prep emergency kit. Post-storm: mold prevention, debris cleanup, when to call professionals. Publish by May.
+Post #12: Eco-Friendly Cleaning Products: What We Use and Why It Matters
+Pillar: Tampa Home Care / Brand Authority | Slug: /blog/eco-friendly-cleaning-products-tampa/
+Keywords: eco-friendly cleaning products (390/mo), non-toxic cleaning service, green cleaning Tampa
+Links to: /about/ page, all service pages (eco-friendly angle), future Eco Products page
+Angle: What “eco-friendly” actually means (not greenwashing), specific product types we use, why they work as well as chemicals, safety for kids/pets/allergy sufferers. Builds E-E-A-T authority.
+________________
+
+
+5. Internal Linking Strategy
+5.1 Blog-to-Service Page Links
+Every blog post must contain at least 2 internal links to relevant service pages. These are the most important links in the blog because they pass authority from the informational content to the transactional pages that convert.
+Service Page
+	Blog Posts That Should Link to It
+	Deep Cleaning
+	Posts #1, #2, #3, #4, #6, #7, #10, #11
+	Regular House Cleaning
+	Posts #1, #2, #4, #8, #10
+	Move-In/Move-Out
+	Posts #1, #5, #9
+	Airbnb Cleaning
+	Posts #1, #9
+	Kitchen & Bathroom
+	Posts #1, #3, #7
+	Commercial Cleaning
+	Posts #1, #9
+	/services/ overview
+	Posts #1, #2, #4, #8
+	
+
+5.2 Blog-to-Neighborhood Page Links
+* Terrazzo floors → Carrollwood page
+* Well-water staining → Lutz page
+* Pet-friendly communities → Westchase page
+* Spanish-speaking community → Town ’N’ Country page
+* Historic bungalows → Seminole Heights page
+* Luxury homes / marble → Hyde Park page
+* Remote workers / new builds → Riverview, Wesley Chapel pages
+* USF / student housing → Temple Terrace page
+5.3 Service-Page-to-Blog Links
+* Deep Cleaning FAQ “How much does deep cleaning cost?” → Link to Post #1 (cost guide)
+* Regular Cleaning “How often should I have my house cleaned?” → Link to Post #4 (frequency guide)
+* Move-In/Out “Move-out cleaning checklist” → Link to Post #5 (checklist post)
+* Kitchen & Bath “Hard water stains” → Link to Post #7
+________________
+
+
+6. Blog Post Structure Template
+1. Title Tag: Primary keyword + Tampa/FL geo-modifier + year if applicable. Under 60 characters.
+2. Meta Description: Summarize the post’s value prop + include a CTA + phone number. 150–155 characters.
+3. H1 Heading: Same as or very close to the title tag. Only one H1 per post.
+4. Intro paragraph (100–150 words): State the question the post answers, establish Tampa relevance, and tell the reader what they will learn. Include primary keyword in first sentence.
+5. Body sections (H2 headings): 3–6 H2 sections, each targeting a secondary keyword or subtopic. Use H3 for subsections within.
+6. Tables and lists: Include at least one comparison table or data table per post. These are the elements AI answer engines are most likely to extract.
+7. Images: 1 featured image (1200x630px for social sharing) + 2–3 in-body images with keyword-rich alt text.
+8. Internal links: Minimum 2 service page links + 1 neighborhood page link (when relevant) + 1 link to another blog post.
+9. FAQ section (bottom): 3–5 questions in Q&A format with FAQPage schema markup. Target long-tail keyword variants and featured snippet opportunities.
+10. CTA section (end): Full-width CTA banner: “Ready to [relevant action]? Call (813) 534-9216 or get your free estimate.” Link to /contact/ or the relevant service page.
+11. Author byline: “By Kessia Marquez, Owner of Easy Clean Service” with link to /about/. This establishes E-E-A-T authorship.
+12. Schema: Article schema with author, datePublished, dateModified, publisher, and image. FAQPage schema for the FAQ section.
+7. GEO/AEO Optimization for Blog Content
+Generative Engine Optimization (GEO) and Answer Engine Optimization (AEO) ensure that blog content is structured for extraction by AI systems like Google AI Overviews, Perplexity, ChatGPT search, and voice assistants. Here are the specific guidelines for every blog post:
+* Lead with the answer: The first 2–3 sentences of every post should directly and definitively answer the primary question. AI systems extract from the top of the content. Do not bury the answer below 3 paragraphs of context.
+* Use question-format H2 headings: “How much does deep cleaning cost in Tampa?” is better than “Deep Cleaning Pricing” because it mirrors how users query AI systems.
+* Include definitive numbers: AI systems strongly prefer content with specific data points: “$200–$450 for a 3-bedroom Tampa home” is extractable; “prices vary” is not.
+* Use comparison tables: Tables are the single most AI-extractable content format. Every post should include at least one data table.
+* Write FAQ sections in pure Q&A format: Question as H3, answer as the immediately following paragraph. Keep answers concise (2–4 sentences) for featured snippet capture.
+* Name the city in the first 100 words: Every post should mention Tampa, FL within the first two sentences.
+* Reference specific neighborhoods: Mention at least 2–3 Tampa neighborhoods by name in the body copy with links to their pages.
+* Cite Florida-specific data: Reference Florida’s humidity levels, state-specific laws (e.g., security deposit statutes), and local housing characteristics.
+* Include the business name and phone number: At least once in the body and in the CTA. AI systems associate content with specific businesses when they are named.
+* Article schema: @type Article with headline, author (Kessia Marquez), datePublished, dateModified, publisher (Easy Clean Service), image.
+* FAQPage schema: For the bottom-of-post FAQ section. Must mirror visible content exactly.
+* BreadcrumbList: Home > Blog > [Post Title]
+________________
+
+
+8. 90-Day Content Calendar
+Month
+	Week
+	Post Title
+	Pillar
+	Priority
+	1
+	1–2
+	How Much Does House Cleaning Cost in Tampa?
+	Cost Guide
+	Highest
+	1
+	3–4
+	Deep Cleaning vs. Regular Cleaning
+	Comparison
+	High
+	2
+	1–2
+	How to Prevent Mold and Mildew in Tampa
+	Tampa Home Care
+	High
+	2
+	3–4
+	How Often Should You Have Your House Cleaned?
+	Comparison
+	High
+	3
+	1–2
+	Move-Out Cleaning Checklist for Tampa Renters
+	Cost/Decision
+	High
+	3
+	3–4
+	Spring Cleaning Guide for Tampa Homes
+	Seasonal
+	Med-High
+	
+
+Months 4–6 Schedule
+Month
+	Post Title
+	Pillar
+	Primary Keyword Vol.
+	4
+	Hard Water Stains in Tampa Bathrooms
+	Tampa Home Care
+	110/mo
+	4
+	Is Hiring a House Cleaner Worth It?
+	Cost Guide
+	590/mo
+	5
+	Airbnb Cleaning Between Guests
+	Comparison
+	480/mo
+	5
+	Pet Owner’s Guide to a Clean Tampa Home
+	Tampa Home Care
+	210/mo
+	6
+	Hurricane Season Cleaning Prep
+	Seasonal
+	260/mo seasonal
+	6
+	Eco-Friendly Cleaning Products We Use
+	Brand Authority
+	390/mo
+	
+
+NOTE: The calendar assumes a 2-post-per-month cadence. If resources allow 4/month, move posts #7–12 into months 2–3 and add new topics for months 4–6. Seasonal posts (spring cleaning, hurricane prep) should be timed 4–6 weeks before the seasonal peak.
+9. Measurement & KPIs
+9.1 Metrics to Track
+Metric
+	Tool
+	Target (6-Month)
+	Organic blog traffic
+	GA4
+	500+ monthly visits
+	Keyword rankings
+	Google Search Console
+	Top 10 for 5+ target keywords
+	Blog-to-service page clicks
+	GA4 (event tracking)
+	15%+ of blog visitors click to a service page
+	Form submissions from blog
+	GA4 + GTM
+	5+ leads/month attributable to blog content
+	Average time on page
+	GA4
+	2+ minutes average
+	Featured snippets won
+	Search Console + manual checks
+	2+ featured snippets within 6 months
+	AI Overview citations
+	Manual search monitoring
+	Easy Clean content cited in AI results for target queries
+	
+
+* Monthly: Check GA4 for blog traffic trends, top-performing posts, and service page click-through from blog. Adjust upcoming topics based on what’s gaining traction.
+* Quarterly: Review Search Console for keyword ranking progress. Identify posts that are ranking on page 2 (positions 11–20) and refresh them with updated data, additional sections, or improved internal links to push them onto page 1.
+* Biannually: Audit all blog posts for outdated pricing data, broken links, and content freshness. Update year references in titles (e.g., “2026 Guide” → “2027 Guide”). Republish with updated dateModified in schema.
+NOTE: The first 3 months of a new blog will show minimal organic traffic. This is normal. Google needs 2–4 months to fully index and rank new content. Expect meaningful traffic growth to begin around month 4–5, with compounding returns from month 6 onward as topical authority builds.
+* Create the blog using WordPress’s native Posts functionality (not Pages)
+* Set permalink structure to: /blog/%postname%/ via Settings > Permalinks > Custom Structure
+* Create the 5 categories defined in Section 2.4 before publishing the first post
+* Install Yoast SEO or Rank Math for per-post title tag, meta description, and schema control
+* Set each post’s focus keyword in the SEO plugin
+* Enable breadcrumbs via the SEO plugin and configure Blog as the parent
+* Author profile: Create a WordPress author profile for Kessia Marquez with her bio and photo for the byline
+* Set featured images to 1200x630px (matches og:image for social sharing)
+* After publishing each post, manually add reciprocal links from the target service pages back to the post
+* Submit each new post URL to Google Search Console for immediate indexing
+
+
+End of Blog Content Strategy Document
+Version 1.0 • March 2026 • All content is original and proprietary

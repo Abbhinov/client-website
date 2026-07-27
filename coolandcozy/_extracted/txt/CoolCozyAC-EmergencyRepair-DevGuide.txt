@@ -1,0 +1,481 @@
+﻿
+DEVELOPER IMPLEMENTATION GUIDE
+
+COOL & COZY AC REPAIR
+Licensed HVAC Contractor  ·  Jacksonville, Florida
+
+EMERGENCY AC REPAIR
+Complete Page Build — Single Document
+
+URL: coolcozyac.com/services/emergency-ac-repair
+Prepared by: TradeWorks AI  |  Version 1.0  |  May 2026
+Classification: Client Confidential
+
+Table of Contents
+
+1.  How to Use This Guide
+2.  Page Identity & Architecture
+3.  Keyword Strategy
+4.  Complete <head> Section
+5.  Section-by-Section Build
+5.1  Emergency Hero (Phone-First Design)
+5.2  AEO Introduction Block
+5.3  What Qualifies as an AC Emergency?
+5.4  What to Do While You Wait
+5.5  Our Emergency Repair Process
+5.6  Property Manager Emergency Response
+5.7  FAQ Section (5 Questions)
+5.8  Related Services
+5.9  Final CTA Block
+6.  Reference: Assets, GA4 & Checklist
+
+1. How to Use This Guide
+This guide defines the Emergency AC Repair page at /services/emergency-ac-repair. This is the most urgency-driven page on the entire site. The visitor landing here has a non-functional AC system during dangerous heat conditions and is scanning for a phone number, not reading marketing copy. Every design decision, content block, and layout choice must serve one objective: get the visitor to call (904) 555-0199 within 10 seconds of landing.
+The page still carries proper SEO structure, AEO content, and schema because it needs to RANK for emergency queries to be useful. But the content hierarchy is inverted compared to other service pages: the phone number comes first, the educational content supports the call decision, and nothing gets between the visitor and the action.
+1.1 Design Philosophy: Phone-First
+The phone number appears in the emergency banner, the header, the hero (as the ONLY CTA — no secondary form button), and is repeated after every content section.
+Content sections are shorter than other service pages. An emergency visitor scrolls fast and scans, not reads.
+The page uses more Coral (#E8603C) and higher-contrast elements than other pages to communicate urgency visually without using alarm-red.
+The emergency banner on this page should ALWAYS show the summer/emergency variant regardless of season.
+The sticky mobile CTA bar shows ONLY the phone call button on this page (not the dual call/estimate split).
+DEV ACTION: Override the sticky mobile CTA bar on this page to show a single full-width “Call Now: (904) 555-0199” button in Coral. The “Free Estimate” button is removed on this page only.
+
+2. Page Identity & Architecture
+Property
+Specification
+URL Path
+/services/emergency-ac-repair
+Canonical URL
+https://coolcozyac.com/services/emergency-ac-repair
+Page Type
+Service child page (emergency variant)
+Parent Page
+/services
+Breadcrumb
+Home > Services > Emergency AC Repair
+Primary Keyword
+emergency AC repair Jacksonville
+Secondary Keywords
+24/7 AC repair Jacksonville, AC emergency Jacksonville FL, AC broken Jacksonville, same-day AC repair near me
+Search Intent
+Emergency / Transactional (immediate need, maximum urgency)
+Target Word Count
+1,200–1,500 words (shorter than other service pages — urgency visitors scan, not read)
+Primary Conversion Goal
+Phone call (this page has one goal and one goal only)
+Secondary Conversion Goals
+None. Every element drives the phone call.
+Robots Directive
+index, follow
+XML Sitemap
+Included, priority 0.8
+LCP Target
+< 1.5s (stricter than standard — this is a conversion page)
+
+2.1 Internal Linking
+TO /services/ac-repair: for visitors whose situation turns out to be non-emergency
+TO /services/ac-maintenance: “prevent the next emergency” cross-link at page bottom
+TO /services/ac-installation: for systems beyond repair
+FROM /services/ac-repair: emergency cross-link in symptoms section
+FROM homepage: emergency banner and services grid card
+This page intentionally has FEWER internal links than other service pages. Every link that is not a phone number is a distraction from the primary conversion goal.
+
+3. Keyword Strategy
+Keyword
+Est. Vol.
+Intent
+Placement
+emergency AC repair Jacksonville
+300–600
+Emerg.
+H1, title, meta, AEO para
+AC repair near me emergency
+500+
+Emerg.
+Schema, area references
+AC stopped working Jacksonville
+100–250
+Emerg.
+Emergency qualifiers section
+same-day AC repair Jacksonville
+100–200
+Trans.
+Hero subheadline, process
+after hours AC repair Jacksonville
+50–150
+Emerg.
+FAQ, hours clarification
+AC emergency what to do
+100–300
+Info
+“What to Do” section
+AC broken 95 degrees
+50–150
+Emerg.
+Hero, qualifying section
+
+3.1 Semantic Terms
+System failure, AC down, no cold air, AC won’t turn on, complete breakdown, dangerous heat, heat stroke risk, indoor temperature unsafe
+Same-day, priority, fast response, immediate, ASAP, today, right now, as soon as possible
+Jacksonville summer, 95 degrees, heat index 105, humidity 80%, Florida heat
+
+4. Complete <head> Section
+Property
+Specification
+Title Tag
+Emergency AC Repair Jacksonville FL | Same-Day Service | Cool & Cozy
+Title Chars
+65 characters
+Meta Description
+AC emergency in Jacksonville? Call (904) 555-0199 for same-day repair. Licensed contractor, priority response, no hidden fees. Available when you need us most.
+Meta Desc. Chars
+147 characters — phone number in the meta description for SERP visibility
+Canonical URL
+https://coolcozyac.com/services/emergency-ac-repair
+og:title
+Emergency AC Repair Jacksonville | Cool & Cozy
+og:description
+Same-day emergency AC repair in Jacksonville, FL. Call (904) 555-0199 now.
+
+The phone number appears in the meta description intentionally. When this page ranks for emergency queries, the searcher can call directly from the SERP without even clicking through. This is the only page where the phone number belongs in the meta description.
+4.1 JSON-LD
+Service schema (serviceType: “Emergency Air Conditioning Repair”, availableChannel with telephone), BreadcrumbList (3-level), and FAQPage (5 questions). Same provider block as all service pages. Add “hoursAvailable” to indicate extended/emergency hours if client confirms availability beyond standard hours.
+4.2 Preload
+This page should use CSS-only hero (Coral gradient, no photo) for fastest possible LCP. No image preload needed.
+Critical CSS inlined aggressively — the hero + phone number must render in under 1 second.
+DEV ACTION: Target LCP < 1.5s on this page. No hero image, minimal JS, inline critical CSS. This is the conversion page with the strictest performance budget.
+
+5. Section-by-Section Build
+The Emergency AC Repair page contains 9 content blocks. Every section is shorter and more action-oriented than equivalent sections on other service pages. The phone number appears after every section.
+
+5.1 Emergency Hero (Phone-First Design)
+Overview
+This hero is radically different from every other page’s hero. It uses a Coral-to-Evergreen gradient background (no photo), centers the phone number as the dominant visual element, and has only ONE CTA: the phone call. No form button, no secondary action. The entire hero exists to get the visitor to tap/click the phone number.
+Layout
+Property
+Specification
+Desktop
+Full-width, 440px height, centered content, max-width 720px
+Mobile
+Full-width, auto height (min 360px), centered, phone number at 32px+ font size
+Background
+CSS gradient: linear-gradient(135deg, #E8603C 0%, #1A5653 100%) — Coral to Evergreen diagonal. No image.
+Content
+Breadcrumb
+Home > Services > Emergency AC Repair
+Style: Poppins 13px/400, rgba(255,255,255,0.7)
+Emergency Badge
+⚡ EMERGENCY SERVICE
+Style: Poppins 13px/700, uppercase, letter-spacing 3px, #FFFFFF, inline badge with Coral bg at 80% opacity, border-radius 20px, padding 6px 16px
+H1 Headline
+Your AC Is Down. We’re On Our Way.
+Character Count: 40 characters
+Style: Poppins 40px/700 (desktop), 32px/700 (mobile), #FFFFFF, centered, max-width 600px
+The H1 is intentionally conversational and empathetic, not keyword-stuffed. The primary keyword “emergency AC repair Jacksonville” appears in the title tag and AEO paragraph. The H1’s job is emotional connection, not SEO gymnastics.
+Phone Number (Dominant Element)
+(904) 555-0199
+Style: Poppins 48px/700 (desktop), 36px/700 (mobile), #FFFFFF, click-to-call (tel:+19045550199), centered
+Below phone: Poppins 16px/400, rgba(255,255,255,0.85): “Tap to call — Same-day priority service for Jacksonville & Duval County”
+DEV ACTION: The phone number is the visual center of the hero. It must be the largest text element on the page. On mobile, it should be impossible to miss — a visitor glancing at the screen for 2 seconds should see the number.
+Trust Line Below Phone
+✓ Licensed CAC1819948  ·  ✓ Same-Day Response  ·  ✓ No Hidden Fees  ·  ✓ Se habla español
+Style: Poppins 13px/400, rgba(255,255,255,0.75), centered
+NO Secondary CTA
+This hero has NO secondary CTA button. No “Schedule Online”, no “Get an Estimate.” A person with a broken AC in 95-degree heat does not want to fill out a form. They want to call someone right now. The form exists on the contact page for non-emergency situations. This page has one action: call.
+Image
+No image. CSS gradient only. This eliminates LCP concerns entirely and ensures the phone number renders in under 1 second.
+GA4
+Property
+Specification
+phone_click
+page_section: “hero”, emergency: true
+
+5.2 AEO Introduction Block
+Layout
+Property
+Specification
+Container
+#FFFFFF, 720px centered, 48px/32px padding
+Content
+H2
+Emergency AC Repair in Jacksonville, FL — Same-Day Priority Service
+AEO Paragraph
+Cool & Cozy AC Repair provides emergency air conditioning repair service throughout Jacksonville and Duval County. When your AC system fails during Jacksonville’s peak summer heat — with outdoor temperatures regularly reaching 95°F and heat indices exceeding 105°F — indoor conditions can become unsafe within hours, especially for elderly residents, young children, and pets. Cool & Cozy prioritizes emergency calls above routine service to deliver the fastest possible response. The company is a Florida-licensed contractor (CAC1819948) with same-day service capability, upfront pricing with no emergency surcharges on diagnostics, and bilingual technicians who communicate in English and Spanish. Call (904) 555-0199 to report your AC emergency.
+Word Count: 110 words
+AEO Targets: Answers: “Who does emergency AC repair in Jacksonville?” “Is same-day AC repair available in Jacksonville?” “What do I do if my AC breaks in Jacksonville?”
+The phrase “no emergency surcharges on diagnostics” is a significant trust differentiator. Many competitors charge premium rates for emergency calls. If Cool & Cozy confirms this policy, it should be prominently stated. If they DO charge a premium, replace this with “transparent emergency pricing discussed before dispatch.”
+DEV ACTION: PLACEHOLDER: Confirm with client whether emergency/after-hours calls carry any premium charges. The content must accurately reflect their pricing policy.
+Inline Phone Repeat
+Call now: (904) 555-0199
+Style: Centered, Poppins 24px/700, Coral, click-to-call. Appears after the AEO paragraph as a visual interrupt.
+
+5.3 What Qualifies as an AC Emergency?
+Overview
+Helps the visitor confirm their situation is genuinely urgent (validating their decision to be on this page) while also setting expectations for what constitutes emergency vs. standard service. This section is short and scannable.
+Layout
+Property
+Specification
+Container
+#EAF3F2 (Sky Mist)
+Content Width
+960px centered
+Grid
+2 columns desktop: Emergency (left, Coral-accent cards) / Can Wait (right, Seafoam-accent cards)
+Mobile
+Single column, emergency situations first
+Content
+H2
+Is Your Situation an AC Emergency?
+Left Column: Call Now — This Is an Emergency
+Your AC has stopped working completely during summer heat (indoor temp rising above 85°F)
+Elderly family member, infant, or pet is at risk from indoor heat
+You hear loud banging, grinding, or electrical buzzing from the unit
+You smell burning or electrical odors from the system or vents
+Water is actively flooding from the indoor unit
+Your circuit breaker trips repeatedly when the AC turns on
+You are a property manager with a tenant in dangerous heat conditions
+
+Right Column: Urgent But Can Wait 24–48 Hours
+AC is running but cooling is slightly reduced (still maintaining below 80°F indoors)
+One room is warmer than others but the rest of the house is comfortable
+AC is making a mild rattling or humming noise but still cooling
+Your energy bill increased but the system is functioning normally
+You need a routine tune-up or filter change
+
+Not sure? Call us anyway. We’ll help you assess the urgency over the phone: (904) 555-0199
+Style: Centered, Poppins 16px/600, phone in Coral
+Design
+Property
+Specification
+Emergency column heading
+“⚡ Call Now” — Poppins 18px/700, #E8603C Coral
+Emergency card
+Left border 4px solid #E8603C, white bg, 16px radius
+Can-wait column heading
+“⏰ Schedule Service” — Poppins 18px/600, #5CB8B2 Seafoam
+Can-wait card
+Left border 4px solid #5CB8B2, white bg, 16px radius
+Items
+Poppins 15px/400, #3D3D3D
+
+5.4 What to Do While You Wait for Emergency AC Repair
+Overview
+Practical, actionable advice for the homeowner who just called and is waiting for the technician. This section serves two purposes: (1) genuinely helpful content that builds trust, and (2) targets the AEO query “what to do when AC breaks in Florida” / “AC emergency what to do.”
+Layout
+Property
+Specification
+Container
+#FFFFFF, 800px centered
+Format
+Numbered steps (not bullets — this is a sequence)
+Content
+H2
+While You Wait: 6 Steps to Stay Safe and Protect Your System
+
+#
+Step
+1
+Turn the system OFF at the thermostat. If you hear unusual noises, smell burning, or see ice forming, continuing to run the system can cause additional damage. Switching to “Off” or “Fan Only” prevents compressor damage.
+2
+Check your circuit breaker panel. A tripped breaker is one of the most common causes of sudden AC failure. If the HVAC breaker is tripped, reset it once. If it trips again immediately, leave it off — this indicates an electrical fault that needs professional diagnosis.
+3
+Check your thermostat. Verify it is set to “Cool” (not “Heat” or “Off”), the temperature is set below the current room temperature, and the batteries are not dead (if it uses batteries). A blank thermostat screen often just needs fresh batteries.
+4
+Open interior doors and any windows that catch a breeze. Use portable fans to circulate air. Close blinds and curtains on sun-facing windows to reduce heat gain. Move to the lowest level of your home (heat rises).
+5
+Stay hydrated. In Jacksonville’s humidity, dehydration happens faster than you expect. Drink water, avoid alcohol and caffeine, and keep pets’ water bowls full. If elderly family members or infants are present and indoor temperatures exceed 85°F, consider relocating them temporarily.
+6
+Clear the area around your outdoor unit. Remove any debris, vegetation, or objects within 2 feet of the condenser. This gives the technician immediate access on arrival and may even resolve airflow-related issues.
+
+Our technician is on the way. Call (904) 555-0199 if anything changes.
+Steps 1–3 address the most common user-resolvable causes of AC failure. A meaningful percentage of “emergency” calls are tripped breakers or dead thermostat batteries. Providing this advice up front is honest and builds trust — the customer remembers that Cool & Cozy tried to help them fix it themselves first.
+
+5.5 Our Emergency Repair Process
+Overview
+Compressed version of the standard repair process, emphasizing speed and communication. Only 4 steps (vs. 5 on the standard repair page). The visitor needs to know: how fast you’ll get there, what happens when you arrive, and when they’ll have cold air again.
+Content
+#
+Step
+What Happens
+1
+You Call Us
+Call (904) 555-0199. Tell us what’s happening and whether anyone vulnerable (elderly, infants, pets) is in the home. We assess urgency immediately and dispatch a technician.
+2
+We Arrive Fast
+Our technician arrives with a fully stocked service vehicle. We call you 30 minutes before arrival so you’re not guessing. Emergency calls are prioritized above all routine service.
+3
+Diagnose & Quote
+Full system diagnostic. We tell you exactly what failed, what it costs to fix, and give you a clear quote BEFORE starting work. No surprises. If the system is beyond repair, we tell you honestly and discuss replacement options.
+4
+Fix It & Verify
+We complete the repair, run the system through a full cycle, verify cold air is flowing from every vent, and confirm the system is stable before we leave. We follow up the next day to make sure everything is still running properly.
+
+Call now: (904) 555-0199
+Design
+Property
+Specification
+Step circles
+56px, Coral bg (#E8603C — not Evergreen, matching emergency urgency), white number
+Timeline connector
+2px solid #E8603C (Coral line, not gray)
+Step descriptions
+Poppins 14px/400, #3D3D3D, shorter than standard repair process descriptions
+The emergency process uses Coral step circles and connecting lines instead of the standard Evergreen. This visual cue reinforces urgency and differentiates this page from the standard AC Repair process section.
+
+5.6 Property Manager Emergency Response
+Overview
+Compact PM section for the property manager whose tenant just called about a dead AC. Even more urgent and direct than other PM sections — no metrics panel, no marketing language. Just: we understand the urgency, here’s how we handle it, call us.
+Layout
+Property
+Specification
+Container
+#1A5653 (Evergreen), 960px centered, 48px/32px padding
+Content
+Eyebrow
+FOR PROPERTY MANAGERS
+H3
+Tenant AC Emergency? We Handle It.
+Style: Poppins 26px/700, #FFFFFF
+Body
+When a tenant calls you about a broken AC in July, you need a contractor who answers the phone, coordinates access with your tenant directly, completes the repair the same day, and sends you a clean invoice. Cool & Cozy provides priority emergency response for managed properties — bilingual communication with tenants in English or Spanish, access via lockbox or scheduled entry, and transparent pricing with no after-hours surprises.
+Word Count: 70 words
+CTA
+Call (904) 555-0199 — Tell us it’s a tenant emergency and we’ll prioritize accordingly.
+Style: Poppins 18px/600, #E8603C Coral, centered, click-to-call
+
+5.7 FAQ Section (5 Questions)
+Shorter FAQ than other service pages — 5 questions instead of 6. Emergency visitors don’t read long FAQs. These questions target the specific concerns of someone in crisis.
+Layout
+Property
+Specification
+Container
+#F0E6D3, 800px centered, same accordion
+FAQ 1
+Q: Do you charge extra for emergency or same-day AC repair?
+A: Cool & Cozy does not charge emergency surcharges on diagnostic fees. Our repair pricing is based on the work required, not the time of day or urgency of the call. You receive a clear written quote before any work begins, regardless of whether it is a scheduled appointment or an emergency dispatch. If after-hours labor rates apply, we will tell you before we dispatch so there are no surprises.
+Word Count: 66 words
+DEV ACTION: PLACEHOLDER: Confirm after-hours/emergency pricing policy with client. If there IS a premium, be transparent about it — honesty builds more trust than vague language.
+
+FAQ 2
+Q: How fast can you get to me for an AC emergency?
+A: For emergency calls during business hours, we typically dispatch a technician within 1 to 3 hours depending on current demand and your location within Duval County. Emergency calls are prioritized above all routine service. We call you 30 minutes before arrival so you know exactly when to expect us.
+Word Count: 52 words
+
+FAQ 3
+Q: What if my AC breaks at night or on a weekend?
+A: Call (904) 555-0199. If we are able to dispatch a technician outside standard business hours, we will. If the call comes late at night, we schedule you as the first priority call the following morning. In the meantime, follow the safety steps on this page to stay comfortable and protect your system until we arrive.
+Word Count: 58 words
+DEV ACTION: PLACEHOLDER: Confirm after-hours availability with client. If true 24/7 service is offered, state it clearly. If service hours are limited, be honest about that and frame the morning-priority response.
+
+FAQ 4
+Q: Should I try to fix my AC myself before calling?
+A: Check two things before calling: your circuit breaker panel (reset the HVAC breaker if tripped) and your thermostat (verify it is set to Cool, temperature is set below room temp, and batteries are not dead). These two checks resolve roughly 10 to 15 percent of emergency calls. Beyond that, do not attempt to open, adjust, or repair the system yourself — AC systems contain high-voltage electrical components and pressurized refrigerant that require licensed handling.
+Word Count: 78 words
+
+FAQ 5
+Q: What if my AC can’t be repaired and needs replacement?
+A: If our technician determines that the repair cost exceeds what makes financial sense given the system’s age and condition, we will tell you honestly. We can provide a temporary cooling solution recommendation for the immediate crisis and schedule a free installation estimate for system replacement within 24 to 48 hours. We never pressure an emergency customer into a replacement decision on the spot.
+Word Count: 63 words
+Internal Link: “free installation estimate” → /services/ac-installation
+
+FAQPage JSON-LD
+5-question FAQPage schema. Same pattern: embed in <head>, full answer text in each Answer.text field.
+
+5.8 Related Services
+Only 2 cards on this page (not 3). Keep it minimal — the emergency visitor doesn’t need a shopping menu.
+Service
+Description
+Link
+AC Repair
+If your situation is urgent but not an emergency, our standard AC repair service offers fast scheduling and the same honest pricing.
+/services/ac-repair
+AC Maintenance
+The best emergency is the one that never happens. Regular maintenance catches problems before they become 95-degree crises.
+/services/ac-maintenance
+
+Same card design as other service pages but only 2 cards. On desktop, the 2 cards center with 24px gap.
+
+5.9 Final CTA Block
+H2
+Still Reading? Your AC Isn’t Getting Cooler on Its Own.
+Style: Poppins 32px/700, #FFFFFF, centered
+Body
+You’ve checked the breaker. You’ve checked the thermostat. It’s still not working. Call us. That’s the next step.
+Word Count: 21 words
+Phone Number (Single CTA)
+(904) 555-0199
+Style: Poppins 44px/700, #FFFFFF on Coral bg, centered, click-to-call, pill container with padding 20px 48px, border-radius 32px
+Below phone: “Tap to call now — Same-day service for Jacksonville & Duval County”
+Same as hero: single CTA, phone only. No form button. Coral-to-Evergreen gradient bg, 720px centered, 72px/40px padding.
+The final CTA H2 is intentionally direct and slightly humorous. By the time someone has scrolled this far on an emergency page, they either need a nudge to act or they’re not actually in an emergency. The tone matches both scenarios.
+
+6. Reference: Assets, GA4 & Checklist
+6.1 Image Asset Inventory
+Image
+Section
+Format
+Size
+Status
+hero bg
+5.1 Hero
+CSS gradient only
+0 KB
+Ready
+og-emergency
+OG image
+WebP+JPEG 1200×630
+< 200 KB
+PLACEHOLDER
+emergency badge icon
+5.1 Hero
+CSS/Unicode ⚡
+0 KB
+Ready
+2 related svc icons
+5.8 Related
+SVG 48×48
+3 KB ea
+Reuse
+
+This page has the lightest image footprint of any service page. CSS gradient hero, Unicode emoji badge, reused SVG icons. Expected PageSpeed Mobile: 97+.
+6.2 GA4 Event Summary
+Event
+Triggers
+Parameters
+phone_click
+Hero (dominant), AEO inline, qualifying section, process section, PM section, FAQ answers, final CTA, header, sticky bar (single-button override)
+phone_number, page_section, emergency: true
+
+This page tracks only phone_click. There are no cta_click events because there are no form CTAs. The “emergency: true” parameter on all phone_click events from this page enables filtering emergency calls from standard calls in GA4 reporting.
+DEV ACTION: Add a custom dimension “emergency” (boolean) to the GA4 phone_click event. This allows the client to segment emergency call volume from standard repair calls across all reporting.
+6.3 Implementation Checklist
+Build
+HTML validates, JSON-LD validates (Service, BreadcrumbList, FAQPage — 5 questions)
+Title tag unique, contains “emergency” and “Jacksonville”
+Phone number in meta description (unique to this page)
+Canonical URL: https://coolcozyac.com/services/emergency-ac-repair
+Breadcrumb: Home > Services > Emergency AC Repair
+Phone number click-to-call on EVERY instance (hero, AEO, qualifier, process, PM, FAQ, final CTA, header, sticky bar)
+Sticky mobile CTA overridden: single full-width Call Now button (no Estimate button)
+Emergency banner forced to summer/emergency variant on this page regardless of season
+FAQ accordion functional on all devices
+Qualifying section 2-column layout stacks correctly on mobile (emergency column first)
+Performance (Strictest Budget)
+PageSpeed Mobile > 95 (target 97+)
+LCP < 1.5s (CSS-only hero, no image, inline critical CSS)
+CLS < 0.1 (no images to shift, font-display: swap)
+Total page weight < 200KB (HTML + CSS + minimal JS + fonts)
+Content & SEO
+AEO paragraph answers emergency queries within 150 words
+Phone number appears at least 8 times on the page (hero, AEO, qualifier, process, PM, FAQ, final CTA, header)
+After-hours pricing policy confirmed and accurately reflected in FAQ 1
+Response time claims confirmed with client (1–3 hours during business hours)
+No keyword cannibalization: this page targets “emergency AC repair,” standard repair page targets “AC repair”
+Only 2 related service links (repair + maintenance) — minimal distractions
+XML sitemap includes /services/emergency-ac-repair, priority 0.8
+
+— End of Document —
+
+Prepared by TradeWorks AI  ·  May 2026  ·  v1.0
+Next recommended guide: Commercial HVAC (/services/commercial-hvac)
+

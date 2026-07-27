@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <title>Pressure Washing</title>
+  <!-- wand body diagonal -->
+  <path d="M30 150 L60 120 L130 50 L150 70 L80 140 L50 170 Z" fill="#2D5C3A"/>
+  <!-- handle grip -->
+  <rect x="32" y="148" width="22" height="22" rx="3" fill="#1A3826" transform="rotate(-45 43 159)"/>
+  <!-- trigger -->
+  <path d="M58 122 L48 132 L52 138 L62 128 Z" fill="#1A3826"/>
+  <!-- nozzle tip -->
+  <circle cx="138" cy="58" r="6" fill="#1A3826"/>
+  <circle cx="138" cy="58" r="3" fill="#6BAA45"/>
+  <!-- water spray fan -->
+  <path d="M142 52 Q160 38 178 26" stroke="#6BAA45" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M144 56 Q166 50 184 46" stroke="#6BAA45" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M144 62 Q166 64 184 66" stroke="#6BAA45" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <!-- droplets at end of spray -->
+  <circle cx="178" cy="26" r="3.5" fill="#A8D17C"/>
+  <circle cx="184" cy="46" r="3.5" fill="#A8D17C"/>
+  <circle cx="184" cy="66" r="3.5" fill="#A8D17C"/>
+  <!-- mid droplets -->
+  <circle cx="162" cy="38" r="2" fill="#A8D17C"/>
+  <circle cx="170" cy="56" r="2" fill="#A8D17C"/>
+  <circle cx="168" cy="68" r="2" fill="#A8D17C"/>
+</svg>

@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python _fix_links.py)",
+      "Bash(python -)",
+      "Bash(grep -v 'easycleaningservice\\\\.com/\"$')",
+      "Bash(grep -v 'easycleaningservice\\\\.com/.*/\"$')",
+      "Bash(python _inline_fragments.py)",
+      "Bash(python _add_hamburger.py)"
+    ]
+  }
+}

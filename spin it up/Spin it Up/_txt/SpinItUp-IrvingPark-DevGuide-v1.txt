@@ -1,0 +1,302 @@
+
+SPIN IT UP LAUNDRY
+IRVING PARK AREA PAGEDEVELOPER GUIDE
+Section-by-Section Implementation Specification
+
+URL: spinituplaundry.net/areas/irving-park/
+Prepared by: TradeWorks AI  |  Version 1.0  |  May 2026
+Classification: Client Confidential
+
+Table of Contents
+1  How to Use This Guide
+2  Page Identity & Architecture
+3  Keyword Strategy
+4  Complete <head> Section
+5  Section 1: Header
+6  Section 2: Hero Banner
+7  Section 3: AEO Introduction
+8  Section 4: About Irving Park
+9  Section 5: Why Laundry Service Matters Here
+10  Section 6: Services Available
+11  Section 7: Getting Here / Getting Delivery
+12  Section 8: Nearby Neighborhoods
+13  Section 9: FAQ Section
+14  Section 10: CTA Block
+15  Section 11: Footer & Sticky CTA
+16  Reference: Image Assets, GA4, Checklist
+
+1. How to Use This Guide
+This guide covers the Irving Park area landing page (/areas/irving-park/). It is a child page in the Areas silo targeting local search queries for laundry services in the Irving Park neighborhood. The page must contain genuinely unique local content — neighborhood-specific housing details, landmarks, transit options, and demographic context — to avoid thin doorway page classification.
+Each area page follows the same structural template but with completely unique content. No content is shared or swapped between neighborhood pages.
+
+2. Page Identity & Architecture
+URL Path
+/areas/irving-park/
+Page Type
+Child — Areas Silo
+Canonical URL
+https://spinituplaundry.net/areas/irving-park/
+Breadcrumb
+Home > Service Areas > Irving Park
+Parent Page
+/areas/ (Service Areas Hub)
+Sibling Pages
+/areas/avondale/, /areas/logan-square/, /areas/hermosa/, /areas/albany-park/
+Primary Keyword
+laundromat irving park chicago (50–110/mo)
+Search Intent
+Local
+Target Word Count
+700–900 words
+Primary Conversion Goal
+Cents app pickup order or phone call
+Robots
+index, follow
+Sitemap
+Include — priority 0.7
+
+3. Keyword Strategy
+Keyword
+Intent
+Placement
+laundromat irving park chicago
+Local
+H1, title, AEO paragraph, schema
+laundry service irving park chicago
+Local
+Title tag, body content
+wash and fold irving park
+Transactional
+Services Available section
+laundry pickup irving park
+Transactional
+Getting Delivery section
+laundromat near irving park
+Local
+AEO paragraph, FAQ
+
+4. Complete <head> Section
+Tag
+Content
+<title>
+Laundromat Near Irving Park, Chicago | Spin It Up — Pickup & Delivery (60 chars)
+<meta description>
+Laundry services for Irving Park, Chicago. Self-service, wash & fold, pickup & delivery. 41 washers, 52 dryers, 130 lb machines at 3710 N Kimball Ave. (150 chars)
+<meta robots>
+index, follow
+<link canonical>
+https://spinituplaundry.net/areas/irving-park/
+
+JSON-LD: Service schema (areaServed: Irving Park) + BreadcrumbList (Home > Service Areas > Irving Park).
+DEV ACTION:  Validate Service + BreadcrumbList + FAQPage schemas via Google Rich Results Test. The Service schema should use areaServed with @type "Neighborhood" and name "Irving Park".
+
+5. Section 1: Header
+Global header. Solid white. “Areas” nav item active. Mobile: “Areas” expanded, “Irving Park” highlighted.
+
+6. Section 2: Hero Banner
+Breadcrumb: Home > Service Areas > Irving Park
+
+H1: "Laundry Services for Irving Park, Chicago" — Font: 40px/800 (desktop), 28px (mobile). White.
+
+Subheadline: "~1.5 miles north of our facility. A 5-minute drive via Kimball Ave or a short bus ride." — 18px/400, rgba(255,255,255,0.85). Max-width: 600px.
+
+Hero CTAs: "Schedule Pickup" (CTA Orange, Cents app) + "Call (773) 654-1275" (white outline)
+Background: Spin Blue gradient. Padding: 56px 0 desktop, 40px 16px mobile.
+
+7. Section 3: AEO Introduction
+NEW:  AEO paragraph — unique to this neighborhood.
+
+"Spin It Up Laundry provides laundry services to Irving Park residents from our facility at 3710 N Kimball Ave in neighboring Avondale, approximately 1.5 miles south of the Irving Park Blue Line station. Irving Park customers can drive to our facility in about 5 minutes via Kimball Ave, take the CTA bus, or schedule pickup and delivery through the Cents app without leaving home. We offer self-service laundry with 41 washers and 52 dryers, professional wash-and-fold drop-off starting at $1.50 per pound, and door-to-door delivery with most orders returned within 24 hours." — 92 words.
+Font: 18px/400 Body Text. Line-height: 1.65. Max-width: 800px, centered. Background: White.
+
+8. Section 4: About Irving Park
+Section Overview
+Genuinely local content about the Irving Park neighborhood. This is what makes this page unique and avoids doorway page classification. Background: Ice Blue (#F0F9FF).
+H2: "About the Irving Park Neighborhood" — Font: 36px/700, Dark Slate. Margin-bottom 32px.
+
+Detail
+Content
+Population
+53,832
+Demographics
+43.5% White, 40.4% Hispanic, 8.6% Asian
+Median Household Income
+$64,598
+ZIP Code(s)
+60618, 60630, 60641
+Housing Stock
+Large Victorian homes, Foursquare and Revival styles, Craftsman bungalows, Prairie-style homes. The Old Irving Park Historic District features some of Chicago’s most historic homes, including pre-Chicago Fire residences. The Villa District is a Chicago Landmark with unique Craftsman homes on boulevard-style streets.
+Local Landmarks
+Old Irving Park Historic District, The Villa District (Chicago Landmark), Independence Park Field House (gym + indoor pool), Smoque BBQ, Sabatino’s Italian Restaurant, Thai Aree, The Whistle Stop Inn (Chicago Landmark)
+Transit Access
+CTA Blue Line (Irving Park station), Metra Milwaukee District/North Line (Irving Park station), CTA buses on Irving Park Rd, Pulaski Rd, Addison St
+
+Irving Park is Spin It Up’s neighbor to the north, directly accessible via Kimball Ave. With 53,000 residents and a mix of historic single-family homes and multi-unit buildings, Irving Park has strong demand for professional laundry services. The neighborhood’s multi-generational character — long-term residents in Victorian homes alongside young families in renovated bungalows — creates a broad customer base for both self-service and pickup delivery.
+Font: 17px/400 Body Text, line-height 1.65. Section padding: 64px 0 desktop, 40px 16px mobile.
+
+9. Section 5: Why Laundry Service Matters Here
+Section Overview
+Connects Irving Park’s specific housing stock and demographics to the need for laundry services. This is NOT generic “laundry is important” content — it’s specific to this neighborhood’s building types and resident profiles. Background: White.
+H2: "Why Irving Park Residents Choose Spin It Up" — Font: 32px/700. Margin-bottom 24px.
+
+Many of Irving Park’s historic homes were built before in-unit laundry was standard. Even updated homes in the Old Irving Park and Villa districts may have basement laundry with aging equipment. Multi-unit brick buildings along the main corridors typically have limited shared laundry. For these residents, a modern laundromat with new machines and extended hours is a practical necessity.
+Font: 17px/400, line-height 1.65, max-width 800px centered.
+
+10. Section 6: Services Available
+Services available to Irving Park residents. Three compact cards linking to service pages. Background: Ice Blue.
+H2: "Services Available to Irving Park Residents" — Font: 32px/700. Margin-bottom 40px.
+
+Card
+Service
+Description
+CTA
+1
+Pickup & Delivery
+Schedule from the Cents app. We pick up from your door in Irving Park and deliver back within 24 hours.
+Schedule Pickup →
+2
+Wash & Fold Drop-Off
+Drive to 3710 N Kimball Ave (1.5 miles north of our facility. A 5-minute drive via Kimball Ave or a short bus ride.). Drop off dirty, pick up clean. $1.50/lb.
+View Wash & Fold →
+3
+Self-Service Laundry
+Visit our facility. 41 washers, 52 dryers, 130 lb machines. EBT accepted.
+View Self-Service →
+Same compact card spec as prior guides. Three cards in row (desktop), stacked (mobile). Each links to respective service page.
+Below cards: "Pickup & delivery available throughout Irving Park via the Cents app." — 16px/600 Fresh Cyan, centered.
+
+11. Section 7: Getting Here / Getting Delivery
+Two-column layout: directions info left, mini map right. Background: White.
+H2: "Getting to Spin It Up from Irving Park"
+
+Method
+Details
+By Car
+~1.5 miles north of our facility. A 5-minute drive via Kimball Ave or a short bus ride. Free parking in front of the building.
+By Bus
+CTA Blue Line (Irving Park station), Metra Milwaukee District/North Line (Irving Park station), CTA buses on Irving Park Rd, Pulaski Rd, Addison St
+By Pickup & Delivery
+Schedule through the Cents app. Enter your address to confirm coverage. Most orders completed within 24 hours.
+Right column: Google Maps embed showing route from Irving Park to 3710 N Kimball Ave. Small format: 400x300px, border-radius 12px, lazy loaded.
+Below: "Get Directions" button (ghost/outline Spin Blue) linking to Google Maps directions URL.
+
+12. Section 8: Nearby Neighborhoods
+Cross-links to sibling area pages. Background: Ice Blue.
+H2: "We Also Serve" — Font: 28px/700. Centered. Margin-bottom 32px.
+
+Neighborhood
+Link
+Avondale
+/areas/avondale/
+Logan Square
+/areas/logan-square/
+Hermosa
+/areas/hermosa/
+Albany Park
+/areas/albany-park/
+Display as horizontal pills/badges (desktop), stacked list (mobile). Each links to the respective area page. Current page (Irving Park) not shown.
+
+13. Section 9: FAQ Section
+Irving Park-specific FAQ. FAQPage schema required. Background: White.
+H2: "Irving Park Laundry FAQ" — Centered. Font: 32px/700. Margin-bottom 40px.
+
+#
+Question
+Answer
+1
+How far is Spin It Up from Irving Park?
+Our facility at 3710 N Kimball Ave is approximately 1.5 miles south of the Irving Park Blue Line station. That’s about a 5-minute drive straight down Kimball Ave or a short CTA bus ride on the Kimball (#82) bus.
+2
+Do you deliver to Irving Park?
+Yes. Irving Park is one of our primary delivery zones. Schedule a pickup through the Cents app, and we’ll come to your door. Most orders are returned within 24 hours.
+3
+I live in Old Irving Park. Can I still get delivery?
+Yes. Our delivery area covers all of Irving Park, including Old Irving Park, The Villas, West Walker, and Kilbourn Park. Enter your address in the Cents app to confirm.
+4
+Is there parking at Spin It Up if I drive from Irving Park?
+Yes. Free parking is available directly in front of our building at 3710 N Kimball Ave. Street parking is also available on Kimball and surrounding residential streets.
+DEV ACTION:  Implement FAQPage JSON-LD schema with 4 Q&A pairs. Validate via Google Rich Results Test.
+Same accordion design spec. Max-width 800px, centered.
+Below FAQ: "View All FAQs" link to /faq/.
+
+14. Section 10: CTA Block
+H2: "Irving Park’s Neighborhood Laundromat" — White. Centered. Font: 36px/700.
+Subtitle: "3710 N Kimball Ave, Avondale • Open 6 AM–11 PM • Free drying Tue–Wed–Thu." — 18px/400.
+
+Button
+Text
+Link
+Style
+1
+Schedule Pickup
+Cents app URL
+CTA Orange
+2
+Call (773) 654-1275
+tel:+17736541275
+White outline
+Background: Spin Blue gradient.
+
+15. Section 11: Footer & Sticky CTA
+Global footer: no modifications.
+Sticky CTA: Default — "Call Now" + "Schedule Pickup" (delivery focus).
+
+16. Reference: Image Assets, GA4, Checklist
+Image Assets
+Image ID
+Section
+Format
+Max Size
+Alt Text
+og-irving-park
+Social
+JPEG 1200x630
+<200KB
+Spin It Up Laundry service in Irving Park Chicago
+map-irving-park
+Getting Here
+iframe
+N/A
+Map showing route from Irving Park to Spin It Up Laundry
+logo-light
+Header/Footer
+SVG
+<10KB
+Logo
+GA4 Events
+Event
+Trigger
+Parameters
+phone_click
+Click tel: link
+phone_number, page_section
+schedule_pickup
+Click primary CTA
+page_section, area_name: Irving Park
+faq_expand
+Expand FAQ accordion
+question_text, area_name
+sibling_area_click
+Click nearby neighborhood link
+area_name, destination_url
+service_card_click
+Click service card
+service_name, area_name
+Implementation Checklist
+HTML validates
+Service + BreadcrumbList + FAQPage schemas validate
+Mobile PageSpeed >90, Desktop >95
+All links return 200
+tel: links functional
+Title tag within 60 chars: Laundromat Near Irving Park, Chicago | Spin It Up — Pickup & Delivery
+AEO paragraph within first 100 words
+Breadcrumb: Home > Service Areas > Irving Park
+Neighborhood content is genuinely unique (not shared with other area pages)
+All sibling area links point to correct pages
+Service cards link to correct service pages
+Map embed renders with correct route
+XML sitemap includes at priority 0.7
+
+
+End of Document
+TradeWorks AI — Spin It Up Laundry Irving Park Area Page Developer Guide v1.0

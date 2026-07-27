@@ -1,0 +1,302 @@
+
+SPIN IT UP LAUNDRY
+AVONDALE AREA PAGEDEVELOPER GUIDE
+Section-by-Section Implementation Specification
+
+URL: spinituplaundry.net/areas/avondale/
+Prepared by: TradeWorks AI  |  Version 1.0  |  May 2026
+Classification: Client Confidential
+
+Table of Contents
+1  How to Use This Guide
+2  Page Identity & Architecture
+3  Keyword Strategy
+4  Complete <head> Section
+5  Section 1: Header
+6  Section 2: Hero Banner
+7  Section 3: AEO Introduction
+8  Section 4: About Avondale
+9  Section 5: Why Laundry Service Matters Here
+10  Section 6: Services Available
+11  Section 7: Getting Here / Getting Delivery
+12  Section 8: Nearby Neighborhoods
+13  Section 9: FAQ Section
+14  Section 10: CTA Block
+15  Section 11: Footer & Sticky CTA
+16  Reference: Image Assets, GA4, Checklist
+
+1. How to Use This Guide
+This guide covers the Avondale area landing page (/areas/avondale/). It is a child page in the Areas silo targeting local search queries for laundry services in the Avondale neighborhood. The page must contain genuinely unique local content — neighborhood-specific housing details, landmarks, transit options, and demographic context — to avoid thin doorway page classification.
+Each area page follows the same structural template but with completely unique content. No content is shared or swapped between neighborhood pages.
+
+2. Page Identity & Architecture
+URL Path
+/areas/avondale/
+Page Type
+Child — Areas Silo
+Canonical URL
+https://spinituplaundry.net/areas/avondale/
+Breadcrumb
+Home > Service Areas > Avondale
+Parent Page
+/areas/ (Service Areas Hub)
+Sibling Pages
+/areas/irving-park/, /areas/logan-square/, /areas/hermosa/, /areas/albany-park/
+Primary Keyword
+laundromat avondale chicago (70–140/mo)
+Search Intent
+Local
+Target Word Count
+700–900 words
+Primary Conversion Goal
+Walk-in visit or phone call
+Robots
+index, follow
+Sitemap
+Include — priority 0.7
+
+3. Keyword Strategy
+Keyword
+Intent
+Placement
+laundromat avondale chicago
+Local
+H1, title, AEO paragraph, schema
+laundry service avondale chicago
+Local
+Title tag, body content
+wash and fold avondale
+Transactional
+Services Available section
+laundry pickup avondale
+Transactional
+Getting Delivery section
+laundromat near avondale
+Local
+AEO paragraph, FAQ
+
+4. Complete <head> Section
+Tag
+Content
+<title>
+Laundromat in Avondale, Chicago | Spin It Up — 3710 N Kimball Ave (57 chars)
+<meta description>
+Avondale’s neighborhood laundromat at 3710 N Kimball Ave. 41 washers, 52 dryers, 130 lb machines. Self-service, wash & fold, pickup & delivery. EBT accepted. (155 chars)
+<meta robots>
+index, follow
+<link canonical>
+https://spinituplaundry.net/areas/avondale/
+
+JSON-LD: Service schema (areaServed: Avondale) + BreadcrumbList (Home > Service Areas > Avondale).
+DEV ACTION:  Validate Service + BreadcrumbList + FAQPage schemas via Google Rich Results Test. The Service schema should use areaServed with @type "Neighborhood" and name "Avondale".
+
+5. Section 1: Header
+Global header. Solid white. “Areas” nav item active. Mobile: “Areas” expanded, “Avondale” highlighted.
+
+6. Section 2: Hero Banner
+Breadcrumb: Home > Service Areas > Avondale
+
+H1: "Laundry Services for Avondale, Chicago" — Font: 40px/800 (desktop), 28px (mobile). White.
+
+Subheadline: "You’re here. Our facility is at 3710 N Kimball Ave." — 18px/400, rgba(255,255,255,0.85). Max-width: 600px.
+
+Hero CTAs: "Get Directions" (CTA Orange) + "Call (773) 654-1275" (white outline)
+Background: Spin Blue gradient. Padding: 56px 0 desktop, 40px 16px mobile.
+
+7. Section 3: AEO Introduction
+NEW:  AEO paragraph — unique to this neighborhood.
+
+"Spin It Up Laundry is located at 3710 N Kimball Ave in the heart of the Avondale neighborhood on Chicago’s Northwest Side, ZIP 60618. We are the neighborhood’s closest full-service laundromat, with 41 washers and 52 dryers including 130 lb commercial-capacity machines. Avondale residents can walk in for self-service laundry, drop off for professional wash-and-fold starting at $1.50 per pound, or schedule pickup and delivery through the Cents app. We accept cash, credit, debit, EBT, and laundry cards, and we’re open from 6:00 AM to 11:00 PM every day of the week." — 97 words.
+Font: 18px/400 Body Text. Line-height: 1.65. Max-width: 800px, centered. Background: White.
+
+8. Section 4: About Avondale
+Section Overview
+Genuinely local content about the Avondale neighborhood. This is what makes this page unique and avoids doorway page classification. Background: Ice Blue (#F0F9FF).
+H2: "About the Avondale Neighborhood" — Font: 36px/700, Dark Slate. Margin-bottom 32px.
+
+Detail
+Content
+Population
+35,489
+Demographics
+51.2% Hispanic, 37.3% White, 4.8% Asian
+Median Household Income
+$92,645
+ZIP Code(s)
+60618
+Housing Stock
+Brick two-flats, Chicago bungalows, workers’ cottages, and contemporary new construction. Most residents rent. Beautiful brownstone two-flats still in original form line many streets.
+Local Landmarks
+St. Hyacinth Basilica, Eli’s Cheesecake World, Forno Rosso Pizzeria Napoletana, Revolution Brewing (nearby), colorful murals on thoroughfares
+Transit Access
+CTA Blue Line (Belmont, Addison stations), CTA buses on Belmont Ave, Kimball Ave, Diversey Ave
+
+Avondale is Spin It Up’s home neighborhood — our facility at 3710 N Kimball Ave sits in the heart of this community. Ranked the world’s 5th coolest neighborhood by Time Out in 2025, Avondale has become one of Chicago’s most vibrant areas for families, young professionals, and small businesses. The neighborhood’s housing stock — predominantly brick two-flats and bungalows — means most residents rely on shared or no in-unit laundry facilities. Walk-in self-service and drop-off wash-and-fold are available directly at our facility with zero delivery wait.
+Font: 17px/400 Body Text, line-height 1.65. Section padding: 64px 0 desktop, 40px 16px mobile.
+
+9. Section 5: Why Laundry Service Matters Here
+Section Overview
+Connects Avondale’s specific housing stock and demographics to the need for laundry services. This is NOT generic “laundry is important” content — it’s specific to this neighborhood’s building types and resident profiles. Background: White.
+H2: "Why Avondale Residents Choose Spin It Up" — Font: 32px/700. Margin-bottom 24px.
+
+Many of Avondale’s brick two-flats and vintage bungalows do not have in-unit laundry hookups. Newer condo conversions may have shared basement laundry rooms with limited machine availability. For residents in these buildings, a nearby laundromat with modern machines, reasonable pricing, and long hours is essential — not a luxury.
+Font: 17px/400, line-height 1.65, max-width 800px centered.
+
+10. Section 6: Services Available
+Services available to Avondale residents. Three compact cards linking to service pages. Background: Ice Blue.
+H2: "Services Available to Avondale Residents" — Font: 32px/700. Margin-bottom 40px.
+
+Card
+Service
+Description
+CTA
+1
+Self-Service Laundry
+Walk in anytime, 6 AM–11 PM. 41 washers, 52 dryers. EBT accepted. Free drying Tue–Thu.
+View Self-Service →
+2
+Wash & Fold Drop-Off
+Drop off dirty, pick up clean. Starting at $1.50/lb. Next-day turnaround.
+View Wash & Fold →
+3
+Pickup & Delivery
+Schedule from the Cents app. We come to you. Starting at $1.75/lb.
+Schedule Pickup →
+Same compact card spec as prior guides. Three cards in row (desktop), stacked (mobile). Each links to respective service page.
+Below cards: "Walk-in self-service, wash-and-fold drop-off, AND pickup & delivery all available." — 16px/600 Fresh Cyan, centered.
+
+11. Section 7: Getting Here / Getting Delivery
+Two-column layout: directions info left, mini map right. Background: White.
+H2: "Visit Us at 3710 N Kimball Ave"
+
+Method
+Details
+By Car
+You’re here. Our facility is at 3710 N Kimball Ave. Free parking in front of the building.
+By Bus
+CTA Blue Line (Belmont, Addison stations), CTA buses on Belmont Ave, Kimball Ave, Diversey Ave
+By Pickup & Delivery
+Schedule through the Cents app. Enter your address to confirm coverage. Most orders completed within 24 hours.
+Right column: Google Maps embed showing route from Avondale to 3710 N Kimball Ave. Small format: 400x300px, border-radius 12px, lazy loaded.
+Below: "Get Directions" button (ghost/outline Spin Blue) linking to Google Maps directions URL.
+
+12. Section 8: Nearby Neighborhoods
+Cross-links to sibling area pages. Background: Ice Blue.
+H2: "We Also Serve" — Font: 28px/700. Centered. Margin-bottom 32px.
+
+Neighborhood
+Link
+Irving Park
+/areas/irving-park/
+Logan Square
+/areas/logan-square/
+Hermosa
+/areas/hermosa/
+Albany Park
+/areas/albany-park/
+Display as horizontal pills/badges (desktop), stacked list (mobile). Each links to the respective area page. Current page (Avondale) not shown.
+
+13. Section 9: FAQ Section
+Avondale-specific FAQ. FAQPage schema required. Background: White.
+H2: "Avondale Laundry FAQ" — Centered. Font: 32px/700. Margin-bottom 40px.
+
+#
+Question
+Answer
+1
+Where exactly is Spin It Up in Avondale?
+We are at 3710 N Kimball Ave, between Irving Park Rd and Addison St, near the intersection with School St. Free parking is available directly in front of the laundromat.
+2
+Do I need to drive or can I walk?
+Many Avondale residents are within walking distance. We are also accessible via CTA buses on Kimball Ave and Belmont Ave, and a short walk from the Blue Line Belmont station. If you drive, free parking is available in front of the building and on surrounding streets.
+3
+Can I get pickup and delivery in Avondale?
+Yes. Avondale is our primary delivery zone. Schedule through the Cents app and we’ll pick up from your door and deliver back clean, typically within 24 hours.
+4
+Do you accept EBT in Avondale?
+Yes. We accept EBT for self-service washing and drying. We are one of the only laundromats in the Avondale area that accepts EBT.
+DEV ACTION:  Implement FAQPage JSON-LD schema with 4 Q&A pairs. Validate via Google Rich Results Test.
+Same accordion design spec. Max-width 800px, centered.
+Below FAQ: "View All FAQs" link to /faq/.
+
+14. Section 10: CTA Block
+H2: "Avondale’s Neighborhood Laundromat" — White. Centered. Font: 36px/700.
+Subtitle: "3710 N Kimball Ave, Avondale • Open 6 AM–11 PM • Free drying Tue–Wed–Thu." — 18px/400.
+
+Button
+Text
+Link
+Style
+1
+Get Directions
+Google Maps URL
+CTA Orange
+2
+Call (773) 654-1275
+tel:+17736541275
+White outline
+Background: Spin Blue gradient.
+
+15. Section 11: Footer & Sticky CTA
+Global footer: no modifications.
+Sticky CTA: "Call Now" + "Get Directions" (walk-in focus).
+
+16. Reference: Image Assets, GA4, Checklist
+Image Assets
+Image ID
+Section
+Format
+Max Size
+Alt Text
+og-avondale
+Social
+JPEG 1200x630
+<200KB
+Spin It Up Laundry service in Avondale Chicago
+map-avondale
+Getting Here
+iframe
+N/A
+Map showing route from Avondale to Spin It Up Laundry
+logo-light
+Header/Footer
+SVG
+<10KB
+Logo
+GA4 Events
+Event
+Trigger
+Parameters
+phone_click
+Click tel: link
+phone_number, page_section
+directions_click
+Click primary CTA
+page_section, area_name: Avondale
+faq_expand
+Expand FAQ accordion
+question_text, area_name
+sibling_area_click
+Click nearby neighborhood link
+area_name, destination_url
+service_card_click
+Click service card
+service_name, area_name
+Implementation Checklist
+HTML validates
+Service + BreadcrumbList + FAQPage schemas validate
+Mobile PageSpeed >90, Desktop >95
+All links return 200
+tel: links functional
+Title tag within 60 chars: Laundromat in Avondale, Chicago | Spin It Up — 3710 N Kimball Ave
+AEO paragraph within first 100 words
+Breadcrumb: Home > Service Areas > Avondale
+Neighborhood content is genuinely unique (not shared with other area pages)
+All sibling area links point to correct pages
+Service cards link to correct service pages
+Map embed renders with correct route
+XML sitemap includes at priority 0.7
+
+
+End of Document
+TradeWorks AI — Spin It Up Laundry Avondale Area Page Developer Guide v1.0

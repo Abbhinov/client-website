@@ -1,0 +1,793 @@
+
+SPIN IT UP LAUNDRY
+SPANISH TRANSLATIONSDEVELOPER GUIDE
+Complete Content Specification for All 8 /es/ Pages
+
+URL: spinituplaundry.net/es/
+Prepared by: TradeWorks AI  |  Version 1.0  |  May 2026
+Classification: Client Confidential
+
+Table of Contents
+1  How to Use This Guide
+2  Technical Implementation
+3  Shared Components (Navigation, Footer, Sticky CTA)
+4  Page 1: Homepage (/es/)
+5  Page 2: Services Hub (/es/servicios/)
+6  Page 3: Self-Service (/es/servicios/autoservicio/)
+7  Page 4: Wash & Fold (/es/servicios/lavado-y-doblado/)
+8  Page 5: Pickup & Delivery (/es/servicios/recogida-y-entrega/)
+9  Page 6: Pricing (/es/precios/)
+10  Page 7: Contact (/es/contacto/)
+11  Page 8: FAQ (/es/preguntas-frecuentes/)
+12  Reference: Implementation Checklist
+
+1. How to Use This Guide
+This guide provides the complete Spanish-language content specification for all 8 /es/ pages. These pages mirror the structure, layout, and design of their English counterparts exactly — the only differences are the translated text content, the URL paths, and the hreflang tags.
+For layout specifications, design tokens, CSS properties, image specs, and component behavior, refer to the corresponding English developer guide. This document provides ONLY the translated content and technical implementation details specific to the Spanish pages.
+Translation Approach
+All translations are written in natural, conversational Latin American Spanish appropriate for Chicago’s predominantly Mexican and Central American Hispanic population.
+Translations are culturally adapted, not word-for-word. Marketing copy is rewritten for natural Spanish, not mechanically translated.
+Technical terms and brand names remain in English: "Cents app," "Spin It Up Laundry," "EBT," "Google Maps."
+Phone numbers, addresses, and pricing remain identical to the English pages.
+The client should have a native Spanish speaker review all translations before publication. The translations in this guide are professional-quality but should be verified for regional accuracy.
+URL Structure
+English Page
+Spanish URL
+hreflang ES
+hreflang EN
+/ (Homepage)
+/es/
+https://spinituplaundry.net/es/
+https://spinituplaundry.net/
+/services/
+/es/servicios/
+https://spinituplaundry.net/es/servicios/
+https://spinituplaundry.net/services/
+/services/self-service/
+/es/servicios/autoservicio/
+https://spinituplaundry.net/es/servicios/autoservicio/
+https://spinituplaundry.net/services/self-service/
+/services/wash-and-fold/
+/es/servicios/lavado-y-doblado/
+https://spinituplaundry.net/es/servicios/lavado-y-doblado/
+https://spinituplaundry.net/services/wash-and-fold/
+/services/pickup-delivery/
+/es/servicios/recogida-y-entrega/
+https://spinituplaundry.net/es/servicios/recogida-y-entrega/
+https://spinituplaundry.net/services/pickup-delivery/
+/pricing/
+/es/precios/
+https://spinituplaundry.net/es/precios/
+https://spinituplaundry.net/pricing/
+/contact/
+/es/contacto/
+https://spinituplaundry.net/es/contacto/
+https://spinituplaundry.net/contact/
+/faq/
+/es/preguntas-frecuentes/
+https://spinituplaundry.net/es/preguntas-frecuentes/
+https://spinituplaundry.net/faq/
+
+2. Technical Implementation
+2.1 hreflang Tags
+Every English page must include hreflang tags pointing to its Spanish counterpart, and every Spanish page must include hreflang tags pointing to its English counterpart. Both pages also need a self-referencing hreflang tag.
+
+Example for the Homepage:
+<!-- On / (English homepage) -->
+<link rel="alternate" hreflang="en" href="https://spinituplaundry.net/" />
+<link rel="alternate" hreflang="es" href="https://spinituplaundry.net/es/" />
+<link rel="alternate" hreflang="x-default" href="https://spinituplaundry.net/" />
+ 
+<!-- On /es/ (Spanish homepage) -->
+<link rel="alternate" hreflang="en" href="https://spinituplaundry.net/" />
+<link rel="alternate" hreflang="es" href="https://spinituplaundry.net/es/" />
+<link rel="alternate" hreflang="x-default" href="https://spinituplaundry.net/" />
+
+DEV ACTION:  Every page pair (English + Spanish) must have reciprocal hreflang tags. x-default points to the English version. The hreflang tags go in the <head> of BOTH pages. Missing or non-reciprocal hreflang tags will cause Google to ignore them entirely.
+2.2 HTML lang Attribute
+All Spanish pages: <html lang="es">. All English pages remain <html lang="en">.
+2.3 Canonical URLs
+Each Spanish page has its own canonical URL (self-referencing). The canonical of /es/ is /es/, NOT /. Spanish pages are NOT duplicates of English pages — they are alternate-language versions.
+2.4 XML Sitemap
+Add all 8 Spanish pages to the XML sitemap with the same priority as their English counterparts. Optionally, use the sitemap xhtml:link element to declare hreflang relationships in the sitemap itself (in addition to the <head> tags).
+2.5 Language Switcher
+Add a language toggle to the site header (both English and Spanish versions). Design spec:
+Location: right side of header, before the phone number / CTA button.
+Format: "EN | ES" text toggle. Active language bolded. Inactive language is a link to the current page’s counterpart.
+Font: 14px/600, color Caption Gray (#64748B). Active: Dark Slate (#0F172A), weight 700.
+Mobile: same toggle, positioned in the hamburger menu header area.
+Each toggle link points to the equivalent page in the other language (e.g., /services/ → /es/servicios/ and vice versa).
+2.6 JSON-LD Schema
+Spanish pages use the same schema types as their English counterparts. The "name" and "description" fields are translated to Spanish. The "inLanguage" property should be set to "es" on Article schemas. All other structured data (address, phone, coordinates, pricing) remains identical.
+
+3. Shared Components
+3.1 Navigation (Spanish)
+English Nav Item
+Spanish Nav Item
+Link
+Home
+Inicio
+/es/
+Services
+Servicios
+/es/servicios/
+ Self-Service
+ Autoservicio
+/es/servicios/autoservicio/
+ Wash & Fold
+ Lavado y Doblado
+/es/servicios/lavado-y-doblado/
+ Pickup & Delivery
+ Recogida y Entrega
+/es/servicios/recogida-y-entrega/
+Pricing
+Precios
+/es/precios/
+Areas
+Áreas de Servicio
+/areas/ (English — area pages not translated in Phase 3)
+FAQ
+Preguntas Frecuentes
+/es/preguntas-frecuentes/
+About
+Nosotros
+/about/ (English — About not translated in Phase 3)
+Contact
+Contacto
+/es/contacto/
+NOTE:  Area pages and the About page are not translated in this phase. The Spanish nav links for those items point to the English versions. In a future phase, these can be translated and the links updated.
+3.2 Footer (Spanish)
+English
+Spanish
+Quick Links
+Enlaces Rápidos
+Our Services
+Nuestros Servicios
+Service Areas
+Áreas de Servicio
+Hours: Open 6 AM – 11 PM Daily
+Horario: Abierto 6 AM – 11 PM Todos los Días
+Privacy Policy
+Política de Privacidad
+Terms of Service
+Términos de Servicio
+Accessibility
+Accesibilidad
+© 2026 Spin It Up Laundry. All rights reserved.
+© 2026 Spin It Up Laundry. Todos los derechos reservados.
+Free Drying Tue–Wed–Thu
+Secado Gratis Mar–Mié–Jue
+EBT Accepted
+Aceptamos EBT
+3.3 Sticky Mobile CTA Bar (Spanish)
+English
+Spanish
+Call Now
+Llamar Ahora
+Schedule Pickup
+Programar Recogida
+Get Directions
+Cómo Llegar
+3.4 Common UI Elements
+English
+Spanish
+Learn More
+Más Información
+View Details
+Ver Detalles
+View All FAQs
+Ver Todas las Preguntas
+View Pricing
+Ver Precios
+Contact Us
+Contáctenos
+Send Message
+Enviar Mensaje
+Back to Services
+Volver a Servicios
+Frequently Asked Questions
+Preguntas Frecuentes
+Starting at
+Desde
+per pound
+por libra
+per item
+por prenda
+Next day
+Día siguiente
+Same day
+Mismo día
+Free
+Gratis
+Name
+Nombre
+Email
+Correo Electrónico
+Phone
+Teléfono
+Message
+Mensaje
+Required
+Obligatorio
+Optional
+Opcional
+Your name
+Su nombre
+How can we help?
+¿Cómo podemos ayudarle?
+Service Interest
+Servicio de Interés
+Select a service...
+Seleccione un servicio...
+General Question
+Pregunta General
+Other
+Otro
+Thank you
+Gracias
+Home
+Inicio
+Last wash at 9:30 PM
+Último lavado a las 9:30 PM
+Free parking
+Estacionamiento gratuito
+
+4. Page 1: Homepage (/es/)
+Reference English guide: Homepage Developer Guide v1.0. Layout identical.
+
+Element
+English
+Spanish
+<title>
+Spin It Up Laundry | Avondale’s Neighborhood Laundromat — Chicago
+Spin It Up Laundry | Lavandería del Vecindario en Avondale — Chicago
+<meta description>
+Full-service laundromat in Avondale...
+Lavandería de servicio completo en Avondale, Chicago. 41 lavadoras, 52 secadoras, máquinas de 130 lb. Autoservicio, lavado y doblado, recogida y entrega. Aceptamos EBT.
+<html lang>
+en
+es
+<link canonical>
+https://spinituplaundry.net/
+https://spinituplaundry.net/es/
+
+Hero Section
+Element
+Spanish Content
+H1
+La Lavandería de Tu Vecindario en Avondale, Chicago
+Subheadline
+41 lavadoras. 52 secadoras. Las máquinas más grandes de la zona. Autoservicio, lavado y doblado, recogida y entrega. Abierto de 6 AM a 11 PM, los 7 días de la semana.
+CTA 1
+Programar Recogida
+CTA 2
+Llamar (773) 654-1275
+AEO Paragraph
+"Spin It Up Laundry es una lavandería de servicio completo ubicada en 3710 N Kimball Ave en el vecindario de Avondale, Chicago. Ofrecemos autoservicio con 41 lavadoras y 52 secadoras, incluyendo máquinas comerciales de 130 libras de capacidad, servicio profesional de lavado y doblado desde $1.50 por libra, recogida y entrega a domicilio a través de la aplicación Cents, servicios comerciales para negocios, y planchado profesional. Aceptamos efectivo, tarjeta de crédito, tarjeta de débito, EBT y tarjetas de lavandería. Estamos abiertos los 7 días de la semana, de 6:00 AM a 11:00 PM. Secado gratis los martes, miércoles y jueves."
+Key Section Headings
+English H2
+Spanish H2
+Our Laundry Services
+Nuestros Servicios de Lavandería
+Why Avondale Chooses Spin It Up
+Por Qué Avondale Elige Spin It Up
+How Pickup & Delivery Works
+Cómo Funciona la Recogida y Entrega
+Weekly Specials
+Ofertas Semanales
+What Our Customers Say
+Lo Que Dicen Nuestros Clientes
+Neighborhoods We Serve
+Vecindarios Que Servimos
+Frequently Asked Questions
+Preguntas Frecuentes
+Ready to Get Started?
+¿Listo Para Comenzar?
+Service Cards
+English Title
+Spanish Title
+Spanish Description (abbreviated)
+Self-Service Laundry
+Autoservicio
+Entre, cargue su ropa y deje que nuestras máquinas nuevas hagan el trabajo...
+Wash & Fold
+Lavado y Doblado
+Deje su ropa sucia y recoja todo limpio, doblado y listo...
+Pickup & Delivery
+Recogida y Entrega
+Programe una recogida desde su teléfono con la aplicación Cents...
+Commercial Services
+Servicios Comerciales
+Lavandería confiable para negocios: Airbnb, salones, gimnasios, restaurantes...
+Ironing & Pressing
+Planchado Profesional
+Camisas, trajes, uniformes y ropa formal planchada por nuestros profesionales...
+Differentiator Tiles
+English
+Spanish
+Biggest Machines in the Area
+Las Máquinas Más Grandes de la Zona
+Order From Your Phone
+Ordene Desde Su Teléfono
+Free Drying Tue–Thu
+Secado Gratis Mar–Jue
+EBT Accepted
+Aceptamos EBT
+Homepage FAQ (Spanish)
+English Question
+Spanish Question
+Spanish Answer (first sentence)
+What are your hours?
+¿Cuál es su horario?
+Spin It Up Laundry está abierto de 6:00 AM a 11:00 PM, los 7 días de la semana, incluyendo días festivos...
+How much does wash & fold cost?
+¿Cuánto cuesta el lavado y doblado?
+El servicio de lavado y doblado comienza en $1.50 por libra con un mínimo de 10 libras...
+Do you accept EBT?
+¿Aceptan EBT?
+Sí. Aceptamos EBT para autoservicio de lavado y secado...
+How does pickup & delivery work?
+¿Cómo funciona la recogida y entrega?
+Descargue la aplicación Cents, ingrese su dirección, elija un horario de recogida y confirme su orden...
+Can I wash a comforter here?
+¿Puedo lavar un edredón aquí?
+Sí. Nuestras máquinas extra grandes y comerciales manejan edredones tamaño king, bolsas de dormir...
+Is there free parking?
+¿Hay estacionamiento gratuito?
+Sí. Estacionamiento gratuito está disponible directamente frente a la lavandería...
+
+5. Page 2: Services Hub (/es/servicios/)
+Reference: Services Hub Developer Guide v1.0. Layout identical.
+Element
+Spanish Content
+<title>
+Servicios de Lavandería en Avondale, Chicago | Spin It Up Laundry
+<meta description>
+Servicios completos de lavandería en Avondale: autoservicio con máquinas de 130 lb, lavado y doblado, recogida y entrega por Cents, servicios comerciales y planchado. Aceptamos EBT.
+H1
+Nuestros Servicios de Lavandería
+Subheadline
+Desde lavado rápido en autoservicio hasta recogida y entrega a domicilio — todo lo que necesita para su ropa bajo un mismo techo en 3710 N Kimball Ave.
+AEO Paragraph
+"Spin It Up Laundry en 3710 N Kimball Ave en Avondale, Chicago ofrece cinco servicios profesionales de lavandería: autoservicio con 41 lavadoras y 52 secadoras incluyendo máquinas comerciales de 130 libras de capacidad, servicio profesional de lavado y doblado con entrega al día siguiente, recogida y entrega a domicilio a través de la aplicación Cents, servicios comerciales para negocios como Airbnb, salones y restaurantes, y planchado profesional de prendas. Aceptamos efectivo, tarjeta de crédito, débito, EBT y tarjetas de lavandería. Todos los servicios están disponibles los 7 días de la semana de 6:00 AM a 11:00 PM."
+Service Card Titles & CTAs
+Card
+Spanish Title
+Spanish CTA
+1
+Autoservicio
+Ver Autoservicio →
+2
+Lavado y Doblado
+Ver Lavado y Doblado →
+3
+Recogida y Entrega
+Programar Recogida →
+4
+Servicios Comerciales
+Información Comercial →
+5
+Planchado Profesional
+Ver Planchado →
+Section Headings
+English
+Spanish
+Why Avondale Chooses Spin It Up
+Por Qué Avondale Elige Spin It Up
+Not Sure Which Service Is Right for You?
+¿No Sabe Cuál Servicio Es Para Usted?
+Frequently Asked Questions About Our Services
+Preguntas Frecuentes Sobre Nuestros Servicios
+Ready to Get Started?
+¿Listo Para Comenzar?
+
+6. Page 3: Self-Service (/es/servicios/autoservicio/)
+Reference: Self-Service Laundry Developer Guide v1.0.
+Element
+Spanish Content
+<title>
+Autoservicio de Lavandería en Avondale | Spin It Up — 41 Lavadoras, Aceptamos EBT
+<meta description>
+Lavandería de autoservicio en Avondale, Chicago con 41 lavadoras y 52 secadoras incluyendo máquinas de 130 lb. Aceptamos EBT. WiFi y café gratis. Abierto de 6 AM a 11 PM.
+H1
+Autoservicio de Lavandería en Avondale, Chicago
+Subheadline
+41 lavadoras. 52 secadoras. Las máquinas más grandes del vecindario. Abierto de 6 AM a 11 PM, los 7 días.
+Hero CTA
+Ver Precios de Máquinas • (773) 654-1275
+AEO Paragraph
+"Spin It Up Laundry ofrece servicio de lavandería de autoservicio en 3710 N Kimball Ave en Avondale, Chicago con las máquinas más grandes del vecindario. Nuestra instalación tiene 41 lavadoras nuevas y 52 secadoras, incluyendo dos máquinas comerciales de 130 libras de capacidad diseñadas para edredones tamaño king, bolsas de dormir y cargas grandes que las lavadoras estándar no pueden manejar. Aceptamos tarjetas de lavandería, tarjetas de crédito, débito, efectivo y EBT. WiFi gratis, café gratis, estacionamiento gratuito y máquinas de juegos hacen su espera cómoda. Un empleado está disponible durante todas las horas de operación. Abierto los 7 días, de 6:00 AM a 11:00 PM, con último lavado a las 9:30 PM."
+Key Section Headings
+English
+Spanish
+Washers and Dryers for Every Load Size
+Lavadoras y Secadoras Para Cada Tamaño de Carga
+Self-Service Pricing
+Precios de Autoservicio
+What to Expect When You Visit
+Qué Esperar Cuando Nos Visite
+We Accept EBT
+Aceptamos EBT — Somos de las Pocas Lavanderías en Avondale Que Lo Hacen
+Tips for a Better Laundry Day
+Consejos Para Un Mejor Día de Lavado
+Self-Service Laundry FAQ
+Preguntas Frecuentes de Autoservicio
+Come Wash With Us
+Venga a Lavar Con Nosotros
+Amenities
+English
+Spanish
+Free WiFi
+WiFi Gratis
+Free Coffee
+Café Gratis
+Free Parking
+Estacionamiento Gratuito
+Gaming Machines
+Máquinas de Juegos
+Attendant on Duty
+Empleado Disponible
+Open 6 AM–11 PM
+Abierto 6 AM–11 PM
+
+7. Page 4: Wash & Fold (/es/servicios/lavado-y-doblado/)
+Reference: Wash & Fold Developer Guide v1.0.
+Element
+Spanish Content
+<title>
+Lavado y Doblado en Chicago | Spin It Up — $1.50/lb, Día Siguiente
+<meta description>
+Servicio profesional de lavado y doblado en Avondale, Chicago. Desde $1.50 por libra con entrega al día siguiente. Tratamiento de manchas incluido. Abierto de 6 AM a 11 PM.
+H1
+Servicio de Lavado y Doblado en Chicago
+Subheadline
+Deje su ropa sucia. Recoja todo limpio, doblado y listo. Desde $1.50 por libra con entrega al día siguiente.
+CTA 1
+Traer Ropa Hoy
+CTA 2
+Llamar (773) 654-1275
+AEO Paragraph
+"Spin It Up Laundry ofrece servicio profesional de lavado y doblado en 3710 N Kimball Ave en Avondale, Chicago. Traiga su ropa a nuestra instalación y nuestros empleados experimentados lavarán, secarán y doblarán todo por usted usando máquinas de grado comercial y detergente profesional. El tiempo de entrega estándar es al día siguiente, con servicio del mismo día disponible para órdenes dejadas antes de las 10:00 AM. El precio comienza en $1.50 por libra con un mínimo de 10 libras. El tratamiento de manchas está incluido sin cargo adicional en cada orden."
+Key Headings
+English
+Spanish
+How It Works
+Cómo Funciona
+Drop Off Your Laundry
+Deje Su Ropa
+We Wash, Dry & Fold
+Lavamos, Secamos y Doblamos
+Quality Check
+Control de Calidad
+Pick Up Clean & Ready
+Recoja Limpio y Listo
+What’s Included in Every Wash & Fold Order
+Qué Incluye Cada Orden de Lavado y Doblado
+Wash & Fold Pricing
+Precios de Lavado y Doblado
+When Will My Laundry Be Ready?
+¿Cuándo Estará Lista Mi Ropa?
+Drop Off Your Laundry Today
+Deje Su Ropa Hoy
+
+8. Page 5: Pickup & Delivery (/es/servicios/recogida-y-entrega/)
+Reference: Pickup & Delivery Developer Guide v1.0.
+Element
+Spanish Content
+<title>
+Recogida y Entrega de Lavandería en Chicago | Spin It Up — Ordene por App
+<meta description>
+Recogida y entrega de lavandería en Avondale, Irving Park y Logan Square. Ordene por la aplicación Cents. Recogemos, lavamos, doblamos y entregamos. Desde $1.75/lb.
+H1
+Recogida y Entrega de Lavandería en Chicago
+Subheadline
+Ordene desde su teléfono. Recogemos, lavamos, doblamos y entregamos a su puerta. Servicio en Avondale, Irving Park, Logan Square y más.
+CTA 1
+Programar Su Primera Recogida
+CTA 2
+Llamar (773) 654-1275
+AEO Paragraph
+"Spin It Up Laundry ofrece servicio de recogida y entrega de lavandería en el noroeste de Chicago, incluyendo Avondale, Irving Park, Logan Square, Hermosa y Albany Park. Los clientes programan una recogida a través de la aplicación Cents, y nuestro conductor recoge su ropa de su puerta. Lavamos, secamos y doblamos todo en nuestra instalación en 3710 N Kimball Ave usando máquinas de grado comercial y detergente profesional, luego lo entregamos de vuelta limpio y listo, normalmente dentro de 24 horas. El precio comienza en $1.75 por libra más una tarifa de recogida. El tratamiento de manchas está incluido sin cargo adicional."
+Key Headings
+English
+Spanish
+How It Works — Four Simple Steps
+Cómo Funciona — Cuatro Pasos Sencillos
+Schedule Your Pickup
+Programe Su Recogida
+We Pick Up From Your Door
+Recogemos en Su Puerta
+Professional Wash, Dry & Fold
+Lavado, Secado y Doblado Profesional
+Delivered Back to Your Door
+Entregado de Vuelta a Su Puerta
+Where We Deliver
+Dónde Entregamos
+Pickup & Delivery Pricing
+Precios de Recogida y Entrega
+Order in Under 2 Minutes with the Cents App
+Ordene en Menos de 2 Minutos con la Aplicación Cents
+Who Uses Pickup & Delivery?
+¿Quién Usa Recogida y Entrega?
+Your Laundry, Picked Up and Delivered
+Su Ropa, Recogida y Entregada
+Persona Titles
+English
+Spanish
+Busy Professionals
+Profesionales Ocupados
+Parents with Young Kids
+Padres con Niños Pequeños
+Work-From-Home Professionals
+Profesionales Que Trabajan Desde Casa
+Apartment Dwellers Without Laundry
+Residentes de Apartamentos Sin Lavadora
+Airbnb Hosts & Small Businesses
+Anfitriones de Airbnb y Pequeños Negocios
+
+9. Page 6: Pricing (/es/precios/)
+Reference: Pricing Page Developer Guide v1.0.
+Element
+Spanish Content
+<title>
+Precios de Lavandería en Chicago | Spin It Up — Autoservicio, Lavado y Doblado, Entrega
+<meta description>
+Precios completos: autoservicio desde $3.25/carga, lavado y doblado $1.50/lb, recogida y entrega $1.75/lb. Secado gratis mar–jue. Aceptamos EBT.
+H1
+Precios de Lavandería — Transparentes, Simples, Sin Cargos Ocultos
+Subheadline
+Cada precio listado. Cada cargo explicado. Sepa exactamente lo que pagará antes de visitarnos, dejar su ropa o pedir entrega.
+AEO Paragraph
+"Spin It Up Laundry en 3710 N Kimball Ave en Avondale, Chicago ofrece precios transparentes en todos los servicios de lavandería. Las máquinas de autoservicio comienzan en $3.25 por carga para lavadoras estándar y hasta $12.00 para nuestras máquinas comerciales de 130 libras. El servicio de lavado y doblado comienza en $1.50 por libra con un mínimo de 10 libras y entrega al día siguiente. La recogida y entrega a través de la aplicación Cents comienza en $1.75 por libra más una tarifa de recogida de $5.00. Aceptamos efectivo, tarjeta de crédito, débito, EBT y tarjeta de lavandería. Secado gratis los martes, miércoles y jueves."
+Anchor Navigation
+English
+Spanish
+Self-Service
+Autoservicio
+Wash & Fold
+Lavado y Doblado
+Pickup & Delivery
+Recogida y Entrega
+Specialty Items
+Artículos Especiales
+Commercial
+Comercial
+Section Headings
+English
+Spanish
+Self-Service Machine Pricing
+Precios de Máquinas de Autoservicio
+Washer Pricing
+Precios de Lavadoras
+Dryer Pricing
+Precios de Secadoras
+Free Drying Every Tuesday, Wednesday & Thursday
+Secado Gratis Cada Martes, Miércoles y Jueves
+Wash & Fold Drop-Off Pricing
+Precios de Lavado y Doblado
+Pickup & Delivery Pricing
+Precios de Recogida y Entrega
+Comforters & Specialty Items
+Edredones y Artículos Especiales
+Commercial & Business Pricing
+Precios Comerciales y Para Negocios
+Payment Methods
+Métodos de Pago
+Weekly Specials
+Ofertas Semanales
+Pricing FAQ
+Preguntas Frecuentes de Precios
+Table Headers
+English
+Spanish
+Machine Type
+Tipo de Máquina
+Capacity
+Capacidad
+Price
+Precio
+Cycle Time
+Tiempo de Ciclo
+Best For
+Ideal Para
+Service
+Servicio
+Minimum
+Mínimo
+Turnaround
+Tiempo de Entrega
+Notes
+Notas
+
+10. Page 7: Contact (/es/contacto/)
+Reference: Contact Page Developer Guide v1.0.
+Element
+Spanish Content
+<title>
+Contacto | Spin It Up Laundry | Avondale, Chicago — (773) 654-1275
+<meta description>
+Contacte Spin It Up Laundry en 3710 N Kimball Ave, Avondale, Chicago. Llame al (773) 654-1275 o visite de 6 AM a 11 PM. Se habla español.
+H1
+Contáctenos
+Subheadline
+¿Preguntas sobre nuestros servicios? ¿Listo para programar? Estamos aquí para ayudarle.
+Form Labels
+English
+Spanish
+Send Us a Message
+Envíenos un Mensaje
+Name
+Nombre
+Email
+Correo Electrónico
+Phone
+Teléfono
+Service Interest
+Servicio de Interés
+Select a service...
+Seleccione un servicio...
+Self-Service Laundry
+Autoservicio
+Wash & Fold
+Lavado y Doblado
+Pickup & Delivery
+Recogida y Entrega
+Commercial Services
+Servicios Comerciales
+Ironing & Pressing
+Planchado
+General Question
+Pregunta General
+Other
+Otro
+Message
+Mensaje
+How can we help?
+¿Cómo podemos ayudarle?
+Send Message
+Enviar Mensaje
+We typically respond within a few hours.
+Normalmente respondemos dentro de pocas horas.
+Visit Us
+Visítenos
+Success State
+"Gracias, [Nombre]. Hemos recibido su mensaje y nos pondremos en contacto pronto. Para ayuda inmediata, llame al (773) 654-1275."
+Info Panel
+English
+Spanish
+Open 6:00 AM – 11:00 PM, 7 Days a Week
+Abierto 6:00 AM – 11:00 PM, 7 Días a la Semana
+Last wash at 9:30 PM
+Último lavado a las 9:30 PM
+Free parking in front of the laundromat
+Estacionamiento gratuito frente a la lavandería
+Trust Signals
+English
+Spanish
+4.6★ on Google
+4.6★ en Google
+EBT Accepted
+Aceptamos EBT
+Se Habla Español
+Se Habla Español (same)
+
+11. Page 8: FAQ (/es/preguntas-frecuentes/)
+Reference: FAQ Page Developer Guide v1.0. All 18 questions translated.
+Element
+Spanish Content
+<title>
+Preguntas Frecuentes | Spin It Up Laundry — Horario, Precios, EBT, Entrega
+<meta description>
+Respuestas a preguntas comunes sobre Spin It Up Laundry: horario, precios, EBT, lavado y doblado, recogida y entrega, estacionamiento y servicios comerciales.
+H1
+Preguntas Frecuentes
+Subheadline
+Todo lo que necesita saber sobre nuestros servicios de lavandería, precios, horario y más.
+Category Headings
+English
+Spanish
+General
+General
+Self-Service Laundry
+Autoservicio
+Wash & Fold
+Lavado y Doblado
+Pickup & Delivery
+Recogida y Entrega
+Commercial Services
+Servicios Comerciales
+Pricing & Payment
+Precios y Pagos
+All 18 Questions (Spanish)
+Q#
+Spanish Question
+Q1
+¿Cuál es su horario?
+Q2
+¿Dónde están ubicados?
+Q3
+¿Qué servicios ofrecen?
+Q4
+¿Aceptan EBT?
+Q5
+¿Hay estacionamiento?
+Q6
+¿Cuál es la lavadora más grande que tienen?
+Q7
+¿Puedo lavar un edredón tamaño king?
+Q8
+¿Necesito monedas?
+Q9
+¿Cuánto tiempo tarda el lavado y doblado?
+Q10
+¿Separan los colores y los blancos?
+Q11
+¿El tratamiento de manchas está incluido?
+Q12
+¿Cómo funciona la recogida y entrega de lavandería?
+Q13
+¿A qué vecindarios entregan?
+Q14
+¿Puedo programar una recogida recurrente?
+Q15
+¿Ofrecen lavandería comercial para negocios?
+Q16
+¿Hay un mínimo para cuentas comerciales?
+Q17
+¿Cuánto cuesta el lavado y doblado?
+Q18
+¿El secado es realmente gratis los martes, miércoles y jueves?
+NOTE:  Each Spanish answer must be a full translation of the corresponding English answer from the FAQ Developer Guide (Section 8–13). The developer should translate the complete answer text, preserving all internal links (which point to /es/ versions where available, or English versions for untranslated pages). All phone numbers in answers remain (773) 654-1275 as tel: links.
+CTA Block
+English
+Spanish
+Still Have Questions?
+¿Aún Tiene Preguntas?
+We’re happy to help. Give us a call or send a message.
+Estamos aquí para ayudarle. Llámenos o envíenos un mensaje.
+Call (773) 654-1275
+Llamar (773) 654-1275
+Contact Us
+Contáctenos
+
+12. Reference: Implementation Checklist
+Pre-Development
+Native Spanish speaker reviews all translated content for accuracy and natural tone
+Client approves all Spanish content (owner or designated Spanish-fluent team member)
+Confirm Cents app supports Spanish language (or if the app link defaults to English)
+Confirm form submission handling: do Spanish form submissions route to the same endpoint with a language flag?
+Confirm auto-response email: is there a Spanish version, or does the English auto-response go to all?
+Technical Validation
+All 8 Spanish pages have <html lang="es">
+All 8 Spanish pages have self-referencing canonical URLs (e.g., /es/ canonical is /es/, not /)
+All 8 English pages have reciprocal hreflang tags pointing to Spanish counterparts
+All 8 Spanish pages have reciprocal hreflang tags pointing to English counterparts
+x-default hreflang on all pages points to English version
+Language switcher (EN | ES) functions on all pages and links to correct counterpart
+JSON-LD schemas on Spanish pages have translated name/description fields
+XML sitemap includes all 8 Spanish pages
+Mobile PageSpeed >90 on all Spanish pages
+All tel: and mailto: links functional
+Spanish nav, footer, sticky CTA render correctly
+Google Search Console: verify Spanish pages are being indexed and no hreflang errors
+Content Validation
+No English text visible on any Spanish page (all UI elements, labels, buttons, CTAs translated)
+Brand names remain in English: "Spin It Up Laundry," "Cents app," "EBT"
+Pricing, phone numbers, and address are identical to English pages
+All AEO paragraphs are full Spanish translations (not machine-translated stubs)
+All FAQ answers are complete translations (not just the questions)
+Internal links on Spanish pages point to /es/ versions where available, English versions for untranslated pages
+Form error messages are in Spanish
+Form success/confirmation message is in Spanish
+404 page: if a Spanish user hits a 404, do they see a Spanish 404 page?
+Accessibility
+Skip-to-content link text in Spanish: "Saltar al contenido"
+ARIA labels on Spanish pages are translated (e.g., aria-label="Navegación principal")
+Breadcrumb aria-label: "Ruta de navegación"
+Form field labels, error messages, and required indicators in Spanish
+Color contrast and keyboard navigation: same as English (no changes needed)
+
+
+End of Document
+TradeWorks AI — Spin It Up Laundry Spanish Translations Developer Guide v1.0
+Prepared by TradeWorks AI — May 2026

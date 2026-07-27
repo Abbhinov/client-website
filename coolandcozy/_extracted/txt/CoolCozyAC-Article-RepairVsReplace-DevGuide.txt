@@ -1,0 +1,192 @@
+﻿
+DEVELOPER IMPLEMENTATION GUIDE
+
+COOL & COZY AC REPAIR
+Licensed HVAC Contractor  ·  Jacksonville, Florida
+
+RESOURCE ARTICLE
+When to Repair vs. Replace Your AC System
+
+URL: coolcozyac.com/resources/when-to-repair-vs-replace-ac
+Prepared by: TradeWorks AI  |  Version 1.0  |  May 2026
+
+1. Page Identity
+Property
+Specification
+URL
+/resources/when-to-repair-vs-replace-ac
+Primary Keyword
+repair vs replace AC
+Secondary
+should I repair or replace AC, AC repair or new system, when to replace AC Florida, repair vs replacement cost
+Intent
+Informational (decision support)
+Word Count
+1,400–1,800 words
+Conversion
+Free estimate for either repair or installation
+Sitemap
+Priority 0.6
+1.1 Internal Linking
+TO /services/ac-repair: “if repair makes sense” CTA
+TO /services/ac-installation: “if replacement is the answer” CTA
+TO /resources/ac-repair-cost-jacksonville: repair cost context
+TO /resources/signs-ac-needs-replacement: companion article
+TO /resources/seer-rating-explained: efficiency upgrade math
+
+2. <head> Section
+Property
+Specification
+Title
+Repair vs. Replace Your AC: How to Decide | Jacksonville FL Guide
+Meta Desc
+Should you repair or replace your AC? A data-driven decision framework for Jacksonville homeowners. Age, cost thresholds, R-22, efficiency math — from a licensed contractor who recommends honestly.
+Canonical
+https://coolcozyac.com/resources/when-to-repair-vs-replace-ac
+JSON-LD: Article + BreadcrumbList + FAQPage (3 questions).
+
+3. Article Content
+
+H1: When to Repair vs. Replace Your AC System: A Jacksonville Homeowner’s Guide
+Published: May 2026
+Author: Cool & Cozy AC Repair
+Reading Time: 8 minutes
+
+3.1 AEO Opening
+Repair your AC system if it is under 10 years old, the repair cost is under $500, the issue is a one-time component failure (capacitor, contactor, thermostat), and the system uses R-410A refrigerant. Replace your AC system if it is 12 to 15 or more years old, the repair cost exceeds 50% of a new system’s price, the system uses R-22 (Freon) refrigerant, you have needed two or more repairs in the past 12 months, or your SEER rating is below 13. In the gray zone between these clear cases, the decision depends on the system’s overall condition, your energy costs, and how long you plan to stay in the home.
+Word Count: 122 words
+Snippet Target: Paragraph snippet for “repair or replace AC”
+
+3.2 The 50% Rule
+H2: The Industry’s Most Common Decision Threshold
+The 50% rule is simple: if the cost of the repair exceeds 50% of the cost of a new system, replace rather than repair. This threshold is widely used by HVAC professionals because it accounts for the diminishing returns of investing in aging equipment.
+In Jacksonville, a standard new AC system (3-ton, SEER2 14.3) costs approximately $5,000–$7,500 installed. That means the 50% threshold falls at $2,500–$3,750. If your repair quote crosses that line, the math favors replacement — you get a new system with a full warranty, modern efficiency, and years of trouble-free operation for roughly double what you would spend on a repair that buys you maybe 2–3 more years.
+The 50% rule is a guideline, not a law. Context matters: a $3,000 repair on a 6-year-old system with a 10-year parts warranty might still make sense because the rest of the system has significant remaining life. A $2,000 repair on a 14-year-old system probably does not.
+
+3.3 The Decision Framework
+H2: A Step-by-Step Framework for Making the Call
+
+Step 1: How Old Is Your System?
+System Age
+Recommendation
+Reasoning
+Under 8 years
+Almost always repair
+System has significant remaining life. Most components are under warranty.
+8–12 years
+Repair unless cost is high
+Gray zone. Evaluate repair cost relative to system value. Consider efficiency gains from replacement.
+12–15 years
+Replace for major repairs
+Approaching end-of-life in Jacksonville’s climate. Minor repairs OK, but major component failure tilts toward replacement.
+15+ years
+Replace
+Past expected lifespan for Florida. Even if repairable today, another failure is likely within 12–24 months.
+
+Important: these are Florida-adjusted lifespans. National estimates of 15–20 years assume moderate-climate runtime. Jacksonville’s 2,500-hour annual runtime compresses the effective lifespan by 2–3 years.
+
+Step 2: What Refrigerant Does Your System Use?
+If your system uses R-22 (Freon), the answer leans strongly toward replacement regardless of age or repair cost. R-22 production was permanently banned in January 2020. Remaining supply is recycled or stockpiled, and prices reflect scarcity: a simple recharge that cost $150 in 2015 now costs $300–$700+. Every future R-22-related repair will cost more than the last. Replacing the system eliminates this escalating cost trap and moves you to R-410A or R-32 refrigerant with stable pricing and availability.
+How to check: Your refrigerant type is printed on the outdoor unit’s data plate, usually on a silver/white sticker on the side panel.
+
+Step 3: How Does the Repair Cost Compare?
+Apply the 50% rule with Jacksonville-specific replacement costs:
+If New System Costs…
+50% Threshold
+Decision
+$5,000
+$2,500
+Repair if under $2,500
+$6,500
+$3,250
+Repair if under $3,250
+$8,000
+$4,000
+Repair if under $4,000
+$10,000
+$5,000
+Repair if under $5,000
+
+Remember: the repair extends the system’s life by an uncertain amount (maybe 1–3 years on an aging system), while the replacement gives you a new warranty and 15+ years of expected life.
+
+Step 4: What Are You Paying in Energy Waste?
+An older system with a SEER rating of 10 costs roughly $565 more per year to operate than a new SEER2 14.3 system in Jacksonville. Over the 2–3 years a repair might buy you, that’s $1,130–$1,695 in additional energy costs that a new system would have eliminated. When you add this hidden cost to the repair bill, the true cost of “saving money” by repairing can exceed the cost of replacing.
+Cross-link: See detailed efficiency math in SEER Ratings Explained → /resources/seer-rating-explained
+
+Step 5: What’s the Repair Pattern?
+Track your repair history over the past 24 months. If you see an escalating pattern — a $200 capacitor replacement in January, a $350 contactor replacement in June, and now a $500 blower motor in November — the system is telling you that multiple components are reaching end-of-life simultaneously. The total repair cost over 24 months ($1,050 in this example) is approaching replacement territory, and each repair only addresses the component that failed most recently while the next failure is already developing.
+
+3.4 The Quick Decision Table
+H2: Repair or Replace? Quick Reference
+✓ Repair If…
+✗ Replace If…
+System is under 10 years old
+System is 12–15+ years old
+Repair cost is under $500
+Repair exceeds 50% of new system cost
+First repair in over 12 months
+2+ repairs in the past 12 months
+Uses R-410A refrigerant
+Uses R-22 (Freon) refrigerant
+Single component failure
+Compressor failure on 10+ year system
+System still under warranty
+SEER rating below 13 (SEER2 below ~12)
+
+This table is a high-value featured snippet target. The side-by-side format answers the question at a glance while each row provides a specific decision criterion.
+
+3.5 What a Trustworthy Contractor Does
+H2: How to Know If Your Contractor Is Giving You Honest Advice
+An honest contractor provides the repair cost AND the replacement cost, and explains the trade-offs of each option without pressure. Red flags:
+A contractor who only offers replacement without explaining why repair isn’t an option
+A contractor who quotes repair without mentioning that the system is 15+ years old and another failure is likely
+A contractor who won’t put the repair quote in writing
+A contractor who pressures you to decide “today only” with artificial urgency pricing
+
+Cool & Cozy provides both options with written quotes, explains the reasoning behind our recommendation, and gives you time to decide. If repair is the better choice, we say so — even though a replacement is a larger project for us. That’s how you earn a customer for life.
+
+3.6 FAQ (3 Questions)
+FAQ 1
+Q: Should I repair a 10-year-old AC that needs a $400 fix?
+A: In most cases, yes. A 10-year-old system in Jacksonville has approximately 3–7 years of remaining life if maintained properly. A $400 repair on a system that could serve you for several more years is a sound investment — provided the system uses R-410A refrigerant, has been maintained regularly, and this is not the second or third repair in recent months. If it uses R-22, the calculus changes because future refrigerant-related repairs will be increasingly expensive.
+
+FAQ 2
+Q: My contractor says I should replace, but another says repair is fine. Who do I trust?
+A: Both may be giving honest advice from different perspectives. The contractor recommending replacement may be accounting for the system’s remaining lifespan and total cost of ownership, while the repair-focused contractor is addressing the immediate symptom. Ask both to explain their reasoning in writing, including system age, refrigerant type, repair history, and the cost comparison. The contractor who provides the most transparent analysis — not the most persuasive pitch — is likely giving you the better advice.
+
+FAQ 3
+Q: Can I replace the outdoor unit without replacing the indoor air handler?
+A: Technically possible but generally not recommended. Mismatching a new condenser with an old air handler can cause efficiency losses, refrigerant compatibility issues, and warranty conflicts. If the outdoor unit has reached end-of-life, the indoor air handler is typically the same age and condition. A matched system replacement ensures optimal performance, proper warranty coverage, and avoids the cost of a second replacement when the indoor unit fails shortly after.
+
+3.7 Article CTA & Related
+Not sure whether to repair or replace? Cool & Cozy provides both a repair quote and a replacement estimate so you can compare side-by-side with complete information. No pressure, no artificial urgency. Call (904) 555-0199 or schedule your evaluation online.
+Property
+Specification
+If repair makes sense
+Schedule AC Repair → /contact?service=ac-repair
+If replacement is the answer
+Schedule Free Installation Estimate → /contact?service=ac-installation
+
+Related
+Link
+How Much Does AC Repair Cost in Jacksonville?
+/resources/ac-repair-cost-jacksonville
+8 Signs Your AC Needs Replacement
+/resources/signs-ac-needs-replacement
+SEER Ratings Explained
+/resources/seer-rating-explained
+
+4. Checklist
+Article + FAQPage + BreadcrumbList schema validates
+50% rule math uses Jacksonville-specific replacement costs
+Age thresholds adjusted for Florida runtime (12–15 years, not 15–20)
+R-22 ban date correct (January 2020)
+Energy waste calculation consistent with SEER article
+Decision table targets featured snippet (side-by-side repair vs replace)
+Dual CTA: repair path AND replacement path offered honestly
+Cross-links to repair cost, signs, SEER articles verified
+Trustworthy contractor section builds credibility without bashing competitors
+
+— End of Document —
+Prepared by TradeWorks AI  ·  May 2026  ·  v1.0
+

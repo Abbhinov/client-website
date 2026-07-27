@@ -1,0 +1,428 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 900" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Sparkling kitchen counter with stovetop and cleaning supplies representing kitchen and bathroom cleaning service">
+  <defs>
+    <linearGradient id="bgBase" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0F2E3F"/>
+      <stop offset="50%" stop-color="#1F4A66"/>
+      <stop offset="100%" stop-color="#2D6585"/>
+    </linearGradient>
+    <linearGradient id="wallFade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="40%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.15"/>
+    </linearGradient>
+    <radialGradient id="spotlight" cx="0.75" cy="0.2" r="0.85">
+      <stop offset="0%" stop-color="#FFF4D8" stop-opacity="0.7"/>
+      <stop offset="25%" stop-color="#F2C98A" stop-opacity="0.35"/>
+      <stop offset="55%" stop-color="#5EE9C4" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#5EE9C4" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="rimLight" x1="1" y1="0" x2="0" y2="0">
+      <stop offset="0%" stop-color="#5EE9C4" stop-opacity="0.12"/>
+      <stop offset="20%" stop-color="#5EE9C4" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#5EE9C4" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="tile" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#EAF1F2"/>
+      <stop offset="100%" stop-color="#C8D6D9"/>
+    </linearGradient>
+    <linearGradient id="counter" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F5F0E5"/>
+      <stop offset="55%" stop-color="#E5DECC"/>
+      <stop offset="100%" stop-color="#B8AE95"/>
+    </linearGradient>
+    <linearGradient id="counterShade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.5"/>
+      <stop offset="30%" stop-color="#000000" stop-opacity="0.25"/>
+      <stop offset="60%" stop-color="#000000" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2D5775"/>
+      <stop offset="100%" stop-color="#1A3D55"/>
+    </linearGradient>
+    <linearGradient id="metalDark" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0A0A0A"/>
+      <stop offset="50%" stop-color="#2A2A2A"/>
+      <stop offset="100%" stop-color="#000000"/>
+    </linearGradient>
+    <linearGradient id="bottle" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8FF5DC"/>
+      <stop offset="100%" stop-color="#2EB893"/>
+    </linearGradient>
+    <linearGradient id="cabinet" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1F4258"/>
+      <stop offset="100%" stop-color="#143041"/>
+    </linearGradient>
+    <radialGradient id="bubble" cx="0.35" cy="0.3" r="0.7">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.85"/>
+      <stop offset="35%" stop-color="#B8F4E0" stop-opacity="0.45"/>
+      <stop offset="70%" stop-color="#5EE9C4" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#5EE9C4" stop-opacity="0.04"/>
+    </radialGradient>
+    <radialGradient id="bubbleHi" cx="0.3" cy="0.25" r="0.18">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="sparkle" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="1"/>
+      <stop offset="35%" stop-color="#A8F0DC" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#5EE9C4" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="lemon" cx="0.3" cy="0.3" r="0.7">
+      <stop offset="0%" stop-color="#FFF89A"/>
+      <stop offset="60%" stop-color="#F2D848"/>
+      <stop offset="100%" stop-color="#C9A820"/>
+    </radialGradient>
+    <radialGradient id="pendantGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#FFE8B8" stop-opacity="0.9"/>
+      <stop offset="40%" stop-color="#FFD98A" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#FFD98A" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="textZone" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0A2030" stop-opacity="0.75"/>
+      <stop offset="25%" stop-color="#0A2030" stop-opacity="0.55"/>
+      <stop offset="50%" stop-color="#0A2030" stop-opacity="0.2"/>
+      <stop offset="75%" stop-color="#0A2030" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#0A2030" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="vignette" cx="0.7" cy="0.5" r="0.95">
+      <stop offset="60%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.3"/>
+    </radialGradient>
+    <filter id="objShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="8"/>
+      <feOffset dx="6" dy="14"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.5"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="15"/>
+    </filter>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.05 0"/>
+      <feComposite in2="SourceGraphic" operator="in"/>
+    </filter>
+    <symbol id="sparkleStar" viewBox="-50 -50 100 100">
+      <path d="M 0 -48 C 4 -14 14 -4 48 0 C 14 4 4 14 0 48 C -4 14 -14 4 -48 0 C -14 -4 -4 -14 0 -48 Z" fill="url(#sparkle)"/>
+    </symbol>
+  </defs>
+
+  <!-- Base -->
+  <rect width="1920" height="900" fill="url(#bgBase)"/>
+  <rect width="1920" height="900" fill="url(#wallFade)"/>
+
+  <!-- Subway tile backsplash (right side, behind counter) -->
+  <g>
+    <rect x="800" y="0" width="1120" height="600" fill="url(#tile)"/>
+    <!-- Subway tile pattern (brick layout) -->
+    <g stroke="#A8B8BC" stroke-width="1" opacity="0.5">
+      <!-- Horizontal lines -->
+      <line x1="800" y1="80" x2="1920" y2="80"/>
+      <line x1="800" y1="160" x2="1920" y2="160"/>
+      <line x1="800" y1="240" x2="1920" y2="240"/>
+      <line x1="800" y1="320" x2="1920" y2="320"/>
+      <line x1="800" y1="400" x2="1920" y2="400"/>
+      <line x1="800" y1="480" x2="1920" y2="480"/>
+      <line x1="800" y1="560" x2="1920" y2="560"/>
+      <!-- Vertical lines (offset every other row for brick pattern) -->
+      <line x1="900" y1="0" x2="900" y2="80"/>
+      <line x1="1060" y1="0" x2="1060" y2="80"/>
+      <line x1="1220" y1="0" x2="1220" y2="80"/>
+      <line x1="1380" y1="0" x2="1380" y2="80"/>
+      <line x1="1540" y1="0" x2="1540" y2="80"/>
+      <line x1="1700" y1="0" x2="1700" y2="80"/>
+      <line x1="1860" y1="0" x2="1860" y2="80"/>
+
+      <line x1="820" y1="80" x2="820" y2="160"/>
+      <line x1="980" y1="80" x2="980" y2="160"/>
+      <line x1="1140" y1="80" x2="1140" y2="160"/>
+      <line x1="1300" y1="80" x2="1300" y2="160"/>
+      <line x1="1460" y1="80" x2="1460" y2="160"/>
+      <line x1="1620" y1="80" x2="1620" y2="160"/>
+      <line x1="1780" y1="80" x2="1780" y2="160"/>
+
+      <line x1="900" y1="160" x2="900" y2="240"/>
+      <line x1="1060" y1="160" x2="1060" y2="240"/>
+      <line x1="1220" y1="160" x2="1220" y2="240"/>
+      <line x1="1380" y1="160" x2="1380" y2="240"/>
+      <line x1="1540" y1="160" x2="1540" y2="240"/>
+      <line x1="1700" y1="160" x2="1700" y2="240"/>
+      <line x1="1860" y1="160" x2="1860" y2="240"/>
+
+      <line x1="820" y1="240" x2="820" y2="320"/>
+      <line x1="980" y1="240" x2="980" y2="320"/>
+      <line x1="1140" y1="240" x2="1140" y2="320"/>
+      <line x1="1300" y1="240" x2="1300" y2="320"/>
+      <line x1="1460" y1="240" x2="1460" y2="320"/>
+      <line x1="1620" y1="240" x2="1620" y2="320"/>
+      <line x1="1780" y1="240" x2="1780" y2="320"/>
+
+      <line x1="900" y1="320" x2="900" y2="400"/>
+      <line x1="1060" y1="320" x2="1060" y2="400"/>
+      <line x1="1220" y1="320" x2="1220" y2="400"/>
+      <line x1="1380" y1="320" x2="1380" y2="400"/>
+      <line x1="1540" y1="320" x2="1540" y2="400"/>
+      <line x1="1700" y1="320" x2="1700" y2="400"/>
+      <line x1="1860" y1="320" x2="1860" y2="400"/>
+
+      <line x1="820" y1="400" x2="820" y2="480"/>
+      <line x1="980" y1="400" x2="980" y2="480"/>
+      <line x1="1140" y1="400" x2="1140" y2="480"/>
+      <line x1="1300" y1="400" x2="1300" y2="480"/>
+      <line x1="1460" y1="400" x2="1460" y2="480"/>
+      <line x1="1620" y1="400" x2="1620" y2="480"/>
+      <line x1="1780" y1="400" x2="1780" y2="480"/>
+
+      <line x1="900" y1="480" x2="900" y2="560"/>
+      <line x1="1060" y1="480" x2="1060" y2="560"/>
+      <line x1="1220" y1="480" x2="1220" y2="560"/>
+      <line x1="1380" y1="480" x2="1380" y2="560"/>
+      <line x1="1540" y1="480" x2="1540" y2="560"/>
+      <line x1="1700" y1="480" x2="1700" y2="560"/>
+      <line x1="1860" y1="480" x2="1860" y2="560"/>
+    </g>
+  </g>
+
+  <!-- Fade tile area into left dark zone -->
+  <rect x="0" y="0" width="800" height="600" fill="url(#bgBase)"/>
+  <rect x="0" y="0" width="900" height="600" fill="url(#wall)" opacity="0.5"/>
+
+  <!-- Counter -->
+  <rect x="0" y="560" width="1920" height="60" fill="url(#counter)"/>
+  <rect x="0" y="558" width="1920" height="3" fill="#FFFFFF" opacity="0.5"/>
+  <rect x="0" y="558" width="1920" height="62" fill="url(#counterShade)"/>
+  <!-- Counter front -->
+  <rect x="0" y="618" width="1920" height="5" fill="#9A8456" opacity="0.6"/>
+
+  <!-- Lower cabinets (navy) -->
+  <rect x="0" y="623" width="1920" height="280" fill="url(#cabinet)"/>
+  <rect x="0" y="623" width="1920" height="280" fill="url(#counterShade)"/>
+  <!-- Cabinet panels (right side, visible) -->
+  <g stroke="#0A1F2C" stroke-width="2" fill="none">
+    <rect x="820" y="640" width="220" height="240"/>
+    <rect x="1060" y="640" width="220" height="240"/>
+    <rect x="1300" y="640" width="220" height="240"/>
+    <rect x="1540" y="640" width="220" height="240"/>
+    <rect x="1780" y="640" width="140" height="240"/>
+  </g>
+  <!-- Cabinet handles -->
+  <g fill="#D4A574">
+    <rect x="918" y="755" width="24" height="6" rx="2"/>
+    <rect x="1158" y="755" width="24" height="6" rx="2"/>
+    <rect x="1398" y="755" width="24" height="6" rx="2"/>
+    <rect x="1638" y="755" width="24" height="6" rx="2"/>
+    <rect x="1838" y="755" width="24" height="6" rx="2"/>
+  </g>
+
+  <!-- Spotlight -->
+  <rect width="1920" height="900" fill="url(#spotlight)"/>
+
+  <!-- ===== PENDANT LIGHTS (hanging from top) ===== -->
+  <g filter="url(#objShadow)">
+    <!-- Cord 1 -->
+    <line x1="1200" y1="0" x2="1200" y2="120" stroke="#1A1A1A" stroke-width="2"/>
+    <circle cx="1200" cy="170" r="80" fill="url(#pendantGlow)" filter="url(#glow)"/>
+    <path d="M 1160 120 L 1240 120 L 1250 170 L 1150 170 Z" fill="#0A0A0A"/>
+    <ellipse cx="1200" cy="170" rx="55" ry="6" fill="#FFE8B8"/>
+    <!-- Cord 2 -->
+    <line x1="1480" y1="0" x2="1480" y2="160" stroke="#1A1A1A" stroke-width="2"/>
+    <circle cx="1480" cy="200" r="70" fill="url(#pendantGlow)" filter="url(#glow)"/>
+    <path d="M 1445 160 L 1515 160 L 1525 205 L 1435 205 Z" fill="#0A0A0A"/>
+    <ellipse cx="1480" cy="205" rx="50" ry="5" fill="#FFE8B8"/>
+  </g>
+
+  <!-- ===== STOVETOP (induction, on counter back) ===== -->
+  <g filter="url(#objShadow)">
+    <rect x="1500" y="500" width="380" height="65" rx="4" fill="#0A0A0A"/>
+    <rect x="1500" y="500" width="380" height="6" fill="#3A3A3A"/>
+    <!-- 4 burners -->
+    <circle cx="1560" cy="535" r="20" fill="#1A1A1A" stroke="#3A3A3A" stroke-width="1"/>
+    <circle cx="1560" cy="535" r="12" fill="#0A0A0A"/>
+    <circle cx="1640" cy="535" r="20" fill="#1A1A1A" stroke="#3A3A3A" stroke-width="1"/>
+    <circle cx="1640" cy="535" r="12" fill="#0A0A0A"/>
+    <circle cx="1740" cy="535" r="20" fill="#1A1A1A" stroke="#3A3A3A" stroke-width="1"/>
+    <circle cx="1740" cy="535" r="12" fill="#0A0A0A"/>
+    <circle cx="1820" cy="535" r="20" fill="#1A1A1A" stroke="#3A3A3A" stroke-width="1"/>
+    <circle cx="1820" cy="535" r="12" fill="#0A0A0A"/>
+    <!-- Top reflection -->
+    <rect x="1505" y="503" width="370" height="3" fill="#FFFFFF" opacity="0.5"/>
+  </g>
+
+  <!-- ===== KETTLE on stovetop ===== -->
+  <g filter="url(#objShadow)">
+    <!-- Kettle body -->
+    <path d="M 1530 480 Q 1530 440 1570 430 Q 1610 430 1620 460 L 1620 505 Q 1610 510 1570 510 Q 1530 510 1530 505 Z" fill="#FAFAF5"/>
+    <path d="M 1530 480 Q 1530 440 1570 430 Q 1610 430 1620 460 L 1620 505" fill="none" stroke="#D4C8B0" stroke-width="1"/>
+    <!-- Kettle highlight -->
+    <ellipse cx="1555" cy="450" rx="8" ry="20" fill="#FFFFFF" opacity="0.8"/>
+    <!-- Spout -->
+    <path d="M 1620 460 L 1655 440 L 1660 455 L 1620 472 Z" fill="#FAFAF5"/>
+    <!-- Handle -->
+    <path d="M 1545 432 Q 1525 415 1530 400 L 1545 400 Q 1540 415 1555 425" fill="none" stroke="#0A0A0A" stroke-width="5"/>
+    <!-- Lid knob -->
+    <circle cx="1572" cy="430" r="4" fill="#0A0A0A"/>
+    <!-- Steam -->
+    <path d="M 1650 425 Q 1655 410 1650 395 Q 1645 380 1655 365" stroke="#FFFFFF" stroke-width="2" fill="none" opacity="0.5"/>
+    <path d="M 1660 420 Q 1665 405 1660 390 Q 1655 375 1665 360" stroke="#FFFFFF" stroke-width="2" fill="none" opacity="0.4"/>
+  </g>
+
+  <!-- ===== CUTTING BOARD with LEMONS on counter ===== -->
+  <g filter="url(#objShadow)">
+    <!-- Cutting board -->
+    <ellipse cx="1080" cy="595" rx="180" ry="20" fill="#000" opacity="0.2"/>
+    <rect x="900" y="555" width="360" height="40" rx="4" fill="#8B5E3C"/>
+    <rect x="900" y="555" width="360" height="6" fill="#A87848"/>
+    <!-- Wood grain -->
+    <g stroke="#5A3D25" stroke-width="0.6" opacity="0.5">
+      <line x1="910" y1="568" x2="1250" y2="568"/>
+      <line x1="910" y1="578" x2="1250" y2="578"/>
+      <line x1="910" y1="588" x2="1250" y2="588"/>
+    </g>
+    <!-- Handle hole -->
+    <circle cx="930" cy="575" r="6" fill="#3A2515"/>
+  </g>
+
+  <!-- Lemons on cutting board -->
+  <g filter="url(#objShadow)">
+    <!-- Lemon 1 (whole) -->
+    <ellipse cx="1000" cy="545" rx="30" ry="22" fill="url(#lemon)"/>
+    <ellipse cx="992" cy="540" rx="8" ry="6" fill="#FFFCC8" opacity="0.7"/>
+    <path d="M 1025 530 Q 1030 525 1027 520" stroke="#3DC9A4" stroke-width="2" fill="none"/>
+    <ellipse cx="1029" cy="522" rx="5" ry="3" fill="#5EE9C4" transform="rotate(30 1029 522)"/>
+
+    <!-- Lemon 2 (whole, smaller) -->
+    <ellipse cx="1060" cy="540" rx="28" ry="20" fill="url(#lemon)"/>
+    <ellipse cx="1053" cy="535" rx="7" ry="5" fill="#FFFCC8" opacity="0.7"/>
+
+    <!-- Lemon half (cut) -->
+    <ellipse cx="1180" cy="548" rx="32" ry="22" fill="#FAFAF5"/>
+    <ellipse cx="1180" cy="548" rx="28" ry="18" fill="#FFF89A"/>
+    <!-- Lemon segments -->
+    <g stroke="#FFFFFF" stroke-width="1" opacity="0.7" fill="none">
+      <line x1="1180" y1="530" x2="1180" y2="566"/>
+      <line x1="1158" y1="540" x2="1202" y2="556"/>
+      <line x1="1158" y1="556" x2="1202" y2="540"/>
+      <line x1="1156" y1="548" x2="1204" y2="548"/>
+    </g>
+  </g>
+
+  <!-- ===== MINT SPRAY BOTTLE (left of cutting board) ===== -->
+  <g filter="url(#objShadow)" transform="translate(740, 430)">
+    <ellipse cx="42" cy="158" rx="50" ry="6" fill="#000" opacity="0.25"/>
+    <rect x="8" y="38" width="68" height="120" rx="8" fill="url(#bottle)"/>
+    <rect x="12" y="40" width="4" height="112" rx="2" fill="#FFFFFF" opacity="0.5"/>
+    <rect x="65" y="40" width="11" height="115" rx="3" fill="#000" opacity="0.15"/>
+    <rect x="14" y="76" width="56" height="58" fill="#FAFAF5"/>
+    <rect x="20" y="84" width="44" height="4" rx="1" fill="#0F2E3F"/>
+    <rect x="20" y="92" width="36" height="3" rx="1" fill="#3DC9A4"/>
+    <rect x="20" y="104" width="40" height="2" rx="1" fill="#0F2E3F" opacity="0.3"/>
+    <rect x="20" y="110" width="34" height="2" rx="1" fill="#0F2E3F" opacity="0.3"/>
+    <rect x="20" y="122" width="28" height="3" rx="1" fill="#5EE9C4"/>
+    <rect x="22" y="26" width="40" height="14" fill="#2EB893"/>
+    <path d="M 10 10 L 78 10 L 84 28 L 78 36 L 38 36 L 38 26 L 10 26 Z" fill="#0F2E3F"/>
+    <rect x="0" y="26" width="16" height="8" rx="3" fill="#0F2E3F"/>
+    <rect x="80" y="18" width="10" height="5" fill="#1A1A1A"/>
+  </g>
+
+  <!-- ===== DISH DRYING RACK (right of stovetop, partial) ===== -->
+  <g filter="url(#objShadow)">
+    <ellipse cx="1330" cy="595" rx="100" ry="8" fill="#000" opacity="0.2"/>
+    <!-- Rack base -->
+    <rect x="1260" y="580" width="160" height="14" rx="2" fill="#1A1A1A"/>
+    <!-- Rack rods (vertical) -->
+    <g stroke="#3A3A3A" stroke-width="2">
+      <line x1="1275" y1="540" x2="1275" y2="580"/>
+      <line x1="1295" y1="540" x2="1295" y2="580"/>
+      <line x1="1315" y1="540" x2="1315" y2="580"/>
+      <line x1="1335" y1="540" x2="1335" y2="580"/>
+      <line x1="1355" y1="540" x2="1355" y2="580"/>
+      <line x1="1375" y1="540" x2="1375" y2="580"/>
+      <line x1="1395" y1="540" x2="1395" y2="580"/>
+    </g>
+    <!-- Plates in rack -->
+    <ellipse cx="1285" cy="540" rx="3" ry="20" fill="#FAFAF5"/>
+    <ellipse cx="1305" cy="540" rx="3" ry="20" fill="#FAFAF5"/>
+    <ellipse cx="1325" cy="540" rx="3" ry="20" fill="#FAFAF5"/>
+    <ellipse cx="1345" cy="540" rx="3" ry="22" fill="#5EE9C4"/>
+    <ellipse cx="1365" cy="540" rx="3" ry="20" fill="#FAFAF5"/>
+    <ellipse cx="1385" cy="540" rx="3" ry="20" fill="#FAFAF5"/>
+  </g>
+
+  <!-- Wine glass on counter -->
+  <g filter="url(#objShadow)" transform="translate(680, 470)">
+    <ellipse cx="20" cy="95" rx="25" ry="4" fill="#000" opacity="0.2"/>
+    <path d="M 20 95 L 20 65 L 5 50 Q 5 25 20 20 Q 35 25 35 50 L 20 65 Z" fill="#FFFFFF" opacity="0.2" stroke="#FFFFFF" stroke-width="1.5"/>
+    <ellipse cx="20" cy="95" rx="15" ry="2.5" fill="#FFFFFF" opacity="0.4"/>
+    <!-- Highlight -->
+    <path d="M 10 30 Q 8 50 12 55" stroke="#FFFFFF" stroke-width="1.5" fill="none" opacity="0.7"/>
+  </g>
+
+  <!-- ===== FAUCET + SINK (left side of counter, partial visible) ===== -->
+  <g filter="url(#objShadow)">
+    <!-- Sink basin -->
+    <ellipse cx="540" cy="600" rx="120" ry="18" fill="#1A1A1A"/>
+    <ellipse cx="540" cy="598" rx="116" ry="15" fill="#FAFAF8"/>
+    <ellipse cx="540" cy="602" rx="112" ry="12" fill="#E8E2D5" opacity="0.6"/>
+
+    <!-- Faucet base -->
+    <rect x="528" y="510" width="24" height="10" rx="2" fill="url(#metalDark)"/>
+    <!-- Riser -->
+    <rect x="535" y="430" width="10" height="80" fill="url(#metalDark)"/>
+    <!-- Spout -->
+    <path d="M 540 430 Q 540 405 565 405 L 595 405 Q 615 405 615 425 L 615 470" fill="none" stroke="#0A0A0A" stroke-width="11" stroke-linecap="round"/>
+    <!-- Water -->
+    <rect x="613" y="470" width="4" height="120" fill="#B8E8EC" opacity="0.6"/>
+    <rect x="614" y="470" width="2" height="120" fill="#FFFFFF" opacity="0.7"/>
+    <!-- Splash -->
+    <ellipse cx="615" cy="595" rx="20" ry="4" fill="#FFFFFF" opacity="0.8"/>
+  </g>
+
+  <!-- Rim light -->
+  <rect width="1920" height="900" fill="url(#rimLight)"/>
+
+  <!-- Bubbles -->
+  <g>
+    <g><circle cx="640" cy="460" r="35" fill="url(#bubble)"/><ellipse cx="628" cy="450" rx="9" ry="6" fill="url(#bubbleHi)"/></g>
+    <g><circle cx="700" cy="510" r="20" fill="url(#bubble)"/><ellipse cx="695" cy="505" rx="5" ry="3" fill="url(#bubbleHi)"/></g>
+    <g><circle cx="1300" cy="180" r="40" fill="url(#bubble)"/><ellipse cx="1287" cy="168" rx="10" ry="7" fill="url(#bubbleHi)"/></g>
+    <g><circle cx="1380" cy="380" r="22" fill="url(#bubble)"/><ellipse cx="1373" cy="374" rx="6" ry="4" fill="url(#bubbleHi)"/></g>
+    <g><circle cx="1800" cy="400" r="28" fill="url(#bubble)"/><ellipse cx="1792" cy="394" rx="7" ry="5" fill="url(#bubbleHi)"/></g>
+    <circle cx="1150" cy="250" r="12" fill="url(#bubble)"/>
+    <circle cx="1550" cy="100" r="14" fill="url(#bubble)"/>
+    <circle cx="940" cy="380" r="9" fill="url(#bubble)"/>
+    <circle cx="1700" cy="280" r="11" fill="url(#bubble)"/>
+  </g>
+
+  <!-- Sparkles -->
+  <use href="#sparkleStar" x="1290" y="80" width="55" height="55"/>
+  <use href="#sparkleStar" x="1440" y="430" width="42" height="42"/>
+  <use href="#sparkleStar" x="1850" y="280" width="50" height="50"/>
+  <use href="#sparkleStar" x="700" y="600" width="38" height="38"/>
+  <use href="#sparkleStar" x="1100" y="490" width="44" height="44"/>
+  <use href="#sparkleStar" x="1600" y="450" width="36" height="36"/>
+  <use href="#sparkleStar" x="1750" y="120" width="44" height="44"/>
+  <use href="#sparkleStar" x="950" y="500" width="36" height="36"/>
+  <use href="#sparkleStar" x="1380" y="600" width="42" height="42"/>
+  <use href="#sparkleStar" x="800" y="380" width="38" height="38"/>
+
+  <g fill="#FFFFFF">
+    <circle cx="1340" cy="280" r="2" opacity="0.9"/>
+    <circle cx="1490" cy="350" r="1.6" opacity="0.85"/>
+    <circle cx="1860" cy="380" r="2" opacity="0.9"/>
+    <circle cx="1180" cy="180" r="2" opacity="0.9"/>
+    <circle cx="890" cy="320" r="1.6" opacity="0.8"/>
+    <circle cx="1730" cy="540" r="1.8" opacity="0.85"/>
+    <circle cx="1050" cy="380" r="1.5" opacity="0.8"/>
+    <circle cx="1640" cy="180" r="1.8" opacity="0.85"/>
+  </g>
+
+  <!-- Text zone -->
+  <rect width="1920" height="900" fill="url(#textZone)"/>
+  <ellipse cx="280" cy="680" rx="450" ry="320" fill="#5EE9C4" opacity="0.05"/>
+  <ellipse cx="150" cy="220" rx="350" ry="260" fill="#5EE9C4" opacity="0.035"/>
+
+  <rect width="1920" height="900" fill="url(#vignette)"/>
+  <rect width="1920" height="900" filter="url(#grain)" opacity="0.6"/>
+  <rect width="1920" height="900" fill="#0F2E3F" opacity="0.05" style="mix-blend-mode: multiply"/>
+</svg>

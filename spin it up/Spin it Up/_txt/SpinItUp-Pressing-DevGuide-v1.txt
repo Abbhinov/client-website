@@ -1,0 +1,582 @@
+
+SPIN IT UP LAUNDRY
+IRONING & PRESSINGDEVELOPER GUIDE
+Section-by-Section Implementation Specification
+
+URL: spinituplaundry.net/services/ironing-pressing/
+Prepared by: TradeWorks AI  |  Version 1.0  |  May 2026
+Classification: Client Confidential
+
+Table of Contents
+1  How to Use This Guide
+2  Page Identity & Architecture
+3  Keyword Strategy & Content Map
+4  Complete <head> Section
+5  Section 1: Site Header & Navigation
+6  Section 2: Hero Banner
+7  Section 3: AEO Introduction
+8  Section 4: What We Press
+9  Section 5: Pressing Pricing
+10  Section 6: How It Works
+11  Section 7: Combine With Wash & Fold
+12  Section 8: Related Services
+13  Section 9: FAQ Section
+14  Section 10: Final CTA Block
+15  Section 11: Footer & Sticky Mobile CTA
+16  Reference: Image Asset Inventory
+17  Reference: GA4 Event Tracking
+18  Reference: Implementation Checklist
+
+1. How to Use This Guide
+This developer guide provides the complete implementation specification for the Ironing & Pressing page (/services/ironing-pressing/). This is the fifth and final service child page in the Services silo. It targets customers who need professional garment finishing — dress shirts, suits, uniforms, and formal wear. The page is shorter than the other service pages (600–800 words) because pressing is a narrower, more straightforward service.
+The strategic role of this page is twofold: capture the niche “ironing service” / “pressing service” search queries that competitors ignore, and cross-sell as an add-on to wash-and-fold and commercial orders.
+Content Authoring Rules
+All content written fresh.
+AEO opening paragraph within the first 100–150 words answers “ironing and pressing service in Avondale Chicago.”
+All phone numbers as clickable tel: links.
+Pricing must be confirmed with client before publication.
+
+2. Page Identity & Architecture
+URL Path
+/services/ironing-pressing/
+Page Type
+Child — Services Silo
+Canonical URL
+https://spinituplaundry.net/services/ironing-pressing/
+Breadcrumb
+Home > Services > Ironing & Pressing
+Parent Page
+/services/ (Services Hub)
+Sibling Pages
+/services/self-service/, /services/wash-and-fold/, /services/pickup-delivery/, /services/commercial/
+Primary Keyword
+ironing service chicago (50–110/mo)
+Secondary Keywords
+pressing service avondale, shirt pressing chicago, garment pressing near me, professional ironing chicago
+Search Intent
+Transactional / Local
+Target Word Count
+600–800 words
+Primary Conversion Goal
+Drop-off visit or phone call
+Secondary Conversion Goals
+Wash & fold upsell, commercial inquiry
+Robots Directive
+index, follow
+XML Sitemap
+Include — priority 0.7
+Content Update Frequency
+Evergreen; update pricing when rates change
+hreflang
+None for Phase 1
+Internal Linking Requirements
+Direction
+Link
+Anchor Text
+Up → Hub
+/services/
+All Services, Back to Services
+Sibling
+/services/wash-and-fold/
+Wash & Fold (bundle upsell)
+Sibling
+/services/pickup-delivery/
+Pickup & Delivery
+Sibling
+/services/commercial/
+Commercial Services (uniform pressing)
+Cross-silo
+/pricing/
+View Full Pricing
+Cross-silo
+/contact/
+Contact Us
+Up → Root
+/
+Home (breadcrumb)
+
+3. Keyword Strategy & Content Map
+Keyword
+Est. Volume
+Difficulty
+Intent
+Placement
+ironing service chicago
+50–110
+Low
+Transactional
+H1, title, AEO paragraph, schema
+pressing service avondale
+10–30
+Low
+Local
+AEO paragraph, body
+shirt pressing chicago
+30–70
+Low
+Transactional
+What We Press, pricing
+garment pressing near me
+110–210
+Med (local)
+Transactional
+GBP + this page
+professional ironing chicago
+30–70
+Low
+Transactional
+Body content
+suit pressing service
+50–110
+Low
+Transactional
+What We Press section
+uniform pressing service
+30–70
+Low
+Commercial
+What We Press, commercial link
+laundry pressing drop off
+20–50
+Low
+Transactional
+How It Works, hero
+3.2 Semantic/LSI Terms
+Use naturally: garment finishing, professional pressing, steam pressing, ironed shirts, crisp shirts, wrinkle-free, dress shirts, formal wear, suits, blazers, uniforms, chef coats, work shirts, on hanger, drop-off pressing, same-day pressing, Kimball Ave, Avondale, 60618.
+
+4. Complete <head> Section
+4.1 Meta Tags
+Tag
+Content
+<title>
+Ironing & Pressing Service in Chicago | Spin It Up — From $3/Item (57 characters)
+<meta name="description">
+Professional ironing & pressing in Avondale, Chicago. Dress shirts, suits, uniforms, formal wear. Starting at $3.00/item. Drop off at 3710 N Kimball Ave. (154 characters)
+<meta name="robots">
+index, follow
+<meta name="viewport">
+width=device-width, initial-scale=1
+<meta charset>
+UTF-8
+<html lang>
+en
+<link rel="canonical">
+https://spinituplaundry.net/services/ironing-pressing/
+4.2 Open Graph & Twitter
+Tag
+Content
+og:title
+Ironing & Pressing | Spin It Up Laundry — Avondale, Chicago
+og:description
+Professional garment pressing from $3.00/item. Dress shirts, suits, uniforms, formal wear. Drop off at 3710 N Kimball Ave.
+og:type
+website
+og:url
+https://spinituplaundry.net/services/ironing-pressing/
+og:image
+https://spinituplaundry.net/images/og-pressing.jpg (1200x630, <200KB)
+og:locale
+en_US
+og:site_name
+Spin It Up Laundry
+twitter:card
+summary_large_image
+twitter:title
+Ironing & Pressing | Spin It Up — Avondale
+twitter:description
+Professional pressing from $3.00/item. Shirts, suits, uniforms. Drop off in Avondale.
+twitter:image
+https://spinituplaundry.net/images/og-pressing.jpg
+4.3 JSON-LD
+
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Ironing and Pressing Service",
+  "description": "Professional garment ironing and pressing service in Avondale, Chicago. Dress shirts, suits, uniforms, and formal wear pressed and finished by experienced attendants.",
+  "url": "https://spinituplaundry.net/services/ironing-pressing/",
+  "provider": {
+    "@type": "Laundromat",
+    "name": "Spin It Up Laundry",
+    "telephone": "+1-773-654-1275",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "3710 N Kimball Ave",
+      "addressLocality": "Chicago",
+      "addressRegion": "IL",
+      "postalCode": "60618"
+    }
+  },
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "USD",
+    "price": "3.00",
+    "description": "Starting price per item for standard garment pressing"
+  },
+  "serviceType": "Garment Ironing and Pressing"
+}
+
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://spinituplaundry.net/" },
+    { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://spinituplaundry.net/services/" },
+    { "@type": "ListItem", "position": 3, "name": "Ironing & Pressing", "item": "https://spinituplaundry.net/services/ironing-pressing/" }
+  ]
+}
+
+DEV ACTION:  Validate Service + BreadcrumbList + FAQPage schemas via Google Rich Results Test.
+
+5. Section 1: Site Header & Navigation
+Global header. Solid white. “Services” nav item active. Mobile: “Services” expanded, “Ironing & Pressing” highlighted.
+
+6. Section 2: Hero Banner
+Content Specifications
+Breadcrumb: Home > Services > Ironing & Pressing — standard spec.
+
+H1 Headline: "Professional Ironing & Pressing in Chicago" — 6 words, 44 characters. Font: 40px/800 (desktop), 32px (tablet), 28px (mobile). Color: white.
+
+Subheadline: "Dress shirts, suits, uniforms, and formal wear pressed and finished by our experienced attendants. Starting at $3.00 per item." — 19 words. Font: 18px/400, rgba(255,255,255,0.85). Max-width: 640px, centered.
+
+Hero CTAs: 
+Button
+Text
+Link
+Style
+Primary
+Drop Off Today
+Google Maps directions URL
+CTA Orange
+Secondary
+Call (773) 654-1275
+tel:+17736541275
+White outline
+Background: Spin Blue gradient. Padding: 64px 0 (desktop), 40px 16px (mobile).
+
+7. Section 3: AEO Introduction
+NEW:  AEO opening paragraph — new content.
+
+"Spin It Up Laundry offers professional ironing and garment pressing service at 3710 N Kimball Ave in Avondale, Chicago. Our experienced attendants press dress shirts, suits, blazers, slacks, uniforms, chef coats, and formal wear using commercial-grade equipment. Pricing starts at $3.00 per item with next-day turnaround. Drop off at our facility during operating hours (6:00 AM to 9:30 PM, seven days a week) and pick up your garments pressed, on hangers, and ready to wear. Combine with our wash-and-fold service for a complete laundry and pressing solution." — 88 words.
+
+Font: 18px/400 Body Text. Line-height: 1.65. Max-width: 800px, centered. Background: White.
+
+8. Section 4: What We Press
+Section Overview
+Detailed item list organized by category. Targets specific garment-type queries (“shirt pressing,” “suit pressing”) and clarifies the scope of the service. Background: Ice Blue (#F0F9FF).
+Content Specifications
+H2: "What We Press" — 3 words. Font: 36px/700, Dark Slate. Centered. Margin-bottom 40px.
+
+Category
+Items
+Notes
+Business & Professional
+Dress shirts, button-downs, blouses, polo shirts
+Returned on hangers. Collars and cuffs crisp.
+Suits & Formal Wear
+Suit jackets, blazers, sport coats, dress pants, slacks, ties
+Full suit pressing (jacket + pants) available at combined rate.
+Uniforms & Work Wear
+Chef coats, medical scrubs, security uniforms, hospitality uniforms
+Popular with commercial accounts. Volume pricing available for businesses.
+Special Occasion
+Formal dresses, gowns, graduation robes, interview outfits
+Call ahead for special-occasion items to confirm turnaround.
+Household
+Table linens, cloth napkins, tablecloths
+Flat-rate pricing for household linens.
+Items We Do Not Press
+Leather, suede, or fur garments
+Items labeled “do not iron”
+Heavily soiled items (these must be washed first — see our Wash & Fold service)
+Items requiring dry cleaning (we are not a dry cleaner)
+“Wash & Fold service” links to /services/wash-and-fold/. “Do not iron” items: 16px/400, amber AlertTriangle icon.
+
+9. Section 5: Pressing Pricing
+Section Overview
+Per-item pricing table. Background: White (#FFFFFF).
+Content Specifications
+H2: "Pressing Pricing" — 2 words. Font: 36px/700, Dark Slate. Margin-bottom 16px.
+Subtext: "Simple per-item pricing. No minimums for pressing-only orders." — 9 words. 16px/400 Body Text. Margin-bottom 32px.
+
+Item
+Price
+Turnaround
+Dress Shirt / Button-Down
+$3.00
+Next day
+Blouse
+$3.50
+Next day
+Dress Pants / Slacks
+$3.50
+Next day
+Suit Jacket / Blazer
+$5.00
+Next day
+Full Suit (jacket + pants)
+$7.50
+Next day
+Tie
+$2.00
+Next day
+Uniform Top
+$3.50
+Next day
+Uniform Pants
+$3.50
+Next day
+Chef Coat
+$4.00
+Next day
+Formal Dress / Gown
+$8.00–$12.00
+Next day (call to confirm)
+Table Linen / Tablecloth
+$5.00–$8.00
+Next day
+NOTE:  All pressing prices must be confirmed with client before publication. The prices above are industry-appropriate estimates for a Chicago laundromat. The Pricing page (/pricing/) will also list pressing rates in the Specialty Items section.
+Below table: "View complete pricing for all services →" link to /pricing/. Plus: "Volume pricing for businesses: see Commercial Services." linking to /services/commercial/.
+DEV ACTION:  Mobile: pricing table reflows to card layout at <768px, same pattern as all other pricing tables on the site.
+
+10. Section 6: How It Works
+Section Overview
+Three-step process. Simpler than the wash-and-fold process because pressing is a single-visit drop-off and pickup. Background: Ice Blue (#F0F9FF).
+Content Specifications
+H2: "How It Works" — 3 words. Font: 36px/700, Dark Slate. Centered. Margin-bottom 48px.
+
+Step
+Title
+Description
+01
+Drop Off Your Garments
+Bring your items to 3710 N Kimball Ave during operating hours. Our attendant inspects each garment, notes any special instructions, and gives you a receipt with your estimated pickup time.
+02
+We Press & Finish
+Each garment is professionally pressed using commercial equipment at the appropriate temperature for the fabric. Shirts get crisp collars and cuffs. Suits are shaped and finished. Everything goes on hangers.
+03
+Pick Up Ready to Wear
+We call or text when your order is ready — typically next day. Walk in, show your receipt, and take home your pressed garments on hangers, protected in garment covers.
+Same step card layout as other service pages. Three horizontal cards (desktop), stacked (mobile). Step numbers in Fresh Cyan.
+
+11. Section 7: Combine With Wash & Fold
+Section Overview
+Cross-sell section encouraging customers to bundle pressing with wash-and-fold for a complete laundry solution. This is the primary upsell path on this page. Background: White (#FFFFFF).
+Content Specifications
+H2: "Drop Off Everything at Once" — 5 words. Font: 32px/700, Dark Slate. Centered. Margin-bottom 16px.
+
+"Bring your everyday laundry and your dress clothes in the same trip. We’ll wash and fold your regular clothes and press your professional garments — everything ready for pickup at the same time. One stop, one visit, your entire week’s laundry handled." — 42 words. Font: 17px/400, Body Text. Max-width: 700px, centered.
+
+Two side-by-side cards showing the bundle:
+Card
+Service
+Starting Price
+CTA
+Left
+Wash & Fold
+$1.50/lb
+View Wash & Fold →
+Right
+Pressing
+$3.00/item
+You’re here ✔
+Cards: same compact card spec. Left card links to /services/wash-and-fold/. Right card shows a green checkmark badge since the visitor is already on this page. Between cards: a “+” connector icon (32px, Fresh Cyan). Below cards: "Drop off together, pick up together. One trip, done." in 16px/600 Spin Blue.
+
+12. Section 8: Related Services
+Content Specifications
+H2: "Other Ways We Can Help" — 5 words. Centered. Font: 32px/700. Margin-bottom 40px.
+
+Card
+Title
+One-Liner
+CTA
+Link
+1
+Wash & Fold
+Drop off your everyday laundry too. Starting at $1.50/lb.
+View Wash & Fold →
+/services/wash-and-fold/
+2
+Pickup & Delivery
+Can’t make the trip? We pick up and deliver. Order via the Cents app.
+Schedule Pickup →
+/services/pickup-delivery/
+3
+Commercial Services
+Uniform pressing for your team? Volume pricing for businesses.
+Commercial Info →
+/services/commercial/
+Same compact card spec. Background: Ice Blue.
+
+13. Section 9: FAQ Section
+Section Overview
+Pressing-specific FAQ. Shorter than other service FAQs (4 questions) given the narrower service scope. FAQPage schema required. Background: White (#FFFFFF).
+Content Specifications
+H2: "Ironing & Pressing FAQ" — 4 words. Centered. Font: 32px/700. Margin-bottom 40px.
+
+#
+Question
+Answer
+1
+Do I need to wash my clothes before bringing them in for pressing?
+Yes. We press clean garments only. If your clothes need washing first, drop them off for our wash-and-fold service and add pressing — we handle both and everything is ready for pickup at the same time. If you bring in soiled garments for pressing, we will let you know they need to be washed first.
+2
+How long does pressing take?
+Standard turnaround is next day. If you drop off before 10:00 AM, ask about same-day availability. We will call or text you when your order is ready. We hold completed orders for up to 7 days.
+3
+Do you press suits?
+Yes. We press suit jackets, blazers, sport coats, and dress pants. A full suit (jacket + pants) is $7.50. Each piece is pressed at the appropriate temperature and shaped on a professional form. Returned on hangers.
+4
+Do you offer pressing for businesses?
+Yes. We provide uniform pressing for restaurants, salons, medical practices, and other businesses. Commercial accounts receive volume pricing. Visit our Commercial Services page or call (773) 654-1275 for a custom quote.
+DEV ACTION:  Implement FAQPage JSON-LD schema. Four Q&A pairs. Validate via Google Rich Results Test.
+Same accordion spec. Max-width 800px, centered.
+Below FAQ: "View All FAQs" link to /faq/.
+
+14. Section 10: Final CTA Block
+Content Specifications
+H2: "Look Sharp. Drop Off Your Pressing Today." — 7 words. White. Centered. Font: 36px/700.
+Subtitle: "3710 N Kimball Ave, Avondale — drop-off accepted 6 AM to 9:30 PM, seven days a week. Starting at $3.00/item." — 19 words. 18px/400 rgba(255,255,255,0.85).
+
+Button
+Text
+Link
+Style
+1
+Get Directions
+Google Maps URL
+CTA Orange
+2
+Call (773) 654-1275
+tel:+17736541275
+White outline
+Background: Spin Blue gradient. Section padding: 80px 0 desktop, 48px 16px mobile.
+
+15. Section 11: Footer & Sticky Mobile CTA
+Global footer: no modifications.
+
+Sticky Mobile CTA Bar: same override as Self-Service and Wash & Fold pages:
+Button
+Text
+Link
+Style
+1
+Call Now
+tel:+17736541275
+CTA Orange
+2
+Get Directions
+Google Maps directions URL
+Spin Blue
+The primary conversion is a physical drop-off visit, so “Get Directions” is the correct secondary button.
+
+16. Reference: Image Asset Inventory
+Image ID
+Section
+Dimensions
+Format
+Max Size
+Alt Text
+Loading
+og-pressing
+Social share
+1200x630
+JPEG
+<200KB
+Professionally pressed dress shirts on hangers
+N/A (meta)
+pressed-shirts
+What We Press
+600x400
+WebP+JPEG
+<100KB
+Crisp dress shirts on hangers at Spin It Up Laundry
+lazy
+logo-light
+Header/Footer
+SVG
+SVG
+<10KB
+Spin It Up Laundry logo
+inline
+NOTE:  If real photos of pressed garments at Spin It Up are not available, use a clean product-style photo of pressed shirts on hangers. This is one of the few pages where a tasteful stock-style photo is acceptable because pressed shirts look the same everywhere. Replace with real facility photos when available.
+
+17. Reference: GA4 Event Tracking
+Event Name
+Trigger
+Parameters
+Section
+phone_click
+Click tel: link
+phone_number, page_section
+Global
+directions_click
+Click “Get Directions” / “Drop Off Today”
+page_section
+Hero, CTA Block, Sticky Bar
+cta_click
+Click any CTA button
+button_text, destination_url, page_section
+All
+faq_expand
+Expand FAQ accordion
+question_text
+FAQ
+related_service_click
+Click related service card
+service_name, destination_url
+Related Services
+upsell_wash_fold
+Click Wash & Fold link in bundle section
+source: pressing_bundle
+Combine Section
+pricing_link_click
+Click “View complete pricing”
+destination_url
+Pricing
+commercial_link_click
+Click “Commercial Services” for uniform pressing
+source: pressing_page
+Pricing / FAQ
+
+18. Reference: Implementation Checklist
+Pre-Development
+Confirm all pressing pricing with client
+Confirm Google Maps directions URL
+Technical Validation
+HTML validates
+Service + BreadcrumbList + FAQPage schemas validate
+HTTPS enforced
+Mobile PageSpeed >90, Desktop >95
+All internal links return 200
+All tel: links functional
+OG tags render correctly
+Content & SEO
+All copy matches this guide
+Title tag within 60 characters
+Meta description within 155 characters
+Single H1 with “ironing & pressing” + “Chicago”
+AEO paragraph within first 100 words
+Breadcrumb: Home > Services > Ironing & Pressing
+Canonical URL correct
+Pricing table responsive
+Bundle upsell section links to /services/wash-and-fold/
+Commercial pricing link to /services/commercial/
+XML sitemap includes at priority 0.7
+Accessibility
+Skip-to-content link present
+Breadcrumb accessible
+Pricing table: proper <th> headers
+Color contrast WCAG 2.1 AA
+FAQ accordion keyboard-operable
+ARIA landmarks
+Analytics
+phone_click confirmed
+directions_click confirmed
+upsell_wash_fold fires from bundle section
+commercial_link_click fires from pricing/FAQ
+
+
+End of Document
+TradeWorks AI — Spin It Up Laundry Ironing & Pressing Developer Guide v1.0
+Prepared by TradeWorks AI — May 2026

@@ -1,0 +1,140 @@
+﻿
+DEVELOPER IMPLEMENTATION GUIDE
+
+COOL & COZY AC REPAIR
+Licensed HVAC Contractor  ·  Jacksonville, Florida
+
+RESOURCE ARTICLE
+Florida Humidity and Your HVAC System
+
+URL: coolcozyac.com/resources/florida-humidity-hvac-guide
+Prepared by: TradeWorks AI  |  Version 1.0  |  May 2026
+
+1. Page Identity
+URL: /resources/florida-humidity-hvac-guide
+Primary Keyword: Florida humidity HVAC
+Secondary: humidity and AC, why is my house humid with AC on, dehumidifier vs AC, Jacksonville humidity problem, cool but clammy house
+Intent: Informational (understanding a comfort problem)
+Word Count: 1,600–2,000 words
+Conversion: IAQ assessment or dehumidifier installation inquiry
+Sitemap: Priority 0.6
+
+1.1 Internal Linking
+TO /services/indoor-air-quality: primary cross-link (at least 3x)
+TO /services/ductwork: duct leaks as humidity source
+TO /services/ac-maintenance: maintenance prevents humidity issues
+TO /services/ac-installation: proper sizing for humidity load
+TO /resources/how-often-ac-maintenance: condensate drain context
+
+2. <head> Section
+Title: Florida Humidity & Your HVAC: Why Your House Feels Clammy (And How to Fix It)
+Meta Desc: Jacksonville’s 70–90% humidity makes your home feel clammy even with the AC running. Learn how AC dehumidification works, why it’s not enough, and what solutions actually fix the problem.
+Canonical: https://coolcozyac.com/resources/florida-humidity-hvac-guide
+JSON-LD: Article + BreadcrumbList + FAQPage (4 questions).
+
+3. Article Content
+
+H1: Florida Humidity and Your HVAC System: Why Your House Feels Clammy and What to Do About It
+Published: May 2026
+Author: Cool & Cozy AC Repair
+Reading Time: 9 minutes
+
+3.1 AEO Opening
+If your Jacksonville home feels cool but clammy — the thermostat reads 75°F but the air feels damp and heavy — the problem is indoor humidity, not temperature. Standard AC systems remove some moisture as a byproduct of the cooling process, but they are designed primarily for temperature control, not humidity management. In Jacksonville’s subtropical climate, where outdoor relative humidity regularly exceeds 70–90% year-round, the AC alone cannot maintain indoor humidity below the 50% threshold recommended for comfort and mold prevention. The most effective solution is a whole-home dehumidifier that operates independently of the AC cooling cycle, maintaining indoor humidity at 40–50% regardless of whether the thermostat is calling for cooling.
+Word Count: 121 words
+Snippet Target: Paragraph snippet for “why is my house humid with AC on”
+
+3.2 How Your AC Dehumidifies (And Why It’s Not Enough)
+H2: Understanding Why Your AC Can’t Keep Up with Jacksonville’s Humidity
+Your AC removes humidity through a process called condensation. When warm, humid indoor air passes over the cold evaporator coil, moisture in the air condenses on the coil surface (like water droplets forming on a cold glass in summer). This condensed water drips into a drain pan and flows out through the condensate drain line. The result: the air leaving the system is both cooler and drier than the air entering it.
+So why does your Jacksonville home still feel humid? Three reasons:
+
+The AC only dehumidifies while actively cooling — When the thermostat reaches its set temperature, the system cycles off. During the “off” cycle, humidity immediately begins rising as outdoor moisture infiltrates through windows, doors, ductwork, and the building envelope. In a 30-minute cycle — 15 minutes on, 15 minutes off — the humidity rebounds during every off period. The house reaches 75°F but the humidity sits at 60–70%, well above the comfortable 40–50% range.
+
+Oversized systems make humidity worse — A system that is too large for the home cools the air so quickly that it satisfies the thermostat before running long enough to remove adequate moisture. The result is short cycling: the system runs for 5–8 minutes, shuts off, and the air is cool but still humid. This is one of the most common installation errors in Florida — a contractor sizes the system for worst-case heat load without accounting for the humidity removal time needed. Proper Manual J calculations account for both sensible (temperature) and latent (humidity) loads.
+
+Jacksonville’s humidity is relentless — In drier climates, the AC’s incidental dehumidification is sufficient because outdoor humidity is lower. In Jacksonville, where outdoor relative humidity averages 74% annually and regularly exceeds 85–90% in summer mornings, the moisture infiltration rate simply overwhelms what a temperature-focused AC system can remove. The system was never designed to be the primary dehumidification strategy in this climate.
+
+3.3 The Health and Home Consequences of High Indoor Humidity
+H2: What Happens When Indoor Humidity Stays Above 50%
+Mold grows on any surface where moisture accumulates: inside ductwork, on evaporator coils, behind drywall, under carpet padding, and in closets against exterior walls. Mold colonies can establish in 24–48 hours at Jacksonville’s temperature and humidity levels.
+Dust mites thrive at humidity above 50% and are a primary trigger for allergies and asthma. Reducing indoor humidity below 50% is one of the most effective dust mite control strategies.
+Condensation forms on windows, walls, and cold-water pipes. Over time, this moisture causes water stains, paint peeling, wood rot, and structural damage.
+Musty odors develop from mold and bacterial growth inside the HVAC system, in ductwork, and in building materials.
+Personal discomfort: humidity above 55% makes air feel warmer than its actual temperature. Your thermostat says 75°F but your body perceives 78–80°F. You lower the thermostat, increasing energy costs, without addressing the actual problem.
+Electronics and wood furniture are affected: high humidity accelerates corrosion on electronics and causes wood to swell, warp, and crack.
+
+3.4 Solutions That Actually Work
+H2: How to Fix the Humidity Problem in Your Jacksonville Home
+
+Solution 1: Whole-Home Dehumidifier (Most Effective)
+A ducted whole-home dehumidifier connects to your HVAC ductwork and removes moisture independently of the AC’s cooling cycle. It monitors indoor humidity via its own humidistat and runs on demand whenever humidity exceeds your target setting (typically 45–50%). Unlike the AC, it does not need to cool the air to dehumidify it — it removes moisture even when the thermostat is satisfied and the AC is off. This is the most effective solution for Jacksonville’s humidity challenge and the one Cool & Cozy recommends most frequently.
+Capacity: 70–100+ pints per day for residential models
+Cost: $1,500–$3,000 installed
+Best For: Any Jacksonville home where humidity exceeds 55% despite AC running normally
+Cross-link: /services/indoor-air-quality
+
+Solution 2: Proper System Sizing
+If your system is oversized, it short-cycles and never runs long enough to dehumidify. Replacing an oversized system with a correctly sized unit (or a variable-speed system that adjusts output to match the load) restores the long run cycles needed for effective moisture removal. This should be evaluated during any system replacement. Cool & Cozy performs Manual J calculations that account for both sensible and latent (humidity) loads — not just square footage.
+Cross-link: Sizing and SEER2 → /resources/seer-rating-explained
+
+Solution 3: Seal Duct Leaks
+Leaky return ducts pull humid, unconditioned air from the attic or crawlspace into your system — adding moisture faster than the AC can remove it. A duct system leaking 20–30% of its air volume continuously introduces humid outdoor air into the conditioned space. Sealing duct leaks with mastic and metal tape (not cloth “duct tape”) reduces humidity infiltration and improves the AC’s ability to maintain both temperature and moisture levels.
+Cross-link: Ductwork repair → /services/ductwork
+
+Solution 4: Set the Fan to “Auto” Not “On”
+If your thermostat fan setting is “On” (continuous), the blower runs even when the AC is not actively cooling. During these non-cooling periods, the blower pushes unconditioned air over the wet evaporator coil, re-evaporating the moisture the system just removed and blowing it back into your home. Switching to “Auto” ensures the fan only runs during active cooling cycles, allowing moisture to drain from the coil rather than being recycled into the air.
+This is a zero-cost fix that resolves the humidity complaint in a meaningful percentage of cases. A technician’s first question for “cool but clammy” should be “is your fan set to On or Auto?”
+
+Solution 5: Lower the Fan Speed
+On multi-speed or variable-speed systems, reducing the blower speed during humid conditions allows air to spend more time passing over the cold evaporator coil, increasing moisture removal. Some modern thermostats offer a “dehumidification mode” that automatically reduces fan speed when humidity is high. This trades a small amount of cooling capacity for significantly better dehumidification — a worthwhile tradeoff in Jacksonville’s climate.
+
+3.5 How to Monitor Indoor Humidity
+A digital hygrometer ($10–20 at any hardware store) measures indoor relative humidity. Place it in a central room away from bathrooms and kitchens. Target: 40–50% relative humidity. Above 55% consistently means your system is not managing moisture adequately. Below 35% is too dry and unlikely in Jacksonville without a supplemental issue. Many smart thermostats (Nest, Ecobee) include built-in humidity sensors that display indoor humidity on the app — check this reading before adjusting the thermostat for perceived warmth.
+
+3.6 FAQ (4 Questions)
+FAQ 1
+Q: Why does my house feel clammy even though the AC is set to 72°F?
+A: The feeling of clamminess is caused by high indoor humidity, not high temperature. Your AC is maintaining 72°F, but the humidity is likely 60–70% — well above the comfortable 40–50% range. In Jacksonville’s 70–90% outdoor humidity, the AC alone cannot maintain ideal indoor moisture levels because it only dehumidifies while actively cooling. During off-cycles, humidity rebounds. The solution is supplemental dehumidification independent of the cooling cycle, not lowering the thermostat (which just increases your JEA bill without addressing moisture).
+
+FAQ 2
+Q: Will a portable dehumidifier fix my humidity problem?
+A: A portable dehumidifier helps in a single room but cannot manage whole-home humidity in a Jacksonville climate. Portable units typically remove 30–50 pints per day from one room and require manual emptying or continuous drainage. A whole-home ducted dehumidifier removes 70–100+ pints per day across your entire home, integrates with your HVAC ductwork, and drains automatically through your existing condensate line. For a whole-home solution in Jacksonville’s humidity, a ducted system is significantly more effective.
+
+FAQ 3
+Q: Can an oversized AC cause humidity problems?
+A: Yes. An oversized AC is one of the most common causes of high indoor humidity in Florida homes. An oversized system cools the air so quickly that the thermostat is satisfied before the system has run long enough to remove adequate moisture. The result is short cycles of 5–8 minutes that cool the air but leave it humid. Properly sized systems run longer cycles (15–20 minutes) that allow time for moisture to condense on the evaporator coil and drain away. If your system short-cycles and your home feels clammy, your system may be oversized.
+
+FAQ 4
+Q: How much does a whole-home dehumidifier cost in Jacksonville?
+A: A whole-home ducted dehumidifier typically costs $1,500 to $3,000 installed in Jacksonville, depending on capacity and integration complexity. The unit connects to your existing HVAC ductwork and condensate drain, so no additional plumbing or drainage is required in most installations. Operating costs are modest — approximately $10–20 per month in electricity. Given that it prevents mold damage, improves comfort, and eliminates the need to lower the thermostat for perceived humidity (saving AC energy costs), the payback is typically 2–4 years. Call Cool & Cozy at (904) 555-0199 for a free IAQ assessment.
+
+3.7 Article CTA & Related
+Tired of the clammy feeling? Cool & Cozy provides free indoor air quality assessments that include humidity measurement, system evaluation, and solution recommendations specific to your Jacksonville home. Call (904) 555-0199 or schedule online.
+CTA: Schedule IAQ Assessment → /contact?service=indoor-air-quality
+
+Related
+Link
+Indoor Air Quality Service
+/services/indoor-air-quality
+How Often Should You Maintain Your AC?
+/resources/how-often-ac-maintenance
+AC Not Cooling Troubleshooting
+/resources/ac-not-cooling-troubleshooting
+Ductwork Repair & Sealing
+/services/ductwork
+
+4. Checklist
+Article + FAQPage + BreadcrumbList schema validates
+Humidity science is accurate (condensation process, relative humidity, 50% threshold for mold)
+Oversized system explanation is technically correct (sensible vs latent load)
+Fan Auto vs On advice is correct and zero-cost
+Dehumidifier pricing reflects Jacksonville market ($1,500–$3,000 installed)
+Cross-links to IAQ, ductwork, maintenance, installation, SEER verified
+Jacksonville-specific humidity data (74% annual average, 85–90% summer morning peaks)
+Click-to-call on all phone instances
+Educational deep-dive tone — explains the physics before selling the solution
+
+— End of Document —
+Prepared by TradeWorks AI  ·  May 2026  ·  v1.0
+

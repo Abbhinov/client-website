@@ -1,0 +1,205 @@
+﻿
+DEVELOPER IMPLEMENTATION GUIDE
+
+COOL & COZY AC REPAIR
+Licensed HVAC Contractor  ·  Jacksonville, Florida
+
+MURRAY HILL SERVICE AREA
+Area Landing Page — Single Document
+
+URL: coolcozyac.com/service-areas/murray-hill
+Prepared by: TradeWorks AI  |  Version 1.0  |  May 2026
+Classification: Client Confidential
+
+1. Page Identity & Architecture
+Property
+Specification
+URL Path
+/service-areas/murray-hill
+Canonical
+https://coolcozyac.com/service-areas/murray-hill
+Page Type
+Area child page (geographic landing page)
+Parent
+/service-areas (Service Areas Hub) → /service-areas/duval-county (County Hub)
+Breadcrumb
+Home > Service Areas > Murray Hill
+Primary Keyword
+AC repair Murray Hill Jacksonville
+Secondary Keywords
+HVAC Murray Hill Jacksonville, air conditioning Murray Hill, AC service Murray Hill FL
+Search Intent
+Local (neighborhood-specific AC search)
+Target Word Count
+1,200–1,600 words
+Primary Conversion
+Phone call
+Robots
+index, follow
+Sitemap
+Priority 0.7
+Est. Monthly Volume
+20–60
+
+1.1 Internal Linking
+TO /services/ac-repair: contextual link from HVAC challenges section
+TO /services/ac-installation: cross-link from housing-stock aging content
+TO /services/ac-maintenance: “preventive maintenance” mention
+TO /services/ductwork: cross-link from ductwork-specific local challenge
+TO /contact?service=ac-repair: at least 2 CTAs
+TO nearby area pages: Riverside-Avondale, Springfield, Orange Park
+FROM /service-areas hub: neighborhood link grid
+FROM homepage: service areas section
+Every area page must have at least 3–4 unique local differentiators that cannot be produced by swapping the city name in a template. This page’s differentiators are specific to Murray Hill’s housing stock, geography, and HVAC challenges.
+
+2. <head> Section
+Property
+Specification
+Title Tag
+AC Repair Murray Hill Jacksonville FL | Cool & Cozy AC Repair
+Meta Description
+AC repair, installation & maintenance in Murray Hill, Jacksonville, FL. Licensed contractor (CAC1819948), same-day service, bilingual team. Call (904) 555-0199.
+Canonical
+https://coolcozyac.com/service-areas/murray-hill
+JSON-LD: Service schema with areaServed: { "@type": "Neighborhood", "name": "Murray Hill", "containedInPlace": { "@type": "City", "name": "Jacksonville" } }. BreadcrumbList (3-level). FAQPage (3 questions).
+
+3. Section-by-Section Build
+
+3.1 Page Hero
+Breadcrumb
+Home > Service Areas > Murray Hill
+H1
+AC Repair & HVAC Services in Murray Hill, Jacksonville, FL
+Subheadline
+Cool & Cozy AC Repair serves Murray Hill with licensed AC repair, installation, maintenance, and emergency service. Same-day response. Honest pricing. Se habla español.
+CTAs
+Property
+Specification
+Primary
+Call (904) 555-0199 — Coral bg, pill, tel: link
+Secondary
+Schedule Service — white border, pill, /contact?service=ac-repair
+Trust Line
+✓ FL License CAC1819948  ·  ✓ Same-Day Service  ·  ✓ Free Estimates  ·  ✓ Se habla español
+Evergreen CSS-pattern hero. No photo background (fast LCP). Same design as services hub hero.
+
+3.2 AEO Introduction
+H2
+AC Repair & HVAC Services in Murray Hill, Jacksonville, FL
+AEO Paragraph
+Cool & Cozy AC Repair provides AC repair, installation, maintenance, and emergency service to homes and rental properties in Murray Hill and the surrounding Westside neighborhoods of Jacksonville, including Edgewood, Lackawanna, Wesconnett, and Lake Shore. Murray Hill is one of Jacksonville’s most rapidly revitalizing neighborhoods, with a growing arts and small-business district along Edgewood Avenue attracting new residents to a community of affordable 1940s–1960s bungalows and cottages. These smaller homes present specific HVAC challenges: compact mechanical spaces, aging electrical systems, and ductwork original to homes built 60–80 years ago. Cool & Cozy is a Florida-licensed contractor (CAC1819948) serving Murray Hill with bilingual service, transparent pricing, and the technical experience to work effectively in older, smaller homes. Call (904) 555-0199.
+Word Count: 132 words
+AEO Targets: “Who does AC repair in Murray Hill?” “AC repair near me in Murray Hill Jacksonville”
+
+3.3 Neighborhoods & Areas We Cover
+H2
+Murray Hill Neighborhoods Cool & Cozy Serves
+Our service coverage in Murray Hill includes: Murray Hill, Edgewood, Lackawanna, Wesconnett, Lake Shore. If your neighborhood isn’t listed, call (904) 555-0199 — we very likely serve your area.
+Same 2–3 column link grid as homepage service areas section. Each sub-neighborhood name is plain text (not a separate page link) since these are sub-areas within this landing page’s coverage.
+
+3.4 HVAC Challenges Specific to Murray Hill
+Overview
+This is the section that makes this page genuinely unique — not a template with Murray Hill swapped in. Each differentiator describes a specific HVAC challenge rooted in Murray Hill’s housing stock, geography, or demographic characteristics that a generic “AC repair Jacksonville” page cannot address.
+Layout
+Property
+Specification
+Container
+#F0E6D3 (Warm Sand), 960px centered
+Content
+H2
+Why Murray Hill Homes Have Specific HVAC Needs
+
+1940s–1960s Bungalows and Cottages — Murray Hill’s housing stock is dominated by small bungalows and cottages built in the 1940s through 1960s, typically 900–1,400 square feet on compact lots. These homes were designed for an era before central air conditioning was standard in Florida. Original construction often includes concrete block walls, single-pane jalousie or awning windows, minimal insulation, and no dedicated mechanical closet for HVAC equipment. Retrofitting modern AC into these homes requires creative air handler placement, compact ductwork design, and system sizing that accounts for the higher heat gain from poor insulation and single-pane glass. Cool & Cozy has extensive experience with this exact housing type across Jacksonville’s older Westside neighborhoods.
+
+Revitalization Bringing New Owners to Old Homes — Murray Hill’s arts district revival along Edgewood Avenue has attracted a wave of new homebuyers purchasing and renovating older homes. These buyers often discover HVAC challenges during renovation: non-existent ductwork, undersized electrical panels (60–100 amp services common in this era), and previous HVAC installations that were done cheaply rather than correctly. Cool & Cozy works with renovation-stage homeowners to design HVAC systems that integrate properly with the renovation plan rather than being an afterthought bolted on at the end.
+
+Affordable Housing and Rental Market — Murray Hill’s affordability makes it a significant rental market, with single-family rentals, duplexes, and small multi-family properties. Property managers and landlords in Murray Hill need a contractor who understands older, quirkier systems and can maintain them reliably at a price point that works within the neighborhood’s rental economics. Cool & Cozy’s transparent per-unit pricing and bilingual tenant communication serve Murray Hill’s diverse renter population effectively.
+
+Compact Lots and Access Challenges — Murray Hill’s narrow lots and close house spacing create access challenges for HVAC service: tight side yards limit equipment delivery, outdoor units sit close to property lines (neighbor noise sensitivity), and attic access in single-story bungalows often requires maneuvering through cramped ceiling hatches. Cool & Cozy’s technicians are experienced working in these constrained spaces and plan equipment placement to balance performance, accessibility for future service, and neighbor considerations.
+
+These differentiators are researched and specific to Murray Hill. They reference actual housing eras, geographic features, and local conditions. This depth prevents Google from classifying this page as a thin doorway page with template-swapped content.
+
+3.5 HVAC Services Available in Murray Hill
+All Cool & Cozy services are available in Murray Hill:
+AC Repair & Diagnostics → /services/ac-repair
+AC Installation & Replacement → /services/ac-installation
+AC Maintenance & Tune-Ups → /services/ac-maintenance
+Emergency AC Repair → /services/emergency-ac-repair
+Commercial HVAC & Property Management → /services/commercial-hvac
+Ductwork Repair & Sealing → /services/ductwork
+Indoor Air Quality → /services/indoor-air-quality
+Thermostat Installation → /services/thermostat-installation
+Each service name is a link to the corresponding service page. This section provides 8 internal links to the services silo from every area page.
+
+3.6 Property Managers in Murray Hill
+Property
+Specification
+Container
+#1A5653 (Evergreen), 960px, compact
+Eyebrow
+FOR PROPERTY MANAGERS
+H3
+Managing Rental Properties in Murray Hill?
+Cool & Cozy serves property managers with rental homes, duplexes, and apartment units throughout Murray Hill. Priority emergency response for tenant AC failures, bilingual tenant communication, per-unit maintenance agreements, and portfolio condition reporting. One contractor for all your Murray Hill properties.
+CTA: “Discuss Your Murray Hill Properties” → /contact?service=commercial
+Same compact Evergreen PM callout as other service pages.
+
+3.7 FAQ Section (3 Questions)
+Property
+Specification
+Container
+#EAF3F2 (Sky Mist), 800px, accordion
+FAQ 1
+Q: Can Cool & Cozy install central AC in my Murray Hill bungalow that doesn’t have ductwork?
+A: Yes. Many Murray Hill bungalows were built before central air was standard and may have window units or no cooling at all. Cool & Cozy offers two solutions: a conventional central system with compact ductwork designed for smaller homes (if attic or crawlspace access allows), or a ductless mini-split system that cools individual rooms without any ductwork. Mini-splits are often the best fit for Murray Hill’s compact floor plans and limited mechanical space. Call (904) 555-0199 for a free consultation.
+
+FAQ 2
+Q: I’m renovating a Murray Hill home. When should I plan the HVAC?
+A: Plan HVAC early in the renovation — ideally during the design phase before walls are closed up. This allows ductwork to be routed through wall cavities, electrical upgrades to be coordinated with the HVAC load, and equipment placement to be integrated with the floor plan rather than awkwardly retrofitted afterward. Cool & Cozy works with renovation-stage homeowners and their contractors to design systems that fit the renovation plan. Call (904) 555-0199 to discuss your project before construction begins.
+
+FAQ 3
+Q: Does Cool & Cozy serve rental properties and duplexes in Murray Hill?
+A: Yes. Cool & Cozy serves landlords and property managers with single-family rentals, duplexes, and small multi-family properties throughout Murray Hill, Edgewood, Lackawanna, and the surrounding Westside. We offer per-unit maintenance agreements, priority emergency response for tenant calls, bilingual communication with tenants in English or Spanish, and honest pricing that works within Murray Hill’s rental economics. Call (904) 555-0199.
+
+FAQPage JSON-LD: 3 questions, full answer text, in <head>.
+
+3.8 Nearby Service Areas
+Cross-links to adjacent area pages:
+Riverside-Avondale → /service-areas/riverside-avondale
+Springfield → /service-areas/springfield
+Orange Park → /service-areas/orange-park
+All Service Areas → /service-areas
+3-card grid, same design as Related Services cards on service pages.
+
+3.9 Final CTA
+H2
+Need AC Service in Murray Hill? Call Cool & Cozy.
+Body
+Whether it’s a repair, a new installation, or scheduled maintenance for your Murray Hill home or rental property — we’re one call away. Licensed, insured, bilingual, and always fairly priced.
+CTAs
+Property
+Specification
+Primary
+Call (904) 555-0199 — Coral bg, pill, tel: link
+Secondary
+Schedule Service — white border, pill, /contact?service=ac-repair
+Evergreen solid bg, 720px centered, 72px/40px padding.
+
+4. Reference: Checklist
+HTML/JSON-LD validates (Service with Neighborhood areaServed, BreadcrumbList, FAQPage 3 questions)
+Title tag unique: contains “Murray Hill” + “Jacksonville”
+H1 unique: contains “Murray Hill” + service keywords
+Breadcrumb functional: Home > Service Areas > Murray Hill
+All 4 local differentiators are specific to Murray Hill (not template-swappable)
+8 service links verified to correct service pages
+3 nearby area page links verified
+Click-to-call on all phone instances
+FAQ accordion functional
+PM section on Evergreen bg: contrast verified
+PageSpeed Mobile > 90 (CSS-only hero, minimal images)
+No duplicate content with other area pages: differentiators are Murray Hill-specific
+XML sitemap includes /service-areas/murray-hill, priority 0.7
+
+— End of Document —
+Prepared by TradeWorks AI  ·  May 2026  ·  v1.0
+

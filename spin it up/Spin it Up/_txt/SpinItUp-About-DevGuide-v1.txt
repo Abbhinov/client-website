@@ -1,0 +1,495 @@
+
+SPIN IT UP LAUNDRY
+ABOUT PAGEDEVELOPER GUIDE
+Section-by-Section Implementation Specification
+
+URL: spinituplaundry.net/about/
+Prepared by: TradeWorks AI  |  Version 1.0  |  May 2026
+Classification: Client Confidential
+
+Table of Contents
+1  How to Use This Guide
+2  Page Identity & Architecture
+3  Complete <head> Section
+4  Section 1: Site Header & Navigation
+5  Section 2: Hero Banner
+6  Section 3: Our Story
+7  Section 4: The Facility
+8  Section 5: Our Commitment
+9  Section 6: By the Numbers
+10  Section 7: Visit Us CTA Block
+11  Section 8: Footer & Sticky Mobile CTA
+12  Reference: Image Asset Inventory
+13  Reference: GA4 Event Tracking
+14  Reference: Implementation Checklist
+
+1. How to Use This Guide
+This developer guide provides the complete implementation specification for the About page (/about/). This is a trust-building page — its conversion role is indirect. Visitors land here to learn who’s behind the business before deciding to use it. The page tells the family-business story, showcases the facility investment, and connects Spin It Up to the Avondale community.
+The About page doesn’t have a dedicated form or direct conversion CTA. Its job is to build enough trust that the visitor proceeds to a service page, the contact page, or calls directly. The final CTA block routes them there.
+Content Note
+NOTE:  The story content in this guide is written as a plausible family-business narrative based on the audit data (family-owned, Avondale community, facility investment in new machines). The client MUST review and revise the story sections to reflect the actual owner’s history, motivations, and family background. Placeholder names and specific biographical details should be replaced with real information before publication.
+Content Authoring Rules
+All content written fresh.
+Story content must be client-reviewed and revised to reflect real history.
+Photos must be real — not stock. Owner, family, staff, facility.
+Tone: warm, genuine, community-oriented. Not corporate. Not salesy.
+
+2. Page Identity & Architecture
+URL Path
+/about/
+Page Type
+Standalone — Company
+Canonical URL
+https://spinituplaundry.net/about/
+Breadcrumb
+Home > About
+Parent Page
+/ (Homepage)
+Primary Keyword
+about spin it up laundry (branded)
+Secondary Keywords
+laundromat avondale chicago, family owned laundromat chicago
+Search Intent
+Navigational / Informational
+Target Word Count
+800–1,000 words
+Primary Conversion Goal
+Trust building → click to contact, services, or call
+Secondary Conversion Goals
+Social media follow, review generation
+Robots Directive
+index, follow
+XML Sitemap
+Include — priority 0.6
+Content Update Frequency
+Evergreen; update for milestones or team changes
+hreflang
+None for Phase 1 (About page English-only initially)
+Internal Linking Requirements
+Direction
+Link
+Anchor Text
+Cross-silo
+/services/
+Our Services, View Our Services
+Cross-silo
+/services/pickup-delivery/
+Pickup & Delivery
+Cross-silo
+/contact/
+Contact Us, Get in Touch
+Cross-silo
+/faq/
+FAQ
+Cross-silo
+/pricing/
+View Pricing
+Up → Root
+/
+Home (breadcrumb)
+
+3. Complete <head> Section
+3.1 Meta Tags
+Tag
+Content
+<title>
+About Spin It Up Laundry | Family-Owned in Avondale, Chicago (54 characters)
+<meta name="description">
+Family-owned laundromat in Avondale, Chicago. 41 washers, 52 dryers, 130 lb machines. Invested in new equipment & community. Open 6 AM–11 PM daily. (148 characters)
+<meta name="robots">
+index, follow
+<meta name="viewport">
+width=device-width, initial-scale=1
+<meta charset>
+UTF-8
+<html lang>
+en
+<link rel="canonical">
+https://spinituplaundry.net/about/
+3.2 Open Graph & Twitter
+Tag
+Content
+og:title
+About Us | Spin It Up Laundry — Avondale, Chicago
+og:description
+Family-owned laundromat with brand-new machines, committed to the Avondale community. Learn our story.
+og:type
+website
+og:url
+https://spinituplaundry.net/about/
+og:image
+https://spinituplaundry.net/images/og-about.jpg (1200x630, <200KB)
+og:locale
+en_US
+og:site_name
+Spin It Up Laundry
+twitter:card
+summary_large_image
+twitter:title
+About Us | Spin It Up Laundry
+twitter:description
+Family-owned laundromat in Avondale, Chicago. New machines, community commitment.
+twitter:image
+https://spinituplaundry.net/images/og-about.jpg
+3.3 JSON-LD
+AboutPage schema + Laundromat entity (reinforces NAP) + BreadcrumbList.
+
+{
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  "name": "About Spin It Up Laundry",
+  "description": "Learn about Spin It Up Laundry, a family-owned laundromat in Avondale, Chicago.",
+  "url": "https://spinituplaundry.net/about/",
+  "mainEntity": {
+    "@type": "Laundromat",
+    "name": "Spin It Up Laundry",
+    "description": "Family-owned modern laundromat in Avondale, Chicago with 41 washers, 52 dryers, and 130 lb commercial-capacity machines.",
+    "telephone": "+1-773-654-1275",
+    "email": "info@spinituplaundry.net",
+    "url": "https://spinituplaundry.net/",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "3710 N Kimball Ave",
+      "addressLocality": "Chicago",
+      "addressRegion": "IL",
+      "postalCode": "60618"
+    },
+    "foundingDate": "[YEAR]",
+    "founder": {
+      "@type": "Person",
+      "name": "[OWNER NAME]"
+    },
+    "sameAs": [
+      "https://www.facebook.com/SpinItUpLaundry/",
+      "https://www.instagram.com/spinituplaundry/",
+      "https://www.yelp.com/biz/spin-it-up-laundry-chicago"
+    ]
+  }
+}
+
+DEV ACTION:  Replace [YEAR] with the actual founding year and [OWNER NAME] with the owner’s real name. These must come from the client.
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://spinituplaundry.net/" },
+    { "@type": "ListItem", "position": 2, "name": "About", "item": "https://spinituplaundry.net/about/" }
+  ]
+}
+
+
+4. Section 1: Site Header & Navigation
+Global header. Solid white. “About” nav item active.
+
+5. Section 2: Hero Banner
+Section Overview
+The About hero is slightly warmer than the service page heroes — it introduces the people behind the business. If a real owner/team photo is available, this hero uses a full-bleed background image (like the homepage hero) instead of the solid blue gradient. If not available at launch, use the standard blue gradient and schedule photography for Phase 2.
+Content Specifications
+Breadcrumb: Home > About — standard spec.
+
+H1 Headline: "The Family Behind Spin It Up" — 6 words. Font: 40px/800 (desktop), 32px (mobile). Color: white.
+
+Subheadline: "We built the laundromat we wished our neighborhood had." — 9 words. Font: 18px/400, rgba(255,255,255,0.85). Max-width: 560px, centered.
+
+Option A: Photo Hero
+If real owner/team photo is available: full-bleed background image with dark gradient overlay (same pattern as homepage hero). Height: 60vh (min 400px, max 600px). Photo should show the owner(s) in front of or inside the laundromat.
+Option B: Gradient Hero (Launch Fallback)
+If no photo available: standard Spin Blue gradient (#1E40AF → #1E3A8A). Padding: 64px 0 (desktop), 44px 16px (mobile). Same as other service page heroes.
+DEV ACTION:  Confirm with client whether an owner/team photo is available for the hero. If yes, implement Option A. If no, implement Option B and add a TODO comment in the HTML noting that the photo should be added in Phase 2.
+
+6. Section 3: Our Story
+Section Overview
+The emotional core of the page. Tells the founder’s story with a genuine narrative arc: the problem they saw in the neighborhood, the decision to invest, and what they built. Background: White (#FFFFFF).
+Layout Specifications
+Property
+Desktop
+Tablet
+Mobile
+Layout
+Two columns: text left (55%), image right (45%)
+Stacked: text top, image below
+Stacked
+Section Padding
+80px 0
+64px 0
+48px 16px
+Image
+480x600, border-radius 12px, object-fit cover
+Full width, max-height 400px
+Full width, max-height 320px
+Text Max Width
+560px
+100%
+100%
+Content Specifications
+H2: "Our Story" — 2 words. Font: 36px/700, Dark Slate.
+
+NOTE:  The following story is a plausible narrative framework based on audit data. The client MUST replace the bracketed details with their real story before publication. The structure and tone should be preserved; the facts must be real.
+
+"When [OWNER NAME] first started thinking about opening a laundromat in Avondale, the neighborhood didn’t have what it needed. The existing options had old machines, dim lighting, and limited hours. Families were hauling laundry across multiple bus routes to find a clean, safe place to wash. [He/She/They] saw a gap and decided to fill it — not with the minimum, but with the best."
+
+"Spin It Up Laundry opened at 3710 N Kimball Ave with a simple idea: brand-new everything. 41 washers. 52 dryers. Two 130 lb commercial machines that no other laundromat in the area could match. Free WiFi and coffee, because waiting for laundry shouldn’t feel like waiting. EBT accepted, because clean clothes shouldn’t depend on what payment method you carry. And free drying three days a week, because saving money matters in this neighborhood."
+
+"Today, Spin It Up serves hundreds of families across Avondale, Irving Park, Logan Square, Hermosa, and Albany Park. We offer self-service, wash-and-fold drop-off, pickup and delivery through the Cents app, commercial services for local businesses, and garment pressing. Every washer and dryer in the building is regularly maintained, and our attendants know many of our customers by name."
+
+"This is a family business, and we treat every customer like a neighbor — because you are."
+
+Total story: ~220 words. Font: 17px/400 Body Text, line-height 1.7. Paragraphs spaced 20px apart. Warm, genuine tone.
+Image Specification
+Image
+Dimensions
+Format
+Alt Text
+Notes
+about-owner
+480x600 (portrait)
+WebP+JPEG, <120KB
+"[OWNER NAME], founder of Spin It Up Laundry, inside the Avondale facility"
+Must be a real photo of the owner. Placeholder: facility interior from Yelp/Instagram until professional shoot.
+
+7. Section 4: The Facility
+Section Overview
+Photo-driven section showcasing the physical space. Validates the story claims with visual proof. Background: Ice Blue (#F0F9FF).
+Content Specifications
+H2: "Inside Spin It Up" — 3 words. Font: 36px/700, Dark Slate. Centered. Margin-bottom 16px.
+Subtext: "We didn’t just build a laundromat. We built the one Avondale deserved." — 12 words. 17px/400 Body Text. Centered. Margin-bottom 40px.
+
+Photo grid: 2x2 on desktop, 2x2 on tablet, 1-column stacked on mobile. Each photo: border-radius 12px, object-fit cover. Gap: 16px.
+Photo
+Subject
+Dimensions
+Alt Text
+facility-interior
+Wide shot of washer/dryer rows, clean and well-lit
+600x400
+"Rows of brand-new washers and dryers inside Spin It Up Laundry"
+facility-machines
+Close-up of the 130 lb commercial washer
+600x400
+"130 lb commercial-capacity washing machine at Spin It Up Laundry"
+facility-amenities
+Coffee station, WiFi signage, seating area
+600x400
+"Free coffee station and WiFi at Spin It Up Laundry"
+facility-exterior
+Storefront from the street with signage visible
+600x400
+"Spin It Up Laundry storefront at 3710 N Kimball Ave, Avondale, Chicago"
+NOTE:  All four photos must be real photos of Spin It Up Laundry. The client’s Yelp listing has 18 photos that can serve as interim sources. Professional photography should be scheduled for Phase 2. Do not use stock laundromat photos.
+
+8. Section 5: Our Commitment
+Section Overview
+Values section connecting the business to its community role. This section differentiates Spin It Up from chain laundromats and commodity competitors. Background: White (#FFFFFF).
+Content Specifications
+H2: "What We Stand For" — 4 words. Font: 36px/700, Dark Slate. Centered. Margin-bottom 40px.
+
+Three value cards in a row (desktop), stacked (mobile). Each card has an icon, a title, and a 2–3 sentence description.
+Icon (Lucide)
+Value
+Description
+Heart
+Community First
+We’re not a chain and we’re not going anywhere. We live in this neighborhood, and we built Spin It Up for the people who live here. EBT acceptance, free drying specials, and affordable pricing aren’t marketing tactics — they’re how we believe a neighborhood laundromat should work.
+Sparkles
+Clean, Always
+Our facility is cleaned throughout the day, every day. Every machine is maintained on a regular schedule. The floors, the folding tables, the restrooms — nothing gets neglected. If something isn’t right, our attendant fixes it before you have to ask.
+ShieldCheck
+Invested in Quality
+We didn’t buy used machines. We didn’t cut corners on the build-out. Every washer and dryer is brand new and commercial-grade. The 130 lb machines exist because your neighborhood deserves equipment that actually works for the loads you need to wash.
+Each card: bg #F8FAFC, border 1px #E2E8F0, border-radius 12px, padding 28px 24px. Icon: 40px, Fresh Cyan (#06B6D4), centered above title. Title: 20px/700 Dark Slate. Description: 16px/400 Body Text, line-height 1.6. Card gap: 24px. Section padding: 80px 0 (desktop), 48px 16px (mobile).
+
+9. Section 6: By the Numbers
+Section Overview
+Quick-scan metrics that reinforce scale and credibility. Same visual pattern as the homepage Trust & Credentials Bar but with about-page-specific metrics. Background: Ice Blue (#F0F9FF).
+Content Specifications
+Metric
+Value
+Label
+Washers
+41
+Brand-New Machines
+Dryers
+52
+Commercial-Grade
+Max Capacity
+130 lb
+Largest in Avondale
+Open
+7 Days
+6 AM – 11 PM
+Rating
+4.6★
+Across Google & Yelp
+Neighborhoods
+5
+Served via Delivery
+Layout: 6 items in a single row (desktop), 3x2 grid (tablet), 2x3 grid (mobile). Each item: centered, icon or decorative number circle in Fresh Cyan, value in 32px/800 Dark Slate, label in 14px/500 Caption Gray. Section padding: 48px 0.
+
+10. Section 7: Visit Us CTA Block
+Content Specifications
+H2: "Come See for Yourself" — 4 words. White. Centered. Font: 36px/700.
+Subtitle: "3710 N Kimball Ave, Avondale. Open 6 AM to 11 PM, seven days a week. Free drying Tue–Wed–Thu." — 17 words. 18px/400 rgba(255,255,255,0.85). Centered.
+
+Button
+Text
+Link
+Style
+1
+Get Directions
+Google Maps directions URL
+CTA Orange
+2
+View Our Services
+/services/
+White outline
+3
+Call (773) 654-1275
+tel:+17736541275
+Ghost white
+Background: Spin Blue gradient. Section padding: 80px 0 desktop, 48px 16px mobile.
+
+Social Follow Links (below buttons): 
+"Follow us:" + Facebook, Instagram, Yelp icons as 36x36px links. Color: rgba(255,255,255,0.7), hover: white. Spaced 16px apart. Centered.
+
+11. Section 8: Footer & Sticky Mobile CTA
+Global footer: no modifications.
+
+Sticky Mobile CTA Bar: default configuration — "Call Now" (orange) + "Schedule Pickup" (blue). The About page serves all visitor intents, so the default bar is appropriate.
+
+12. Reference: Image Asset Inventory
+Image ID
+Section
+Dimensions
+Format
+Max Size
+Alt Text
+Loading
+og-about
+Social share
+1200x630
+JPEG
+<200KB
+Spin It Up Laundry team and facility
+N/A (meta)
+hero-about
+Hero (Option A)
+1920x1080
+WebP+JPEG
+<180KB
+[OWNER NAME] at Spin It Up Laundry in Avondale
+preload (if used)
+about-owner
+Our Story
+480x600
+WebP+JPEG
+<120KB
+[OWNER NAME], founder of Spin It Up Laundry
+lazy
+facility-interior
+The Facility
+600x400
+WebP+JPEG
+<100KB
+Interior of Spin It Up with rows of modern machines
+lazy
+facility-machines
+The Facility
+600x400
+WebP+JPEG
+<100KB
+130 lb commercial washing machine
+lazy
+facility-amenities
+The Facility
+600x400
+WebP+JPEG
+<100KB
+Free coffee and WiFi station
+lazy
+facility-exterior
+The Facility
+600x400
+WebP+JPEG
+<100KB
+Spin It Up Laundry storefront on Kimball Ave
+lazy
+logo-light
+Header/Footer
+SVG
+SVG
+<10KB
+Spin It Up Laundry logo
+inline
+NOTE:  This is the most photo-dependent page on the site. If real photos are not available at launch, use the 18 Yelp photos and Instagram content as interim sources. The page loses significant credibility with stock photos — better to launch with amateur real photos than polished stock images. Professional photography is a Phase 2 priority.
+
+13. Reference: GA4 Event Tracking
+Event Name
+Trigger
+Parameters
+Section
+phone_click
+Click tel: link
+phone_number, page_section
+CTA Block, Sticky Bar
+directions_click
+Click “Get Directions”
+page_section
+CTA Block
+cta_click
+Click any CTA button
+button_text, destination_url, page_section
+CTA Block
+social_click
+Click social media icon
+platform (facebook/instagram/yelp)
+CTA Block
+services_link_click
+Click “View Our Services”
+destination_url
+CTA Block
+photo_gallery_view
+Scroll to facility photo grid (visibility)
+section: facility
+The Facility
+
+14. Reference: Implementation Checklist
+Pre-Development (CLIENT ACTION REQUIRED)
+Client provides real owner name and founding year for schema
+Client reviews and revises story content (Section 6) with real history
+Client provides owner photo for Our Story section
+Client provides or approves 4 facility photos for The Facility section
+Client provides or approves hero photo (Option A) or confirms gradient fallback (Option B)
+Technical Validation
+HTML validates
+AboutPage + Laundromat + BreadcrumbList schemas validate
+[OWNER NAME] and [YEAR] replaced in schema
+HTTPS enforced
+Mobile PageSpeed >90, Desktop >95
+All internal links return 200
+All tel: links functional
+Social media links open correct profiles in new tab
+OG tags render correctly
+Content & SEO
+Story content reviewed and approved by client
+No placeholder text (all [BRACKETS] replaced)
+Title tag within 60 characters
+Meta description within 155 characters
+Single H1
+Breadcrumb: Home > About
+Canonical URL correct
+XML sitemap includes at priority 0.6
+Accessibility & Images
+Skip-to-content link present
+All images have descriptive alt text (updated with real names/descriptions)
+All photos are real, not stock
+Color contrast WCAG 2.1 AA
+ARIA landmarks
+Analytics
+phone_click confirmed
+social_click fires with correct platform parameter
+directions_click confirmed
+
+
+End of Document
+TradeWorks AI — Spin It Up Laundry About Page Developer Guide v1.0
+Prepared by TradeWorks AI — May 2026

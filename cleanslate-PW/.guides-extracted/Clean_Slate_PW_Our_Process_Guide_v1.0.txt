@@ -1,0 +1,219 @@
+﻿
+
+ 
+
+OUR PROCESS DEVELOPER GUIDE
+
+Our Process
+
+
+ 
+
+5-Step Service Methodology
+
+Clean Slate Pressure Washing
+
+A Fresh Start for Every Surface
+
+Brandon, Florida  |  Hillsborough County
+
+cleanslatepw.com
+
+Prepared by TradeWorks AI
+
+Version 1.0  |  April 2026
+
+Client Confidential
+
+
+
+
+
+
+
+
+Section 1: How to Use This Guide
+
+This guide covers the Our Process page (/about/our-process/) — a child of the About page that walks visitors through Clean Slate PW&apos;s 5-step service methodology from initial contact through post-service follow-up. This page converts skeptical visitors who need to understand what happens on their property before committing. It is the primary landing page for queries like &apos;how does pressure washing work&apos; and &apos;what to expect from a pressure washing service.&apos;
+
+
+
+Section 2: Page Identity &amp; Architecture
+
+Attribute
+
+Value
+
+URL Path
+
+/about/our-process/
+
+Canonical URL
+
+https://cleanslatepw.com/about/our-process/
+
+Page Type
+
+Trust / Educational
+
+Parent
+
+/about/
+
+Breadcrumb
+
+Home → About → Our Process
+
+Primary Keyword
+
+Pressure washing process Brandon FL
+
+Secondary Keywords
+
+what to expect pressure washing, how soft washing works, exterior cleaning process Florida
+
+Search Intent
+
+Informational / Trust
+
+Target Word Count
+
+1,200–1,600 words
+
+
+
+Section 3: &lt;head&gt; Section
+
+Tag
+
+Value
+
+&lt;title&gt;
+
+Our 5-Step Cleaning Process | Clean Slate Pressure Washing | Brandon FL
+
+&lt;meta description&gt;
+
+See how Clean Slate PW cleans your property from start to finish. 5-step process: assess, protect, clean, detail, inspect. Licensed, insured. Call (813) 555-0283.
+
+&lt;link rel=canonical&gt;
+
+https://cleanslatepw.com/about/our-process/
+
+JSON-LD: HowTo schema with 5 steps. BreadcrumbList (Home → About → Our Process).
+
+
+
+Section 4: Hero Section
+
+H1
+
+Our 5-Step Cleaning Process
+
+Subheadline
+
+Every Clean Slate PW project follows the same methodical process — because consistent results come from consistent preparation, not shortcuts.
+
+Background
+
+Action photograph of technician prepping a job site. Navy overlay.
+
+CTA
+
+&apos;Get a Free Estimate&apos; → /free-estimate/
+
+
+
+Section 5: AEO Introduction
+
+H2: How We Clean Your Property — Start to Finish
+
+Clean Slate Pressure Washing follows a standardized 5-step exterior cleaning process on every residential and commercial project in the Tampa Bay region. This process ensures consistent, damage-free results regardless of property size, surface type, or contamination level. Every step — from the initial property assessment through the post-cleaning inspection — is designed to protect your surfaces, your landscaping, and your investment. The 5 steps are: Assess, Protect, Clean, Detail, and Inspect. Each step is described in full below.
+
+
+
+Section 6: The 5-Step Process
+
+Display as a vertical timeline with numbered steps. Each step gets a large number icon (1-5), H3 heading, 60-80 word description, and a supporting photograph showing that step in action.
+
+
+Step 1 — Assess Your Property
+
+Before any equipment comes off the truck, we walk your entire property with you. We identify every surface to be cleaned, note the material type (stucco, vinyl, concrete, tile, screen), assess contamination severity (light maintenance vs. heavy algae vs. deep staining), and document any pre-existing conditions. This assessment determines which cleaning method, chemistry, and pressure level each surface will receive. We also identify landscaping that needs protection and note any access considerations (gate codes, pet containment, neighbor proximity).
+
+Image: Technician with clipboard walking property with homeowner. Alt: &apos;Clean Slate PW technician assessing a home exterior in Brandon, FL.&apos;
+
+
+Step 2 — Protect Your Surroundings
+
+Before any cleaning solution is applied, we protect everything adjacent to the work area. All landscaping within splash range is pre-rinsed with clean water to saturate the soil and leaf surfaces — this prevents chemical absorption. Delicate plants receive additional protection with lightweight tarps. Outdoor furniture, grills, and decorative items are moved or covered. Windows and doors are checked for secure closure. We lay down equipment pads to prevent driveway scuffs from hoses and surface cleaners. This step takes 15-30 minutes and is never skipped regardless of project size.
+
+Image: Crew member rinsing landscaping beds before cleaning. Alt: &apos;Protecting landscaping before soft washing a Brandon, FL home.&apos;
+
+
+Step 3 — Clean with the Right Method
+
+This is where method selection matters most. Soft wash surfaces (roofs, siding, stucco, screens, painted wood) receive our biodegradable cleaning solution applied at 100-500 PSI through calibrated spray tips. The solution dwells for 10-30 minutes, dissolving organic growth at the cellular level. Pressure wash surfaces (concrete driveways, sidewalks, pavers, pool decks) receive our commercial surface cleaner at 2,500-4,000 PSI, which delivers an even, streak-free clean across the entire surface. We never use the wrong method on any surface — the assessment in Step 1 determines exactly what goes where.
+
+Image: Split image — soft wash wand on stucco (left) and surface cleaner on driveway (right). Alt: &apos;Soft washing siding and pressure washing concrete — two methods for two surface types.&apos;
+
+
+Step 4 — Detail the Edges and Transitions
+
+After the primary cleaning pass, our technicians detail every edge, corner, and transition area that the broad cleaning tools cannot reach. Window frames, door surrounds, fascia trim, light fixtures, downspouts, expansion joints, landscape borders, and curb lines all receive hand attention with specialized tips and soft brushes. This step is where the difference between a professional clean and a DIY clean becomes visible — it is the finishing work that makes the entire property look deliberate and complete.
+
+Image: Close-up of technician detailing window frame edges. Alt: &apos;Detail cleaning around window frames and trim on a Florida home.&apos;
+
+
+Step 5 — Inspect with You
+
+We walk the property again — this time with you — to inspect every cleaned surface together. We point out the results, answer any questions, and identify any areas that need a second pass. If anything does not meet your expectations or ours, we re-treat it on the spot before we leave. After the walk, we rinse all landscaping a final time, replace any moved furniture, and pack up our equipment leaving no trace. Before we drive away, we capture after photos for your records and for our portfolio (with your permission).
+
+Image: Technician and homeowner walking property together. Alt: &apos;Post-cleaning inspection walk-through with a Brandon homeowner.&apos;
+
+
+
+Section 7: What Makes This Different
+
+H2: Why Process Matters More Than Equipment
+
+Most pressure washing companies skip Steps 1, 2, 4, and 5 entirely. They arrive, blast water at everything, and leave. The result: damaged surfaces, dead landscaping, missed spots, and zero accountability. Our 5-step process exists because we learned that consistent preparation produces consistent results — and consistent results produce customers who come back every year and refer their neighbors.
+
+
+
+Section 8: Final CTA
+
+H2: Ready to Experience the Process?
+
+Dual CTAs: &apos;Get My Free Estimate&apos; + &apos;Call (813) 555-0283&apos;. Standard pattern.
+
+
+
+Section 9: Implementation Checklist
+
+
+All 5 process steps match exact copy.
+
+
+HowTo schema validates with 5 steps.
+
+
+5 process photographs present with correct alt text.
+
+
+Canonical: https://cleanslatepw.com/about/our-process/
+
+
+Breadcrumb: Home → About → Our Process.
+
+
+PageSpeed mobile &gt;85.
+
+
+
+— End of Our Process Guide —
+
+Clean Slate Pressure Washing — Our Process v1.0 | TradeWorks AI | April 2026
+
+
+

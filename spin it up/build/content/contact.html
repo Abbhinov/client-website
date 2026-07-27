@@ -1,0 +1,76 @@
+    <!-- HERO BANNER -->
+    <section class="page-hero" aria-label="Contact Us" style="padding-top:calc(var(--header-height) + var(--space-12));padding-bottom:var(--space-12);">
+      <div class="container">
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+          <ol>
+            <li><a href="/">Home</a></li>
+            <li aria-current="page">Contact</li>
+          </ol>
+        </nav>
+        <h1>Get in Touch</h1>
+        <p class="page-hero__lead">Questions about our services? Ready to schedule? We're here to help.</p>
+      </div>
+    </section>
+
+    <!-- CONTACT FORM + INFO -->
+    <section class="section" aria-label="Contact form and business information">
+      <div class="container">
+        <div class="contact-split">
+          <div class="contact-col-form">
+            <h2 style="font-size:1.75rem;">Send Us a Message</h2>
+            <form class="js-form form-grid" data-form-type="contact" action="#" method="post" novalidate>
+              <div class="field"><label for="name">Name <span aria-hidden="true">*</span><span class="visually-hidden">(required)</span></label><input id="name" name="name" type="text" required minlength="2" autocomplete="name" placeholder="Your name"><span class="field__error">Please enter your name.</span></div>
+              <div class="field"><label for="email">Email <span aria-hidden="true">*</span><span class="visually-hidden">(required)</span></label><input id="email" name="email" type="email" required autocomplete="email" placeholder="your@email.com"><span class="field__error">Please enter a valid email address.</span></div>
+              <div class="field"><label for="phone">Phone <span aria-hidden="true">*</span><span class="visually-hidden">(required)</span></label><input id="phone" name="phone" type="tel" required autocomplete="tel" inputmode="tel" placeholder="(773) 555-0100"><span class="field__error">Please enter your phone number.</span></div>
+              <div class="field"><label for="service">Service Interest <span aria-hidden="true">*</span><span class="visually-hidden">(required)</span></label><select id="service" name="service" required><option value="" disabled selected>Select a service…</option><option value="self-service">Self-Service Laundry</option><option value="wash-fold">Wash &amp; Fold</option><option value="pickup-delivery">Pickup &amp; Delivery</option><option value="commercial">Commercial Services</option><option value="ironing">Ironing &amp; Pressing</option><option value="general">General Question</option><option value="other">Other</option></select><span class="field__error">Please select a service.</span></div>
+              <div class="field"><label for="message">Message <span style="font-weight:400;color:var(--caption-gray);">(optional)</span></label><textarea id="message" name="message" rows="4" maxlength="1000" placeholder="How can we help?"></textarea></div>
+              <div class="honeypot" aria-hidden="true"><label>Leave blank<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+              <button class="btn btn--primary btn--block" type="submit">Send Message</button>
+              <p class="text-center" style="font-size:14px;color:var(--caption-gray);margin:0;">We typically respond within a few hours during business hours.</p>
+            </form>
+            <div class="form-success" role="status" hidden data-template="Thank you, {name}! We've received your message and will be in touch shortly. For immediate help, call (773) 654-1275.">Thank you! We've received your message and will be in touch shortly. For immediate help, call <a href="tel:+17736541275">(773) 654-1275</a>.</div>
+          </div>
+          <div class="contact-col-info">
+            <h2 style="font-size:1.75rem;">Visit Us</h2>
+            <div class="info-panel">
+              <ul>
+                <li class="info-phone"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg><a href="tel:+17736541275">(773) 654-1275</a></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg><a href="mailto:info@spinituplaundry.net">info@spinituplaundry.net</a></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><a href="https://www.google.com/maps/dir/?api=1&destination=3710+N+Kimball+Ave,+Chicago,+IL+60618">3710 N Kimball Ave, Chicago, IL 60618</a></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><span>Open 6:00 AM – 11:00 PM, 7 Days a Week<small>Last wash at 9:30 PM</small></span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 17h2l.64-2.54a6 6 0 0 0-.46-4.32l-1.1-2.2A3 3 0 0 0 17.4 6H6.6a3 3 0 0 0-2.68 1.94l-1.1 2.2a6 6 0 0 0-.46 4.32L3 17h2"/><circle cx="7" cy="17" r="2"/><path d="M9 17h6"/><circle cx="17" cy="17" r="2"/></svg><span style="font-weight:400;">Free parking in front of the laundromat</span></li>
+              </ul>
+            </div>
+            <div class="contact-trust">
+              <span><span class="star">&#9733;</span> 4.6 on Google</span>
+              <span class="badge badge--feature">EBT Accepted</span>
+              <a href="/es/contacto/">Se Habla Español</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MAP -->
+    <section class="section" style="padding-top:0;" aria-label="Location map">
+      <div class="container">
+        <div class="map-full">
+          <iframe src="https://www.google.com/maps?q=3710+N+Kimball+Ave,+Chicago,+IL+60618&z=15&output=embed" title="Spin It Up Laundry Location Map" aria-label="Map showing Spin It Up Laundry location at 3710 N Kimball Ave, Avondale, Chicago" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="center-cta" style="margin-top:var(--space-6);">
+          <a class="btn btn--outline" href="https://www.google.com/maps/dir/?api=1&destination=3710+N+Kimball+Ave,+Chicago,+IL+60618">Get Directions</a>
+          <p style="font-size:14px;color:var(--caption-gray);margin-top:var(--space-2);">Free parking available in front of the laundromat.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOURS & QUICK INFO -->
+    <section class="section section--alt" aria-label="Hours and quick info">
+      <div class="container">
+        <div class="tiles" style="grid-template-columns:repeat(3,1fr);">
+          <div class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><h3 class="tile__title">Hours</h3><p class="tile__text">Open 6:00 AM – 11:00 PM · 7 Days a Week · Last wash at 9:30 PM</p></div>
+          <div class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><h3 class="tile__title">Location</h3><p class="tile__text">3710 N Kimball Ave, Avondale, Chicago, IL 60618 · Free parking in front</p></div>
+          <div class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.38 3.46 16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z"/></svg><h3 class="tile__title">Services</h3><p class="tile__text">Self-Service • Wash &amp; Fold • Pickup &amp; Delivery • Commercial • Pressing</p></div>
+        </div>
+      </div>
+    </section>

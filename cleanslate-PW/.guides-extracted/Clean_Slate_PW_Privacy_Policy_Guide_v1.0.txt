@@ -1,0 +1,121 @@
+﻿
+
+ 
+
+PRIVACY POLICY PAGE GUIDE
+
+Privacy Policy
+
+
+ 
+
+Legal / Utility Page Specifications
+
+Clean Slate Pressure Washing
+
+A Fresh Start for Every Surface
+
+Brandon, Florida  |  Hillsborough County
+
+cleanslatepw.com
+
+Prepared by TradeWorks AI
+
+Version 1.0  |  April 2026
+
+Client Confidential
+
+
+
+
+
+
+
+
+Section 1: Privacy Policy Page Guide
+
+URL: /privacy-policy/. Linked from footer on every page. This page must comply with Florida state privacy requirements and, if running Google Ads or Meta ads, with CCPA/GDPR frameworks.
+
+
+
+Section 2: Page Specifications
+
+Attribute
+
+Value
+
+URL Path
+
+/privacy-policy/
+
+Canonical URL
+
+https://cleanslatepw.com/privacy-policy/
+
+Page Type
+
+Utility / Legal
+
+Breadcrumb
+
+Home → Privacy Policy
+
+Robots
+
+index, follow (privacy pages should be indexable for trust)
+
+&lt;title&gt;
+
+Privacy Policy | Clean Slate Pressure Washing
+
+&lt;meta description&gt;
+
+Privacy policy for Clean Slate Pressure Washing. Learn how we collect, use, and protect your personal information.
+
+
+
+Section 3: Required Content Sections
+
+The privacy policy must address these topics. Have the final version reviewed by legal counsel before publication.
+
+
+Information We Collect: Name, email, phone, address (from forms). IP address, browser type, pages visited (from analytics). Call recordings (with FL two-party consent disclosure).
+
+
+How We Use Your Information: To respond to inquiries, provide estimates, schedule services, improve our website, send service-related communications.
+
+
+Information Sharing: We do not sell personal information. Data may be shared with: CRM provider (Zoho), email service (SendGrid), call tracking (CallRail), analytics (Google). Each processes data per their own privacy policies.
+
+
+Cookies &amp; Tracking: GA4 analytics cookies, Google Ads remarketing (if applicable), session cookies. Consent managed via cookie banner with Google Consent Mode v2.
+
+
+Call Recording Disclosure: Florida is a two-party consent state. All call recordings require notification: &apos;This call may be recorded for quality assurance and training purposes.&apos;
+
+
+Your Rights: Right to request deletion of personal data. Right to opt out of marketing communications. Right to request a copy of stored personal data.
+
+
+Data Security: SSL encryption on all forms. Data stored in encrypted databases. Access restricted to authorized personnel.
+
+
+Children&apos;s Privacy: We do not knowingly collect information from children under 13.
+
+
+Policy Updates: Last updated date displayed at top. Material changes communicated via website notice.
+
+
+Contact: For privacy questions: info@cleanslatepw.com or (813) 555-0283.
+
+
+Section 4: Design
+
+Clean single-column text layout. Max-width 780px centered. No images, no CTAs, no distracting elements. H2 headings for each section. Body text 16px, line-height 1.7. Last updated date displayed prominently at the top.
+
+
+
+— End of Privacy Policy Guide —
+
+
+

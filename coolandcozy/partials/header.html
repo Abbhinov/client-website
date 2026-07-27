@@ -1,0 +1,161 @@
+<!-- ===== Emergency / seasonal banner ===== -->
+<div id="emergency-banner" class="emergency-banner" role="alert" aria-label="Emergency contact banner">
+  <div class="emergency-banner__content">
+    <span aria-hidden="true">⚡</span>
+    AC emergency? We&rsquo;re here. Call now for same-day service:
+    <a href="tel:+19048328622" data-ga-event="phone_click" data-ga-section="emergency_banner">(904) 832-8622</a>
+    <button type="button" class="emergency-banner__dismiss" data-banner-dismiss aria-label="Dismiss emergency banner">
+      <svg class="icon icon--sm" aria-hidden="true"><use href="#i-close"></use></svg>
+    </button>
+  </div>
+</div>
+
+<!-- ===== Site header ===== -->
+<header class="site-header" role="banner">
+  <!-- Utility bar (desktop only) -->
+  <div class="utility-bar">
+    <div class="utility-bar__container">
+      <div class="utility-bar__left">
+        <span>Se habla español</span>
+        <span class="utility-bar__sep">·</span>
+        <span>FL License CAC1819948</span>
+        <span class="utility-bar__sep">·</span>
+        <span>Serving Jacksonville &amp; Duval County</span>
+      </div>
+      <div class="utility-bar__right">
+        <span>Mon&ndash;Sat 7&nbsp;AM &ndash; 7&nbsp;PM</span>
+        <span class="utility-bar__sep">·</span>
+        <span class="lang-toggle" data-lang-toggle>
+          <a href="https://coolandcozyac.com/" data-lang="en" class="is-active" aria-label="English">EN</a>
+          <span class="sep">|</span>
+          <a href="https://coolandcozyac.com/es/" data-lang="es" aria-label="Switch to Spanish">ES</a>
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main navigation -->
+  <nav class="main-nav" role="navigation" aria-label="Main navigation">
+    <div class="main-nav__container">
+      <a href="/" class="main-nav__logo" aria-label="Cool &amp; Cozy AC Repair home">
+        <img src="/images/logo.png" alt="Cool &amp; Cozy AC Repair · Jacksonville" class="main-nav__logo-img" width="74" height="64">
+      </a>
+
+      <ul class="main-nav__links">
+        <li><a href="/" data-nav-link>Home</a></li>
+        <li>
+          <a href="/services" data-nav-link>
+            Services
+            <svg class="icon icon--sm" aria-hidden="true"><use href="#i-chevron-down"></use></svg>
+          </a>
+          <ul class="dropdown" role="menu">
+            <li><a href="/services/ac-repair">AC Repair</a></li>
+            <li><a href="/services/ac-installation">AC Installation</a></li>
+            <li><a href="/services/ac-maintenance">AC Maintenance</a></li>
+            <li><a href="/services/emergency-ac-repair">Emergency AC Repair</a></li>
+            <li><a href="/services/commercial-hvac">Commercial HVAC</a></li>
+            <li><a href="/services/ductwork">Ductwork</a></li>
+            <li><a href="/services/indoor-air-quality">Indoor Air Quality</a></li>
+            <li><a href="/services/thermostat-installation">Thermostat Installation</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="/service-areas" data-nav-link>
+            Service Areas
+            <svg class="icon icon--sm" aria-hidden="true"><use href="#i-chevron-down"></use></svg>
+          </a>
+          <ul class="dropdown" role="menu">
+            <li><a href="/service-areas/southside">Southside</a></li>
+            <li><a href="/service-areas/mandarin">Mandarin</a></li>
+            <li><a href="/service-areas/arlington">Arlington</a></li>
+            <li><a href="/service-areas/riverside-avondale">Riverside-Avondale</a></li>
+            <li><a href="/service-areas/san-marco">San Marco</a></li>
+            <li><a href="/service-areas/baymeadows">Baymeadows</a></li>
+            <li><a href="/service-areas/jacksonville-beach">Jacksonville Beach</a></li>
+            <li><a href="/service-areas/murray-hill">Murray Hill</a></li>
+            <li><a href="/service-areas/springfield">Springfield</a></li>
+            <li><a href="/service-areas/orange-park">Orange Park</a></li>
+          </ul>
+        </li>
+        <li><a href="/about" data-nav-link>About</a></li>
+        <li><a href="/resources" data-nav-link>Resources</a></li>
+        <li><a href="/contact" data-nav-link>Contact</a></li>
+      </ul>
+
+      <!-- Mobile-only inline phone -->
+      <a href="tel:+19048328622" class="nav-phone-mobile" data-ga-event="phone_click" data-ga-section="header" aria-label="Call (904) 832-8622">
+        <svg class="icon icon--sm" aria-hidden="true"><use href="#i-phone"></use></svg>
+        <span>(904) 832-8622</span>
+      </a>
+
+      <div class="main-nav__cta-group">
+        <a href="tel:+19048328622" class="nav-phone" data-ga-event="phone_click" data-ga-section="header">
+          <svg class="icon icon--sm" aria-hidden="true"><use href="#i-phone"></use></svg>
+          (904) 832-8622
+        </a>
+        <a href="/contact" class="btn btn--primary btn--small" data-ga-event="cta_click" data-ga-section="header">Free Estimate</a>
+      </div>
+
+      <button type="button" class="hamburger" data-mobile-nav-open aria-controls="mobile-nav" aria-expanded="false" aria-label="Open menu">
+        <svg class="icon icon--lg" aria-hidden="true"><use href="#i-menu"></use></svg>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<!-- ===== Mobile nav overlay ===== -->
+<div id="mobile-nav" class="mobile-nav" aria-hidden="true">
+  <div class="mobile-nav__top">
+    <span class="mobile-nav__top-logo">Cool &amp; Cozy</span>
+    <button type="button" class="mobile-nav__close" data-mobile-nav-close aria-label="Close menu">
+      <svg class="icon icon--lg" aria-hidden="true"><use href="#i-close"></use></svg>
+    </button>
+  </div>
+  <ul class="mobile-nav__list">
+    <li><a href="/" data-nav-link>Home</a></li>
+    <li>
+      <button type="button" data-submenu-toggle aria-expanded="false">
+        Services
+        <svg class="icon chev" aria-hidden="true"><use href="#i-chevron-down"></use></svg>
+      </button>
+      <ul class="mobile-nav__sublist">
+        <li><a href="/services/ac-repair">AC Repair</a></li>
+        <li><a href="/services/ac-installation">AC Installation</a></li>
+        <li><a href="/services/ac-maintenance">AC Maintenance</a></li>
+        <li><a href="/services/emergency-ac-repair">Emergency AC Repair</a></li>
+        <li><a href="/services/commercial-hvac">Commercial HVAC</a></li>
+        <li><a href="/services/ductwork">Ductwork</a></li>
+        <li><a href="/services/indoor-air-quality">Indoor Air Quality</a></li>
+        <li><a href="/services/thermostat-installation">Thermostat Installation</a></li>
+      </ul>
+    </li>
+    <li>
+      <button type="button" data-submenu-toggle aria-expanded="false">
+        Service Areas
+        <svg class="icon chev" aria-hidden="true"><use href="#i-chevron-down"></use></svg>
+      </button>
+      <ul class="mobile-nav__sublist">
+        <li><a href="/service-areas/southside">Southside</a></li>
+        <li><a href="/service-areas/mandarin">Mandarin</a></li>
+        <li><a href="/service-areas/arlington">Arlington</a></li>
+        <li><a href="/service-areas/riverside-avondale">Riverside-Avondale</a></li>
+        <li><a href="/service-areas/san-marco">San Marco</a></li>
+        <li><a href="/service-areas/baymeadows">Baymeadows</a></li>
+        <li><a href="/service-areas/jacksonville-beach">Jacksonville Beach</a></li>
+        <li><a href="/service-areas/murray-hill">Murray Hill</a></li>
+        <li><a href="/service-areas/springfield">Springfield</a></li>
+        <li><a href="/service-areas/orange-park">Orange Park</a></li>
+      </ul>
+    </li>
+    <li><a href="/about" data-nav-link>About</a></li>
+    <li><a href="/resources" data-nav-link>Resources</a></li>
+    <li><a href="/contact" data-nav-link>Contact</a></li>
+  </ul>
+  <div class="mobile-nav__cta">
+    <a href="tel:+19048328622" class="mobile-nav__phone-large" data-ga-event="phone_click" data-ga-section="mobile_nav">
+      <svg class="icon" aria-hidden="true"><use href="#i-phone"></use></svg>
+      (904) 832-8622
+    </a>
+    <a href="/contact" class="btn btn--primary btn--large" data-ga-event="cta_click" data-ga-section="mobile_nav">Free Estimate</a>
+  </div>
+</div>

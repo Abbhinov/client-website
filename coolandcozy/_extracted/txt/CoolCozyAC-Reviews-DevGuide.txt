@@ -1,0 +1,178 @@
+﻿
+DEVELOPER IMPLEMENTATION GUIDE
+
+COOL & COZY AC REPAIR
+Licensed HVAC Contractor  ·  Jacksonville, Florida
+
+REVIEWS PAGE
+
+URL: coolcozyac.com/reviews
+Prepared by: TradeWorks AI  |  Version 1.0  |  May 2026
+
+1. Page Identity
+Property
+Specification
+URL
+/reviews
+Canonical
+https://coolcozyac.com/reviews
+Page Type
+Social proof / Trust page
+Parent
+/ (Homepage)
+Breadcrumb
+Home > Reviews
+Primary Keyword
+Cool Cozy AC Repair reviews
+Intent
+Navigational (referral validation — “let me check their reviews”)
+Word Count
+400–600 words (framework + reviews)
+Conversion
+Phone call or navigate to /contact after trust validation
+Sitemap
+Priority 0.7
+
+1.1 Internal Linking
+FROM homepage testimonial section: “See All Reviews” link
+FROM about page: credentials section cross-link
+FROM all service pages: testimonial sections can link here
+TO /contact: CTA at bottom
+TO Google Reviews: external link to leave a review (once GBP is active)
+TO Thumbtack profile: external link to existing Thumbtack reviews
+
+2. <head> Section
+Property
+Specification
+Title
+Reviews | Cool & Cozy AC Repair Jacksonville FL
+Meta Desc
+See what Jacksonville homeowners say about Cool & Cozy AC Repair. Real reviews from Thumbtack and Google. Licensed contractor CAC1819948. Read reviews or leave your own.
+Canonical
+https://coolcozyac.com/reviews
+JSON-LD: AggregateRating schema + BreadcrumbList (2-level). The AggregateRating should reflect actual review data (count + average rating) and must be updated as new reviews accumulate.
+DEV ACTION: AggregateRating schema requires real data. At launch, use the Thumbtack review data (count and average). Update the schema whenever new Google or first-party reviews are added. Do NOT fabricate or inflate ratings in schema — Google penalizes fake review markup.
+
+3. Section-by-Section Build
+
+3.1 Hero
+Breadcrumb
+Home > Reviews
+H1
+What Jacksonville Homeowners Say About Cool & Cozy
+Subheadline
+Real reviews from real customers. We earn every star through honest pricing, professional service, and AC systems that work when you need them most.
+Evergreen CSS-pattern hero, 220px desktop.
+
+3.2 Aggregate Score Display
+Overview
+A prominent aggregate rating display showing the overall star rating, total review count, and source breakdown. This is the visual anchor of the page and the first thing a visitor scanning for social proof will see.
+Layout
+Property
+Specification
+Container
+#FFFFFF, 800px centered, 48px padding
+Desktop
+Centered: large star rating + count + source pills
+Mobile
+Same, stacked vertically
+Content
+Star Display: Large 5-star visual (SVG stars, Coral #E8603C fill for filled, #DDD8D0 for empty, proportional fill for partial)
+Rating Number: Poppins 48px/700, #2C2C2C (e.g., “4.8”)
+Review Count: Poppins 16px/400, #7A7A7A (e.g., “based on XX reviews”)
+Source Pills: Small pill badges below count: “Thumbtrack” “Google” (when available) — Poppins 12px/500, Seafoam bg, white text
+DEV ACTION: PLACEHOLDER: At launch, populate with Thumbtack review data. As Google reviews accumulate, add Google as a source and recalculate the aggregate. The AggregateRating schema must match the displayed numbers exactly.
+
+3.3 Individual Review Cards
+Layout
+Property
+Specification
+Container
+#EAF3F2 (Sky Mist), 960px centered
+Grid
+Single column, cards stacked vertically with 16px gap
+Card design
+White bg, 16px radius, 24px padding
+Card Anatomy
+Star rating (5 SVG stars, same Coral/gray fill as aggregate)
+Review text (Poppins 15px/400, #3D3D3D, italic, line-height 1.6)
+Reviewer name (Poppins 14px/600, #2C2C2C) — first name + last initial
+Service type tag (Poppins 12px/500, Seafoam pill) — e.g., “AC Repair” “AC Installation”
+Source badge (Poppins 11px/400, #9CA3AF) — “via Thumbtack” or “via Google”
+Date (Poppins 12px/400, #9CA3AF)
+
+Launch Reviews (from Thumbtack)
+Stars
+Review
+Name
+Service
+★★★★★
+They were very nice and got the job done. I’m very pleased with what they did for me.
+Kimberly S.
+Installation
+★★★★★
+On time and know exactly what they are doing. Thank you!
+Verified
+Repair
+★★★★★
+Very good experience! They were on time, professional, clean and quick. The price was exceptional as well.
+Danielle D.
+Repair
+
+DEV ACTION: These 3 Thumbtack reviews are the starting inventory. As Google reviews and first-party testimonials accumulate, add them chronologically. Target: 10+ reviews on this page within 90 days of launch through the review generation campaign.
+
+3.4 Service Type Filter (Phase 2)
+Once the review count reaches 10+, add filter pills above the review cards allowing visitors to filter by service type:
+All (default)
+AC Repair
+AC Installation
+Maintenance
+Commercial / PM
+At launch (3 reviews), no filter is needed. Implement when volume justifies it.
+
+3.5 Leave a Review CTA
+Layout
+Property
+Specification
+Container
+#F0E6D3 (Warm Sand), 800px centered, 32px padding
+Content
+H2
+Had a Great Experience? Share It.
+Your review helps other Jacksonville homeowners find a contractor they can trust. It takes 2 minutes and makes a real difference for our small family business.
+
+Google Review Button: “Leave a Google Review” — Coral bg, pill, opens Google Review form in new tab
+Thumbtack Button: “Review on Thumbtack” — white border, pill, opens Thumbtack profile in new tab
+DEV ACTION: PLACEHOLDER: Google review link requires the GBP Place ID review URL. Format: https://search.google.com/local/writereview?placeid=[PLACE_ID]. Insert once GBP is claimed and verified. Thumbtack profile URL: confirm current link with client.
+The review ask is positioned after the visitor has read existing reviews (social proof priming). Asking for a review at the TOP of a page with few reviews feels desperate. Asking at the BOTTOM after showing existing positive reviews feels like a natural invitation.
+
+3.6 Trust Reinforcement + CTA
+Below the review section, a compact CTA:
+H2
+Ready to Experience the Service Jacksonville Talks About?
+Call (904) 555-0199 or request a free estimate. Same honest pricing, same professional service, same people behind every review above.
+Property
+Specification
+Primary
+Get a Free Estimate — Coral, pill, /contact
+Secondary
+Call (904) 555-0199 — white border, pill, tel: link
+Evergreen bg, 720px centered.
+
+4. Checklist
+AggregateRating schema matches displayed rating and count EXACTLY
+BreadcrumbList validates
+No fabricated or inflated ratings in schema or display
+Review text matches source verbatim (Thumbtack, Google)
+Source attribution on every review (“via Thumbtack” / “via Google”)
+Google Review link confirmed with GBP Place ID
+External review links open in new tab
+Review cards render correctly on mobile (single column)
+Star SVGs render at correct fill level (no half-star rendering bugs)
+Click-to-call on all phone instances
+PageSpeed Mobile > 95 (text-only, no images beyond SVG stars)
+Plan: update page with new reviews monthly for first 6 months
+
+— End of Document —
+Prepared by TradeWorks AI  ·  May 2026  ·  v1.0
+

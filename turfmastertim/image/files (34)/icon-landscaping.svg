@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <title>Landscaping &amp; Design</title>
+  <!-- pot -->
+  <path d="M62 148 L138 148 L130 178 L70 178 Z" fill="#8B5A3C"/>
+  <path d="M65 156 L135 156" stroke="#6B3F26" stroke-width="1.5"/>
+  <rect x="58" y="142" width="84" height="8" rx="2" fill="#6B3F26"/>
+  <!-- foliage -->
+  <ellipse cx="70" cy="108" rx="26" ry="40" fill="#6BAA45" transform="rotate(-18 70 108)"/>
+  <ellipse cx="130" cy="108" rx="26" ry="40" fill="#A8D17C" transform="rotate(18 130 108)"/>
+  <ellipse cx="100" cy="78" rx="24" ry="40" fill="#6BAA45"/>
+  <ellipse cx="85" cy="100" rx="14" ry="22" fill="#7BB85A" transform="rotate(-15 85 100)"/>
+  <ellipse cx="115" cy="100" rx="14" ry="22" fill="#7BB85A" transform="rotate(15 115 100)"/>
+  <!-- flower -->
+  <circle cx="100" cy="46" r="12" fill="#D4A744"/>
+  <circle cx="100" cy="46" r="5" fill="#1A3826"/>
+  <!-- small flowers -->
+  <circle cx="68" cy="86" r="4" fill="#D4A744"/>
+  <circle cx="132" cy="86" r="4" fill="#D4A744"/>
+</svg>

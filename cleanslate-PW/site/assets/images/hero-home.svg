@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"  stop-color="#FBC78A"/>
+      <stop offset="40%" stop-color="#F2A56B"/>
+      <stop offset="100%" stop-color="#7E5A8B"/>
+    </linearGradient>
+    <linearGradient id="house" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F5F1E8"/>
+      <stop offset="100%" stop-color="#D8CFBF"/>
+    </linearGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#sky)"/>
+  <!-- Sun glow -->
+  <circle cx="1500" cy="380" r="140" fill="#FFE6BC" opacity="0.55"/>
+  <!-- Ground -->
+  <rect y="820" width="1920" height="260" fill="#4A6A4F"/>
+  <rect y="820" width="1920" height="40" fill="#3D5A41"/>
+  <!-- House body -->
+  <rect x="520" y="420" width="900" height="420" fill="url(#house)"/>
+  <!-- Roof -->
+  <polygon points="500,420 970,210 1440,420" fill="#7A4D3D"/>
+  <polygon points="500,420 970,210 970,420" fill="#8B5A48"/>
+  <!-- Windows -->
+  <g fill="#3E6990" stroke="#FFFFFF" stroke-width="6">
+    <rect x="600" y="500" width="120" height="160"/>
+    <rect x="780" y="500" width="120" height="160"/>
+    <rect x="1060" y="500" width="120" height="160"/>
+    <rect x="1240" y="500" width="120" height="160"/>
+  </g>
+  <!-- Door -->
+  <rect x="920" y="600" width="120" height="240" fill="#5A3A2B"/>
+  <circle cx="1020" cy="720" r="6" fill="#E8761A"/>
+  <!-- Palm tree silhouettes -->
+  <g fill="#1F3A28">
+    <rect x="180" y="540" width="22" height="320"/>
+    <path d="M191 540 q -90 -40 -120 -10 q 30 -10 60 -2 q -60 -10 -80 20 q 40 -10 70 -4 q -50 0 -70 30 q 50 -16 80 -10 M191 540 q 90 -40 120 -10 q -30 -10 -60 -2 q 60 -10 80 20 q -40 -10 -70 -4 q 50 0 70 30 q -50 -16 -80 -10"/>
+    <rect x="1700" y="560" width="22" height="300"/>
+    <path d="M1711 560 q -90 -40 -120 -10 q 30 -10 60 -2 q -60 -10 -80 20 q 40 -10 70 -4 q -50 0 -70 30 q 50 -16 80 -10 M1711 560 q 90 -40 120 -10 q -30 -10 -60 -2 q 60 -10 80 20 q -40 -10 -70 -4 q 50 0 70 30 q -50 -16 -80 -10"/>
+  </g>
+  <!-- Driveway -->
+  <polygon points="860,840 1100,840 1240,1080 720,1080" fill="#9BA0A3"/>
+</svg>

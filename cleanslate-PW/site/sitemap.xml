@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Clean Slate Pressure Washing — XML Sitemap
+  Lists all indexable pages. Submit to Google Search Console & Bing Webmaster Tools.
+  Priorities reflect the strategy doc's keyword tier and conversion-importance ranking.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://cleanslatepw.com/</loc>
+    <lastmod>2026-04-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Services silo -->
+  <url>
+    <loc>https://cleanslatepw.com/services/</loc>
+    <lastmod>2026-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url><loc>https://cleanslatepw.com/services/house-washing/</loc><lastmod>2026-04-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cleanslatepw.com/services/roof-cleaning/</loc><lastmod>2026-04-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cleanslatepw.com/services/driveway-cleaning/</loc><lastmod>2026-04-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cleanslatepw.com/services/pool-deck-cleaning/</loc><lastmod>2026-04-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cleanslatepw.com/services/lanai-screen-cleaning/</loc><lastmod>2026-04-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cleanslatepw.com/services/fence-cleaning/</loc><lastmod>2026-04-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cleanslatepw.com/services/gutter-cleaning/</loc><lastmod>2026-04-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cleanslatepw.com/services/commercial/</loc><lastmod>2026-04-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cleanslatepw.com/services/rust-removal/</loc><lastmod>2026-04-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cleanslatepw.com/services/soft-washing/</loc><lastmod>2026-04-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+  <!-- Service Areas silo -->
+  <url>
+    <loc>https://cleanslatepw.com/service-areas/</loc>
+    <lastmod>2026-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url><loc>https://cleanslatepw.com/service-areas/hillsborough-county/</loc><lastmod>2026-04-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://cleanslatepw.com/service-areas/brandon/</loc><lastmod>2026-04-01</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://cleanslatepw.com/service-areas/valrico/</loc><lastmod>2026-04-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cleanslatepw.com/service-areas/riverview/</loc><lastmod>2026-04-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cleanslatepw.com/service-areas/fishhawk/</loc><lastmod>2026-04-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cleanslatepw.com/service-areas/lithia/</loc><lastmod>2026-04-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cleanslatepw.com/service-areas/apollo-beach/</loc><lastmod>2026-04-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://cleanslatepw.com/service-areas/plant-city/</loc><lastmod>2026-04-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://cleanslatepw.com/service-areas/seffner/</loc><lastmod>2026-04-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://cleanslatepw.com/service-areas/tampa/</loc><lastmod>2026-04-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://cleanslatepw.com/service-areas/bloomingdale/</loc><lastmod>2026-04-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- Trust / Company silo -->
+  <url><loc>https://cleanslatepw.com/about/</loc><lastmod>2026-04-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://cleanslatepw.com/about/our-process/</loc><lastmod>2026-04-01</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://cleanslatepw.com/reviews/</loc><lastmod>2026-04-01</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://cleanslatepw.com/gallery/</loc><lastmod>2026-04-01</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+
+  <!-- Conversion silo -->
+  <url>
+    <loc>https://cleanslatepw.com/free-estimate/</loc>
+    <lastmod>2026-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url><loc>https://cleanslatepw.com/commercial-quote/</loc><lastmod>2026-04-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cleanslatepw.com/contact/</loc><lastmod>2026-04-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+  <!-- Resources silo -->
+  <url>
+    <loc>https://cleanslatepw.com/resources/</loc>
+    <lastmod>2026-04-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url><loc>https://cleanslatepw.com/resources/soft-washing-vs-pressure-washing/</loc><lastmod>2026-04-01</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://cleanslatepw.com/resources/florida-roof-cleaning-frequency/</loc><lastmod>2026-04-01</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://cleanslatepw.com/resources/gloeocapsa-magma-roof-streaks/</loc><lastmod>2026-04-01</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://cleanslatepw.com/resources/hoa-exterior-cleaning-brandon/</loc><lastmod>2026-04-01</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://cleanslatepw.com/resources/pressure-washing-cost-brandon/</loc><lastmod>2026-04-01</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://cleanslatepw.com/resources/shingle-warranty-cleaning/</loc><lastmod>2026-04-01</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://cleanslatepw.com/resources/pre-listing-cleaning-checklist/</loc><lastmod>2026-04-01</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://cleanslatepw.com/resources/paver-sealing-florida/</loc><lastmod>2026-04-01</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+
+  <!-- Utility / Legal -->
+  <url><loc>https://cleanslatepw.com/privacy-policy/</loc><lastmod>2026-04-01</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://cleanslatepw.com/terms-of-service/</loc><lastmod>2026-04-01</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://cleanslatepw.com/accessibility/</loc><lastmod>2026-04-01</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://cleanslatepw.com/sitemap/</loc><lastmod>2026-04-01</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
+
+</urlset>

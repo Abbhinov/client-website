@@ -1,0 +1,384 @@
+﻿
+
+ 
+
+SERVICE AREAS HUB DEVELOPER GUIDE
+
+Service Areas Hub
+
+
+ 
+
+Section-by-Section Implementation Specifications
+
+Clean Slate Pressure Washing
+
+A Fresh Start for Every Surface
+
+Brandon, Florida  |  Hillsborough County
+
+cleanslatepw.com
+
+Prepared by TradeWorks AI
+
+Version 1.0  |  April 2026
+
+Client Confidential
+
+
+
+
+
+
+
+
+Section 1: How to Use This Guide
+
+This guide covers the Service Areas Hub page (/service-areas/). It is the top-level gateway to all geographic content — the county page and 10 individual city landing pages. The hub uses a map-centered layout with a complete city directory to help visitors confirm coverage and self-select their specific location.
+
+The hub carries broad geographic keywords (&apos;pressure washing Tampa Bay&apos;, &apos;exterior cleaning Hillsborough County&apos;) while city pages carry specific geo-modified terms (&apos;pressure washing Brandon FL&apos;). Content on the hub must be distinct from both the homepage service areas section (compact routing block) and the individual city pages (deep local content).
+
+
+
+Section 2: Page Identity &amp; Architecture
+
+Attribute
+
+Value
+
+URL Path
+
+/service-areas/
+
+Canonical URL
+
+https://cleanslatepw.com/service-areas/
+
+Page Type
+
+Hub / Collection
+
+Parent
+
+/ (Homepage)
+
+Child Pages
+
+1 county page + 10 city pages
+
+Breadcrumb
+
+Home → Service Areas
+
+Primary Keyword
+
+Pressure washing Tampa Bay service areas
+
+Secondary Keywords
+
+exterior cleaning Hillsborough County, pressure washing near me Tampa, soft washing service area Florida
+
+Search Intent
+
+Navigational / Local
+
+Target Word Count
+
+800–1,200 words
+
+Primary Conversion Goal
+
+Click-through to city page OR Free Estimate
+
+Content Update Frequency
+
+When new service areas are added
+
+
+
+Section 3: Complete &lt;head&gt; Section
+
+Tag
+
+Value
+
+&lt;title&gt;
+
+Service Areas | Pressure Washing Tampa Bay | Clean Slate PW
+
+&lt;meta description&gt;
+
+Clean Slate Pressure Washing serves Brandon, Riverview, Valrico, Lithia, FishHawk, Apollo Beach, Plant City, Seffner, Tampa &amp; Bloomingdale. Free estimates — call (813) 555-0283.
+
+&lt;link rel=canonical&gt;
+
+https://cleanslatepw.com/service-areas/
+
+og:title
+
+Service Areas | Clean Slate PW | Tampa Bay Pressure Washing
+
+og:image
+
+https://cleanslatepw.com/images/og-service-areas-1200x630.jpg
+
+JSON-LD: BreadcrumbList (Home → Service Areas). No FAQPage on this hub — FAQs live on city child pages.
+
+
+
+Section 4: Hero Section
+
+Property
+
+Value
+
+Min Height
+
+360px desktop / 300px mobile
+
+Background
+
+Aerial/map-style photograph of Tampa Bay region with navy gradient overlay
+
+H1
+
+Pressure Washing Across Tampa Bay — Find Your City
+
+Subheadline
+
+Clean Slate PW serves Brandon and 10+ surrounding communities in Hillsborough County. Select your city below to see local service details and get a free estimate.
+
+CTA
+
+&apos;Get a Free Estimate&apos; → /free-estimate/. Orange button.
+
+Hero image alt: &apos;Aerial view of Tampa Bay region showing Clean Slate PW service coverage area&apos;
+
+
+
+Section 5: Interactive Map + City Directory
+
+Two-column layout: embedded Google Map (left, 55%) and city directory grid (right, 45%). The map is centered on Brandon with zoom level 10 to show all service cities. Each city in the directory links to its dedicated landing page.
+
+
+5.1 Map Specifications
+
+
+Google Maps iframe or static map centered on Brandon, FL (27.9378, -82.2859). Zoom 10.
+
+
+Custom markers on each service city location.
+
+
+loading=&apos;lazy&apos;. 12px border-radius. aria-label=&apos;Map showing Clean Slate PW service coverage across Tampa Bay&apos;.
+
+
+480px tall desktop, 280px mobile.
+
+
+5.2 City Directory
+
+Grid of 10 city cards + 1 county parent card. Each card: city name (H3), brief tagline (15 words), &apos;View Details →&apos; link.
+
+City
+
+Tagline
+
+URL
+
+ZIP Codes
+
+Brandon
+
+Our home base — serving Brandon homeowners since 2021
+
+/service-areas/brandon/
+
+33510, 33511
+
+Valrico
+
+Bloomingdale corridor and surrounding neighborhoods
+
+/service-areas/valrico/
+
+33594, 33596
+
+Riverview
+
+Panther Trace, Summerfield, Alafia communities
+
+/service-areas/riverview/
+
+33569, 33578, 33579
+
+FishHawk
+
+Master-planned community with strict HOA standards
+
+/service-areas/fishhawk/
+
+33547
+
+Lithia
+
+Rural-suburban estates and acreage properties
+
+/service-areas/lithia/
+
+33547
+
+Apollo Beach
+
+Coastal waterfront and salt-air exposed properties
+
+/service-areas/apollo-beach/
+
+33572
+
+Plant City
+
+Agricultural-adjacent homes with pollen and dust concerns
+
+/service-areas/plant-city/
+
+33563, 33566, 33567
+
+Seffner
+
+Established ranch homes and mature tree canopy
+
+/service-areas/seffner/
+
+33584
+
+Tampa
+
+East Tampa, South Tampa, New Tampa — select areas
+
+/service-areas/tampa/
+
+Various
+
+Bloomingdale
+
+HOA-dense community between Brandon and Valrico
+
+/service-areas/bloomingdale/
+
+33596
+
+
+
+Section 6: AEO Introduction
+
+
+6.1 H2
+
+Hillsborough County&apos;s Trusted Exterior Cleaning Team
+
+
+6.2 AEO Body (~120 words)
+
+Clean Slate Pressure Washing provides residential and commercial pressure washing and soft washing services across Hillsborough County and the greater Tampa Bay region. Based in Brandon, Florida, our service area extends to Riverview, Valrico, Lithia, FishHawk, Apollo Beach, Plant City, Seffner, Bloomingdale, and select Tampa neighborhoods. Every city we serve receives the same standard of service: licensed and insured technicians, commercial-grade equipment, biodegradable cleaning agents, flat-rate pricing, and a 100% satisfaction guarantee. Whether your property is a single-family home in a Brandon HOA community, a lakefront estate in Lithia, or a commercial storefront in Tampa, Clean Slate PW matches the right cleaning method to your surfaces and delivers results that protect your investment.
+
+
+
+Section 7: Full Services Available in All Areas
+
+Horizontal scrolling card row showing all 10 services. Same card component as homepage services grid (Section 9). Each links to the respective service page. Heading:
+
+H2: Every Service, in Every City We Serve
+
+This section reinforces that the full service catalog is available in all locations — not a reduced offering for peripheral cities.
+
+
+
+Section 8: Final CTA Block
+
+H2: Don&apos;t See Your City? Call Us.
+
+Subheadline: We frequently travel for larger residential and commercial projects throughout Hillsborough County and the Tampa Bay region. Call (813) 555-0283 to confirm service availability for your location.
+
+Dual CTAs: &apos;Get My Free Estimate&apos; (orange) + &apos;Call (813) 555-0283&apos; (ghost). Same pattern as homepage final CTA.
+
+
+
+Section 9: Image Specifications
+
+#
+
+Asset
+
+Dimensions
+
+Alt Text
+
+1
+
+Hero — aerial Tampa Bay
+
+1920×800 WebP
+
+Aerial view of Tampa Bay region showing service coverage
+
+2
+
+Map embed or static
+
+100% × 480px
+
+Map of Clean Slate PW service area centered on Brandon FL
+
+3–12
+
+City cards (10)
+
+400×250 WebP each
+
+Per city: [City name] Florida neighborhood streetscape
+
+13
+
+OG image
+
+1200×630 JPG
+
+Clean Slate PW service areas across Tampa Bay
+
+
+
+Section 10: Implementation Checklist
+
+
+All 10 city page URLs resolve (no 404s in directory).
+
+
+Map renders with correct center point and zoom level.
+
+
+Phone (813) 555-0283 is working tel: link.
+
+
+Canonical points to https://cleanslatepw.com/service-areas/.
+
+
+BreadcrumbList schema validates.
+
+
+OG image renders on share preview.
+
+
+Hero preloaded. Map and city images lazy-loaded.
+
+
+PageSpeed mobile &gt;85, desktop &gt;95.
+
+
+
+— End of Service Areas Hub Guide —
+
+Clean Slate Pressure Washing — Service Areas Hub v1.0 | Prepared by TradeWorks AI | April 2026
+
+
+

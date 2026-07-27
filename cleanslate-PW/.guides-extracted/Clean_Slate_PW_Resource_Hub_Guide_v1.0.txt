@@ -1,0 +1,135 @@
+﻿
+
+ 
+
+RESOURCE HUB DEVELOPER GUIDE
+
+Resource Hub
+
+
+ 
+
+Blog Index &amp; Article Directory
+
+Clean Slate Pressure Washing
+
+A Fresh Start for Every Surface
+
+Brandon, Florida  |  Hillsborough County
+
+cleanslatepw.com
+
+Prepared by TradeWorks AI
+
+Version 1.0  |  April 2026
+
+Client Confidential
+
+
+
+
+
+
+
+
+Section 1: Page Identity
+
+Attribute
+
+Value
+
+URL Path
+
+/resources/
+
+Canonical URL
+
+https://cleanslatepw.com/resources/
+
+Page Type
+
+Hub / Blog Index
+
+Breadcrumb
+
+Home → Resources
+
+Primary Keyword
+
+Pressure washing guides Florida
+
+Target Word Count
+
+400–600 words (routing page)
+
+&lt;title&gt;
+
+Exterior Cleaning Resources &amp; Guides | Clean Slate PW
+
+&lt;meta description&gt;
+
+Free guides on Florida roof care, driveway maintenance, soft washing, HOA compliance, and exterior cleaning costs. Written by Clean Slate PW&apos;s certified technicians.
+
+JSON-LD: CollectionPage schema. BreadcrumbList (Home → Resources).
+
+
+
+Section 2: Page Layout
+
+
+2.1 Hero
+
+H1
+
+Florida Exterior Cleaning Resources
+
+Subheadline
+
+Free guides on roof care, driveway maintenance, and the chemistry of Florida algae — written by our team of certified soft washing technicians.
+
+Background
+
+Clean workspace / educational imagery with navy overlay
+
+
+2.2 Article Grid
+
+Card grid displaying all published articles. 3 columns desktop, 2 tablet, 1 mobile. Cards identical to homepage resource preview (Section 15): 16:9 featured image, category eyebrow, H3 title, meta snippet, read time. Sorted newest-first.
+
+
+2.3 Category Filter
+
+Optional category pill filters: All | Guides | Maintenance | Chemistry | HOA | Pricing. Active pill orange, inactive mist.
+
+
+2.4 Newsletter Signup (Optional Phase 3)
+
+Below article grid: compact email signup form. &apos;Get cleaning tips and seasonal reminders — no spam, unsubscribe anytime.&apos; Single email field + submit button.
+
+
+
+Section 3: Implementation Checklist
+
+
+All 8 article URLs resolve.
+
+
+Cards display correct featured images and titles.
+
+
+Category filters work without page reload.
+
+
+CollectionPage schema validates.
+
+
+PageSpeed mobile &gt;85.
+
+
+
+— End of Resource Hub Guide —
+
+Clean Slate Pressure Washing — Resource Hub v1.0 | TradeWorks AI | April 2026
+
+
+

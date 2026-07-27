@@ -1,0 +1,1018 @@
+
+SPIN IT UP LAUNDRY
+WEBSITE STRATEGY& ARCHITECTURE
+Complete Site Blueprint, Brand System & Implementation Roadmap
+
+URL: spinituplaundry.net
+Prepared by: TradeWorks AI  |  Version 1.0  |  May 2026
+Classification: Client Confidential
+
+Table of Contents
+1  Executive Summary
+2  Business Profile & Market Position
+3  Current State Assessment
+4  Brand & Design System
+5  Site Architecture & URL Structure
+6  Navigation & Footer Specification
+7  Page Inventory & Content Plan
+8  Keyword Strategy & Content Silos
+9  Bilingual Strategy
+10  Conversion Architecture
+11  Technical Foundation
+12  Implementation Roadmap
+
+1. Executive Summary
+Spin It Up Laundry at 3710 N Kimball Ave operates one of the best-equipped independent laundromats in Chicago’s Avondale neighborhood — 41 washers, 52 dryers, 130 lb commercial-capacity machines, Cents app integration for online ordering, EBT acceptance, free WiFi, free coffee, gaming machines, and active weekly promotions including free-drying specials. The facility is genuinely competitive with chain operations on amenities and capacity. The digital presence is not.
+The April 2026 audit scored the current website at 53/100 (Needs Improvement). Critical issues include a broken SSL certificate, placeholder text on the pricing page, no structured data, no Spanish-language content despite serving one of Chicago’s most heavily Latino neighborhoods, no dedicated Pickup & Delivery information page, and a competing .com domain pointing to a Miami business. The site is built on GoDaddy’s website builder, which imposes meaningful limitations on SEO control, structured data implementation, and bilingual content architecture.
+This strategy document defines the complete architecture for a rebuilt website that resolves every issue identified in the audit and positions Spin It Up to dominate local search in Avondale, Irving Park, Logan Square, Hermosa, and Albany Park. The build encompasses 22 English pages and 8 Spanish-language priority pages, a full brand and design system, keyword strategy across 5 content silos, conversion-optimized page templates, and a phased rollout targeting a score of 80+ within 90 days of launch.
+The companion Homepage Developer Guide (delivered alongside this document) provides the section-by-section, copy-complete implementation specification for the first and highest-priority page in the build.
+
+2. Business Profile & Market Position
+2.1 Business Information
+Business Name
+Spin It Up Laundry
+Address
+3710 N Kimball Ave, Chicago, IL 60618
+Neighborhood
+Avondale (Irving Park / Logan Square border)
+Phone
+(773) 654-1275
+Hours
+6:00 AM – 11:00 PM, 7 days a week
+Website
+spinituplaundry.net
+Current Platform
+GoDaddy Website Builder
+Social Media
+Facebook (@SpinItUpLaundry), Instagram (@spinituplaundry), Yelp
+Ordering Platform
+Cents App (online pickup & delivery)
+Payment Methods
+Laundry cards, credit/debit, cash, EBT
+2.2 Competitive Advantages
+Spin It Up holds several operational advantages over local competitors that are currently undermarketed digitally:
+Largest machine fleet in the immediate area: 41 washers and 52 dryers, including two 130 lb commercial-capacity washers that no nearby competitor offers.
+Cents app integration for online pickup and delivery ordering — a capability typically reserved for chain operations. Most independents in Avondale still operate phone-only or walk-in-only.
+Free drying specials running Tuesday through Thursday — a strong weekly traffic driver that is currently promoted on Facebook and Instagram but not on the website or Google Business Profile.
+EBT acceptance — a significant differentiator in Avondale where 18% of households receive SNAP benefits. Very few laundromats in the area accept EBT.
+Full amenity package: free WiFi, free coffee, gaming machines, free parking, on-site attendants. Competitive with or exceeding chain laundromat offerings.
+Active promotional calendar including creative campaigns (TV giveaway tied to laundry card loading) that generate social engagement.
+2.3 Target Customer Segments
+Segment
+Profile
+Primary Need
+Revenue Value
+Walk-In Self-Service
+Avondale/Irving Park residents, renters, no in-unit laundry, ~60% Spanish-speaking
+Clean, safe, affordable self-service with large machines
+$15–$25/visit, weekly
+Wash & Fold Drop-Off
+Busy professionals, young families, dual-income households in Logan Square/Avondale
+Convenience — drop off dirty, pick up clean
+$25–$40/visit, weekly to biweekly
+Pickup & Delivery
+Time-constrained professionals, WFH workers in Logan Square/Irving Park
+Zero-friction laundry service via Cents app
+$30–$50/order, weekly
+Commercial Accounts
+Airbnb hosts, salons, gyms, restaurants, small hotels in greater NW Chicago
+Reliable bulk laundry with consistent turnaround
+$200–$1,000+/month ongoing
+
+3. Current State Assessment
+Summary of critical findings from the April 2026 audit (score: 53/100). These inform every architectural decision in this strategy.
+3.1 Critical Issues (Must Fix)
+Issue
+Impact
+Resolution
+SSL certificate broken — HTTPS fails, Chrome shows “Not Secure”
+Trust killer; bounces mobile users immediately
+Platform migration resolves; if staying GoDaddy, contact support for cert reissue
+Placeholder text on pricing page (“Add a description”)
+Signals unfinished/amateur site to visitors
+Replace with comforter service descriptions (5-minute fix on current site)
+Competing .com domain shows Miami business
+Brand confusion, split search authority
+Acquire and 301 redirect .com to .net, or file dispute if squatted
+No structured data (JSON-LD) on any page
+No rich results in Google (hours, ratings, services)
+Implement LocalBusiness + Laundromat schema site-wide
+Gmail as business email
+Kills commercial credibility
+Google Workspace setup ($6/month) for info@spinituplaundry.net
+3.2 High-Priority Gaps
+Gap
+Impact
+Resolution
+No Spanish-language content
+Loses majority of Avondale search traffic to bilingual competitors
+Bilingual site architecture (see Section 9)
+No dedicated Pickup & Delivery page
+Highest-value service has no information pathway
+Build dedicated service page with Cents app integration
+Phone number buried in contact section, not header
+Mobile users can’t tap-to-call without scrolling
+Phone in global header + sticky mobile CTA bar
+No FAQ section
+Missing long-tail keyword capture (EBT, parking, machine sizes)
+Build FAQ page + embed FAQ sections on service pages
+GBP underoptimized (few photos, no Posts, weak reviews)
+Losing Map Pack to competitors with stronger GBP signals
+GBP optimization program (see Section 10)
+GoDaddy platform limitations
+Limited SEO control, no custom schema, poor bilingual support
+Migrate to static HTML/custom build or WordPress
+3.3 Platform Decision
+The current GoDaddy Website Builder imposes constraints that make several critical fixes difficult or impossible: custom JSON-LD structured data, true bilingual URL architecture (e.g., /es/ prefix), granular meta tag control, and advanced form logic. Two paths forward:
+Option
+Pros
+Cons
+Recommendation
+Optimize within GoDaddy
+No migration effort; familiar to owner
+Cannot implement schema, bilingual URLs, or advanced SEO; SSL issues may recur
+Not recommended
+Rebuild on static HTML (GCP-hosted)
+Full control over SEO, schema, bilingual architecture, performance; no platform tax
+Requires developer for ongoing changes; higher initial build effort
+Recommended for maximum control
+Rebuild on WordPress
+Familiar CMS; plugin ecosystem for schema, multilingual (WPML/Polylang), forms
+Hosting cost; plugin maintenance; performance requires optimization
+Recommended if owner needs self-service editing
+This strategy document is platform-agnostic — the architecture, content, and specifications work regardless of the chosen platform. The developer guides provide production-ready HTML that can be implemented on any stack. The recommendation is static HTML on managed hosting (GCP, Netlify, or Cloudflare Pages) for maximum performance and SEO control, with a simple CMS layer (Netlify CMS, or a headless option) if the owner needs to update content independently.
+
+4. Brand & Design System
+Complete design system specification for the rebuilt Spin It Up Laundry website. All developer guides reference this system.
+4.1 Color Palette
+Color
+Hex
+RGB
+Usage
+Spin Blue (Primary)
+#1E40AF
+30, 64, 175
+Headers, primary buttons, brand identity, header bar, links
+Fresh Cyan (Secondary)
+#06B6D4
+6, 182, 212
+Accents, badges, icon backgrounds, secondary highlights, hover states
+CTA Orange (Action)
+#F97316
+249, 115, 22
+Primary CTA buttons, promotional banners, urgency indicators
+CTA Orange Hover
+#EA580C
+234, 88, 12
+CTA hover state
+Dark Slate (Text)
+#0F172A
+15, 23, 42
+H1 headings, primary text emphasis
+Body Text
+#334155
+51, 65, 85
+All body copy, descriptions, paragraphs
+Caption Gray
+#64748B
+100, 116, 139
+Captions, timestamps, secondary labels
+Ice Blue (Alt BG)
+#F0F9FF
+240, 249, 255
+Alternating section backgrounds
+Light Gray (Cards)
+#F8FAFC
+248, 250, 252
+Card backgrounds, subtle containers
+White
+#FFFFFF
+255, 255, 255
+Primary background, content areas
+Border
+#E2E8F0
+226, 232, 240
+Card borders, dividers, input borders
+Success Green
+#16A34A
+22, 163, 74
+Form success states, availability indicators
+Error Red
+#DC3545
+220, 53, 69
+Form errors, critical alerts
+Warning Amber
+#F59E0B
+245, 158, 11
+Warning states, attention indicators
+Color contrast compliance: All text/background combinations meet WCAG 2.1 AA minimum (4.5:1 for normal text, 3:1 for large text). Spin Blue on white = 7.2:1. CTA Orange on white = 3.1:1 (large text only; use white text on orange buttons). Dark Slate on white = 16.4:1. Body Text on white = 9.1:1.
+4.2 Typography
+Element
+Font
+Desktop
+Tablet
+Mobile
+Weight
+Line Height
+H1
+Inter
+48px / 3rem
+40px / 2.5rem
+32px / 2rem
+800 (ExtraBold)
+1.15
+H2
+Inter
+36px / 2.25rem
+32px / 2rem
+28px / 1.75rem
+700 (Bold)
+1.2
+H3
+Inter
+28px / 1.75rem
+24px / 1.5rem
+22px / 1.375rem
+700 (Bold)
+1.25
+H4
+Inter
+22px / 1.375rem
+20px / 1.25rem
+20px / 1.25rem
+600 (SemiBold)
+1.3
+Body
+Inter
+18px / 1.125rem
+17px / 1.0625rem
+16px / 1rem
+400 (Regular)
+1.65
+Body Large
+Inter
+20px / 1.25rem
+18px / 1.125rem
+17px / 1.0625rem
+400 (Regular)
+1.6
+Small / Caption
+Inter
+14px / 0.875rem
+14px
+13px
+500 (Medium)
+1.5
+Button Text
+Inter
+16px / 1rem
+16px
+16px
+600 (SemiBold)
+1.0
+Nav Links
+Inter
+15px / 0.9375rem
+15px
+16px
+500 (Medium)
+1.0
+Font loading: Google Fonts (Inter), font-display: swap. Preload weights 400, 500, 600, 700, 800. Fallback stack: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif. Maximum content width for body text: 720px. Paragraph spacing: 1rem (16px) between paragraphs.
+4.3 Spacing Scale
+Consistent 4px base unit. Standard spacing tokens used across all pages:
+Token
+Value
+Usage
+--space-1
+4px
+Tight inline spacing
+--space-2
+8px
+Icon gaps, tight padding
+--space-3
+12px
+Input padding, small gaps
+--space-4
+16px
+Paragraph spacing, card padding (mobile)
+--space-6
+24px
+Card padding (desktop), section element gaps
+--space-8
+32px
+Between content blocks within sections
+--space-12
+48px
+Section padding (mobile)
+--space-16
+64px
+Section padding (tablet)
+--space-20
+80px
+Section padding (desktop)
+--space-24
+96px
+Hero section padding
+4.4 Button System
+Button Type
+Background
+Text
+Border
+Hover
+Usage
+Primary CTA
+#F97316
+#FFFFFF
+none
+#EA580C
+Main conversion actions: Schedule Pickup, Call Now, Get Quote
+Secondary CTA
+#1E40AF
+#FFFFFF
+none
+#1E3A8A
+Supporting actions: View Pricing, Learn More, See Services
+Ghost / Outline
+transparent
+#1E40AF
+2px #1E40AF
+#EFF6FF bg
+Tertiary actions: View All, Read More, See Hours
+Emergency
+#DC3545
+#FFFFFF
+none
+#B91C1C
+Reserved for urgent messaging if needed
+Disabled
+#E2E8F0
+#94A3B8
+none
+no change
+Inactive/unavailable states
+All buttons: border-radius 8px, padding 14px 28px (desktop) / 16px 24px (mobile, full-width), min-height 48px, font-weight 600, text-transform none, transition 200ms ease. Focus state: 3px offset outline in Spin Blue at 50% opacity.
+4.5 Component Library
+Component
+Specification
+Cards
+bg #FFFFFF, border 1px #E2E8F0, border-radius 12px, padding 24px, box-shadow 0 1px 3px rgba(0,0,0,0.08), hover: shadow 0 4px 12px rgba(0,0,0,0.12)
+Accordion/FAQ
+Border-bottom 1px #E2E8F0, padding 20px 0, chevron icon rotates 180° on expand, content max-height transition 300ms ease
+Form Inputs
+Height 48px, border 1px #E2E8F0, border-radius 8px, padding 12px 16px, focus: border-color #1E40AF + ring 3px #1E40AF/20%, error: border-color #DC3545
+Badges/Tags
+Inline-flex, padding 4px 12px, border-radius 9999px, font-size 13px, font-weight 600. Service badges: bg #EFF6FF text #1E40AF. Feature badges: bg #ECFDF5 text #16A34A
+Map Embed
+border-radius 12px, border 1px #E2E8F0, aspect-ratio 16/9, loading lazy, filter grayscale(20%) for brand consistency
+Testimonial Cards
+bg #F8FAFC, border-left 4px #06B6D4, padding 24px, border-radius 0 12px 12px 0, star icons in #F59E0B
+Sticky Mobile CTA Bar
+Fixed bottom, bg #FFFFFF, box-shadow 0 -2px 10px rgba(0,0,0,0.1), padding 12px 16px, z-index 50, two buttons side-by-side (Call Now orange, Schedule Pickup blue)
+Breadcrumbs
+Font-size 14px, color #64748B, separator “/”, current page no link + font-weight 600
+
+5. Site Architecture & URL Structure
+Hub-and-spoke architecture with five content silos: Services, Areas, Resources, Company, and Legal. Every page has a defined parent, silo position, and internal linking path. Bilingual pages mirror the English structure under an /es/ prefix.
+5.1 Complete URL Map
+URL Path
+Page Title
+Type
+Silo
+Priority
+/
+Homepage
+Standalone
+—
+Phase 1
+/services/
+Our Services
+Hub
+Services
+Phase 1
+/services/self-service/
+Self-Service Laundry
+Child
+Services
+Phase 1
+/services/wash-and-fold/
+Wash & Fold Drop-Off
+Child
+Services
+Phase 1
+/services/pickup-delivery/
+Pickup & Delivery
+Child
+Services
+Phase 1
+/services/commercial/
+Commercial Laundry Services
+Child
+Services
+Phase 1
+/services/ironing-pressing/
+Ironing & Pressing
+Child
+Services
+Phase 2
+/pricing/
+Pricing
+Standalone
+—
+Phase 1
+/areas/
+Service Areas
+Hub
+Areas
+Phase 2
+/areas/avondale/
+Laundromat in Avondale
+Child
+Areas
+Phase 2
+/areas/irving-park/
+Laundromat in Irving Park
+Child
+Areas
+Phase 2
+/areas/logan-square/
+Laundromat in Logan Square
+Child
+Areas
+Phase 2
+/areas/hermosa/
+Laundromat in Hermosa
+Child
+Areas
+Phase 2
+/areas/albany-park/
+Laundromat in Albany Park
+Child
+Areas
+Phase 3
+/about/
+About Spin It Up
+Standalone
+Company
+Phase 1
+/contact/
+Contact Us
+Standalone
+Company
+Phase 1
+/faq/
+Frequently Asked Questions
+Standalone
+Company
+Phase 1
+/resources/
+Laundry Tips & Resources
+Hub
+Resources
+Phase 3
+/resources/how-to-use-cents-app/
+How to Use the Cents App
+Article
+Resources
+Phase 2
+/privacy-policy/
+Privacy Policy
+Legal
+Legal
+Phase 1
+/terms-of-service/
+Terms of Service
+Legal
+Legal
+Phase 1
+/accessibility/
+Accessibility Statement
+Legal
+Legal
+Phase 1
+5.2 Spanish-Language Pages
+Priority Spanish translations mirror the highest-traffic English pages. Each Spanish page uses hreflang tags pointing to its English counterpart and vice versa. URL structure uses the /es/ prefix for clean language segmentation.
+URL Path
+Page Title (Spanish)
+English Counterpart
+Priority
+/es/
+Página Principal
+/
+Phase 2
+/es/servicios/
+Nuestros Servicios
+/services/
+Phase 2
+/es/servicios/autoservicio/
+Lavandería de Autoservicio
+/services/self-service/
+Phase 2
+/es/servicios/lavado-y-doblado/
+Lavado y Doblado
+/services/wash-and-fold/
+Phase 2
+/es/servicios/recogida-y-entrega/
+Recogida y Entrega
+/services/pickup-delivery/
+Phase 2
+/es/precios/
+Precios
+/pricing/
+Phase 2
+/es/contacto/
+Contáctenos
+/contact/
+Phase 2
+/es/preguntas-frecuentes/
+Preguntas Frecuentes
+/faq/
+Phase 3
+5.3 Silo Structure
+Each silo operates as a self-contained topic cluster. Hub pages link down to all children; children link up to hub and across to siblings. Cross-silo links connect service pages to relevant area pages and resource articles. This structure supports both traditional SEO and entity-based GEO signals.
+Services Silo: /services/ (hub) → 5 child pages. Each child links to related area pages, FAQ section, and pricing. Hub links to all children with service cards.
+Areas Silo: /areas/ (hub) → 5 neighborhood pages. Each area page links to all services available in that area, the contact page, and the Cents app ordering page. Hub displays interactive map with all service areas.
+Resources Silo: /resources/ (hub) → blog articles. Each article links to 2+ service pages and 1+ related articles. Hub shows card grid of all articles sorted by recency.
+Company Pages: /about/, /contact/, /faq/ — linked from global navigation. FAQ page cross-links to service pages for detailed answers. Contact page is primary conversion target.
+Legal Pages: footer-only links. /privacy-policy/, /terms-of-service/, /accessibility/.
+
+6. Navigation & Footer Specification
+6.1 Primary Navigation (Desktop)
+Sticky header with logo left, nav center, CTAs right. Background transitions from transparent (on hero) to white with shadow on scroll.
+Nav Item
+URL
+Dropdown Items
+Notes
+Services
+/services/
+Self-Service Laundry, Wash & Fold, Pickup & Delivery, Commercial, Ironing & Pressing
+Dropdown on hover/click
+Pricing
+/pricing/
+—
+Direct link
+Areas We Serve
+/areas/
+Avondale, Irving Park, Logan Square, Hermosa, Albany Park
+Dropdown
+About
+/about/
+—
+Direct link
+FAQ
+/faq/
+—
+Direct link
+Contact
+/contact/
+—
+Direct link
+Right side of header: Phone number with tel: link (visible desktop, icon-only tablet), language toggle (EN | ES), primary CTA button “Schedule Pickup” linking to Cents app.
+6.2 Mobile Navigation
+Hamburger icon (top-right) triggers full-screen overlay menu. Logo centered in mobile header. Phone icon (tap-to-call) visible left of hamburger. Menu items display as accordion with expandable service and area sub-items. Language toggle at bottom of mobile menu. Close via X button or tap outside.
+6.3 Footer Specification
+Column
+Links
+Services
+Self-Service Laundry, Wash & Fold, Pickup & Delivery, Commercial Services, Ironing & Pressing, View Pricing
+Areas We Serve
+Avondale, Irving Park, Logan Square, Hermosa, Albany Park
+Company
+About Us, Contact, FAQ, Resources
+Connect
+Facebook, Instagram, Yelp, Google Reviews
+Legal
+Privacy Policy, Terms of Service, Accessibility Statement
+Footer includes: business name and tagline, full address with Google Maps link, phone number with tel: link, hours of operation, “Schedule Pickup” CTA button, and language toggle. Bottom bar: © 2026 Spin It Up Laundry. All rights reserved. | Powered by TradeWorks AI.
+6.4 Sticky Mobile CTA Bar
+Fixed bottom bar visible on all pages on mobile (below 768px). Two side-by-side buttons: “Call Now” (orange, tel: link) and “Schedule Pickup” (blue, Cents app link). Appears after user scrolls past the hero section. Hides when footer enters viewport. Height 64px, background white, box-shadow 0 -2px 10px rgba(0,0,0,0.1). Buttons full-width within their half, min-height 48px.
+
+7. Page Inventory & Content Plan
+Every page in the site with target word counts, primary conversion goals, and content notes. Developer guides will be produced for each page in the order specified by the rollout phases.
+Page
+Target Words
+Primary Conversion
+Key Content Notes
+Homepage
+1,200–1,500
+Phone call / Cents app order
+Hero with value prop, services grid, social proof, Map Pack signals, bilingual toggle, FAQ
+Services Hub
+600–800
+Click-through to child pages
+Card grid of all services, brief descriptions, internal links down
+Self-Service Laundry
+800–1,000
+Visit (walk-in traffic)
+Machine inventory, pricing overview, amenities, EBT info, hours
+Wash & Fold
+800–1,000
+Drop-off visit / phone call
+Process explanation, turnaround times, pricing, what’s included
+Pickup & Delivery
+1,000–1,200
+Cents app order
+How it works (step-by-step), delivery areas, pricing, Cents app tutorial, FAQ
+Commercial Services
+1,000–1,200
+Contact form / phone call
+Airbnb/salon/gym targeting, volume pricing, turnaround SLAs, case study format
+Ironing & Pressing
+600–800
+Drop-off visit / phone call
+Service details, pricing per item, garment types
+Pricing
+800–1,000
+Visit / Cents app order
+Complete pricing tables by machine size and service type, EBT note, specials
+Service Areas Hub
+400–600
+Click-through to area pages
+Interactive map, linked neighborhood list, delivery radius visualization
+Avondale (area)
+600–800
+Visit / call
+Neighborhood-specific: proximity, Latino community, bilingual service, local landmarks
+Irving Park (area)
+600–800
+Visit / call
+Residential density, commuter convenience, parking advantages
+Logan Square (area)
+600–800
+Pickup order / call
+Pickup & delivery focus, young professional demographic, Cents app CTA
+Hermosa (area)
+600–800
+Visit / call
+Family community, EBT acceptance highlight, proximity details
+Albany Park (area)
+600–800
+Visit / call
+Diverse community, machine capacity advantage, driving directions
+About Us
+800–1,000
+Trust building → contact
+Family business story, facility investment narrative, community commitment
+Contact
+300–400
+Form submit / phone call
+Form-first design, map embed, hours, all contact methods, trust reinforcement
+FAQ
+1,200–1,500
+Answer → service page click
+15–20 questions covering services, pricing, EBT, hours, parking, delivery areas, commercial
+Resources Hub
+300–400
+Click-through to articles
+Article card grid, categories, search
+Cents App Guide
+800–1,000
+Cents app order
+Step-by-step tutorial with screenshots, troubleshooting, benefits
+
+8. Keyword Strategy & Content Silos
+8.1 Primary Keywords
+Keyword
+Est. Monthly Volume
+Intent
+Target Page
+laundromat near me
+110,000+ (national)
+Local / Navigational
+Homepage + Area pages (via GBP)
+laundromat chicago
+2,400
+Local
+Homepage
+laundromat avondale chicago
+70–140
+Local
+/areas/avondale/
+lavanderia cerca de mi
+22,000+ (national)
+Local (Spanish)
+/es/ (Spanish homepage)
+wash and fold near me
+18,100
+Local / Transactional
+/services/wash-and-fold/
+laundry pickup and delivery chicago
+320
+Transactional
+/services/pickup-delivery/
+commercial laundry service chicago
+210
+Commercial / Transactional
+/services/commercial/
+laundromat irving park
+90–170
+Local
+/areas/irving-park/
+laundromat logan square
+170–320
+Local
+/areas/logan-square/
+coin laundry chicago
+590
+Local
+Homepage + /services/self-service/
+laundry service near me
+14,800
+Local / Transactional
+Services hub + area pages
+EBT laundromat near me
+720
+Local / Informational
+/faq/ + Homepage
+8.2 Long-Tail & FAQ Keywords
+These conversational and question-format queries target the FAQ page, service pages, and resource articles. They capture voice search, AI query patterns, and featured snippet opportunities.
+how much does wash and fold cost → /services/wash-and-fold/ + /pricing/
+laundromat that accepts EBT near me → /faq/ + homepage
+can you wash comforters at a laundromat → /services/self-service/ + /faq/
+laundry pickup service logan square → /areas/logan-square/ + /services/pickup-delivery/
+largest washing machines chicago → homepage + /services/self-service/
+free drying laundromat chicago → homepage + /pricing/
+airbnb laundry service chicago → /services/commercial/
+how does laundry pickup work → /services/pickup-delivery/ + /resources/how-to-use-cents-app/
+8.3 Spanish Keyword Cluster
+Spanish Keyword
+English Equivalent
+Target Page
+lavanderia cerca de mi
+laundromat near me
+/es/
+lavanderia en avondale chicago
+laundromat avondale chicago
+/es/ + area context
+servicio de lavado y doblado
+wash and fold service
+/es/servicios/lavado-y-doblado/
+lavanderia que acepta EBT
+laundromat that accepts EBT
+/es/ + /es/preguntas-frecuentes/
+recogida de ropa a domicilio
+laundry pickup and delivery
+/es/servicios/recogida-y-entrega/
+precios de lavanderia
+laundry prices
+/es/precios/
+
+9. Bilingual Strategy
+Avondale is one of Chicago’s most heavily Mexican-American neighborhoods. Spanish-language search for laundromat services is significant — “lavanderia cerca de mi” alone carries 22,000+ monthly searches nationally. Wash Smart Lavanderia, Spin It Up’s largest regional competitor, wins the bilingual market by default because they publish full Spanish content. Spin It Up currently has zero Spanish-language content on its website.
+9.1 Architecture
+All Spanish pages live under the /es/ URL prefix: /es/, /es/servicios/, /es/precios/, etc.
+Each English page includes <link rel="alternate" hreflang="es" href="..."> pointing to its Spanish counterpart, and vice versa.
+A language toggle (EN | ES) appears in both the desktop header and mobile menu, using a flag icon or text label.
+The toggle links to the equivalent page in the other language (not to the homepage). If no translation exists, it links to the Spanish/English homepage.
+Google Search Console submits separate sitemaps for /sitemap-en.xml and /sitemap-es.xml.
+9.2 Content Standards
+Spanish content is not machine-translated. All Spanish pages are written by a native or fluent speaker using conversational Mexican Spanish appropriate to the Avondale community. The tone matches the English site: friendly, direct, informative. Spanish pages are not word-for-word translations — they are culturally adapted. For example, the EBT acceptance messaging is more prominent in Spanish pages because it’s a higher-priority concern for the Spanish-speaking customer segment.
+9.3 Priority Order
+Phase 2 translations (highest impact first): Homepage, Services Hub, Self-Service, Wash & Fold, Pickup & Delivery, Pricing, Contact. Phase 3: FAQ, area pages. The homepage Spanish version should be ready to launch alongside the English site if timeline permits.
+
+10. Conversion Architecture
+10.1 Primary Conversion Paths
+Conversion Action
+Trigger
+Tracking Event
+Estimated Value
+Phone Call
+Tap-to-call on (773) 654-1275
+phone_click (GA4)
+$15–$50 per call
+Cents App Order
+Click “Schedule Pickup” → Cents ordering page
+schedule_pickup (GA4)
+$30–$50 per order
+Contact Form Submit
+Submit form on /contact/ (commercial inquiries, general questions)
+form_submit (GA4)
+$50–$500+ (commercial leads)
+Directions Click
+Click “Get Directions” → Google Maps
+directions_click (GA4)
+$15–$25 (walk-in)
+Walk-In Visit
+Finds via Google Maps / search → visits facility
+Not directly trackable
+$15–$25 per visit
+10.2 CTA Placement Strategy
+Every page includes at minimum: phone number in header (tap-to-call on mobile), primary CTA in hero section, mid-page CTA after key content block, end-of-content CTA above footer. Service pages add an inline CTA after the process/how-it-works section. Area pages include a “Visit Us” CTA with directions link and a “Schedule Pickup” CTA for delivery-eligible neighborhoods. The sticky mobile CTA bar provides persistent conversion access on scroll.
+10.3 Contact Form Specification
+Field
+Type
+Required
+Validation
+Notes
+Name
+text
+Yes
+Min 2 chars
+autocomplete="name"
+Email
+email
+Yes
+RFC 5322
+autocomplete="email"
+Phone
+tel
+Yes
+US format
+autocomplete="tel", inputmode="tel"
+Service Interest
+select
+Yes
+—
+Options: Self-Service, Wash & Fold, Pickup & Delivery, Commercial, Other
+Message
+textarea
+No
+Max 1000 chars
+Placeholder: “Tell us about your laundry needs...”
+Spam prevention: honeypot field + reCAPTCHA v3 (invisible). Submission confirmation: on-page success message (no redirect). Email routing: all submissions to info@spinituplaundry.net with auto-response per service type. Commercial inquiries additionally flagged for priority follow-up.
+10.4 Google Business Profile Optimization
+GBP is the single highest-impact marketing asset for a laundromat. The optimization program runs parallel to the website build:
+Upload 20+ photos: exterior, interior, machines (especially the 130 lb units), amenities, staff, before/after commercial work.
+List all services in GBP with descriptions matching website service pages.
+Post weekly Google Posts featuring the Tues/Wed/Thu free-drying specials and promotions.
+Launch review collection: QR code displayed at counter, card insert in every wash-and-fold bag, post-service SMS request via Cents app.
+Respond to all reviews within 24–48 hours. Negative reviews: acknowledge, offer resolution, move offline.
+Ensure NAP consistency: business name, address, and phone match website header, footer, schema, and all directory listings exactly.
+Set booking URL to Cents app ordering page. Enable messaging with documented response protocol.
+
+11. Technical Foundation
+11.1 Structured Data Strategy
+Schema Type
+Pages
+Purpose
+Laundromat (extends LocalBusiness)
+Homepage, Contact, About
+Primary entity — business hours, address, phone, geo, services, payment accepted, rating
+Service
+Each service child page
+Individual service definition with provider, area served, price range
+FAQPage
+FAQ page + every page with FAQ section
+Eligible for FAQ rich results in Google
+BreadcrumbList
+All pages except homepage
+Navigation path display in search results
+AggregateRating
+Homepage, service pages (when reviews displayed)
+Star rating rich results
+Article
+Blog/resource articles
+Article rich results with author, date, publisher
+WebSite
+Homepage
+Site-level entity with search action potential
+11.2 Performance Budget
+Metric
+Target
+Measurement
+LCP
+<2.5s (homepage <1.5s)
+PageSpeed Insights mobile
+CLS
+<0.1
+PageSpeed Insights
+INP
+<200ms
+PageSpeed Insights
+FCP
+<1.8s
+PageSpeed Insights
+TTFB
+<800ms
+PageSpeed Insights / WebPageTest
+Mobile PageSpeed Score
+>90
+PageSpeed Insights
+Desktop PageSpeed Score
+>95
+PageSpeed Insights
+Total Page Weight
+<500KB (homepage)
+WebPageTest
+Third-Party JS
+<100KB compressed
+Lighthouse audit
+11.3 Image Standards
+WebP primary format with JPEG fallback via <picture> element. Hero images <200KB, content images <100KB, thumbnails <60KB. All images include explicit width and height attributes. Lazy loading (loading="lazy") on all below-fold images. Hero image preloaded via <link rel="preload" as="image">. SVG for logo, icons, and decorative elements. Retina-ready: 2x resolution in srcset for high-density displays.
+11.4 Analytics Implementation
+GA4 via Google Tag Manager. GTM container loads in <head>. Custom events: phone_click, form_submit, schedule_pickup (Cents app CTA click), directions_click, faq_expand, language_toggle, cta_click (with button_text and page_section parameters). Enhanced measurement enabled for page_views, scrolls, outbound_clicks. Custom dimensions: service_type, page_language (en/es), page_category. Google Search Console property linked to GA4.
+11.5 Security & Compliance
+SSL/TLS: HTTPS enforced on all pages, HSTS header enabled. This is the #1 priority technical fix.
+Security headers: Content-Security-Policy, X-Frame-Options, X-Content-Type-Options, Referrer-Policy.
+Privacy Policy page addressing data collection, cookie usage, form data handling, and call recording (Illinois is a two-party consent state for call recording — disclosure required).
+Cookie consent banner if using non-essential cookies (analytics, remarketing).
+WCAG 2.1 AA accessibility compliance: contrast ratios, keyboard navigation, alt text, ARIA landmarks, skip-to-content link.
+ADA compliance statement page linked from footer.
+
+12. Implementation Roadmap
+12.1 Phase 1: Foundation (Weeks 1–3)
+Core English site launch with highest-impact pages. Resolves all Critical and High-severity audit findings.
+Deliverable
+Pages
+Status
+Homepage Developer Guide
+/
+Delivered with this document
+Service Pages (Hub + 4 children)
+/services/, /services/self-service/, /services/wash-and-fold/, /services/pickup-delivery/, /services/commercial/
+Next
+Pricing Page
+/pricing/
+Phase 1
+Contact Page
+/contact/
+Phase 1
+FAQ Page
+/faq/
+Phase 1
+About Page
+/about/
+Phase 1
+Legal Pages (3)
+/privacy-policy/, /terms-of-service/, /accessibility/
+Phase 1
+SSL fix + structured data
+Site-wide
+Phase 1 prerequisite
+Google Workspace setup
+info@spinituplaundry.net
+Phase 1 prerequisite
+GBP optimization (photos, services, Posts)
+Google Business Profile
+Parallel to build
+GA4 + GTM implementation
+Site-wide
+Phase 1
+12.2 Phase 2: Expansion (Weeks 4–6)
+Deliverable
+Pages
+Ironing & Pressing service page
+/services/ironing-pressing/
+Service Areas Hub + 4 neighborhoods
+/areas/, /areas/avondale/, /areas/irving-park/, /areas/logan-square/, /areas/hermosa/
+Cents App tutorial article
+/resources/how-to-use-cents-app/
+Spanish homepage + 6 priority pages
+/es/, /es/servicios/, /es/servicios/autoservicio/, /es/servicios/lavado-y-doblado/, /es/servicios/recogida-y-entrega/, /es/precios/, /es/contacto/
+.com domain resolution
+Acquire/redirect or disambiguate
+Review collection launch
+QR codes, bag inserts, Cents app integration
+12.3 Phase 3: Authority (Weeks 7–12)
+Deliverable
+Pages
+Albany Park area page
+/areas/albany-park/
+Spanish FAQ
+/es/preguntas-frecuentes/
+Resources hub + 3–4 blog articles
+/resources/ + initial content
+Blog topics: Laundry tips for Chicago winters, How to wash large comforters, Commercial laundry guide for Airbnb hosts, EBT laundry assistance guide
+SEO content + topical authority
+Citation building
+Yelp, BBB, Bing Places, Apple Maps, Yellow Pages, Nextdoor, industry directories
+Performance audit + optimization
+Full Lighthouse pass, Core Web Vitals tuning
+12.4 Success Metrics
+Metric
+Current
+90-Day Target
+Measurement
+Audit Score
+53/100
+80+/100
+TradeWorks AI audit methodology
+Google Map Pack presence (“laundromat near me” from 60618)
+Rarely visible
+Top 3 consistently
+Incognito search from Avondale
+Google Reviews
+Few/none
+25+ reviews, 4.5+ average
+Google Business Profile
+Monthly organic sessions
+Unknown (no analytics visible)
+500+ sessions/month
+GA4
+Cents app orders via website
+Unknown
+Tracking established + baseline set
+GA4 schedule_pickup events
+Spanish organic sessions
+0
+50+ sessions/month
+GA4 filtered by /es/ pages
+Mobile PageSpeed Score
+Unknown (SSL blocks testing)
+>90
+PageSpeed Insights
+
+
+End of Document
+
+TradeWorks AI — Website Strategy & Architecture — Spin It Up Laundry v1.0
+Prepared by TradeWorks AI — May 2026

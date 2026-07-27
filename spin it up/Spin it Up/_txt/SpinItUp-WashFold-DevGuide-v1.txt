@@ -1,0 +1,720 @@
+
+SPIN IT UP LAUNDRY
+WASH & FOLDDEVELOPER GUIDE
+Section-by-Section Implementation Specification
+
+URL: spinituplaundry.net/services/wash-and-fold/
+Prepared by: TradeWorks AI  |  Version 1.0  |  May 2026
+Classification: Client Confidential
+
+Table of Contents
+1  How to Use This Guide
+2  Page Identity & Architecture
+3  Keyword Strategy & Content Map
+4  Complete <head> Section
+5  Section 1: Site Header & Navigation
+6  Section 2: Hero Banner
+7  Section 3: AEO Introduction
+8  Section 4: How Wash & Fold Works
+9  Section 5: What’s Included
+10  Section 6: Pricing
+11  Section 7: Turnaround & Hours
+12  Section 8: What We Wash (And What We Don’t)
+13  Section 9: Related Services
+14  Section 10: FAQ Section
+15  Section 11: Final CTA Block
+16  Section 12: Footer
+17  Section 13: Sticky Mobile CTA Bar
+18  Reference: Image Asset Inventory
+19  Reference: GA4 Event Tracking
+20  Reference: Implementation Checklist
+
+1. How to Use This Guide
+This developer guide provides the complete implementation specification for the Wash & Fold Drop-Off page (/services/wash-and-fold/). This is a service child page targeting customers who want someone else to handle their laundry — they drop off a bag and pick up clean, folded clothes. The page converts visitors into drop-off customers or phone callers with questions about the service.
+This guide references the Website Strategy & Architecture Document (v1.0) for brand system and design tokens, and prior developer guides for shared component specifications (header, footer, sticky CTA bar).
+Label Legend
+Label
+Meaning
+NEW
+New content or element not present on the current website
+DEV ACTION
+Specific technical implementation instruction for the developer
+NOTE
+Context, rationale, or clarification for editorial or strategic decisions
+Content Authoring Rules
+All content written fresh. No content from the current GoDaddy site or competitor sites.
+AEO opening paragraph within the first 100–150 words directly answers “wash and fold laundry service Avondale Chicago.”
+All phone numbers render as clickable tel: links.
+Exact copy provided for every text element.
+
+2. Page Identity & Architecture
+URL Path
+/services/wash-and-fold/
+Page Type
+Child — Services Silo
+Canonical URL
+https://spinituplaundry.net/services/wash-and-fold/
+Breadcrumb
+Home > Services > Wash & Fold
+Parent Page
+/services/ (Services Hub)
+Sibling Pages
+/services/self-service/, /services/pickup-delivery/, /services/commercial/, /services/ironing-pressing/
+Primary Keyword
+wash and fold chicago (590/mo)
+Secondary Keywords
+wash and fold near me, laundry drop off avondale, wash dry fold service chicago, fluff and fold chicago
+Search Intent
+Transactional / Local
+Target Word Count
+800–1,000 words
+Primary Conversion Goal
+Drop-off visit or phone call
+Secondary Conversion Goals
+Cents app pickup order (upsell to delivery), pricing page click-through
+Robots Directive
+index, follow
+XML Sitemap
+Include — priority 0.8
+Content Update Frequency
+Evergreen; update pricing when rates change
+hreflang
+<link rel="alternate" hreflang="es" href="https://spinituplaundry.net/es/servicios/lavado-y-doblado/">
+Internal Linking Requirements
+Direction
+Link
+Anchor Text
+Up → Hub
+/services/
+All Services, Back to Services
+Sibling
+/services/self-service/
+Self-Service Laundry (related)
+Sibling
+/services/pickup-delivery/
+Pickup & Delivery (upsell)
+Sibling
+/services/commercial/
+Commercial Services (B2B upsell)
+Sibling
+/services/ironing-pressing/
+Ironing & Pressing (add-on)
+Cross-silo
+/pricing/
+View Full Pricing
+Cross-silo
+/faq/
+See All FAQs
+Cross-silo
+/contact/
+Contact Us
+Up → Root
+/
+Home (breadcrumb)
+
+3. Keyword Strategy & Content Map
+Keyword
+Est. Volume
+Difficulty
+Intent
+Placement
+wash and fold chicago
+590
+Medium
+Transactional
+H1, title, AEO paragraph, schema
+wash and fold near me
+18,100
+High (local)
+Transactional
+Served via GBP + this page content
+laundry drop off avondale
+20–50
+Low
+Local/Trans
+AEO paragraph, process section
+wash dry fold service chicago
+50–110
+Low–Med
+Transactional
+Title tag, body content
+fluff and fold chicago
+110–210
+Low–Med
+Transactional
+Body content (synonym usage)
+laundry service by the pound
+170–320
+Med
+Transactional
+Pricing section, FAQ
+same day wash and fold
+110–210
+Low–Med
+Transactional
+Turnaround section, FAQ
+how much does wash and fold cost
+320
+Low
+Informational
+Pricing section, FAQ
+wash and fold with stain treatment
+20–50
+Low
+Informational
+What’s Included section
+professional laundry service avondale
+20–50
+Low
+Local/Trans
+AEO paragraph
+3.2 Semantic/LSI Terms
+Use naturally: drop-off laundry service, professional wash and fold, laundry by the pound, next-day laundry, same-day laundry, stain treatment, folded laundry, clean and folded, laundry bag, drop off and pick up, professional detergent, fabric softener, eco-friendly detergent, Avondale neighborhood, Kimball Ave, 60618, Irving Park, Logan Square.
+
+4. Complete <head> Section
+4.1 Meta Tags
+Tag
+Content
+<title>
+Wash & Fold Laundry in Chicago | Spin It Up — $1.50/lb, Next-Day (57 characters)
+<meta name="description">
+Professional wash & fold drop-off in Avondale, Chicago. Starting at $1.50/lb with next-day turnaround. Stain treatment included. Open 6 AM–11 PM daily. (142 characters)
+<meta name="robots">
+index, follow
+<meta name="viewport">
+width=device-width, initial-scale=1
+<meta charset>
+UTF-8
+<html lang>
+en
+<link rel="canonical">
+https://spinituplaundry.net/services/wash-and-fold/
+<link rel="alternate" hreflang="es">
+https://spinituplaundry.net/es/servicios/lavado-y-doblado/
+<link rel="alternate" hreflang="en">
+https://spinituplaundry.net/services/wash-and-fold/
+4.2 Open Graph & Twitter
+Tag
+Content
+og:title
+Wash & Fold Drop-Off | Spin It Up Laundry — Avondale, Chicago
+og:description
+Professional wash & fold starting at $1.50/lb. Next-day turnaround. Stain treatment included. Drop off at 3710 N Kimball Ave.
+og:type
+website
+og:url
+https://spinituplaundry.net/services/wash-and-fold/
+og:image
+https://spinituplaundry.net/images/og-wash-fold.jpg (1200x630, <200KB)
+og:locale
+en_US
+og:site_name
+Spin It Up Laundry
+twitter:card
+summary_large_image
+twitter:title
+Wash & Fold | Spin It Up Laundry — Avondale, Chicago
+twitter:description
+Professional wash & fold starting at $1.50/lb. Next-day turnaround. Stain treatment included.
+twitter:image
+https://spinituplaundry.net/images/og-wash-fold.jpg
+4.3 JSON-LD Structured Data
+Two schema blocks: Service schema for Wash & Fold and BreadcrumbList.
+
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Wash and Fold Laundry Service",
+  "alternateName": "Drop-Off Laundry Service",
+  "description": "Professional wash-and-fold drop-off laundry service starting at $1.50 per pound. Next-day turnaround with stain treatment included. Drop off at 3710 N Kimball Ave, Avondale, Chicago.",
+  "url": "https://spinituplaundry.net/services/wash-and-fold/",
+  "provider": {
+    "@type": "Laundromat",
+    "name": "Spin It Up Laundry",
+    "telephone": "+1-773-654-1275",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "3710 N Kimball Ave",
+      "addressLocality": "Chicago",
+      "addressRegion": "IL",
+      "postalCode": "60618"
+    }
+  },
+  "areaServed": [
+    { "@type": "Neighborhood", "name": "Avondale" },
+    { "@type": "Neighborhood", "name": "Irving Park" },
+    { "@type": "Neighborhood", "name": "Logan Square" },
+    { "@type": "Neighborhood", "name": "Hermosa" }
+  ],
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "USD",
+    "price": "1.50",
+    "description": "Starting price per pound for standard wash and fold"
+  },
+  "serviceType": "Wash and Fold Laundry"
+}
+
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://spinituplaundry.net/" },
+    { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://spinituplaundry.net/services/" },
+    { "@type": "ListItem", "position": 3, "name": "Wash & Fold", "item": "https://spinituplaundry.net/services/wash-and-fold/" }
+  ]
+}
+
+DEV ACTION:  Validate Service + BreadcrumbList + FAQPage (Section 14) schemas via Google Rich Results Test after deployment.
+
+5. Section 1: Site Header & Navigation
+Global header component — identical to prior guides. Solid white background. “Services” nav item active. Mobile menu: “Services” expanded, “Wash & Fold” highlighted as current page.
+
+6. Section 2: Hero Banner
+Section Overview
+Compact hero banner with breadcrumb and service-specific value proposition. Background: Spin Blue gradient (#1E40AF → #1E3A8A).
+Layout Specifications
+Property
+Desktop
+Tablet
+Mobile
+Height
+Auto, padding 64px 0
+padding 48px 0
+padding 40px 16px
+Background
+linear-gradient(135deg, #1E40AF 0%, #1E3A8A 100%)
+Same
+Same
+Container
+max-width 1280px, centered, padding 0 48px
+padding 0 24px
+padding 0 16px
+Content Alignment
+Center
+Center
+Center
+Content Specifications
+Breadcrumb: Home > Services > Wash & Fold — standard breadcrumb spec. Margin-bottom 20px.
+
+H1 Headline: "Wash & Fold Drop-Off Laundry in Chicago" — 7 words, 41 characters. Font: 40px/800 (desktop), 32px (tablet), 28px (mobile). Color: white. Primary keyword “wash & fold” + “Chicago” present.
+
+Subheadline: "Drop off dirty. Pick up clean, folded, and ready. Starting at $1.50 per pound with next-day turnaround." — 17 words. Font: 18px/400 (desktop), 16px (mobile). Color: rgba(255,255,255,0.85). Max-width: 640px, centered.
+
+Hero CTAs: Two buttons side-by-side (desktop), stacked (mobile):
+Button
+Text
+Link
+Style
+Primary
+Drop Off Today
+Google Maps directions URL
+CTA Orange
+Secondary
+Call (773) 654-1275
+tel:+17736541275
+White outline
+HTML Code
+<section class="page-hero" aria-label="Wash and Fold Service">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <ol>
+        <li><a href="/">Home</a></li>
+        <li><a href="/services/">Services</a></li>
+        <li aria-current="page">Wash &amp; Fold</li>
+      </ol>
+    </nav>
+    <h1 class="page-hero__title">Wash &amp; Fold Drop-Off Laundry in Chicago</h1>
+    <p class="page-hero__subtitle">Drop off dirty. Pick up clean, folded, and ready. Starting at $1.50 per pound with next-day turnaround.</p>
+    <div class="page-hero__ctas">
+      <a href="[GOOGLE_MAPS_DIRECTIONS]" class="btn btn--primary">Drop Off Today</a>
+      <a href="tel:+17736541275" class="btn btn--outline-white">Call (773) 654-1275</a>
+    </div>
+  </div>
+</section>
+DEV ACTION:  Replace [GOOGLE_MAPS_DIRECTIONS] with the Google Maps directions URL to 3710 N Kimball Ave, Chicago IL 60618: https://www.google.com/maps/dir/?api=1&destination=3710+N+Kimball+Ave,+Chicago,+IL+60618
+
+7. Section 3: AEO Introduction
+Section Overview
+Direct-answer paragraph optimized for AI extraction. Answers “wash and fold laundry service near Avondale Chicago” within the first 100 words. Background: White (#FFFFFF).
+Content Specifications
+NEW:  AEO opening paragraph — new content.
+
+"Spin It Up Laundry offers professional wash-and-fold drop-off service at 3710 N Kimball Ave in Avondale, Chicago. Bring your laundry to our facility and our experienced attendants will wash, dry, and fold everything for you using commercial-grade machines and professional detergent. Standard turnaround is next day, with same-day service available for orders dropped off before 10:00 AM. Pricing starts at $1.50 per pound with a 10 lb minimum. Stain treatment is included at no extra charge on every order. We also offer comforter and bedding wash-and-fold at flat-rate pricing." — 93 words.
+
+Font: 18px/400 Body Text (#334155). Line-height: 1.65. Max-width: 800px, centered. Section padding: 48px 0 (desktop), 32px 16px (mobile).
+NOTE:  This paragraph covers business name, address, service description, equipment quality, turnaround options, pricing with minimum, stain treatment inclusion, and specialty item availability — all within the AEO window. Targets “wash and fold Chicago,” “laundry drop off Avondale,” and “how much does wash and fold cost” simultaneously.
+
+8. Section 4: How Wash & Fold Works
+Section Overview
+Four-step process visualization explaining exactly what happens when a customer drops off laundry. Reduces uncertainty and builds trust. This section also targets HowTo-style featured snippets. Background: Ice Blue (#F0F9FF).
+Content Specifications
+H2: "How It Works" — 3 words. Font: 36px/700, Dark Slate. Centered. Margin-bottom 48px.
+
+Step
+Number
+Title
+Description
+1
+01
+Drop Off Your Laundry
+Bring your laundry to 3710 N Kimball Ave during operating hours (6 AM–11 PM, 7 days). Our attendant weighs your bag, notes any special instructions, and gives you a receipt with your estimated pickup time.
+2
+02
+We Wash, Dry & Fold
+Our team washes your clothes using commercial-grade machines with professional-quality detergent. We treat stains before washing at no extra charge. Everything is dried at the appropriate temperature and hand-folded.
+3
+03
+Quality Check
+Before your order is bagged, we inspect each item for remaining stains, check that nothing was missed, and ensure everything is neatly folded. Garments that need special attention are flagged and handled separately.
+4
+04
+Pick Up Clean & Ready
+We call or text you when your order is ready. Standard turnaround is next day. Walk in, show your receipt, and take home your clean, folded laundry. Or upgrade to pickup and delivery through our Cents app.
+Layout: four horizontal step cards (desktop), two-column grid (tablet), vertical stack (mobile). Same card spec as the homepage How It Works section: white bg, border, border-radius 12px, step number in 48px/800 Fresh Cyan overlapping top edge. Dotted connecting line between cards on desktop.
+Below steps: "Prefer delivery to your door? Schedule pickup and delivery through the Cents app →" — link to /services/pickup-delivery/. Font: 16px/600 Spin Blue. This is the upsell path from wash-and-fold to the higher-value pickup-delivery service.
+
+9. Section 5: What’s Included
+Section Overview
+Detailed breakdown of what the wash-and-fold service covers. Answers the pre-purchase questions that stop customers from converting: “What detergent do they use? Do they treat stains? How is it folded?” Background: White (#FFFFFF).
+Content Specifications
+H2: "What’s Included in Every Wash & Fold Order" — 8 words. Font: 36px/700, Dark Slate. Margin-bottom 40px.
+
+Two-column layout on desktop: checkmark list left (50%), image right (50%). Stacked on mobile: list first, image below.
+
+Icon
+Included Item
+Detail
+Check
+Professional Washing
+Every load washed in commercial-grade machines with professional detergent. Hot, warm, or cold water based on fabric type.
+Check
+Stain Treatment
+Pre-wash stain treatment on all visible stains at no extra charge. We use commercial-grade stain removers appropriate for each fabric.
+Check
+Full Drying
+Tumble dried at the appropriate temperature for each fabric type. Delicates air-dried on request.
+Check
+Hand Folding
+Every item individually hand-folded by our attendants. Shirts, pants, towels, sheets — everything neatly organized.
+Check
+Bagging
+Your folded laundry is packaged in a clean bag, organized and ready to put away when you get home.
+Check
+Ready Notification
+We call or text you when your order is complete. No guessing, no wasted trips.
+Each item: flex row with green checkmark icon (Check, Lucide, 20px, #16A34A) + bold title + detail text. Title: 17px/700 Dark Slate. Detail: 16px/400 Body Text. Items spaced 16px apart. Left column max-width: 560px.
+Optional Add-Ons
+Add-On
+Price
+Notes
+Fabric softener
+Included
+Standard on all loads unless customer requests unscented
+Hypoallergenic / fragrance-free detergent
+No extra charge
+Request at drop-off
+Hangers (for dress shirts, blouses)
+$0.50/item
+Available on request
+Comforter / bedding wash & fold
+Flat rate — see pricing
+King, queen, full/twin sizes
+NOTE:  Add-on pricing should be confirmed with client before publication. These are reasonable estimates based on industry standards and the audit data.
+
+10. Section 6: Pricing
+Section Overview
+Transparent pricing table for featured snippet extraction. Targets “how much does wash and fold cost” directly. Background: Ice Blue (#F0F9FF).
+Content Specifications
+H2: "Wash & Fold Pricing" — 4 words. Font: 36px/700, Dark Slate. Margin-bottom 16px.
+Subtext: "Simple, transparent pricing by the pound. No hidden fees, no surprises." — 11 words. 16px/400 Body Text. Margin-bottom 32px.
+
+Service
+Price
+Minimum
+Turnaround
+Standard Wash & Fold
+$1.50/lb
+10 lb minimum
+Next day
+Same-Day Wash & Fold
+$2.00/lb
+10 lb minimum
+Same day (drop off before 10 AM)
+Comforter — Full/Twin
+$12.00 flat
+N/A
+Next day
+Comforter — Queen
+$15.00 flat
+N/A
+Next day
+Comforter — King
+$18.00 flat
+N/A
+Next day
+Sleeping Bag
+$15.00 flat
+N/A
+Next day
+Dress Shirt (wash, fold, hanger)
+$3.50/item
+No minimum
+Next day
+NOTE:  All pricing must be confirmed with client before publication. Comforter pricing aligns with the data from the audit (placeholder text was the original finding — these values fill that gap with real copy). The /pricing/ page will carry the authoritative complete pricing table.
+Below table: "View complete pricing for all services →" — links to /pricing/. Plus: "Stain treatment included at no extra charge on every order." in 15px/600 Fresh Cyan with Check icon.
+DEV ACTION:  Mobile: table reflows to stacked cards (each row becomes a card). Same pattern as the Self-Service pricing table. Use CSS Grid or Flexbox at <768px.
+
+11. Section 7: Turnaround & Hours
+Section Overview
+Dedicated section addressing turnaround expectations — the #1 question customers have about wash-and-fold services. Background: White (#FFFFFF).
+Content Specifications
+H2: "When Will My Laundry Be Ready?" — 6 words. Font: 32px/700, Dark Slate. Margin-bottom 32px.
+
+Drop-Off Time
+Turnaround
+Pick Up By
+Before 10:00 AM
+Same-day available (at $2.00/lb rate)
+By closing (11:00 PM) same day
+10:00 AM – 9:30 PM
+Next day
+Next day during operating hours
+After 9:30 PM
+Cannot accept — facility closes at 11 PM
+N/A
+"We’ll call or text you the moment your order is ready for pickup. No need to guess or make extra trips. If you can’t pick up the same day, we hold your order for up to 7 days at no additional charge." — 38 words. Font: 17px/400 Body Text.
+
+Hours Block: 
+"Drop-Off Hours: 6:00 AM – 9:30 PM, 7 Days a Week" — displayed in a bordered info box. Icon: Clock (Lucide). Font: 18px/700 Dark Slate. Below: "Facility open until 11:00 PM for pickup." in 15px/400 Body Text.
+
+12. Section 8: What We Wash (And What We Don’t)
+Section Overview
+Transparency section that builds trust and prevents customer service issues. Clearly states what items are accepted and what requires special handling. Background: Ice Blue (#F0F9FF).
+Content Specifications
+H2: "What We Wash — And What Needs Special Handling" — 8 words. Font: 32px/700, Dark Slate. Margin-bottom 32px.
+
+Two-column layout: “We Wash” left (green check items), “Special Handling” right (amber alert items).
+
+We Wash (Standard Service)
+Everyday clothing (shirts, pants, shorts, socks, underwear)
+Towels and washcloths
+Bed sheets, pillowcases, and standard bedding
+Comforters and duvets (flat-rate pricing)
+Sleeping bags
+Gym clothes and activewear
+Children’s clothing
+Uniforms and work clothes
+Table linens and kitchen towels
+Special Handling / Not Accepted
+Dry-clean-only garments (check labels — we cannot process these)
+Leather, suede, or fur items
+Heavily soiled items (grease, paint, chemical contamination) — call ahead
+Items with bedbugs or pest contamination — not accepted for health/safety
+Rugs and large area carpets — not accepted
+Formal wear requiring pressing — see our Ironing & Pressing service
+Left column items: green Check icon (#16A34A). Right column items: amber AlertTriangle icon (#F59E0B). Each item: 16px/400 Body Text. “Ironing & Pressing” links to /services/ironing-pressing/. Section max-width: 900px, centered.
+
+13. Section 9: Related Services
+Section Overview
+Cross-linking section connecting to sibling pages. Primary upsell: Pickup & Delivery (same service, delivered to your door). Secondary: Ironing (add-on) and Self-Service (alternative). Background: White (#FFFFFF).
+Content Specifications
+H2: "More Ways to Get Your Laundry Done" — 7 words. Centered. Font: 32px/700, Dark Slate. Margin-bottom 40px.
+
+Card
+Title
+One-Liner
+CTA
+Link
+1
+Pickup & Delivery
+Same wash & fold service, but we come to your door. Schedule via the Cents app.
+Schedule Pickup →
+/services/pickup-delivery/
+2
+Ironing & Pressing
+Add professional pressing to your wash & fold. Drop off together, pick up together.
+View Pressing →
+/services/ironing-pressing/
+3
+Self-Service Laundry
+Prefer to do it yourself? Our 41 washers and 52 dryers are ready when you are.
+View Self-Service →
+/services/self-service/
+Same compact card spec as the Self-Service related services section. Three cards in a row (desktop), stacked (mobile).
+
+14. Section 10: FAQ Section
+Section Overview
+Wash-and-fold-specific FAQ targeting long-tail queries about service details, pricing, and process. FAQPage schema required. Background: Ice Blue (#F0F9FF).
+Content Specifications
+H2: "Wash & Fold FAQ" — 4 words. Centered. Font: 32px/700, Dark Slate. Margin-bottom 40px.
+
+#
+Question
+Answer
+1
+How much does wash and fold cost?
+Standard wash-and-fold pricing at Spin It Up Laundry starts at $1.50 per pound with a 10 lb minimum. Same-day service is available at $2.00 per pound for orders dropped off before 10:00 AM. Comforters are priced at a flat rate: $12 for full/twin, $15 for queen, and $18 for king. Stain treatment is included in every order at no additional charge.
+2
+How long does wash and fold take?
+Standard turnaround is next day. If you drop off before 10:00 AM, same-day service is available at the $2.00/lb rate. We call or text you when your order is ready. If you cannot pick up on the expected day, we hold your order for up to 7 days at no additional charge.
+3
+Do you separate colors and whites?
+Yes. Our attendants sort every order by color, fabric type, and washing temperature before loading. Whites, darks, and colors are washed separately. Delicate items are identified and handled appropriately.
+4
+Can I request a specific detergent?
+We use a professional-grade detergent as our standard. If you prefer hypoallergenic, fragrance-free, or a specific brand, let us know at drop-off and we will accommodate your request at no extra charge.
+5
+What if something gets lost or damaged?
+We take care with every order. Each customer’s laundry is washed individually — never mixed with another customer’s clothes. If any issue arises, contact us at (773) 654-1275 and we will make it right.
+6
+Is there a minimum order?
+Yes. The minimum order for standard wash-and-fold is 10 pounds. Most customers find that a standard laundry bag weighs 12–18 pounds, so most orders exceed the minimum naturally.
+DEV ACTION:  Implement FAQPage JSON-LD schema. Each Q&A maps to a Question entity with acceptedAnswer. Separate script block from Service and BreadcrumbList schemas. Validate with Google Rich Results Test.
+Same accordion design spec as prior FAQ sections. First item default-expanded on desktop. Max-width 800px, centered.
+Below FAQ: "View All FAQs" link centered, links to /faq/.
+
+15. Section 11: Final CTA Block
+Content Specifications
+H2: "Drop Off Your Laundry Today" — 5 words. White. Centered. Font: 36px/700.
+Subtitle: "3710 N Kimball Ave, Avondale — drop-off accepted 6 AM to 9:30 PM, seven days a week. Starting at $1.50/lb." — 19 words. 18px/400 rgba(255,255,255,0.85). Centered.
+
+Button
+Text
+Link
+Style
+1
+Get Directions
+Google Maps directions URL
+CTA Orange (primary)
+2
+Call (773) 654-1275
+tel:+17736541275
+White outline
+3
+Or Schedule Pickup
+Cents app URL
+Ghost white — upsell to delivery
+Background: Spin Blue gradient. Section padding: 80px 0 desktop, 48px 16px mobile. The third button “Or Schedule Pickup” is an intentional upsell path for visitors who like the wash-and-fold service but would prefer not to make the trip.
+
+16. Section 12: Footer
+Global footer component — identical to Homepage Developer Guide. No page-specific modifications.
+
+17. Section 13: Sticky Mobile CTA Bar
+Global component. Buttons: “Call Now” (orange, tel: link) and “Get Directions” (blue, Google Maps link). Same override as the Self-Service page — the secondary button targets walk-in visits rather than Cents app orders, since this page’s primary conversion is a physical drop-off.
+
+18. Reference: Image Asset Inventory
+Image ID
+Section
+Dimensions
+Format
+Max Size
+Alt Text
+Loading
+og-wash-fold
+Social share
+1200x630
+JPEG
+<200KB
+Neatly folded laundry at Spin It Up Laundry
+N/A (meta)
+folded-laundry
+What’s Included
+600x450
+WebP+JPEG
+<100KB
+Stack of clean, professionally folded laundry
+lazy
+drop-off-counter
+How It Works
+600x400
+WebP+JPEG
+<100KB
+Customer dropping off laundry bag at Spin It Up front counter
+lazy
+logo-light
+Header/Footer
+SVG
+SVG
+<10KB
+Spin It Up Laundry logo
+inline
+NOTE:  Folded laundry photos and drop-off counter photos should be real images from Spin It Up Laundry. Use interim images from client’s social media if professional photography is not yet available.
+
+19. Reference: GA4 Event Tracking
+Wash & Fold page-specific GA4 events. Implement via GTM.
+Event Name
+Trigger
+Parameters
+Section
+phone_click
+Click on any tel: link
+phone_number, page_section
+Global
+directions_click
+Click “Get Directions” or “Drop Off Today”
+page_section
+Hero, CTA Block, Sticky Bar
+schedule_pickup
+Click “Or Schedule Pickup” (upsell)
+page_section, source: upsell
+CTA Block
+cta_click
+Click any CTA button
+button_text, destination_url, page_section
+All
+faq_expand
+Expand FAQ accordion item
+question_text
+FAQ
+related_service_click
+Click a related service card
+service_name, destination_url
+Related Services
+pricing_link_click
+Click “View complete pricing”
+destination_url
+Pricing
+
+20. Reference: Implementation Checklist
+Technical Validation
+HTML validates (W3C validator clean)
+All JSON-LD validates: Service + BreadcrumbList + FAQPage
+HTTPS enforced, no mixed content
+Mobile PageSpeed score >90
+Desktop PageSpeed score >95
+All internal links return 200
+All tel: links functional on mobile
+Google Maps directions URL opens correct destination
+OG tags render correctly
+Hreflang points to /es/servicios/lavado-y-doblado/
+Content & SEO
+All copy matches this guide exactly
+Title tag within 60 characters
+Meta description within 155 characters
+Single H1 containing primary keyword “wash & fold”
+Heading hierarchy: H1 > H2 > H3
+AEO paragraph within first 100 words
+Breadcrumb: Home > Services > Wash & Fold
+Canonical URL: https://spinituplaundry.net/services/wash-and-fold/
+Pricing table responsive (card layout mobile)
+Related services link to correct sibling pages
+Upsell link to /services/pickup-delivery/ present in How It Works and CTA block
+XML sitemap includes this page at priority 0.8
+Accessibility
+Skip-to-content link present
+Breadcrumb: <nav aria-label="Breadcrumb"> with <ol>
+Pricing table: proper <th> headers with scope
+Color contrast WCAG 2.1 AA on all combinations
+FAQ accordion keyboard-operable
+ARIA landmarks: banner, navigation, main, contentinfo
+Analytics
+GA4 + GTM events verified in debug mode
+phone_click confirmed on all tel: links
+directions_click confirmed on Get Directions CTAs
+schedule_pickup upsell event firing from CTA block
+
+
+End of Document
+TradeWorks AI — Spin It Up Laundry Wash & Fold Developer Guide v1.0
+Prepared by TradeWorks AI — May 2026

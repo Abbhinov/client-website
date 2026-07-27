@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 90" width="360" height="90">
+  <title>Edge 2 Hedges — horizontal header logo</title>
+  <!-- Grass tuft icon (left) -->
+  <g transform="translate(40, 50)">
+    <path d="M-22 14 Q-22 -4 -18 -14 Q-14 -4 -16 14 Z" fill="#0F3D24"/>
+    <path d="M22 14 Q22 -4 18 -14 Q14 -4 16 14 Z" fill="#0F3D24"/>
+    <path d="M-12 16 Q-12 -8 -8 -20 Q-4 -8 -8 16 Z" fill="#1A5A33"/>
+    <path d="M12 16 Q12 -8 8 -20 Q4 -8 8 16 Z" fill="#1A5A33"/>
+    <path d="M-3 18 Q-3 -10 0 -26 Q3 -10 3 18 Z" fill="#0F3D24"/>
+  </g>
+  <!-- EDGE — anchored start with explicit gap before disc -->
+  <text x="85" y="40" font-family="'Arial Black', 'Helvetica Neue', sans-serif" font-size="18" font-weight="900" fill="#0F3D24" letter-spacing="1.5">EDGE</text>
+  <!-- Gold "2" disc with breathing room -->
+  <circle cx="156" cy="33" r="9" fill="#D4A744"/>
+  <text x="156" y="39" text-anchor="middle" font-family="Georgia, serif" font-size="13" font-weight="700" font-style="italic" fill="#FFFFFF">2</text>
+  <!-- HEDGES -->
+  <text x="85" y="74" font-family="'Arial Black', 'Helvetica Neue', sans-serif" font-size="32" font-weight="900" fill="#0F3D24" letter-spacing="2">HEDGES</text>
+</svg>

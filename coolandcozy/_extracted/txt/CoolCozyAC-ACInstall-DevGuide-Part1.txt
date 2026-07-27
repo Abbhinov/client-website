@@ -1,0 +1,526 @@
+﻿
+DEVELOPER IMPLEMENTATION GUIDE
+
+COOL & COZY AC REPAIR
+Licensed HVAC Contractor  ·  Jacksonville, Florida
+
+AC INSTALLATION
+Service Child Page  ·  Part 1 of 2
+Page Identity Through System Types & Sizing
+
+URL: coolcozyac.com/services/ac-installation
+Prepared by: TradeWorks AI  |  Version 1.0  |  May 2026
+Classification: Client Confidential
+
+Table of Contents
+
+1.  How to Use This Guide
+2.  Page Identity & Architecture
+3.  Keyword Strategy & Content Map
+4.  Complete <head> Section
+5.  Section-by-Section Build (Part 1)
+5.1  Page Hero
+5.2  AEO Introduction Block
+5.3  When Should You Replace Your AC?
+5.4  Our Installation Process
+5.5  System Types & Sizing for Jacksonville
+  (Part 2: Brands, Pricing/Financing, PM/Commercial, Why Choose Us, Testimonials, FAQ, Related Services, CTA, Reference)
+
+1. How to Use This Guide
+This guide defines the AC Installation & Replacement service child page at /services/ac-installation. It targets the highest-revenue service Cool & Cozy offers — new system installations typically range from $4,000 to $12,000+, making each conversion from this page worth significantly more than a repair lead. The page must convince visitors that Cool & Cozy is qualified, trustworthy, and competitively priced for a major purchase decision.
+The AC Installation page serves two distinct visitor segments: (1) homeowners whose existing system has failed beyond economical repair and need a replacement now, and (2) homeowners and property managers proactively planning a system upgrade for efficiency, reliability, or property value. The content addresses both with appropriate urgency for the first and educational depth for the second.
+Shared components (header, footer, emergency banner, sticky mobile CTA) apply identically from the Homepage Developer Guide. The Jacksonville coastal brand system from the Strategy & Architecture document governs all visual decisions.
+1.1 Content Authoring Rules
+All content fresh and original. No duplication from AC Repair page, hub, or homepage.
+Installation content is higher-consideration than repair — visitors research before buying. The tone is educational, consultative, and transparent.
+Technical accuracy required: SEER2 ratings (current standard replacing SEER as of January 2023), tonnage sizing, system types, and brand information must be factually correct.
+Jacksonville-specific: humidity load calculations, salt air equipment considerations for Beaches/coastal properties, Florida Building Code requirements for new installations, JEA energy savings references.
+Property manager angle: multi-unit fleet replacement, standardized equipment across portfolio, volume pricing, lifecycle cost analysis.
+Pricing must be honest ranges with clear factors — never bait pricing or misleading “starting at” figures without context.
+
+2. Page Identity & Architecture
+Property
+Specification
+URL Path
+/services/ac-installation
+Canonical URL
+https://coolcozyac.com/services/ac-installation
+Page Type
+Service child page
+Parent Page
+/services (Services Hub)
+Breadcrumb
+Home > Services > AC Installation
+Silo
+Services silo, child of /services hub
+Primary Keyword
+AC installation Jacksonville FL
+Secondary Keywords
+new AC system Jacksonville, AC replacement Jacksonville, HVAC installation Duval County, central air installation Jacksonville
+Search Intent
+Commercial investigation (high-consideration purchase)
+Target Word Count
+2,200–2,800 words
+Primary Conversion Goal
+Phone call for free installation estimate
+Secondary Conversion Goals
+Contact form (/contact?service=ac-installation), financing inquiry, property management multi-unit quote
+Robots Directive
+index, follow
+XML Sitemap
+Included, priority 0.8, changefreq monthly
+Content Update Frequency
+Annual (update SEER standards, pricing ranges, brand availability)
+
+2.1 Sibling Pages
+Sibling
+URL
+Cross-Link Priority
+AC Repair
+/services/ac-repair
+High — repair-vs-replace funnel
+AC Maintenance
+/services/ac-maintenance
+High — post-install care
+Emergency AC Repair
+/services/emergency-ac-repair
+Medium — failed system replacement
+Ductwork
+/services/ductwork
+High — duct modification for new system
+Thermostat Installation
+/services/thermostat-installation
+High — smart thermostat with new system
+Indoor Air Quality
+/services/indoor-air-quality
+Medium — IAQ add-ons with install
+Commercial HVAC
+/services/commercial-hvac
+High — commercial installs
+
+2.2 Internal Linking Requirements
+Links TO parent hub /services: breadcrumb + contextual
+Links TO /services/ac-repair: “If your system can be repaired” cross-link in “When to Replace” section
+Links TO /services/ac-maintenance: post-install maintenance plan pitch
+Links TO /services/ductwork: duct modification note during installation
+Links TO /services/thermostat-installation: smart thermostat upgrade with new system
+Links TO /contact?service=ac-installation: at least 3 (hero, mid-page, final CTA)
+Links TO /financing: from pricing/financing section
+Links TO /resources/signs-ac-needs-replacement: contextual cross-link
+Links TO /resources/seer-rating-explained: contextual cross-link
+
+3. Keyword Strategy & Content Map
+3.1 Primary Keyword
+Property
+Specification
+Primary Keyword
+AC installation Jacksonville FL
+Estimated Monthly Volume
+400–700
+Search Intent
+Commercial investigation
+Placement
+H1, title tag, meta description, AEO opening paragraph
+3.2 Full Keyword Cluster
+Keyword
+Est. Vol.
+Intent
+Page Placement
+AC installation Jacksonville FL
+400–700
+Comm.
+H1, title, meta, AEO para
+new AC system Jacksonville
+150–300
+Comm.
+AEO paragraph, system types section
+AC replacement Jacksonville
+200–400
+Comm.
+“When to Replace” section heading
+central air installation Jacksonville
+100–200
+Comm.
+System types section
+HVAC installation cost Jacksonville
+100–250
+Info
+Pricing section (Part 2)
+how much new AC system Jacksonville
+50–150
+Info
+Pricing section heading, FAQ
+best AC brands Florida
+100–300
+Info
+Brands section (Part 2)
+SEER2 rating explained
+200–500
+Info
+System types section, cross-link
+ductless mini-split Jacksonville
+50–150
+Comm.
+System types — ductless card
+AC replacement property management
+20–60
+Comm.
+PM section (Part 2)
+AC financing Jacksonville
+30–80
+Info
+Financing section, cross-link
+
+3.3 Semantic Terms
+SEER2 rating, energy efficiency, tonnage, cooling load, Manual J calculation, BTU, air handler, condenser, heat pump, package unit, split system, ductless mini-split, multi-zone
+New construction, system replacement, equipment upgrade, end-of-life, R-22 phase-out, R-410A, R-32, variable speed, two-stage, single-stage, inverter-driven
+Carrier, Trane, Lennox, Rheem, Goodman, Daikin, York, Bryant, Amana, Mitsubishi, Fujitsu
+Florida Building Code, energy code compliance, hurricane tie-down, salt air corrosion resistance, coastal equipment considerations, humidity load, latent heat removal
+Warranty, manufacturer warranty, labor warranty, extended warranty, financing, monthly payment, 0% APR, Synchrony, GreenSky
+
+4. Complete <head> Section
+4.1 Meta Tags
+Property
+Specification
+Title Tag
+AC Installation Jacksonville FL | New System & Replacement | Cool & Cozy
+Title Character Count
+71 characters
+Meta Description
+New AC installation and system replacement in Jacksonville, FL. Licensed contractor (CAC1819948), free estimates, flexible financing. Residential, commercial & property management. Call (904) 555-0199.
+Meta Desc. Character Count
+155 characters
+Canonical URL
+https://coolcozyac.com/services/ac-installation
+Robots
+index, follow
+og:title
+AC Installation Jacksonville FL | Cool & Cozy AC Repair
+og:description
+Licensed AC installation for Jacksonville homes, businesses & managed properties. Free estimates, top-brand equipment, financing available.
+og:url
+https://coolcozyac.com/services/ac-installation
+og:image
+https://coolcozyac.com/images/og-ac-installation.jpg (1200×630px)
+4.2 JSON-LD Structured Data
+4.2.1 Service Schema
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "AC Installation & Replacement Jacksonville FL",
+  "serviceType": "Air Conditioning Installation",
+  "description": "Professional AC installation and system replacement for residential homes, commercial buildings, and managed property portfolios in Jacksonville and Duval County. All major brands. Licensed Florida contractor CAC1819948.",
+  "provider": {
+    "@type": "HVACBusiness",
+    "name": "Cool & Cozy AC Repair",
+    "url": "https://coolcozyac.com/",
+    "telephone": "+19045550199",
+    "address": { "@type": "PostalAddress", "addressLocality": "Jacksonville", "addressRegion": "FL", "addressCountry": "US" },
+    "hasCredential": { "@type": "EducationalOccupationalCredential", "credentialCategory": "Certified Air Conditioning Contractor", "identifier": "CAC1819948" }
+  },
+  "areaServed": { "@type": "City", "name": "Jacksonville" },
+  "offers": [
+    { "@type": "Offer", "price": "0", "priceCurrency": "USD", "description": "Free installation estimates" },
+    { "@type": "Offer", "description": "Financing available on approved credit" }
+  ]
+}
+
+4.2.2 BreadcrumbList
+{ "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
+  { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://coolcozyac.com/" },
+  { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://coolcozyac.com/services" },
+  { "@type": "ListItem", "position": 3, "name": "AC Installation", "item": "https://coolcozyac.com/services/ac-installation" }
+] }
+
+4.2.3 FAQPage Schema
+Specified in Part 2 alongside FAQ content.
+4.3 Preload Hints
+Hero image: <link rel="preload" href="/images/hero-ac-installation.webp" as="image" type="image/webp">
+Font preload: same Poppins strategy (shared across all pages)
+
+5. Section-by-Section Build (Part 1)
+The AC Installation page contains 11 content blocks. Part 1 covers blocks 1–5 (Hero through System Types & Sizing). Part 2 covers blocks 6–11 (Brands, Pricing/Financing, PM/Commercial, Why Choose Us/Testimonials, FAQ, Related Services, Final CTA) plus reference appendix.
+
+5.1 Page Hero
+Section Overview
+The installation page hero speaks to a visitor in decision-making mode, not emergency mode. Unlike the AC Repair hero (“your AC is broken right now”), this hero positions Cool & Cozy as a trusted advisor for a major purchase. The tone is confident and consultative: “we’ll help you choose the right system.”
+Conversion Role: Drive free estimate requests. This is a high-consideration purchase — the visitor wants a consultation, not just a phone number.
+Layout
+Property
+Specification
+Desktop
+Full-width, 380px height, content left-aligned within 1280px
+Mobile
+Full-width, auto height (min 280px), centered text, stacked CTAs
+Background
+Photo background with Evergreen gradient overlay: rgba(26,86,83,0.78) to rgba(26,86,83,0.55)
+Content
+Breadcrumb
+Home > Services > AC Installation
+H1 Headline
+AC Installation & System Replacement in Jacksonville, FL
+Character Count: 54 characters
+Style: Poppins 36px/700, #FFFFFF, max-width 640px
+Subheadline
+Whether your system has reached end-of-life or you’re upgrading for efficiency and comfort, Cool & Cozy sizes, recommends, and installs the right AC for your Jacksonville home, business, or managed property. Licensed. Transparent pricing. Financing available.
+Word Count: 40 words
+Style: Poppins 17px/400, #F0E6D3, max-width 580px
+Dual CTAs
+Button
+Action
+Style
+Get a Free Estimate
+/contact?service=ac-installation
+Coral bg, white text, pill, 52px
+Call (904) 555-0199
+tel:+19045550199
+Transparent bg, white border, pill
+
+On the installation page, the form CTA (“Get a Free Estimate”) is the PRIMARY button (Coral bg) and the phone call is secondary. Installation is a consultative sale — visitors are more likely to request an estimate than make an impulse call. This is the opposite of the AC Repair page where the phone call is primary.
+Trust Indicators
+✓ FL License CAC1819948  ·  ✓ Free Estimates  ·  ✓ Financing Available  ·  ✓ All Major Brands
+Image Specifications
+Property
+Specification
+Image Name
+hero-ac-installation
+Subject
+New outdoor AC condenser unit installed beside a Jacksonville home, or technician positioning a new air handler. Clean, professional installation shot.
+Dimensions
+1920×1080, srcset: 1920w, 1280w, 768w, 480w
+Format
+WebP + JPEG fallback
+File Size
+< 180KB (WebP)
+Alt Text
+New air conditioning system installed by Cool & Cozy AC Repair at a Jacksonville, Florida home
+Loading
+Preloaded — LCP element
+DEV ACTION: PLACEHOLDER: Source from client (completed installation photo) or licensed stock. A clean, new outdoor unit beside a well-maintained Florida home is ideal.
+GA4
+Property
+Specification
+cta_click
+button_text: “Get a Free Estimate”, destination_url: /contact?service=ac-installation, page_section: “hero”
+phone_click
+page_section: “hero”
+
+5.2 AEO Introduction Block
+Section Overview
+Answers “Who installs AC systems in Jacksonville, FL?” and “What does AC installation include?” within 150 words. This paragraph is the AEO/GEO anchor for the page.
+Layout
+Property
+Specification
+Container
+Full-width, #FFFFFF
+Content Width
+720px centered
+Padding
+56px top, 40px bottom (desktop); 32px (mobile)
+Content
+H2 Heading
+Professional Air Conditioning Installation in Jacksonville, FL
+AEO Opening Paragraph
+Cool & Cozy AC Repair provides professional air conditioning installation and system replacement for homes, businesses, and managed property portfolios throughout Jacksonville and Duval County. As a Florida-licensed contractor (CAC1819948) ranked in the top 13% of state contractors by BuildZoom, the company installs central air split systems, package units, ductless mini-splits, and heat pumps from all major manufacturers including Carrier, Trane, Lennox, Rheem, Goodman, and Daikin. Every installation begins with a proper cooling load calculation based on square footage, insulation quality, window exposure, ductwork condition, and Jacksonville’s specific humidity demands — ensuring the system is correctly sized for maximum efficiency and comfort. Cool & Cozy offers free in-home estimates, flexible financing on approved credit, and bilingual service in English and Spanish. Call (904) 555-0199 to schedule your consultation.
+Word Count: 131 words
+This paragraph names system types, brands, and the load calculation process specifically. AI systems can extract each as a standalone fact when answering different queries (“Who installs Trane in Jacksonville?” “Do I need a load calculation for new AC?”).
+Supporting Paragraph
+A new AC system is one of the largest investments you’ll make in your home. In Jacksonville’s subtropical climate, your air conditioner runs 2,500+ hours per year — more than almost any other appliance. Choosing the right system, sized correctly and installed properly, determines your comfort, your energy bills, and the lifespan of the equipment for the next 15 to 20 years. Cool & Cozy takes this decision seriously, and we make sure you have all the information you need to choose confidently.
+Word Count: 82 words
+
+5.3 When Should You Replace Your AC System?
+Section Overview
+This section addresses the most common pre-purchase question: “Do I actually need a new system, or can mine be repaired?” It provides an honest decision framework that builds trust by NOT pushing replacement when repair makes more sense. This cross-links to the AC Repair page for visitors whose system can still be saved — demonstrating integrity rather than upselling.
+Conversion Role: Qualify the visitor. If they match the replacement criteria, they feel validated in their decision to explore a new system. If they don’t, the cross-link to AC Repair keeps them on the site.
+Layout
+Property
+Specification
+Container
+Full-width, #EAF3F2 (Sky Mist) background
+Content Width
+1080px centered
+Padding
+64px top/bottom (desktop), 32px (mobile)
+Desktop
+Intro paragraph above, then 2-column: left = “Consider Replacement When...” checklist, right = “Repair May Be Better If...” checklist
+Mobile
+Single column, replacement checklist first
+Content
+H2 Heading
+When Should You Replace Your AC Instead of Repairing It?
+AEO Note: This heading directly matches the voice-search query. The first sentence below is the featured-snippet target.
+Featured Snippet Paragraph
+Consider replacing your AC system if it is 12 or more years old, requires a repair costing more than 50% of a new system’s price, uses R-22 (Freon) refrigerant which is no longer manufactured, needs repairs more than twice per year, or has a SEER rating below 13 (significantly less efficient than modern systems rated SEER2 14.3 or higher). If your system is under 10 years old and the repair is a one-time fix under $500, repair is almost always the better financial decision.
+Word Count: 88 words
+
+Left Column: Consider Replacement When…
+Your system is 12–15+ years old and showing increasing repair frequency
+The repair cost exceeds 50% of what a new system would cost
+Your system uses R-22 (Freon) — phased out by EPA mandate, replacement refrigerant is increasingly expensive and scarce
+You’ve needed 2 or more repairs in the past 12 months
+Your system’s SEER rating is below 13 (modern systems are SEER2 14.3–22+, saving 25–50% on energy costs)
+Your JEA electric bills have been rising despite normal usage patterns
+Your system no longer cools your home evenly — some rooms are always warm
+You’re renovating or adding square footage that exceeds your current system’s capacity
+
+Right Column: Repair May Be the Better Choice If…
+Your system is under 10 years old and the repair is a one-time component failure
+The repair cost is under $500 and your system has been reliable otherwise
+Your system uses R-410A refrigerant (still available and reasonably priced)
+The issue is limited to one component (capacitor, contactor, thermostat) and the rest of the system is sound
+A technician has confirmed the compressor, coils, and major components have substantial remaining life
+
+Not sure where you fall? Our technicians will inspect your system, diagnose the issue, and give you an honest recommendation. If repair makes more sense, we’ll repair it. We never push a $6,000 installation when a $250 capacitor replacement solves the problem. Learn more about AC repair options →
+Internal Link: “Learn more about AC repair options” → /services/ac-repair
+Design
+Property
+Specification
+Checklist icons
+Left column: green check circles (#2D9F5D). Right column: blue info circles (#5CB8B2).
+Column cards
+#FFFFFF bg, 16px border-radius, 24px padding, same card spec
+Left column heading
+Poppins 18px/600, #2C2C2C, “Consider Replacement When…”
+Right column heading
+Poppins 18px/600, #2C2C2C, “Repair May Be Better If…”
+Checklist items
+Poppins 14px/400, #3D3D3D, 12px spacing between items
+The honest framing of repair-vs-replace builds enormous trust. Visitors landing on an installation page expect to be sold. Telling them repair might be better — and linking to the repair page — signals integrity and earns the credibility needed for a $5,000+ purchase decision.
+
+5.4 Our Installation Process
+Section Overview
+A detailed step-by-step walkthrough of what happens during an AC installation. Installation is a higher-stakes, longer-duration service than repair, so the process section is more detailed — 6 steps compared to the repair page’s 5. This section reduces anxiety about disruption, timeline, and mess.
+Layout
+Property
+Specification
+Container
+Full-width, #FFFFFF background
+Content Width
+960px centered
+Padding
+64px top/bottom (desktop), 32px (mobile)
+Desktop
+Vertical timeline with alternating left/right content blocks
+Mobile
+Vertical stack, all content left-aligned
+Content
+H2 Heading
+What to Expect During Your AC Installation
+
+#
+Step
+Description
+1
+Free In-Home Estimate
+We visit your home to inspect your current system, measure your space, evaluate ductwork condition, and perform a cooling load calculation. We discuss your comfort goals, budget, and any specific concerns (like rooms that never cool properly, humidity issues, or noise). You receive a written estimate with equipment options, efficiency ratings, and total installed pricing — no hidden fees.
+2
+System Selection & Sizing
+Based on the load calculation, we recommend 2–3 equipment options at different price points and efficiency levels. We explain the differences in plain language: what you get for the extra investment, how much you’ll save on energy bills, and what the warranty covers. For property managers, we discuss standardization benefits across your portfolio. You choose the system that fits your budget and goals.
+3
+Pre-Installation Preparation
+We order your equipment and schedule installation day. Before arrival, we confirm: clear access paths to the indoor air handler and outdoor unit location, any permits required by Duval County or your HOA, and estimated completion timeline. Most residential installations are completed in one day (6–8 hours). Larger or more complex systems may take 2 days.
+4
+Professional Installation
+Our licensed technicians remove the old system (including proper refrigerant recovery per EPA regulations), install the new outdoor condenser and indoor air handler, connect refrigerant lines, wire electrical connections, and integrate with your ductwork. If duct modifications are needed for optimal airflow, we handle those as part of the project. We follow Florida Building Code requirements including hurricane tie-downs for outdoor equipment.
+5
+Testing & Commissioning
+After installation, we run a comprehensive startup: verify refrigerant charge, test airflow at every supply and return vent, measure temperature splits (supply air should be 16–22°F cooler than return air), calibrate the thermostat, test all operating modes, and verify the condensate drain is flowing properly. We don’t leave until the system is performing to specification.
+6
+Walkthrough & Warranty
+We walk you through your new system: how to set the thermostat, recommended filter type and change schedule, what normal operating sounds are vs. anything to call about, and how your warranty works. We register the manufacturer warranty on your behalf, provide our labor warranty documentation, and schedule your first maintenance visit. We clean up our work area completely.
+
+Design
+Property
+Specification
+Timeline layout
+Desktop: alternating left/right blocks with vertical center line. Even steps on left, odd on right (or vice versa). Connecting line: 2px solid #DDD8D0.
+Step number circles
+64px diameter, #1A5653 Evergreen bg, white number Poppins 24px/700, centered on timeline line
+Step title
+Poppins 20px/600, #2C2C2C
+Step description
+Poppins 14px/400, #3D3D3D, line-height 1.6, max-width 480px per side
+Mobile
+All steps left-aligned, vertical timeline on left edge, step content right of timeline
+The alternating timeline layout gives this section visual interest and prevents it from feeling like a wall of text. Each step’s description is intentionally detailed — a visitor reading step 4 should feel confident that Cool & Cozy knows exactly how a proper installation is done.
+
+5.5 System Types & Sizing for Jacksonville
+Section Overview
+An educational section that helps visitors understand the different AC system types available and why proper sizing matters specifically in Jacksonville’s climate. This section targets informational queries (“types of AC systems,” “what SEER rating do I need in Florida”) while building authority and trust. It positions Cool & Cozy as a knowledgeable advisor, not just a box-on-a-slab installer.
+Layout
+Property
+Specification
+Container
+Full-width, #F0E6D3 (Warm Sand) background
+Content Width
+1280px centered
+Padding
+64px top/bottom (desktop), 32px (mobile)
+System types
+4-card grid (2×2 desktop, 1-column mobile)
+Sizing info
+Full-width paragraph block below cards
+Content
+H2 Heading
+AC System Types We Install in Jacksonville
+
+Card 1: Central Air Split System
+Subheading: The most common residential AC type in Jacksonville
+A split system has two main components: an outdoor condenser unit and an indoor air handler connected by refrigerant lines. It’s the standard for most Jacksonville single-family homes. Modern split systems offer SEER2 ratings from 14.3 (minimum code-compliant) to 22+ (premium variable-speed units). Cool & Cozy installs split systems from all major manufacturers and sizes them using Manual J calculations specific to your home’s layout, insulation, and Jacksonville’s humidity load.
+Best for: Single-family homes with existing ductwork, whole-home cooling
+Word Count: 87 words
+
+Card 2: Ductless Mini-Split System
+Subheading: Zone cooling without ductwork
+Ductless mini-splits mount directly on the wall or ceiling and cool individual rooms or zones without ductwork. They’re ideal for room additions, converted garages, sunrooms, or older Jacksonville homes that were never built with ductwork. Multi-zone systems can cool 2–8 rooms from a single outdoor unit. Mini-splits are extremely energy-efficient (SEER2 ratings up to 33+) and provide both cooling and heating. They’re also an excellent solution for property managers adding climate control to units that lack central air.
+Best for: Room additions, homes without ductwork, zone control, property management conversions
+Word Count: 88 words
+
+Card 3: Heat Pump System
+Subheading: Cooling and heating in one system
+A heat pump operates like a central AC in summer but reverses the cycle in winter to provide heating. In Jacksonville’s mild winters (average low around 42°F in January), a heat pump eliminates the need for a separate furnace or electric heating strips. Modern heat pumps are highly efficient and qualify for federal energy tax credits. For Northeast Florida, a heat pump is often the most cost-effective single-system solution for year-round comfort.
+Best for: Homeowners wanting year-round comfort from one system, energy-conscious buyers
+Word Count: 79 words
+
+Card 4: Package Unit
+Subheading: All-in-one outdoor system
+A package unit combines the condenser, compressor, and air handler into a single outdoor cabinet, typically installed on a concrete slab beside or behind the home. It’s common in manufactured homes, smaller homes without indoor closet space for an air handler, and some commercial applications. Package units are available in AC-only, heat pump, and dual-fuel (heat pump + gas furnace) configurations.
+Best for: Manufactured homes, limited indoor space, some commercial applications
+Word Count: 66 words
+
+Why Proper Sizing Matters in Jacksonville
+An AC system that is too small will run constantly, never reaching your desired temperature, while consuming maximum energy. A system that is too large will short-cycle — turning on and off every few minutes — which fails to remove humidity from the air (a critical problem in Jacksonville’s 70–90% relative humidity) and causes uneven temperatures throughout the home.
+Cool & Cozy performs a Manual J cooling load calculation for every installation. This industry-standard calculation accounts for your home’s square footage, ceiling height, insulation quality, window count and orientation, roof type and color, number of occupants, and Jacksonville’s specific design conditions (outdoor dry-bulb 95°F, coincident wet-bulb 77°F). The result tells us exactly how many BTUs and tons of cooling your home requires — no guessing, no rules of thumb like “one ton per 500 square feet” that ignore humidity and building construction.
+The Manual J detail is a significant expertise differentiator. Most competitors skip load calculations and size by rules of thumb. Calling this out explicitly signals that Cool & Cozy does it right — and that the visitor should ask competitors whether they’re doing the same.
+SEER2 Efficiency Ratings — What You Need to Know
+As of January 2023, the HVAC industry transitioned from SEER to SEER2, a more accurate testing standard that typically produces lower numbers for the same equipment. In Florida (Southeast region), the minimum efficiency requirement is SEER2 14.3 for split systems and SEER2 13.4 for package units. Higher-efficiency systems cost more upfront but save significantly on monthly energy bills — especially in Jacksonville where your AC runs 2,500+ hours per year.
+For a detailed explanation of SEER2 ratings and how to calculate energy savings, see our guide: SEER Ratings Explained.
+Internal Link: “SEER Ratings Explained” → /resources/seer-rating-explained
+Card Design
+Property
+Specification
+Card bg
+#FFFFFF
+Border-radius
+16px
+Padding
+28px
+Icon
+48×48px SVG per system type: house+unit (split), wall unit (ductless), snowflake+sun (heat pump), box (package)
+Subheading
+Poppins 13px/500 italic, #5CB8B2 Seafoam
+Title
+Poppins 20px/600, #2C2C2C
+Body
+Poppins 14px/400, #3D3D3D, line-height 1.6
+“Best for” tag
+Poppins 13px/400, #7A7A7A, italic, 8px below body
+
+— End of Part 1 —
+
+Part 2 continues with: Brands We Install, Pricing & Financing Guidance,
+Property Manager / Multi-Unit Installation, Why Choose Us, Testimonials,
+FAQ (6 questions with schema), Related Services, Final CTA, and Reference Appendix.
+
+Prepared by TradeWorks AI  ·  May 2026  ·  v1.0
+

@@ -1,0 +1,289 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" role="img" aria-labelledby="t d">
+  <title id="t">Commercial Laundry Services</title>
+  <desc id="d">Large 130-pound commercial washing machine, stack of folded white linens on a rolling cart, and a B2B order clipboard</desc>
+  
+<defs>
+  <!-- Full background gradient: deep navy with a warm light glow -->
+  <linearGradient id="bgBase" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%"  stop-color="#0A1A3D"/>
+    <stop offset="100%" stop-color="#142A55"/>
+  </linearGradient>
+  <radialGradient id="bgGlow" cx="78%" cy="18%" r="65%">
+    <stop offset="0%"  stop-color="#D89A55" stop-opacity="0.35"/>
+    <stop offset="35%" stop-color="#3A6FB0" stop-opacity="0.20"/>
+    <stop offset="100%" stop-color="#0A1A3D" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="bgVignette" cx="50%" cy="50%" r="80%">
+    <stop offset="60%" stop-color="#000" stop-opacity="0"/>
+    <stop offset="100%" stop-color="#000" stop-opacity="0.35"/>
+  </radialGradient>
+
+  <!-- Floor gradient at bottom -->
+  <linearGradient id="floorGrad" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%"  stop-color="#142A55" stop-opacity="0"/>
+    <stop offset="60%" stop-color="#091532" stop-opacity="0.55"/>
+    <stop offset="100%" stop-color="#040A1F" stop-opacity="0.85"/>
+  </linearGradient>
+
+  <!-- Chrome / brushed steel -->
+  <linearGradient id="chrome" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%"  stop-color="#F4F7FA"/>
+    <stop offset="18%" stop-color="#D7DEE8"/>
+    <stop offset="48%" stop-color="#A8B5C5"/>
+    <stop offset="78%" stop-color="#6E7C92"/>
+    <stop offset="100%" stop-color="#3D4A5C"/>
+  </linearGradient>
+  <linearGradient id="chromeSide" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%"  stop-color="#3D4A5C"/>
+    <stop offset="30%" stop-color="#7888A0"/>
+    <stop offset="70%" stop-color="#A8B5C5"/>
+    <stop offset="100%" stop-color="#F4F7FA"/>
+  </linearGradient>
+  <linearGradient id="panelDark" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%"  stop-color="#202B3E"/>
+    <stop offset="100%" stop-color="#1B2330"/>
+  </linearGradient>
+
+  <!-- Glass / washer door -->
+  <radialGradient id="glassDoor" cx="35%" cy="28%" r="75%">
+    <stop offset="0%"  stop-color="#EAF3FF" stop-opacity="0.95"/>
+    <stop offset="22%" stop-color="#C7DBF2" stop-opacity="0.85"/>
+    <stop offset="55%" stop-color="#7BA4D6" stop-opacity="0.75"/>
+    <stop offset="100%" stop-color="#1E3458" stop-opacity="0.95"/>
+  </radialGradient>
+  <linearGradient id="doorRing" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%"  stop-color="#C5CCD8"/>
+    <stop offset="50%" stop-color="#7A8497"/>
+    <stop offset="100%" stop-color="#1B2330"/>
+  </linearGradient>
+
+  <!-- LCD display -->
+  <linearGradient id="lcdGrad" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%"  stop-color="#0E1A2F"/>
+    <stop offset="100%" stop-color="#1E3458"/>
+  </linearGradient>
+
+  <!-- Linen / white fabric -->
+  <linearGradient id="linenGrad" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%"  stop-color="#F8F4EC"/>
+    <stop offset="100%" stop-color="#E4DDC9"/>
+  </linearGradient>
+
+  <!-- Wicker basket -->
+  <linearGradient id="wickerLight" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%"  stop-color="#DBB07A"/>
+    <stop offset="100%" stop-color="#9F7541"/>
+  </linearGradient>
+  <radialGradient id="wickerBowl" cx="50%" cy="30%" r="70%">
+    <stop offset="0%"  stop-color="#DBB07A"/>
+    <stop offset="60%" stop-color="#9F7541"/>
+    <stop offset="100%" stop-color="#5D4220"/>
+  </radialGradient>
+
+  <!-- Drop shadows -->
+  <filter id="ds-soft" x="-30%" y="-30%" width="160%" height="160%">
+    <feGaussianBlur in="SourceAlpha" stdDeviation="10"/>
+    <feOffset dy="14"/>
+    <feComponentTransfer><feFuncA type="linear" slope="0.32"/></feComponentTransfer>
+    <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="ds-tight" x="-20%" y="-20%" width="140%" height="140%">
+    <feGaussianBlur in="SourceAlpha" stdDeviation="4"/>
+    <feOffset dy="6"/>
+    <feComponentTransfer><feFuncA type="linear" slope="0.40"/></feComponentTransfer>
+    <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="glow-warm" x="-30%" y="-30%" width="160%" height="160%">
+    <feGaussianBlur stdDeviation="6"/>
+  </filter>
+  <filter id="steam-blur" x="-30%" y="-30%" width="160%" height="160%">
+    <feGaussianBlur stdDeviation="1.2"/>
+  </filter>
+</defs>
+  
+  <!-- Full background -->
+  <rect width="1600" height="900" fill="url(#bgBase)"/>
+  <rect width="1600" height="900" fill="url(#bgGlow)"/>
+
+  <!-- Subtle horizontal light streaks (very faint) -->
+  <g opacity="0.06" stroke="#D89A55" stroke-width="1" fill="none">
+    <line x1="0" y1="160" x2="1600" y2="160"/>
+    <line x1="0" y1="320" x2="1600" y2="320"/>
+    <line x1="0" y1="480" x2="1600" y2="480"/>
+    <line x1="0" y1="640" x2="1600" y2="640"/>
+  </g>
+
+  <!-- Floor wash at bottom for grounding -->
+  <rect x="0" y="540" width="1600" height="360" fill="url(#floorGrad)"/>
+
+  <!-- Vignette to focus the eye on the right -->
+  <rect width="1600" height="900" fill="url(#bgVignette)"/>
+  
+  <defs>
+    <linearGradient id="wallGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1B2D54"/>
+      <stop offset="100%" stop-color="#0F1E3F"/>
+    </linearGradient>
+  </defs>
+  <!-- Back wall stripe -->
+  <rect x="700" y="0" width="900" height="680" fill="url(#wallGrad)" opacity="0.55"/>
+  <!-- Doorway (rectangular cut with light spilling through) -->
+  <rect x="1480" y="180" width="100" height="430" rx="2" fill="#F4C77F" opacity="0.15"/>
+  <rect x="1490" y="200" width="80" height="410" rx="2" fill="#E6A23C" opacity="0.12"/>
+  <!-- second machine glimpse through doorway -->
+  <rect x="1505" y="320" width="56" height="240" rx="4" fill="#5C6E85" opacity="0.45"/>
+  <circle cx="1533" cy="440" r="22" fill="#7BA4D6" opacity="0.5"/>
+
+
+  <g stroke="#3D4A5C" stroke-width="14" fill="none" stroke-linecap="round" opacity="0.7">
+    <line x1="700" y1="90" x2="1440" y2="90"/>
+    <line x1="700" y1="120" x2="1440" y2="120"/>
+  </g>
+  <g fill="#A8B5C5" opacity="0.7">
+    <circle cx="780" cy="90" r="10"/>
+    <circle cx="1060" cy="90" r="10"/>
+    <circle cx="1340" cy="90" r="10"/>
+    <circle cx="780" cy="120" r="10"/>
+    <circle cx="1060" cy="120" r="10"/>
+    <circle cx="1340" cy="120" r="10"/>
+  </g>
+
+  <g transform="translate(1120, 170)" filter="url(#ds-soft)">
+    <!-- floor shadow -->
+    <ellipse cx="200" cy="620" rx="270" ry="22" fill="#000" opacity="0.6"/>
+    <!-- side panel hinting depth -->
+    <path d="M 410 60 L 442 80 L 442 600 L 410 580 Z" fill="url(#chromeSide)"/>
+    <!-- main body -->
+    <rect x="0" y="60" width="410" height="540" rx="20" fill="url(#chrome)" stroke="#5C6E85" stroke-width="2"/>
+    <!-- top dark control panel -->
+    <rect x="0" y="60" width="410" height="100" rx="20" fill="url(#panelDark)"/>
+    <rect x="0" y="120" width="410" height="40" fill="url(#panelDark)"/>
+    <!-- Brand mark -->
+    <text x="205" y="100" text-anchor="middle" font-family="Georgia, serif" font-weight="800" font-size="24" fill="#FFFFFF">SPIN IT UP</text>
+    <text x="205" y="125" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#F4C77F" letter-spacing="4">COMMERCIAL · 130 LB</text>
+
+    <!-- BIG LCD display -->
+    <rect x="40" y="178" width="180" height="68" rx="6" fill="url(#lcdGrad)" stroke="#000" stroke-width="1.5"/>
+    <text x="130" y="222" text-anchor="middle" font-family="monospace" font-size="30" font-weight="800" fill="#F4C77F">44:30</text>
+    <text x="130" y="240" text-anchor="middle" font-family="monospace" font-size="9" fill="#F4C77F" opacity="0.7" letter-spacing="2">HEAVY · WHITES</text>
+
+    <!-- big knob -->
+    <circle cx="290" cy="212" r="40" fill="#1B2330"/>
+    <circle cx="290" cy="212" r="35" fill="url(#chrome)"/>
+    <circle cx="290" cy="212" r="22" fill="#3D4A5C"/>
+    <rect x="288" y="187" width="4" height="12" rx="2" fill="#E6A23C"/>
+    <circle cx="282" cy="206" r="6" fill="#FFFFFF" opacity="0.5"/>
+    <g stroke="#7C8699" stroke-width="2" stroke-linecap="round">
+      <line x1="290" y1="170" x2="290" y2="176"/>
+      <line x1="332" y1="212" x2="326" y2="212"/>
+      <line x1="290" y1="254" x2="290" y2="248"/>
+      <line x1="248" y1="212" x2="254" y2="212"/>
+    </g>
+
+    <!-- secondary knobs -->
+    <circle cx="355" cy="195" r="14" fill="#E6A23C"/>
+    <circle cx="355" cy="195" r="6" fill="#FFFFFF"/>
+    <circle cx="355" cy="230" r="10" fill="#5FB07A"/>
+    <circle cx="355" cy="230" r="14" fill="#5FB07A" opacity="0.3" filter="url(#glow-warm)"/>
+
+    <!-- amber brand strip -->
+    <rect x="0" y="265" width="410" height="5" fill="#E6A23C"/>
+    <rect x="0" y="268" width="410" height="2" fill="#B07820"/>
+
+    <!-- HUGE door -->
+    <circle cx="205" cy="430" r="170" fill="#7A8497"/>
+    <circle cx="205" cy="430" r="160" fill="url(#doorRing)"/>
+    <circle cx="205" cy="430" r="145" fill="#1B2330"/>
+    <circle cx="205" cy="430" r="138" fill="url(#glassDoor)"/>
+    <!-- Linens tumbling inside -->
+    <g transform="translate(205, 430)">
+      <ellipse cx="-45" cy="-35" rx="72" ry="44" fill="#F8F4EC" opacity="0.95"/>
+      <ellipse cx="35" cy="-5" rx="68" ry="42" fill="#E4DDC9" opacity="0.85"/>
+      <ellipse cx="-15" cy="40" rx="78" ry="38" fill="#F8F4EC" opacity="0.92"/>
+      <ellipse cx="45" cy="55" rx="55" ry="30" fill="#A89B7A" opacity="0.6"/>
+      <line x1="-100" y1="-30" x2="10" y2="-30" stroke="#A89B7A" stroke-width="1.5" opacity="0.6"/>
+      <line x1="-15" y1="-5" x2="90" y2="-5" stroke="#A89B7A" stroke-width="1.5" opacity="0.6"/>
+      <line x1="-85" y1="40" x2="60" y2="40" stroke="#A89B7A" stroke-width="1.5" opacity="0.5"/>
+    </g>
+    <!-- Glass highlight -->
+    <ellipse cx="155" cy="368" rx="58" ry="26" fill="#FFFFFF" opacity="0.45"/>
+    <ellipse cx="175" cy="370" rx="18" ry="8" fill="#FFFFFF" opacity="0.7"/>
+    <!-- Door bolts -->
+    <g fill="#3D4A5C">
+      <circle cx="205" cy="270" r="6"/>
+      <circle cx="365" cy="430" r="6"/>
+      <circle cx="205" cy="590" r="6"/>
+      <circle cx="45" cy="430" r="6"/>
+    </g>
+    <!-- Door handle -->
+    <rect x="370" y="418" width="22" height="24" rx="4" fill="url(#chromeSide)"/>
+    <!-- Bottom info strip -->
+    <rect x="40" y="540" width="330" height="34" rx="6" fill="#1E2A40"/>
+    <text x="205" y="562" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="700" fill="#F4C77F" letter-spacing="3">HIGH-CAPACITY · ENERGY EFFICIENT</text>
+
+    <!-- Kick plate at bottom -->
+    <rect x="-6" y="595" width="448" height="20" rx="4" fill="#1B2330"/>
+  </g>
+<g filter="url(#ds-soft)">
+  <rect x="630.0" y="641.0" width="268" height="49.0" rx="3" fill="#E4DDC9"/>
+  <path d="M 630.0 641.0 L 638.0 630 L 906.0 630 L 898.0 641.0 Z" fill="#F8F4EC"/>
+  <path d="M 898.0 641.0 L 906.0 630 L 906.0 677.0 L 898.0 688 Z" fill="#A89B7A"/>
+  <rect x="642.0" y="660.0" width="244" height="3" fill="#576CBC" opacity="0.6"/>
+  <line x1="876.0" y1="646.0" x2="876.0" y2="684" stroke="#A89B7A" stroke-width="1" opacity="0.4"/>
+  <rect x="638.0" y="584.0" width="272" height="46.0" rx="3" fill="#E4DDC9"/>
+  <path d="M 638.0 584.0 L 646.0 574 L 918.0 574 L 910.0 584.0 Z" fill="#F8F4EC"/>
+  <path d="M 910.0 584.0 L 918.0 574 L 918.0 618.0 L 910.0 628 Z" fill="#A89B7A"/>
+  <rect x="650.0" y="602.0" width="248" height="3" fill="#576CBC" opacity="0.6"/>
+  <line x1="888.0" y1="589.0" x2="888.0" y2="624" stroke="#A89B7A" stroke-width="1" opacity="0.4"/>
+  <rect x="630.0" y="527.0" width="274" height="47.0" rx="3" fill="#E4DDC9"/>
+  <path d="M 630.0 527.0 L 638.0 516 L 912.0 516 L 904.0 527.0 Z" fill="#F8F4EC"/>
+  <path d="M 904.0 527.0 L 912.0 516 L 912.0 561.0 L 904.0 572 Z" fill="#A89B7A"/>
+  <rect x="642.0" y="545.0" width="250" height="3" fill="#576CBC" opacity="0.6"/>
+  <line x1="882.0" y1="532.0" x2="882.0" y2="568" stroke="#A89B7A" stroke-width="1" opacity="0.4"/>
+  <rect x="642.0" y="472.0" width="268" height="44.0" rx="3" fill="#E4DDC9"/>
+  <path d="M 642.0 472.0 L 650.0 462 L 918.0 462 L 910.0 472.0 Z" fill="#F8F4EC"/>
+  <path d="M 910.0 472.0 L 918.0 462 L 918.0 504.0 L 910.0 514 Z" fill="#A89B7A"/>
+  <rect x="654.0" y="489.0" width="244" height="3" fill="#576CBC" opacity="0.6"/>
+  <line x1="888.0" y1="477.0" x2="888.0" y2="510" stroke="#A89B7A" stroke-width="1" opacity="0.4"/>
+  <rect x="630.0" y="421.0" width="272" height="41.0" rx="3" fill="#E4DDC9"/>
+  <path d="M 630.0 421.0 L 638.0 412 L 910.0 412 L 902.0 421.0 Z" fill="#F8F4EC"/>
+  <path d="M 902.0 421.0 L 910.0 412 L 910.0 451.0 L 902.0 460 Z" fill="#A89B7A"/>
+  <rect x="642.0" y="437.0" width="248" height="3" fill="#576CBC" opacity="0.6"/>
+  <line x1="880.0" y1="426.0" x2="880.0" y2="456" stroke="#A89B7A" stroke-width="1" opacity="0.4"/>
+  </g>
+
+  <g transform="translate(720, 700)">
+    <rect x="0" y="0" width="300" height="14" rx="3" fill="#1B2330"/>
+    <circle cx="40" cy="30" r="14" fill="#0A1A3D"/>
+    <circle cx="40" cy="30" r="6" fill="#A8B5C5"/>
+    <circle cx="260" cy="30" r="14" fill="#0A1A3D"/>
+    <circle cx="260" cy="30" r="6" fill="#A8B5C5"/>
+  </g>
+
+  <g transform="translate(960, 100) rotate(-6)" filter="url(#ds-tight)">
+    <rect width="160" height="200" rx="6" fill="#9F7541"/>
+    <rect x="4" y="4" width="152" height="192" rx="4" fill="#F0F4F8"/>
+    <rect x="64" y="-10" width="32" height="18" rx="3" fill="#3A4456"/>
+    <rect x="70" y="-5" width="20" height="8" rx="2" fill="#0A1A3D"/>
+    <text x="80" y="32" text-anchor="middle" font-family="Georgia, serif" font-weight="800" font-size="13" fill="#0A1A3D">B2B ORDER</text>
+    <line x1="18" y1="42" x2="142" y2="42" stroke="#CFD6E0" stroke-width="1"/>
+    <g font-family="sans-serif" font-size="10" fill="#0A1A3D">
+      <rect x="18" y="56" width="11" height="11" rx="2" fill="#5FB07A"/>
+      <path d="M 20 62 l 3.5 3.5 l 5 -5" stroke="#FFFFFF" stroke-width="1.7" fill="none" stroke-linecap="round"/>
+      <text x="35" y="65">120 lb Linens</text>
+      <rect x="18" y="76" width="11" height="11" rx="2" fill="#5FB07A"/>
+      <path d="M 20 82 l 3.5 3.5 l 5 -5" stroke="#FFFFFF" stroke-width="1.7" fill="none" stroke-linecap="round"/>
+      <text x="35" y="85">Salon Towels</text>
+      <rect x="18" y="96" width="11" height="11" rx="2" fill="#5FB07A"/>
+      <path d="M 20 102 l 3.5 3.5 l 5 -5" stroke="#FFFFFF" stroke-width="1.7" fill="none" stroke-linecap="round"/>
+      <text x="35" y="105">Airbnb Sheets</text>
+      <rect x="18" y="116" width="11" height="11" rx="2" stroke="#7C8699" stroke-width="1.3" fill="none"/>
+      <text x="35" y="125">Gym Uniforms</text>
+      <rect x="18" y="136" width="11" height="11" rx="2" stroke="#7C8699" stroke-width="1.3" fill="none"/>
+      <text x="35" y="145">Restaurant Aprons</text>
+    </g>
+    <line x1="18" y1="158" x2="142" y2="158" stroke="#CFD6E0" stroke-width="1"/>
+    <text x="18" y="174" font-family="sans-serif" font-size="8" font-weight="800" fill="#7C8699" letter-spacing="0.8">TURNAROUND</text>
+    <text x="18" y="190" font-family="Georgia, serif" font-size="13" font-weight="800" fill="#19376D">24 HOURS</text>
+  </g>
+</svg>

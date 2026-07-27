@@ -1,0 +1,576 @@
+﻿NEIGHBORHOOD LANDING PAGE
+DEVELOPER GUIDE
+
+
+South Tampa
+House Cleaning Services
+
+
+easycleaningservice.com/service-areas/south-tampa/
+Easy Clean Service • (813) 534-9216
+
+
+This document provides all page copy, meta tags, structured data,
+neighborhood-specific content, local SEO signals, internal linking,
+and the reusable template structure for the South Tampa landing page.
+This page also serves as the template model for all future neighborhood pages.
+Version 1.0 • March 25, 2026
+0. Neighborhood Page Template Strategy
+This is the first of 12 planned neighborhood landing pages. South Tampa is being built first because it is the highest-value geographic area in the Tampa cleaning market – affluent homeowners, historic properties with specialized cleaning needs, and a dense concentration of the dual-income families and busy professionals who hire recurring cleaning services.
+This document serves a dual purpose: it is both the complete build guide for the South Tampa page and the reusable template that all subsequent neighborhood pages will follow. Sections marked with a [TEMPLATE] tag indicate content areas where the structure stays the same but the neighborhood-specific details change. Sections without the tag are unique to South Tampa.
+Planned Neighborhood Pages
+#
+	Neighborhood
+	URL Slug
+	Priority
+	1
+	South Tampa
+	/service-areas/south-tampa/
+	Highest – building now
+	2
+	Westchase
+	/service-areas/westchase/
+	High
+	3
+	Carrollwood
+	/service-areas/carrollwood/
+	High
+	4
+	Brandon
+	/service-areas/brandon/
+	High
+	5
+	Riverview
+	/service-areas/riverview/
+	High
+	6
+	Lutz
+	/service-areas/lutz/
+	Medium
+	7
+	Wesley Chapel
+	/service-areas/wesley-chapel/
+	Medium
+	8
+	Town ’N’ Country
+	/service-areas/town-n-country/
+	Medium
+	9
+	Temple Terrace
+	/service-areas/temple-terrace/
+	Medium
+	10
+	New Tampa
+	/service-areas/new-tampa/
+	Medium
+	11
+	Seminole Heights
+	/service-areas/seminole-heights/
+	Standard
+	12
+	Hyde Park
+	/service-areas/hyde-park/
+	Standard
+	
+
+NOTE: Each neighborhood page targets "[service] + [neighborhood name]" long-tail keywords that the main service pages cannot rank for individually. Together, these 12 pages form a geographic content silo that dramatically expands the site’s local keyword coverage and signals hyper-local relevance to Google’s local ranking algorithm.
+________________
+
+
+1. Page Strategy & Keyword Targets
+1.1 Page Purpose
+This page targets South Tampa residents who search for cleaning services using their neighborhood name. Local search queries like "house cleaning South Tampa" or "cleaning service near Hyde Park Tampa" carry extremely high commercial intent – these people are looking for a provider in their specific area and are ready to hire. By creating a dedicated page for South Tampa, Easy Clean Service can rank for these geo-modified keywords that the homepage and main service pages cannot individually target.
+The page also serves as a trust signal. When a South Tampa homeowner lands on a page that mentions their specific neighborhood, references local landmarks they recognize, and demonstrates familiarity with the types of homes in their area, they are far more likely to reach out than if they land on a generic "Tampa cleaning service" page.
+1.2 URL & Breadcrumb
+URL: https://easycleaningservice.com/service-areas/south-tampa/
+Breadcrumb: Home > Service Areas > South Tampa
+1.3 Keyword Targets [TEMPLATE – Replace Neighborhood Name]
+Keyword
+	Type
+	Est. Monthly Vol.
+	Difficulty
+	Intent
+	house cleaning South Tampa
+	Primary
+	170
+	Low
+	Transactional
+	cleaning service South Tampa FL
+	Primary
+	140
+	Low
+	Transactional
+	maid service South Tampa
+	Primary
+	110
+	Low
+	Transactional
+	deep cleaning South Tampa
+	Secondary
+	90
+	Low
+	Transactional
+	house cleaning Hyde Park Tampa
+	Secondary
+	70
+	Low
+	Transactional
+	cleaning service Palma Ceia
+	Secondary
+	50
+	Low
+	Transactional
+	house cleaning Davis Islands
+	Secondary
+	50
+	Low
+	Transactional
+	cleaning near Bayshore Boulevard
+	Long-tail
+	30
+	Low
+	Transactional
+	house cleaner near me South Tampa
+	Long-tail
+	90
+	Low
+	Transactional
+	move out cleaning South Tampa
+	Long-tail
+	40
+	Low
+	Transactional
+	
+
+NOTE: Individual neighborhood keyword volumes are lower than citywide keywords, but the competition is dramatically lower and the conversion intent is extremely high. A user searching "house cleaning South Tampa" is almost certainly ready to hire. These pages accumulate search equity over time and collectively contribute significant organic traffic.
+1.4 Content Targets
+Word count: 800–1,200 words (shorter than service pages – neighborhood pages prioritize local relevance and conversion over depth)
+Unique content requirement: At least 60% of the body copy must be unique to this neighborhood page and not duplicated from any other page on the site. Google penalizes thin or near-duplicate location pages. The neighborhood-specific sections (local content, sub-neighborhoods, home types, climate challenges) provide that unique content.
+________________
+
+
+2. HTML Head – Meta Tags & Structured Data [TEMPLATE]
+2.1 Title Tag
+
+
+<title>House Cleaning Services in South Tampa, FL |
+  Easy Clean Service</title>
+
+
+Template pattern: "House Cleaning Services in [Neighborhood], FL | Easy Clean Service" – keep under 60 characters.
+2.2 Meta Description
+
+
+<meta name="description" content="Professional house cleaning
+  services in South Tampa, FL. Serving Hyde Park, Palma
+  Ceia, Davis Islands, Bayshore Beautiful, and surrounding
+  neighborhoods. Regular cleaning, deep cleaning, and
+  move-in/out. Free estimates. (813) 534-9216" />
+
+
+Template pattern: Include 2–3 sub-neighborhood names, mention 2–3 service types, and include the phone number.
+2.3 Open Graph & Canonical
+
+
+<link rel="canonical" href="https://easycleaningservice.com/
+  service-areas/south-tampa/" />
+<meta property="og:title" content="House Cleaning in South
+  Tampa, FL | Easy Clean Service" />
+<meta property="og:description" content="Trusted house cleaning
+  for South Tampa homes. Hyde Park, Palma Ceia, Davis Islands,
+  Bayshore. Regular, deep, and move-in/out cleaning.
+  Free estimates." />
+<meta property="og:url" content="https://easycleaningservice
+  .com/service-areas/south-tampa/" />
+<meta property="og:image" content="https://easycleaningservice
+  .com/images/house-cleaning-south-tampa.jpg" />
+
+
+2.4 LocalBusiness + AreaServed Schema [TEMPLATE]
+
+
+{
+  "@context": "https://schema.org",
+  "@type": "HousekeepingService",
+  "name": "Easy Clean Service – South Tampa",
+  "description": "Professional house cleaning services
+    serving South Tampa, FL including Hyde Park, Palma
+    Ceia, Davis Islands, Bayshore Beautiful, Beach Park,
+    Sunset Park, and surrounding neighborhoods.",
+  "url": "https://easycleaningservice.com/service-areas/
+    south-tampa/",
+  "telephone": "+1-813-534-9216",
+  "areaServed": {
+    "@type": "Place",
+    "name": "South Tampa",
+    "containedInPlace": {
+      "@type": "City",
+      "name": "Tampa",
+      "containedInPlace": {
+        "@type": "State",
+        "name": "Florida"
+      }
+    }
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "South Tampa Cleaning Services",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": {
+        "@type": "Service",
+        "name": "Regular House Cleaning" } },
+      { "@type": "Offer", "itemOffered": {
+        "@type": "Service",
+        "name": "Deep Cleaning" } },
+      { "@type": "Offer", "itemOffered": {
+        "@type": "Service",
+        "name": "Move-In/Move-Out Cleaning" } },
+      { "@type": "Offer", "itemOffered": {
+        "@type": "Service",
+        "name": "Airbnb Turnover Cleaning" } }
+    ]
+  },
+  "parentOrganization": {
+    "@type": "HousekeepingService",
+    "name": "Easy Clean Service",
+    "url": "https://easycleaningservice.com"
+  }
+}
+
+
+Also include BreadcrumbList schema (Home > Service Areas > South Tampa) and FAQPage schema matching Section 3.7.
+________________
+
+
+3. Page Layout, Headings & Body Copy
+3.1 Hero Section [TEMPLATE]
+  SECTION ID: #south-tampa-hero  
+H1 Heading
+House Cleaning Services in South Tampa, FL
+Template pattern: "House Cleaning Services in [Neighborhood], FL"
+Hero Subheading – South Tampa Specific
+South Tampa’s elegant homes deserve a cleaning team that understands what makes this area special. From the historic bungalows and Mediterranean Revival estates along Bayshore Boulevard to the modern luxury builds in Beach Park and the charming brick-street neighborhoods of Palma Ceia, every home here has its own character – and its own cleaning needs. Easy Clean Service has been caring for South Tampa homes for over 10 years, delivering reliable, thorough cleaning with the personal attention that residents of Hyde Park, Davis Islands, Sunset Park, and the surrounding neighborhoods expect.
+* Primary: "Get Your Free Estimate" → #estimate-form
+* Secondary: "Call (813) 534-9216" → tel:+18135349216
+Hero Image
+Subject: A recognizable South Tampa scene – a beautiful home on a tree-lined street, ideally with oak canopy and the character of the Bayshore or Palma Ceia area. Should feel aspirational and locally authentic.
+Alt text: "Beautiful South Tampa FL home with oak-lined street serviced by Easy Clean house cleaning"
+3.2 Neighborhood-Specific Content – South Tampa [UNIQUE]
+  SECTION ID: #about-south-tampa  
+NOTE: This section is the primary source of unique content that prevents duplicate-content penalties across neighborhood pages. Every neighborhood page must have 300–500 words of content specific to that area.
+H2 Heading
+Professional Cleaning for South Tampa’s Most Sought-After Neighborhoods
+Body Copy
+South Tampa is home to some of the most desirable neighborhoods in the entire Tampa Bay area. From the walkable streets of Hyde Park with its upscale boutiques and the iconic SoHo dining district to the stately oak-shaded avenues of Palma Ceia, this area attracts homeowners who value quality, attention to detail, and a high standard of living. That same standard applies to how they want their homes maintained.
+The homes in South Tampa range from charming 1920s bungalows in Parkland Estates and New Suburb Beautiful to waterfront estates on Davis Islands and Culbreath Isles. Many feature original hardwood floors, detailed tile work, specialty stone countertops, and custom finishes that require a cleaning team who knows how to handle them properly. Easy Clean Service brings the experience and care these homes demand – we know which products are safe for marble vanities, how to clean vintage tile grout without damaging it, and how to care for delicate surfaces that quick-turnover cleaning companies might overlook.
+Tampa’s humidity hits South Tampa’s bayfront homes especially hard. Properties along Bayshore Boulevard, in Bayshore Beautiful, and on Davis Islands face accelerated mold and mildew growth in bathrooms, salt air residue on windows and exterior-facing surfaces, and a constant battle against sand tracked in from nearby parks and waterfront trails. Our cleaning team understands these challenges because we have been managing them in South Tampa homes for over a decade.
+3.3 South Tampa Neighborhoods We Serve [UNIQUE]
+  SECTION ID: #neighborhoods-we-serve  
+H2 Heading
+Cleaning Services Across All South Tampa Neighborhoods
+* Hyde Park
+* Palma Ceia
+* Davis Islands
+* Bayshore Beautiful
+* Beach Park
+* Sunset Park
+* Ballast Point
+* Parkland Estates
+* New Suburb Beautiful
+* Virginia Park
+* Culbreath Isles
+* Swann Estates
+* Port Tampa
+* Belmar / Belmar Shores
+* Gandy / South Gandy
+* Courier City / Oscawana
+* Golf View
+Not sure if we serve your specific street or subdivision? Call us at (813) 534-9216 and we will confirm your area immediately.
+________________
+
+
+3.4 Cleaning Services Available in South Tampa [TEMPLATE]
+  SECTION ID: #services-south-tampa  
+H2 Heading
+Full Range of Cleaning Services for South Tampa Homes
+Section Intro
+We bring all of our core cleaning services directly to South Tampa homeowners. Whether you need a dependable recurring cleaning to keep your home guest-ready or a one-time deep cleaning before the holidays, we are here to help.
+* Regular House Cleaning: Weekly, biweekly, and monthly visits to keep your South Tampa home consistently clean. Same trusted team every visit. → /services/regular-house-cleaning-tampa/
+* Deep Cleaning: A thorough top-to-bottom cleaning that reaches behind furniture, inside appliances, and into every corner. Perfect for seasonal resets or first-time customers. → /services/deep-cleaning-tampa/
+* Move-In / Move-Out Cleaning: Relocating within South Tampa or moving to a new home? We make both properties spotless. → /services/move-in-move-out-cleaning-tampa/
+* Airbnb & Vacation Rental Cleaning: South Tampa has a growing short-term rental market. We handle turnovers on Davis Islands, Hyde Park, and Channelside-area properties. → /services/airbnb-cleaning-tampa/
+* Kitchen & Bathroom Deep Cleaning: Targeted deep cleaning for the rooms that need it most – grout scrubbing, grease removal, hard water treatment. → /services/kitchen-bathroom-cleaning-tampa/
+3.5 Why South Tampa Homeowners Trust Easy Clean [TEMPLATE + Local Detail]
+  SECTION ID: #why-trust-us  
+H2 Heading
+* Locally Owned, Personally Managed: Kessia Marquez has been cleaning Tampa homes since 2014. She personally manages every client relationship and holds her team to the highest standards.
+* Experienced With South Tampa Homes: We understand the specific needs of historic bungalows, Mediterranean Revival architecture, waterfront properties, and the modern luxury homes found across Hyde Park, Palma Ceia, and Davis Islands. We know which products are safe for marble, natural stone, hardwood, and custom finishes.
+* Consistent, Reliable Service: Same trusted team on every visit. We learn your home, your preferences, and your priorities so the quality gets better with each appointment.
+* Eco-Friendly & Pet-Safe: South Tampa is a neighborhood of dog walkers and pet lovers. Our cleaning products are safe for pets and children – no harsh chemicals, no toxic residues.
+* 100% Satisfaction Guaranteed: If any part of our cleaning does not meet your standards, let us know within 24 hours and we will return to make it right at no charge.
+* No Contracts, Total Flexibility: Book when you need us, skip when you do not. Pause for vacations. Change your schedule anytime. We earn your loyalty through results.
+3.6 How It Works [TEMPLATE]
+  SECTION ID: #how-it-works  
+H2 Heading
+1. Request Your Free Estimate: Call (813) 534-9216 or fill out the form below. Tell us about your home, what you need, and when you would like us there.
+2. Get Your Quote: We respond within a few hours with a clear, no-surprise estimate based on your home’s size and the services you need.
+3. We Clean, You Relax: Our team arrives on schedule with all supplies and equipment. We follow your instructions and our detailed checklist.
+4. Enjoy Your Spotless Home: Walk into a home that looks, smells, and feels completely refreshed. If anything is not perfect, we make it right.
+________________
+
+
+3.7 Frequently Asked Questions [TEMPLATE + Local Answers]
+  SECTION ID: #faq  
+H2 Heading
+House Cleaning Questions from South Tampa Residents
+DEV ACTION: Accordion format. Must match FAQPage schema. Each neighborhood page should have 4–6 FAQs with at least 2 that are specific to the neighborhood.
+Q1: Do you serve all of South Tampa?
+Yes. We clean homes throughout the entire South Tampa peninsula, including Hyde Park, Palma Ceia, Davis Islands, Bayshore Beautiful, Beach Park, Sunset Park, Ballast Point, Parkland Estates, New Suburb Beautiful, Virginia Park, Culbreath Isles, and all surrounding streets and subdivisions. If you are not sure whether your specific address falls within our service area, call us at (813) 534-9216 and we will confirm immediately.
+Q2: How much does house cleaning cost in South Tampa?
+Regular house cleaning in South Tampa typically ranges from $120 to $300+ per visit depending on your home’s size, the number of bathrooms, and how often we come. South Tampa homes with large square footage, multiple stories, or specialty surfaces (marble, natural stone, custom tile) may fall toward the higher end due to the additional time and care required. We provide free, personalized estimates so you know exactly what to expect.
+Q3: Do you have experience cleaning older and historic South Tampa homes?
+Absolutely. Many South Tampa neighborhoods feature homes built in the 1920s through 1960s with original hardwood floors, vintage tile, plaster walls, and other materials that require specific care. We know which products are safe for these surfaces and which to avoid. We also understand the unique cleaning challenges of older homes, including higher ceilings, detailed molding, and the mold and humidity issues common in pre-air-conditioning-era construction.
+Q4: What cleaning services do you offer in South Tampa?
+We offer the full range of Easy Clean services to South Tampa residents: regular house cleaning (weekly, biweekly, monthly), deep cleaning, move-in and move-out cleaning, Airbnb and vacation rental turnover cleaning, kitchen and bathroom deep cleaning, and commercial cleaning for South Tampa businesses. Each service can be customized to your specific home and preferences.
+Q5: Can you clean my South Tampa Airbnb or VRBO rental?
+Yes. South Tampa – especially Davis Islands, Hyde Park, and the Channelside-adjacent areas – has a growing short-term rental market. We provide turnover cleaning between guests including full sanitization, linen changes, supply restocking, and staging to listing photo standards. We can coordinate turnovers around your booking calendar for same-day guest-to-guest transitions.
+Internal link: "Learn more about our Airbnb cleaning service" → /services/airbnb-cleaning-tampa/
+3.8 Estimate Request Form [TEMPLATE]
+  SECTION ID: #estimate-form  
+H2 Heading
+Get Your Free South Tampa Cleaning Estimate
+Section Copy
+Tell us about your South Tampa home and we will put together a personalized cleaning plan and quote. Call us at (813) 534-9216 for immediate estimates, or fill out the form and we will respond within a few hours.
+Form Fields
+Same form structure as the homepage. No page-specific custom fields needed for neighborhood pages – the standard form fields (Name, Phone, Email, Service Needed, Home Size, Preferred Date, Message) are sufficient. The form’s Service Needed dropdown should NOT be pre-selected so the user can choose their specific service.
+Submit button: "Get My South Tampa Cleaning Estimate"
+Template pattern: "Get My [Neighborhood] Cleaning Estimate"
+3.9 Nearby Service Areas [TEMPLATE]
+  SECTION ID: #nearby-areas  
+H2 Heading
+We Also Serve These Nearby Tampa Neighborhoods
+* Westchase → /service-areas/westchase/
+* Carrollwood → /service-areas/carrollwood/
+* Seminole Heights → /service-areas/seminole-heights/
+* Hyde Park → /service-areas/hyde-park/ (Note: Hyde Park overlaps with South Tampa. This page focuses on the broader district identity.)
+* Brandon → /service-areas/brandon/
+DEV ACTION: Only link to neighborhood pages that have already been published. Do not link to pages that do not exist yet. Update this section each time a new neighborhood page goes live.
+________________
+
+
+4. Image Strategy & Alt Text [TEMPLATE]
+Each neighborhood page should have 3–5 images. At least one image must be specific to the neighborhood (a local landmark, recognizable street scene, or characteristic home style).
+#
+	Placement
+	Subject
+	Alt Text
+	Loading
+	1
+	Hero
+	Tree-lined South Tampa street with historic homes, ideally near Bayshore or Palma Ceia
+	"Beautiful South Tampa FL home street with oak trees"
+	Preload
+	2
+	Neighborhood content
+	Recognizable South Tampa landmark – Bayshore Boulevard sidewalk, Hyde Park Village, or Palma Ceia brick street
+	"Bayshore Boulevard South Tampa FL near homes serviced by Easy Clean"
+	Lazy
+	3
+	Services section
+	Easy Clean team member cleaning a bright South Tampa-style kitchen or bathroom
+	"Professional house cleaning in South Tampa FL home"
+	Lazy
+	4
+	Trust / Why Us
+	Kessia or team arriving at a South Tampa home with supplies
+	"Easy Clean Service team at a South Tampa home"
+	Lazy
+	5
+	Estimate form
+	Clean, inviting South Tampa living room or bedroom
+	"Clean South Tampa home maintained by Easy Clean Service"
+	Lazy
+	
+
+NOTE: For neighborhood pages, local imagery is more important than cleaning-specific imagery. A resident who sees a recognizable local street or landmark immediately feels the page is relevant to them. Stock photos of generic living rooms do not create the same local trust signal.
+5. On-Page SEO, Internal Linking & Conversion
+5.1 Keyword Placement Map
+Keyword
+	Title
+	H1
+	H2
+	Body
+	Alt
+	Schema
+	URL
+	house cleaning South Tampa
+	✓
+	✓
+	✓
+	✓
+	✓
+	✓
+	✓
+	cleaning service South Tampa
+	✓
+	
+
+	✓
+	✓
+	
+
+	✓
+	✓
+	maid service South Tampa
+	
+
+	
+
+	
+
+	✓
+	
+
+	
+
+	
+
+	deep cleaning South Tampa
+	
+
+	
+
+	
+
+	✓
+	
+
+	✓
+	
+
+	Hyde Park house cleaning
+	
+
+	
+
+	
+
+	✓
+	
+
+	✓
+	
+
+	Palma Ceia cleaning service
+	
+
+	
+
+	
+
+	✓
+	
+
+	✓
+	
+
+	Davis Islands cleaning
+	
+
+	
+
+	
+
+	✓
+	
+
+	✓
+	
+
+	Bayshore cleaning near me
+	
+
+	
+
+	
+
+	✓
+	✓
+	
+
+	
+
+	move out cleaning South Tampa
+	
+
+	
+
+	
+
+	✓
+	
+
+	
+
+	
+
+	
+
+5.2 Internal Linking Strategy [TEMPLATE]
+* Homepage – Service Areas section: "South Tampa" link in the neighborhood list
+* All 6 service pages: Each service page’s Service Areas section should link here
+* Other neighborhood pages: "Nearby Areas" sections on Westchase, Carrollwood, Seminole Heights, etc.
+* Main /service-areas/ page: South Tampa listing with link (once this overview page is created)
+* Blog posts (future): Any blog content mentioning South Tampa, Bayshore, Hyde Park, etc.
+* 6 service page links: From the Services Available section (Section 3.4) – these are the most important internal links on the page
+* 3–5 neighborhood page links: From the Nearby Areas section (Section 3.9)
+* Homepage: Via breadcrumb and logo
+NOTE: The neighborhood pages act as local SEO hubs that funnel authority to the service pages. The service links in Section 3.4 are the single most important conversion and SEO elements on the page. Make sure every service card is prominently displayed and links to the correct service page.
+1. Title tag unique and contains [Neighborhood] + "House Cleaning" + "FL"
+2. Meta description unique, mentions 2–3 sub-neighborhood names and phone number
+3. Canonical URL self-referencing
+4. H1 is the only H1, contains [Neighborhood] + primary keyword
+5. At least 60% of body copy is unique to this neighborhood (not duplicated from other pages)
+6. All sub-neighborhood names mentioned naturally in body copy (Hyde Park, Palma Ceia, Davis Islands, etc.)
+7. Internal links to all 6 service pages from the Services Available section
+8. Internal links to 3–5 adjacent neighborhood pages from Nearby Areas
+9. Breadcrumb visible and matches BreadcrumbList schema
+10. LocalBusiness schema with AreaServed set to this specific neighborhood
+11. FAQPage schema with 4–6 questions, at least 2 specific to the neighborhood
+12. At least one locally recognizable image with neighborhood-specific alt text
+13. Page loads under 3 seconds on mobile 4G
+14. Estimate form submit button text includes the neighborhood name
+* Sticky mobile CTA bar: Same as all pages – Call Now + Free Estimate.
+* WhatsApp floating button: Same implementation.
+* Mid-page CTA banner: Insert between the Services Available section and the Why Trust Us section.
+Banner headline: "Ready for a Cleaner South Tampa Home?"
+Banner button: "Get Your Free Estimate" → #estimate-form
+Template pattern: "Ready for a Cleaner [Neighborhood] Home?"
+* Trust badges above form: 10+ Years, Fully Insured, Eco-Friendly, Satisfaction Guaranteed.
+* Social proof: If any customer reviews specifically mention South Tampa or a sub-neighborhood, feature them on this page as a testimonial callout.
+________________
+
+
+6. Template Replication Guide for Future Neighborhoods
+1. Copy the WordPress page template from the South Tampa page.
+2. Update the URL slug to the new neighborhood (e.g., /service-areas/westchase/).
+3. Replace all [TEMPLATE] section content: title tag, meta description, H1, H2 headings, hero subheading, CTA button text, schema AreaServed, and form submit button text.
+4. Write 300–500 words of unique neighborhood-specific content (Section 3.2 equivalent) covering that area’s home types, notable sub-neighborhoods, local landmarks, and specific cleaning challenges.
+5. List the sub-neighborhoods served (Section 3.3 equivalent). Research each area to compile the correct list.
+6. Write 4–6 FAQ answers with at least 2 that are specific to the neighborhood (home styles, pricing notes, local cleaning challenges).
+7. Source 1–2 locally recognizable images for the hero and neighborhood content sections.
+8. Update the Nearby Areas links to reference geographically adjacent neighborhoods.
+9. Validate all schema at validator.schema.org before publishing.
+10. Update cross-links: After publishing, go back to the adjacent neighborhood pages and add a link to the new page in their Nearby Areas sections.
+Content Uniqueness Requirement
+Each neighborhood page MUST have at least 60% unique body copy to avoid thin/duplicate content penalties. The sections that change between neighborhoods are: the hero subheading (Section 3.1), the neighborhood-specific content (Section 3.2), the sub-neighborhood list (Section 3.3), and at least 2 FAQ answers (Section 3.7). The sections that use template language but swap neighborhood names are: the services section (3.4), the trust section (3.5), the how-it-works section (3.6), and the estimate form (3.8).
+WARNING: Do NOT simply find-and-replace "South Tampa" with the new neighborhood name and publish. Google’s algorithms specifically detect and penalize doorway pages that use this approach. The unique neighborhood content sections must contain genuinely original information about each area’s housing stock, demographics, local landmarks, and specific cleaning challenges.
+* Create as WordPress Page: service-areas/south-tampa
+* Parent page: /service-areas/ (create this parent as a simple overview page listing all neighborhoods)
+* Yoast/Rank Math focus keyword: "house cleaning South Tampa"
+* Same visual template as all other pages on the site
+* Add to the main site navigation under the "Service Areas" dropdown menu
+
+
+End of South Tampa Neighborhood Landing Page Developer Guide
+Version 1.0 • March 2026 • All content is original and proprietary

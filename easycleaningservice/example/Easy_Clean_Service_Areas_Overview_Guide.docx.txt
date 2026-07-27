@@ -1,0 +1,537 @@
+﻿HUB PAGE DEVELOPER GUIDE
+Service Areas Overview
+Easy Clean Service
+
+
+easycleaningservice.com/service-areas/
+Easy Clean Service • (813) 534-9216
+
+
+Complete developer guide for the /service-areas/ hub page including all copy,
+meta tags, schema, area directory with 12 neighborhoods, zip code reference,
+interactive map specifications, and technical SEO requirements.
+Version 1.0 • March 2026
+1. Page Strategy & Keyword Targets
+1.1 Page Purpose
+The /service-areas/ page is the geographic hub of Easy Clean Service’s local SEO architecture. It mirrors the /services/ page in structure but for location targeting rather than service targeting. This page sits one level below the homepage and one level above each of the 12 individual neighborhood landing pages. Its primary jobs are: (1) rank for broad “cleaning service near me” and “house cleaning Tampa area” queries where the user has not specified a neighborhood, (2) distribute link equity and crawl authority to all 12 neighborhood pages, (3) provide a visual directory (map + area cards) that helps visitors find their specific neighborhood, and (4) demonstrate geographic authority by listing every community Easy Clean serves, reinforcing the company’s service footprint for both search engines and AI answer engines.
+This page must contain substantial unique content beyond a simple list of links. The unique elements are: an interactive service area map, a zip code reference table, a geographic coverage summary with specific community counts, and introductory copy that positions Easy Clean as the Tampa-area cleaning authority.
+1.2 URL & Breadcrumb
+URL: https://easycleaningservice.com/service-areas/
+Breadcrumb: Home > Service Areas
+1.3 Keyword Targets
+Keyword
+	Type
+	Est. Vol.
+	Diff.
+	Intent
+	cleaning service near me Tampa
+	Primary
+	2,400
+	High
+	Transactional
+	house cleaning Tampa area
+	Primary
+	480
+	Low-Med
+	Transactional
+	cleaning service Hillsborough County
+	Secondary
+	210
+	Low
+	Transactional
+	cleaning service Pasco County
+	Secondary
+	110
+	Low
+	Transactional
+	house cleaning near me
+	Secondary
+	2,400
+	High
+	Transactional
+	areas served Easy Clean Tampa
+	Branded
+	10
+	Low
+	Navigational
+	cleaning service [zip code]
+	Long-tail
+	Varies
+	Low
+	Transactional
+	
+
+1.4 Content Targets
+Word count: 600–900 words of original body copy plus the area directory cards and zip code table
+Unique content: Interactive map embed, neighborhood directory with 12 cards, zip code reference table covering all served areas, and geographic positioning copy. None of this content appears on any neighborhood page.
+________________
+
+
+2. HTML Head – Meta Tags & Structured Data
+2.1 Title Tag
+
+
+<title>Service Areas | House Cleaning Across Tampa, FL |
+  Easy Clean Service</title>
+
+
+Character count: 62 characters. Distinct from both the homepage and the /services/ page. Leads with “Service Areas” for navigational intent, includes “House Cleaning” + “Tampa, FL” for transactional queries.
+2.2 Meta Description
+
+
+<meta name="description" content="Easy Clean Service provides
+  professional house cleaning across Tampa, FL and surrounding
+  communities. South Tampa, Westchase, Carrollwood, Brandon,
+  Riverview, Lutz, Wesley Chapel, and more. Find your
+  neighborhood. (813) 534-9216" />
+
+
+2.3 Canonical & Open Graph
+
+
+<link rel="canonical" href="https://easycleaningservice
+  .com/service-areas/" />
+<meta property="og:title" content="Service Areas |
+  Easy Clean House Cleaning Tampa FL" />
+<meta property="og:description" content="Professional
+  cleaning across 12 Tampa-area neighborhoods. Find
+  your area and get a free estimate." />
+<meta property="og:url" content="https://easycleaningservice
+  .com/service-areas/" />
+
+
+2.4 Schema – LocalBusiness with AreaServed
+This page should include a LocalBusiness schema with a comprehensive areaServed array listing all 12 neighborhoods. This tells Google and AI systems exactly where Easy Clean operates.
+
+
+{
+  "@context": "https://schema.org",
+  "@type": "HousekeepingService",
+  "name": "Easy Clean Service",
+  "telephone": "+1-813-534-9216",
+  "url": "https://easycleaningservice.com",
+  "areaServed": [
+    {"@type":"City","name":"Tampa"},
+    {"@type":"Place","name":"South Tampa"},
+    {"@type":"Place","name":"Westchase"},
+    {"@type":"Place","name":"Carrollwood"},
+    {"@type":"Place","name":"Brandon"},
+    {"@type":"Place","name":"Riverview"},
+    {"@type":"Place","name":"Lutz"},
+    {"@type":"Place","name":"Wesley Chapel"},
+    {"@type":"Place","name":"Town N Country"},
+    {"@type":"Place","name":"Temple Terrace"},
+    {"@type":"Place","name":"New Tampa"},
+    {"@type":"Place","name":"Seminole Heights"},
+    {"@type":"Place","name":"Hyde Park"}
+  ]
+}
+
+
+DEV ACTION: Also include BreadcrumbList schema: Home (1) → Service Areas (2).
+________________
+
+
+3. Page Layout, Headings & Body Copy
+3.1 Hero Section
+  SECTION ID: #service-areas-hero  
+H1 Heading
+House Cleaning Service Areas Across Tampa, FL
+Hero Subheading
+Easy Clean Service proudly cleans homes and businesses across the greater Tampa Bay area. From the historic bungalows of Seminole Heights to the luxury waterfront homes of Hyde Park, from the master-planned communities of Wesley Chapel to the established family neighborhoods of Brandon – our team brings the same professional quality, eco-friendly products, and personal attention to every home we visit, regardless of where it is on the map. We currently serve 12 neighborhoods across Hillsborough and Pasco Counties, covering over 150 distinct sub-communities and every major zip code in the Tampa metropolitan area.
+* Primary: "Find Your Neighborhood" → smooth scroll to #neighborhood-directory
+* Secondary: "Call (813) 534-9216" → tel:+18135349216
+Hero Image / Map
+Option A (Preferred): Embed an interactive Google Map with pins on all 12 service area centers. Each pin should display the neighborhood name and link to its dedicated page on click. See Section 3.3 for map specifications.
+Option B (Fallback): A custom-designed SVG or static image map of the Tampa Bay area with the 12 neighborhoods highlighted and labeled. Link each area to its page via image map or overlaid clickable elements.
+Alt text: "Map of Easy Clean Service house cleaning service areas across Tampa FL and surrounding neighborhoods"
+3.2 Geographic Coverage Summary [UNIQUE CONTENT]
+  SECTION ID: #coverage-summary  
+H2 Heading
+Cleaning Services Across 12 Tampa-Area Neighborhoods
+Easy Clean Service covers a service area that spans from Wesley Chapel in the north to Riverview in the south, and from the Gulf-adjacent communities of Westchase and Town ’N’ Country in the west to Brandon and Temple Terrace in the east. Our footprint includes both Hillsborough County (where 11 of our 12 neighborhood pages are located) and Pasco County (Wesley Chapel), giving us reach across the two largest counties in the Tampa Bay metropolitan area.
+Across these 12 neighborhoods, we serve over 150 distinct sub-communities, gated developments, and residential areas. Our team cleans homes ranging from 700-square-foot apartments near the University of South Florida to 6,000-square-foot estates in Lutz’s gated communities, and everything in between. We adjust our approach, our timing, and our products based on each neighborhood’s specific housing stock, climate challenges, and homeowner expectations.
+If your neighborhood is not listed below, call us at (813) 534-9216 – we may still be able to serve your area, and we are actively expanding our coverage.
+3.3 Interactive Map Specifications
+  SECTION ID: #service-area-map  
+* Platform: Google Maps JavaScript API with custom markers, or a lightweight alternative like Leaflet.js with OpenStreetMap tiles to avoid Google Maps costs.
+* Center point: Tampa, FL (approximately 27.9506, -82.4572)
+* Zoom level: 10 (shows the full service area from Wesley Chapel to Riverview)
+* Markers: 12 custom pins, one at the geographic center of each neighborhood. Use the Easy Clean brand color for pin styling.
+* Pin interaction: Click/tap opens an info window with the neighborhood name and a "View [Neighborhood] Page" link to /service-areas/[slug]/
+* Mobile: Map should be touch-responsive. Consider a static image fallback for very slow connections.
+* Lazy loading: Defer map initialization until the user scrolls to it, or load on a button click ("Show Map"), to avoid impacting page speed.
+Map Pin Coordinates
+Neighborhood
+	Latitude
+	Longitude
+	Page URL
+	South Tampa
+	27.9150
+	-82.4900
+	/service-areas/south-tampa/
+	Westchase
+	28.0600
+	-82.6100
+	/service-areas/westchase/
+	Carrollwood
+	28.0550
+	-82.5050
+	/service-areas/carrollwood/
+	Brandon
+	27.9378
+	-82.2859
+	/service-areas/brandon/
+	Riverview
+	27.8764
+	-82.3265
+	/service-areas/riverview/
+	Lutz
+	28.1512
+	-82.4615
+	/service-areas/lutz/
+	Wesley Chapel
+	28.2397
+	-82.3270
+	/service-areas/wesley-chapel/
+	Town ’N’ Country
+	28.0103
+	-82.5773
+	/service-areas/town-n-country/
+	Temple Terrace
+	28.0353
+	-82.3893
+	/service-areas/temple-terrace/
+	New Tampa
+	28.1300
+	-82.3700
+	/service-areas/new-tampa/
+	Seminole Heights
+	27.9900
+	-82.4500
+	/service-areas/seminole-heights/
+	Hyde Park
+	27.9350
+	-82.4750
+	/service-areas/hyde-park/
+	
+
+________________
+
+
+3.4 Neighborhood Directory – 12 Area Cards
+  SECTION ID: #neighborhood-directory  
+H2 Heading
+Find Your Tampa Neighborhood
+Click your neighborhood below for a dedicated page with local cleaning information, community-specific details, service options, pricing guidance, and a free estimate form tailored to your area.
+DEV ACTION: Display as 12 cards in a responsive grid (3 columns desktop, 2 tablet, 1 mobile). Each card: neighborhood image/thumbnail, neighborhood name as H3 linked to the page, 1–2 sentence description highlighting what makes that area unique, number of sub-communities served, and a "Learn More" button.
+
+
+Card 1: South Tampa
+Tagline: Historic homes, Mediterranean Revival architecture, Bayshore Boulevard living.
+Sub-communities: 17 neighborhoods | Link: /service-areas/south-tampa/
+Card 2: Westchase
+Tagline: Master-planned community with 3,500+ homes across 33 villages.
+Sub-communities: 21 villages | Link: /service-areas/westchase/
+Card 3: Carrollwood
+Tagline: Tampa’s oldest planned community (1959). Terrazzo floors, mid-century character.
+Sub-communities: 15 neighborhoods | Link: /service-areas/carrollwood/
+Card 4: Brandon
+Tagline: Largest service area – 115,000+ residents. Military families, affordable homes.
+Sub-communities: 16 neighborhoods, 7 zip codes | Link: /service-areas/brandon/
+Card 5: Riverview
+Tagline: Tampa’s fastest-growing suburb. Newest housing stock, remote worker families.
+Sub-communities: 15 communities | Link: /service-areas/riverview/
+Card 6: Lutz
+Tagline: Highest income area. Gated estates, large lots, well-water expertise.
+Sub-communities: 19 communities | Link: /service-areas/lutz/
+Card 7: Wesley Chapel
+Tagline: Resort-style communities with crystal lagoons. First Pasco County page.
+Sub-communities: 17 communities | Link: /service-areas/wesley-chapel/
+Card 8: Town ’N’ Country
+Tagline: Most culturally diverse – 51% Hispanic. Se habla español. Bilingual service.
+Sub-communities: 12 neighborhoods | Link: /service-areas/town-n-country/
+Card 9: Temple Terrace
+Tagline: Only incorporated city. 1920s architecture, USF connection, Hillsborough River.
+Sub-communities: 14 neighborhoods | Link: /service-areas/temple-terrace/
+Card 10: New Tampa
+Tagline: Established master-planned communities at 15–25 year maintenance maturity.
+Sub-communities: 15 communities | Link: /service-areas/new-tampa/
+Card 11: Seminole Heights
+Tagline: Only urban page. 1911 Craftsman bungalows, craft breweries, Florida Avenue dining.
+Sub-communities: 9 neighborhoods | Link: /service-areas/seminole-heights/
+Card 12: Hyde Park
+Tagline: Luxury urban flagship. Marble expertise, condo coordination, Bayshore Boulevard.
+Sub-communities: 11 neighborhoods | Link: /service-areas/hyde-park/
+________________
+
+
+3.5 Zip Code Reference Table [UNIQUE CONTENT]
+  SECTION ID: #zip-codes  
+H2 Heading
+Zip Codes We Serve in the Tampa Bay Area
+Not sure which neighborhood page applies to your address? Find your zip code below to see which area page covers your location.
+Zip Code
+	Neighborhood(s)
+	Page Link
+	33606
+	Hyde Park, South Tampa
+	/service-areas/hyde-park/
+	33609
+	Hyde Park, South Tampa
+	/service-areas/south-tampa/
+	33611
+	South Tampa
+	/service-areas/south-tampa/
+	33629
+	South Tampa
+	/service-areas/south-tampa/
+	33603
+	Seminole Heights
+	/service-areas/seminole-heights/
+	33604
+	Seminole Heights
+	/service-areas/seminole-heights/
+	33615
+	Town ’N’ Country
+	/service-areas/town-n-country/
+	33634
+	Town ’N’ Country
+	/service-areas/town-n-country/
+	33635
+	Town ’N’ Country, Westchase
+	/service-areas/town-n-country/
+	33626
+	Westchase
+	/service-areas/westchase/
+	33625
+	Carrollwood
+	/service-areas/carrollwood/
+	33618
+	Carrollwood
+	/service-areas/carrollwood/
+	33624
+	Carrollwood, Town ’N’ Country
+	/service-areas/carrollwood/
+	33510
+	Brandon
+	/service-areas/brandon/
+	33511
+	Brandon
+	/service-areas/brandon/
+	33527
+	Brandon (Dover/Valrico)
+	/service-areas/brandon/
+	33578
+	Riverview
+	/service-areas/riverview/
+	33579
+	Riverview
+	/service-areas/riverview/
+	33569
+	Riverview
+	/service-areas/riverview/
+	33548
+	Lutz
+	/service-areas/lutz/
+	33549
+	Lutz
+	/service-areas/lutz/
+	33558
+	Lutz
+	/service-areas/lutz/
+	33559
+	Lutz, Wesley Chapel
+	/service-areas/lutz/
+	33543
+	Wesley Chapel
+	/service-areas/wesley-chapel/
+	33544
+	Wesley Chapel
+	/service-areas/wesley-chapel/
+	33545
+	Wesley Chapel
+	/service-areas/wesley-chapel/
+	33617
+	Temple Terrace
+	/service-areas/temple-terrace/
+	33637
+	Temple Terrace
+	/service-areas/temple-terrace/
+	33647
+	New Tampa
+	/service-areas/new-tampa/
+	
+
+NOTE: This zip code table is a powerful SEO asset. It captures the long-tail “cleaning service [zip code]” queries that individual neighborhood pages cannot. When a user searches “cleaning service 33578,” this table provides the answer and links to the Riverview page. Consider making the table searchable with a simple JavaScript filter input above it.
+DEV ACTION: Consider adding a search box above the table: "Enter your zip code to find your neighborhood" with instant filtering. This improves UX and increases engagement metrics.
+3.6 Services Available in Every Neighborhood
+  SECTION ID: #services-everywhere  
+H2 Heading
+Every Cleaning Service Available in Every Neighborhood
+* Regular House Cleaning – Weekly, biweekly, and monthly → /services/regular-house-cleaning-tampa/
+* Deep Cleaning – Top-to-bottom seasonal resets → /services/deep-cleaning-tampa/
+* Move-In / Move-Out Cleaning – Deposit protection and fresh starts → /services/move-in-move-out-cleaning-tampa/
+* Airbnb & Vacation Rental Cleaning – Guest-ready turnovers → /services/airbnb-cleaning-tampa/
+* Kitchen & Bathroom Deep Cleaning – Targeted room-specific service → /services/kitchen-bathroom-cleaning-tampa/
+* Commercial Cleaning – Offices, retail, restaurants → /services/commercial-cleaning-tampa/
+Full service details: /services/ – compare all services and find the right fit.
+3.7 Estimate Request Form
+  SECTION ID: #estimate-form  
+Get Your Free Cleaning Estimate
+Tell us your neighborhood (or zip code) and what you need, and we will match you with the right service and provide a clear, no-obligation estimate. Call (813) 534-9216 for immediate assistance.
+Form Fields (Page-Specific Additions)
+* Neighborhood dropdown: Options: South Tampa, Westchase, Carrollwood, Brandon, Riverview, Lutz, Wesley Chapel, Town ’N’ Country, Temple Terrace, New Tampa, Seminole Heights, Hyde Park, Other / Not Listed
+* Service Needed dropdown: Same as /services/ page (includes "Not Sure" as first option)
+Submit button: "Get My Free Estimate"
+________________
+
+
+4. Image Strategy & Alt Text
+#
+	Placement
+	Subject
+	Alt Text
+	Loading
+	1
+	Hero / Map
+	Interactive map or static map of Tampa service areas
+	"Map of Easy Clean Service areas across Tampa FL"
+	Lazy (map deferred)
+	2–13
+	12 area cards
+	One representative image per neighborhood (home, street scene, or community landmark)
+	"[Neighborhood] FL homes cleaned by Easy Clean Service"
+	Lazy
+	14
+	Estimate form
+	Kessia or team at a Tampa home
+	"Easy Clean Service team providing estimate in Tampa FL"
+	Lazy
+	
+
+NOTE: The 12 neighborhood card images should each be visually distinct and locally authentic. Reuse the hero images from each neighborhood page at a smaller card size (400x300px). This creates visual consistency between the directory cards and the full neighborhood pages.
+5. On-Page SEO, Internal Linking & Conversion
+5.1 Keyword Placement Map
+Keyword
+	Title
+	H1
+	H2
+	Body
+	Alt
+	Schema
+	URL
+	house cleaning Tampa area
+	✓
+	✓
+	✓
+	✓
+	✓
+	✓
+	
+
+	cleaning service near me
+	
+
+	
+
+	
+
+	✓
+	
+
+	
+
+	
+
+	service areas Tampa cleaning
+	✓
+	
+
+	
+
+	✓
+	
+
+	
+
+	✓
+	Hillsborough County cleaning
+	
+
+	
+
+	
+
+	✓
+	
+
+	✓
+	
+
+	Pasco County cleaning
+	
+
+	
+
+	
+
+	✓
+	
+
+	✓
+	
+
+	cleaning service [zip code]
+	
+
+	
+
+	
+
+	✓
+	
+
+	
+
+	
+
+	
+
+5.2 Internal Linking Strategy
+* Homepage: "Service Areas" nav link + Service Areas section heading
+* All 12 neighborhood pages: Breadcrumb (Home > Service Areas > [Neighborhood])
+* All 6 service pages: "Service Areas" sections link here
+* /services/ page: Service Areas section links here
+* Footer: "Service Areas" column links here
+* 12 neighborhood pages: Each directory card links to its dedicated page (primary purpose)
+* 6 service pages: Services Available section links to all services
+* /services/ hub: "Full service details" link from Services section
+* Homepage: Via breadcrumb and logo
+1. Title tag unique with "Service Areas" + "House Cleaning" + "Tampa"
+2. Meta description lists key neighborhoods + phone number
+3. Canonical self-referencing to /service-areas/
+4. H1 unique, distinct from homepage and /services/ page
+5. 12 neighborhood cards each link to their dedicated page
+6. Zip code table provides unique content not on any other page
+7. Interactive map deferred to avoid page speed impact
+8. LocalBusiness schema includes comprehensive areaServed array
+9. BreadcrumbList schema validated
+10. All 12 card images have neighborhood-specific alt text
+11. Page loads under 3 seconds on mobile (with map deferred)
+12. Neighborhood dropdown added to estimate form
+* Sticky mobile CTA + WhatsApp: Same as all pages.
+* "Don’t see your area?" callout: Below the directory cards: "Don’t see your neighborhood listed? We may still serve your area. Call (813) 534-9216 to check." This captures visitors from unlisted areas.
+* Zip code search: JavaScript filter above the zip code table for instant lookup. Improves engagement and time on page.
+* Trust badges above form: 10+ Years, Insured, Eco-Friendly, Se Habla Español, Satisfaction Guaranteed.
+* Create as WordPress Page: slug "service-areas" (no parent – this IS the parent)
+* Set as landing page for the "Service Areas" nav link
+* Verify all 12 neighborhood pages have parent set to /service-areas/
+* Verify breadcrumbs: Home > Service Areas > [Neighborhood Name]
+* Yoast/Rank Math focus keyword: "house cleaning Tampa area"
+* After publishing, update homepage Service Areas section to link here
+* Defer map script loading for page speed
+
+
+End of Service Areas Overview Page Developer Guide
+Version 1.0 • March 2026 • All content is original and proprietary

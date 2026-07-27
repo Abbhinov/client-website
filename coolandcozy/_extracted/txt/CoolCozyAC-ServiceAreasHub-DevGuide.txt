@@ -1,0 +1,211 @@
+﻿
+DEVELOPER IMPLEMENTATION GUIDE
+
+COOL & COZY AC REPAIR
+Licensed HVAC Contractor  ·  Jacksonville, Florida
+
+SERVICE AREAS HUB
+Complete Page Build — Single Document
+
+URL: coolcozyac.com/service-areas
+Prepared by: TradeWorks AI  |  Version 1.0  |  May 2026
+Classification: Client Confidential
+
+1. Page Identity & Architecture
+Property
+Specification
+URL Path
+/service-areas
+Canonical
+https://coolcozyac.com/service-areas
+Page Type
+Hub page (geographic silo root)
+Parent
+/ (Homepage)
+Breadcrumb
+Home > Service Areas
+Primary Keyword
+AC service areas Jacksonville FL
+Search Intent
+Local / Navigational
+Target Word Count
+600–800 words (hub page — links to children do the heavy lifting)
+Primary Conversion
+Click-through to area child pages OR phone call
+Robots
+index, follow
+Sitemap
+Priority 0.9
+
+1.1 Architecture Role
+This is the top-level hub of the geographic silo. It links to all area child pages and provides a Google Maps embed showing the full service coverage area. The architecture is: /service-areas (this hub) → individual area pages (/service-areas/southside, /service-areas/mandarin, etc.). A Duval County hub (/service-areas/duval-county) is planned but can be deferred — the direct hub-to-area structure works well for the current page count.
+1.2 Child Pages
+Area
+URL
+County
+Southside
+/service-areas/southside
+Duval
+Mandarin
+/service-areas/mandarin
+Duval
+Arlington
+/service-areas/arlington
+Duval
+Riverside-Avondale
+/service-areas/riverside-avondale
+Duval
+San Marco
+/service-areas/san-marco
+Duval
+Baymeadows
+/service-areas/baymeadows
+Duval
+Jacksonville Beach
+/service-areas/jacksonville-beach
+Duval (Beaches)
+Orange Park
+/service-areas/orange-park
+Clay
+Murray Hill
+/service-areas/murray-hill
+Duval
+Springfield
+/service-areas/springfield
+Duval
+
+2. <head> Section
+Property
+Specification
+Title Tag
+Service Areas | Jacksonville & Duval County AC Repair | Cool & Cozy
+Title Chars
+65 characters
+Meta Description
+Cool & Cozy AC Repair serves Jacksonville’s Southside, Mandarin, Arlington, Riverside, San Marco, the Beaches, Orange Park & more. Licensed, bilingual. Call (904) 555-0199.
+Canonical
+https://coolcozyac.com/service-areas
+JSON-LD: HVACBusiness with multiple areaServed entries (one per neighborhood). BreadcrumbList (2-level: Home > Service Areas). No FAQPage on this hub.
+
+3. Section-by-Section Build
+The Service Areas Hub has 5 blocks: compact hero, AEO intro, area card grid, Google Maps embed, and CTA. This is a navigation page — minimal content, maximum click-through to child pages.
+
+3.1 Compact Hero
+Breadcrumb
+Home > Service Areas
+H1
+Areas We Serve in Jacksonville & Northeast Florida
+Subheadline
+Cool & Cozy AC Repair provides licensed HVAC service across Jacksonville, Duval County, and Orange Park in Clay County. Find your neighborhood below or call (904) 555-0199 — we very likely serve your area.
+Word Count: 35 words
+Evergreen CSS-pattern hero, 240px desktop, centered text. No photo.
+
+3.2 AEO Introduction
+H2
+Jacksonville HVAC Service Coverage
+Cool & Cozy AC Repair serves homeowners, businesses, and property managers across Jacksonville’s major neighborhoods and surrounding communities. Our Florida contractor license (CAC1819948) covers work statewide, and our primary service area includes all of Duval County plus Orange Park and adjacent Clay County communities. Each neighborhood page below provides specific information about HVAC challenges unique to that area — from the salt air corrosion at the Beaches to the historic home retrofitting challenges in Riverside-Avondale and Springfield. Select your neighborhood for localized service information, or call (904) 555-0199 for immediate assistance anywhere in our coverage area.
+Word Count: 100 words
+
+3.3 Service Area Card Grid
+Layout
+Property
+Specification
+Container
+#EAF3F2 (Sky Mist), 1280px centered
+Grid
+Desktop: 2 rows of 5 cards. Tablet: 3+3+4 or 2 columns. Mobile: single column.
+Card design
+White bg (#FFFDF8), 16px radius, 24px padding, hover: translateY(-2px) + shadow
+Content — 10 Area Cards
+Each card contains:
+Neighborhood name (Poppins 18px/600, #2C2C2C, linked to area page)
+1-line description (Poppins 13px/400, #7A7A7A) highlighting the area’s primary HVAC characteristic
+Arrow icon (→) indicating clickable link
+
+Area
+Card Description
+Link
+Southside
+Mixed housing, apartment density, commercial corridor
+/service-areas/southside
+Mandarin
+Canopy roads, aging ductwork, riverfront humidity
+/service-areas/mandarin
+Arlington
+Mid-century homes, diverse eras, affordable rentals
+/service-areas/arlington
+Riverside-Avondale
+Historic district, plaster walls, ductless solutions
+/service-areas/riverside-avondale
+San Marco
+Multi-era renovations, compact lots, mixed-use commercial
+/service-areas/san-marco
+Baymeadows
+Cultural diversity, 60% renter-occupied, Deerwood estates
+/service-areas/baymeadows
+Jacksonville Beach
+Salt air corrosion, coastal humidity, vacation rentals
+/service-areas/jacksonville-beach
+Orange Park
+Clay County, Fleming Island, military community
+/service-areas/orange-park
+Murray Hill
+1940s–1960s bungalows, revitalization, compact lots
+/service-areas/murray-hill
+Springfield
+1880s–1930s Victorian, historic preservation, balloon-frame
+/service-areas/springfield
+
+Each card description is a micro-summary of that area’s primary HVAC differentiator. A visitor scanning the grid can immediately identify their neighborhood and see that Cool & Cozy understands its specific challenges.
+
+3.4 Google Maps Service Coverage
+Layout
+Property
+Specification
+Container
+#FFFFFF, 1280px centered
+Map dimensions
+100% width × 500px desktop, 100% × 350px mobile
+Border-radius
+16px, overflow hidden
+Map Specification
+Google Maps Embed API showing the full service coverage area with markers on each served neighborhood. The map is centered on Jacksonville (approximate center: 30.3322°N, 81.6557°W) at zoom level 11, which shows the entire metro area from the Beaches to Orange Park.
+10 map markers: one per area page, positioned at the neighborhood center
+Each marker labeled with neighborhood name
+Click on marker: shows neighborhood name + “View [Area] HVAC services” link to area page
+Loading: loading="lazy" on iframe
+
+DEV ACTION: Use Google Maps Embed API (free, no API key for basic embed) or Google Maps JavaScript API with markers (requires API key but enables custom styling). The embed API is simpler for v1; JavaScript API enables Evergreen/Coral branded markers and popup styling. Either approach works.
+Below Map Text
+Don’t see your neighborhood? Call (904) 555-0199 — our service area extends throughout Duval County and into Clay County. If you’re within 30 miles of Jacksonville, we can likely help.
+
+3.5 Final CTA
+H2
+Licensed HVAC Service Across Jacksonville
+Body
+From the historic homes of Riverside and Springfield to the coastal properties at Jacksonville Beach, from the growing suburbs of Orange Park to the diverse corridors of Baymeadows — Cool & Cozy serves every corner of Jacksonville with the same commitment: honest pricing, expert service, and bilingual communication.
+Word Count: 49 words
+CTAs
+Property
+Specification
+Primary
+Call (904) 555-0199 — Coral bg, pill, tel: link
+Secondary
+Request a Free Estimate — white border, pill, /contact
+Evergreen solid bg, 720px centered, 72px/40px padding.
+
+4. Reference: Checklist
+HTML/JSON-LD validates (HVACBusiness with areaServed array, BreadcrumbList)
+Title/canonical unique from all area child pages
+All 10 area card links verified and functional
+Map renders correctly, lazy-loaded, all 10 markers visible at default zoom
+Click-to-call on all phone instances
+Breadcrumb: Home > Service Areas
+PageSpeed Mobile > 90 (CSS hero, lazy map, no heavy images)
+XML sitemap: /service-areas priority 0.9
+Nav link “Service Areas” points to this page
+No duplicate content with homepage service area section (hub is more detailed)
+
+— End of Document —
+Prepared by TradeWorks AI  ·  May 2026  ·  v1.0
+

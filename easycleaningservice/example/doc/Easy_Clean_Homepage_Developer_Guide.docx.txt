@@ -1,0 +1,798 @@
+﻿WEB DEVELOPER IMPLEMENTATION GUIDE
+Homepage Redesign
+Easy Clean Service
+
+
+easycleaningservice.com
+Tampa, FL • (813) 534-9216
+
+
+This document contains all copy, meta tags, schema markup, section layouts,
+keyword targets, image specifications, and technical SEO requirements
+needed to build the new homepage.
+Version 1.0 • March 25, 2026
+1. HTML Head – Meta Tags, Title & Open Graph
+Implement the following meta tags in the <head> of the homepage exactly as written. These have been optimized through keyword research for the Tampa residential cleaning market.
+1.1 Title Tag
+TARGET KEYWORDS: house cleaning Tampa, cleaning service Tampa FL
+
+
+<title>Professional House Cleaning Services in Tampa, FL | Easy Clean Service</title>
+
+
+Character count: 65 characters (within the 50–60 optimal range for Google SERP display). The title leads with the primary keyword "house cleaning services" followed by the geo-modifier "Tampa, FL" and closes with the brand name.
+1.2 Meta Description
+
+
+<meta name="description" content="Easy Clean Service offers trusted house
+cleaning, deep cleaning, move-in/out cleaning, and Airbnb turnover
+services across Tampa, FL. 10+ years of experience. Pet-friendly.
+Book your free estimate today. (813) 534-9216" />
+
+
+Character count: Approximately 155 characters. Includes primary service keywords, location, experience differentiator, the pet-friendly angle (unique to this brand), a call to action, and the phone number which can appear as a click-to-call in mobile SERPs.
+1.3 Core Meta Tags
+
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="index, follow, max-snippet:-1,
+  max-image-preview:large, max-video-preview:-1" />
+<meta name="geo.region" content="US-FL" />
+<meta name="geo.placename" content="Tampa" />
+<link rel="canonical" href="https://easycleaningservice.com/" />
+<meta name="author" content="Easy Clean Service" />
+<meta name="theme-color" content="#1B4F72" />
+
+
+NOTE: The robots tag with max-snippet:-1 tells Google it can use as much snippet text as it wants, and max-image-preview:large allows full-size image thumbnails in results.
+1.4 Open Graph Tags (Facebook / Social Sharing)
+
+
+<meta property="og:title" content="Professional House Cleaning
+  Services in Tampa, FL | Easy Clean Service" />
+<meta property="og:description" content="Trusted residential cleaning
+  for Tampa homes. Deep cleaning, regular cleaning, move-in/out,
+  and Airbnb turnover services. 10+ years experience.
+  Request your free estimate." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://easycleaningservice.com/" />
+<meta property="og:image" content="https://easycleaningservice.com/
+  images/og-easy-clean-tampa.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:site_name" content="Easy Clean Service" />
+
+
+DEV ACTION: Create a 1200x630px Open Graph image. It should show a clean, bright Tampa home interior with the Easy Clean Service logo overlay and the tagline. Use this same image for the Twitter card.
+1.5 Twitter Card Tags
+
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="House Cleaning Services in
+  Tampa, FL | Easy Clean Service" />
+<meta name="twitter:description" content="Trusted residential
+  cleaning for Tampa homes. Deep cleaning, regular maintenance,
+  move-in/out, and Airbnb turnover. Free estimates." />
+<meta name="twitter:image" content="https://easycleaningservice.com/
+  images/og-easy-clean-tampa.jpg" />
+
+
+1.6 Favicon & Apple Touch Icon
+
+
+<link rel="icon" type="image/png" sizes="32x32"
+  href="/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16"
+  href="/favicon-16x16.png" />
+<link rel="apple-touch-icon" sizes="180x180"
+  href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+
+
+DEV ACTION: Generate favicon set from the Easy Clean logo using realfavicongenerator.net. Include all sizes for cross-device compatibility.
+2. Structured Data / Schema Markup (JSON-LD)
+Place all schema markup in a single <script type="application/ld+json"> block in the <head>. This is critical for Google rich results, the Local 3-Pack, AI Overviews, and answer engines like Perplexity and ChatGPT search.
+2.1 LocalBusiness + Service Schema
+
+
+{
+  "@context": "https://schema.org",
+  "@type": "HousekeepingService",
+  "name": "Easy Clean Service",
+  "alternateName": "Easy Clean",
+  "description": "Professional residential and commercial
+    cleaning services in Tampa, FL. Offering deep cleaning,
+    regular house cleaning, move-in/out cleaning, Airbnb
+    turnover, and more. Locally owned with 10+ years
+    of experience.",
+  "url": "https://easycleaningservice.com",
+  "telephone": "+1-813-534-9216",
+  "image": "https://easycleaningservice.com/images/
+    easy-clean-service-tampa.jpg",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Tampa",
+    "addressRegion": "FL",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 27.9506,
+    "longitude": -82.4572
+  },
+  "areaServed": [
+    { "@type": "City", "name": "Tampa" },
+    { "@type": "City", "name": "Brandon" },
+    { "@type": "City", "name": "Riverview" },
+    { "@type": "City", "name": "Lutz" },
+    { "@type": "City", "name": "Wesley Chapel" },
+    { "@type": "City", "name": "South Tampa" },
+    { "@type": "City", "name": "Westchase" },
+    { "@type": "City", "name": "Carrollwood" }
+  ],
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Mon","Tue","Wed","Thu","Fri"],
+      "opens": "08:00", "closes": "18:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Saturday",
+      "opens": "09:00", "closes": "14:00"
+    }
+  ],
+  "founder": {
+    "@type": "Person",
+    "name": "Kessia Marquez"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Cleaning Services",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": {
+        "@type": "Service", "name": "Deep Cleaning" } },
+      { "@type": "Offer", "itemOffered": {
+        "@type": "Service", "name": "Regular House Cleaning" } },
+      { "@type": "Offer", "itemOffered": {
+        "@type": "Service", "name": "Move-In/Move-Out Cleaning" } },
+      { "@type": "Offer", "itemOffered": {
+        "@type": "Service", "name": "Airbnb Turnover Cleaning" } },
+      { "@type": "Offer", "itemOffered": {
+        "@type": "Service", "name": "Kitchen Cleaning" } },
+      { "@type": "Offer", "itemOffered": {
+        "@type": "Service", "name": "Bathroom Cleaning" } },
+      { "@type": "Offer", "itemOffered": {
+        "@type": "Service", "name": "Commercial Cleaning" } }
+    ]
+  },
+  "sameAs": [
+    "https://www.facebook.com/easycleanservicetampa",
+    "https://www.instagram.com/easycleanservicetampa"
+  ]
+}
+
+
+DEV ACTION: Confirm the exact service area cities with the client and update the geo coordinates to their primary operating base. Update social links once accounts are created.
+2.2 FAQPage Schema
+Place this as a second JSON-LD block. This enables FAQ rich results in Google and feeds answers directly to AI search engines.
+
+
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does house cleaning cost
+        in Tampa, FL?",
+      "acceptedAnswer": { "@type": "Answer",
+        "text": "House cleaning costs in Tampa
+          typically range from $120 to $250 for a
+          standard cleaning, depending on your home
+          size, condition, and the services you need.
+          Contact Easy Clean Service at (813) 534-9216
+          for a personalized free estimate." }
+    },
+    {
+      "@type": "Question",
+      "name": "What is included in a deep cleaning
+        service?",
+      "acceptedAnswer": { "@type": "Answer",
+        "text": "Our deep cleaning covers every room
+          from top to bottom: baseboards, ceiling fans,
+          inside appliances, behind furniture, grout
+          scrubbing, light fixture dusting, window sill
+          detailing, and full sanitization of kitchens
+          and bathrooms." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you bring your own cleaning supplies
+        and equipment?",
+      "acceptedAnswer": { "@type": "Answer",
+        "text": "Yes. Our team arrives with all
+          professional-grade supplies and equipment.
+          We use eco-friendly, pet-safe, and
+          child-safe products on every job." }
+    },
+    {
+      "@type": "Question",
+      "name": "Are your cleaners insured and
+        background-checked?",
+      "acceptedAnswer": { "@type": "Answer",
+        "text": "Yes. Easy Clean Service is fully
+          insured and every team member is vetted
+          and trained before entering your home." }
+    },
+    {
+      "@type": "Question",
+      "name": "What areas of Tampa do you serve?",
+      "acceptedAnswer": { "@type": "Answer",
+        "text": "We serve Tampa and surrounding
+          communities including South Tampa, Westchase,
+          Carrollwood, Brandon, Riverview, Lutz, Wesley
+          Chapel, Town N Country, and more. Call us to
+          confirm service in your area." }
+    }
+  ]
+}
+
+
+3. Homepage Section Layout, Headings & Copy
+The following defines every section of the homepage from top to bottom. Each section includes the HTML heading level, all body copy, keyword targets, image specifications, and developer implementation notes. All content is original and SEO-optimized for Easy Clean Service in the Tampa market.
+IMPORTANT: Use semantic HTML5 elements throughout: <header>, <nav>, <main>, <section>, <article>, <aside>, <footer>. Each section below should be wrapped in its own <section> with a descriptive id attribute.
+________________
+
+
+3.1 Sticky Navigation Bar
+  SECTION ID: #navigation  
+The navigation should be a fixed/sticky header that remains visible on scroll. It should be clean, professional, and fast-loading.
+Logo
+* Placement: Top left. Link the logo to the homepage URL.
+* File format: SVG for the logo (for crisp rendering at all sizes). Provide PNG fallback.
+* Alt text: "Easy Clean Service – Professional House Cleaning in Tampa FL"
+Navigation Links
+Implement the following top-level nav items. Each should link to a dedicated page (not anchor links on the homepage):
+Link Text
+	URL
+	Notes
+	Home
+	/
+	Active state on homepage
+	Our Services
+	/services/
+	Dropdown menu – see below
+	About Us
+	/about/
+	Kessia’s story & trust signals
+	Gallery
+	/gallery/
+	Before/after portfolio
+	Service Areas
+	/service-areas/
+	Tampa neighborhoods map
+	Blog
+	/blog/
+	SEO content hub (future)
+	Contact
+	/contact/
+	Contact form & map
+	
+
+Services Dropdown Menu Items
+* Deep Cleaning → /services/deep-cleaning-tampa/
+* Regular House Cleaning → /services/regular-house-cleaning-tampa/
+* Move-In / Move-Out Cleaning → /services/move-in-move-out-cleaning-tampa/
+* Airbnb & Vacation Rental Cleaning → /services/airbnb-cleaning-tampa/
+* Kitchen & Bathroom Cleaning → /services/kitchen-bathroom-cleaning-tampa/
+* Commercial Cleaning → /services/commercial-cleaning-tampa/
+CTA Button in Nav
+Button text: "Get a Free Estimate"
+Link: Scrolls to the estimate form section OR links to /contact/
+Style: Contrasting accent color (green or orange) that stands out from the nav background.
+Contact Strip (Above Nav)
+Add a thin utility bar above the main nav with:
+* Phone number: (813) 534-9216 (click-to-call on mobile)
+* WhatsApp link icon
+* Hours: Mon–Fri 8AM–6PM | Sat 9AM–2PM
+* Social icons: Facebook, Instagram (once created)
+________________
+
+
+3.2 Hero Section
+  SECTION ID: #hero  
+PRIMARY KEYWORD TARGET: house cleaning services Tampa FL, professional cleaning service Tampa
+H1 Heading
+Trusted House Cleaning Services in Tampa, FL
+NOTE: This is the single most important heading on the page. It contains the primary keyword (house cleaning services), the geo-modifier (Tampa, FL), and a trust signal (Trusted). It must be the only H1 on the page.
+Hero Subheading (Paragraph Directly Below H1)
+Let Easy Clean Service handle the scrubbing, dusting, and mopping so you can reclaim your weekends. We have been caring for Tampa homes for over 10 years with personalized attention, eco-friendly products, and a 100% satisfaction guarantee. From regular weekly cleanings to one-time deep cleans, your spotless home is just a phone call away.
+Hero CTA Buttons
+* Primary button: "Get Your Free Estimate" → scrolls to #estimate-form
+* Secondary button: "Call (813) 534-9216" → click-to-call tel: link
+Hero Background Image
+Specification
+	Requirement
+	Subject
+	Bright, airy Tampa-style home interior – clean living room or kitchen. No stock photos of generic models. Use actual project photos if available, otherwise commission a local lifestyle shoot.
+	Dimensions
+	2560 x 1440px maximum source; serve responsive sizes via srcset
+	Format
+	WebP with JPEG fallback. Use <picture> element.
+	File size
+	Under 200KB compressed (use tools like Squoosh or ShortPixel)
+	Alt text
+	"Professional house cleaning team working in a bright Tampa FL home"
+	Overlay
+	Semi-transparent dark gradient from left so white/light heading text is readable over the photo
+	Loading
+	Do NOT lazy-load the hero image. Use fetchpriority="high" and preload via <link> tag in <head>.
+	
+
+DEV ACTION: Preload the hero image in <head>:
+
+
+<link rel="preload" as="image" type="image/webp"
+  href="/images/hero-tampa-clean-home.webp"
+  fetchpriority="high" />
+
+
+3.3 Trust Indicator Bar
+  SECTION ID: #trust-bar  
+* 10+ Years Serving Tampa Homes
+* 100% Satisfaction Guaranteed
+* Fully Insured & Vetted Team
+* Eco-Friendly & Pet-Safe Products
+* No Contracts – Cancel Anytime
+Each indicator should have a small icon (SVG or icon font) above or to the left of the text. Use a consistent icon style (line icons recommended, not filled).
+________________
+
+
+3.4 Our Cleaning Services Section
+  SECTION ID: #services  
+KEYWORD TARGETS: deep cleaning Tampa, move out cleaning Tampa, Airbnb cleaning Tampa, maid service Tampa, residential cleaning Tampa FL
+H2 Heading
+Residential & Commercial Cleaning Services Across Tampa
+Section Intro Paragraph
+Every home collects its own kind of mess. Tampa’s humidity invites mildew into bathrooms, sandy floors track through hallways, and everyday life fills kitchens with grease and clutter. Easy Clean Service offers a full range of cleaning solutions tailored to how Tampa families actually live. Whether you need a one-time deep clean before guests arrive or a dependable weekly visit to keep your home fresh, we bring the supplies, the expertise, and the attention to detail.
+Service Cards
+Display 6 service cards in a responsive grid (3 columns desktop, 2 tablet, 1 mobile). Each card should contain: an icon or small photo, the service name as an H3 heading, a brief description (2–3 sentences), and a "Learn More" link to the individual service page.
+
+
+Card 1: Deep Cleaning
+H3: Deep Cleaning Services
+Our deep cleaning goes well beyond the surface. We tackle built-up grime inside appliances, scrub grout lines, detail baseboards and light fixtures, and sanitize every high-touch surface in your home. Perfect for first-time customers, seasonal refreshes, or homes that need extra attention after renovation or long vacancy.
+Link text: "Schedule a Deep Cleaning" → /services/deep-cleaning-tampa/
+Card 2: Regular House Cleaning
+H3: Regular House Cleaning
+Keep your Tampa home consistently clean without lifting a finger. Our regular cleaning service covers dusting, vacuuming, mopping, kitchen surface sanitizing, bathroom scrubbing, and trash removal. Available weekly, biweekly, or monthly to match your household’s rhythm and budget.
+Link text: "Set Up Recurring Cleaning" → /services/regular-house-cleaning-tampa/
+Card 3: Move-In / Move-Out Cleaning
+H3: Move-In & Move-Out Cleaning
+Relocating is stressful enough without worrying about scrubbing the old place or prepping the new one. We handle everything from inside cabinets and closets to oven interiors and window tracks, so you can focus on settling in or getting your security deposit back.
+Link text: "Book Move-In/Out Cleaning" → /services/move-in-move-out-cleaning-tampa/
+Card 4: Airbnb & Vacation Rental Cleaning
+H3: Airbnb & Vacation Rental Turnover Cleaning
+Impress every guest with a flawless turnover. We sanitize bathrooms, refresh linens, restock essentials, and leave your rental property looking five-star ready between check-outs and check-ins. Fast turnaround times built around your booking schedule.
+Link text: "Get Turnover Cleaning" → /services/airbnb-cleaning-tampa/
+Card 5: Kitchen & Bathroom Cleaning
+H3: Kitchen & Bathroom Deep Cleaning
+Kitchens and bathrooms need more than a quick wipe-down. We degrease stovetops, clean inside microwaves and ovens, scrub tile and grout, remove soap scum and hard water stains, and disinfect every surface where bacteria love to hide.
+Link text: "Get Kitchen & Bath Cleaning" → /services/kitchen-bathroom-cleaning-tampa/
+Card 6: Commercial Cleaning
+H3: Office & Commercial Cleaning
+A clean workspace reflects well on your business and keeps your team healthier and more productive. We provide scheduled cleaning for Tampa offices, retail spaces, medical waiting areas, and small commercial properties. Flexible morning, evening, or weekend scheduling available.
+Link text: "Request Commercial Quote" → /services/commercial-cleaning-tampa/
+________________
+
+
+3.5 Why Choose Easy Clean Service
+  SECTION ID: #why-choose-us  
+KEYWORD TARGETS: best cleaning service Tampa, trusted house cleaners Tampa FL
+H2 Heading
+Why Tampa Families Trust Easy Clean Service
+Section Intro
+Choosing someone to clean your home is personal. You need to trust the people walking through your door, handling your belongings, and working in the spaces where your family lives. Here is why hundreds of Tampa homeowners count on Easy Clean Service:
+Value Proposition Cards
+Display 6 value propositions in a 2-column or 3-column grid. Each item has an icon, a bold heading, and a 1–2 sentence description.
+* Locally Owned, Personally Managed: Founded and run by Kessia Marquez right here in Tampa. When you call Easy Clean, you talk to the owner – not a call center.
+* 10+ Years of Hands-On Experience: We have been cleaning Tampa homes since 2014. That experience means faster work, better results, and knowledge of what Florida homes actually need.
+* Eco-Friendly & Pet-Safe Products: Every product we use is safe for children and pets. No harsh chemical fumes, no toxic residues – just a clean, healthy home.
+* Consistent, Reliable Service: Same trusted team every visit. We show up on time, follow your specific preferences, and deliver consistent quality you can rely on.
+* 100% Satisfaction Guarantee: Not happy with any part of your cleaning? Let us know within 24 hours and we will come back to make it right at no extra charge.
+* No Long-Term Contracts: Book when you need us, skip when you don’t. We earn your loyalty through results, not paperwork.
+3.6 How It Works
+  SECTION ID: #how-it-works  
+H2 Heading
+Getting Your Home Cleaned Is Simple
+Process Steps
+Display as a horizontal 3-step process with numbered circles, connecting lines between them, and the content below each step. On mobile, stack vertically.
+1. Request Your Free Estimate – Call us at (813) 534-9216, text via WhatsApp, or fill out the form below. Tell us about your home, what you need cleaned, and when you would like us there. We will get back to you with a clear, no-obligation quote within a few hours.
+2. We Clean, You Relax – Our trained team arrives on schedule with all the supplies and equipment needed. We follow your specific instructions and work through every room on the agreed plan. You do not need to be home if you prefer – many of our regular clients give us a key or access code.
+3. Enjoy Your Spotless Home – Walk into a home that looks, smells, and feels completely refreshed. If anything is not up to your standards, let us know and we will make it right. It is that simple.
+________________
+
+
+3.7 Customer Reviews & Testimonials
+  SECTION ID: #reviews  
+KEYWORD TARGET: Easy Clean Service reviews, Tampa house cleaning reviews
+H2 Heading
+What Our Tampa Customers Are Saying
+Display the existing customer reviews from the current website in a visually appealing carousel or card grid. Include star ratings (5 stars) rendered as SVG icons, the reviewer name, and review date. Plan for future Google review integration.
+Existing Reviews to Display
+Transfer all current reviews from the existing website (Cristiane Souza, Mike Filder, Logan Stoneway, Danielle Lopardi, Paul Belfiglio) and format them professionally. Additionally, add any new reviews that are collected.
+DEV ACTION: Add AggregateRating schema markup to the review section:
+
+
+"aggregateRating": {
+  "@type": "AggregateRating",
+  "ratingValue": "5.0",
+  "reviewCount": "5",
+  "bestRating": "5"
+}
+
+
+Update the reviewCount dynamically as new reviews are added.
+Review CTA
+Below the reviews carousel, include a button:
+Button text: "Leave Us a Review" → links to Google Business Profile review page (once GBP is set up)
+3.8 Before & After Gallery
+  SECTION ID: #gallery  
+H2 Heading
+See the Difference a Professional Cleaning Makes
+Display 4–6 before/after image pairs using an interactive slider component (a horizontal drag handle that reveals the before image on one side and the after image on the other). These perform extremely well for engagement and time-on-page.
+* Dimensions: 800 x 600px per image (before and after should be identical framing)
+* Format: WebP with JPEG fallback, lazy-loaded
+* Alt text pattern: "Before and after [room type] cleaning by Easy Clean Service in Tampa FL"
+* File naming: before-kitchen-deep-clean-tampa.webp (keyword-rich, descriptive)
+CTA below gallery: "See Our Full Portfolio" → /gallery/
+3.9 Service Areas
+  SECTION ID: #service-areas  
+KEYWORD TARGET: cleaning service near me, house cleaning [neighborhood name]
+H2 Heading
+Serving Tampa and Surrounding Communities
+Section Copy
+Easy Clean Service proudly provides residential and commercial cleaning throughout the greater Tampa Bay area. Our team travels to neighborhoods and communities across Hillsborough County and beyond, bringing the same reliable, high-quality cleaning to every home we visit. Not sure if we serve your area? Give us a call and we will let you know.
+Area List
+* South Tampa → /service-areas/south-tampa/
+* Westchase → /service-areas/westchase/
+* Carrollwood → /service-areas/carrollwood/
+* Brandon → /service-areas/brandon/
+* Riverview → /service-areas/riverview/
+* Lutz → /service-areas/lutz/
+* Wesley Chapel → /service-areas/wesley-chapel/
+* Town ’N’ Country → /service-areas/town-n-country/
+* Temple Terrace → /service-areas/temple-terrace/
+* New Tampa → /service-areas/new-tampa/
+* Seminole Heights → /service-areas/seminole-heights/
+* Hyde Park → /service-areas/hyde-park/
+DEV ACTION: These neighborhood landing pages do not need to exist at launch. Set up the link structure now and create the pages over the following 90 days. Each page will target "house cleaning in [Neighborhood]" keywords.
+________________
+
+
+3.10 Frequently Asked Questions
+  SECTION ID: #faq  
+KEYWORD TARGETS: how much does cleaning cost Tampa, what is included in deep cleaning, Tampa cleaning service FAQ
+H2 Heading
+Frequently Asked Questions About Our Cleaning Services
+Implement as an accordion component (expandable/collapsible). The questions and answers below match the FAQPage schema in Section 2.2. Always keep the schema and the visible FAQ content in sync.
+Q1: How much does house cleaning cost in Tampa, FL?
+House cleaning costs in Tampa typically range from $120 to $250 for a standard cleaning, depending on the size of your home, its current condition, and which services you select. Deep cleaning and move-out cleaning generally run higher due to the extra time and detail involved. We provide personalized free estimates so you know exactly what to expect before we start. Call us at (813) 534-9216 or fill out the form on this page to get your custom quote.
+Q2: What is included in a deep cleaning service?
+Our deep cleaning covers your entire home from top to bottom. That includes dusting ceiling fans and light fixtures, wiping down baseboards and door frames, cleaning inside the oven and microwave, scrubbing grout in kitchens and bathrooms, detailing window sills and blinds, and sanitizing all high-touch surfaces like light switches and door handles. We also move smaller furniture to clean underneath. It is the most thorough cleaning we offer and is popular as a first-time service or a seasonal reset.
+Q3: Do you bring your own cleaning supplies and equipment?
+Yes. Our team arrives fully equipped with all cleaning products, tools, and equipment. We use eco-friendly, pet-safe, and child-safe products that are effective without leaving behind harsh chemical residues or strong fumes. If you have a preferred product you would like us to use in your home, just let us know and we are happy to accommodate.
+Q4: Are your cleaners insured and background-checked?
+Absolutely. Easy Clean Service is fully insured for your protection and peace of mind. Every member of our cleaning team is carefully vetted, trained in our cleaning procedures, and held to strict quality standards. We treat your home with the same care and respect we give our own.
+Q5: What areas of Tampa do you serve?
+We serve the greater Tampa Bay area including South Tampa, Westchase, Carrollwood, Brandon, Riverview, Lutz, Wesley Chapel, Town N Country, Temple Terrace, New Tampa, Seminole Heights, Hyde Park, and surrounding communities in Hillsborough County. If you are not sure whether we cover your area, give us a call at (813) 534-9216 and we will let you know.
+Q6: Do I need to be home during the cleaning?
+That is entirely up to you. Many of our regular clients provide a key or door code so our team can clean while they are at work or running errands. Others prefer to be home, and that is perfectly fine too. We will work around whatever is most comfortable for you.
+Q7: How do I prepare my home before a cleaning visit?
+Just pick up personal items, clothing, and toys from the floors so our team can focus on the actual cleaning rather than organizing. If you have pets, please make sure they are comfortable and secured in a safe area. Everything else, we handle.
+3.11 Free Estimate Request Form
+  SECTION ID: #estimate-form  
+H2 Heading
+Request Your Free Cleaning Estimate
+Section Copy (Above Form)
+Ready for a cleaner home? Fill out the form below and we will get back to you within a few hours with a personalized, no-obligation estimate. You can also reach us directly at (813) 534-9216 or message us on WhatsApp.
+Form Fields
+Field
+	Type
+	Required
+	Notes
+	Full Name
+	Text
+	Yes
+	
+
+	Phone Number
+	Tel
+	Yes
+	Use type="tel" for mobile keypads
+	Email Address
+	Email
+	Yes
+	
+
+	Service Needed
+	Dropdown
+	Yes
+	Options: Regular Cleaning, Deep Cleaning, Move-In/Out, Airbnb Turnover, Kitchen & Bath, Commercial, Other
+	Home Size
+	Dropdown
+	No
+	Options: Studio/1BR, 2BR, 3BR, 4BR, 5BR+
+	Preferred Date
+	Date picker
+	No
+	Min date = tomorrow
+	Message / Notes
+	Textarea
+	No
+	Placeholder: "Tell us about your home and any special requests..."
+	
+
+Submit button text: "Get My Free Estimate"
+DEV ACTION: Implement form submission via AJAX (no page reload). Show a success message inline. Send notification emails to Kessia and a confirmation email to the customer. Consider integrating with a CRM or scheduling tool.
+________________
+
+
+3.12 Footer
+  SECTION ID: #footer  
+* Column 1 – Brand: Easy Clean Service logo, 1–2 sentence brand description, phone number, WhatsApp link
+* Column 2 – Quick Links: Home, Services, About, Gallery, Contact, Blog
+* Column 3 – Our Services: Deep Cleaning, Regular Cleaning, Move-In/Out, Airbnb, Kitchen & Bath, Commercial
+* Column 4 – Service Areas: South Tampa, Westchase, Carrollwood, Brandon, Riverview, Lutz, Wesley Chapel
+* Bottom bar: © 2026 Easy Clean Service. All rights reserved. | Privacy Policy | Terms of Service
+* Social icons: Facebook, Instagram, WhatsApp
+Footer SEO Paragraph
+Include a short, keyword-rich paragraph in the footer (commonly used by top-ranking local service sites):
+Easy Clean Service is a locally owned residential and commercial cleaning company serving Tampa, FL and the surrounding Hillsborough County communities. We specialize in deep cleaning, regular house cleaning, move-in and move-out cleaning, Airbnb turnover services, kitchen and bathroom cleaning, and office cleaning. Call us at (813) 534-9216 for a free, no-obligation estimate.
+4. Technical SEO & Performance Requirements
+4.1 Core Web Vitals Targets
+Metric
+	Target
+	How to Achieve
+	LCP (Largest Contentful Paint)
+	Under 2.5 seconds
+	Preload hero image, compress all images, minimize render-blocking CSS/JS
+	FID / INP (Interaction to Next Paint)
+	Under 200ms
+	Defer non-critical JS, minimize third-party scripts, use requestIdleCallback
+	CLS (Cumulative Layout Shift)
+	Under 0.1
+	Set explicit width/height on all images and embeds, use font-display: swap
+	
+
+* Serve all images in WebP format with JPEG fallback via <picture> element
+* Use responsive images with srcset for at least 3 breakpoints (480w, 768w, 1200w)
+* Lazy-load all images below the fold using loading="lazy"
+* Do NOT lazy-load the hero image – use fetchpriority="high" instead
+* Compress all images below 200KB (hero) and below 100KB (everything else)
+* Use descriptive, keyword-rich file names (e.g., deep-cleaning-kitchen-tampa-fl.webp)
+* Write unique alt text for every image describing both the content and location
+4.3 XML Sitemap & Robots.txt
+robots.txt
+
+
+User-agent: *
+Allow: /
+Disallow: /wp-admin/
+Sitemap: https://easycleaningservice.com/sitemap.xml
+
+
+Sitemap
+* / (homepage)
+* /about/
+* /services/ (main services page)
+* /services/deep-cleaning-tampa/
+* /services/regular-house-cleaning-tampa/
+* /services/move-in-move-out-cleaning-tampa/
+* /services/airbnb-cleaning-tampa/
+* /services/kitchen-bathroom-cleaning-tampa/
+* /services/commercial-cleaning-tampa/
+* /gallery/
+* /contact/
+* /service-areas/ (and all neighborhood pages)
+* /blog/ (and all blog posts)
+* SSL/HTTPS: Already active. Ensure all internal links use https:// and there are no mixed-content warnings.
+* Mobile responsiveness: The site must be fully responsive. Test at 320px, 375px, 768px, 1024px, and 1440px breakpoints. Over 60% of cleaning service searches happen on mobile.
+* Click-to-call: All phone numbers must use tel: links. The phone number should be tappable from every section of the page.
+* Page speed: Target under 3-second full page load on 4G mobile. Minimize WordPress plugins, use a caching plugin (WP Rocket or LiteSpeed Cache), and enable GZIP/Brotli compression.
+* Google Search Console: Set up, verify ownership, and submit sitemap immediately after launch.
+* Google Analytics 4: Install GA4 with event tracking on: form submissions, phone number clicks, WhatsApp clicks, and CTA button clicks.
+* Google Tag Manager: Deploy GTM container for easier tag management. Track form submissions as conversions.
+________________
+
+
+5. Homepage Keyword Map
+The following table shows where each target keyword should appear on the homepage. Check marks indicate planned placement.
+Keyword
+	Title Tag
+	H1
+	H2/H3
+	Body
+	Alt Text
+	Schema
+	house cleaning Tampa
+	✓
+	✓
+	✓
+	✓
+	✓
+	✓
+	cleaning service Tampa FL
+	✓
+	
+
+	✓
+	✓
+	✓
+	✓
+	deep cleaning Tampa
+	
+
+	
+
+	✓
+	✓
+	✓
+	✓
+	move out cleaning Tampa
+	
+
+	
+
+	✓
+	✓
+	
+
+	✓
+	Airbnb cleaning Tampa
+	
+
+	
+
+	✓
+	✓
+	
+
+	✓
+	maid service Tampa
+	
+
+	
+
+	
+
+	✓
+	
+
+	
+
+	residential cleaning Tampa
+	
+
+	
+
+	✓
+	✓
+	
+
+	✓
+	house cleaners near me
+	
+
+	
+
+	
+
+	✓
+	
+
+	
+
+	cleaning service near me
+	
+
+	
+
+	
+
+	✓
+	
+
+	
+
+	Tampa cleaning company
+	
+
+	
+
+	
+
+	✓
+	✓
+	✓
+	
+
+NOTE: Do not stuff keywords unnaturally. The copy in Section 3 has been written to incorporate these keywords in a natural, readable way. The keyword map is for verification purposes.
+6. Conversion Optimization Elements
+6.1 Sticky Mobile CTA Bar
+* Left button (50%): Phone icon + "Call Now" → tel:+18135349216
+* Right button (50%): Message icon + "Free Estimate" → scrolls to #estimate-form
+This bar should have a high z-index, a slight top shadow, and use the brand’s accent color. It should not overlap or block the main content.
+6.2 WhatsApp Floating Button
+Add a floating WhatsApp chat button in the bottom-right corner (desktop) or above the sticky CTA bar (mobile). Link to:
+
+
+https://wa.me/18135349216?text=Hi%20Easy%20Clean!
+%20I%20would%20like%20a%20free%20cleaning%20estimate.
+
+
+6.3 Exit-Intent Popup (Desktop Only)
+Trigger a popup when the user moves their cursor toward the browser’s close/back button area. The popup should offer a first-time customer incentive:
+Headline: "Wait – Get 15% Off Your First Cleaning!"
+Body: "Enter your email and we will send you a discount code for 15% off your first cleaning service."
+Fields: Email address + Submit button
+Show only once per session. Store a cookie/localStorage flag to prevent repeated popups.
+6.4 Social Proof Notification (Optional)
+Consider implementing a small toast notification that periodically appears in the bottom-left corner showing recent activity, such as: "Sarah from Westchase just booked a deep cleaning – 2 hours ago." These can be generated from real booking data or rotated from a curated list of recent customers (with their permission). This tactic increases urgency and social proof.
+* Color contrast: All text must meet a 4.5:1 contrast ratio against its background (3:1 for large text).
+* Alt text: Every image must have descriptive alt text. Decorative images use alt="" (empty).
+* Keyboard navigation: All interactive elements (links, buttons, form fields, accordion toggles) must be reachable and operable via keyboard.
+* Focus indicators: Visible focus outlines on all interactive elements. Do not remove the default outline without providing an alternative.
+* Form labels: Every form input must have an associated <label> element. Do not rely on placeholder text alone.
+* ARIA landmarks: Use role attributes or semantic HTML5 elements for navigation, main content, and footer.
+* Skip link: Add a "Skip to main content" link as the first focusable element on the page.
+* Language attribute: Set lang="en" on the <html> element.
+________________
+
+
+8. Pre-Launch Checklist
+Use this checklist to verify all requirements before pushing the new homepage to production.
+1. Title tag implemented exactly as specified
+2. Meta description implemented exactly as specified
+3. Canonical URL set to https://easycleaningservice.com/
+4. Open Graph and Twitter Card tags in place
+5. LocalBusiness JSON-LD schema validated at schema.org validator
+6. FAQPage JSON-LD schema validated
+7. robots.txt uploaded and verified
+8. XML sitemap generated and submitted to Google Search Console
+1. H1 is the only H1 on the page and contains target keywords
+2. All heading hierarchy is sequential (H1 > H2 > H3, no skipping levels)
+3. All placeholder text, lorem ipsum, and AI tool artifacts removed
+4. Every image has a descriptive, keyword-rich alt attribute
+5. Every image file uses a descriptive, keyword-rich filename
+6. All phone numbers are wrapped in click-to-call tel: links
+7. Estimate form submits successfully and sends notifications
+8. All internal links point to correct destination pages
+1. Google PageSpeed Insights score above 90 (mobile)
+2. LCP under 2.5 seconds on mobile 4G
+3. CLS under 0.1
+4. All images served in WebP with fallbacks
+5. Hero image preloaded with fetchpriority="high"
+6. No render-blocking CSS or JS in above-the-fold content
+7. GZIP or Brotli compression enabled
+8. Browser caching headers configured
+9. SSL certificate valid, no mixed content warnings
+1. Google Analytics 4 installed and receiving data
+2. Google Tag Manager deployed
+3. Form submission events tracked as conversions
+4. Phone click events tracked
+5. WhatsApp click events tracked
+6. Google Search Console verified and sitemap submitted
+1. WAVE or axe accessibility audit shows zero critical errors
+2. All interactive elements keyboard-accessible
+3. Color contrast ratios verified at 4.5:1 minimum
+4. Skip-to-content link present
+5. lang="en" set on <html> tag
+
+
+End of Developer Implementation Guide
+Version 1.0 • March 2026 • All content is original and proprietary

@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" role="img" aria-labelledby="t d">
+<title id="t">Laundry services for Hermosa</title>
+<desc id="d">Stylized neighborhood skyline representing Hermosa</desc>
+
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#0A1A3D"/><stop offset="100%" stop-color="#142A55"/>
+  </linearGradient>
+  <radialGradient id="glow" cx="80%" cy="16%" r="70%">
+    <stop offset="0%" stop-color="#D89A55" stop-opacity="0.34"/>
+    <stop offset="38%" stop-color="#3A6FB0" stop-opacity="0.20"/>
+    <stop offset="100%" stop-color="#0A1A3D" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="vig" cx="50%" cy="48%" r="80%">
+    <stop offset="58%" stop-color="#000" stop-opacity="0"/><stop offset="100%" stop-color="#000" stop-opacity="0.38"/>
+  </radialGradient>
+  <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#576CBC"/><stop offset="55%" stop-color="#19376D"/><stop offset="100%" stop-color="#0B2447"/>
+  </linearGradient>
+  <linearGradient id="amber" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#F4C77F"/><stop offset="55%" stop-color="#E6A23C"/><stop offset="100%" stop-color="#B07820"/>
+  </linearGradient>
+  <radialGradient id="glass" cx="36%" cy="28%" r="78%">
+    <stop offset="0%" stop-color="#EAF3FF" stop-opacity="0.95"/>
+    <stop offset="55%" stop-color="#7BA4D6" stop-opacity="0.7"/>
+    <stop offset="100%" stop-color="#1E3458" stop-opacity="0.95"/>
+  </radialGradient>
+  <linearGradient id="steel" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#D7DEE8"/><stop offset="50%" stop-color="#A8B5C5"/><stop offset="100%" stop-color="#3D4A5C"/>
+  </linearGradient>
+  <linearGradient id="white" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#FFFFFF"/><stop offset="100%" stop-color="#D9E2EC"/>
+  </linearGradient>
+  <filter id="ds" x="-30%" y="-30%" width="160%" height="160%">
+    <feGaussianBlur in="SourceAlpha" stdDeviation="9"/><feOffset dy="12"/>
+    <feComponentTransfer><feFuncA type="linear" slope="0.30"/></feComponentTransfer>
+    <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+</defs>
+<rect width="1600" height="900" fill="url(#bg)"/>
+<rect width="1600" height="900" fill="url(#glow)"/>
+<g opacity="0.05" stroke="#D89A55" stroke-width="1"><line x1="0" y1="180" x2="1600" y2="180"/><line x1="0" y1="360" x2="1600" y2="360"/><line x1="0" y1="540" x2="1600" y2="540"/><line x1="0" y1="720" x2="1600" y2="720"/></g>
+<rect x="0" y="770" width="1600" height="130" fill="#091532" opacity="0.5"/><line x1="0" y1="770" x2="1600" y2="770" stroke="#576CBC" stroke-width="1" opacity="0.25"/><rect x="740" y="605" width="135" height="165" rx="6" fill="url(#amber)"/><rect x="772" y="641" width="27" height="23" rx="2" fill="#0B2447" opacity="0.85"/><rect x="816" y="641" width="27" height="23" rx="2" fill="#0B2447" opacity="0.85"/><rect x="772" y="682" width="27" height="23" rx="2" fill="#0B2447" opacity="0.85"/><rect x="816" y="682" width="27" height="23" rx="2" fill="#0B2447" opacity="0.85"/><rect x="772" y="723" width="27" height="23" rx="2" fill="#0B2447" opacity="0.85"/><rect x="816" y="723" width="27" height="23" rx="2" fill="#0B2447" opacity="0.85"/><rect x="893" y="617.4" width="124" height="152.6" rx="4" fill="url(#panel)"/><path d="M 881,617.4 L 955.0,571.4 L 1029,617.4 Z" fill="#0B2447"/><rect x="915.32" y="663.18" width="27.28" height="42.728" fill="#7BA4D6" opacity="0.85"/><rect x="964.92" y="663.18" width="27.28" height="42.728" fill="#7BA4D6" opacity="0.85"/><rect x="942.6" y="701.3299999999999" width="24.8" height="68.67" fill="#E6A23C" opacity="0.9"/><rect x="1035" y="499" width="113" height="271" rx="6" fill="url(#panel)"/><rect x="1061" y="544" width="23" height="30" rx="2" fill="#7BA4D6" opacity="0.85"/><rect x="1099" y="544" width="23" height="30" rx="2" fill="#7BA4D6" opacity="0.85"/><rect x="1061" y="598" width="23" height="30" rx="2" fill="#7BA4D6" opacity="0.85"/><rect x="1099" y="598" width="23" height="30" rx="2" fill="#7BA4D6" opacity="0.85"/><rect x="1061" y="653" width="23" height="30" rx="2" fill="#7BA4D6" opacity="0.85"/><rect x="1099" y="653" width="23" height="30" rx="2" fill="#7BA4D6" opacity="0.85"/><rect x="1061" y="707" width="23" height="30" rx="2" fill="#7BA4D6" opacity="0.85"/><rect x="1099" y="707" width="23" height="30" rx="2" fill="#7BA4D6" opacity="0.85"/><rect x="1166" y="616" width="142" height="154" rx="6" fill="url(#panel)"/><rect x="1191" y="650" width="21" height="21" rx="2" fill="#7BA4D6" opacity="0.85"/><rect x="1226" y="650" width="21" height="21" rx="2" fill="#7BA4D6" opacity="0.85"/><rect x="1262" y="650" width="21" height="21" rx="2" fill="#7BA4D6" opacity="0.85"/><rect x="1191" y="688" width="21" height="21" rx="2" fill="#7BA4D6" opacity="0.85"/><rect x="1226" y="688" width="21" height="21" rx="2" fill="#7BA4D6" opacity="0.85"/><rect x="1262" y="688" width="21" height="21" rx="2" fill="#7BA4D6" opacity="0.85"/><rect x="1191" y="727" width="21" height="21" rx="2" fill="#7BA4D6" opacity="0.85"/><rect x="1226" y="727" width="21" height="21" rx="2" fill="#7BA4D6" opacity="0.85"/><rect x="1262" y="727" width="21" height="21" rx="2" fill="#7BA4D6" opacity="0.85"/><rect x="1326" y="625.1" width="131" height="144.89999999999998" rx="4" fill="url(#panel)"/><path d="M 1314,625.1 L 1391.5,579.1 L 1469,625.1 Z" fill="#0B2447"/><rect x="1349.58" y="668.57" width="28.82" height="40.571999999999996" fill="#7BA4D6" opacity="0.85"/><rect x="1401.98" y="668.57" width="28.82" height="40.571999999999996" fill="#7BA4D6" opacity="0.85"/><rect x="1378.4" y="704.7950000000001" width="26.200000000000003" height="65.205" fill="#E6A23C" opacity="0.9"/><rect x="1475" y="510" width="120" height="260" rx="6" fill="url(#panel)"/><rect x="1496" y="554" width="18" height="29" rx="2" fill="#7BA4D6" opacity="0.85"/><rect x="1526" y="554" width="18" height="29" rx="2" fill="#7BA4D6" opacity="0.85"/><rect x="1556" y="554" width="18" height="29" rx="2" fill="#7BA4D6" opacity="0.85"/><rect x="1496" y="606" width="18" height="29" rx="2" fill="#7BA4D6" opacity="0.85"/><rect x="1526" y="606" width="18" height="29" rx="2" fill="#7BA4D6" opacity="0.85"/><rect x="1556" y="606" width="18" height="29" rx="2" fill="#7BA4D6" opacity="0.85"/><rect x="1496" y="658" width="18" height="29" rx="2" fill="#7BA4D6" opacity="0.85"/><rect x="1526" y="658" width="18" height="29" rx="2" fill="#7BA4D6" opacity="0.85"/><rect x="1556" y="658" width="18" height="29" rx="2" fill="#7BA4D6" opacity="0.85"/><rect x="1496" y="710" width="18" height="29" rx="2" fill="#7BA4D6" opacity="0.85"/><rect x="1526" y="710" width="18" height="29" rx="2" fill="#7BA4D6" opacity="0.85"/><rect x="1556" y="710" width="18" height="29" rx="2" fill="#7BA4D6" opacity="0.85"/><rect x="1613" y="457" width="149" height="313" rx="6" fill="url(#panel)"/><rect x="1648" y="508" width="30" height="34" rx="2" fill="#7BA4D6" opacity="0.85"/><rect x="1697" y="508" width="30" height="34" rx="2" fill="#7BA4D6" opacity="0.85"/><rect x="1648" y="571" width="30" height="34" rx="2" fill="#7BA4D6" opacity="0.85"/><rect x="1697" y="571" width="30" height="34" rx="2" fill="#7BA4D6" opacity="0.85"/><rect x="1648" y="634" width="30" height="34" rx="2" fill="#7BA4D6" opacity="0.85"/><rect x="1697" y="634" width="30" height="34" rx="2" fill="#7BA4D6" opacity="0.85"/><rect x="1648" y="696" width="30" height="34" rx="2" fill="#7BA4D6" opacity="0.85"/><rect x="1697" y="696" width="30" height="34" rx="2" fill="#7BA4D6" opacity="0.85"/><g filter="url(#ds)"><path d="M 764,250 A 56,56 0 1 1 876,250 L 820,378.79999999999995 Z" fill="url(#amber)"/><circle cx="820" cy="250" r="23.52" fill="#F0F4F8"/></g>
+<rect width="1600" height="900" fill="url(#vig)"/>
+</svg>

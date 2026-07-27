@@ -1,0 +1,448 @@
+﻿
+DEVELOPER IMPLEMENTATION GUIDE
+
+COOL & COZY AC REPAIR
+Licensed HVAC Contractor  ·  Jacksonville, Florida
+
+AC INSTALLATION
+Service Child Page  ·  Part 2 of 2
+Brands Through Footer & Reference Appendix
+
+URL: coolcozyac.com/services/ac-installation
+Prepared by: TradeWorks AI  |  Version 1.0  |  May 2026
+Classification: Client Confidential
+
+Table of Contents
+
+5.  Section-by-Section Build (Part 2, continued)
+5.6  Brands We Install
+5.7  Pricing & Financing Guidance
+5.8  Property Manager & Multi-Unit Installation
+5.9  Why Choose Cool & Cozy for Installation
+5.10  Testimonials
+5.11  FAQ Section (6 Questions + Schema)
+5.12  Related Services
+5.13  Final CTA Block
+6.  Reference: Image Asset Inventory
+7.  Reference: GA4 Event Tracking Summary
+8.  Reference: Implementation Checklist
+
+5. Section-by-Section Build (Part 2, continued)
+This document continues from Part 1. Sections 5.1–5.5 (Hero through System Types & Sizing) are in Part 1.
+
+5.6 Brands We Install
+Section Overview
+A brand showcase section that serves two purposes: (1) captures brand-specific search queries (“Carrier AC installer Jacksonville,” “Trane dealer near me”), and (2) reassures visitors that Cool & Cozy works with the brands they already know and trust. Unlike a brand-exclusive dealer, Cool & Cozy’s independence is positioned as an advantage — recommendations are based on the customer’s needs, not a manufacturer relationship.
+Conversion Role: Build confidence that the visitor’s preferred brand is available. The brand-agnostic positioning removes a common objection: “will they push one brand on me?”
+Layout
+Property
+Specification
+Container
+Full-width, #FFFFFF background
+Content Width
+1080px centered
+Padding
+56px top/bottom (desktop), 32px (mobile)
+Brand grid
+6-across on desktop (logo tiles), 3-across tablet, 2-across mobile
+Below grid
+Supporting paragraph about brand independence
+Content
+H2 Heading
+Top AC Brands Available for Your Jacksonville Installation
+Brand Grid
+Carrier
+Trane
+Lennox
+Rheem
+Goodman
+Daikin
+York
+Bryant
+Amana
+Mitsubishi
+Fujitsu
+Bosch
+
+Brand Independence Statement
+Cool & Cozy is not a factory-exclusive dealer for any single manufacturer. That means our equipment recommendations are based entirely on what fits your home, your budget, and your performance goals — not on which brand gives us the best margin. When we recommend a Carrier over a Goodman or a Daikin over a Trane, it’s because we genuinely believe it’s the right system for your specific situation. We install and warranty every brand we carry with the same commitment to quality.
+Word Count: 80 words
+Competitors like Buehler (Carrier Factory Authorized Dealer) are locked into one brand. Cool & Cozy’s independence is a genuine differentiator that should be stated openly, not defensively.
+Design
+Property
+Specification
+Brand tiles
+120×60px containers, centered brand name text (Poppins 14px/600, #2C2C2C). If brand logos are available as SVG, use logos instead of text.
+Tile bg
+#F5F5F0 (light neutral), border-radius 12px, subtle hover: border 1px solid #5CB8B2
+Grid gap
+16px
+DEV ACTION: PLACEHOLDER: Brand logos require licensing. Use text-only brand names at launch unless client secures logo usage permission from each manufacturer. Text-only tiles are clean and avoid legal risk.
+
+5.7 Pricing & Financing Guidance
+Section Overview
+Installation pricing is the most sensitive content on this page. Visitors are researching a $4,000–$12,000+ purchase and need honest ranges with clear factors. This section must build trust through transparency while driving the visitor toward a free estimate (where the real conversation happens). The financing sub-section normalizes monthly payment thinking and reduces sticker shock.
+Conversion Role: Reduce price anxiety and sticker shock. Show that Cool & Cozy is transparent about costs. The CTA drives free in-home estimates where precise quotes are generated.
+Layout
+Property
+Specification
+Container
+Full-width, #EAF3F2 (Sky Mist) background
+Content Width
+960px centered
+Padding
+64px top/bottom (desktop), 32px (mobile)
+Content
+H2 Heading
+How Much Does a New AC System Cost in Jacksonville?
+Featured Snippet Paragraph
+A new AC system in Jacksonville typically costs between $4,500 and $12,000+ fully installed, depending on system type, size (tonnage), efficiency rating (SEER2), brand, and the complexity of the installation. A standard 3-ton, 14.3 SEER2 split system for a typical 1,500–2,000 square foot Jacksonville home generally falls in the $5,000–$7,500 range installed. Higher-efficiency systems, heat pumps, multi-zone ductless installations, and projects requiring ductwork modifications fall toward the upper end.
+Word Count: 75 words
+
+Pricing Table
+System Type
+Typical Range
+Notes
+Standard Split System (14.3 SEER2)
+$4,500 – $7,500
+Most common residential replacement in Jacksonville. Includes outdoor condenser + indoor air handler + labor.
+Mid-Efficiency Split (16–18 SEER2)
+$6,500 – $9,500
+Two-stage compressor, better humidity control. Saves 15–25% on energy vs. base model.
+Premium Variable-Speed (20+ SEER2)
+$9,000 – $14,000+
+Inverter-driven, whisper-quiet, maximum efficiency. Best for high-use homes or buyers prioritizing long-term savings.
+Ductless Mini-Split (single zone)
+$3,000 – $5,000
+One indoor head + outdoor unit. Ideal for room additions, garages, sunrooms.
+Ductless Multi-Zone (2–4 zones)
+$6,000 – $12,000
+Multiple indoor heads, one outdoor unit. Per-zone control. Great for homes without ductwork.
+Heat Pump System
+$5,500 – $10,000
+Cooling + heating in one system. Eligible for federal energy tax credits. Ideal for Jacksonville’s mild winters.
+
+These are market-range estimates, not Cool & Cozy’s specific pricing. Actual quotes depend on the specific home, equipment selection, and installation requirements. The CTA below drives visitors to request their specific quote.
+Factors That Affect Installation Cost
+System size (tonnage) — A 2-ton system costs less than a 5-ton system. Sizing is determined by the Manual J load calculation, not by square footage alone.
+Efficiency rating (SEER2) — Higher SEER2 = higher equipment cost but lower monthly energy bills. In Jacksonville’s climate, the payback period on a high-efficiency system is typically 3–6 years through energy savings.
+Equipment brand — Premium brands (Carrier, Trane, Lennox) cost more than value brands (Goodman, Amana). Both categories offer reliable equipment — the difference is often in noise levels, warranty length, and advanced features.
+Ductwork condition — If existing ductwork is damaged, undersized, or leaking, it must be repaired or modified to support the new system. This can add $1,000–$3,000 to the project.
+Installation complexity — Attic installations, tight mechanical closets, long refrigerant line runs, and code upgrades (electrical panel, disconnect, pad) affect labor time and cost.
+Permits — Duval County requires permits for HVAC installations. Cool & Cozy handles all permit applications and inspections as part of the project.
+
+Financing Options
+A new AC system doesn’t have to be a single large payment. Cool & Cozy offers financing options through approved lending partners to help you manage the investment over time:
+Monthly payment plans with competitive interest rates
+Promotional 0% APR options for qualified buyers (subject to credit approval and current lender offers)
+No prepayment penalties — pay off early without fees
+Application takes minutes and can be completed during your in-home estimate
+For complete financing details and current offers, visit our financing page or ask about options during your free estimate.
+Internal Link: “financing page” → /financing
+DEV ACTION: PLACEHOLDER: Specific financing partner (Synchrony, GreenSky, etc.) and terms must be confirmed by client. Do not publish specific APR rates or monthly payment examples without confirmed lender agreements.
+Section CTA
+Every home is different. Get your specific, no-obligation quote with a free in-home estimate. Call (904) 555-0199 or request your estimate online.
+
+5.8 Property Manager & Multi-Unit Installation
+Section Overview
+Dedicated section for property managers evaluating Cool & Cozy for fleet replacement or new unit installations across their portfolio. The angle here is different from the homepage PM section (general trust) and the AC Repair PM section (emergency response). Installation PM content focuses on lifecycle cost, standardization, and volume efficiency.
+Layout
+Property
+Specification
+Container
+Full-width, #1A5653 (Evergreen) background
+Content Width
+1080px centered
+Padding
+56px top/bottom (desktop), 32px (mobile)
+Desktop
+Left text (60%) + right metrics panel (40%)
+Content
+Eyebrow
+FOR PROPERTY MANAGERS & MULTI-UNIT OPERATORS
+H3 Heading
+Fleet AC Replacement & New Installation for Managed Properties
+Style: Poppins 26px/700, #FFFFFF
+Body
+Replacing AC systems across a rental portfolio is a capital decision that affects tenant satisfaction, maintenance costs, and property value for the next 15 years. Cool & Cozy works with Jacksonville property managers to plan phased replacements, standardize equipment across units for simpler maintenance, and negotiate volume pricing that reduces your per-unit cost. We coordinate installations around tenant schedules, handle all Duval County permits, and provide portfolio-wide maintenance agreements that protect your investment after installation.
+Word Count: 76 words
+
+PM Feature List
+Phased replacement planning — prioritize oldest or worst-performing units first
+Equipment standardization across your portfolio for simplified parts inventory and maintenance
+Volume pricing on equipment and labor for multi-unit projects
+Tenant schedule coordination — installations completed with minimal disruption
+All permits handled by Cool & Cozy, including Duval County inspections
+Post-installation maintenance agreements with priority scheduling
+Lifecycle cost analysis: upfront cost vs. 10-year energy and maintenance savings
+
+Metrics Panel
+Same 3-metric panel as homepage and AC Repair PM sections: Licensed Since 2018, Top 13% FL contractors, 21 permitted projects. Consistent visual treatment builds recognition across pages.
+CTA
+Button: “Get a Multi-Unit Quote” → /contact?service=commercial
+Secondary: “Call (904) 555-0199” → tel: link
+Design
+Same Evergreen bg, Warm Sand text, glass-card metrics panel, Coral CTA treatment as all PM sections. Consistent visual language across the site for PM-targeted content.
+
+5.9 Why Choose Cool & Cozy for Your AC Installation
+Section Overview
+Installation-specific differentiators. Angled toward the high-consideration buyer comparing 2–3 contractor quotes.
+Layout
+Property
+Specification
+Container
+#FFFFFF background, 1280px centered
+Grid
+3 columns desktop (2×3), 1 column mobile
+Content
+Card Title
+Body
+Proper Load Calculation
+We perform a Manual J calculation for every installation — not a guess based on square footage. Your system is sized to Jacksonville’s specific humidity and heat conditions, ensuring maximum comfort and efficiency.
+Brand-Independent Advice
+We install all major brands and recommend based on your needs, not manufacturer incentives. When we suggest a Trane over a Goodman, it’s because we believe it’s the right fit for your home and budget.
+Clear, Complete Pricing
+Your written estimate includes everything: equipment, labor, permits, disposal of the old system, and any required ductwork modifications. No change orders, no surprise add-ons, no “I didn’t realize that wasn’t included.”
+Florida Code Compliance
+Every installation meets Florida Building Code requirements including hurricane tie-downs, proper electrical disconnects, and condensate drain compliance. We pull permits and coordinate inspections so you don’t have to.
+Post-Install Support
+We register your manufacturer warranty, provide our own labor warranty, schedule your first maintenance visit, and remain your ongoing service partner. We don’t install and disappear.
+Bilingual Service
+From estimate through installation day, our bilingual team communicates clearly in English or Spanish. Your comfort with the process matters as much as your comfort with the equipment.
+
+Design
+Same card grid as AC Repair Why Choose section: white cards on white bg with subtle border, 16px radius, 24px padding, Poppins typography.
+
+5.10 Testimonials
+Section Overview
+Same carousel component, prioritizing installation-specific testimonials. At launch, the Thumbtack review from Kimberly S. (which specifically references AC Installation) should be displayed first.
+Content
+#
+Quote
+Attribution
+1
+They were very nice and got the job done. I’m very pleased with what they did for me.
+Kimberly S. — AC Installation, Thumbtack
+2
+On time and know exactly what they are doing. Thank you!
+Verified Customer — Thumbtack
+3
+Very good experience! They were on time, professional, clean and quick. The price was exceptional as well.
+Danielle D. — Thumbtack
+
+DEV ACTION: PLACEHOLDER: As installation-specific Google reviews accumulate, swap in and prioritize those. Installation reviews that mention the estimate process, installation day experience, and post-install follow-up are especially valuable.
+
+5.11 FAQ Section
+Section Overview
+Six installation-specific questions distinct from AC Repair FAQ and homepage FAQ. These target the research phase of the buying journey and address common concerns about the process, timeline, cost, and aftermath.
+Layout
+Property
+Specification
+Container
+#F0E6D3 (Warm Sand) background, 800px centered
+Accordion
+Same pattern: click to expand, one open at a time, first question open by default
+Content
+FAQ 1
+Q: How long does an AC installation take?
+A: Most standard residential AC installations — replacing an existing system with a similar type and size — are completed in a single day, typically 6 to 8 hours. The process includes removing the old equipment, installing the new outdoor condenser and indoor air handler, connecting refrigerant and electrical lines, and performing a full startup and testing sequence. If the project requires ductwork modifications, electrical panel upgrades, or a change in system type (for example, adding a ductless system to a home that previously had central air), the installation may take 1.5 to 2 days. Cool & Cozy provides a specific timeline estimate during your free in-home consultation.
+Word Count: 111 words
+
+FAQ 2
+Q: What size AC system do I need for my Jacksonville home?
+A: The correct system size depends on more than just your home’s square footage. Cool & Cozy performs a Manual J cooling load calculation that factors in your home’s total square footage, ceiling height, insulation quality, number and orientation of windows, roof type and color, occupancy, and Jacksonville’s specific design conditions including sustained high humidity. A system that is too small will run constantly without reaching your desired temperature, while an oversized system will short-cycle, fail to remove humidity, and cause uneven cooling. In Jacksonville, humidity removal is just as important as temperature reduction. Proper sizing ensures both.
+Word Count: 102 words
+
+FAQ 3
+Q: Do I need a permit for an AC installation in Jacksonville?
+A: Yes. Duval County requires a mechanical permit for most HVAC installations and replacements. Cool & Cozy handles all permit applications and coordinates the required post-installation inspection as part of your project — you do not need to contact the county directly. Permits ensure the work meets Florida Building Code requirements for safety, including proper electrical connections, hurricane tie-downs for outdoor equipment, and condensate drain compliance. The permit cost is included in your installation quote.
+Word Count: 76 words
+
+FAQ 4
+Q: What happens to my old AC system when you install the new one?
+A: Cool & Cozy removes your old system as part of the installation. The old equipment is properly disposed of, including EPA-mandated recovery of any remaining refrigerant (it is illegal to vent refrigerant into the atmosphere). We haul away the old condenser, air handler, and any replaced ductwork or components. You do not need to arrange separate disposal. The removal and disposal cost is included in your installation quote.
+Word Count: 69 words
+
+FAQ 5
+Q: Is financing available for a new AC system?
+A: Yes. Cool & Cozy offers financing options through approved lending partners with competitive interest rates and promotional offers including 0% APR for qualified buyers. The application process takes minutes and can be completed during your in-home estimate. Monthly payments allow you to invest in a higher-efficiency system that saves more on energy bills without a large upfront payment. Visit our financing page for current offers and details.
+Word Count: 68 words
+Internal Link: “financing page” → /financing
+
+FAQ 6
+Q: What warranty comes with a new AC installation?
+A: New AC systems come with two warranties: the manufacturer’s equipment warranty and Cool & Cozy’s labor warranty. Manufacturer warranties typically cover major components (compressor, coils, heat exchanger) for 5 to 10 years, with extended coverage available on select models when registered within 60 days of installation. Cool & Cozy registers your warranty on your behalf and provides our own labor warranty covering installation workmanship. We provide all warranty documentation at the project walkthrough and remain your ongoing service partner for any warranty claims.
+Word Count: 88 words
+
+FAQPage JSON-LD
+Same schema pattern as AC Repair FAQ. Embed in <head> with all 6 questions and FULL answer text in each Answer.text field.
+DEV ACTION: Ensure FAQ schema answers are complete (not truncated). Each answer text should match the visible page content exactly.
+Accessibility
+Same accordion accessibility as all FAQ sections: aria-expanded, keyboard nav, focus management
+Internal links within answers (“financing page”) use standard <a> tags with underline
+
+5.12 Related Services
+Section Overview
+Cross-linking to the three highest-priority siblings from an installation context.
+Content
+Service
+Card Description
+Link
+AC Maintenance
+Protect your new investment with regular maintenance. Cool & Cozy’s maintenance agreements keep your new system running at peak efficiency and maintain your manufacturer warranty.
+/services/ac-maintenance
+Ductwork
+A new AC system can only perform as well as the ducts delivering the air. If your ductwork is old, leaking, or undersized, addressing it during installation maximizes your return.
+/services/ductwork
+Thermostat Installation
+Pair your new system with a smart thermostat for maximum comfort and energy savings. Nest, Ecobee, and Honeywell Home — properly installed and calibrated for your system.
+/services/thermostat-installation
+
+Design
+Same 3-card grid as AC Repair Related Services section. White cards, 16px radius, SVG icons reused from hub page.
+
+5.13 Final CTA Block
+Content
+H2 Heading
+Ready to Invest in Your Comfort?
+Style: Poppins 32px/700, #FFFFFF
+Body
+A new AC system is a major decision. Let’s make it easy. We’ll visit your home, calculate exactly what you need, show you your options with clear pricing, and let you decide without pressure. The estimate is free, the advice is honest, and the installation is done right.
+Word Count: 48 words
+Dual CTAs
+Property
+Specification
+Primary
+Schedule Your Free Estimate — Coral bg, white text, pill, links to /contact?service=ac-installation
+Secondary
+Call (904) 555-0199 — transparent bg, white border, pill, tel: link
+Layout & Design
+Same pattern as all final CTA blocks: #1A5653 Evergreen solid bg, 720px centered, text centered, 72px/40px padding.
+GA4
+Property
+Specification
+cta_click
+button_text: “Schedule Your Free Estimate”, page_section: “final_cta”
+phone_click
+page_section: “final_cta”
+
+6. Reference: Image Asset Inventory
+Image
+Section
+Dims
+KB
+Format
+Status
+hero-ac-installation
+5.1 Hero
+1920×1080
+180
+WebP+JPEG
+PLACEHOLDER
+og-ac-installation
+4.1 OG
+1200×630
+200
+WebP+JPEG
+PLACEHOLDER
+4 system type icons
+5.5 Types
+48×48 ea
+3 ea
+SVG inline
+Create
+12 brand tiles
+5.6 Brands
+120×60 ea
+Text
+Text/SVG
+Text at launch
+6 step indicators
+5.4 Process
+64×64
+CSS
+CSS circles
+Ready
+6 benefit icons
+5.9 Why
+40×40 ea
+2 ea
+SVG inline
+Create
+3 related svc icons
+5.12 Related
+48×48 ea
+3 ea
+SVG inline
+Reuse
+3 PM metric icons
+5.8 PM
+32×32 ea
+2 ea
+SVG inline
+Reuse
+8 replace/repair icons
+5.3 When
+24×24 ea
+1 ea
+SVG inline
+Create
+
+The 4 system type icons (split, ductless, heat pump, package) are unique to this page. All other icons reuse from existing pages.
+
+7. Reference: GA4 Event Tracking Summary
+Event
+Trigger Locations
+Parameters
+cta_click
+Hero “Get a Free Estimate”, pricing section CTA, PM “Get Multi-Unit Quote”, financing link, related service cards, final CTA
+button_text, destination_url, page_section, service_type: “AC Installation”
+phone_click
+Hero, pricing section, PM section, FAQ answers, final CTA, header, sticky bar
+phone_number, page_section, page_url
+
+On this page, cta_click (form-driven) is expected to outperform phone_click because installation is a consultative sale. Monitor the ratio — if phone_click dominates, consider making the phone number more prominent in the pricing section.
+
+8. Reference: Implementation Checklist
+8.1 Pre-Build
+AC Installation Part 1 reviewed and approved alongside this Part 2
+Hero image sourced (new AC installation, Florida residential setting)
+Pricing ranges reviewed and confirmed by client
+Financing partner and terms confirmed (or placeholder language approved)
+Brand list confirmed (any additions or removals from the 12 listed)
+8.2 Build Verification
+HTML validates (W3C)
+JSON-LD validates: Service (AC Installation), BreadcrumbList (3-level), FAQPage (6 questions)
+Title tag unique across all pages
+Canonical URL: https://coolcozyac.com/services/ac-installation
+Breadcrumb renders: Home > Services > AC Installation
+All internal links verified: siblings, /contact?service=ac-installation, /financing, resource articles
+Click-to-call on all tel: links
+FAQ accordion functional on all devices
+Pricing table readable on mobile (scroll or card reflow)
+PM section Evergreen background contrast verified
+Brand grid displays correctly at all breakpoints
+When-to-Replace dual-column layout stacks correctly on mobile
+8.3 Performance
+PageSpeed Mobile > 90
+LCP < 2.5s (hero preloaded)
+CLS < 0.1
+8.4 Content Quality
+AEO paragraph verified: answers “Who installs AC in Jacksonville?” within 150 words
+SEER2 information current (minimum 14.3 for FL, correct as of 2023 transition)
+Pricing ranges reflect current Jacksonville market
+Manual J explanation technically accurate
+All brand names spelled correctly
+Financing terms match confirmed lender agreements (or use placeholder language)
+No duplicate content with AC Repair, hub, or homepage
+8.5 SEO Validation
+No keyword cannibalization with “AC repair” page (different primary: “installation” vs. “repair”)
+Cross-links to AC Repair “When to Replace” section bidirectional
+Cross-links to /financing, /resources/seer-rating-explained, /resources/signs-ac-needs-replacement verified
+XML sitemap includes /services/ac-installation, priority 0.8
+
+— End of Document —
+
+Prepared by TradeWorks AI  ·  May 2026  ·  v1.0
+Next recommended guide: AC Maintenance (/services/ac-maintenance)
+

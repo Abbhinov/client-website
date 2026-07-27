@@ -1,0 +1,584 @@
+﻿
+DEVELOPER IMPLEMENTATION GUIDE
+
+COOL & COZY AC REPAIR
+Licensed HVAC Contractor  ·  Jacksonville, Florida
+
+AC REPAIR
+Service Child Page  ·  Part 1 of 2
+Page Identity Through Symptoms & Diagnostics
+
+URL: coolcozyac.com/services/ac-repair
+Prepared by: TradeWorks AI  |  Version 1.0  |  May 2026
+Classification: Client Confidential
+
+Table of Contents
+
+1.  How to Use This Guide
+2.  Page Identity & Architecture
+3.  Keyword Strategy & Content Map
+4.  Complete <head> Section
+4.1  Meta Tags & Social
+4.2  JSON-LD Structured Data
+5.  Section-by-Section Build (Part 1)
+5.1  Page Hero with Emergency Banner
+5.2  AEO Introduction Block
+5.3  Signs Your AC Needs Repair (Symptom Grid)
+5.4  Our AC Repair Process
+5.5  What We Repair (Equipment & Components)
+  (Part 2: Pricing Guidance, Why Choose Us, PM/Commercial Callout, Testimonials, FAQ, Related Services, CTA, Reference Appendix)
+
+1. How to Use This Guide
+This guide defines the AC Repair service child page at /services/ac-repair. It is the single most important service page on the site, targeting the highest-volume transactional keyword in the Jacksonville HVAC market: “AC repair Jacksonville FL” (estimated 1,600–2,400 monthly searches).
+As a service child page, it sits within the Services silo under the /services hub. It receives authority from the hub and homepage, and distributes authority laterally to sibling service pages and downward to relevant service area pages. The page must function as a standalone conversion machine: a visitor arriving directly from Google should be able to understand what Cool & Cozy offers, trust the company, and call or submit a form — without visiting any other page.
+Shared components (header, footer, emergency banner, sticky mobile CTA) are defined in the Homepage Developer Guide and apply identically. Breadcrumbs appear on this page. The brand system, typography, spacing, and component specifications from the Strategy & Architecture document are canonical.
+1.1 Content Authoring Rules
+All content is written fresh. No duplication from the Services Hub, homepage, or competitors.
+Content targets a homeowner experiencing an AC problem RIGHT NOW — the tone is empathetic, urgent, and solution-oriented.
+Technical accuracy: all HVAC terminology, component names, and repair descriptions must be factually correct.
+Jacksonville-specific: references to summer heat indices, humidity levels, JEA electricity costs, coastal salt air corrosion, and Florida Building Code where relevant.
+AEO opening paragraph answers: “Who does AC repair in Jacksonville, FL?” within 150 words.
+Symptom-based content matches how real people search: “AC blowing warm air,” “AC won’t turn on,” “AC making noise.”
+Pricing content provides honest ranges and factors, not fake precision or bait pricing.
+
+2. Page Identity & Architecture
+Property
+Specification
+URL Path
+/services/ac-repair
+Canonical URL
+https://coolcozyac.com/services/ac-repair
+Page Type
+Service child page
+Parent Page
+/services (Services Hub)
+Breadcrumb
+Home > Services > AC Repair
+Silo
+Services silo, child of /services hub
+Primary Keyword
+AC repair Jacksonville FL
+Secondary Keywords
+air conditioning repair Jacksonville, AC not working Jacksonville, AC fix Jacksonville FL, emergency AC repair near me
+Search Intent
+Transactional (immediate need) + Emergency (urgent repair)
+Target Word Count
+2,000–2,500 words
+Primary Conversion Goal
+Phone call via click-to-call
+Secondary Conversion Goals
+Contact form submission, emergency form with urgency flag
+Robots Directive
+index, follow
+XML Sitemap
+Included, priority 0.8, changefreq monthly
+Content Update Frequency
+Seasonal (refresh pricing ranges annually, update seasonal messaging)
+
+2.1 Sibling Pages (Same Silo Level)
+Sibling Page
+URL
+Cross-Link Priority
+AC Installation
+/services/ac-installation
+High — repair-vs-replace content
+AC Maintenance
+/services/ac-maintenance
+High — prevention angle
+Emergency AC Repair
+/services/emergency-ac-repair
+High — urgency cross-link
+Ductwork
+/services/ductwork
+Medium — airflow issues
+Indoor Air Quality
+/services/indoor-air-quality
+Medium — post-repair IAQ
+Thermostat Installation
+/services/thermostat-installation
+Low — thermostat diagnosis
+Commercial HVAC
+/services/commercial-hvac
+Medium — commercial repair
+
+2.2 Internal Linking Requirements
+Links TO parent hub: /services (via breadcrumb + contextual link in content)
+Links TO siblings: at least 3 (AC Installation for repair-vs-replace, AC Maintenance for prevention, Emergency for urgency upgrade)
+Links TO /contact: at least 3 (hero CTA, mid-page CTA, final CTA)
+Links TO service area pages: at least 2 (mention specific neighborhoods in the Jacksonville context)
+Links TO resource articles: at least 1 (e.g., /resources/ac-repair-cost-jacksonville or /resources/signs-ac-needs-replacement)
+Links FROM homepage: homepage services grid card links here
+Links FROM hub: services hub grid card links here
+Links FROM sibling pages: each sibling’s “Related Services” section links here
+
+3. Keyword Strategy & Content Map
+3.1 Primary Keyword
+Property
+Specification
+Primary Keyword
+AC repair Jacksonville FL
+Estimated Monthly Volume
+1,600–2,400
+Search Intent
+Transactional / Emergency
+Keyword Difficulty
+Medium-High (established competitors)
+Placement
+H1, title tag, meta description, AEO opening paragraph, hero subheadline
+
+3.2 Full Keyword Cluster
+Keyword
+Est. Vol.
+Intent
+Page Placement
+AC repair Jacksonville FL
+1,600–2,400
+Trans.
+H1, title, meta, AEO para, hero
+air conditioning repair Jacksonville
+400–800
+Trans.
+AEO paragraph, H2 heading
+AC not cooling Jacksonville
+100–300
+Symptom
+Symptoms section heading
+AC blowing warm air
+200–500
+Symptom
+Symptom card
+AC won’t turn on
+300–600
+Symptom
+Symptom card
+AC making noise
+150–400
+Symptom
+Symptom card
+AC repair cost Jacksonville
+200–400
+Info
+Pricing section (Part 2)
+emergency AC repair Jacksonville
+300–600
+Emerg.
+Emergency banner, cross-link
+AC repair near me
+2,000+
+Local
+Schema areaServed, area links
+licensed AC repair Jacksonville
+50–150
+Trust
+Trust section, schema credential
+AC refrigerant leak repair
+100–250
+Specific
+Components section
+AC capacitor replacement Jacksonville
+50–150
+Specific
+Components section
+AC compressor repair Jacksonville
+50–150
+Specific
+Components section
+
+3.3 Semantic Terms
+HVAC system, central air conditioning, split system, package unit, air handler, condenser, evaporator coil, compressor, capacitor, contactor, refrigerant, R-410A, R-22 (Freon), blower motor, fan blade
+Diagnostic, troubleshoot, repair vs replace, system failure, short cycling, frozen coil, ice on AC, weak airflow, high electric bill, water leaking from AC, strange smell from vents
+Jacksonville FL, Duval County, Florida summer, 95 degrees, humidity, heat index, salt air corrosion, Florida Building Code, JEA utility bill, Northeast Florida
+Same-day, emergency, licensed, CAC1819948, insured, free estimate, upfront pricing, no hidden fees, family-owned, bilingual, se habla español, BuildZoom top 13%
+
+4. Complete <head> Section
+4.1 Meta Tags & Social
+Property
+Specification
+Title Tag
+AC Repair Jacksonville FL | Same-Day Service | Cool & Cozy AC Repair
+Title Character Count
+65 characters
+Meta Description
+Expert AC repair in Jacksonville, FL. Same-day service, upfront pricing, licensed (CAC1819948). Serving homes, businesses & property managers across Duval County. Se habla español. Call (904) 555-0199.
+Meta Desc. Character Count
+154 characters
+Canonical URL
+https://coolcozyac.com/services/ac-repair
+Robots
+index, follow
+og:title
+AC Repair Jacksonville FL | Cool & Cozy AC Repair
+og:description
+Licensed AC repair for Jacksonville homes, businesses & property managers. Same-day service, honest pricing. Call (904) 555-0199.
+og:url
+https://coolcozyac.com/services/ac-repair
+og:image
+https://coolcozyac.com/images/og-ac-repair.jpg (1200×630px)
+twitter:card
+summary_large_image
+4.2 JSON-LD Structured Data
+This page carries three schema blocks: Service (AC Repair specific), BreadcrumbList, and FAQPage.
+4.2.1 Service Schema
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "AC Repair Jacksonville FL",
+  "serviceType": "Air Conditioning Repair",
+  "description": "Professional AC repair and diagnostics for residential and commercial air conditioning systems in Jacksonville and Duval County. Same-day service available. Licensed Florida contractor CAC1819948.",
+  "provider": {
+    "@type": "HVACBusiness",
+    "name": "Cool & Cozy AC Repair",
+    "url": "https://coolcozyac.com/",
+    "telephone": "+19045550199",
+    "address": { "@type": "PostalAddress", "addressLocality": "Jacksonville", "addressRegion": "FL", "addressCountry": "US" },
+    "hasCredential": { "@type": "EducationalOccupationalCredential", "credentialCategory": "Certified Air Conditioning Contractor", "identifier": "CAC1819948" }
+  },
+  "areaServed": [
+    { "@type": "City", "name": "Jacksonville" },
+    { "@type": "AdministrativeArea", "name": "Duval County" }
+  ],
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD", "description": "Free diagnostic estimates" },
+  "termsOfService": "https://coolcozyac.com/terms-of-service",
+  "availableChannel": { "@type": "ServiceChannel", "serviceUrl": "https://coolcozyac.com/contact", "servicePhone": "+19045550199" }
+}
+
+4.2.2 BreadcrumbList
+{ "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
+  { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://coolcozyac.com/" },
+  { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://coolcozyac.com/services" },
+  { "@type": "ListItem", "position": 3, "name": "AC Repair", "item": "https://coolcozyac.com/services/ac-repair" }
+] }
+
+4.2.3 FAQPage Schema
+Specified inline with FAQ content in Part 2, Section 5.8.
+4.3 Preload Hints
+Hero image: <link rel="preload" href="/images/hero-ac-repair.webp" as="image" type="image/webp">
+Font preload: same Poppins strategy as all pages (shared)
+
+5. Section-by-Section Build (Part 1)
+The AC Repair page contains 11 content blocks in scroll order. Part 1 covers blocks 1–5 (Hero through Equipment & Components). Part 2 covers blocks 6–11 (Pricing Guidance, Why Choose Us, PM/Commercial Callout, Testimonials, FAQ, Related Services, Final CTA) plus the reference appendix.
+Emergency banner, header, footer, and sticky mobile CTA are defined in the Homepage Developer Guide and apply identically.
+
+5.1 Page Hero with Emergency Urgency
+Section Overview
+The AC Repair hero serves a visitor who likely has an immediate problem. Unlike the homepage hero (brand introduction) or the services hub hero (overview navigation), this hero speaks directly to someone whose AC is broken right now. The tone is empathetic and action-oriented: “we understand your situation and we can fix it today.” The emergency banner (defined in the Homepage guide) is especially important on this page — it should always default to the summer/emergency variant when this page is loaded.
+Conversion Role: Immediate phone call. This visitor is not browsing — they have a problem. Make the phone number impossible to miss.
+Layout Specifications
+Property
+Specification
+Desktop
+Full-width, 380px height, content left-aligned within 1280px container
+Tablet
+Full-width, 320px height
+Mobile
+Full-width, auto height (min 280px), centered text, stacked CTAs
+Background
+Photo background with linear-gradient overlay: rgba(26,86,83,0.78) to rgba(26,86,83,0.60) left-to-right
+Content Specifications
+Breadcrumb
+Home > Services > AC Repair
+Style: Poppins 13px/400, #5CB8B2. “Home” links /, “Services” links /services, “AC Repair” = current (not linked)
+H1 Headline
+AC Repair in Jacksonville, FL — Same-Day Service, Honest Pricing
+Character Count: 60 characters
+Primary Keyword: “AC Repair” + “Jacksonville, FL” front-loaded. “Same-Day” and “Honest Pricing” are the two value propositions most important to an emergency searcher.
+Style: Poppins 36px/700 (desktop), 28px/700 (mobile), #FFFFFF, max-width 640px
+Subheadline
+Your AC stopped working. We get it — in Jacksonville’s heat, that’s not just uncomfortable, it’s urgent. Cool & Cozy’s licensed technicians diagnose and repair your system fast, with no hidden fees and no pressure to replace what can be fixed.
+Word Count: 42 words
+Style: Poppins 17px/400, #F0E6D3, max-width 580px, line-height 1.6
+The subheadline uses empathetic, second-person language (“your AC stopped working”) that mirrors how the visitor feels. This is intentionally different from the homepage hero’s brand-building tone.
+Dual CTA Buttons
+Button
+Action
+Style
+Call Now: (904) 555-0199
+tel:+19045550199
+Coral bg, white text, pill shape, phone icon, 52px height
+Schedule AC Repair
+/contact?service=ac-repair
+Transparent bg, white border, white text, pill shape, 52px height
+
+Secondary CTA note: The “Schedule AC Repair” button pre-selects “AC Repair” in the contact form’s service dropdown. This context-passing reduces form friction.
+Trust Indicators
+✓ FL License CAC1819948  ·  ✓ Same-Day Service  ·  ✓ Free Diagnostic Estimates  ·  ✓ Se habla español
+Style: Poppins 13px/400, #F0E6D3, opacity 0.9
+Image Specifications
+Property
+Specification
+Image Name
+hero-ac-repair
+Subject
+Close-up of HVAC technician working on an outdoor condenser unit, or technician diagnosing an indoor air handler with tools visible. Florida residential setting preferred.
+Dimensions
+1920×1080px source, srcset: 1920w, 1280w, 768w, 480w
+Format
+WebP + JPEG fallback
+File Size
+< 180KB (WebP)
+Alt Text
+Licensed AC repair technician from Cool & Cozy diagnosing an air conditioning system at a Jacksonville, Florida home
+Loading
+Preloaded — LCP element
+DEV ACTION: PLACEHOLDER: Source from client (real technician on job) or licensed stock. Must look authentic — not a posed studio shot.
+GA4 Event Tracking
+Property
+Specification
+phone_click
+page_section: “hero”
+cta_click
+button_text: “Schedule AC Repair”, destination_url: /contact?service=ac-repair, page_section: “hero”
+
+5.2 AEO Introduction Block
+Section Overview
+The first body-text section. Answers “Who does AC repair in Jacksonville, FL?” directly within 150 words. This is the primary AEO target paragraph that AI answer engines will extract.
+Layout
+Property
+Specification
+Container
+Full-width, #FFFFFF background
+Content Width
+720px centered
+Padding
+56px top, 40px bottom (desktop); 32px (mobile)
+Content
+H2 Heading
+Expert Air Conditioning Repair in Jacksonville, FL
+Keyword: “Air Conditioning Repair” + “Jacksonville, FL” — secondary keyword variant, not duplicating H1
+AEO Opening Paragraph
+Cool & Cozy AC Repair provides professional air conditioning repair for homes, businesses, and managed properties throughout Jacksonville and Duval County. As a Florida-licensed contractor (CAC1819948) ranked in the top 13% of state contractors by BuildZoom, the company diagnoses and repairs all major AC brands and system types — including central air, ductless mini-splits, and commercial rooftop units. Services include refrigerant leak detection, compressor repair, capacitor and contactor replacement, evaporator and condenser coil service, blower motor repair, thermostat diagnostics, and full electrical troubleshooting. Cool & Cozy offers same-day emergency service during Jacksonville’s peak cooling season, upfront pricing with no hidden fees, and bilingual support in English and Spanish. Call (904) 555-0199 for a free diagnostic estimate.
+Word Count: 118 words
+AEO Targeting: Directly answers: “Who repairs AC systems in Jacksonville?” “What does AC repair include?” “Does Cool & Cozy repair commercial AC systems?”
+This paragraph is dense with specific repair types and component names. This serves two purposes: (1) AI systems extract specific service lists more reliably than vague descriptions, and (2) each component name is a potential long-tail keyword match.
+Supporting Paragraph
+Jacksonville’s subtropical climate pushes air conditioning systems harder than almost anywhere else in the country. With average summer temperatures in the mid-90s, heat indices regularly exceeding 105°F, and humidity that rarely drops below 60%, your AC runs 8–12 hours per day from May through October. That sustained workload means components wear faster, refrigerant systems work harder, and a small problem today becomes a complete system failure next week if left unaddressed. If your AC is showing any sign of trouble — warm air, strange noises, short cycling, ice on the coils, or a spike in your JEA bill — call us before the problem gets worse.
+Word Count: 109 words
+This paragraph grounds the page in Jacksonville’s specific climate reality. It’s not generic AC content — it references local conditions, JEA utility billing, and actual operating patterns that a Jacksonville homeowner recognizes as accurate.
+GA4
+Property
+Specification
+phone_click
+page_section: “aeo_intro”
+
+5.3 Signs Your AC Needs Repair (Symptom Grid)
+Section Overview
+This section matches how real people search. They do not Google “capacitor replacement” — they Google “AC blowing warm air” or “AC making noise.” The symptom grid presents 8 common AC problems with brief explanations of likely causes, structured as cards that target featured-snippet-style queries. Each symptom is a potential entry point from voice search and AI answer engines.
+Conversion Role: Validate the visitor’s symptom (“that’s exactly what’s happening to me”) and motivate action (“this could get worse — I should call now”).
+Layout
+Property
+Specification
+Container
+Full-width, #EAF3F2 (Sky Mist) background
+Content Width
+1280px centered
+Padding
+64px top/bottom (desktop), 32px (mobile)
+Grid
+2 columns desktop (gap 24px), 1 column mobile (gap 16px)
+Cards
+Each card: warning-triangle icon + symptom title (H3) + explanation paragraph + “Call for diagnosis →” link
+Content
+Section Heading (H2)
+Is Your AC Showing These Warning Signs?
+Subheading: Recognizing early symptoms can save you from a complete system failure. Here are the most common AC problems Jacksonville homeowners report.
+
+Symptom 1: AC Blowing Warm or Hot Air
+If your vents are pushing room-temperature or warm air even though the thermostat is set to cool, the most common causes are low refrigerant from a leak, a failed compressor, a dirty or frozen evaporator coil, or a malfunctioning reversing valve. In Jacksonville’s heat, this quickly makes your home unsafe — especially for elderly residents and young children.
+H3 Keyword Target: “AC blowing warm air” (200–500 monthly searches)
+
+Symptom 2: AC Won’t Turn On
+A system that won’t start at all could have a tripped breaker, a blown fuse, a failed capacitor or contactor, a faulty thermostat, or a safety switch lockout. Before calling, check your breaker panel and thermostat batteries. If both are fine and the system still won’t respond, it’s time for a professional diagnostic.
+H3 Keyword Target: “AC won’t turn on” (300–600 monthly searches)
+
+Symptom 3: Strange Noises from the AC Unit
+Grinding, squealing, banging, buzzing, or clicking sounds are never normal. Grinding often indicates a failing bearing in the blower motor or compressor. Squealing suggests a slipping belt or motor issue. Banging can mean a loose or broken internal component. Buzzing may indicate an electrical problem. These sounds tend to get worse quickly — addressing them early prevents costlier damage.
+H3 Keyword Target: “AC making noise” (150–400 monthly searches)
+
+Symptom 4: AC Short Cycling (Turning On and Off Rapidly)
+If your AC turns on, runs for a few minutes, shuts off, and then restarts shortly after, it’s short cycling. Common causes include an oversized system, a clogged air filter restricting airflow, a refrigerant leak causing low pressure, a failing compressor, or a malfunctioning thermostat. Short cycling wastes energy, increases wear on components, and reduces the system’s lifespan.
+H3 Keyword Target: “AC keeps turning on and off” / “AC short cycling”
+
+Symptom 5: Ice or Frost on the AC Unit
+Ice forming on the evaporator coil, refrigerant lines, or the outdoor unit is a sign of restricted airflow or low refrigerant. A dirty air filter, blocked return vents, or a failing blower motor can restrict airflow enough to cause freezing. A refrigerant leak drops system pressure below the point where moisture in the air freezes on the coil. Do not try to scrape ice off — turn the system off and call for service.
+H3 Keyword Target: “ice on AC unit” / “AC frozen coil”
+
+Symptom 6: Water Leaking from the AC
+Water pooling around your indoor air handler usually means a clogged condensate drain line, a cracked drain pan, or a frozen evaporator coil that’s now thawing. In Jacksonville’s humidity, condensate drains clog frequently with algae and buildup. Left unaddressed, the water damages floors, walls, and ceilings — and creates conditions for mold growth.
+H3 Keyword Target: “water leaking from AC” / “AC leaking water inside”
+
+Symptom 7: Weak Airflow from Vents
+If some rooms cool fine but others feel warm, or if airflow from vents is noticeably weaker than usual, the problem may be in your ductwork (leaks, disconnections, or blockages), a failing blower motor, or a severely clogged filter. Ductwork issues are especially common in Jacksonville homes built before 1990, where original ductwork may be deteriorating.
+H3 Keyword Target: “weak airflow from AC” / “AC not cooling one room”
+
+Symptom 8: Unusually High Electric Bills
+If your JEA bill spikes without a corresponding change in usage or rates, your AC system may be working significantly harder than it should. Common culprits include low refrigerant (forcing the compressor to work overtime), dirty coils reducing heat transfer efficiency, a failing capacitor causing the motor to draw more power, or ductwork leaks sending 20–30% of your cooled air into the attic or crawlspace.
+H3 Keyword Target: “high electric bill AC problem” / “AC running but high energy bill”
+
+Card Design
+Property
+Specification
+Card bg
+#FFFFFF
+Border-radius
+16px
+Box-shadow
+0 2px 10px rgba(0,0,0,0.05)
+Hover
+box-shadow 0 6px 20px rgba(0,0,0,0.09), translateY(-2px)
+Icon
+Warning triangle SVG, 32×32px, #E8603C (Coral), top-left of card
+H3 title
+Poppins 18px/600, #2C2C2C
+Body
+Poppins 14px/400, #3D3D3D, line-height 1.6
+CTA link
+Poppins 14px/500, #5CB8B2, “Call for diagnosis →”, links to tel:+19045550199 on mobile, scrolls to final CTA on desktop
+Padding
+24px
+Each symptom card’s H3 heading is structured to match voice-search query patterns. AI answer engines will extract the H3 + first sentence as a direct answer to “Why is my AC [symptom]?” queries.
+Accessibility
+Each card is a semantic <article> or <section> with its own H3
+Warning icon has aria-hidden="true" (decorative — the heading conveys meaning)
+Cards maintain keyboard tab order and visible focus states
+GA4
+Property
+Specification
+cta_click
+button_text: “Call for diagnosis”, page_section: “symptoms_grid”, service_type: symptom title
+
+5.4 Our AC Repair Process
+Section Overview
+A step-by-step walkthrough of what happens when a customer calls for an AC repair. Similar in concept to the services hub process section but with more detail specific to the repair workflow. This section reduces calling anxiety and sets clear expectations.
+Conversion Role: Demystify the process. Show the visitor exactly what will happen if they call, removing uncertainty as a barrier.
+Layout
+Property
+Specification
+Container
+Full-width, #FFFFFF background
+Content Width
+960px centered
+Padding
+64px top/bottom (desktop), 32px (mobile)
+Desktop
+Horizontal timeline: 5 steps
+Mobile
+Vertical stack with connecting line
+Content
+H2 Heading
+What Happens When You Call for AC Repair
+
+#
+Step
+Description
+1
+Call or Submit Online
+Call (904) 555-0199 or fill out the form at coolcozyac.com/contact. Describe the symptoms you’re experiencing — warm air, noises, leaking, or complete failure. We’ll ask a few questions to understand urgency and schedule accordingly. Emergency calls are prioritized for same-day service.
+2
+Technician Arrives On Time
+A licensed Cool & Cozy technician arrives within the scheduled window. We call 30 minutes before arrival so you’re not sitting around waiting. Our techs arrive with a fully stocked service vehicle — most common parts are on the truck.
+3
+Full System Diagnostic
+We inspect your entire system — not just the symptom you reported. Thermostat, electrical connections, refrigerant levels, airflow, coils, capacitors, contactor, blower motor, and ductwork connections. We tell you exactly what’s wrong, why it happened, and whether other components are showing early signs of wear.
+4
+Clear Quote Before Work Begins
+You get a written quote with the total cost before we touch a single part. No surprise charges, no “while we’re here” upsells. If the repair cost approaches replacement territory, we’ll be honest about that too and explain your options. The decision is always yours.
+5
+Repair, Test & Verify
+We complete the repair, run the system through a full operating cycle, verify temperature splits across supply and return vents, confirm proper airflow, and make sure everything is working before we leave. We clean up our work area and walk you through what we did and what to watch for going forward.
+
+Design
+Property
+Specification
+Step circles
+56px diameter, #1A5653 bg, white number, Poppins 22px/700
+Connecting lines
+2px solid #DDD8D0
+Step title
+Poppins 18px/600, #2C2C2C
+Step description
+Poppins 14px/400, #3D3D3D, line-height 1.55
+The process descriptions are intentionally detailed. A homeowner reading step 3 should think: “these people actually know what they’re doing” — the specificity builds E-E-A-T expertise signals.
+
+5.5 What We Repair — Equipment & Components
+Section Overview
+A comprehensive list of the equipment types and specific components Cool & Cozy repairs. This section exists for two reasons: (1) SEO — it captures long-tail queries like “AC capacitor replacement Jacksonville” and “compressor repair near me,” and (2) Trust — the depth of the list signals expertise to both homeowners and property managers. A contractor who can name every component they repair is more credible than one who says “we fix AC systems.”
+Layout
+Property
+Specification
+Container
+Full-width, #F0E6D3 (Warm Sand) background
+Content Width
+1280px centered
+Padding
+64px top/bottom (desktop), 32px (mobile)
+Desktop
+2-column: Left = System Types, Right = Component Repairs
+Mobile
+Single column, system types first then components
+Content
+H2 Heading
+AC Systems and Components We Repair
+
+Left Column: System Types
+We service all residential and commercial AC system types found in Jacksonville homes and businesses:
+Central air conditioning (split systems — indoor air handler + outdoor condenser)
+Package units (combined heating and cooling in a single outdoor unit)
+Ductless mini-split systems (single-zone and multi-zone)
+Heat pumps (cooling and heating in one system)
+Commercial rooftop units (RTUs)
+PTAC units (packaged terminal, common in hotels and multi-unit properties)
+Window and wall-mounted AC units
+
+Right Column: Component-Level Repairs
+Our technicians diagnose and repair at the component level — we don’t guess and replace, we find the actual failure:
+Compressor diagnosis and replacement
+Capacitor (start and run) replacement
+Contactor replacement
+Refrigerant leak detection, repair, and recharge (R-410A, R-22/Freon alternatives)
+Evaporator coil cleaning, repair, and replacement
+Condenser coil cleaning and repair
+Blower motor and fan motor replacement
+Fan blade replacement
+Expansion valve (TXV) and metering device service
+Condensate drain line clearing and repair
+Drain pan replacement
+Electrical connection tightening and wire repair
+Circuit board and control board diagnostics
+Thermostat troubleshooting and replacement
+Ductwork connection repair (at air handler and branch connections)
+
+Brands We Service
+We are not brand-exclusive. Cool & Cozy services all major residential and commercial AC brands:
+Carrier, Trane, Lennox, Rheem, Goodman, Daikin, York, Bryant, Amana, Mitsubishi, Fujitsu, LG, Samsung, Bosch, Heil, Payne, Ruud, American Standard, Coleman, Maytag.
+Note: This is not an exhaustive list. If your brand is not listed, call us — we almost certainly work on it.
+Design
+Property
+Specification
+Section bg
+#F0E6D3 (Warm Sand)
+H2
+Poppins 28px/700, #2C2C2C, centered
+Column headings
+Poppins 18px/600, #1A5653 (Evergreen)
+List items
+Poppins 15px/400, #3D3D3D, bullet color #5CB8B2 (Seafoam)
+Brands list
+Poppins 14px/400, #3D3D3D, comma-separated, wrapped naturally
+Column divider
+Desktop only: 1px solid #DDD8D0 vertical between columns
+The component list is long by design. It captures dozens of long-tail keywords naturally and demonstrates deep technical expertise. Do not shorten or summarize this list.
+Internal Links
+Ductwork connection repair → contextual link to /services/ductwork
+Thermostat troubleshooting → contextual link to /services/thermostat-installation
+Commercial rooftop units, PTAC → contextual link to /services/commercial-hvac
+GA4
+No specific interactive events. Scroll depth tracking covers engagement with this section.
+
+— End of Part 1 —
+
+Part 2 continues with: Pricing Guidance, Why Choose Cool & Cozy for AC Repair,
+Property Manager / Commercial Callout, Testimonials, FAQ (6 questions with schema),
+Related Services Links, Final CTA Block, and Reference Appendix.
+
+Prepared by TradeWorks AI  ·  May 2026  ·  v1.0
+

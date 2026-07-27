@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <title>Edge 2 Hedges — favicon</title>
+  <rect x="0" y="0" width="64" height="64" rx="10" fill="#0F3D24"/>
+  <g transform="translate(32, 40)">
+    <path d="M-16 8 Q-16 -4 -13 -11 Q-10 -4 -11 8 Z" fill="#6BAA45"/>
+    <path d="M16 8 Q16 -4 13 -11 Q10 -4 11 8 Z" fill="#6BAA45"/>
+    <path d="M-8 10 Q-8 -6 -5 -16 Q-2 -6 -5 10 Z" fill="#A8D17C"/>
+    <path d="M8 10 Q8 -6 5 -16 Q2 -6 5 10 Z" fill="#A8D17C"/>
+    <path d="M-2 12 Q-2 -8 0 -20 Q2 -8 2 12 Z" fill="#6BAA45"/>
+  </g>
+  <circle cx="48" cy="16" r="9" fill="#D4A744"/>
+  <text x="48" y="21" text-anchor="middle" font-family="Georgia, serif" font-size="13" font-weight="700" font-style="italic" fill="#FFFFFF">2</text>
+</svg>

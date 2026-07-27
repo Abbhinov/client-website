@@ -1,0 +1,554 @@
+﻿
+DEVELOPER IMPLEMENTATION GUIDE
+
+COOL & COZY AC REPAIR
+Licensed HVAC Contractor  ·  Jacksonville, Florida
+
+AC MAINTENANCE
+Complete Page Build — Single Document
+
+URL: coolcozyac.com/services/ac-maintenance
+Prepared by: TradeWorks AI  |  Version 1.0  |  May 2026
+Classification: Client Confidential
+
+Table of Contents
+
+1.  How to Use This Guide
+2.  Page Identity & Architecture
+3.  Keyword Strategy
+4.  Complete <head> Section
+5.  Section-by-Section Build
+5.1  Page Hero
+5.2  AEO Introduction Block
+5.3  What’s Included in a Maintenance Visit
+5.4  Maintenance Plans & Agreements
+5.5  Why Maintenance Matters in Jacksonville
+5.6  Property Manager Portfolio Maintenance
+5.7  Testimonials
+5.8  FAQ Section (6 Questions)
+5.9  Related Services
+5.10  Final CTA Block
+6.  Reference: Image Asset Inventory
+7.  Reference: GA4 & Implementation Checklist
+
+1. How to Use This Guide
+This guide defines the AC Maintenance & Tune-Ups service child page at /services/ac-maintenance. Unlike the repair page (emergency, transactional) and the installation page (high-consideration purchase), the maintenance page targets a proactive, relationship-building audience. These visitors are not in crisis — they are planning ahead, protecting an investment, or evaluating maintenance agreements for a property portfolio.
+The maintenance page has a unique strategic role: it creates recurring revenue. A one-time tune-up generates immediate income, but a maintenance agreement creates a long-term customer relationship that produces predictable revenue, reduces emergency call volume (because maintained systems fail less), and creates a natural pipeline for future replacement sales when systems reach end-of-life.
+Shared components (header, footer, emergency banner, sticky mobile CTA) apply from the Homepage Developer Guide. The Jacksonville coastal brand system from the Strategy & Architecture document governs all visuals.
+1.1 Content Rules
+All content fresh. No duplication from repair, installation, hub, or homepage.
+Tone is educational and value-oriented. Not urgent, not salesy. The visitor is planning, not panicking.
+Jacksonville-specific: year-round cooling demand, humidity’s role in system stress, seasonal timing (tune-up before summer), JEA energy savings.
+Property management angle: portfolio-wide agreements, per-unit pricing, coordinated scheduling.
+Maintenance plans must be described with enough detail to be understood but without locking in specific pricing that may change — CTA drives custom quotes.
+
+2. Page Identity & Architecture
+Property
+Specification
+URL Path
+/services/ac-maintenance
+Canonical URL
+https://coolcozyac.com/services/ac-maintenance
+Page Type
+Service child page
+Parent Page
+/services (Services Hub)
+Breadcrumb
+Home > Services > AC Maintenance
+Primary Keyword
+AC maintenance Jacksonville FL
+Secondary Keywords
+AC tune-up Jacksonville, HVAC maintenance Duval County, AC maintenance plan Jacksonville, preventive AC service
+Search Intent
+Commercial investigation (proactive planning)
+Target Word Count
+1,800–2,200 words
+Primary Conversion Goal
+Phone call or form submission for tune-up scheduling or maintenance plan inquiry
+Secondary Conversion Goals
+Property management agreement inquiry, cross-sell to repair or installation
+Robots Directive
+index, follow
+XML Sitemap
+Included, priority 0.8
+
+2.1 Internal Linking
+TO /services/ac-repair: “If we find a problem during your tune-up” cross-link
+TO /services/ac-installation: “If your system is approaching end-of-life” cross-link
+TO /services/indoor-air-quality: filter/IAQ upgrade during maintenance
+TO /services/thermostat-installation: thermostat calibration mention
+TO /contact?service=ac-maintenance: at least 3 CTAs
+TO /resources/how-often-ac-maintenance: contextual cross-link
+FROM AC Repair + AC Installation: both link here as post-service/post-install care
+
+3. Keyword Strategy
+Keyword
+Est. Vol.
+Intent
+Placement
+AC maintenance Jacksonville FL
+200–400
+Comm.
+H1, title, meta, AEO para
+AC tune-up Jacksonville
+150–300
+Comm.
+Tune-up checklist section, H2
+HVAC maintenance plan Jacksonville
+50–150
+Comm.
+Plans section heading
+how often AC maintenance Florida
+100–250
+Info
+FAQ, cross-link to resource
+AC maintenance cost Jacksonville
+50–150
+Info
+Plans section, FAQ
+preventive AC service Jacksonville
+30–80
+Comm.
+AEO paragraph
+AC maintenance agreement property manager
+20–50
+Comm.
+PM section
+spring AC tune-up Jacksonville
+50–150
+Seasonal
+Why maintenance section
+
+3.1 Semantic Terms
+Tune-up, preventive maintenance, seasonal service, annual maintenance, filter replacement, coil cleaning, refrigerant check, condensate drain, electrical inspection, capacitor check
+Maintenance agreement, service plan, recurring service, priority scheduling, discounted diagnostics, warranty protection
+Energy efficiency, lower utility bills, extended equipment life, prevent breakdowns, avoid emergency repair, system lifespan
+
+4. Complete <head> Section
+Property
+Specification
+Title Tag
+AC Maintenance & Tune-Ups Jacksonville FL | Plans Available | Cool & Cozy
+Title Character Count
+73 characters
+Meta Description
+Preventive AC maintenance and tune-ups in Jacksonville, FL. Maintenance plans with priority scheduling. Licensed (CAC1819948). Residential & property management. Call (904) 555-0199.
+Meta Desc. Character Count
+155 characters
+Canonical URL
+https://coolcozyac.com/services/ac-maintenance
+og:title
+AC Maintenance Jacksonville FL | Cool & Cozy AC Repair
+og:description
+Keep your AC running efficiently with professional maintenance and tune-ups. Plans available for homeowners and property managers.
+og:url
+https://coolcozyac.com/services/ac-maintenance
+og:image
+https://coolcozyac.com/images/og-ac-maintenance.jpg
+
+4.1 JSON-LD
+Service schema (serviceType: “Air Conditioning Maintenance”), BreadcrumbList (3-level: Home > Services > AC Maintenance), and FAQPage (6 questions). Same provider/area/credential block as all service pages.
+4.2 Preload
+Hero image: <link rel="preload" href="/images/hero-ac-maintenance.webp" as="image">
+
+5. Section-by-Section Build
+The AC Maintenance page contains 10 content blocks. Emergency banner, header, footer, and sticky mobile CTA apply from Homepage guide.
+
+5.1 Page Hero
+Overview
+The maintenance hero speaks to a proactive homeowner or planner. The tone is calm, confident, and value-oriented: “protect your investment and avoid surprises.” No emergency language.
+Layout
+Property
+Specification
+Desktop
+Full-width, 340px height, left-aligned content within 1280px
+Mobile
+Auto height (min 260px), centered, stacked CTAs
+Background
+Evergreen solid with subtle CSS diagonal pattern at 5% opacity (fast-loading, same approach as Services Hub hero)
+Content
+Breadcrumb
+Home > Services > AC Maintenance
+H1
+AC Maintenance & Tune-Ups in Jacksonville, FL
+Style: Poppins 36px/700, #FFFFFF
+Subheadline
+The best AC repair is the one you never need. Regular maintenance keeps your system running efficiently, extends its lifespan, and catches small problems before they become expensive emergencies.
+Word Count: 33 words
+CTAs
+Property
+Specification
+Primary
+Schedule a Tune-Up — Coral bg, pill, /contact?service=ac-maintenance
+Secondary
+Call (904) 555-0199 — white border, pill, tel: link
+Trust Indicators
+✓ FL License CAC1819948  ·  ✓ Maintenance Plans Available  ·  ✓ All Major Brands  ·  ✓ Se habla español
+Image
+Property
+Specification
+Image Name
+hero-ac-maintenance
+Subject
+Technician performing outdoor condenser maintenance (cleaning coils, checking connections) on a sunny Florida day. Or a clean, well-maintained AC system with seasonal context.
+Loading
+Preloaded — LCP element. Or use CSS pattern bg (same as hub) for fastest load.
+DEV ACTION: PLACEHOLDER: If no client photo is available, use CSS-only Evergreen pattern hero (same as services hub). This page does not need a photo hero as badly as repair/installation since visitors are planning, not reacting.
+
+5.2 AEO Introduction Block
+Layout
+Property
+Specification
+Container
+#FFFFFF, 720px centered, 56px/40px padding
+Content
+H2
+Preventive AC Maintenance and Tune-Up Service in Jacksonville, FL
+AEO Opening Paragraph
+Cool & Cozy AC Repair provides professional air conditioning maintenance and seasonal tune-up service for homes, businesses, and managed property portfolios throughout Jacksonville and Duval County. Regular preventive maintenance extends your AC system’s lifespan by 3 to 5 years, reduces the risk of unexpected breakdowns by up to 95%, maintains manufacturer warranty coverage, and keeps energy costs predictable by ensuring your system operates at peak efficiency. Cool & Cozy offers one-time tune-ups and recurring maintenance agreements with priority scheduling, discounted diagnostics, and coordinated service across multi-unit portfolios. The company is Florida-licensed (CAC1819948), ranked in the top 13% of state contractors by BuildZoom, and provides bilingual service in English and Spanish. Call (904) 555-0199 to schedule your next maintenance visit.
+Word Count: 127 words
+This paragraph includes specific benefit claims (“3 to 5 years lifespan extension,” “up to 95% breakdown reduction”). These are well-established industry statistics from HVAC trade associations — they should be presented as general industry data, not Cool & Cozy-specific guarantees.
+Supporting Paragraph
+In Jacksonville’s subtropical climate, your air conditioning system runs 2,500 or more hours per year — roughly three times the national average. That sustained workload means components wear faster, filters clog more frequently, and the condensate drain system works overtime in 70–90% humidity. Without regular maintenance, a system that should last 15 to 20 years may need replacement in 10 to 12. A tune-up twice a year — once before cooling season in the spring and once before heating season in the fall — is the single most cost-effective thing you can do to protect your HVAC investment.
+Word Count: 102 words
+
+5.3 What’s Included in a Cool & Cozy Maintenance Visit
+Overview
+A comprehensive checklist of everything a technician inspects, cleans, tests, and adjusts during a standard maintenance visit. This section builds trust through specificity — the length of the checklist signals thoroughness. It also targets featured snippet queries like “what does AC maintenance include?”
+Conversion Role: Justify the value of maintenance by showing exactly how much is covered. Visitors comparing quotes can see what they’re paying for.
+Layout
+Property
+Specification
+Container
+#EAF3F2 (Sky Mist) background
+Content Width
+1080px centered
+Desktop
+3-column checklist grid: Inspection, Cleaning, Performance Testing
+Mobile
+Single column, each category as a collapsible accordion section
+Content
+H2
+What Does an AC Tune-Up Include?
+AEO Target: Matches “what does AC tune-up include” voice search
+
+Column 1: Inspection
+Thorough inspection of all system components:
+Thermostat calibration and operation check
+Electrical connections tightened and tested
+Capacitor and contactor condition check
+Compressor amperage reading and comparison to specification
+Blower motor amperage and operation
+Condensate drain line flow verification
+Drain pan condition and alignment
+Ductwork connection inspection at air handler
+Safety controls and limit switches tested
+Overall system age and condition assessment
+
+Column 2: Cleaning
+Cleaning critical surfaces for maximum efficiency:
+Outdoor condenser coil rinse and debris removal
+Indoor evaporator coil inspection (cleaning if accessible)
+Condensate drain line flush (algae and buildup removal)
+Air filter check and replacement recommendation
+Outdoor unit perimeter cleared (vegetation, debris)
+Indoor supply and return vent inspection
+
+Column 3: Performance Testing
+Verifying your system is operating to specification:
+Refrigerant pressure check (high and low side)
+Temperature split measurement (supply vs. return air)
+Airflow volume verification at supply vents
+System cycling test (proper on/off behavior)
+Energy consumption comparison to manufacturer baseline
+Written report with findings and recommendations
+
+The checklist is intentionally long (26 items). This level of detail differentiates Cool & Cozy from competitors who offer vague “21-point inspection” claims without listing what the 21 points are. Specificity builds trust.
+Design
+Property
+Specification
+Column cards
+#FFFFFF bg, 16px radius, 24px padding
+Column heading
+Poppins 18px/600, #1A5653 Evergreen, icon left of heading
+Checklist items
+Poppins 14px/400, #3D3D3D, green checkmark icon (✓ #2D9F5D) replacing bullet
+Icons
+Inspection: magnifying glass. Cleaning: brush/sparkle. Testing: gauge/dial. All 32×32 SVG, Evergreen stroke.
+
+5.4 Maintenance Plans & Agreements
+Overview
+This is the recurring revenue section. It presents maintenance agreements as a smart financial decision rather than an upsell. The content shows the math: the cost of two annual tune-ups is significantly less than one emergency repair, and plan members get priority scheduling and discounted diagnostics. Two plan tiers are presented: Residential and Property Management.
+Conversion Role: Convert one-time tune-up visitors into recurring agreement customers. Drive PM-specific inquiries for portfolio agreements.
+Layout
+Property
+Specification
+Container
+#FFFFFF background
+Content Width
+1080px centered
+Desktop
+2-column: Residential plan card (left) and Property Management plan card (right)
+Mobile
+Single column stacked, residential first
+Content
+H2
+Maintenance Plans — Protect Your Investment Year-Round
+Intro
+A single emergency repair in Jacksonville’s peak cooling season can cost $300 to $600 or more. A maintenance agreement that includes two annual tune-ups, priority scheduling, and discounted diagnostics costs a fraction of that — and dramatically reduces the likelihood of needing that emergency call in the first place.
+
+Plan Card 1: Residential Comfort Plan
+Feature
+Details
+Tune-Ups Per Year
+2 (spring pre-cooling + fall pre-heating)
+Priority Scheduling
+Plan members are scheduled before non-member service calls
+Diagnostic Discount
+Discounted diagnostic fee if a repair is needed between tune-ups
+Filter Reminders
+Seasonal filter change reminders via email or text
+No Overtime Charges
+Standard rates for after-hours calls (plan members only)
+Warranty Protection
+Regular maintenance preserves manufacturer warranty eligibility
+
+DEV ACTION: PLACEHOLDER: Specific plan pricing must be confirmed by client. Do NOT publish dollar amounts until pricing is finalized. The CTA should drive a call or form for plan details and pricing.
+Plan Card 2: Property Manager Portfolio Plan
+Feature
+Details
+Tune-Ups Per Unit/Year
+2 per unit, scheduled across your portfolio in coordinated blocks
+Priority Emergency Response
+Tenant AC emergencies prioritized above standard calls
+Per-Unit Pricing
+Transparent per-unit rates with volume discounts for 10+ units
+Tenant Coordination
+We schedule directly with tenants or via your access procedures
+Bilingual Communication
+Technicians communicate with tenants in English or Spanish
+Portfolio Reporting
+System condition reports across your entire portfolio after each service cycle
+Replacement Planning
+We flag systems approaching end-of-life so you can budget replacements
+
+Section CTA
+Call (904) 555-0199 to discuss which plan fits your needs, or request plan details and pricing online.
+Primary CTA: “Get Plan Details” → /contact?service=ac-maintenance
+PM CTA: “Discuss Portfolio Maintenance” → /contact?service=commercial
+
+5.5 Why AC Maintenance Matters in Jacksonville
+Overview
+An educational section grounding the value of maintenance in Jacksonville’s specific climate conditions. This is not generic “maintenance is good” content — it explains WHY Jacksonville’s environment creates specific demands that make maintenance more critical here than in cooler, drier climates.
+Layout
+Property
+Specification
+Container
+#F0E6D3 (Warm Sand), 960px centered, 64px/32px padding
+Content
+H2
+Why Jacksonville’s Climate Makes AC Maintenance Essential
+
+2,500+ annual operating hours — Your AC runs roughly 3x the national average. Components wear proportionally faster. A capacitor rated for 10 years in Michigan may last 6 in Jacksonville.
+Sustained high humidity (60–90% year-round) — Your system removes moisture as well as heat. Without clean coils and proper refrigerant charge, it loses dehumidification capacity — leaving your home cool but clammy.
+Salt air corrosion (coastal and Beaches neighborhoods) — Properties near the Intracoastal Waterway and the Beaches face accelerated corrosion on outdoor condenser coils, copper refrigerant lines, and electrical connections. Regular inspection catches corrosion before it causes failure.
+Algae growth in condensate drains — Jacksonville’s warmth and humidity create ideal conditions for algae to clog condensate drain lines. A clogged drain causes water damage to floors, walls, and ceilings. A 60-second drain flush during maintenance prevents this.
+Pollen and debris loading — Live oaks, pine pollen, and lawn clippings accumulate on outdoor condenser coils, reducing airflow and forcing the compressor to work harder. Seasonal coil cleaning restores efficiency.
+JEA energy costs — A poorly maintained system uses 15–25% more electricity. On a $200/month summer JEA bill, that’s $30–$50/month in avoidable cost — paying for the maintenance visit within 2–3 months.
+
+5.6 Property Manager Portfolio Maintenance
+Overview
+Dedicated PM section following the established Evergreen-background pattern. The maintenance PM angle emphasizes proactive portfolio management: preventing tenant complaints, budgeting for replacements, and reducing emergency call volume.
+Layout
+Property
+Specification
+Container
+#1A5653 (Evergreen), 1080px, left text 60% + metrics 40%
+Content
+Eyebrow
+FOR PROPERTY MANAGERS
+H3
+Proactive Maintenance Across Your Entire Portfolio
+Body
+Tenant AC complaints drop dramatically when every unit in your portfolio receives scheduled preventive maintenance. Cool & Cozy’s portfolio maintenance program coordinates service across all your Jacksonville properties, delivers system condition reports so you can budget replacements before emergencies force your hand, and ensures every unit is operating efficiently before peak summer demand. The result: fewer emergency calls, lower tenant turnover from comfort complaints, and predictable maintenance costs you can build into your annual operating budget.
+Word Count: 78 words
+
+PM Features
+Coordinated block scheduling across your portfolio (minimize per-visit travel cost)
+System condition scoring: green (good), yellow (monitor), red (plan replacement)
+Annual portfolio health report with remaining lifespan estimates per unit
+Priority emergency response for plan members — your tenants never wait in a queue
+Bilingual tenant communication: English and Spanish
+
+CTA
+Button: “Build Your Portfolio Plan” → /contact?service=commercial
+Design: Same Evergreen bg, glass-card metrics panel, Coral CTA treatment as all PM sections.
+
+5.7 Testimonials
+Same carousel component. At launch, use the 3 Thumbtack reviews. As maintenance-specific reviews accumulate, prioritize those — especially reviews that mention the tune-up process, technician thoroughness, and value for money.
+DEV ACTION: PLACEHOLDER: Maintenance-specific testimonials are the highest priority gap. After launch, the review collection campaign should specifically request feedback from maintenance plan customers.
+
+5.8 FAQ Section (6 Questions)
+Layout
+Property
+Specification
+Container
+#F0E6D3, 800px centered, same accordion pattern
+Content
+FAQ 1
+Q: How often should I have my AC maintained in Jacksonville?
+A: In Jacksonville’s climate, your AC system should be professionally maintained twice per year: once in the spring before cooling season begins (March–April is ideal) and once in the fall before heating season (October–November). This schedule ensures your system is ready for the heavy demand of summer and catches any issues that developed during peak-season operation. Systems in coastal areas (Jacksonville Beach, Atlantic Beach, Neptune Beach) may benefit from a third condenser coil check mid-summer due to accelerated salt air corrosion.
+Word Count: 88 words
+Internal Link: Cross-link opportunity to /resources/how-often-ac-maintenance
+
+FAQ 2
+Q: How much does AC maintenance cost in Jacksonville?
+A: A standard one-time AC tune-up in Jacksonville typically costs between $89 and $150 depending on the provider and the scope of service. Cool & Cozy’s maintenance agreements, which include two annual tune-ups plus priority scheduling and discounted diagnostics, offer better per-visit value than one-time service. Call (904) 555-0199 for current plan pricing specific to your situation.
+Word Count: 60 words
+DEV ACTION: PLACEHOLDER: Pricing ranges ($89–$150) are market estimates. Replace with Cool & Cozy’s actual pricing once confirmed by client.
+
+FAQ 3
+Q: Will regular maintenance really prevent breakdowns?
+A: Industry data consistently shows that regular preventive maintenance reduces the risk of unexpected AC failures by up to 95% and extends system lifespan by 3 to 5 years compared to unmaintained systems. Maintenance catches worn capacitors, low refrigerant, failing contactors, and clogged drains before they cause complete system failure. It does not eliminate all breakdowns — components can fail without warning — but it dramatically reduces the odds.
+Word Count: 69 words
+
+FAQ 4
+Q: Do I need maintenance on a new AC system?
+A: Yes. Even a brand-new system benefits from professional maintenance within its first year. More importantly, most manufacturer warranties require documented annual maintenance to remain valid. If your system fails and you cannot show maintenance records, the manufacturer may deny the warranty claim. Cool & Cozy documents every maintenance visit and keeps records that protect your warranty coverage.
+Word Count: 59 words
+
+FAQ 5
+Q: Can I do AC maintenance myself?
+A: You can and should handle basic maintenance tasks yourself: replace or clean your air filter every 30 to 90 days, keep the area around your outdoor unit clear of vegetation and debris (maintain 2 feet of clearance), and keep supply and return vents unobstructed inside your home. However, professional maintenance involves tasks that require specialized tools, refrigerant handling certification, and electrical testing knowledge — including refrigerant pressure checks, electrical amperage measurements, and condensate system service. These are not DIY-safe tasks.
+Word Count: 89 words
+
+FAQ 6
+Q: Do you offer maintenance plans for property managers with multiple units?
+A: Yes. Cool & Cozy offers portfolio maintenance agreements designed specifically for Jacksonville property managers. Plans include coordinated scheduling across your entire portfolio, per-unit pricing with volume discounts for 10 or more units, priority emergency response, bilingual tenant communication, and annual system condition reports with replacement planning guidance. Call (904) 555-0199 or visit our commercial HVAC page for details.
+Word Count: 61 words
+Internal Link: “commercial HVAC page” → /services/commercial-hvac
+
+FAQPage JSON-LD
+Same schema pattern. Embed in <head> with all 6 questions and FULL answer text.
+
+5.9 Related Services
+Service
+Card Description
+Link
+AC Repair
+If we discover a problem during your maintenance visit, our technicians can diagnose and often repair it the same day — before it becomes an emergency.
+/services/ac-repair
+AC Installation
+When maintenance reveals a system approaching end-of-life, we provide honest replacement guidance with free installation estimates and flexible financing.
+/services/ac-installation
+Indoor Air Quality
+Maintenance is the perfect time to upgrade your filtration, add UV germicidal lights, or install whole-home dehumidification for Jacksonville’s humidity.
+/services/indoor-air-quality
+
+Same 3-card grid design as all service child pages.
+
+5.10 Final CTA Block
+H2
+Don’t Wait for the Breakdown
+Body
+Jacksonville’s next heatwave is always around the corner. Schedule your maintenance now and know your system is ready for whatever summer brings. One visit. One plan. Year-round peace of mind.
+Word Count: 33 words
+CTAs
+Property
+Specification
+Primary
+Schedule Your Tune-Up — Coral bg, pill, /contact?service=ac-maintenance
+Secondary
+Call (904) 555-0199 — white border, pill, tel: link
+Same Evergreen solid bg, 720px centered, 72px/40px padding.
+
+6. Reference: Image Asset Inventory
+Image
+Section
+Dims
+KB
+Format
+Status
+hero-ac-maintenance
+5.1 Hero
+CSS/1920px
+0/180
+CSS or WebP
+Ready/PLCHLDR
+og-ac-maintenance
+4 OG
+1200×630
+200
+WebP+JPEG
+PLACEHOLDER
+3 checklist category icons
+5.3 Tune-Up
+32×32
+2 ea
+SVG
+Create
+26 check mark icons
+5.3 Items
+16×16
+CSS
+CSS/SVG
+Ready
+3 related svc icons
+5.9 Related
+48×48
+3 ea
+SVG
+Reuse
+PM metric icons
+5.6 PM
+32×32
+2 ea
+SVG
+Reuse
+
+Minimal unique image assets on this page. The hero can use the CSS pattern approach. Most icons reuse from existing pages.
+
+7. Reference: GA4 & Implementation Checklist
+7.1 GA4 Events
+Event
+Triggers
+Parameters
+cta_click
+Hero, plan details CTAs, PM “Build Portfolio Plan”, related cards, final CTA
+button_text, destination_url, page_section, service_type: “AC Maintenance”
+phone_click
+Hero, plan section, PM section, FAQ answers, final CTA, header, sticky bar
+phone_number, page_section
+
+Track cta_click with plan_type parameter (“residential” vs. “property_management”) on the maintenance plan section CTAs to measure which audience engages more.
+7.2 Implementation Checklist
+Build
+HTML validates, JSON-LD validates (Service, BreadcrumbList, FAQPage)
+Title tag, meta description, canonical URL unique across site
+Breadcrumb: Home > Services > AC Maintenance, all links functional
+All internal links verified: repair, installation, IAQ, thermostat, commercial, /contact, /resources
+Click-to-call on all tel: links
+FAQ accordion functional (keyboard, touch, screen reader)
+Maintenance checklist 3-column layout stacks correctly on mobile
+Plan cards render correctly side-by-side desktop, stacked mobile
+PM Evergreen section contrast verified
+Performance
+PageSpeed Mobile > 90 (expect 95+ with CSS hero and SVG icons)
+LCP < 2.0s (CSS hero has near-zero LCP cost)
+Content Quality
+AEO paragraph answers “What is AC maintenance in Jacksonville?” within 150 words
+Tune-up checklist is technically accurate (26 items verified against HVAC standards)
+Pricing ranges reflect Jacksonville market (update annually)
+Maintenance benefit statistics (“up to 95%”, “3–5 years”) are sourced from industry data
+No duplicate content with repair, installation, hub, or homepage
+SEO
+No keyword cannibalization with other pages (unique primary: “maintenance”)
+Cross-links to AC Repair and AC Installation are bidirectional
+Cross-link to /resources/how-often-ac-maintenance prepared (article may not exist yet at launch — add link when article publishes)
+XML sitemap includes /services/ac-maintenance, priority 0.8
+
+— End of Document —
+
+Prepared by TradeWorks AI  ·  May 2026  ·  v1.0
+Next recommended guide: Emergency AC Repair (/services/emergency-ac-repair)
+

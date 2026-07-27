@@ -1,0 +1,301 @@
+﻿
+DEVELOPER IMPLEMENTATION GUIDE
+
+COOL & COZY AC REPAIR
+Licensed HVAC Contractor  ·  Jacksonville, Florida
+
+ABOUT US
+Complete Page Build — Single Document
+
+URL: coolcozyac.com/about
+Prepared by: TradeWorks AI  |  Version 1.0  |  May 2026
+Classification: Client Confidential
+
+Table of Contents
+
+1.  Page Identity & Keywords
+2.  <head> Section
+3.  Section-by-Section Build
+3.1  Page Hero
+3.2  Our Story
+3.3  Verifiable Credentials
+3.4  Our Values
+3.5  Meet the Team
+3.6  Bilingual Commitment
+3.7  Community & Jacksonville Connection
+3.8  CTA Block
+4.  Reference: Assets, GA4 & Checklist
+
+1. Page Identity & Keywords
+Property
+Specification
+URL Path
+/about
+Canonical
+https://coolcozyac.com/about
+Page Type
+Trust / About (standalone)
+Parent
+/ (Homepage)
+Breadcrumb
+Home > About
+Primary Keyword
+HVAC contractor Jacksonville FL
+Secondary Keywords
+Cool Cozy AC Repair about, family-owned AC Jacksonville, licensed AC contractor Duval County
+Search Intent
+Navigational (referral validation) / Informational (who are these people?)
+Target Word Count
+1,200–1,600 words
+Primary Conversion
+Phone call or navigate to /contact
+Robots
+index, follow
+Sitemap
+Priority 0.8
+
+1.1 Internal Linking
+TO /services: from credentials section (“see our services”)
+TO /contact: CTA at page bottom
+TO /reviews: link from credentials/trust section
+TO /services/commercial-hvac: PM-specific mention in story/values
+FROM homepage: nav link + trust section “Learn More About Us”
+FROM all pages: nav “About” link
+
+2. <head> Section
+Property
+Specification
+Title Tag
+About Cool & Cozy AC Repair | Family-Owned HVAC | Jacksonville FL
+Title Chars
+65 characters
+Meta Description
+Family-owned, Florida-licensed HVAC contractor serving Jacksonville since 2018. BuildZoom top 13%, 21 permitted projects, bilingual service. Meet the Cool & Cozy team.
+Canonical
+https://coolcozyac.com/about
+JSON-LD: AboutPage schema referencing the homepage HVACBusiness entity + BreadcrumbList (2-level). No FAQPage on this page.
+Preload: Team photo if used as hero background. Otherwise CSS-only hero with no preload needed.
+
+3. Section-by-Section Build
+The About page is the E-E-A-T foundation of the site. Every claim on every other page (“licensed,” “top 13%,” “family-owned,” “bilingual”) finds its proof here. The page tells the Cool & Cozy story through verifiable facts, real team presentation, and Jacksonville community connection.
+
+3.1 Page Hero
+Breadcrumb
+Home > About
+H1
+About Cool & Cozy AC Repair — Jacksonville’s Family-Owned HVAC Team
+Subheadline
+Licensed. Verified. Bilingual. Serving Jacksonville homeowners, businesses, and property managers with honest pricing and expert service since 2018.
+Word Count: 22 words
+Evergreen solid hero, 280px desktop, centered text. No CTA button in hero — the About page is a read page, not a conversion page. The CTA comes at the bottom after the visitor has absorbed the trust content.
+
+3.2 Our Story
+Layout
+Property
+Specification
+Container
+#FFFFFF, 800px centered (narrative width)
+Desktop
+Optional: left text column (60%), right photo of team/founder (40%)
+Mobile
+Photo above (full-width), text below
+Content
+H2
+How Cool & Cozy AC Repair Got Started
+Story Copy
+Cool & Cozy AC Repair was incorporated in Jacksonville, Florida in October 2018 — not as a franchise, not backed by investors, but as a family’s bet on a simple idea: that Jacksonville deserved an AC contractor who shows up on time, charges what they quote, and treats every home like their own.
+The company started with one truck, one technician, and a commitment to doing things right the first time. That commitment hasn’t changed. What has changed is the track record behind it. Over the years, Cool & Cozy has completed 21 documented building permits with Duval County, earned a BuildZoom score of 100 (placing it in the top 13% of all 191,428 licensed contractors in Florida), and built a reputation on Thumbtack for work quality, professionalism, and pricing that customers describe as “exceptional.”
+Today, Cool & Cozy serves homeowners across Jacksonville’s neighborhoods — from Mandarin to the Beaches, from Riverside to Arlington — alongside property managers who trust the company with their entire rental portfolios. The team is bilingual in English and Spanish, reflecting the diverse community Jacksonville is becoming. The pricing is still honest, the service is still personal, and the trucks still show up on time.
+Word Count: 208 words
+This story is written from verified facts (incorporation date, permit count, BuildZoom score, Thumbtack reviews). PLACEHOLDER elements: the founder’s name and any personal anecdotes must come from the client. The story framework is ready for those details to be inserted without rewriting the structure.
+DEV ACTION: PLACEHOLDER: Client must provide founder/owner name, personal background, and any founding story details they want included. The current version works without personal details but is stronger with them.
+Image
+Property
+Specification
+Subject
+Founder/owner portrait, or team group photo. Real people, not stock.
+Format
+WebP + JPEG, 600×400px, < 100KB
+Alt Text
+[Founder name] and the Cool & Cozy AC Repair team in Jacksonville, Florida
+DEV ACTION: PLACEHOLDER: Real team/founder photo required. This is the most important image on the entire site for E-E-A-T. Stock photos on an About page destroy credibility.
+
+3.3 Verifiable Credentials
+Overview
+A proof-based section where every claim links to or references a verifiable source. This is the E-E-A-T backbone. No marketing superlatives — just facts with receipts.
+Layout
+Property
+Specification
+Container
+#EAF3F2 (Sky Mist), 1080px, credentials card grid 2×3 desktop
+Content
+H2
+Credentials You Can Verify
+We don’t ask you to take our word for it. Every credential below is independently verifiable through public records.
+
+Credential
+Detail
+Verify At
+Florida Contractor License
+CAC1819948 — Certified Air Conditioning Contractor, Active
+Florida DBPR (myfloridalicense.com)
+BuildZoom Score
+100 out of 100 — Top 13% of 191,428 FL licensed contractors
+buildzoom.com/contractor/cool-cozy-ac-repair-llc
+Building Permits
+21 permitted projects totaling ~$59,700 documented work in Duval County
+BuildZoom permit records
+Business Registration
+Cool & Cozy AC Repair LLC, FL LLC# L18000244456, incorporated October 17, 2018
+Florida Division of Corporations (sunbiz.org)
+Insurance
+General liability and property damage insurance as required by FL Construction Industry License Board
+Verification available on request
+Bilingual Service
+Full service delivery in English and Spanish — not just a translated website, but bilingual technicians on every call
+—
+
+The “Verify At” column is a powerful trust move. Linking to external verification sources (DBPR, BuildZoom, SunBiz) invites the visitor to check the claims themselves. Visitors who verify become significantly more trusting than those who just read claims.
+DEV ACTION: Link the BuildZoom URL and SunBiz URL as external links (open in new tab). DBPR license lookup can link to the search page with instructions to search by license number CAC1819948.
+
+3.4 Our Values
+Layout
+Property
+Specification
+Container
+#FFFFFF, 1080px, 3-column card grid desktop
+Content
+H2
+What We Stand For
+
+Value
+What It Means in Practice
+Honest Pricing
+You get a written quote before work begins. The quote is the price. No change orders, no “while we’re here” surprises, no upselling parts or services you don’t need. If a repair is cheaper than we estimated, you pay the lower amount.
+Show Up On Time
+We give you a specific arrival window and call 30 minutes before we arrive. We don’t ask you to block off a half-day. If we’re running late (it happens), we call to let you know — you’re never left wondering.
+Fix It Right
+We diagnose the root cause, not just the symptom. We use the correct parts at the correct specifications. We test the system thoroughly before we leave. And if something we repaired fails within our warranty period, we come back and make it right at no additional cost.
+Respect Your Home
+We wear shoe covers indoors, lay drop cloths around work areas, and clean up completely when we’re done. Your home should look the same after we leave — except the AC works.
+Speak Your Language
+Our bilingual team serves English and Spanish-speaking customers with equal care and clarity. When you’re stressed about a broken AC, communicating in the language you’re most comfortable with makes the experience better.
+Earn the Relationship
+We don’t expect loyalty — we earn it. Through consistent quality, fair pricing, and service that respects your time and your budget. Every job is an audition for the next one.
+
+Each value is stated as a BEHAVIOR, not a platitude. “Honesty” is a platitude. “You get a written quote before work begins and the quote is the price” is a behavior. The specificity makes the values believable.
+
+3.5 Meet the Team
+Overview
+Team introduction section. Real photos, real names, real roles. This section is critical for E-E-A-T: Google’s quality rater guidelines specifically look for evidence that real people stand behind a business.
+Layout
+Property
+Specification
+Container
+#F0E6D3 (Warm Sand), 1080px centered
+Cards
+2–3 team member cards with photo + name + role + brief bio
+Mobile
+Single column stacked
+Content
+H2
+The People Behind Cool & Cozy
+DEV ACTION: PLACEHOLDER: This entire section requires client-supplied content. We need: names, roles, headshot photos, and 2–3 sentence bios for each team member. At minimum, the founder/owner should be featured. Technicians can be added as the team grows. DO NOT use stock photos for team members — this destroys the E-E-A-T value of the section.
+Team card design: photo (200×200px, circular crop, border 3px solid #5CB8B2), name (Poppins 18px/600, #2C2C2C), role (Poppins 14px/400, #5CB8B2), bio (Poppins 14px/400, #3D3D3D, 2–3 sentences). Card bg: #FFFFFF, 16px radius, 24px padding.
+
+3.6 Our Bilingual Commitment
+Layout
+Property
+Specification
+Container
+#1A5653 (Evergreen), 960px centered
+Content
+H2
+Serving Jacksonville’s Diverse Community
+Jacksonville’s Hispanic and Latino population is growing steadily, and a significant number of homeowners and tenants prefer to communicate in Spanish. Cool & Cozy’s bilingual team doesn’t just translate a phone greeting — we provide full-service delivery in Spanish: scheduling, on-site communication, repair explanations, quotes, follow-up, and invoicing. For property managers with Spanish-speaking tenants, this means smoother service visits, better tenant communication, and fewer misunderstandings.
+Word Count: 75 words
+Visitenos en coolcozyac.com/es para información completa en español.
+Link: /es — Spanish homepage
+Design: Evergreen bg, #F0E6D3 text, Coral CTA color. Globe icon (SVG, 48px, #5CB8B2). Short section — impactful but not overdone.
+
+3.7 Community & Jacksonville Connection
+Overview
+A brief section connecting Cool & Cozy to Jacksonville as a place, not just a market. This signals to both Google and visitors that Cool & Cozy is genuinely local — not a remote operation with a Jacksonville phone number.
+Content
+H2
+Rooted in Jacksonville
+Cool & Cozy AC Repair is not just based in Jacksonville — we are part of Jacksonville. Our team lives in the neighborhoods we serve: Southside, Mandarin, Arlington, Riverside. We understand the specific challenges of maintaining AC systems in Northeast Florida’s subtropical climate — from the year-round humidity that demands constant cooling to the salt air corrosion that affects systems near the Beaches and the Intracoastal Waterway. We know that a July afternoon without AC in this city is not an inconvenience, it’s a crisis. And we respond accordingly.
+Word Count: 95 words
+DEV ACTION: PLACEHOLDER: If the client has any community involvement (sponsorships, charity work, local events, sports team support), add it here with real photos. Community content generates backlink opportunities and deepens the local trust signal.
+
+3.8 CTA Block
+H2
+Ready to Work With a Team That Cares?
+Body
+Now that you know who we are and what we stand for, let’s talk about what you need. Whether it’s a repair, an installation, a maintenance plan, or HVAC service for your entire property portfolio — call us or request a free estimate.
+CTAs
+Property
+Specification
+Primary
+Get a Free Estimate — Coral bg, pill, /contact
+Secondary
+Call (904) 555-0199 — white border, pill, tel: link
+Evergreen solid bg, 720px centered, 72px/40px padding.
+
+4. Reference: Assets, GA4 & Checklist
+4.1 Image Assets
+Image
+Section
+Format
+KB
+Status
+founder/team hero photo
+3.2 Story
+WebP+JPEG 600×400
+100
+PLACEHOLDER
+team member headshots (2–3)
+3.5 Team
+WebP 400×400
+60 ea
+PLACEHOLDER
+community photos
+3.7 Community
+WebP 800×400
+80
+PLACEHOLDER
+og-about
+OG
+WebP+JPEG 1200×630
+200
+PLACEHOLDER
+6 value icons
+3.4 Values
+SVG 40×40
+2 ea
+Create
+globe icon
+3.6 Bilingual
+SVG 48×48
+2
+Create
+
+The About page has the highest real-photo requirement of any page. Stock photos here undermine the entire E-E-A-T strategy. Prioritize sourcing real founder/team photos before launch. If photos are not available at launch, use a text-only layout with a prominent note: “Photos coming soon — we’re a small team that’s usually too busy fixing AC to pose for cameras.”
+4.2 GA4
+Minimal events: phone_click (hero area, CTA), cta_click (CTA button → /contact). No form events on this page.
+4.3 Checklist
+HTML/JSON-LD validates (AboutPage, BreadcrumbList), title/canonical unique
+Credentials table: all external verification links (BuildZoom, DBPR, SunBiz) open in new tab and are functional
+Team section: real photos sourced (or placeholder text approved for launch)
+Story copy verified with client for factual accuracy (incorporation date, founding details)
+Values are stated as behaviors, not platitudes
+Bilingual section links to /es
+Community section: add real community involvement content if available
+No duplicate content with homepage trust bar or PM sections
+Cross-links to /services, /contact, /reviews, /services/commercial-hvac verified
+PageSpeed Mobile > 90 (expect 95+ with minimal images if using CSS hero)
+Alt text on all real photos is descriptive (includes names and Jacksonville context)
+
+— End of Document —
+Prepared by TradeWorks AI  ·  May 2026  ·  v1.0
+

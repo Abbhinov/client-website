@@ -1,0 +1,341 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 900" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Moving boxes with keys and cleaning supplies representing move-in move-out cleaning service">
+  <defs>
+    <linearGradient id="bgBase" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0F2E3F"/>
+      <stop offset="50%" stop-color="#1F4A66"/>
+      <stop offset="100%" stop-color="#2D6585"/>
+    </linearGradient>
+    <linearGradient id="wallFade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="40%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.15"/>
+    </linearGradient>
+    <radialGradient id="spotlight" cx="0.75" cy="0.2" r="0.85">
+      <stop offset="0%" stop-color="#FFF4D8" stop-opacity="0.7"/>
+      <stop offset="25%" stop-color="#F2C98A" stop-opacity="0.35"/>
+      <stop offset="55%" stop-color="#5EE9C4" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#5EE9C4" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="rimLight" x1="1" y1="0" x2="0" y2="0">
+      <stop offset="0%" stop-color="#5EE9C4" stop-opacity="0.12"/>
+      <stop offset="20%" stop-color="#5EE9C4" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#5EE9C4" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F5F0E5"/>
+      <stop offset="55%" stop-color="#E5DECC"/>
+      <stop offset="100%" stop-color="#B8AE95"/>
+    </linearGradient>
+    <linearGradient id="floorShade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.5"/>
+      <stop offset="30%" stop-color="#000000" stop-opacity="0.25"/>
+      <stop offset="60%" stop-color="#000000" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2D5775"/>
+      <stop offset="100%" stop-color="#1A3D55"/>
+    </linearGradient>
+    <linearGradient id="cardboard" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#D4A574"/>
+      <stop offset="100%" stop-color="#A87848"/>
+    </linearGradient>
+    <linearGradient id="cardboardSide" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#9E6E40"/>
+      <stop offset="100%" stop-color="#7D5430"/>
+    </linearGradient>
+    <linearGradient id="cardboardTop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#E5BC8A"/>
+      <stop offset="100%" stop-color="#C9985C"/>
+    </linearGradient>
+    <radialGradient id="bubble" cx="0.35" cy="0.3" r="0.7">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.85"/>
+      <stop offset="35%" stop-color="#B8F4E0" stop-opacity="0.45"/>
+      <stop offset="70%" stop-color="#5EE9C4" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#5EE9C4" stop-opacity="0.04"/>
+    </radialGradient>
+    <radialGradient id="bubbleHi" cx="0.3" cy="0.25" r="0.18">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="sparkle" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="1"/>
+      <stop offset="35%" stop-color="#A8F0DC" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#5EE9C4" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="textZone" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0A2030" stop-opacity="0.75"/>
+      <stop offset="25%" stop-color="#0A2030" stop-opacity="0.55"/>
+      <stop offset="50%" stop-color="#0A2030" stop-opacity="0.2"/>
+      <stop offset="75%" stop-color="#0A2030" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#0A2030" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="vignette" cx="0.7" cy="0.5" r="0.95">
+      <stop offset="60%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.3"/>
+    </radialGradient>
+    <linearGradient id="bottle" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8FF5DC"/>
+      <stop offset="100%" stop-color="#2EB893"/>
+    </linearGradient>
+    <linearGradient id="metalDark" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0A0A0A"/>
+      <stop offset="50%" stop-color="#2A2A2A"/>
+      <stop offset="100%" stop-color="#000000"/>
+    </linearGradient>
+    <radialGradient id="keyMetal" cx="0.3" cy="0.3" r="0.7">
+      <stop offset="0%" stop-color="#FFE8A8"/>
+      <stop offset="50%" stop-color="#D4A574"/>
+      <stop offset="100%" stop-color="#8B6635"/>
+    </radialGradient>
+    <filter id="objShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="8"/>
+      <feOffset dx="6" dy="14"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.5"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.05 0"/>
+      <feComposite in2="SourceGraphic" operator="in"/>
+    </filter>
+    <symbol id="sparkleStar" viewBox="-50 -50 100 100">
+      <path d="M 0 -48 C 4 -14 14 -4 48 0 C 14 4 4 14 0 48 C -4 14 -14 4 -48 0 C -14 -4 -4 -14 0 -48 Z" fill="url(#sparkle)"/>
+    </symbol>
+  </defs>
+
+  <!-- Base bg -->
+  <rect width="1920" height="900" fill="url(#bgBase)"/>
+  <rect width="1920" height="600" fill="url(#wall)" opacity="0.5"/>
+  <rect width="1920" height="900" fill="url(#wallFade)"/>
+
+  <!-- Polished cream floor (move-in feel) -->
+  <rect x="0" y="640" width="1920" height="260" fill="url(#floor)"/>
+  <g stroke="#9A8E72" stroke-width="1.2" fill="none" opacity="0.3">
+    <path d="M 0 710 Q 250 700 500 715 T 1000 710 T 1500 720 T 1920 715"/>
+    <path d="M 0 780 Q 300 775 600 785 T 1200 780 T 1920 790"/>
+    <path d="M 0 850 Q 350 840 700 855 T 1400 850 T 1920 855"/>
+  </g>
+  <rect x="0" y="638" width="1920" height="3" fill="#FFFFFF" opacity="0.5"/>
+  <rect x="0" y="638" width="1920" height="262" fill="url(#floorShade)"/>
+
+  <!-- Spotlight -->
+  <rect width="1920" height="900" fill="url(#spotlight)"/>
+
+  <!-- ===== WINDOW with sunlight (back wall) ===== -->
+  <g filter="url(#objShadow)">
+    <rect x="1320" y="100" width="280" height="320" fill="#1A1A1A"/>
+    <rect x="1330" y="110" width="260" height="300" fill="#A8DCE0" opacity="0.6"/>
+    <!-- Window cross frames -->
+    <rect x="1330" y="255" width="260" height="6" fill="#1A1A1A"/>
+    <rect x="1457" y="110" width="6" height="300" fill="#1A1A1A"/>
+    <!-- Light rays through window -->
+    <rect x="1330" y="110" width="260" height="300" fill="#FFF4D8" opacity="0.4"/>
+    <!-- Window highlight reflection -->
+    <path d="M 1340 120 L 1450 120 L 1340 240 Z" fill="#FFFFFF" opacity="0.3"/>
+  </g>
+
+  <!-- ===== STACK OF MOVING BOXES (right side, hero focal) ===== -->
+
+  <!-- Bottom large box -->
+  <g filter="url(#objShadow)">
+    <ellipse cx="1500" cy="640" rx="280" ry="14" fill="#000" opacity="0.4"/>
+    <!-- Front face -->
+    <rect x="1240" y="450" width="380" height="190" fill="url(#cardboard)"/>
+    <!-- Top face (perspective) -->
+    <path d="M 1240 450 L 1300 410 L 1680 410 L 1620 450 Z" fill="url(#cardboardTop)"/>
+    <!-- Right side face -->
+    <path d="M 1620 450 L 1680 410 L 1680 600 L 1620 640 Z" fill="url(#cardboardSide)"/>
+    <!-- Box flap (open) -->
+    <path d="M 1330 410 L 1410 350 L 1490 350 L 1430 410 Z" fill="#C9985C" opacity="0.9"/>
+    <!-- Brown packing tape -->
+    <rect x="1240" y="540" width="380" height="22" fill="#9E6E40" opacity="0.85"/>
+    <rect x="1240" y="540" width="380" height="2" fill="#FFFFFF" opacity="0.3"/>
+    <!-- Tape on top -->
+    <path d="M 1430 410 L 1430 450 L 1450 470 L 1450 430 L 1490 390 L 1490 410 Z" fill="#9E6E40" opacity="0.7"/>
+    <!-- Label -->
+    <rect x="1290" y="460" width="120" height="50" fill="#FAFAF5"/>
+    <rect x="1290" y="460" width="120" height="50" fill="none" stroke="#5A4020" stroke-width="1"/>
+    <rect x="1300" y="470" width="100" height="3" fill="#0F2E3F"/>
+    <rect x="1300" y="478" width="80" height="2" fill="#0F2E3F" opacity="0.6"/>
+    <rect x="1300" y="488" width="90" height="2" fill="#0F2E3F" opacity="0.6"/>
+    <rect x="1300" y="495" width="70" height="2" fill="#5EE9C4"/>
+    <!-- "FRAGILE" stamp -->
+    <text x="1480" y="500" font-family="Impact, sans-serif" font-size="22" fill="#C42E2E" opacity="0.85" transform="rotate(-8 1480 500)">FRAGILE</text>
+  </g>
+
+  <!-- Middle box (smaller, stacked on top-left) -->
+  <g filter="url(#objShadow)">
+    <rect x="1190" y="320" width="220" height="130" fill="url(#cardboard)"/>
+    <path d="M 1190 320 L 1230 290 L 1450 290 L 1410 320 Z" fill="url(#cardboardTop)"/>
+    <path d="M 1410 320 L 1450 290 L 1450 420 L 1410 450 Z" fill="url(#cardboardSide)"/>
+    <!-- Tape -->
+    <rect x="1190" y="370" width="220" height="14" fill="#9E6E40" opacity="0.85"/>
+    <!-- Label -->
+    <rect x="1220" y="335" width="80" height="32" fill="#FAFAF5"/>
+    <rect x="1226" y="343" width="68" height="3" fill="#0F2E3F"/>
+    <rect x="1226" y="351" width="55" height="2" fill="#0F2E3F" opacity="0.6"/>
+    <rect x="1226" y="358" width="45" height="2" fill="#5EE9C4"/>
+  </g>
+
+  <!-- Small box on right (stacked) -->
+  <g filter="url(#objShadow)">
+    <rect x="1640" y="380" width="180" height="120" fill="url(#cardboard)"/>
+    <path d="M 1640 380 L 1670 360 L 1850 360 L 1820 380 Z" fill="url(#cardboardTop)"/>
+    <path d="M 1820 380 L 1850 360 L 1850 480 L 1820 500 Z" fill="url(#cardboardSide)"/>
+    <!-- Tape -->
+    <rect x="1640" y="420" width="180" height="12" fill="#9E6E40" opacity="0.85"/>
+  </g>
+
+  <!-- Small top box -->
+  <g filter="url(#objShadow)">
+    <rect x="1640" y="270" width="150" height="110" fill="url(#cardboard)"/>
+    <path d="M 1640 270 L 1665 250 L 1815 250 L 1790 270 Z" fill="url(#cardboardTop)"/>
+    <path d="M 1790 270 L 1815 250 L 1815 360 L 1790 380 Z" fill="url(#cardboardSide)"/>
+    <rect x="1640" y="310" width="150" height="10" fill="#9E6E40" opacity="0.85"/>
+    <!-- "KITCHEN" text -->
+    <text x="1665" y="350" font-family="Arial Black, sans-serif" font-size="16" font-weight="900" fill="#3A2515">KITCHEN</text>
+  </g>
+
+  <!-- ===== CLEANING BUCKET (left of boxes) ===== -->
+  <g filter="url(#objShadow)">
+    <!-- Shadow -->
+    <ellipse cx="1080" cy="640" rx="80" ry="10" fill="#000" opacity="0.35"/>
+    <!-- Bucket body (mint) -->
+    <path d="M 1010 480 L 1150 480 L 1135 635 L 1025 635 Z" fill="url(#bottle)"/>
+    <!-- Bucket rim -->
+    <ellipse cx="1080" cy="480" rx="70" ry="12" fill="#2EB893"/>
+    <ellipse cx="1080" cy="478" rx="65" ry="9" fill="#5EE9C4"/>
+    <ellipse cx="1080" cy="478" rx="55" ry="6" fill="#0F2E3F" opacity="0.8"/>
+    <!-- Bucket handle -->
+    <path d="M 1015 480 Q 1080 410 1145 480" stroke="#1A1A1A" stroke-width="4" fill="none"/>
+    <!-- Highlight -->
+    <rect x="1020" y="490" width="6" height="135" rx="2" fill="#FFFFFF" opacity="0.5"/>
+
+    <!-- Sponges peeking out -->
+    <rect x="1040" y="465" width="32" height="20" rx="3" fill="#F5E5C0"/>
+    <rect x="1040" y="465" width="32" height="20" rx="3" fill="none" stroke="#5EE9C4" stroke-width="2"/>
+    <g fill="#5EE9C4">
+      <circle cx="1048" cy="475" r="1.5"/>
+      <circle cx="1058" cy="472" r="1.5"/>
+      <circle cx="1068" cy="478" r="1.5"/>
+      <circle cx="1063" cy="482" r="1.5"/>
+    </g>
+    <!-- Brush handle -->
+    <rect x="1090" y="430" width="8" height="55" rx="3" fill="#0F2E3F"/>
+    <rect x="1083" y="425" width="22" height="12" rx="3" fill="#F5E5C0"/>
+    <g fill="#3A2515">
+      <circle cx="1087" cy="434" r="1"/>
+      <circle cx="1094" cy="434" r="1"/>
+      <circle cx="1101" cy="434" r="1"/>
+    </g>
+  </g>
+
+  <!-- ===== SPRAY BOTTLE on floor (foreground) ===== -->
+  <g filter="url(#objShadow)" transform="translate(900, 520)">
+    <ellipse cx="42" cy="155" rx="50" ry="6" fill="#000" opacity="0.25"/>
+    <rect x="8" y="35" width="68" height="118" rx="8" fill="url(#bottle)"/>
+    <rect x="12" y="38" width="4" height="110" rx="2" fill="#FFFFFF" opacity="0.5"/>
+    <rect x="65" y="38" width="11" height="112" rx="3" fill="#000" opacity="0.15"/>
+    <rect x="14" y="73" width="56" height="55" fill="#FAFAF5"/>
+    <rect x="20" y="80" width="44" height="4" rx="1" fill="#0F2E3F"/>
+    <rect x="20" y="88" width="36" height="3" rx="1" fill="#3DC9A4"/>
+    <rect x="20" y="100" width="40" height="2" rx="1" fill="#0F2E3F" opacity="0.3"/>
+    <rect x="20" y="106" width="34" height="2" rx="1" fill="#0F2E3F" opacity="0.3"/>
+    <rect x="20" y="118" width="28" height="3" rx="1" fill="#5EE9C4"/>
+    <rect x="22" y="23" width="40" height="14" fill="#2EB893"/>
+    <path d="M 10 7 L 78 7 L 84 25 L 78 33 L 38 33 L 38 23 L 10 23 Z" fill="#0F2E3F"/>
+    <rect x="0" y="23" width="16" height="8" rx="3" fill="#0F2E3F"/>
+    <rect x="80" y="15" width="10" height="5" fill="#1A1A1A"/>
+  </g>
+
+  <!-- ===== KEYS WITH KEYCHAIN (foreground, hero detail) ===== -->
+  <g filter="url(#objShadow)" transform="translate(820, 720) rotate(-15)">
+    <!-- House-shaped keychain (mint) -->
+    <path d="M 0 30 L 50 30 L 50 0 L 25 -20 L 0 0 Z" fill="#5EE9C4"/>
+    <path d="M 25 -20 L 0 0 L 50 0 Z" fill="#3DC9A4" opacity="0.7"/>
+    <!-- Door on house -->
+    <rect x="18" y="10" width="14" height="20" fill="#0F2E3F"/>
+    <circle cx="29" cy="20" r="1.5" fill="#5EE9C4"/>
+    <!-- Window -->
+    <rect x="6" y="5" width="8" height="8" fill="#FFFFFF"/>
+    <rect x="36" y="5" width="8" height="8" fill="#FFFFFF"/>
+    <!-- Ring -->
+    <circle cx="60" cy="30" r="6" fill="none" stroke="#D4A574" stroke-width="2.5"/>
+    <!-- Key 1 -->
+    <g transform="translate(66, 30) rotate(20)">
+      <circle cx="0" cy="0" r="10" fill="url(#keyMetal)"/>
+      <circle cx="0" cy="0" r="4" fill="#5A4020"/>
+      <rect x="10" y="-2" width="42" height="4" fill="url(#keyMetal)"/>
+      <rect x="45" y="-1" width="4" height="6" fill="url(#keyMetal)"/>
+      <rect x="40" y="-1" width="3" height="5" fill="url(#keyMetal)"/>
+    </g>
+    <!-- Key 2 -->
+    <g transform="translate(66, 30) rotate(45)">
+      <circle cx="0" cy="0" r="9" fill="url(#keyMetal)" opacity="0.95"/>
+      <circle cx="0" cy="0" r="3.5" fill="#5A4020"/>
+      <rect x="9" y="-2" width="38" height="4" fill="url(#keyMetal)"/>
+      <rect x="41" y="-1" width="3" height="5" fill="url(#keyMetal)"/>
+      <rect x="36" y="-1" width="3" height="4" fill="url(#keyMetal)"/>
+    </g>
+  </g>
+
+  <!-- Doormat (foreground left of boxes) -->
+  <g filter="url(#objShadow)">
+    <ellipse cx="1120" cy="800" rx="180" ry="14" fill="#000" opacity="0.2"/>
+    <path d="M 940 790 L 1300 790 L 1280 820 L 960 820 Z" fill="#5A4020"/>
+    <path d="M 940 790 L 1300 790 L 1295 798 L 945 798 Z" fill="#8B6635"/>
+    <g stroke="#3A2515" stroke-width="0.8" opacity="0.5">
+      <line x1="960" y1="798" x2="1280" y2="798"/>
+      <line x1="955" y1="805" x2="1285" y2="805"/>
+      <line x1="950" y1="812" x2="1290" y2="812"/>
+    </g>
+    <!-- "WELCOME" -->
+    <text x="1120" y="813" text-anchor="middle" font-family="Arial Black, sans-serif" font-size="16" font-weight="900" fill="#F5E5C0">WELCOME</text>
+  </g>
+
+  <!-- Rim light -->
+  <rect width="1920" height="900" fill="url(#rimLight)"/>
+
+  <!-- Bubbles -->
+  <g>
+    <g><circle cx="1100" cy="200" r="45" fill="url(#bubble)"/><ellipse cx="1085" cy="187" rx="12" ry="8" fill="url(#bubbleHi)"/></g>
+    <g><circle cx="1700" cy="150" r="30" fill="url(#bubble)"/><ellipse cx="1693" cy="142" rx="7" ry="5" fill="url(#bubbleHi)"/></g>
+    <g><circle cx="950" cy="380" r="22" fill="url(#bubble)"/><ellipse cx="945" cy="374" rx="6" ry="4" fill="url(#bubbleHi)"/></g>
+    <circle cx="1300" cy="200" r="10" fill="url(#bubble)"/>
+    <circle cx="1880" cy="280" r="12" fill="url(#bubble)"/>
+    <circle cx="1500" cy="180" r="8" fill="url(#bubble)"/>
+  </g>
+
+  <!-- Sparkles -->
+  <use href="#sparkleStar" x="1240" y="180" width="55" height="55"/>
+  <use href="#sparkleStar" x="1470" y="120" width="42" height="42"/>
+  <use href="#sparkleStar" x="1850" y="450" width="50" height="50"/>
+  <use href="#sparkleStar" x="1100" y="700" width="40" height="40"/>
+  <use href="#sparkleStar" x="1700" y="600" width="48" height="48"/>
+  <use href="#sparkleStar" x="1380" y="730" width="38" height="38"/>
+  <use href="#sparkleStar" x="1820" y="120" width="44" height="44"/>
+  <use href="#sparkleStar" x="970" y="640" width="36" height="36"/>
+  <use href="#sparkleStar" x="1260" y="800" width="42" height="42"/>
+  <use href="#sparkleStar" x="1600" y="780" width="40" height="40"/>
+
+  <g fill="#FFFFFF">
+    <circle cx="1340" cy="200" r="2" opacity="0.9"/>
+    <circle cx="1490" cy="270" r="1.6" opacity="0.85"/>
+    <circle cx="1860" cy="320" r="2" opacity="0.9"/>
+    <circle cx="1180" cy="400" r="2" opacity="0.9"/>
+    <circle cx="990" cy="500" r="1.6" opacity="0.8"/>
+    <circle cx="1730" cy="540" r="1.8" opacity="0.85"/>
+    <circle cx="1050" cy="240" r="1.5" opacity="0.8"/>
+    <circle cx="1540" cy="350" r="1.8" opacity="0.85"/>
+  </g>
+
+  <!-- Text zone -->
+  <rect width="1920" height="900" fill="url(#textZone)"/>
+  <ellipse cx="280" cy="680" rx="450" ry="320" fill="#5EE9C4" opacity="0.05"/>
+  <ellipse cx="150" cy="220" rx="350" ry="260" fill="#5EE9C4" opacity="0.035"/>
+
+  <rect width="1920" height="900" fill="url(#vignette)"/>
+  <rect width="1920" height="900" filter="url(#grain)" opacity="0.6"/>
+  <rect width="1920" height="900" fill="#0F2E3F" opacity="0.05" style="mix-blend-mode: multiply"/>
+</svg>

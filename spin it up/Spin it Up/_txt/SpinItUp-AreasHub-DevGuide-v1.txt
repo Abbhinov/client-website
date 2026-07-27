@@ -1,0 +1,322 @@
+
+SPIN IT UP LAUNDRY
+SERVICE AREAS HUBDEVELOPER GUIDE
+Section-by-Section Implementation Specification
+
+URL: spinituplaundry.net/areas/
+Prepared by: TradeWorks AI  |  Version 1.0  |  May 2026
+Classification: Client Confidential
+
+Table of Contents
+1  How to Use This Guide
+2  Page Identity & Architecture
+3  Keyword Strategy
+4  Complete <head> Section
+5  Section 1: Header
+6  Section 2: Hero Banner
+7  Section 3: AEO Introduction
+8  Section 4: Neighborhood Cards
+9  Section 5: Coverage Map
+10  Section 6: Why Location Matters
+11  Section 7: CTA Block
+12  Section 8: Footer & Sticky CTA
+13  Reference: Image Assets, GA4, Checklist
+
+1. How to Use This Guide
+This guide covers the Service Areas Hub page (/areas/). It is the parent page of the Areas silo, linking down to individual neighborhood child pages. Its primary job is geographic SEO coverage — establishing that Spin It Up serves specific neighborhoods on Chicago’s Northwest Side — and routing visitors to their neighborhood’s dedicated page.
+The page is deliberately concise (400–600 words). Detailed neighborhood content lives on the child pages. This hub provides the map, the links, and the AEO anchor for “laundromat near me” queries with geographic context.
+
+2. Page Identity & Architecture
+URL Path
+/areas/
+Page Type
+Hub — Areas Silo Parent
+Canonical URL
+https://spinituplaundry.net/areas/
+Breadcrumb
+Home > Service Areas
+Parent Page
+/ (Homepage)
+Child Pages
+/areas/avondale/, /areas/irving-park/, /areas/logan-square/, /areas/hermosa/, /areas/albany-park/
+Primary Keyword
+laundry service northwest side chicago (70–140/mo)
+Secondary Keywords
+laundromat avondale irving park logan square, laundry pickup delivery area chicago
+Search Intent
+Local / Navigational
+Target Word Count
+400–600 words
+Primary Conversion Goal
+Click-through to neighborhood child pages
+Secondary Goals
+Phone call, directions click
+Robots
+index, follow
+Sitemap
+Include — priority 0.8
+hreflang
+<link rel="alternate" hreflang="es" href="https://spinituplaundry.net/es/areas/">
+Internal Linking Requirements
+Direction
+Link
+Anchor Text
+Down → Child
+/areas/avondale/
+Avondale
+Down → Child
+/areas/irving-park/
+Irving Park
+Down → Child
+/areas/logan-square/
+Logan Square
+Down → Child
+/areas/hermosa/
+Hermosa
+Down → Child
+/areas/albany-park/
+Albany Park
+Cross-silo
+/services/
+Our Services
+Cross-silo
+/services/pickup-delivery/
+Pickup & Delivery
+Cross-silo
+/pricing/
+View Pricing
+Cross-silo
+/contact/
+Contact Us
+Up → Root
+/
+Home (breadcrumb)
+
+3. Keyword Strategy
+Keyword
+Est. Volume
+Placement
+laundry service northwest side chicago
+70–140
+H1, title, AEO paragraph
+laundromat near me
+201,000 (local)
+Served via GBP + hub + child pages
+laundry pickup avondale irving park
+20–50 each
+Neighborhood cards
+laundromat delivery logan square
+30–70
+Neighborhood cards
+laundry service hermosa chicago
+10–30
+Neighborhood cards
+
+4. Complete <head> Section
+Tag
+Content
+<title>
+Service Areas | Spin It Up Laundry — Avondale, Irving Park, Logan Square & More (60 characters)
+<meta description>
+Laundry services across Chicago’s Northwest Side: Avondale, Irving Park, Logan Square, Hermosa & Albany Park. Self-service, wash & fold & delivery. (150 characters)
+<meta robots>
+index, follow
+<link canonical>
+https://spinituplaundry.net/areas/
+
+JSON-LD: CollectionPage with ItemList (same pattern as Services Hub) linking to the 5 neighborhood child pages + BreadcrumbList.
+
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Service Areas | Spin It Up Laundry",
+  "description": "Neighborhoods served by Spin It Up Laundry on Chicago's Northwest Side.",
+  "url": "https://spinituplaundry.net/areas/",
+  "mainEntity": {
+    "@type": "ItemList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Avondale", "url": "https://spinituplaundry.net/areas/avondale/" },
+      { "@type": "ListItem", "position": 2, "name": "Irving Park", "url": "https://spinituplaundry.net/areas/irving-park/" },
+      { "@type": "ListItem", "position": 3, "name": "Logan Square", "url": "https://spinituplaundry.net/areas/logan-square/" },
+      { "@type": "ListItem", "position": 4, "name": "Hermosa", "url": "https://spinituplaundry.net/areas/hermosa/" },
+      { "@type": "ListItem", "position": 5, "name": "Albany Park", "url": "https://spinituplaundry.net/areas/albany-park/" }
+    ]
+  }
+}
+
+
+5. Section 1: Header
+Global header. Solid white. “Areas” nav item active.
+
+6. Section 2: Hero Banner
+Breadcrumb: Home > Service Areas
+
+H1: "Laundry Services Across Chicago’s Northwest Side" — 7 words. White. Font: 40px/800 (desktop), 28px (mobile).
+
+Subheadline: "Self-service, wash & fold, and pickup & delivery serving Avondale, Irving Park, Logan Square, Hermosa, and Albany Park." — 17 words. 18px/400 rgba(255,255,255,0.85). Max-width: 660px.
+Background: Spin Blue gradient. Padding: 56px 0 desktop, 40px 16px mobile.
+
+7. Section 3: AEO Introduction
+NEW:  AEO paragraph
+
+"Spin It Up Laundry at 3710 N Kimball Ave provides laundry services to five neighborhoods on Chicago’s Northwest Side: Avondale, Irving Park, Logan Square, Hermosa, and Albany Park. Walk-in self-service and wash-and-fold drop-off are available at our Avondale facility, open 6:00 AM to 11:00 PM daily. Pickup and delivery through the Cents app is available to all five neighborhoods, with most orders completed within 24 hours. Commercial laundry service with scheduled pickup is available throughout the delivery area." — 79 words.
+Font: 18px/400 Body Text. Max-width: 800px, centered. Background: White.
+
+8. Section 4: Neighborhood Cards
+Section Overview
+Five cards, one per neighborhood. Each card links to the dedicated child page. This is the hub’s core navigation function. Background: Ice Blue (#F0F9FF).
+H2: "Our Service Areas" — 3 words. Centered. Font: 36px/700, Dark Slate. Margin-bottom 48px.
+
+Card
+Neighborhood
+Zone
+Distance
+Description
+CTA
+1
+Avondale
+Home base
+—
+"Our home neighborhood. Walk in anytime or schedule pickup from your door. 3710 N Kimball Ave, ZIP 60618."
+Visit Avondale Page →
+2
+Irving Park
+Primary
+~1.5 mi north
+"Historic homes, quiet streets, and just minutes from our facility. Full delivery coverage via the Cents app."
+Visit Irving Park Page →
+3
+Logan Square
+Primary
+~1.5 mi south
+"One of Chicago’s most popular neighborhoods. Pickup and delivery available throughout Logan Square and Palmer Square."
+Visit Logan Square Page →
+4
+Hermosa
+Primary
+~1 mi west
+"Classic bungalow neighborhood directly west of us. Full pickup and delivery coverage."
+Visit Hermosa Page →
+5
+Albany Park
+Extended
+~2.5 mi north
+"Diverse Northwest Side neighborhood at the edge of our delivery zone. Delivery available — confirm coverage in the Cents app."
+Visit Albany Park Page →
+Each card: bg white, border 1px #E2E8F0, border-radius 12px, padding 24px. Neighborhood name as H3: 22px/700 Spin Blue, clickable. Zone badge: pill, 13px/600. Primary = green pill (#16A34A bg), Extended = blue pill (#1E40AF bg). Distance: 14px/400 Caption Gray. Description: 16px/400 Body Text. CTA: 15px/600 Spin Blue, arrow right. Card hover: shadow lift. Grid: 3+2 desktop, 2-col tablet, stacked mobile.
+
+9. Section 5: Coverage Map
+Section Overview
+Google Maps embed centered on 3710 N Kimball Ave showing all 5 neighborhood zones. Background: White.
+H2: "Our Delivery Coverage" — 3 words. Centered. Font: 32px/700. Margin-bottom 32px.
+
+Property
+Value
+Map Center
+3710 N Kimball Ave, Chicago IL 60618
+Zoom Level
+12 (shows all 5 neighborhoods)
+Width
+100% container (max 1280px)
+Height
+500px desktop, 400px tablet, 320px mobile
+Pins
+Labeled pin on the Spin It Up location + neighborhood name labels on map
+Styling
+border-radius 12px, border 1px #E2E8F0, lazy loading, subtle grayscale filter
+Below map: "Walk-in service at our Avondale facility. Pickup & delivery available in all shaded areas. Don’t see your neighborhood? Call (773) 654-1275." — phone as tel: link.
+DEV ACTION:  For MVP, a standard Google Maps embed with a pin at the business address is sufficient. Neighborhood boundary overlays can be added in Phase 3 using the Google Maps JavaScript API with polygon overlays colored by zone (primary green, extended blue).
+
+10. Section 6: Why Location Matters
+Brief content section explaining why proximity matters for laundry service. Adds unique content value to the hub and targets informational queries. Background: Ice Blue.
+H2: "Why a Neighborhood Laundromat Matters" — 5 words. Centered. Font: 32px/700. Margin-bottom 32px.
+
+"A laundromat three blocks away is fundamentally different from one three miles away. When your machines break down at home, when the kids need clean uniforms by tomorrow, when your Airbnb guest checks out in four hours — you need a laundromat you can get to in minutes, not one that requires a bus transfer and a 45-minute trip. That’s why we built Spin It Up at 3710 N Kimball Ave, in the heart of Avondale’s Northwest Side — within a 10-minute drive or bus ride for over 150,000 residents across five neighborhoods." — 87 words.
+Font: 17px/400 Body Text, line-height 1.7, max-width 720px centered. Section padding: 64px 0 desktop, 40px 16px mobile.
+
+11. Section 7: CTA Block
+H2: "Your Neighborhood Laundromat" — 3 words. White. Centered. Font: 36px/700.
+Subtitle: "3710 N Kimball Ave, Avondale • Open 6 AM–11 PM • Self-service, wash & fold, pickup & delivery." — 16 words.
+
+Button
+Text
+Link
+Style
+1
+Get Directions
+Google Maps URL
+CTA Orange
+2
+Schedule Pickup
+Cents app URL
+White outline
+3
+Call (773) 654-1275
+tel:+17736541275
+Ghost white
+Background: Spin Blue gradient.
+
+12. Section 8: Footer & Sticky CTA
+Global footer: no modifications. Sticky CTA: default (Call Now + Schedule Pickup).
+
+13. Reference: Image Assets, GA4, Checklist
+Image Assets
+Image ID
+Section
+Format
+Max Size
+Alt Text
+Loading
+og-areas
+Social
+JPEG 1200x630
+<200KB
+Spin It Up Laundry service area map
+meta
+map-embed
+Map
+iframe
+N/A
+Service area coverage map
+lazy
+logo-light
+Header/Footer
+SVG
+<10KB
+Logo
+inline
+GA4 Events
+Event
+Trigger
+Parameters
+area_card_click
+Click neighborhood card
+area_name, destination_url
+phone_click
+Click tel: link
+phone_number, page_section
+directions_click
+Click Get Directions
+page_section
+schedule_pickup
+Click Schedule Pickup
+page_section
+map_interact
+Click/zoom map
+interaction_type
+Implementation Checklist
+HTML validates
+CollectionPage + BreadcrumbList schemas validate
+All 5 neighborhood cards link to correct child page URLs
+Map embed renders and is interactive
+Mobile PageSpeed >90, Desktop >95
+All tel: links functional
+OG tags render correctly
+Hreflang points to /es/areas/
+Title tag within 60 chars, meta description within 155 chars
+AEO paragraph within first 80 words
+XML sitemap includes at priority 0.8
+
+
+End of Document
+TradeWorks AI — Spin It Up Laundry Service Areas Hub Developer Guide v1.0

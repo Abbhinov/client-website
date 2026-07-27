@@ -1,0 +1,820 @@
+
+SPIN IT UP LAUNDRY
+PICKUP & DELIVERYDEVELOPER GUIDE
+Section-by-Section Implementation Specification
+
+URL: spinituplaundry.net/services/pickup-delivery/
+Prepared by: TradeWorks AI  |  Version 1.0  |  May 2026
+Classification: Client Confidential
+
+Table of Contents
+1  How to Use This Guide
+2  Page Identity & Architecture
+3  Keyword Strategy & Content Map
+4  Complete <head> Section
+5  Section 1: Site Header & Navigation
+6  Section 2: Hero Banner
+7  Section 3: AEO Introduction
+8  Section 4: How Pickup & Delivery Works
+9  Section 5: Delivery Areas & Coverage Map
+10  Section 6: Pricing
+11  Section 7: The Cents App
+12  Section 8: What’s Included
+13  Section 9: Who Uses This Service
+14  Section 10: Related Services
+15  Section 11: FAQ Section
+16  Section 12: Final CTA Block
+17  Section 13: Footer & Sticky Mobile CTA
+18  Reference: Image Asset Inventory
+19  Reference: GA4 Event Tracking
+20  Reference: Implementation Checklist
+
+1. How to Use This Guide
+This developer guide provides the complete implementation specification for the Pickup & Delivery page (/services/pickup-delivery/). This page was identified in the April 2026 audit as a critical missing asset — Spin It Up’s highest-value service (Cents app-powered pickup and delivery) had no dedicated information page. Visitors were expected to commit to an order without first understanding how the service works, what it costs, or where it delivers.
+This page resolves that gap entirely. It is the longest service child page in the site (1,000–1,200 words) because it must educate visitors on a service they may never have used before, build trust in a door-to-door process, explain the Cents app, and convert them to their first order.
+This guide references the Website Strategy & Architecture Document (v1.0) for brand system and design tokens, and prior developer guides for shared component specifications.
+Content Authoring Rules
+All content written fresh. No content from the current GoDaddy site or competitor sites.
+AEO opening paragraph within the first 100–150 words directly answers “laundry pickup and delivery in Chicago.”
+All phone numbers render as clickable tel: links.
+All “Schedule Pickup” CTAs link to the Cents app ordering URL.
+
+2. Page Identity & Architecture
+URL Path
+/services/pickup-delivery/
+Page Type
+Child — Services Silo
+Canonical URL
+https://spinituplaundry.net/services/pickup-delivery/
+Breadcrumb
+Home > Services > Pickup & Delivery
+Parent Page
+/services/ (Services Hub)
+Sibling Pages
+/services/self-service/, /services/wash-and-fold/, /services/commercial/, /services/ironing-pressing/
+Primary Keyword
+laundry pickup and delivery chicago (320/mo)
+Secondary Keywords
+laundry pickup service near me, wash and fold delivery chicago, laundry pickup logan square, laundry delivery avondale
+Search Intent
+Transactional
+Target Word Count
+1,000–1,200 words
+Primary Conversion Goal
+Cents app order (Schedule Pickup CTA)
+Secondary Conversion Goals
+Phone call, Cents app download
+Robots Directive
+index, follow
+XML Sitemap
+Include — priority 0.8
+Content Update Frequency
+Evergreen; update delivery areas or pricing when changed
+hreflang
+<link rel="alternate" hreflang="es" href="https://spinituplaundry.net/es/servicios/recogida-y-entrega/">
+Internal Linking Requirements
+Direction
+Link
+Anchor Text
+Up → Hub
+/services/
+All Services, Back to Services
+Sibling
+/services/wash-and-fold/
+Wash & Fold (drop-off alternative)
+Sibling
+/services/self-service/
+Self-Service Laundry (DIY alternative)
+Sibling
+/services/commercial/
+Commercial Services (B2B upsell)
+Cross-silo
+/pricing/
+View Full Pricing
+Cross-silo
+/areas/avondale/
+Avondale area page
+Cross-silo
+/areas/logan-square/
+Logan Square area page
+Cross-silo
+/areas/irving-park/
+Irving Park area page
+Cross-silo
+/faq/
+See All FAQs
+Cross-silo
+/resources/how-to-use-cents-app/
+Cents App Guide (Phase 2)
+Up → Root
+/
+Home (breadcrumb)
+
+3. Keyword Strategy & Content Map
+Keyword
+Est. Volume
+Difficulty
+Intent
+Placement
+laundry pickup and delivery chicago
+320
+Low–Med
+Transactional
+H1, title, AEO paragraph, schema
+laundry pickup service near me
+2,400
+High (local)
+Transactional
+Served via GBP + this page
+wash and fold delivery chicago
+90–170
+Low–Med
+Transactional
+Body content, How It Works
+laundry delivery avondale
+20–50
+Low
+Local/Trans
+Delivery areas section, AEO
+laundry pickup logan square
+50–110
+Low
+Local/Trans
+Delivery areas section
+laundry delivery service near me
+1,600
+High (local)
+Transactional
+Served via GBP + this page
+how does laundry pickup work
+110–210
+Low
+Informational
+How It Works section, FAQ
+cents app laundry
+20–50
+Low
+Navigational
+Cents App section
+schedule laundry pickup online
+50–110
+Low
+Transactional
+CTAs, How It Works, Cents App section
+laundry to your door chicago
+30–70
+Low
+Transactional
+Hero subheadline, body content
+3.2 Semantic/LSI Terms
+Use naturally: door-to-door laundry, laundry delivery service, pickup and drop-off, scheduled pickup, on-demand laundry, app-based ordering, mobile ordering, contactless pickup, same-day delivery, next-day delivery, free pickup, delivery radius, service area, Avondale, Irving Park, Logan Square, Hermosa, Albany Park, Northwest Side, Cents app, order from your phone.
+
+4. Complete <head> Section
+4.1 Meta Tags
+Tag
+Content
+<title>
+Laundry Pickup & Delivery in Chicago | Spin It Up — Order via App (58 characters)
+<meta name="description">
+Laundry pickup & delivery in Avondale, Irving Park & Logan Square. Order via the Cents app. We pick up, wash, fold & deliver. Starting at $1.75/lb. (148 characters)
+<meta name="robots">
+index, follow
+<meta name="viewport">
+width=device-width, initial-scale=1
+<meta charset>
+UTF-8
+<html lang>
+en
+<link rel="canonical">
+https://spinituplaundry.net/services/pickup-delivery/
+<link rel="alternate" hreflang="es">
+https://spinituplaundry.net/es/servicios/recogida-y-entrega/
+<link rel="alternate" hreflang="en">
+https://spinituplaundry.net/services/pickup-delivery/
+4.2 Open Graph & Twitter
+Tag
+Content
+og:title
+Laundry Pickup & Delivery | Spin It Up Laundry — Chicago
+og:description
+Order from your phone via the Cents app. We pick up, wash, fold, and deliver your laundry. Avondale, Irving Park, Logan Square & more.
+og:type
+website
+og:url
+https://spinituplaundry.net/services/pickup-delivery/
+og:image
+https://spinituplaundry.net/images/og-pickup-delivery.jpg (1200x630, <200KB)
+og:locale
+en_US
+og:site_name
+Spin It Up Laundry
+twitter:card
+summary_large_image
+twitter:title
+Laundry Pickup & Delivery | Spin It Up — Chicago
+twitter:description
+Order via the Cents app. Pickup, wash, fold, deliver. Avondale, Irving Park, Logan Square.
+twitter:image
+https://spinituplaundry.net/images/og-pickup-delivery.jpg
+4.3 JSON-LD Structured Data
+Two schema blocks: Service schema for Pickup & Delivery and BreadcrumbList.
+
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Laundry Pickup and Delivery",
+  "alternateName": "Wash and Fold Delivery Service",
+  "description": "Door-to-door laundry pickup and delivery service in Chicago. Order through the Cents app, and we pick up your laundry, wash, dry, fold, and deliver it back to your door. Serving Avondale, Irving Park, Logan Square, Hermosa, and surrounding neighborhoods.",
+  "url": "https://spinituplaundry.net/services/pickup-delivery/",
+  "provider": {
+    "@type": "Laundromat",
+    "name": "Spin It Up Laundry",
+    "telephone": "+1-773-654-1275",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "3710 N Kimball Ave",
+      "addressLocality": "Chicago",
+      "addressRegion": "IL",
+      "postalCode": "60618"
+    }
+  },
+  "areaServed": [
+    { "@type": "Neighborhood", "name": "Avondale" },
+    { "@type": "Neighborhood", "name": "Irving Park" },
+    { "@type": "Neighborhood", "name": "Logan Square" },
+    { "@type": "Neighborhood", "name": "Hermosa" },
+    { "@type": "Neighborhood", "name": "Albany Park" }
+  ],
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "USD",
+    "price": "1.75",
+    "description": "Starting price per pound plus pickup fee"
+  },
+  "serviceType": "Laundry Pickup and Delivery",
+  "potentialAction": {
+    "@type": "OrderAction",
+    "target": "[CENTS_APP_URL]",
+    "name": "Schedule Pickup"
+  }
+}
+
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://spinituplaundry.net/" },
+    { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://spinituplaundry.net/services/" },
+    { "@type": "ListItem", "position": 3, "name": "Pickup & Delivery", "item": "https://spinituplaundry.net/services/pickup-delivery/" }
+  ]
+}
+
+DEV ACTION:  Replace [CENTS_APP_URL] in the schema with the actual Cents ordering URL. Validate all schema blocks via Google Rich Results Test after deployment.
+
+5. Section 1: Site Header & Navigation
+Global header component. Solid white background. “Services” nav item active. Mobile menu: “Services” expanded, “Pickup & Delivery” highlighted as current page.
+
+6. Section 2: Hero Banner
+Section Overview
+This page gets a slightly larger hero than the other service child pages because the service is less familiar to customers and the conversion action (app order) requires more commitment than walking in. Background: Spin Blue gradient with optional subtle pattern overlay.
+Layout Specifications
+Property
+Desktop
+Tablet
+Mobile
+Height
+Auto, padding 72px 0
+padding 56px 0
+padding 44px 16px
+Background
+linear-gradient(135deg, #1E40AF 0%, #1E3A8A 100%)
+Same
+Same
+Container
+max-width 1280px, centered, padding 0 48px
+padding 0 24px
+padding 0 16px
+Content Alignment
+Center
+Center
+Center
+Content Specifications
+Breadcrumb: Home > Services > Pickup & Delivery — standard breadcrumb spec. Margin-bottom 20px.
+
+H1 Headline: "Laundry Pickup & Delivery in Chicago" — 6 words, 39 characters. Font: 40px/800 (desktop), 32px (tablet), 28px (mobile). Color: white. Primary keyword present.
+
+Subheadline: "Order from your phone. We pick up, wash, fold, and deliver to your door. Serving Avondale, Irving Park, Logan Square, and more." — 21 words. Font: 18px/400 (desktop), 16px (mobile). Color: rgba(255,255,255,0.85). Max-width: 660px, centered.
+
+Hero CTAs: 
+Button
+Text
+Link
+Style
+Primary
+Schedule Your First Pickup
+Cents app URL
+CTA Orange — larger: padding 18px 36px
+Secondary
+Call (773) 654-1275
+tel:+17736541275
+White outline
+Below buttons: "Available now in Avondale, Irving Park, Logan Square, Hermosa & Albany Park" in 14px/500 rgba(255,255,255,0.7).
+HTML Code
+<section class="page-hero page-hero--extended" aria-label="Laundry Pickup and Delivery">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <ol>
+        <li><a href="/">Home</a></li>
+        <li><a href="/services/">Services</a></li>
+        <li aria-current="page">Pickup &amp; Delivery</li>
+      </ol>
+    </nav>
+    <h1 class="page-hero__title">Laundry Pickup &amp; Delivery in Chicago</h1>
+    <p class="page-hero__subtitle">Order from your phone. We pick up, wash, fold, and deliver to your door. Serving Avondale, Irving Park, Logan Square, and more.</p>
+    <div class="page-hero__ctas">
+      <a href="[CENTS_APP_URL]" class="btn btn--primary btn--lg">Schedule Your First Pickup</a>
+      <a href="tel:+17736541275" class="btn btn--outline-white">Call (773) 654-1275</a>
+    </div>
+    <p class="page-hero__areas">Available now in Avondale, Irving Park, Logan Square, Hermosa &amp; Albany Park</p>
+  </div>
+</section>
+DEV ACTION:  Replace [CENTS_APP_URL] with the actual Cents app ordering URL.
+
+7. Section 3: AEO Introduction
+Content Specifications
+NEW:  AEO opening paragraph — new content. This is the single most important paragraph on this page.
+
+"Spin It Up Laundry offers laundry pickup and delivery service across Chicago’s Northwest Side, including Avondale, Irving Park, Logan Square, Hermosa, and Albany Park. Customers schedule a pickup through the Cents app, and our driver collects their laundry from their door. We wash, dry, and fold everything at our facility at 3710 N Kimball Ave using commercial-grade machines and professional detergent, then deliver it back clean and ready — typically within 24 hours. Pricing starts at $1.75 per pound plus a pickup fee. Stain treatment is included on every order at no additional charge. The service is available seven days a week." — 103 words.
+
+Font: 18px/400 Body Text. Line-height: 1.65. Max-width: 800px, centered. Section padding: 48px 0 (desktop), 32px 16px (mobile). Background: White.
+NOTE:  This paragraph answers “laundry pickup and delivery Chicago,” “how does laundry pickup work,” and “how much does laundry delivery cost” simultaneously. It names the business, delivery neighborhoods, ordering method (Cents app), process, facility address, turnaround, pricing, and stain treatment inclusion — all within the AEO window.
+
+8. Section 4: How Pickup & Delivery Works
+Section Overview
+The core process visualization. This is the section that converts uncertainty into action — showing exactly what happens from order to delivery. Four steps, each with enough detail to eliminate common objections. Background: Ice Blue (#F0F9FF).
+Content Specifications
+H2: "How It Works — Four Simple Steps" — 6 words. Font: 36px/700, Dark Slate. Centered. Margin-bottom 48px.
+
+Step
+Number
+Title
+Description
+Detail Note
+1
+01
+Schedule Your Pickup
+Open the Cents app on your phone (iOS or Android), enter your address, select a pickup window, and confirm your order. You can add special instructions for stain treatment, fabric preferences, or sorting requests.
+First-time users: download the Cents app free from the App Store or Google Play. Create an account in under 2 minutes.
+2
+02
+We Pick Up From Your Door
+Our driver arrives during your selected pickup window and collects your laundry bag from your doorstep, lobby, or designated spot. No need to be home — just leave your bag in the agreed location.
+Contactless pickup available. You’ll receive a notification when your bag is collected.
+3
+03
+Professional Wash, Dry & Fold
+Your laundry is brought to our facility at 3710 N Kimball Ave. Our team sorts by color and fabric, pre-treats stains, washes in commercial-grade machines with professional detergent, dries at the appropriate temperature, and hand-folds every item.
+Same professional process as our in-store wash-and-fold service. Your laundry is never mixed with another customer’s.
+4
+04
+Delivered Back to Your Door
+Your clean, neatly folded laundry is delivered right back to your door in a fresh bag. Most orders are completed within 24 hours of pickup. You’ll receive a notification when delivery is on the way.
+Track your order status in the Cents app.
+Layout: four horizontal step cards (desktop, 2x2 grid), vertical stack (mobile). Each card: white bg, border 1px #E2E8F0, border-radius 16px, padding 32px. Step number: 56px/800 Fresh Cyan (#06B6D4), top-left corner or overlapping top border. Title: 22px/700 Dark Slate. Description: 16px/400 Body Text, line-height 1.6. Detail note: 14px/400 Caption Gray, italic, separated by a thin 1px #E2E8F0 divider within the card. Dotted connecting arrows between cards on desktop.
+Section CTA: "Schedule Your First Pickup" — centered below steps. CTA Orange, large variant. Plus: "(773) 654-1275 if you prefer to order by phone" in 15px/500 rgba text below button.
+
+9. Section 5: Delivery Areas & Coverage Map
+Section Overview
+Geographic coverage section with an interactive map and neighborhood list. Critical for local SEO — each neighborhood mention is a geo signal and an internal link to the respective area page. Background: White (#FFFFFF).
+Content Specifications
+H2: "Where We Deliver" — 3 words. Font: 36px/700, Dark Slate. Margin-bottom 16px.
+Subtext: "We deliver across Chicago’s Northwest Side. If you’re within our service area, your laundry can be at your door within 24 hours." — 23 words. 16px/400 Body Text. Margin-bottom 40px.
+
+Two-column layout: Google Maps embed with delivery radius overlay left (55%), neighborhood list right (45%). Stacked on mobile: list first (more useful on small screens), map below.
+
+Neighborhood
+Link
+Delivery Estimate
+Status
+Avondale
+/ areas/avondale/
+Same-day or next-day
+Primary zone
+Irving Park
+/areas/irving-park/
+Same-day or next-day
+Primary zone
+Logan Square
+/areas/logan-square/
+Next-day
+Primary zone
+Hermosa
+/areas/hermosa/
+Next-day
+Primary zone
+Albany Park
+/areas/albany-park/
+Next-day
+Extended zone
+Each neighborhood: 18px/600 Spin Blue (linked to area page), arrow icon right. Delivery estimate: 15px/400 Caption Gray. Status badge: “Primary zone” in green pill, “Extended zone” in blue pill. Font: 13px/600.
+Map Embed: Google Maps centered on 3710 N Kimball Ave with a radius overlay showing the delivery zone. Zoom level 12 (wider than the homepage map to show the full delivery radius). Same map styling spec as homepage: border-radius 12px, border 1px #E2E8F0, lazy loading, subtle grayscale filter.
+
+Below map: "Don’t see your neighborhood? Call (773) 654-1275 — we may be able to arrange delivery." — tel: link on the phone number. 16px/400 Body Text.
+DEV ACTION:  The delivery radius overlay can be implemented via Google Maps JavaScript API with a Circle overlay, or as a static map image with the radius drawn on. For MVP, a standard Google Maps embed with a pin at the business address is acceptable — the radius overlay is a Phase 2 enhancement.
+
+10. Section 6: Pricing
+Section Overview
+Transparent pricing for pickup & delivery. Addresses the “how much does laundry delivery cost” query and eliminates sticker shock before the customer reaches the Cents app. Background: Ice Blue (#F0F9FF).
+Content Specifications
+H2: "Pickup & Delivery Pricing" — 4 words. Font: 36px/700, Dark Slate. Margin-bottom 16px.
+Subtext: "No surprises. You’ll see the exact price in the Cents app before confirming your order." — 15 words. 16px/400 Body Text. Margin-bottom 32px.
+
+Service
+Price
+Minimum
+Turnaround
+Standard Pickup & Delivery
+$1.75/lb
+10 lb minimum
+Next-day delivery
+Express Pickup & Delivery
+$2.25/lb
+10 lb minimum
+Same-day (order before 10 AM)
+Pickup Fee
+$5.00 flat
+Per pickup
+N/A
+Comforter — Full/Twin
+$15.00 flat
+N/A
+Next-day
+Comforter — Queen
+$18.00 flat
+N/A
+Next-day
+Comforter — King
+$22.00 flat
+N/A
+Next-day
+NOTE:  Pickup & delivery pricing is slightly higher than in-store wash-and-fold ($1.50/lb) to account for the door-to-door driver cost. The $5.00 pickup fee is charged per pickup, not per pound. These prices must be confirmed with client and aligned with Cents app configuration before publication.
+Price Comparison Callout: 
+"How does this compare? A typical weekly laundry load weighs 15–20 lb. At $1.75/lb + $5 pickup fee, that’s $31–$40 per week for door-to-door service — less than an hour of your time is worth." — displayed in a bordered callout box, bg #F8FAFC, border-left 4px Fresh Cyan, padding 20px 24px. Font: 16px/400 Body Text. Bold the price range.
+
+Below table: "View complete pricing for all services →" — links to /pricing/. Plus: "Stain treatment included on every order." in 15px/600 Fresh Cyan.
+
+11. Section 7: The Cents App
+Section Overview
+Dedicated section explaining the Cents app ordering experience. This addresses the audit finding that the current site sends customers to the Cents app with no context or explanation. The section builds confidence in the ordering process before the customer leaves the website. Background: White (#FFFFFF).
+Content Specifications
+H2: "Order in Under 2 Minutes with the Cents App" — 9 words. Font: 32px/700, Dark Slate. Margin-bottom 16px.
+Intro: "The Cents app is how you schedule pickups, track orders, and manage your laundry deliveries. It’s free, takes under 2 minutes to set up, and works on iPhone and Android." — 30 words. 17px/400 Body Text. Margin-bottom 32px.
+
+Two-column layout: app feature list left (55%), phone mockup image right (45%). Stacked on mobile.
+
+App Features
+Icon
+Feature
+Detail
+CalendarCheck
+Schedule Pickup
+Choose your pickup date and time window. Available 7 days a week.
+MapPin
+Enter Your Address
+The app confirms whether you’re in our delivery zone before you order.
+MessageSquare
+Add Instructions
+Note stain locations, fabric preferences, or special handling requests.
+CreditCard
+Pay Securely
+Pay by credit card or debit card directly in the app. No cash needed.
+Bell
+Track Your Order
+Get notifications when your bag is picked up, when it’s being cleaned, and when delivery is on the way.
+RotateCcw
+Reorder Easily
+Your preferences are saved. Reordering takes one tap.
+Each feature: flex row, icon 28px in Fresh Cyan, feature name 16px/700 Dark Slate, detail 15px/400 Body Text. Spaced 16px apart.
+App Download CTAs: Two side-by-side buttons below the feature list:
+Button
+Text
+Link
+Style
+1
+Download on the App Store
+Apple App Store Cents link
+Black Apple badge, standard 135x40px
+2
+Get it on Google Play
+Google Play Cents link
+Standard Google Play badge, 135x40px
+Below badges: "Or order directly at [CENTS_APP_URL] from any browser — no download required." — 15px/400 Caption Gray.
+DEV ACTION:  Obtain the correct App Store and Google Play links for the Cents app from the client. If Cents provides a direct web ordering URL (no app download required), prioritize that URL for the main “Schedule Pickup” CTAs site-wide and position the app download as an optional convenience.
+NOTE:  When the /resources/how-to-use-cents-app/ tutorial article is built (Phase 2), add a link here: “New to the app? See our step-by-step Cents App Guide →”
+
+12. Section 8: What’s Included
+Section Overview
+Reinforces the value proposition by listing everything the pickup fee and per-pound price covers. Same structural pattern as the Wash & Fold “What’s Included” section. Background: Ice Blue (#F0F9FF).
+Content Specifications
+H2: "What’s Included in Every Pickup Order" — 7 words. Font: 32px/700, Dark Slate. Margin-bottom 40px.
+Icon
+Item
+Detail
+Check
+Door-to-Door Pickup & Delivery
+A driver comes to your address for both pickup and delivery. No trips to the laundromat.
+Check
+Professional Washing
+Commercial-grade machines with professional detergent. Hot, warm, or cold water by fabric type.
+Check
+Stain Treatment
+Pre-wash stain treatment on all visible stains at no extra charge.
+Check
+Full Drying & Hand Folding
+Tumble dried at the appropriate temperature. Every item hand-folded.
+Check
+Individual Processing
+Your laundry is never mixed with another customer’s clothes. Washed, dried, and folded separately.
+Check
+Order Tracking
+Real-time notifications: pickup confirmed, cleaning in progress, delivery on the way.
+Check
+Clean Bag Packaging
+Delivered in a fresh, sealed bag ready to put away.
+Same visual spec as Wash & Fold: green Check icons, bold title, detail text. Two-column or single-column depending on space. Max-width 800px, centered.
+
+13. Section 9: Who Uses This Service
+Section Overview
+Persona-based section helping visitors self-identify with the service. This is unique content that competitors don’t have — it directly addresses “is this for me?” Background: White (#FFFFFF).
+Content Specifications
+H2: "Who Uses Pickup & Delivery?" — 5 words. Font: 32px/700, Dark Slate. Centered. Margin-bottom 40px.
+
+Persona
+Title
+Description
+1
+Busy Professionals
+You work long hours and the last thing you want to spend your weekend doing is laundry. Schedule a pickup Sunday night, get clean clothes back Monday evening.
+2
+Parents with Young Kids
+Between school, activities, and everything else, finding two hours at a laundromat isn’t realistic. We take laundry off your plate entirely.
+3
+Work-From-Home Professionals
+You’re home anyway — leave a bag by the door before your first meeting, get it back folded before your last.
+4
+Apartment Dwellers Without Laundry
+No in-unit washer/dryer? No building laundry room? No problem. We’re your laundry room, delivered.
+5
+Airbnb Hosts & Small Businesses
+Turnover laundry between guests or clients. Consistent, reliable, and on your schedule. See our Commercial Services for volume pricing.
+Layout: 5 compact cards in a masonry or stacked layout. Each card: bg #F8FAFC, border 1px #E2E8F0, border-radius 12px, padding 20px. Persona number: small circle, 28px, bg Fresh Cyan, white text. Title: 17px/700 Dark Slate. Description: 15px/400 Body Text. “Airbnb Hosts” card includes a link to /services/commercial/.
+
+14. Section 10: Related Services
+Content Specifications
+H2: "Other Ways We Can Help" — 5 words. Centered. Font: 32px/700, Dark Slate. Margin-bottom 40px.
+
+Card
+Title
+One-Liner
+CTA
+Link
+1
+Wash & Fold Drop-Off
+Prefer to drop off in person? Same great service at $1.50/lb.
+View Wash & Fold →
+/services/wash-and-fold/
+2
+Self-Service Laundry
+Want to do it yourself? 41 washers, 52 dryers, free drying Tue–Thu.
+View Self-Service →
+/services/self-service/
+3
+Commercial Services
+Need bulk laundry for your business? Volume pricing and scheduled pickups.
+Commercial Info →
+/services/commercial/
+Same compact card spec as prior related services sections. Three cards in a row (desktop), stacked (mobile).
+
+15. Section 11: FAQ Section
+Section Overview
+Pickup-and-delivery-specific FAQ. These questions are the ones the audit identified as unanswered on the current site: turnaround, minimums, what happens if you’re not home, stain handling, etc. FAQPage schema required. Background: Ice Blue (#F0F9FF).
+Content Specifications
+H2: "Pickup & Delivery FAQ" — 4 words. Centered. Font: 32px/700, Dark Slate. Margin-bottom 40px.
+
+#
+Question
+Answer
+1
+How does laundry pickup and delivery work?
+Download the Cents app (free on iOS and Android), enter your address, choose a pickup time, and confirm your order. Our driver picks up your laundry from your door during the selected window. We wash, dry, and fold everything at our facility at 3710 N Kimball Ave. Your clean laundry is delivered back to your door, typically within 24 hours of pickup.
+2
+Do I need to be home for pickup?
+No. You can leave your laundry bag at your door, in your building lobby, or at any designated spot you specify in the app. Our driver will collect it during your chosen pickup window. You’ll receive a notification when it’s picked up.
+3
+What neighborhoods do you deliver to?
+We currently deliver to Avondale, Irving Park, Logan Square, Hermosa, and Albany Park. When you enter your address in the Cents app, it will confirm whether you’re in our delivery zone. If you’re nearby but outside the listed areas, call us at (773) 654-1275 — we may be able to arrange delivery.
+4
+How much does pickup and delivery cost?
+Standard pricing is $1.75 per pound with a 10 lb minimum, plus a $5.00 pickup fee per pickup. Express same-day service is $2.25 per pound (order before 10 AM). Comforters are priced at a flat rate. Stain treatment is included at no extra charge. You see the exact price in the Cents app before confirming.
+5
+How long does pickup and delivery take?
+Standard turnaround is 24 hours from pickup to delivery. Express same-day service is available for orders placed before 10:00 AM. You’ll receive notifications at each stage: pickup confirmed, cleaning in progress, and delivery on the way.
+6
+What if something gets damaged or lost?
+Each customer’s laundry is processed individually and never mixed with another customer’s clothes. We take great care with every order. If any issue arises, contact us at (773) 654-1275 or through the Cents app and we will resolve it promptly.
+7
+Can I schedule a recurring pickup?
+Yes. The Cents app lets you set up recurring pickups on a weekly or biweekly schedule. Your preferences, address, and payment method are saved, so reordering takes a single tap.
+DEV ACTION:  Implement FAQPage JSON-LD schema. Seven Q&A pairs. Separate script block from Service and BreadcrumbList. Validate via Google Rich Results Test.
+Same accordion design spec. First item default-expanded desktop. Max-width 800px, centered.
+Below FAQ: "View All FAQs" link to /faq/.
+
+16. Section 12: Final CTA Block
+Content Specifications
+H2: "Your Laundry, Picked Up and Delivered" — 6 words. White. Centered. Font: 36px/700.
+Subtitle: "Schedule your first pickup in under 2 minutes. We’ll handle the rest." — 12 words. 18px/400 rgba(255,255,255,0.85). Centered.
+
+Button
+Text
+Link
+Style
+1
+Schedule Your First Pickup
+Cents app URL
+CTA Orange (primary, large)
+2
+Call (773) 654-1275
+tel:+17736541275
+White outline
+Background: Spin Blue gradient. Section padding: 80px 0 desktop, 48px 16px mobile. Below buttons: App Store + Google Play badges (small, 100x30px) with “Or order at [CENTS_URL] from any browser” text.
+
+17. Section 13: Footer & Sticky Mobile CTA
+Global footer: identical to Homepage Developer Guide. No page-specific modifications.
+
+Sticky Mobile CTA Bar: standard two-button layout. On this page, both buttons align with the primary conversion goal:
+Button
+Text
+Link
+Style
+1
+Call Now
+tel:+17736541275
+CTA Orange
+2
+Schedule Pickup
+Cents app URL
+Spin Blue
+This is the default sticky bar configuration (matching the homepage). No override needed on this page since the primary conversion is a Cents app order.
+
+18. Reference: Image Asset Inventory
+Image ID
+Section
+Dimensions
+Format
+Max Size
+Alt Text
+Loading
+og-pickup-delivery
+Social share
+1200x630
+JPEG
+<200KB
+Laundry bag being picked up at a customer doorstep
+N/A (meta)
+phone-mockup
+Cents App
+400x700
+WebP+PNG
+<120KB
+Cents app order screen on a smartphone
+lazy
+delivery-driver
+How It Works
+600x400
+WebP+JPEG
+<100KB
+Spin It Up delivery driver collecting a laundry bag
+lazy
+folded-delivery
+What’s Included
+600x400
+WebP+JPEG
+<100KB
+Clean folded laundry in a delivery bag
+lazy
+logo-light
+Header/Footer
+SVG
+SVG
+<10KB
+Spin It Up Laundry logo
+inline
+app-store-badge
+Cents App
+135x40
+SVG/PNG
+<5KB
+Download on the App Store
+inline
+google-play-badge
+Cents App
+135x40
+SVG/PNG
+<5KB
+Get it on Google Play
+inline
+NOTE:  The phone mockup showing the Cents app should ideally be a real screenshot of the Spin It Up ordering flow within the Cents app. If not available, a generic Cents app screenshot or a tasteful phone frame mockup with placeholder UI is acceptable for launch. Replace with a real screenshot as soon as the client provides one.
+
+19. Reference: GA4 Event Tracking
+Pickup & Delivery page-specific GA4 events. Implement via GTM.
+Event Name
+Trigger
+Parameters
+Section
+schedule_pickup
+Click any “Schedule Pickup” CTA
+page_section, button_text
+Hero, How It Works, CTA Block, Sticky Bar
+phone_click
+Click any tel: link
+phone_number, page_section
+Global
+app_download_click
+Click App Store or Google Play badge
+platform (ios/android)
+Cents App
+cta_click
+Click any CTA button
+button_text, destination_url, page_section
+All
+faq_expand
+Expand FAQ accordion
+question_text
+FAQ
+related_service_click
+Click related service card
+service_name, destination_url
+Related Services
+area_link_click
+Click neighborhood link in delivery areas
+area_name, destination_url
+Delivery Areas
+pricing_link_click
+Click “View complete pricing”
+destination_url
+Pricing
+cents_web_order
+Click “order from any browser” link
+source: web_order_link
+Cents App / CTA Block
+
+20. Reference: Implementation Checklist
+Pre-Development
+Confirm Cents app ordering URL with client
+Obtain App Store and Google Play links for Cents app
+Confirm whether Cents has a web ordering URL (no download required)
+Confirm delivery area boundaries and pricing with client
+Obtain or create Cents app phone mockup screenshot
+Technical Validation
+HTML validates (W3C validator clean)
+All JSON-LD validates: Service + BreadcrumbList + FAQPage
+[CENTS_APP_URL] replaced in all locations (schema, CTAs, text links)
+HTTPS enforced, no mixed content
+Mobile PageSpeed score >90
+Desktop PageSpeed score >95
+All internal links return 200
+All tel: links functional on mobile
+Cents app URL opens correctly on both iOS and Android
+OG tags render correctly
+Hreflang points to /es/servicios/recogida-y-entrega/
+Content & SEO
+All copy matches this guide exactly
+Title tag within 60 characters
+Meta description within 155 characters
+Single H1 containing “pickup & delivery” + “Chicago”
+AEO paragraph within first 110 words
+Breadcrumb: Home > Services > Pickup & Delivery
+Canonical URL: https://spinituplaundry.net/services/pickup-delivery/
+All 5 delivery area neighborhoods link to area pages
+Related services link to correct sibling pages
+Pricing table responsive (card layout mobile)
+XML sitemap includes this page at priority 0.8
+Accessibility
+Skip-to-content link present
+Breadcrumb: <nav aria-label="Breadcrumb"> with <ol>
+Color contrast WCAG 2.1 AA on all combinations
+FAQ accordion keyboard-operable
+App Store/Play badges have proper alt text
+ARIA landmarks: banner, navigation, main, contentinfo
+Map embed has aria-label and title attribute
+Analytics
+GA4 + GTM events verified in debug mode
+schedule_pickup event confirmed on ALL Cents app CTAs (hero, steps, CTA block, sticky)
+phone_click confirmed on all tel: links
+app_download_click firing on both App Store and Google Play badges
+area_link_click firing on neighborhood links
+
+
+End of Document
+TradeWorks AI — Spin It Up Laundry Pickup & Delivery Developer Guide v1.0
+Prepared by TradeWorks AI — May 2026

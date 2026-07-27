@@ -1,0 +1,2203 @@
+﻿
+
+ 
+
+HOMEPAGE DEVELOPER GUIDE
+
+Homepage
+
+
+ 
+
+Section-by-Section Implementation Specifications
+
+Clean Slate Pressure Washing
+
+A Fresh Start for Every Surface
+
+Brandon, Florida  |  Hillsborough County
+
+cleanslatepw.com
+
+Prepared by TradeWorks AI
+
+Version 1.0  |  April 2026
+
+Client Confidential
+
+
+
+
+
+
+
+
+Table of Contents
+
+
+
+OVERVIEW
+
+1.  How to Use This Guide
+
+2.  Page Identity &amp; Architecture
+
+3.  Complete &lt;head&gt; Section
+
+
+
+PAGE SECTIONS (scroll order)
+
+4.  Top Announcement Bar
+
+5.  Header &amp; Navigation
+
+6.  Hero Section
+
+7.  Trust &amp; Credentials Bar
+
+8.  AEO Introduction Paragraph
+
+9.  Services Grid (10 Cards)
+
+10.  Why Choose Us (6 Pillars)
+
+11.  Before &amp; After Showcase
+
+12.  Service Areas with Map
+
+13.  Testimonials Carousel
+
+14.  Seasonal Promo / Commercial CTA
+
+15.  Resource Preview
+
+16.  Homepage FAQ
+
+17.  Final CTA Block
+
+18.  Footer
+
+
+
+REFERENCE
+
+19.  Image Asset Inventory
+
+20.  GA4 Event Tracking
+
+21.  Implementation Checklist
+
+
+
+Section 1: How to Use This Guide
+
+This guide provides everything a developer needs to build the Clean Slate PW homepage from scratch. It is the primary entry point to the entire site and the page on which the majority of conversion traffic will land — whether from Google organic search, the Google Business Profile, direct traffic, or paid ads.
+
+Every section follows the standardized format: Section Overview, Layout Specifications (desktop/tablet/mobile), Content Specifications (exact copy), Design Specifications (CSS properties), Image Specifications, and Developer Notes. The developer should be able to implement the entire page by following this guide top to bottom without outside clarification.
+
+
+1.1 Guide Relationship to Strategy Document
+
+This homepage guide operationalizes the Clean Slate PW Website Strategy document. The strategy establishes brand positioning, site architecture, and keyword assignments. This guide translates those decisions into production-ready implementation for a single page. The strategy document is the authoritative source for any referenced color values, URL structures, or keyword targets.
+
+
+1.2 Content Authoring Rules
+
+
+All copy is final: Implement exactly as written. Word counts, phrasing, and section order are optimized for keyword targeting and conversion.
+
+
+No placeholder content: Every headline, paragraph, and CTA label is production-ready.
+
+
+Image alt text is authoritative: Use the exact alt text specified. It is optimized for accessibility and keyword relevance.
+
+
+Schema JSON-LD is complete: Do not modify schema payloads except to swap in live phone, email, and rating data.
+
+
+
+Section 2: Page Identity &amp; Architecture
+
+The homepage is the root of the entire site architecture. It is the primary destination for branded searches, the landing page for Google Business Profile clicks, and the canonical entry point for all SEO link equity flowing to the domain.
+
+
+2.1 Page Specifications
+
+Attribute
+
+Value
+
+URL Path
+
+/ (root)
+
+Canonical URL
+
+https://cleanslatepw.com/
+
+Page Type
+
+Homepage / Root
+
+Parent
+
+None (root)
+
+Primary Keyword
+
+Pressure washing Brandon FL
+
+Secondary Keywords
+
+soft washing Brandon, house washing Brandon FL, roof cleaning Brandon, pressure washing Tampa Bay
+
+Search Intent
+
+Commercial / Local
+
+Target Word Count
+
+1,800–2,400 words (visible content)
+
+Primary Conversion Goal
+
+Free Estimate form submission OR phone call
+
+Content Update Frequency
+
+Quarterly (promotions/testimonials), otherwise evergreen
+
+
+2.2 Primary Outbound Links from Homepage
+
+Link Target
+
+Placement
+
+/services/
+
+Header nav, hero CTA, services grid header
+
+/services/house-washing/
+
+Services grid card 1
+
+/services/roof-cleaning/
+
+Services grid card 2
+
+/services/driveway-cleaning/
+
+Services grid card 3
+
+/services/pool-deck-cleaning/
+
+Services grid card 4
+
+/services/lanai-screen-cleaning/
+
+Services grid card 5
+
+/services/fence-cleaning/
+
+Services grid card 6
+
+/services/gutter-cleaning/
+
+Services grid card 7
+
+/services/commercial/
+
+Services grid card 8, commercial CTA block
+
+/services/rust-removal/
+
+Services grid card 9
+
+/services/soft-washing/
+
+Services grid card 10, AEO paragraph
+
+/service-areas/
+
+Header nav, service areas section
+
+/service-areas/brandon/
+
+Featured city link
+
+/service-areas/valrico/
+
+Featured city link
+
+/service-areas/riverview/
+
+Featured city link
+
+/service-areas/fishhawk/
+
+Featured city link
+
+/about/
+
+Header nav, trust bar link
+
+/gallery/
+
+Before &amp; After &apos;See More&apos; link
+
+/reviews/
+
+Testimonials &apos;Read All Reviews&apos; link
+
+/resources/
+
+Resource preview &apos;View All&apos; link
+
+/free-estimate/
+
+All primary CTAs
+
+/contact/
+
+Header nav, final CTA secondary
+
+/commercial-quote/
+
+Commercial CTA block
+
+
+
+Section 3: Complete &lt;head&gt; Section
+
+The entire &lt;head&gt; section below is production-ready. Swap only the dynamic values noted (live review rating, Google verification codes).
+
+
+3.1 Meta Tags
+
+Tag
+
+Exact Value
+
+&lt;title&gt;
+
+Pressure Washing Brandon FL | Soft Wash Experts | Clean Slate PW
+
+&lt;meta description&gt;
+
+Professional pressure washing and soft washing in Brandon, FL. House washing, roof cleaning, driveways, pavers. Licensed, insured, 5-star rated. Free estimates. Call (813) 555-0283.
+
+Title char count
+
+64 chars
+
+Meta desc char count
+
+155 chars
+
+&lt;link rel=canonical&gt;
+
+https://cleanslatepw.com/
+
+&lt;meta name=robots&gt;
+
+index, follow, max-image-preview:large, max-snippet:-1
+
+&lt;html lang&gt;
+
+en-US
+
+&lt;meta charset&gt;
+
+UTF-8
+
+&lt;meta viewport&gt;
+
+width=device-width, initial-scale=1.0
+
+
+3.2 Open Graph &amp; Twitter Card
+
+Tag
+
+Value
+
+og:type
+
+website
+
+og:url
+
+https://cleanslatepw.com/
+
+og:title
+
+Pressure Washing Brandon FL | Clean Slate PW
+
+og:description
+
+Licensed soft wash and pressure washing experts serving Brandon, Valrico, Riverview and Tampa Bay. Free estimates — call (813) 555-0283.
+
+og:image
+
+https://cleanslatepw.com/images/og-homepage-1200x630.jpg
+
+og:image dimensions
+
+1200x630
+
+og:site_name
+
+Clean Slate Pressure Washing
+
+twitter:card
+
+summary_large_image
+
+twitter:title
+
+Pressure Washing Brandon FL | Clean Slate PW
+
+twitter:image
+
+https://cleanslatepw.com/images/twitter-homepage-1200x675.jpg
+
+
+3.3 JSON-LD Structured Data
+
+Three JSON-LD blocks in the homepage &lt;head&gt;: LocalBusiness, FAQPage, and BreadcrumbList.
+
+
+LocalBusiness Schema
+
+Deploy as first &lt;script type=&quot;application/ld+json&quot;&gt; block. Use @type &quot;LocalBusiness&quot; with @id &quot;https://cleanslatepw.com/#business&quot;, full PostalAddress (712 W Lumsden Rd, Suite 4, Brandon, FL 33511), GeoCoordinates (lat 27.9378, lng -82.2859), areaServed array of 10 cities (Brandon, Valrico, Riverview, FishHawk, Lithia, Apollo Beach, Plant City, Seffner, Tampa, Bloomingdale), openingHoursSpecification (Mon–Sat 07:00–18:00), aggregateRating (ratingValue 4.9, reviewCount — update with live values before launch), telephone in E.164 format (+18135550283), and sameAs linking to Facebook, Instagram, and Google Maps.
+
+
+FAQPage Schema
+
+Deploy as second JSON-LD block. Mirrors the 6 questions in Section 16. Each Question/Answer pair must match the visible DOM content verbatim.
+
+
+BreadcrumbList Schema
+
+Single-item breadcrumb pointing to the homepage itself. Deploy as third JSON-LD block for sitewide consistency.
+
+
+
+Section 4: Top Announcement Bar
+
+A dismissible, ~40px-tall horizontal strip at the very top of the page displaying a promotional message or seasonal offer. Appears above the header navigation.
+
+
+4.1 Layout Specifications
+
+Property
+
+Value
+
+Width
+
+100% viewport width
+
+Height
+
+40px desktop / 36px mobile
+
+Background
+
+#0B2545 (Navy)
+
+Text Color
+
+#FFFFFF
+
+CTA Accent
+
+#E8761A (Orange) on embedded link
+
+Position
+
+sticky; top: 0; z-index: 1000
+
+Mobile
+
+Truncate with ellipsis; dismiss X always visible
+
+
+4.2 Content Specification
+
+Default (evergreen) message:
+
+&quot;New Customer Special: $50 off your first service of $300+. Get Your Free Estimate →&quot;
+
+Seasonal variants (rotate quarterly):
+
+
+Q1 (Jan–Mar): &quot;Spring Cleaning Season: Book house + driveway together and save 15%.&quot;
+
+
+Q2 (Apr–Jun): &quot;Florida&apos;s humid season is here — book roof soft washing now to prevent algae regrowth.&quot;
+
+
+Q3 (Jul–Sep): &quot;Summer storm season: Lanai screens, pool decks, and fence lines cleaned in one visit.&quot;
+
+
+Q4 (Oct–Dec): &quot;Holiday-ready exterior cleaning — book by November 30 for pre-holiday service.&quot;
+
+
+4.3 Behavior
+
+
+Dismiss persistence: localStorage with 30-day expiry. New message content resets dismissal.
+
+
+CTA link: /free-estimate/ by default.
+
+
+Tracking: GA4 event announcement_bar_click with promo_id parameter.
+
+
+
+Section 5: Header &amp; Navigation
+
+The header carries the logo, primary navigation, phone number, and primary CTA button. Every element is optimized for conversion. The header is sticky and remains visible on all scroll positions.
+
+
+5.1 Desktop Layout (≥1024px)
+
+Property
+
+Value
+
+Width
+
+100% viewport; content centered at max 1280px
+
+Height
+
+88px
+
+Background
+
+#FFFFFF with 1px bottom border #E8EEF2
+
+Position
+
+sticky; top: 40px (below announcement bar); z-index: 900
+
+Left (30%)
+
+Logo, 180px × 48px, linked to /
+
+Center (45%)
+
+6 top-level nav items with mega menu on Services
+
+Right (25%)
+
+Phone (click-to-call) + &quot;Get Free Estimate&quot; button
+
+Shadow on scroll
+
+0 2px 8px rgba(11,37,69,0.08) when scrolled &gt;20px
+
+
+5.2 Mobile Layout (&lt;768px)
+
+Property
+
+Value
+
+Height
+
+64px
+
+Left
+
+Logo, 120px × 40px
+
+Center
+
+Click-to-call phone icon + &apos;Call&apos; label (44px tap target)
+
+Right
+
+Hamburger icon (44×44px tap target)
+
+Menu Overlay
+
+Full-screen slide-down, accordion sub-menus
+
+Menu Close
+
+X button top-right + tap outside
+
+
+5.3 Primary Navigation Items
+
+Nav Item
+
+Link / Behavior
+
+Services
+
+Mega menu: 10 service pages + &apos;View All Services&apos; link
+
+Service Areas
+
+Dropdown: 10 city pages + &apos;See Full Coverage Map&apos;
+
+Gallery
+
+/gallery/ — direct link
+
+About
+
+Dropdown: About Us, Our Process, Reviews
+
+Resources
+
+/resources/ — direct link
+
+Contact
+
+/contact/ — direct link
+
+
+5.4 Services Mega Menu
+
+Column
+
+Contents
+
+Residential
+
+House Washing, Roof Cleaning, Driveway Cleaning, Pool Deck, Fence Cleaning
+
+Specialty
+
+Lanai &amp; Screen, Gutter Cleaning, Rust Removal, Soft Washing Methods
+
+Commercial
+
+Commercial PW, HOA &amp; Property Manager, Get a Commercial Quote
+
+CTA
+
+Featured image + &apos;Get Free Estimate&apos; orange button
+
+
+5.5 Header CTAs
+
+
+Phone: &quot;(813) 555-0283&quot; in &lt;a href=&quot;tel:+18135550283&quot;&gt;. Weight 700, color #0B2545, 18px.
+
+
+Primary CTA: &apos;Get Free Estimate&apos;, 52px height, 24px padding, bg #E8761A, white text, 8px radius, 600 weight.
+
+
+Hover: Background darkens to #D06A15, translateY(-1px), shadow deepens. 200ms ease.
+
+
+Logo: Links to /. Alt: &quot;Clean Slate Pressure Washing — Brandon, FL&quot;. SVG format.
+
+
+Accessibility: Skip-to-content link as first focusable element. All nav items keyboard-accessible.
+
+
+
+
+Section 6: Hero Section
+
+The hero is the highest-value real estate on the homepage. It must communicate who we are, what we do, and where we serve in under three seconds. A single dominant headline, one subheadline, and two clearly differentiated CTAs outperform multi-message hero designs.
+
+
+6.1 Layout
+
+Breakpoint
+
+Min Height
+
+Content Alignment
+
+Padding
+
+Desktop ≥1200px
+
+640px
+
+Left-aligned, max 640px content block
+
+120px top/bottom
+
+Tablet 768–1199px
+
+560px
+
+Left-aligned, max 560px
+
+80px top/bottom
+
+Mobile &lt;768px
+
+520px
+
+Center-aligned, 24px side padding
+
+60px top/bottom
+
+
+6.2 Background Image
+
+Wide-angle photograph of a freshly soft-washed two-story Florida home with palm trees, warm late-afternoon light. Focus on the result, not equipment. WebP with JPEG fallback, 1920×1080 at 1x / 3840×2160 at 2x. Under 180KB. Preload via &lt;link rel=&apos;preload&apos;&gt; for LCP. Alt text: &apos;Freshly cleaned two-story Florida home in Brandon with restored exterior surfaces&apos;.
+
+Overlay: left-to-right gradient from rgba(11,37,69,0.85) to rgba(11,37,69,0.45).
+
+
+6.3 Hero Content — Exact Copy
+
+
+Eyebrow
+
+BRANDON • RIVERVIEW • VALRICO • LITHIA • TAMPA BAY
+
+Uppercase, letter-spacing 0.12em, 14px, color #3E6990, weight 600.
+
+
+H1 Headline
+
+A Fresh Start for Every Surface — Without the Damage.
+
+56px desktop / 44px tablet / 36px mobile. Weight 700. White. Line-height 1.1.
+
+
+Subheadline
+
+Soft washing for roofs and screens, low-pressure cleaning for siding, and powerful surface cleaning for driveways. Licensed, insured, and trusted by Tampa Bay homeowners since 2021.
+
+20px desktop / 18px tablet / 16px mobile. White at 92% opacity. Max-width 540px.
+
+
+6.4 Dual CTAs
+
+Element
+
+Primary CTA
+
+Secondary CTA
+
+Notes
+
+Label
+
+Get My Free Estimate
+
+See Our Services
+
+Primary uses possessive &apos;My&apos;
+
+Link
+
+/free-estimate/
+
+/services/
+
+
+
+Background
+
+#E8761A (Orange)
+
+Transparent
+
+Secondary is ghost button
+
+Border
+
+None
+
+2px solid #FFFFFF
+
+
+
+Height
+
+56px
+
+56px
+
+Equal for visual balance
+
+Hover bg
+
+#D06A15
+
+rgba(255,255,255,0.15)
+
+
+
+GA4 event
+
+cta_click (hero, primary)
+
+cta_click (hero, secondary)
+
+
+
+
+6.5 Trust Microcopy
+
+Below CTAs, 24px margin-top, 14px, white at 78% opacity:
+
+✓ Licensed &amp; insured  •  ✓ Free estimates within 24 hours  •  ✓ 100% satisfaction guarantee
+
+
+
+Section 7: Trust &amp; Credentials Bar
+
+Horizontal bar with 6 credential badges directly below the hero. Reinforces legitimacy at the moment a visitor decides whether to scroll further.
+
+
+7.1 Layout
+
+Breakpoint
+
+Layout
+
+Badge Scale
+
+Desktop ≥1200px
+
+6 badges in single row
+
+Full size, 80px height
+
+Tablet 768–1199px
+
+6 badges, tighter gap
+
+75% scale
+
+Mobile &lt;768px
+
+Horizontal scroll carousel
+
+72px height, snap-scroll
+
+Background: #F5F7F9. Padding: 32px top/bottom desktop, 24px mobile. Max-width 1200px centered.
+
+
+7.2 Badge Inventory
+
+Badge
+
+Label Text
+
+Format
+
+Purpose
+
+FL Licensed
+
+FL Licensed Business
+
+SVG shield
+
+State licensing trust
+
+Insured
+
+$2M Liability Insured
+
+SVG shield+check
+
+Liability trust
+
+Google Reviews
+
+4.9★ on Google (live count)
+
+PNG + stars
+
+Review aggregation
+
+BBB
+
+BBB A+ Rated
+
+BBB shield
+
+Third-party accreditation
+
+UAMCC Member
+
+UAMCC Certified
+
+Logo PNG
+
+Industry association
+
+Satisfaction
+
+100% Satisfaction Guarantee
+
+SVG shield+check
+
+Risk reduction
+
+Each badge links to its verification page where applicable. Do not display badges for credentials not yet earned.
+
+
+
+Section 8: AEO Introduction Paragraph
+
+This is the answer engine optimization anchor for the homepage. It gives LLMs, AI search assistants, and Google AI Overviews a clean, attributable, fact-rich paragraph they can extract directly when answering queries like &apos;who provides pressure washing in Brandon FL.&apos;
+
+
+8.1 Layout
+
+Below trust bar, above services grid. Background #FFFFFF. Padding 64px top, 48px bottom. Centered max-width 880px. Single-column text block. No images, no CTAs — pure content density for AI parsability.
+
+
+8.2 H2 Heading
+
+Professional Exterior Cleaning for Brandon, FL &amp; the Tampa Bay Region
+
+
+8.3 AEO Body — Exact Copy (155 words)
+
+Clean Slate Pressure Washing is a licensed and insured exterior cleaning company serving Brandon, Riverview, Valrico, Lithia, Tampa, and surrounding Hillsborough County communities. Founded in 2021 by Jason Caldwell, the company specializes in soft washing for delicate surfaces including asphalt shingle roofs, stucco siding, and lanai screens, alongside high-pressure surface cleaning for driveways, sidewalks, and pool decks. All services use commercial-grade equipment and biodegradable cleaning agents that are safe for landscaping, pets, and Florida&apos;s freshwater ecosystems. Clean Slate Pressure Washing carries a Florida business license, $2M general liability in general liability insurance, and is rated 4.9 stars on Google with over 150 verified customer reviews. The company offers free estimates within 24 hours, transparent flat-rate pricing, and a 100% satisfaction guarantee on every residential and commercial project completed throughout the Tampa Bay region.
+
+
+8.4 Implementation Notes
+
+
+No inline links: Keep paragraph clean. Inline links reduce AEO extraction quality.
+
+
+Match schema data: Numbers, dates, and credentials must match the JSON-LD LocalBusiness schema exactly.
+
+
+Update quarterly: Refresh review counts, star ratings, and years-in-business figures every quarter.
+
+
+
+Section 9: Services Grid
+
+The services grid is the homepage&apos;s primary conversion router. Visitors who scroll past the hero are signaling intent; the grid lets them self-segment into the specific service they need.
+
+
+9.1 Layout
+
+Breakpoint
+
+Grid
+
+Card Width
+
+Gap
+
+Desktop ≥1200px
+
+5 columns × 2 rows
+
+~220px
+
+24px
+
+Tablet 768–1199px
+
+3 columns
+
+~30%
+
+20px
+
+Mobile &lt;768px
+
+Horizontal scroll carousel
+
+80vw snap-scroll
+
+16px
+
+
+9.2 Section Heading
+
+Eyebrow: WHAT WE CLEAN
+
+H2: Ten Services. One Trusted Team.
+
+
+9.3 Service Cards
+
+#
+
+Service (H3)
+
+Description
+
+Link
+
+1
+
+House Soft Washing
+
+Low-pressure cleaning for vinyl, stucco, and painted siding. Removes algae, mildew, and dirt safely.
+
+/services/house-washing/
+
+2
+
+Roof Soft Washing
+
+Gentle algae and stain removal for shingle, tile, and metal roofs. Extends roof life.
+
+/services/roof-cleaning/
+
+3
+
+Driveway Cleaning
+
+High-pressure surface cleaning that lifts oil stains, tire marks, and embedded dirt from concrete.
+
+/services/driveway-cleaning/
+
+4
+
+Pool Deck &amp; Pavers
+
+Restores pavers, travertine, and pool decking. Sand replacement and sealing available.
+
+/services/pool-deck-cleaning/
+
+5
+
+Lanai &amp; Screen Cleaning
+
+Specialized soft washing for pool cages and lanai screens. No torn screens, guaranteed.
+
+/services/lanai-screen-cleaning/
+
+6
+
+Fence Cleaning
+
+Vinyl, wood, and aluminum fence washing. Restores original color and removes mildew.
+
+/services/fence-cleaning/
+
+7
+
+Gutter Cleaning
+
+Interior gutter clean-out plus exterior brightening to remove tiger stripes.
+
+/services/gutter-cleaning/
+
+8
+
+Sidewalk &amp; Walkways
+
+Surface cleaning for concrete walkways, entry paths, and stamped concrete.
+
+/services/driveway-cleaning/
+
+9
+
+Commercial PW
+
+Storefronts, parking lots, dumpster pads, HOA common areas. Scheduled or one-time.
+
+/services/commercial/
+
+10
+
+Rust &amp; Stain Removal
+
+Battery acid, fertilizer rust, and organic stain removal from concrete and pavers.
+
+/services/rust-removal/
+
+
+9.4 Card Design
+
+
+Card: White bg, 1px #E5E7EB border, 12px radius, 24px padding.
+
+
+Icon: 48×48 SVG, color #3E6990 (Slate). Centered above service name.
+
+
+H3: 18px, weight 700, #0B2545 (Navy).
+
+
+Description: 14px, weight 400, #6C757D, line-height 1.5.
+
+
+Hover: Card lifts 4px, border #3E6990, shadow 0 8px 24px rgba(11,37,69,0.10). 200ms.
+
+
+Whole card clickable: Wrap in &lt;a&gt; with aria-label.
+
+
+
+Section 10: Why Choose Us — Six Pillars
+
+Converts interest into trust. By this point visitors know what services we offer. The pillars give concrete reasons to choose Clean Slate PW over competitors.
+
+
+10.1 Section Heading
+
+Eyebrow: WHY HOMEOWNERS CHOOSE US
+
+H2: Six Reasons Tampa Bay Trusts Us With Their Home
+
+
+10.2 Pillar Cards
+
+#
+
+Pillar (H3)
+
+Body (40–55 words)
+
+Icon
+
+1
+
+Right Method, Right Pressure
+
+We don&apos;t blast everything with high pressure. Roofs and screens get gentle soft washing. Driveways get surface cleaning. Choosing the correct method protects your surfaces and prevents the costly damage that DIY and uncertified contractors often cause.
+
+Gauge/dial
+
+2
+
+Florida-Specific Expertise
+
+Florida&apos;s humidity grows algae, mildew, and Gloeocapsa magma faster than almost anywhere. We know which agents work on Florida stains, which surfaces tolerate which chemistries, and how to clean without harming the landscaping you&apos;ve maintained.
+
+Sun+palm
+
+3
+
+HOA-Compliant Cleaning
+
+Most Tampa Bay neighborhoods sit inside HOA boundaries with specific maintenance rules. We know the common notice formats, document our work for compliance letters, and schedule within HOA-approved hours.
+
+Doc+check
+
+4
+
+Transparent Flat-Rate Pricing
+
+No hourly meter running. No surprise charges. Our estimates are flat-rate and itemized by service, so you know exactly what you&apos;re paying before we turn on the equipment.
+
+Receipt
+
+5
+
+24-Hour Estimate Response
+
+Submit a request and get a written estimate within 24 hours, often same-day. Our team responds 7 days a week including weekends.
+
+Clock/24
+
+6
+
+100% Satisfaction Guarantee
+
+If you&apos;re not satisfied with any service, we return and address it at no cost. Written guarantee — no fine print, no exceptions.
+
+Shield+check
+
+
+10.3 Card Design
+
+
+Icon: 48×48 SVG, color #E8761A (Orange) to differentiate from slate service icons.
+
+
+H3: 20px, weight 700, #0B2545 (Navy).
+
+
+Body: 15px, weight 400, #2B2B2B, line-height 1.6.
+
+
+No CTAs in pillar cards: These are reassurance, not action.
+
+
+
+Section 11: Before &amp; After Showcase
+
+Visual proof closes the deal. Six dramatic before/after comparisons in interactive slider format. Background: #0B2545 (Navy) for high-contrast visual break.
+
+
+11.1 Section Heading
+
+Eyebrow: REAL HOMES, REAL RESULTS
+
+H2: Drag the Slider — See the Difference
+
+
+11.2 Slider Inventory
+
+#
+
+Project Type
+
+Caption
+
+Location
+
+1
+
+Two-story stucco soft wash
+
+Brandon home — soft washed in 2 hours
+
+Brandon, FL 33511
+
+2
+
+Tile roof algae removal
+
+Riverview tile roof — Gloeocapsa magma removed
+
+Riverview, FL 33578
+
+3
+
+Concrete driveway restoration
+
+Valrico driveway — oil stains lifted in one visit
+
+Valrico, FL 33594
+
+4
+
+Paver pool deck refresh
+
+FishHawk pool deck — pavers brightened and re-sanded
+
+Lithia, FL 33547
+
+5
+
+Vinyl fence cleaning
+
+Brandon HOA — entire fence line cleaned
+
+Brandon, FL 33510
+
+6
+
+Lanai screen wash
+
+Riverview lanai — screens and pool cage frame cleaned
+
+Riverview, FL 33569
+
+
+11.3 Image Specs
+
+
+WebP with JPEG fallback. 1080×720 at 1x, 2160×1440 at 2x. Under 120KB per image.
+
+
+loading=&apos;lazy&apos; on all (below fold).
+
+
+Alt text format: &apos;Before/After: [service] on [location] home in [city], FL&apos;.
+
+
+11.4 Slider Behavior
+
+
+Handle starts at 50%. White 2px line with 40px circular handle.
+
+
+Mouse drag + touch drag. Click-to-position with 200ms animation.
+
+
+BEFORE/AFTER labels in translucent navy pills, 12px uppercase.
+
+
+Library: img-comparison-slider web component or vanilla JS. Under 8KB gzipped.
+
+
+
+Section 12: Service Areas with Map
+
+Local intent is the #1 driver of pressure washing searches. This section lets visitors confirm coverage and signals geographic relevance to local search algorithms.
+
+
+12.1 Layout
+
+Breakpoint
+
+Layout
+
+Map Size
+
+Desktop ≥1200px
+
+Two columns (55% map left, 45% list right)
+
+480px tall
+
+Tablet 768–1199px
+
+Two columns 50/50
+
+360px tall
+
+Mobile &lt;768px
+
+Stacked (map first, list below)
+
+280px tall
+
+Background: #F5F7F9. Padding: 80px top/bottom desktop.
+
+
+12.2 Section Heading
+
+Eyebrow: LOCAL TO TAMPA BAY
+
+H2: Proudly Serving 12+ Tampa Bay Communities
+
+
+12.3 Map Specifications
+
+
+Google Maps iframe centered on Brandon, FL. Custom marker at business address. Zoom level 11.
+
+
+loading=&apos;lazy&apos;. Border-radius 12px. 1px #E5E7EB border.
+
+
+aria-label=&apos;Map showing Clean Slate PW service area centered on Brandon, FL&apos;.
+
+
+12.4 Service Areas List
+
+Column 1
+
+Column 2
+
+Column 3
+
+Brandon
+
+FishHawk
+
+Plant City
+
+Riverview
+
+Bloomingdale
+
+Seffner
+
+Valrico
+
+Apollo Beach
+
+Tampa
+
+Lithia
+
+Ruskin
+
+Mango
+
+Each name links to /service-areas/[city]/. Color #3E6990 (Slate), 16px, weight 500. Chevron icon precedes each link.
+
+
+12.5 Below-Map Contact Row
+
+Element
+
+Display
+
+Notes
+
+Phone
+
+Call (813) 555-0283
+
+&lt;a href=&quot;tel:+18135550283&quot;&gt; with phone icon
+
+Address
+
+712 W Lumsden Rd, Suite 4, Brandon, FL 33511
+
+Map-pin icon; opens Google Maps directions
+
+Hours
+
+Mon–Sat 7:00 AM – 6:00 PM | Sun: By Appointment
+
+Clock icon; non-clickable
+
+
+
+
+Section 13: Testimonials Carousel
+
+Social proof from real Brandon-area customers carries more conversion weight than any claim we make. The carousel rotates through five-star reviews with customer name, neighborhood, service category, and date.
+
+
+13.1 Layout
+
+Breakpoint
+
+Cards Visible
+
+Auto-Rotation
+
+Desktop ≥1200px
+
+3 side-by-side
+
+8 seconds per slide
+
+Tablet 768–1199px
+
+2 cards
+
+8 seconds
+
+Mobile &lt;768px
+
+1 card, swipe carousel
+
+Paused on touch
+
+
+13.2 Section Heading
+
+Eyebrow: WHAT OUR CUSTOMERS SAY
+
+H2: 150+ Five-Star Reviews From Tampa Bay Homeowners
+
+
+13.3 Testimonial Inventory (8 minimum)
+
+#
+
+Customer
+
+Review Excerpt (40-60 words)
+
+Service / Date
+
+1
+
+Sarah M., Brandon
+
+Jason and his team transformed our stucco house. They explained soft washing before starting, finished in under three hours, and the results have lasted over a year. Best exterior cleaning experience we&apos;ve had in Florida.
+
+House Wash • Mar 2026
+
+2
+
+David K., Riverview
+
+Our tile roof had black streaks I thought were permanent. Clean Slate removed them without pressure damage. Quote came same-day, work done within a week.
+
+Roof Wash • Feb 2026
+
+3
+
+Jennifer L., Valrico
+
+Booked driveway and pool deck in one visit. Both spotless. Pricing clear upfront, no surprises. Jason even re-sanded the paver joints.
+
+Driveway+Deck • Jan 2026
+
+4
+
+Michael R., Lithia
+
+Our HOA cited us for mildew on lanai screens. Clean Slate handled it next day, sent before-and-after photos for HOA documentation.
+
+Lanai Screen • Nov 2025
+
+5
+
+Patricia S., Brandon
+
+Got three quotes. Clean Slate wasn&apos;t cheapest but their estimate was most detailed. Fence cleaning was incredible. Already booked annual service.
+
+Fence • Dec 2025
+
+6
+
+Robert H., FishHawk
+
+Excellent communication. Gutter brightening removed tiger stripes I&apos;d lived with for years. Worth every dollar.
+
+Gutters • Oct 2025
+
+7
+
+Amanda T., Riverview
+
+Had them clean the entire exterior before listing. House sold in 9 days at asking price. Realtor mentioned the curb appeal.
+
+Pre-Listing • Sep 2025
+
+8
+
+James P., Apollo Beach
+
+Commercial cleaning for our storefront. Quick turnaround, worked around business hours. Will use quarterly.
+
+Commercial • Aug 2025
+
+
+13.4 Card Design
+
+
+Card: #F5F7F9 bg, 1px #E5E7EB border, 12px radius, 32px padding.
+
+
+Stars: Five orange stars (#E8761A), 18px, 4px gap.
+
+
+Quote: 16px, weight 400, #2B2B2B, italic, in &lt;blockquote&gt;.
+
+
+Name: 15px, weight 600, #0B2545. Format: &apos;Sarah M. — Brandon&apos;.
+
+
+Service line: 13px, weight 400, #6C757D. Format: &apos;House Wash • Mar 2026&apos;.
+
+
+Google attribution: 16×16 Google &apos;G&apos; logo in top-right with &apos;Verified&apos; in 11px gray.
+
+
+13.5 Below-Carousel CTA
+
+Link: &apos;Read all 150+ reviews on Google →&apos;. Color #3E6990, 16px, weight 600. Opens GBP reviews in new tab.
+
+
+
+Section 14: Seasonal Promo / Commercial CTA Block
+
+Two-column conversion block targeting residential homeowners (seasonal promo) and commercial property managers (separate CTA). Splitting audiences here prevents commercial inquiries from getting buried.
+
+
+14.1 Layout
+
+Two-tone: left half #3E6990 (Slate) for residential promo, right half #0B2545 (Navy) for commercial. Padding 64px top/bottom. Stacked on mobile (residential first).
+
+
+14.2 Left Block — Residential Promo (Q2 Example)
+
+Eyebrow: LIMITED-TIME SPRING OFFER
+
+H3: Book Two Services, Save 15%
+
+Body: Schedule any house washing plus driveway cleaning in the same visit and receive 15% off. Valid through June 30, 2026.
+
+CTA: &apos;Claim My Spring Discount&apos; → /free-estimate/?promo=spring2026. Orange button.
+
+
+14.3 Right Block — Commercial CTA
+
+Eyebrow: FOR PROPERTY MANAGERS &amp; BUSINESSES
+
+H3: Recurring Commercial Cleaning Schedules
+
+Body: Storefronts, parking lots, dumpster pads, HOA common areas. Quarterly, monthly, or one-time contracts. Volume pricing available.
+
+CTA: &apos;Request Commercial Quote&apos; → /commercial-quote/. Ghost button (white border).
+
+
+
+Section 15: Resource Preview
+
+Surfaces 4 recent resource library articles, signaling content depth and reinforcing topical authority. Internal links distribute homepage equity to high-value blog content.
+
+
+15.1 Section Heading
+
+Eyebrow: EXPERT RESOURCES
+
+H2: Florida Exterior Cleaning Guides
+
+
+15.2 Featured Articles
+
+#
+
+Title (H3)
+
+Meta Snippet
+
+URL
+
+1
+
+Soft Washing vs. Pressure Washing: Which Method Is Right?
+
+Learn when to use soft washing versus high-pressure cleaning and why choosing wrong costs thousands.
+
+/resources/soft-washing-vs-pressure-washing/
+
+2
+
+How Often Should You Clean Your Roof in Florida?
+
+Florida humidity grows roof algae faster than any other state. Maintenance schedule by roof type.
+
+/resources/florida-roof-cleaning-frequency/
+
+3
+
+What Causes Black Streaks on Your Roof?
+
+Those dark streaks are Gloeocapsa magma — a stubborn algae requiring specific chemistry to remove.
+
+/resources/gloeocapsa-magma-roof-streaks/
+
+4
+
+HOA Exterior Cleaning: What Brandon Homeowners Need to Know
+
+Common HOA maintenance rules in Hillsborough County and how to comply without overpaying.
+
+/resources/hoa-exterior-cleaning-brandon/
+
+
+15.3 Card Design
+
+
+16:9 featured image at top. White card, 1px border, 12px radius. 20px text padding.
+
+
+Category eyebrow (11px, #3E6990): &apos;GUIDES&apos;, &apos;MAINTENANCE&apos;, &apos;CHEMISTRY&apos;.
+
+
+H3: 17px, weight 700, #0B2545. Truncate title at 2 lines.
+
+
+Meta: 14px, #6C757D, truncate at 2 lines. Read time: &apos;4 min read&apos; in 12px #9CA3AF.
+
+
+Hover: lift 4px, image scales 1.03, border #3E6990.
+
+Below-grid link: &apos;Browse all resources →&apos; centered, #0B2545, 16px, weight 600.
+
+
+
+Section 16: Homepage FAQ
+
+Serves three purposes: addresses pre-purchase objections, enables FAQPage rich results, and gives AI systems clean Q&amp;A pairs for extraction. Six questions — comprehensive enough for core concerns, short enough for page momentum.
+
+
+16.1 Layout
+
+Background #FFFFFF. Centered max-width 880px. Single-column accordion. Multiple answers can be open simultaneously.
+
+
+16.2 Section Heading
+
+H2: Frequently Asked Questions
+
+Subheadline: Quick answers to the questions Tampa Bay homeowners ask most. Have a question not listed? Call (813) 555-0283.
+
+
+16.3 FAQ Inventory — Exact Q&amp;A Copy
+
+These must match the FAQPage JSON-LD schema word-for-word.
+
+
+Q1: How much does pressure washing cost in Brandon, FL?
+
+Pressure washing costs in Brandon typically range from $189 for a basic driveway to $549 for a full house soft wash, depending on home size, surfaces, and condition. Clean Slate PW provides free, flat-rate written estimates within 24 hours. We never use hourly billing or surprise charges.
+
+
+Q2: What is the difference between soft washing and pressure washing?
+
+Soft washing uses low-pressure water combined with biodegradable cleaning agents to safely clean delicate surfaces like roofs, stucco, and lanai screens. Pressure washing uses high-pressure water (2,500–4,000 PSI) for durable surfaces like concrete driveways and pavers. Choosing the wrong method causes most DIY damage.
+
+
+Q3: Will pressure washing damage my roof or siding?
+
+Not when the right method is used. Clean Slate PW uses soft washing — never high pressure — on roofs, stucco, and screens. Soft washing removes algae and stains without lifting shingles or stripping paint. We carry $2M general liability in liability insurance and provide a written satisfaction guarantee.
+
+
+Q4: How often should I have my house cleaned in Florida?
+
+Florida&apos;s humidity accelerates algae and mildew growth. We recommend annual house and roof soft washing for most Tampa Bay homes, with driveway and pool deck cleaning every 12–18 months. Homes with heavy tree coverage or shaded walls may benefit from cleaning every 8–10 months.
+
+
+Q5: Are your cleaning solutions safe for plants and pets?
+
+Yes. Clean Slate PW uses biodegradable, plant-safe cleaning agents on every project. We rinse and protect landscaping before and after each service. After approximately 30 minutes of drying time, treated areas are safe for children, pets, and wildlife.
+
+
+Q6: Do you serve communities outside of Brandon?
+
+Yes. Clean Slate PW serves Brandon and the surrounding Tampa Bay region including Riverview, Valrico, Lithia, FishHawk, Bloomingdale, Apollo Beach, Plant City, Seffner, and Tampa. We frequently travel for larger projects throughout Hillsborough County. Call (813) 555-0283 to confirm availability for your neighborhood.
+
+
+16.4 Accordion Design
+
+
+Question row: clickable, 18px weight 600 #0B2545. Chevron icon right side, #3E6990, rotates 180° on expand.
+
+
+Answer panel: hidden by default, 300ms slide. 16px weight 400 #2B2B2B, line-height 1.7.
+
+
+Keyboard: &lt;button&gt; elements with aria-expanded. Enter/Space toggles.
+
+
+Multiple open: allow simultaneously. Do not auto-close others.
+
+
+
+Section 17: Final CTA Block
+
+Single focused conversion close after visitors have absorbed the entire homepage. One CTA target: the free estimate. Background #0B2545 (Navy). Padding 96px top/bottom desktop.
+
+
+17.1 Content — Exact Copy
+
+Eyebrow: READY TO GET STARTED?
+
+H2: Get a Free Estimate in 24 Hours.
+
+Subheadline: Tell us what surfaces you&apos;d like cleaned. We&apos;ll send a written, flat-rate estimate within one business day — usually same-day. No call required, no high-pressure sales.
+
+
+17.2 Dual CTAs
+
+Element
+
+Primary
+
+Secondary
+
+Notes
+
+Label
+
+Get My Free Estimate
+
+Call (813) 555-0283
+
+Equal intent weight
+
+Link
+
+/free-estimate/
+
+tel:+18135550283
+
+Phone fires GA4 phone_click
+
+Background
+
+#E8761A
+
+Transparent
+
+Ghost secondary
+
+Height
+
+60px
+
+60px
+
+Taller than hero CTAs for emphasis
+
+Font weight
+
+700
+
+700
+
+Heavier at close
+
+
+17.3 Trust Microcopy
+
+✓ No-obligation quote  •  ✓ Response within 24 hours  •  ✓ Licensed &amp; insured
+
+14px, white at 78% opacity. 32px margin-top below CTAs.
+
+
+
+Section 18: Footer
+
+High-density information block: secondary navigation, local SEO reinforcement (NAP citation), and legal/compliance links. Consistent across every page.
+
+
+18.1 Layout
+
+Background #0B2545 (Navy). Max-width 1200px. 5-column grid desktop, stacked mobile.
+
+
+18.2 Footer Columns
+
+Column
+
+Heading
+
+Content
+
+Links
+
+1. Brand+NAP
+
+(Logo)
+
+Logo, tagline, address, phone, email, license, hours
+
+Phone=tel:, email=mailto:, address=maps
+
+2. Services
+
+Services
+
+All 10 services as link list
+
+Each → /services/[slug]/
+
+3. Areas
+
+Service Areas
+
+All 12 areas as link list
+
+Each → /service-areas/[city]/
+
+4. Resources
+
+Resources
+
+Library, Pricing, Estimate, Gallery, FAQ, Reviews
+
+Internal links
+
+5. About
+
+About
+
+About Us, Our Process, Reviews, Careers, Contact
+
+Internal links
+
+
+18.3 Brand + NAP Column
+
+
+Logo: white version, 180px wide. Links to /.
+
+
+Tagline: &quot;A Fresh Start for Every Surface&quot;
+
+
+Address: 712 W Lumsden Rd, Suite 4 / Brandon, FL 33511
+
+
+Phone: (813) 555-0283
+
+
+Email: info@cleanslatepw.com
+
+
+License: FL Lic. #BL-2021-04417
+
+
+Hours: Mon–Sat 7:00 AM – 6:00 PM | Sun: By Appointment
+
+
+18.4 Social Icons
+
+Facebook, Instagram, Google icons — 32×32 circular, white outline. Hover: solid white fill. 16px gap between icons.
+
+
+18.5 Bottom Legal Bar
+
+
+Copyright: &quot;© 2026 Clean Slate Pressure Washing. All rights reserved.&quot; 13px, white 65%.
+
+
+Legal links: Privacy Policy | Terms of Service | Accessibility | Sitemap. 13px, white 78%.
+
+
+Built-by: &apos;Built by TradeWorks AI&apos; 11px, white 50%, linking to tradeworksai.com.
+
+
+
+Section 19: Image Asset Inventory
+
+Master inventory for the homepage. Each row specifies purpose, dimensions, format, and alt text.
+
+
+19.1 Image Inventory
+
+#
+
+Asset / Section
+
+Dimensions / Format
+
+Alt Text
+
+1
+
+Hero background
+
+1920×1080 WebP @1x; 828×1104 mobile
+
+Freshly cleaned two-story Florida home in Brandon
+
+2–7
+
+Trust bar badges (6)
+
+240×80 SVG/PNG each
+
+Per badge: FL licensed / insured / Google rating / BBB / UAMCC / guarantee
+
+8–17
+
+Service icons (10)
+
+64×64 SVG each
+
+Per service: [service name] icon
+
+18–23
+
+Pillar icons (6)
+
+64×64 SVG (orange)
+
+Per pillar: [pillar concept] icon
+
+24–29
+
+Before/After pairs (6)
+
+1080×720 WebP ×2 each
+
+Before/After: [service] on [city] home
+
+30–33
+
+Resource article images (4)
+
+800×450 WebP (16:9)
+
+Per article topic
+
+34
+
+Footer logo (white)
+
+360×120 SVG
+
+Clean Slate Pressure Washing logo
+
+35
+
+OG image
+
+1200×630 JPG
+
+Clean Slate Pressure Washing — Brandon FL pressure washing
+
+36
+
+Twitter image
+
+1200×675 JPG
+
+Clean Slate Pressure Washing — Brandon FL pressure washing
+
+
+19.2 Standards
+
+
+SVG for icons/logos. WebP for photos with JPEG fallback. PNG only for transparency.
+
+
+Hero &lt;180KB. Section images &lt;120KB. Thumbnails &lt;60KB. Icons &lt;8KB.
+
+
+All below-fold images: loading=&apos;lazy&apos;. Hero: fetchpriority=&apos;high&apos;, preloaded.
+
+
+Every image MUST have alt attribute. Decorative images use alt=&apos;&apos;.
+
+
+
+Section 20: GA4 Event Tracking
+
+Every meaningful homepage interaction must fire a GA4 event for behavior analysis, drop-off identification, and ROI proof.
+
+
+20.1 Configuration
+
+
+GA4 via Google Tag Manager. Single GTM container in &lt;head&gt; with noscript fallback.
+
+
+Consent Mode v2: default-denied for ad_storage and analytics_storage. Update on cookie banner interaction.
+
+
+Cookie banner: lightweight first-party (Cookieconsent or similar).
+
+
+20.2 Event Inventory
+
+Event
+
+Trigger
+
+Parameters
+
+Type
+
+page_view
+
+All loads (auto)
+
+page_location, page_title
+
+Standard
+
+cta_click
+
+Any CTA button
+
+cta_label, cta_location, cta_target_url
+
+Engagement→Lead
+
+phone_click
+
+Any tel: link
+
+phone_number, click_location
+
+Conversion
+
+form_submit
+
+Estimate form submit
+
+form_name, form_destination
+
+Conversion
+
+form_start
+
+First form field focus
+
+form_name, field_name
+
+Engagement
+
+announcement_bar_click
+
+Top bar CTA
+
+promo_id, message_variant
+
+Engagement
+
+service_card_click
+
+Service grid card
+
+service_name, service_url
+
+Engagement
+
+faq_expand
+
+FAQ accordion open
+
+question_text, question_index
+
+Engagement
+
+before_after_interact
+
+Slider drag/click
+
+project_name, project_index
+
+Engagement
+
+scroll
+
+25/50/75/90% depth
+
+percent_scrolled
+
+Engagement
+
+
+20.3 Conversions
+
+
+phone_click: Mark as Conversion in GA4 admin.
+
+
+form_submit: Mark as Conversion.
+
+
+cta_click where target contains &apos;/free-estimate/&apos;: custom conversion.
+
+
+
+Section 21: Implementation Checklist
+
+Final pre-launch QA pass. Every item verified before production deployment.
+
+
+21.1 Content Verification
+
+
+All H1/H2/H3 headings match exact copy in this guide.
+
+
+All body copy implemented word-for-word.
+
+
+Phone (813) 555-0283 verified as working tel: link on every CTA.
+
+
+Email info@cleanslatepw.com verified as working mailto: link.
+
+
+All service URLs resolve — no 404s in services grid.
+
+
+All service area URLs resolve — no 404s in footer or areas section.
+
+
+Address consistent across hero microcopy, footer NAP, and JSON-LD schema.
+
+
+License number consistent across footer and trust bar.
+
+
+Hours consistent across footer, schema, and contact section.
+
+
+21.2 Schema &amp; SEO
+
+
+Title tag matches specification (no truncation).
+
+
+Meta description 150-158 chars.
+
+
+Canonical points to https://cleanslatepw.com/.
+
+
+OG image renders on Facebook/LinkedIn share.
+
+
+JSON-LD LocalBusiness validates at validator.schema.org.
+
+
+JSON-LD FAQPage validates and matches homepage FAQ.
+
+
+Robots meta set to &apos;index, follow&apos;.
+
+
+sitemap.xml includes homepage.
+
+
+21.3 Performance
+
+
+Hero image preloaded via &lt;link rel=&apos;preload&apos;&gt;.
+
+
+All below-fold images have loading=&apos;lazy&apos;.
+
+
+WebP served with JPEG fallback via &lt;picture&gt;.
+
+
+Total page weight under 1.5 MB.
+
+
+LCP under 2.5s on simulated 4G.
+
+
+CLS under 0.1. INP under 200ms.
+
+
+PageSpeed mobile &gt;85, desktop &gt;95.
+
+
+21.4 Accessibility
+
+
+Every image has alt attribute.
+
+
+Color contrast meets WCAG AA (4.5:1 text, 3:1 large text).
+
+
+All interactive elements keyboard-navigable.
+
+
+Visible focus indicators on all elements.
+
+
+Skip-to-main-content link present.
+
+
+ARIA landmarks used correctly.
+
+
+Passes WAVE and axe audits with zero violations.
+
+
+21.5 Analytics
+
+
+GTM container in &lt;head&gt; with correct ID.
+
+
+GA4 page_view fires on load (verified in DebugView).
+
+
+phone_click, cta_click, form_submit events tested.
+
+
+Consent Mode v2 configured with default-denied.
+
+
+Conversion events configured in GA4 admin.
+
+
+
+— End of Homepage Developer Guide —
+
+Clean Slate Pressure Washing — Homepage Guide v1.0 | Prepared by TradeWorks AI | April 2026
+
+
+

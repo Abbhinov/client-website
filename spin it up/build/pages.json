@@ -1,0 +1,339 @@
+{
+  "home": {
+    "out": "index.html",
+    "active": "home",
+    "overlay": true,
+    "preload": "  <link rel=\"preload\" as=\"image\" href=\"/images/hero-desktop.webp\">\n",
+    "title": "Laundromat in Avondale, Chicago | Spin It Up Laundry",
+    "description": "Avondale's largest laundromat with 41 washers, 52 dryers & 130 lb commercial machines. Wash & fold, pickup & delivery via Cents app. EBT accepted. Open 6 AM–11 PM daily.",
+    "canonical": "https://spinituplaundry.net/",
+    "es": "/es/",
+    "og_title": "Spin It Up Laundry — Avondale's Largest Modern Laundromat",
+    "og_description": "Avondale's largest laundromat: 41 washers, 52 dryers, 130 lb capacity machines. Wash & fold, pickup & delivery. EBT accepted. Open daily 6 AM–11 PM.",
+    "og_image": "https://spinituplaundry.net/images/og-homepage.jpg"
+  },
+  "services": {
+    "out": "services/index.html",
+    "active": "services",
+    "title": "Laundry Services in Avondale, Chicago | Spin It Up Laundry",
+    "description": "Full-service laundry in Avondale: self-service with 130 lb machines, wash & fold, pickup & delivery via Cents app, commercial services & pressing. EBT accepted.",
+    "canonical": "https://spinituplaundry.net/services/",
+    "es": "/es/servicios/",
+    "og_title": "Laundry Services | Spin It Up Laundry — Avondale, Chicago",
+    "og_description": "Self-service, wash & fold, pickup & delivery, commercial laundry, and pressing services. 41 washers, 52 dryers, 130 lb machines. EBT accepted.",
+    "og_image": "https://spinituplaundry.net/images/og-services.jpg"
+  },
+  "self-service": {
+    "out": "services/self-service/index.html",
+    "active": "services",
+    "title": "Self-Service Laundry in Avondale | Spin It Up — EBT Accepted",
+    "description": "Self-service laundromat in Avondale, Chicago with 41 washers & 52 dryers including 130 lb machines. EBT accepted. Free WiFi, coffee & parking. Open 6 AM–11 PM daily.",
+    "canonical": "https://spinituplaundry.net/services/self-service/",
+    "es": "/es/servicios/autoservicio/",
+    "og_title": "Self-Service Laundry | Spin It Up Laundry — Avondale, Chicago",
+    "og_description": "41 washers, 52 dryers, 130 lb machines. EBT accepted. Free WiFi, coffee & parking. Open 6 AM–11 PM daily in Avondale.",
+    "og_image": "https://spinituplaundry.net/images/og-self-service.jpg"
+  },
+  "wash-and-fold": {
+    "out": "services/wash-and-fold/index.html",
+    "active": "services",
+    "title": "Wash & Fold Laundry in Chicago | Spin It Up — $1.50/lb, Next-Day",
+    "description": "Professional wash & fold drop-off in Avondale, Chicago. Starting at $1.50/lb with next-day turnaround. Stain treatment included. Open 6 AM–11 PM daily.",
+    "canonical": "https://spinituplaundry.net/services/wash-and-fold/",
+    "es": "/es/servicios/lavado-y-doblado/",
+    "og_title": "Wash & Fold Drop-Off | Spin It Up Laundry — Avondale, Chicago",
+    "og_description": "Professional wash & fold starting at $1.50/lb. Next-day turnaround. Stain treatment included. Drop off at 3710 N Kimball Ave.",
+    "og_image": "https://spinituplaundry.net/images/og-wash-fold.jpg"
+  },
+  "pickup-delivery": {
+    "out": "services/pickup-delivery/index.html",
+    "active": "services",
+    "title": "Laundry Pickup & Delivery in Chicago | Spin It Up — Order via App",
+    "description": "Laundry pickup & delivery in Avondale, Irving Park & Logan Square. Order via the Cents app. We pick up, wash, fold & deliver. Starting at $2.00/lb.",
+    "canonical": "https://spinituplaundry.net/services/pickup-delivery/",
+    "es": "/es/servicios/recogida-y-entrega/",
+    "og_title": "Laundry Pickup & Delivery | Spin It Up Laundry — Chicago",
+    "og_description": "Order from your phone via the Cents app. We pick up, wash, fold, and deliver your laundry. Avondale, Irving Park, Logan Square & more.",
+    "og_image": "https://spinituplaundry.net/images/og-pickup-delivery.jpg"
+  },
+  "commercial": {
+    "out": "services/commercial/index.html",
+    "active": "services",
+    "hreflang": false,
+    "title": "Commercial Laundry Service in Chicago | Spin It Up — Bulk & Pickup",
+    "description": "Commercial laundry for Airbnb hosts, salons, gyms & restaurants in Chicago. Volume pricing, 130 lb machines, pickup & delivery. Call (773) 654-1275.",
+    "canonical": "https://spinituplaundry.net/services/commercial/",
+    "og_title": "Commercial Laundry Service | Spin It Up Laundry — Chicago",
+    "og_description": "Bulk laundry for businesses. Volume pricing, 130 lb machines, scheduled pickup & delivery. Airbnb, salons, gyms, restaurants.",
+    "og_image": "https://spinituplaundry.net/images/og-commercial.jpg"
+  },
+  "pricing": {
+    "out": "pricing/index.html",
+    "active": "pricing",
+    "title": "Laundry Pricing in Chicago | Spin It Up — Self-Service, Wash & Fold",
+    "description": "Complete laundry pricing: self-service from $4.75/load, wash & fold $1.50/lb, pickup & delivery $2.00/lb. Free drying Wed & Thu. EBT accepted.",
+    "canonical": "https://spinituplaundry.net/pricing/",
+    "es": "/es/precios/",
+    "og_title": "Laundry Pricing | Spin It Up Laundry — Avondale, Chicago",
+    "og_description": "Self-service from $4.75, wash & fold $1.50/lb, delivery $2.00/lb. Free drying Wed & Thu. EBT accepted.",
+    "og_image": "https://spinituplaundry.net/images/og-pricing.jpg"
+  },
+  "contact": {
+    "out": "contact/index.html",
+    "active": "contact",
+    "title": "Contact Spin It Up Laundry | Avondale, Chicago — (773) 654-1275",
+    "description": "Contact Spin It Up Laundry at 3710 N Kimball Ave, Avondale, Chicago. Call (773) 654-1275, email info@spinituplaundry.net, or visit us 6 AM–11 PM daily.",
+    "canonical": "https://spinituplaundry.net/contact/",
+    "es": "/es/contacto/",
+    "og_title": "Contact Us | Spin It Up Laundry — Avondale, Chicago",
+    "og_description": "Call (773) 654-1275, email info@spinituplaundry.net, or visit us at 3710 N Kimball Ave. Open 6 AM–11 PM daily.",
+    "og_image": "https://spinituplaundry.net/images/og-contact.jpg"
+  },
+  "faq": {
+    "out": "faq/index.html",
+    "active": "faq",
+    "title": "FAQ | Spin It Up Laundry — Hours, Pricing, EBT, Delivery & More",
+    "description": "Answers to common questions about Spin It Up Laundry: hours, pricing, EBT, wash & fold, pickup & delivery, parking, machine sizes & commercial services.",
+    "canonical": "https://spinituplaundry.net/faq/",
+    "es": "/es/preguntas-frecuentes/",
+    "og_title": "FAQ | Spin It Up Laundry — Avondale, Chicago",
+    "og_description": "Answers about hours, pricing, EBT, wash & fold, pickup & delivery, parking, machines & commercial services.",
+    "og_image": "https://spinituplaundry.net/images/og-faq.jpg"
+  },
+  "about": {
+    "out": "about/index.html",
+    "active": "about",
+    "hreflang": false,
+    "title": "About Spin It Up Laundry | Modern Laundromat in Avondale, Chicago",
+    "description": "Spin It Up Laundry is a modern, full-service laundromat in Avondale, Chicago. 41 washers, 52 dryers, machines up to 130 lbs, wash-and-fold, pickup & delivery, and commercial laundry. Open 6 AM–11 PM daily.",
+    "canonical": "https://spinituplaundry.net/about/",
+    "og_title": "About Us | Spin It Up Laundry — Avondale, Chicago",
+    "og_description": "Modern, full-service laundromat in Avondale with high-capacity machines, self-service, wash-and-fold, pickup & delivery, and commercial laundry.",
+    "og_image": "https://spinituplaundry.net/images/og-about.jpg"
+  },
+  "privacy-policy": {
+    "out": "privacy-policy/index.html",
+    "active": "",
+    "hreflang": false,
+    "body_class": "page-legal",
+    "title": "Privacy Policy | Spin It Up Laundry",
+    "description": "Privacy policy for Spin It Up Laundry. How we collect, use, and protect your information when you visit our website or use our services.",
+    "canonical": "https://spinituplaundry.net/privacy-policy/"
+  },
+  "terms-of-service": {
+    "out": "terms-of-service/index.html",
+    "active": "",
+    "hreflang": false,
+    "body_class": "page-legal",
+    "title": "Terms of Service | Spin It Up Laundry",
+    "description": "Terms of service for Spin It Up Laundry website and laundry services at 3710 N Kimball Ave, Avondale, Chicago.",
+    "canonical": "https://spinituplaundry.net/terms-of-service/"
+  },
+  "accessibility": {
+    "out": "accessibility/index.html",
+    "active": "",
+    "hreflang": false,
+    "body_class": "page-legal",
+    "title": "Accessibility Statement | Spin It Up Laundry",
+    "description": "Spin It Up Laundry is committed to digital accessibility. Learn about our WCAG 2.1 AA compliance efforts and how to report issues.",
+    "canonical": "https://spinituplaundry.net/accessibility/"
+  },
+  "ironing-pressing": {
+    "out": "services/ironing-pressing/index.html",
+    "active": "services",
+    "hreflang": false,
+    "title": "Ironing & Pressing Service in Chicago | Spin It Up — From $3/Item",
+    "description": "Professional ironing & pressing in Avondale, Chicago. Dress shirts, suits, uniforms, formal wear. Starting at $3.00/item. Drop off at 3710 N Kimball Ave.",
+    "canonical": "https://spinituplaundry.net/services/ironing-pressing/",
+    "og_title": "Ironing & Pressing | Spin It Up Laundry — Avondale, Chicago",
+    "og_description": "Professional garment pressing from $3.00/item. Dress shirts, suits, uniforms, formal wear. Drop off at 3710 N Kimball Ave.",
+    "og_image": "https://spinituplaundry.net/images/og-pressing.jpg"
+  },
+  "areas": {
+    "out": "areas/index.html",
+    "active": "areas",
+    "hreflang": false,
+    "title": "Service Areas | Spin It Up Laundry — Avondale, Irving Park & More",
+    "description": "Laundry services across Chicago’s Northwest Side: Avondale, Irving Park, Logan Square, Hermosa & Albany Park. Self-service, wash & fold & delivery.",
+    "canonical": "https://spinituplaundry.net/areas/",
+    "og_title": "Service Areas | Spin It Up Laundry",
+    "og_description": "Laundry across Avondale, Irving Park, Logan Square, Hermosa & Albany Park. Self-service, wash & fold, pickup & delivery.",
+    "og_image": "https://spinituplaundry.net/images/og-areas.jpg"
+  },
+  "avondale": {
+    "out": "areas/avondale/index.html",
+    "active": "areas",
+    "hreflang": false,
+    "title": "Laundromat in Avondale, Chicago | Spin It Up — 3710 N Kimball Ave",
+    "description": "Avondale's neighborhood laundromat at 3710 N Kimball Ave. 41 washers, 52 dryers, 130 lb machines. Self-service, wash & fold, pickup & delivery. EBT accepted.",
+    "canonical": "https://spinituplaundry.net/areas/avondale/",
+    "og_title": "Laundromat in Avondale, Chicago | Spin It Up — 3710 N Kimball Ave",
+    "og_description": "Avondale's neighborhood laundromat at 3710 N Kimball Ave. 41 washers, 52 dryers, 130 lb machines. Self-service, wash & fold, pickup & delivery. EBT accepted.",
+    "og_image": "https://spinituplaundry.net/images/og-avondale.jpg"
+  },
+  "irving-park": {
+    "out": "areas/irving-park/index.html",
+    "active": "areas",
+    "hreflang": false,
+    "title": "Laundromat Near Irving Park, Chicago | Spin It Up — Pickup & Delivery",
+    "description": "Laundry services for Irving Park, Chicago. Self-service, wash & fold, pickup & delivery. 41 washers, 52 dryers, 130 lb machines at 3710 N Kimball Ave.",
+    "canonical": "https://spinituplaundry.net/areas/irving-park/",
+    "og_title": "Laundromat Near Irving Park, Chicago | Spin It Up — Pickup & Delivery",
+    "og_description": "Laundry services for Irving Park, Chicago. Self-service, wash & fold, pickup & delivery. 41 washers, 52 dryers, 130 lb machines at 3710 N Kimball Ave.",
+    "og_image": "https://spinituplaundry.net/images/og-irving-park.jpg"
+  },
+  "logan-square": {
+    "out": "areas/logan-square/index.html",
+    "active": "areas",
+    "hreflang": false,
+    "title": "Laundromat Near Logan Square, Chicago | Spin It Up — Delivery",
+    "description": "Laundry services for Logan Square, Chicago. Self-service, wash & fold from $1.50/lb, pickup & delivery. 130 lb machines. Open 6 AM–11 PM daily.",
+    "canonical": "https://spinituplaundry.net/areas/logan-square/",
+    "og_title": "Laundromat Near Logan Square, Chicago | Spin It Up — Delivery",
+    "og_description": "Laundry services for Logan Square, Chicago. Self-service, wash & fold from $1.50/lb, pickup & delivery. 130 lb machines. Open 6 AM–11 PM daily.",
+    "og_image": "https://spinituplaundry.net/images/og-logan-square.jpg"
+  },
+  "hermosa": {
+    "out": "areas/hermosa/index.html",
+    "active": "areas",
+    "hreflang": false,
+    "title": "Laundromat Near Hermosa, Chicago | Spin It Up — Pickup & Delivery",
+    "description": "Laundry services for Hermosa, Chicago. Self-service, wash & fold, pickup & delivery. EBT accepted. 130 lb machines. Open 6 AM–11 PM daily.",
+    "canonical": "https://spinituplaundry.net/areas/hermosa/",
+    "og_title": "Laundromat Near Hermosa, Chicago | Spin It Up — Pickup & Delivery",
+    "og_description": "Laundry services for Hermosa, Chicago. Self-service, wash & fold, pickup & delivery. EBT accepted. 130 lb machines. Open 6 AM–11 PM daily.",
+    "og_image": "https://spinituplaundry.net/images/og-hermosa.jpg"
+  },
+  "albany-park": {
+    "out": "areas/albany-park/index.html",
+    "active": "areas",
+    "hreflang": false,
+    "title": "Laundromat Near Albany Park, Chicago | Spin It Up — Delivery",
+    "description": "Laundry services for Albany Park, Chicago. Pickup & delivery via the Cents app, plus self-service & wash & fold at 3710 N Kimball Ave. EBT accepted. Se habla español.",
+    "canonical": "https://spinituplaundry.net/areas/albany-park/",
+    "og_title": "Laundromat Near Albany Park, Chicago | Spin It Up — Delivery",
+    "og_description": "Laundry services for Albany Park, Chicago. Pickup & delivery via the Cents app, plus self-service & wash & fold at 3710 N Kimball Ave. EBT accepted. Se habla español.",
+    "og_image": "https://spinituplaundry.net/images/og-albany-park.jpg"
+  },
+  "how-to-use-cents-app": {
+    "out": "resources/how-to-use-cents-app/index.html",
+    "active": "",
+    "hreflang": false,
+    "title": "How to Use the Cents App for Laundry Pickup | Spin It Up Guide",
+    "description": "Step-by-step guide to using the Cents app for laundry pickup & delivery with Spin It Up Laundry. Download, set up, order your first pickup in under 2 minutes.",
+    "canonical": "https://spinituplaundry.net/resources/how-to-use-cents-app/",
+    "og_title": "How to Use the Cents App for Laundry Pickup | Spin It Up",
+    "og_description": "Step-by-step guide to using the Cents app for laundry pickup & delivery. Download, set up, and order your first pickup in under 2 minutes.",
+    "og_image": "https://spinituplaundry.net/images/og-cents-guide.jpg"
+  },
+  "es-home": {
+    "out": "es/index.html", "active": "home", "lang": "es", "alt": "/",
+    "title": "Spin It Up Laundry | Lavandería del Vecindario en Avondale — Chicago",
+    "description": "Lavandería de servicio completo en Avondale, Chicago. 41 lavadoras, 52 secadoras, máquinas de 130 lb. Autoservicio, lavado y doblado, recogida y entrega. Aceptamos EBT.",
+    "canonical": "https://spinituplaundry.net/es/",
+    "og_image": "https://spinituplaundry.net/images/og-homepage.jpg"
+  },
+  "es-servicios": {
+    "out": "es/servicios/index.html", "active": "services", "lang": "es", "alt": "/services/",
+    "title": "Servicios de Lavandería en Avondale, Chicago | Spin It Up Laundry",
+    "description": "Servicios completos de lavandería en Avondale: autoservicio con máquinas de 130 lb, lavado y doblado, recogida y entrega por Cents, servicios comerciales y planchado. Aceptamos EBT.",
+    "canonical": "https://spinituplaundry.net/es/servicios/",
+    "og_image": "https://spinituplaundry.net/images/og-services.jpg"
+  },
+  "es-autoservicio": {
+    "out": "es/servicios/autoservicio/index.html", "active": "services", "lang": "es", "alt": "/services/self-service/",
+    "title": "Autoservicio de Lavandería en Avondale | Spin It Up — Aceptamos EBT",
+    "description": "Lavandería de autoservicio en Avondale, Chicago con 41 lavadoras y 52 secadoras incluyendo máquinas de 130 lb. Aceptamos EBT. WiFi y café gratis. Abierto de 6 AM a 11 PM.",
+    "canonical": "https://spinituplaundry.net/es/servicios/autoservicio/",
+    "og_image": "https://spinituplaundry.net/images/og-self-service.jpg"
+  },
+  "es-lavado-y-doblado": {
+    "out": "es/servicios/lavado-y-doblado/index.html", "active": "services", "lang": "es", "alt": "/services/wash-and-fold/",
+    "title": "Lavado y Doblado en Chicago | Spin It Up — $1.50/lb, Día Siguiente",
+    "description": "Servicio profesional de lavado y doblado en Avondale, Chicago. Desde $1.50 por libra con entrega al día siguiente. Tratamiento de manchas incluido. Abierto de 6 AM a 11 PM.",
+    "canonical": "https://spinituplaundry.net/es/servicios/lavado-y-doblado/",
+    "og_image": "https://spinituplaundry.net/images/og-wash-fold.jpg"
+  },
+  "es-recogida-y-entrega": {
+    "out": "es/servicios/recogida-y-entrega/index.html", "active": "services", "lang": "es", "alt": "/services/pickup-delivery/",
+    "title": "Recogida y Entrega de Lavandería en Chicago | Spin It Up — Ordene por App",
+    "description": "Recogida y entrega de lavandería en Avondale, Irving Park y Logan Square. Ordene por la aplicación Cents. Recogemos, lavamos, doblamos y entregamos. Desde $2.00/lb.",
+    "canonical": "https://spinituplaundry.net/es/servicios/recogida-y-entrega/",
+    "og_image": "https://spinituplaundry.net/images/og-pickup-delivery.jpg"
+  },
+  "es-precios": {
+    "out": "es/precios/index.html", "active": "pricing", "lang": "es", "alt": "/pricing/",
+    "title": "Precios de Lavandería en Chicago | Spin It Up — Autoservicio, Lavado y Doblado",
+    "description": "Precios completos: autoservicio desde $4.75/carga, lavado y doblado $1.50/lb, recogida y entrega $2.00/lb. Secado gratis mie y jue. Aceptamos EBT.",
+    "canonical": "https://spinituplaundry.net/es/precios/",
+    "og_image": "https://spinituplaundry.net/images/og-pricing.jpg"
+  },
+  "es-contacto": {
+    "out": "es/contacto/index.html", "active": "contact", "lang": "es", "alt": "/contact/",
+    "title": "Contacto | Spin It Up Laundry | Avondale, Chicago — (773) 654-1275",
+    "description": "Contacte Spin It Up Laundry en 3710 N Kimball Ave, Avondale, Chicago. Llame al (773) 654-1275 o visite de 6 AM a 11 PM. Se habla español.",
+    "canonical": "https://spinituplaundry.net/es/contacto/",
+    "og_image": "https://spinituplaundry.net/images/og-contact.jpg"
+  },
+  "es-preguntas-frecuentes": {
+    "out": "es/preguntas-frecuentes/index.html", "active": "faq", "lang": "es", "alt": "/faq/",
+    "title": "Preguntas Frecuentes | Spin It Up Laundry — Horario, Precios, EBT, Entrega",
+    "description": "Respuestas a preguntas comunes sobre Spin It Up Laundry: horario, precios, EBT, lavado y doblado, recogida y entrega, estacionamiento y servicios comerciales.",
+    "canonical": "https://spinituplaundry.net/es/preguntas-frecuentes/",
+    "og_image": "https://spinituplaundry.net/images/og-faq.jpg"
+  },
+  "resources": {
+    "out": "resources/index.html", "active": "", "hreflang": false,
+    "title": "Laundry Tips & Resources | Spin It Up Laundry — Avondale, Chicago",
+    "description": "Practical laundry guides from Spin It Up Laundry: how to wash comforters, Chicago winter laundry tips, the Airbnb host's laundry guide, EBT assistance, and using the Cents app.",
+    "canonical": "https://spinituplaundry.net/resources/",
+    "og_title": "Laundry Tips & Resources | Spin It Up Laundry",
+    "og_description": "Practical laundry guides: comforters, winter tips, Airbnb laundry, EBT assistance, and the Cents app.",
+    "og_image": "https://spinituplaundry.net/images/og-resources.jpg"
+  },
+  "laundry-tips-chicago-winter": {
+    "out": "resources/laundry-tips-chicago-winter/index.html", "active": "", "hreflang": false,
+    "title": "Laundry Tips for Chicago Winters | Spin It Up Laundry",
+    "description": "Road salt stains, static cling, winter coats, and bulky bedding — a practical cold-weather laundry playbook from Spin It Up Laundry in Avondale, Chicago.",
+    "canonical": "https://spinituplaundry.net/resources/laundry-tips-chicago-winter/",
+    "og_title": "Laundry Tips for Chicago Winters",
+    "og_description": "How to handle salt stains, static, winter coats, and heavy bedding during a Chicago winter.",
+    "og_image": "https://spinituplaundry.net/images/og-resources.jpg"
+  },
+  "how-to-wash-a-comforter": {
+    "out": "resources/how-to-wash-a-comforter/index.html", "active": "", "hreflang": false,
+    "title": "How to Wash a Large Comforter (King, Queen & Down) | Spin It Up",
+    "description": "Why a home washer can't handle a comforter, which machine size to choose, and step-by-step instructions for washing and fully drying bulky bedding.",
+    "canonical": "https://spinituplaundry.net/resources/how-to-wash-a-comforter/",
+    "og_title": "How to Wash a Large Comforter",
+    "og_description": "Which machine size to use and step-by-step instructions for washing and fully drying a king, queen, or down comforter.",
+    "og_image": "https://spinituplaundry.net/images/og-resources.jpg"
+  },
+  "airbnb-laundry-guide-chicago": {
+    "out": "resources/airbnb-laundry-guide-chicago/index.html", "active": "", "hreflang": false,
+    "title": "The Airbnb Host's Guide to Laundry in Chicago | Spin It Up",
+    "description": "How short-term rental hosts keep linens guest-ready between back-to-back bookings: turnover math, par stock, where to do laundry, and when to outsource.",
+    "canonical": "https://spinituplaundry.net/resources/airbnb-laundry-guide-chicago/",
+    "og_title": "The Airbnb Host's Guide to Laundry in Chicago",
+    "og_description": "Turnover math, par stock, and when to outsource your short-term rental laundry to a commercial account.",
+    "og_image": "https://spinituplaundry.net/images/og-resources.jpg"
+  },
+  "ebt-laundry-assistance": {
+    "out": "resources/ebt-laundry-assistance/index.html", "active": "", "hreflang": false,
+    "title": "Using EBT & SNAP for Laundry: What to Know | Spin It Up Laundry",
+    "description": "What EBT covers at the laundromat: SNAP food benefits can't pay for laundry, but EBT cash benefits can. How to pay with your Illinois Link card at Spin It Up.",
+    "canonical": "https://spinituplaundry.net/resources/ebt-laundry-assistance/",
+    "og_title": "Using EBT & SNAP for Laundry",
+    "og_description": "SNAP food benefits can't pay for laundry, but EBT cash benefits can. How it works at Spin It Up in Avondale.",
+    "og_image": "https://spinituplaundry.net/images/og-resources.jpg"
+  },
+  "404": {
+    "out": "404.html",
+    "active": "",
+    "hreflang": false,
+    "robots": "noindex, follow",
+    "title": "Page Not Found | Spin It Up Laundry",
+    "description": "The page you're looking for could not be found. Return to Spin It Up Laundry's homepage or browse our laundry services.",
+    "canonical": "https://spinituplaundry.net/404.html"
+  }
+}

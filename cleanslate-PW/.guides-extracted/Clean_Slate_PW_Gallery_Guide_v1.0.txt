@@ -1,0 +1,188 @@
+﻿
+
+ 
+
+GALLERY PAGE DEVELOPER GUIDE
+
+Gallery
+
+
+ 
+
+Before &amp; After Portfolio
+
+Clean Slate Pressure Washing
+
+A Fresh Start for Every Surface
+
+Brandon, Florida  |  Hillsborough County
+
+cleanslatepw.com
+
+Prepared by TradeWorks AI
+
+Version 1.0  |  April 2026
+
+Client Confidential
+
+
+
+
+
+
+
+
+Section 1: Page Identity
+
+Attribute
+
+Value
+
+URL Path
+
+/gallery/
+
+Canonical URL
+
+https://cleanslatepw.com/gallery/
+
+Page Type
+
+Trust / Portfolio
+
+Breadcrumb
+
+Home → Gallery
+
+Primary Keyword
+
+Pressure washing before and after Brandon FL
+
+Target Word Count
+
+400–600 words (image-heavy page)
+
+&lt;title&gt;
+
+Before &amp; After Gallery | Clean Slate Pressure Washing | Brandon FL
+
+&lt;meta description&gt;
+
+See real before and after pressure washing and soft washing results from Clean Slate PW in Brandon, FL and Tampa Bay. No stock photos — every project is real.
+
+JSON-LD: ImageGallery or CollectionPage schema. BreadcrumbList (Home → Gallery).
+
+
+
+Section 2: Page Layout
+
+Filterable gallery grid. Visitors can filter by service type (house wash, roof, driveway, pool deck, lanai, fence, gutter, commercial) and by city (Brandon, Riverview, Valrico, etc.). Default view shows all projects in reverse chronological order (newest first).
+
+
+2.1 Hero
+
+H1
+
+Before &amp; After Gallery
+
+Subheadline
+
+Every photo below is a real project from a real Tampa Bay home. No stock photos, no enhanced lighting tricks — just results.
+
+Background
+
+Collage of 3-4 before/after pairs in a mosaic layout with navy overlay
+
+
+2.2 Filter Bar
+
+Horizontal pill-style filter buttons: All | House Wash | Roof | Driveway | Pool Deck | Lanai | Fence | Gutter | Commercial. Active filter gets orange background (#E8761A), inactive gets #E8EEF2 mist. Second row (optional): city filter pills.
+
+
+2.3 Gallery Grid
+
+Breakpoint
+
+Grid
+
+Card Style
+
+Desktop ≥1200px
+
+3 columns
+
+Before/after slider in card, caption below
+
+Tablet 768–1199px
+
+2 columns
+
+Same
+
+Mobile &lt;768px
+
+1 column
+
+Full-width slider cards
+
+
+2.4 Gallery Card Design
+
+
+Before/after interactive slider (same component as homepage Section 11).
+
+
+Caption below: service type, city, property type, approximate date.
+
+
+Example: &apos;House Soft Wash — Brandon, FL 33511 — Two-story stucco — March 2026&apos;.
+
+
+Images: 1080×720 WebP, under 120KB each. loading=&apos;lazy&apos; on all.
+
+
+Minimum 12 project pairs at launch. Add new projects monthly.
+
+
+2.5 Pagination / Load More
+
+Display 12 projects initially. &apos;Load More&apos; button at bottom loads 12 more. Infinite scroll is not recommended (causes scroll-depth analytics issues and poor back-button behavior).
+
+
+
+Section 3: CTA Below Gallery
+
+H2: Like What You See?
+
+&apos;Get My Free Estimate&apos; → /free-estimate/. &apos;Call (813) 555-0283&apos; ghost button. Standard final CTA pattern.
+
+
+
+Section 4: Implementation Checklist
+
+
+Minimum 12 before/after pairs at launch.
+
+
+Filter buttons work correctly (JS filtering, not page reload).
+
+
+All images lazy-loaded with descriptive alt text.
+
+
+ImageGallery/CollectionPage schema validates.
+
+
+Load More button functions without full page reload.
+
+
+PageSpeed mobile &gt;80 (image-heavy page — slightly relaxed target).
+
+
+
+— End of Gallery Guide —
+
+Clean Slate Pressure Washing — Gallery v1.0 | TradeWorks AI | April 2026
+
+
+

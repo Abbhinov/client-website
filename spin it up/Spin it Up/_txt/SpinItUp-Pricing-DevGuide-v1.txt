@@ -1,0 +1,678 @@
+
+SPIN IT UP LAUNDRY
+PRICING PAGEDEVELOPER GUIDE
+Section-by-Section Implementation Specification
+
+URL: spinituplaundry.net/pricing/
+Prepared by: TradeWorks AI  |  Version 1.0  |  May 2026
+Classification: Client Confidential
+
+Table of Contents
+1  How to Use This Guide
+2  Page Identity & Architecture
+3  Keyword Strategy & Content Map
+4  Complete <head> Section
+5  Section 1: Site Header & Navigation
+6  Section 2: Hero Banner
+7  Section 3: AEO Introduction
+8  Section 4: Self-Service Machine Pricing
+9  Section 5: Wash & Fold Pricing
+10  Section 6: Pickup & Delivery Pricing
+11  Section 7: Specialty Items Pricing
+12  Section 8: Commercial Pricing
+13  Section 9: Payment Methods
+14  Section 10: Weekly Specials
+15  Section 11: FAQ Section
+16  Section 12: Final CTA Block
+17  Section 13: Footer & Sticky Mobile CTA
+18  Reference: Image Asset Inventory
+19  Reference: GA4 Event Tracking
+20  Reference: Implementation Checklist
+
+1. How to Use This Guide
+This developer guide provides the complete implementation specification for the Pricing page (/pricing/). This is a standalone page — not part of any silo — that serves as the single source of truth for all Spin It Up Laundry pricing. Every service page links here for full pricing details. The audit identified placeholder text on the current pricing page as a Critical finding; this page replaces that content entirely with complete, structured pricing tables.
+This is a high-intent page. Visitors who land here are actively comparing options or preparing to visit. The page must be fast (LCP <1.5s target for conversion pages), scannable, and mobile-optimized with tables that reflow to card layouts.
+Content Authoring Rules
+All content written fresh. Resolves the Critical audit finding of placeholder text.
+AEO opening paragraph within the first 100–150 words answers “how much does laundry cost at Spin It Up.”
+All pricing must be confirmed with client before publication. Values in this guide are based on audit data and industry norms.
+Phone numbers and Cents app links render as clickable elements.
+
+2. Page Identity & Architecture
+URL Path
+/pricing/
+Page Type
+Standalone
+Canonical URL
+https://spinituplaundry.net/pricing/
+Breadcrumb
+Home > Pricing
+Parent Page
+/ (Homepage)
+Primary Keyword
+laundromat prices chicago (170–320/mo)
+Secondary Keywords
+wash and fold prices, laundry pickup cost chicago, coin laundry prices near me, how much does wash and fold cost
+Search Intent
+Commercial / Informational
+Target Word Count
+800–1,000 words
+Primary Conversion Goal
+Walk-in visit or Cents app order (pricing confirms value → action)
+Secondary Conversion Goals
+Phone call, service page click-through
+Robots Directive
+index, follow
+XML Sitemap
+Include — priority 0.9
+LCP Target
+<1.5s (conversion page)
+Content Update Frequency
+Update immediately when pricing changes
+hreflang
+<link rel="alternate" hreflang="es" href="https://spinituplaundry.net/es/precios/">
+Internal Linking Requirements
+Direction
+Link
+Anchor Text
+Cross-silo
+/services/self-service/
+Self-Service Laundry, View Self-Service Details
+Cross-silo
+/services/wash-and-fold/
+Wash & Fold, View Wash & Fold Details
+Cross-silo
+/services/pickup-delivery/
+Pickup & Delivery, Schedule Pickup
+Cross-silo
+/services/commercial/
+Commercial Services, Get a Commercial Quote
+Cross-silo
+/services/ironing-pressing/
+Ironing & Pressing
+Cross-silo
+/contact/
+Contact Us
+Cross-silo
+/faq/
+See All FAQs
+Up → Root
+/
+Home (breadcrumb)
+
+3. Keyword Strategy & Content Map
+Keyword
+Est. Volume
+Difficulty
+Intent
+Placement
+laundromat prices chicago
+170–320
+Low–Med
+Commercial
+H1, title, AEO paragraph
+how much does wash and fold cost
+320
+Low
+Informational
+AEO paragraph, W&F section, FAQ
+coin laundry prices near me
+590
+Med (local)
+Commercial
+Self-service section, GBP
+laundry pickup cost chicago
+50–110
+Low
+Commercial
+P&D section
+wash and fold price per pound
+210
+Low
+Informational
+W&F section, FAQ
+laundromat prices per load
+320
+Low–Med
+Informational
+Self-service section
+free drying laundromat chicago
+110–210
+Low
+Transactional
+Specials section
+comforter washing cost
+110–210
+Low
+Informational
+Specialty section, FAQ
+commercial laundry pricing
+90–170
+Low
+Commercial
+Commercial section
+EBT laundromat prices
+30–70
+Low
+Informational
+Payment section
+3.2 Semantic/LSI Terms
+Use naturally: laundry cost, price per pound, price per load, machine pricing, washer cost, dryer cost, flat rate, volume pricing, laundry card, transparent pricing, no hidden fees, EBT accepted, free drying, weekly specials, comforter washing cost, sleeping bag wash, Avondale, 60618.
+
+4. Complete <head> Section
+4.1 Meta Tags
+Tag
+Content
+<title>
+Laundry Pricing in Chicago | Spin It Up — Self-Service, Wash & Fold, Delivery (60 characters)
+<meta name="description">
+Complete laundry pricing: self-service from $3.25/load, wash & fold $1.50/lb, pickup & delivery $1.75/lb. Free drying Tue–Thu. EBT accepted. (143 characters)
+<meta name="robots">
+index, follow
+<meta name="viewport">
+width=device-width, initial-scale=1
+<meta charset>
+UTF-8
+<html lang>
+en
+<link rel="canonical">
+https://spinituplaundry.net/pricing/
+<link rel="alternate" hreflang="es">
+https://spinituplaundry.net/es/precios/
+<link rel="alternate" hreflang="en">
+https://spinituplaundry.net/pricing/
+4.2 Open Graph & Twitter
+Tag
+Content
+og:title
+Laundry Pricing | Spin It Up Laundry — Avondale, Chicago
+og:description
+Self-service from $3.25, wash & fold $1.50/lb, delivery $1.75/lb. Free drying Tue–Thu. EBT accepted.
+og:type
+website
+og:url
+https://spinituplaundry.net/pricing/
+og:image
+https://spinituplaundry.net/images/og-pricing.jpg (1200x630, <200KB)
+og:locale
+en_US
+og:site_name
+Spin It Up Laundry
+twitter:card
+summary_large_image
+twitter:title
+Laundry Pricing | Spin It Up — Avondale, Chicago
+twitter:description
+Self-service from $3.25, wash & fold $1.50/lb, delivery $1.75/lb. Free drying Tue–Thu. EBT accepted.
+twitter:image
+https://spinituplaundry.net/images/og-pricing.jpg
+4.3 JSON-LD Structured Data
+BreadcrumbList schema only. Individual service pricing is captured in the Service schemas on each service page. No duplicate pricing schema here.
+
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://spinituplaundry.net/" },
+    { "@type": "ListItem", "position": 2, "name": "Pricing", "item": "https://spinituplaundry.net/pricing/" }
+  ]
+}
+
+DEV ACTION:  Validate BreadcrumbList + FAQPage schemas via Google Rich Results Test. This page also benefits from table snippet optimization — pricing tables may appear directly in search results.
+
+5. Section 1: Site Header & Navigation
+Global header. Solid white. “Pricing” nav item active (font-weight 700, color Spin Blue, underline offset in Fresh Cyan).
+
+6. Section 2: Hero Banner
+Content Specifications
+Breadcrumb: Home > Pricing — standard spec.
+
+H1 Headline: "Laundry Pricing — Transparent, Simple, No Hidden Fees" — 7 words, 49 characters. Font: 40px/800 (desktop), 32px (tablet), 28px (mobile). Color: white.
+
+Subheadline: "Every price listed. Every fee explained. Know exactly what you’ll pay before you walk in, drop off, or order delivery." — 19 words. Font: 18px/400, rgba(255,255,255,0.85). Max-width: 660px, centered.
+
+Quick-nav anchor links below subheadline (horizontal, centered):
+Anchor Link
+Scrolls To
+Text
+#self-service
+Self-Service pricing table
+Self-Service
+#wash-fold
+Wash & Fold table
+Wash & Fold
+#pickup-delivery
+Pickup & Delivery table
+Pickup & Delivery
+#specialty
+Specialty items table
+Specialty Items
+#commercial
+Commercial section
+Commercial
+Anchor links: font 15px/600, color rgba(255,255,255,0.8), separated by “·” dividers, hover: white + underline. Smooth scroll behavior on click.
+Background: Spin Blue gradient. Padding: 64px 0 (desktop), 40px 16px (mobile).
+
+7. Section 3: AEO Introduction
+Content Specifications
+NEW:  AEO opening paragraph — new content.
+
+"Spin It Up Laundry at 3710 N Kimball Ave in Avondale, Chicago offers transparent pricing across all laundry services. Self-service machines start at $3.25 per load for standard washers and go up to $12.00 for our 130 lb commercial-capacity machines. Wash-and-fold drop-off service starts at $1.50 per pound with a 10 lb minimum and next-day turnaround. Pickup and delivery through the Cents app starts at $1.75 per pound plus a $5.00 pickup fee. We accept cash, credit, debit, EBT, and our reloadable laundry card. Free drying is available every Tuesday, Wednesday, and Thursday." — 99 words.
+
+Font: 18px/400 Body Text. Line-height: 1.65. Max-width: 800px, centered. Background: White.
+NOTE:  This paragraph is optimized for “laundromat prices Chicago,” “how much does wash and fold cost,” and “laundry pickup cost.” It provides specific dollar amounts for all three service types, payment methods, and the free drying promotion — all within the AEO extraction window. Google table snippets may also pull from the pricing tables below.
+
+8. Section 4: Self-Service Machine Pricing
+Section Overview
+Complete machine pricing table for walk-in self-service customers. Carries the id="self-service" anchor. Background: White (#FFFFFF).
+Content Specifications
+H2: "Self-Service Machine Pricing" — 4 words. Font: 36px/700, Dark Slate. Margin-bottom 8px.
+Subtext: "Walk in and use our machines anytime, 6 AM–11 PM, seven days a week." — 13 words. 16px/400. Margin-bottom 32px.
+
+Washer Pricing
+Machine Type
+Capacity
+Price
+Cycle Time
+Best For
+Standard Washer
+20–25 lb
+$3.25
+~30 min
+Everyday loads — a week of clothes for one person
+Large Washer
+35–50 lb
+$5.50
+~35 min
+Family loads, bedding sets, multiple loads combined
+Extra-Large Washer
+60–80 lb
+$8.00
+~40 min
+Comforters, sleeping bags, heavy blankets
+Commercial Washer
+Up to 130 lb
+$12.00
+~45 min
+King-size comforters, bulk commercial loads — largest in Avondale
+Dryer Pricing
+Machine Type
+Capacity
+Price
+Notes
+Standard Dryer
+30 lb
+$0.25 per 8 min
+Add time as needed
+Large Dryer
+50–75 lb
+$0.25 per 8 min
+For oversized items and bulk loads
+Free Drying Callout: 
+"Free Drying Every Tuesday, Wednesday & Thursday" — displayed as a prominent banner below the dryer table. Background: Fresh Cyan (#06B6D4), white text, 18px/700, centered, padding 16px 24px, border-radius 8px. Gift icon left. Below banner: "All dryers, all sizes, all day when you wash with us." in 15px/400 Body Text.
+Section CTA: "View Self-Service Details →" link to /services/self-service/. Font: 16px/600 Spin Blue.
+DEV ACTION:  Wrap this section in <div id="self-service"> for the hero anchor link. Tables must reflow to card layout on mobile (<768px). Each table row becomes a card with the machine type as the card header.
+
+9. Section 5: Wash & Fold Pricing
+Section Overview
+Per-pound pricing for drop-off wash-and-fold service. Carries id="wash-fold" anchor. Background: Ice Blue (#F0F9FF).
+Content Specifications
+H2: "Wash & Fold Drop-Off Pricing" — 5 words. Font: 36px/700, Dark Slate. Margin-bottom 8px.
+Subtext: "Drop off your laundry and pick it up clean, folded, and ready. Stain treatment included." — 15 words. 16px/400. Margin-bottom 32px.
+
+Service
+Price
+Minimum
+Turnaround
+Notes
+Standard Wash & Fold
+$1.50/lb
+10 lb
+Next day
+Includes stain treatment, professional detergent, hand folding
+Same-Day Wash & Fold
+$2.00/lb
+10 lb
+Same day
+Drop off before 10:00 AM for same-day pickup by close
+Dress Shirt (wash + fold + hanger)
+$3.50/item
+None
+Next day
+Laundered, pressed, on hanger
+"Most laundry bags weigh 12–18 lb. A typical order runs $18–$27 for next-day service." — callout box, bg #F8FAFC, border-left 4px Fresh Cyan, padding 16px 20px. 16px/400.
+Section CTA: "View Wash & Fold Details →" link to /services/wash-and-fold/. Font: 16px/600 Spin Blue.
+
+10. Section 6: Pickup & Delivery Pricing
+Section Overview
+Door-to-door service pricing. Carries id="pickup-delivery" anchor. Background: White (#FFFFFF).
+Content Specifications
+H2: "Pickup & Delivery Pricing" — 4 words. Font: 36px/700, Dark Slate. Margin-bottom 8px.
+Subtext: "Order from the Cents app. We pick up, wash, fold, and deliver to your door." — 14 words. 16px/400. Margin-bottom 32px.
+
+Service
+Price
+Minimum
+Turnaround
+Notes
+Standard Pickup & Delivery
+$1.75/lb
+10 lb
+Next day
+Includes pickup, washing, folding, stain treatment, delivery
+Express Pickup & Delivery
+$2.25/lb
+10 lb
+Same day
+Order before 10:00 AM for same-day return
+Pickup Fee
+$5.00 flat
+Per pickup
+N/A
+Charged once per pickup, regardless of weight
+"A typical weekly load (15–20 lb) costs $31–$40 including the pickup fee — less than an hour of your time." — same callout box style as Wash & Fold.
+Delivery Area Note: "Available in Avondale, Irving Park, Logan Square, Hermosa & Albany Park." — 16px/500 Caption Gray. Each neighborhood links to its area page.
+Section CTA: "Schedule Your First Pickup →" link to Cents app URL. CTA Orange inline button. Plus: "View Pickup & Delivery Details →" text link to /services/pickup-delivery/.
+
+11. Section 7: Specialty Items Pricing
+Section Overview
+Flat-rate pricing for comforters, sleeping bags, and other specialty items. Carries id="specialty" anchor. This section directly resolves the audit’s Critical finding of placeholder text on the current comforter pricing. Background: Ice Blue (#F0F9FF).
+Content Specifications
+H2: "Comforters & Specialty Items" — 4 words. Font: 36px/700, Dark Slate. Margin-bottom 8px.
+Subtext: "Flat-rate pricing for oversized items. Drop off or add to a pickup order." — 12 words. 16px/400. Margin-bottom 32px.
+
+Drop-Off Pricing
+Item
+Price
+Turnaround
+Comforter — Full/Twin
+$12.00
+Next day
+Comforter — Queen
+$15.00
+Next day
+Comforter — King
+$18.00
+Next day
+Sleeping Bag
+$15.00
+Next day
+Duvet Cover (wash & fold)
+$10.00
+Next day
+Blanket (large/heavy)
+$10.00
+Next day
+Pickup & Delivery Pricing
+Item
+Price
+Notes
+Comforter — Full/Twin
+$15.00
+Includes pickup & delivery
+Comforter — Queen
+$18.00
+Includes pickup & delivery
+Comforter — King
+$22.00
+Includes pickup & delivery
+Sleeping Bag
+$18.00
+Includes pickup & delivery
+NOTE:  This section replaces the “Add a description about this item” placeholder text from the current site. Client must confirm all flat-rate pricing before publication. The split between drop-off and pickup/delivery pricing reflects the additional driver cost.
+"Need to wash something not listed? Call (773) 654-1275 and we’ll give you a price." — 16px/400 Body Text, phone as tel: link.
+
+12. Section 8: Commercial Pricing
+Section Overview
+Brief commercial pricing overview with CTA to the dedicated Commercial Services page. Carries id="commercial" anchor. This section is intentionally shorter than the full commercial page — it drives traffic there. Background: White (#FFFFFF).
+Content Specifications
+H2: "Commercial & Business Pricing" — 4 words. Font: 36px/700, Dark Slate. Margin-bottom 16px.
+
+"Commercial accounts receive custom volume-based pricing that scales with your weekly laundry volume. Typical commercial clients save 15–25% compared to standard per-pound rates. Pricing depends on volume, item types, and schedule. We serve Airbnb hosts, salons, gyms, restaurants, hotels, and property managers." — 44 words. Font: 17px/400 Body Text.
+
+Volume Tier
+Estimated Rate
+Savings vs. Standard
+Under 50 lb/week
+Standard rates ($1.50–$1.75/lb)
+N/A
+50–150 lb/week
+Custom rate
+~10–15% savings
+150–500 lb/week
+Custom rate
+~15–25% savings
+500+ lb/week
+Best available
+25%+ savings
+Section CTA: "Get a Commercial Quote →" — CTA Orange button linking to /services/commercial/#inquiry-form. Plus: "Call (773) 654-1275 or email info@spinituplaundry.net" below button, with both as clickable links.
+
+13. Section 9: Payment Methods
+Section Overview
+All accepted payment methods with EBT prominently featured. Targets “EBT laundromat” queries. Background: Ice Blue (#F0F9FF).
+Content Specifications
+H2: "Payment Methods" — 2 words. Font: 32px/700, Dark Slate. Margin-bottom 32px.
+
+Method
+Icon
+Accepted For
+Notes
+EBT (SNAP Benefits)
+CreditCard (green)
+Self-service washing & drying
+One of the few laundromats in Avondale that accepts EBT
+Credit Card
+CreditCard
+All services
+Visa, Mastercard, Amex, Discover
+Debit Card
+CreditCard
+All services
+All major networks
+Cash
+Banknote
+All in-store services
+Bills and coins; change available at counter
+Laundry Card
+IdCard
+Self-service machines
+Reloadable at counter with any payment method
+Cents App (Online)
+Smartphone
+Pickup & delivery
+Credit or debit card via the app
+Layout: horizontal badge row (desktop), wrapped grid (mobile). Each method: icon 24px + label + note. Same visual spec as the Self-Service page payment section. EBT badge highlighted: bg #ECFDF5, border-color #16A34A.
+
+14. Section 10: Weekly Specials
+Section Overview
+Promotional specials that affect pricing. Background: Spin Blue gradient → dark blue. White text.
+Content Specifications
+H2: "Weekly Specials" — 2 words. White. Centered. Font: 32px/700. Margin-bottom 32px.
+
+Day
+Special
+Details
+Tuesday
+Free Drying All Day
+Wash any load and dry for free. All dryers, all sizes. 6 AM–11 PM.
+Wednesday
+Free Drying All Day
+Midweek savings. Every dryer, every size, all day.
+Thursday
+Free Drying All Day
+End-of-week special. Wash and dry your week’s laundry for less.
+"Current Promotion:" followed by whatever active promotion the client is running (e.g., TV giveaway). This line should be CMS-editable or maintained as a simple content update.
+Layout: three promo cards inline (desktop), stacked (mobile). Same visual spec as the homepage Weekly Specials section. Cards: bg rgba(255,255,255,0.1), border rgba(255,255,255,0.2), white text.
+
+15. Section 11: FAQ Section
+Section Overview
+Pricing-specific FAQ. Targets the most common pricing queries that drive traffic to this page. FAQPage schema required. Background: White (#FFFFFF).
+Content Specifications
+H2: "Pricing FAQ" — 2 words. Centered. Font: 32px/700. Margin-bottom 40px.
+
+#
+Question
+Answer
+1
+How much does wash and fold cost per pound?
+Standard wash-and-fold pricing at Spin It Up Laundry is $1.50 per pound with a 10 lb minimum. Same-day service is $2.00 per pound for orders dropped off before 10:00 AM. Stain treatment is included on every order at no extra charge.
+2
+How much does it cost to wash a comforter?
+Comforter pricing depends on size: full/twin is $12.00, queen is $15.00, and king is $18.00 for drop-off service. Pickup and delivery pricing is slightly higher to cover the driver cost: full/twin $15.00, queen $18.00, king $22.00.
+3
+Is drying really free on Tuesday, Wednesday, and Thursday?
+Yes. Every Tuesday, Wednesday, and Thursday, all dryers are free when you wash with us at Spin It Up Laundry. There is no minimum wash requirement. Wash any load, any size, and dry for free in any dryer from 6:00 AM to 11:00 PM.
+4
+Why is pickup and delivery more expensive than drop-off?
+Pickup and delivery includes a $5.00 pickup fee and a per-pound rate of $1.75 (vs. $1.50 for drop-off). The difference covers our driver’s time and fuel to pick up and deliver to your door. The wash-and-fold process itself is identical.
+5
+Can I use EBT to pay for wash and fold?
+EBT is accepted for self-service washing and drying at our facility. Wash-and-fold, pickup and delivery, and commercial services are paid via credit card, debit card, cash, or laundry card.
+6
+Is there a minimum order for wash and fold?
+Yes. The minimum for standard wash-and-fold is 10 pounds (both drop-off and pickup/delivery). Most customers’ laundry bags weigh 12–18 pounds, so the minimum is typically met naturally.
+DEV ACTION:  Implement FAQPage JSON-LD schema. Six Q&A pairs. Validate via Google Rich Results Test.
+Same accordion design spec. Max-width 800px, centered. First item expanded desktop.
+Below FAQ: "View All FAQs" link to /faq/.
+
+16. Section 12: Final CTA Block
+Content Specifications
+H2: "Ready to Get Your Laundry Done?" — 6 words. White. Centered. Font: 36px/700.
+Subtitle: "Walk in for self-service, drop off for wash & fold, or schedule a pickup from your phone." — 16 words. 18px/400 rgba(255,255,255,0.85).
+
+Button
+Text
+Link
+Style
+1
+Schedule Pickup
+Cents app URL
+CTA Orange
+2
+Get Directions
+Google Maps URL
+White outline
+3
+Call (773) 654-1275
+tel:+17736541275
+Ghost white
+Background: Spin Blue gradient. Below buttons: "3710 N Kimball Ave, Avondale • Open 6 AM–11 PM Daily • Free Drying Tue–Wed–Thu" in 14px/500 rgba(255,255,255,0.7).
+
+17. Section 13: Footer & Sticky Mobile CTA
+Global footer: no modifications.
+
+Sticky Mobile CTA Bar: default configuration — "Call Now" (orange) + "Schedule Pickup" (blue, Cents app). This page serves both walk-in and delivery customers, so the default dual-purpose sticky bar is correct.
+
+18. Reference: Image Asset Inventory
+Image ID
+Section
+Dimensions
+Format
+Max Size
+Alt Text
+Loading
+og-pricing
+Social share
+1200x630
+JPEG
+<200KB
+Spin It Up Laundry pricing overview
+N/A (meta)
+logo-light
+Header/Footer
+SVG
+SVG
+<10KB
+Spin It Up Laundry logo
+inline
+NOTE:  This page is intentionally text-and-table-heavy with minimal imagery. Pricing pages convert best when they load fast and present information without distraction. No hero photography, no decorative images. The LCP target is <1.5s.
+
+19. Reference: GA4 Event Tracking
+Event Name
+Trigger
+Parameters
+Section
+phone_click
+Click any tel: link
+phone_number, page_section
+Global
+schedule_pickup
+Click “Schedule Pickup”
+page_section
+P&D section, CTA Block, Sticky Bar
+directions_click
+Click “Get Directions”
+page_section
+CTA Block
+email_click
+Click mailto: link
+page_section
+Commercial section
+cta_click
+Click any CTA button
+button_text, destination_url, page_section
+All
+service_detail_click
+Click “View [Service] Details” link
+service_name, destination_url
+Each pricing section
+commercial_quote_click
+Click “Get a Commercial Quote”
+source: pricing_page
+Commercial section
+faq_expand
+Expand FAQ accordion
+question_text
+FAQ
+pricing_anchor_click
+Click hero anchor link
+anchor_target (self-service/wash-fold/etc.)
+Hero Banner
+
+20. Reference: Implementation Checklist
+Pre-Development
+Confirm ALL pricing with client before publication
+Confirm Cents app URL
+Confirm Google Maps directions URL
+Confirm free drying schedule is still Tue–Wed–Thu
+Confirm current active promotion for Specials section
+Technical Validation
+HTML validates
+BreadcrumbList + FAQPage schemas validate
+HTTPS enforced, no mixed content
+LCP <1.5s on mobile (conversion page target)
+Mobile PageSpeed >90, Desktop >95
+All anchor links (#self-service, #wash-fold, #pickup-delivery, #specialty, #commercial) scroll correctly
+All internal links return 200
+All tel: and mailto: links functional
+OG tags render correctly
+Hreflang points to /es/precios/
+Content & SEO
+All copy and pricing matches this guide (no placeholders!)
+Title tag within 60 characters
+Meta description within 155 characters with specific prices
+Single H1
+AEO paragraph with dollar amounts within first 100 words
+Breadcrumb: Home > Pricing
+Canonical URL correct
+All pricing tables responsive (card layout mobile)
+Service detail links point to correct pages
+XML sitemap includes at priority 0.9
+Accessibility
+Skip-to-content link present
+All pricing tables: proper <th> headers with scope
+Pricing tables accessible on screen readers (not just visual)
+Color contrast WCAG 2.1 AA
+FAQ accordion keyboard-operable
+ARIA landmarks
+Analytics
+GA4 + GTM events verified
+pricing_anchor_click fires on hero nav links
+service_detail_click fires on each section’s CTA link
+schedule_pickup confirmed on Cents app CTAs
+phone_click confirmed on all tel: links
+
+
+End of Document
+TradeWorks AI — Spin It Up Laundry Pricing Page Developer Guide v1.0
+Prepared by TradeWorks AI — May 2026

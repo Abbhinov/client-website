@@ -1,0 +1,96 @@
+﻿
+DEVELOPER IMPLEMENTATION GUIDE
+
+COOL & COZY AC REPAIR
+Licensed HVAC Contractor  ·  Jacksonville, Florida
+
+HTML SITEMAP
+
+URL: coolcozyac.com/sitemap
+Prepared by: TradeWorks AI  |  Version 1.0  |  May 2026
+
+1. Page Identity
+URL: /sitemap
+Canonical: https://coolcozyac.com/sitemap
+Page Type: Navigation / Utility
+Breadcrumb: Home > Sitemap
+Robots: index, follow
+Sitemap: Priority 0.3
+Title: Sitemap | Cool & Cozy AC Repair Jacksonville FL
+Meta Desc: Complete site directory for Cool & Cozy AC Repair. Find any page on our Jacksonville HVAC website: services, service areas, resources, and more.
+JSON-LD: BreadcrumbList only.
+
+2. Page Design
+The HTML sitemap is a clean, organized visual directory of every page on the site. It provides an alternative navigation method for visitors and helps search engines discover all pages. Format: organized by silo with indented child pages.
+Layout: Single column, 800px centered, white bg
+Typography: Silo headings: Poppins 18px/600, Evergreen. Page links: Poppins 15px/400, Seafoam. Child pages indented 24px.
+Hero: Minimal: Evergreen bg, 160px, H1 “Sitemap” centered
+
+3. Complete Page Directory
+
+Main Pages
+Home → /
+About → /about
+Contact → /contact
+Reviews → /reviews
+Financing → /financing
+Careers → /careers
+Página en Español → /es
+
+Services
+Services Hub → /services
+    AC Repair → /services/ac-repair
+    AC Installation → /services/ac-installation
+    AC Maintenance → /services/ac-maintenance
+    Emergency AC Repair → /services/emergency-ac-repair
+    Commercial HVAC → /services/commercial-hvac
+    Ductwork → /services/ductwork
+    Indoor Air Quality → /services/indoor-air-quality
+    Thermostat Installation → /services/thermostat-installation
+
+Service Areas
+Service Areas Hub → /service-areas
+    Duval County → /service-areas/duval-county
+        Southside → /service-areas/southside
+        Mandarin → /service-areas/mandarin
+        Arlington → /service-areas/arlington
+        Riverside-Avondale → /service-areas/riverside-avondale
+        San Marco → /service-areas/san-marco
+        Baymeadows → /service-areas/baymeadows
+        Jacksonville Beach → /service-areas/jacksonville-beach
+        Murray Hill → /service-areas/murray-hill
+        Springfield → /service-areas/springfield
+    Orange Park (Clay County) → /service-areas/orange-park
+
+Resources
+Resources Hub → /resources
+    How Much Does AC Repair Cost in Jacksonville? → /resources/ac-repair-cost-jacksonville
+    How Often Should You Maintain Your AC in Florida? → /resources/how-often-ac-maintenance
+    8 Signs Your AC Needs Replacement → /resources/signs-ac-needs-replacement
+    SEER Ratings Explained → /resources/seer-rating-explained
+    Best AC Brands for Florida Homes → /resources/best-ac-brands-florida
+    When to Repair vs. Replace Your AC → /resources/when-to-repair-vs-replace-ac
+    AC Not Cooling? 7 Things to Check → /resources/ac-not-cooling-troubleshooting
+    Florida Humidity & Your HVAC System → /resources/florida-humidity-hvac-guide
+
+Legal
+Privacy Policy → /privacy
+Terms of Service → /terms
+Accessibility Statement → /accessibility
+Sitemap (this page) → /sitemap
+
+Total pages: 46
+
+4. Checklist
+Every page on the site is listed (cross-check against XML sitemap)
+All links are functional and point to correct URLs
+Hierarchy matches actual site architecture (indent levels correct)
+Page count matches XML sitemap entry count
+Linked from footer on every page
+Updated whenever new pages are added to the site
+BreadcrumbList schema validates
+PageSpeed Mobile > 95 (text-only, no images)
+
+— End of Document —
+Prepared by TradeWorks AI  ·  May 2026  ·  v1.0
+

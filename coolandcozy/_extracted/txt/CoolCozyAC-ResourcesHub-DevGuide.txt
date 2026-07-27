@@ -1,0 +1,161 @@
+﻿
+DEVELOPER IMPLEMENTATION GUIDE
+
+COOL & COZY AC REPAIR
+Licensed HVAC Contractor  ·  Jacksonville, Florida
+
+RESOURCES HUB
+
+URL: coolcozyac.com/resources
+Prepared by: TradeWorks AI  |  Version 1.0  |  May 2026
+
+1. Page Identity
+Property
+Specification
+URL
+/resources
+Canonical
+https://coolcozyac.com/resources
+Page Type
+Hub page (resource/blog silo root)
+Parent
+/ (Homepage)
+Breadcrumb
+Home > Resources
+Primary Keyword
+AC resources Jacksonville
+Intent
+Navigational / Informational
+Word Count
+400–600 words (hub — articles do the heavy lifting)
+Conversion
+Click-through to articles, secondary phone call
+Sitemap
+Priority 0.8
+
+1.1 Child Articles
+Article
+URL
+Read Time
+How Much Does AC Repair Cost in Jacksonville?
+/resources/ac-repair-cost-jacksonville
+8 min
+How Often Should You Maintain Your AC in Florida?
+/resources/how-often-ac-maintenance
+7 min
+8 Signs Your AC Needs Replacement
+/resources/signs-ac-needs-replacement
+8 min
+SEER Ratings Explained
+/resources/seer-rating-explained
+7 min
+Best AC Brands for Florida Homes
+/resources/best-ac-brands-florida
+9 min
+When to Repair vs. Replace Your AC
+/resources/when-to-repair-vs-replace-ac
+8 min
+AC Not Cooling? 7 Things to Check
+/resources/ac-not-cooling-troubleshooting
+6 min
+Florida Humidity & Your HVAC System
+/resources/florida-humidity-hvac-guide
+9 min
+
+2. <head> Section
+Property
+Specification
+Title
+AC Resources & Guides | Jacksonville HVAC Tips | Cool & Cozy
+Meta Desc
+Free HVAC guides for Jacksonville homeowners. AC repair costs, maintenance schedules, brand comparisons, troubleshooting, humidity solutions, and more from a licensed Florida contractor.
+Canonical
+https://coolcozyac.com/resources
+JSON-LD: CollectionPage schema with mainEntity array referencing all 8 articles. BreadcrumbList (2-level: Home > Resources). No FAQPage on this hub.
+
+3. Section-by-Section Build
+
+3.1 Compact Hero
+Breadcrumb
+Home > Resources
+H1
+AC Resources & Guides for Jacksonville Homeowners
+Subheadline
+Honest, practical HVAC information from a licensed Jacksonville contractor. No sales pitches — just answers to the questions we hear most from homeowners and property managers.
+Evergreen CSS-pattern hero, 220px desktop. No photo.
+
+3.2 AEO Introduction
+H2
+Free HVAC Guides from Cool & Cozy AC Repair
+Cool & Cozy AC Repair publishes educational HVAC resources for Jacksonville homeowners and property managers. These guides cover the topics our customers ask about most: how much AC repairs cost in Jacksonville, how often to maintain your system in Florida’s climate, when to repair versus replace, how to troubleshoot common AC problems, and how Jacksonville’s humidity affects your comfort and your equipment. Every article is written by HVAC professionals, grounded in Jacksonville-specific data, and updated regularly to reflect current pricing, regulations, and technology.
+Word Count: 87 words
+
+3.3 Article Card Grid
+Layout
+Property
+Specification
+Container
+#EAF3F2 (Sky Mist), 1280px centered
+Grid
+2 columns desktop, 1 column mobile
+Card design
+White bg (#FFFDF8), 16px radius, 24px padding, hover: translateY(-2px) + subtle shadow
+Card Anatomy
+Each article card contains:
+Category tag (Poppins 11px/600, uppercase, Seafoam bg pill): “COST” “MAINTENANCE” “REPLACEMENT” “EFFICIENCY” “BRANDS” “TROUBLESHOOTING” “HUMIDITY”
+Article title as H3 link (Poppins 18px/600, #2C2C2C, hover: #1A5653)
+1-line description (Poppins 13px/400, #7A7A7A)
+Meta line: reading time + publication date (Poppins 12px/400, #9CA3AF)
+Arrow link indicator (→)
+
+8 Article Cards
+Tag
+Title
+Description
+COST
+How Much Does AC Repair Cost in Jacksonville?
+Typical repair prices from $150–$600+, what factors affect cost, and when repair stops making financial sense.
+MAINT.
+How Often Should You Maintain Your AC in Florida?
+Why Florida systems need twice-yearly service, ideal seasonal timing, and what you can do yourself between visits.
+REPLACE
+8 Signs Your AC Needs Replacement
+Age, repair frequency, R-22, rising bills — the warning signs that repair is no longer worth the investment.
+EFFIC.
+SEER Ratings Explained
+SEER vs SEER2, Florida minimums, and how efficiency ratings translate to real JEA bill savings.
+BRANDS
+Best AC Brands for Florida Homes
+Carrier, Trane, Lennox, Rheem, Goodman, Daikin — honest comparison from a brand-independent contractor.
+DECIDE
+When to Repair vs. Replace Your AC
+The 50% rule, age thresholds, R-22 factor, and a step-by-step framework for the biggest AC decision you’ll make.
+DIY
+AC Not Cooling? 7 Things to Check
+Seven safe DIY checks that resolve 15–20% of “AC not cooling” calls — before you pay for a service visit.
+HUMIDITY
+Florida Humidity & Your HVAC System
+Why your house feels clammy even with the AC on, and the solutions that actually fix Jacksonville’s humidity problem.
+
+Article order on the hub: lead with the highest-traffic articles (cost, maintenance frequency, troubleshooting) and follow with deeper research content (SEER, brands, humidity). This order can be adjusted based on GA4 data after launch.
+
+3.4 CTA Strip
+Below the article grid, a compact CTA strip:
+Have a question we haven’t answered? Call (904) 555-0199 or request a free estimate — our technicians are happy to explain anything about your AC system.
+Design: Warm Sand (#F0E6D3) bg, centered text, Poppins 15px/500, phone in Coral click-to-call, 24px vertical padding
+
+4. Checklist
+CollectionPage + BreadcrumbList schema validates
+Title/canonical unique from all article pages
+All 8 article card links verified and functional
+Card descriptions are unique micro-summaries (not duplicating article meta descriptions)
+Category tags assigned correctly per article
+Nav link “Resources” points to this page
+PageSpeed Mobile > 95 (no images, CSS hero, text-only cards)
+XML sitemap: /resources priority 0.8
+Article publication dates displayed and accurate
+Grid responsive: 2-col desktop, 1-col mobile
+
+— End of Document —
+Prepared by TradeWorks AI  ·  May 2026  ·  v1.0
+

@@ -1,0 +1,178 @@
+﻿
+
+ 
+
+REVIEWS PAGE DEVELOPER GUIDE
+
+Reviews
+
+
+ 
+
+Customer Reviews &amp; Testimonials
+
+Clean Slate Pressure Washing
+
+A Fresh Start for Every Surface
+
+Brandon, Florida  |  Hillsborough County
+
+cleanslatepw.com
+
+Prepared by TradeWorks AI
+
+Version 1.0  |  April 2026
+
+Client Confidential
+
+
+
+
+
+
+
+
+Section 1: Page Identity
+
+Attribute
+
+Value
+
+URL Path
+
+/reviews/
+
+Canonical URL
+
+https://cleanslatepw.com/reviews/
+
+Page Type
+
+Trust / Social Proof
+
+Breadcrumb
+
+Home → Reviews
+
+Primary Keyword
+
+Clean Slate Pressure Washing reviews
+
+Target Word Count
+
+600–1,000 words
+
+&lt;title&gt;
+
+Customer Reviews | Clean Slate Pressure Washing | 4.9★ on Google
+
+&lt;meta description&gt;
+
+Read 150+ five-star reviews from Tampa Bay homeowners. See why Clean Slate PW is rated 4.9★ on Google for pressure washing and soft washing in Brandon, FL.
+
+JSON-LD: AggregateRating schema (ratingValue 4.9, reviewCount — update with live count). BreadcrumbList (Home → Reviews).
+
+
+
+Section 2: Page Layout
+
+
+2.1 Hero
+
+H1
+
+What Tampa Bay Homeowners Say About Us
+
+Subheadline
+
+4.9★ average from 150+ verified Google reviews. Every review below is from a real customer — unedited and unfiltered.
+
+Aggregate display
+
+Large 4.9 number with 5 orange stars + &apos;from 150+ Google Reviews&apos; + Google logo
+
+
+2.2 Review Display Grid
+
+All reviews displayed in a masonry-style card grid. 3 columns desktop, 2 tablet, 1 mobile. Cards are variable height based on review length.
+
+
+2.3 Review Card Design
+
+
+Five orange stars at top of card.
+
+
+Review text in 16px italic, #2B2B2B.
+
+
+Reviewer name and city: &apos;Sarah M. — Brandon&apos; in 15px weight 600 #0B2545.
+
+
+Service type and date: &apos;House Wash • March 2026&apos; in 13px #6C757D.
+
+
+Google &apos;G&apos; attribution icon in top-right corner.
+
+
+Cards: #F5F7F9 background, 1px border, 12px radius, 24px padding.
+
+
+2.4 Filter Options
+
+Filter by service type: All | House Wash | Roof | Driveway | Pool Deck | Lanai | Fence | Gutter | Commercial. Same pill-button style as gallery.
+
+
+2.5 Review CTA
+
+Below the review grid: &apos;Had a great experience? Leave us a review on Google →&apos; linking to the GBP review form URL. Centered, #3E6990, 16px weight 600.
+
+
+
+Section 3: First-Party Testimonials
+
+In addition to Google reviews, display 3-5 longer-form first-party testimonials collected directly from customers with their permission. These are longer (100-150 words each) and include the customer&apos;s full first name, city, property type, and a real project photograph.
+
+First-party testimonials sit above the Google review grid in a separate featured section with a larger card format.
+
+
+
+Section 4: Final CTA
+
+H2: Ready to Join 150+ Happy Customers?
+
+Standard dual CTA pattern.
+
+
+
+Section 5: Implementation Checklist
+
+
+AggregateRating schema validates with current review count.
+
+
+Review cards render correctly with variable heights.
+
+
+Filter buttons work without page reload.
+
+
+Google attribution present on every review card.
+
+
+GBP review link opens in new tab.
+
+
+First-party testimonials have customer permission documented.
+
+
+PageSpeed mobile &gt;85.
+
+
+
+— End of Reviews Page Guide —
+
+Clean Slate Pressure Washing — Reviews v1.0 | TradeWorks AI | April 2026
+
+
+

@@ -1,0 +1,382 @@
+﻿
+DEVELOPER IMPLEMENTATION GUIDE
+
+COOL & COZY AC REPAIR
+Licensed HVAC Contractor  ·  Jacksonville, Florida
+
+PÁGINA PRINCIPAL EN ESPAÑOL
+Spanish Homepage
+Complete Page Build — Single Document
+
+URL: coolcozyac.com/es
+Prepared by: TradeWorks AI  |  Version 1.0  |  May 2026
+Classification: Client Confidential
+
+Table of Contents
+
+1.  Page Identity, hreflang & Architecture
+2.  <head> Section (Spanish Meta, Schema, hreflang)
+3.  Content Adaptation Philosophy
+4.  Section-by-Section Build
+4.1  Emergency Banner (Spanish)
+4.2  Header Navigation (Spanish Labels)
+4.3  Hero Section (Spanish)
+4.4  Trust Bar (Spanish)
+4.5  AEO Introduction (Spanish)
+4.6  Services Grid (Spanish)
+4.7  Why Choose Us (Spanish)
+4.8  Service Areas (Spanish)
+4.9  FAQ Section (Spanish, 4 Questions)
+4.10  Final CTA (Spanish)
+5.  Reference: Checklist
+
+1. Page Identity, hreflang & Architecture
+Property
+Specification
+URL Path
+/es
+Canonical URL
+https://coolcozyac.com/es
+Page Type
+Spanish Homepage (standalone)
+Parent
+/ (English Homepage — alternate language version)
+Breadcrumb
+Inicio (not displayed on Spanish homepage, same as English homepage)
+<html> lang attribute
+es (NOT en)
+Primary Keyword
+reparación aire acondicionado Jacksonville FL
+Secondary Keywords
+técnico HVAC Jacksonville, servicio aire acondicionado Jacksonville, aire acondicionado Jacksonville español
+Search Intent
+Local / Transactional (Spanish-language AC searches in Jacksonville)
+Target Word Count
+1,200–1,600 words (condensed version of English homepage)
+Primary Conversion
+Phone call
+Secondary Conversion
+Contact form (/contact with language=Spanish pre-selected)
+Robots
+index, follow
+Sitemap
+Priority 0.8
+
+1.1 hreflang Implementation
+hreflang tags tell Google that / (English) and /es (Spanish) are alternate language versions of the same page. Both pages must carry BOTH hreflang tags:
+
+On the English homepage (/):
+<link rel="alternate" hreflang="en" href="https://coolcozyac.com/" />
+<link rel="alternate" hreflang="es" href="https://coolcozyac.com/es" />
+<link rel="alternate" hreflang="x-default" href="https://coolcozyac.com/" />
+
+On the Spanish homepage (/es):
+<link rel="alternate" hreflang="en" href="https://coolcozyac.com/" />
+<link rel="alternate" hreflang="es" href="https://coolcozyac.com/es" />
+<link rel="alternate" hreflang="x-default" href="https://coolcozyac.com/" />
+
+DEV ACTION: Both the English homepage AND the Spanish homepage must carry all three hreflang tags. If either is missing, Google ignores the signal. The x-default points to the English version as the fallback for unlisted languages.
+hreflang tags go in the <head> of each page. They can alternatively be specified in the XML sitemap, but <head> implementation is more reliable and easier to validate.
+1.2 This Is NOT a Translation
+The Spanish homepage is a culturally adapted version of the English homepage, not a word-for-word translation. Key differences:
+Copy is written for a Spanish-speaking audience, not translated by Google Translate or any machine tool
+The page is shorter than the English homepage — it covers services, trust signals, and contact information without replicating every section
+Cultural tone is warm and personal — Spanish-language service marketing in the U.S. emphasizes family, trust, and personal relationship more directly than English equivalents
+The “Se habla español” messaging on English pages is replaced here by an implicit understanding: this entire page speaks your language
+The page links to the English homepage via the language toggle (EN | ES) but does NOT link to individual English service pages — if Spanish service pages are built in Phase 2, those links will be added
+DEV ACTION: CRITICAL: All Spanish content in this guide must be reviewed by a native Spanish speaker before launch. The copy below is written by a proficient but non-native source. Phrasing, idiom, and regional preferences (Caribbean/Central American Spanish common in Jacksonville vs. Mexican Spanish) should be verified by someone who speaks the dialect of the target community.
+
+2. <head> Section
+Property
+Specification
+<html lang>
+es
+Title Tag
+Reparación de Aire Acondicionado Jacksonville FL | Cool & Cozy AC Repair
+Title Chars
+69 characters
+Meta Description
+Reparación, instalación y mantenimiento de aire acondicionado en Jacksonville, FL. Contratista con licencia de Florida (CAC1819948). Servicio en español. Llame al (904) 555-0199.
+Meta Desc. Chars
+155 characters
+Canonical URL
+https://coolcozyac.com/es
+og:title
+Reparación de Aire Acondicionado Jacksonville | Cool & Cozy AC Repair
+og:description
+Servicio de HVAC en español para hogares, negocios y propiedades en Jacksonville y el Condado de Duval. Licenciado, asegurado. (904) 555-0199.
+og:locale
+es_US
+og:url
+https://coolcozyac.com/es
+og:image
+Same as English homepage (or Spanish-specific OG if created)
+
+2.1 JSON-LD (Spanish Variant)
+The Spanish homepage carries a HVACBusiness schema similar to the English homepage but with inLanguage set to “es” and the description in Spanish:
+{
+  "@context": "https://schema.org",
+  "@type": "HVACBusiness",
+  "name": "Cool & Cozy AC Repair",
+  "url": "https://coolcozyac.com/es",
+  "telephone": "+19045550199",
+  "inLanguage": "es",
+  "description": "Contratista de aire acondicionado con licencia de Florida sirviendo a Jacksonville y el Condado de Duval. Reparación, instalación, mantenimiento y servicio comercial. Servicio completo en español.",
+  "knowsLanguage": ["es", "en"],
+  "address": { "@type": "PostalAddress", "addressLocality": "Jacksonville", "addressRegion": "FL", "addressCountry": "US" },
+  "hasCredential": { "@type": "EducationalOccupationalCredential", "credentialCategory": "Certified Air Conditioning Contractor", "identifier": "CAC1819948" },
+  "areaServed": { "@type": "City", "name": "Jacksonville" }
+}
+
+BreadcrumbList: single item { name: “Inicio”, item: “https://coolcozyac.com/es” }
+FAQPage: 4 questions in Spanish (see Section 4.9).
+2.2 hreflang Tags
+Three hreflang tags as specified in Section 1.1. All three MUST appear in the <head> of this page.
+2.3 Preload
+Same hero image as English homepage (shared asset) or CSS-pattern hero for fastest load
+Same Poppins font preload strategy (Poppins supports Spanish characters natively)
+
+3. Content Adaptation Philosophy
+The Spanish homepage serves a specific audience: Spanish-speaking homeowners, renters, and property managers in Jacksonville who prefer to receive information and service in Spanish. This audience’s needs are identical to English-speaking customers (their AC is broken, they need maintenance, they want a trustworthy contractor), but the communication approach has important nuances:
+
+Lead with trust and family — Hispanic home services marketing research consistently shows that trust, family reputation, and personal recommendation carry more weight than certifications or corporate messaging. The Spanish page leads with “familia” and “confianza” before “licencia” and “BouldZoom.”
+Direct, warm tone — Use “usted” (formal you) for respect but keep the language warm and approachable, not stiff or corporate. The goal is “trusted neighbor,” not “corporate entity.”
+Phone number prominence — Spanish-speaking customers in the home services market disproportionately prefer phone calls over online forms. The phone number should be even MORE prominent on this page than on the English homepage.
+Avoid Spanglish — Do not mix English and Spanish within sentences. Technical HVAC terms that have common Spanish equivalents should use the Spanish term (aire acondicionado, not “AC”; calefacción, not “heating”). The brand name “Cool & Cozy AC Repair” stays in English as it is the legal business name.
+Address the bilingual reality — Many Jacksonville Hispanic households are bilingual. The page should acknowledge that Cool & Cozy serves in both languages, so a Spanish-speaking homeowner can be confident that their English-speaking family members or landlord can also communicate with the company.
+The Spanish copy below is written by a proficient non-native speaker and MUST be reviewed by a native speaker familiar with the Jacksonville Hispanic community’s dialect preferences before launch. Caribbean, Central American, and Mexican Spanish have vocabulary and phrasing differences that matter in marketing.
+
+4. Section-by-Section Build
+The Spanish homepage contains 10 content blocks in scroll order. The visual design, layout, colors, and component styles are identical to the English homepage — only the content language changes. This ensures brand consistency across both language versions.
+
+4.1 Emergency Banner (Spanish)
+Summer Version
+⚡ ¿Emergencia de aire acondicionado? Estamos aquí. Llame ahora: (904) 555-0199
+Winter Version
+❄️ Mantenimiento preventivo de temporada — Reserve antes del verano. Llame al (904) 555-0199
+Same design as English banner: Coral bg, white text, dismissible, session-persistent.
+
+4.2 Header Navigation (Spanish Labels)
+The header on /es uses Spanish navigation labels but links to the same English pages (until Spanish service pages exist in Phase 2):
+Spanish Label
+English Equiv.
+Link
+Notes
+Inicio
+Home
+/es
+Links to Spanish homepage
+Servicios
+Services
+/services
+English page until /es/servicios exists
+Áreas de Servicio
+Service Areas
+/service-areas
+English page
+Nosotros
+About
+/about
+English page
+Recursos
+Resources
+/resources
+English page
+Contacto
+Contact
+/contact?lang=es
+Pre-selects Spanish language pref
+
+Utility Bar
+Left: “Licencia de Florida CAC1819948 · Jacksonville y Condado de Duval”
+Right: “EN | ES” toggle (“EN” links to /, “ES” = current, highlighted)
+Phone
+(904) 555-0199 — same click-to-call, Coral color. Label: “Llámenos”
+CTA Button
+“Presupuesto Gratis” (Free Estimate) → /contact?lang=es
+Until Phase 2 Spanish service pages exist, most nav links go to English pages. This is acceptable — the visitor sees Spanish navigation labels confirming bilingual service, and the English content they land on still works because the team serves in both languages. Phase 2 replaces these links with /es/servicios/[slug] routes.
+
+4.3 Hero Section (Spanish)
+Eyebrow
+EXPERTOS EN AIRE ACONDICIONADO EN JACKSONVILLE
+Style: Poppins 14px/500, uppercase, #5CB8B2
+H1
+Manteniendo a Jacksonville Fresco, Cómodo y Tranquilo Desde 2018
+Style: Poppins 40px/700 desktop, 30px mobile, #FFFFFF
+Subheadline
+Reparación, instalación y mantenimiento de aire acondicionado para hogares, negocios y administradores de propiedades en todo el Condado de Duval. Precios honestos. Servicio experto. Completamente en español.
+Word Count: 32 words
+Style: Poppins 18px/400, #F0E6D3
+CTA — Single Primary (Phone-First)
+Llame Ahora: (904) 555-0199
+Style: Coral bg, white text, pill, phone icon, 52px. Click-to-call.
+Secondary: “Solicite un Presupuesto Gratis” — white border, pill → /contact?lang=es
+The Spanish hero uses the phone call as the PRIMARY CTA (not the form). This reflects the phone-first preference in Hispanic home services marketing.
+Trust Indicators
+✓ Licencia de Florida CAC1819948  ·  ✓ Top 13% Contratistas en FL  ·  ✓ Presupuestos Gratis  ·  ✓ Servicio en Español
+Same hero image as English homepage (shared asset). Same overlay gradient.
+
+4.4 Trust Bar (Spanish)
+Same 4-item credentials strip, translated:
+#
+Título
+Subtexto
+1
+Licencia de Florida
+CAC1819948 — Contratista Certificado de Aire Acondicionado
+2
+Top 13% en Florida
+Puntuación BuildZoom de 100 entre 191,428 contratistas con licencia
+3
+21 Proyectos Documentados
+Permisos de construcción registrados en el Condado de Duval
+4
+Negocio Familiar
+Sirviendo a Jacksonville con honestidad y precios justos desde 2018
+
+The fourth trust item changes from “Se habla español” (unnecessary on a Spanish page) to “Negocio Familiar” (Family Business) — a trust signal that resonates strongly with Hispanic audiences.
+
+4.5 AEO Introduction (Spanish)
+H2
+Reparación, Instalación y Mantenimiento de Aire Acondicionado en Jacksonville, FL
+AEO Paragraph
+Cool & Cozy AC Repair es un contratista de HVAC con licencia de Florida (CAC1819948) que sirve a propietarios de viviendas, negocios y administradores de propiedades en todo Jacksonville y el Condado de Duval. La empresa ofrece reparación de aire acondicionado, instalación de sistemas nuevos, mantenimiento preventivo, servicio de ductos, calidad de aire interior y servicio comercial para propiedades de múltiples unidades. Con una puntuación de BuildZoom de 100 — ubicando a la empresa en el top 13% de los 191,428 contratistas con licencia en Florida — y 21 proyectos con permisos documentados, Cool & Cozy ofrece servicio completo en español, precios transparentes sin cargos ocultos, y respuesta prioritaria para emergencias. Llame al (904) 555-0199 para un presupuesto gratis.
+Word Count: 133 words (Spanish)
+AEO Targets: “¿Quién repara aire acondicionado en Jacksonville en español?” “Servicio de HVAC en español Jacksonville”
+
+4.6 Services Grid (Spanish)
+Same 8-card grid as English homepage, with Spanish titles and descriptions:
+Servicio
+Descripción
+Enlace
+Reparación de AC
+¿Su aire acondicionado no enfría, hace ruidos extraños, o no enciende? Nuestros técnicos con licencia diagnostican y reparan el problema rápidamente.
+/services/ac-repair
+Instalación de AC
+Construcción nueva, reemplazo de sistema, o actualización a una unidad de alta eficiencia. Dimensionamos e instalamos el sistema correcto para su hogar o negocio.
+/services/ac-installation
+Mantenimiento de AC
+El mantenimiento preventivo mantiene su sistema funcionando eficientemente y detecta problemas pequeños antes de que se conviertan en reparaciones costosas.
+/services/ac-maintenance
+Emergencia de AC
+Cuando su aire acondicionado falla en una tarde de 95 grados en Jacksonville, no puede esperar. Ofrecemos servicio de emergencia prioritario.
+/services/emergency-ac-repair
+HVAC Comercial
+Oficinas, restaurantes, locales comerciales y propiedades de múltiples unidades. Licenciado para sistemas comerciales con la confiabilidad que los administradores de propiedades exigen.
+/services/commercial-hvac
+Ductos
+Ductos dañados o con fugas desperdician 20–30% del aire frío. Reparamos, sellamos y reemplazamos ductos para restaurar el flujo de aire.
+/services/ductwork
+Calidad de Aire Interior
+La humedad de Jacksonville crea condiciones ideales para moho y alérgenos. Instalamos purificación, dehumidificación y filtración avanzada.
+/services/indoor-air-quality
+Instalación de Termostato
+Termostatos programables y inteligentes (Nest, Ecobee) con instalación profesional, cableado correcto y calibración precisa.
+/services/thermostat-installation
+
+Service card links go to English service pages until Phase 2 Spanish pages are built. The Spanish card descriptions are culturally adapted, not word-for-word translations of the English cards.
+
+4.7 Why Choose Us (Spanish)
+H2
+¿Por Qué Elegir Cool & Cozy?
+
+Título
+Texto
+Precios Honestos
+Sin sorpresas, sin ventas agresivas. Usted recibe un presupuesto claro antes de que comience cualquier trabajo, y ese es el precio que paga.
+Licenciado y Verificado
+Licencia de Florida CAC1819948, verificada y activa. BuildZoom nos clasifica en el top 13% de todos los contratistas del estado.
+Servicio Completo en Español
+Desde la primera llamada hasta el seguimiento después del trabajo, nuestro equipo bilingüe le atiende completamente en español. Sin barreras de idioma.
+Respuesta Rápida
+Cuando su aire acondicionado falla en el calor de Jacksonville, responder rápido es esencial. Priorizamos llamadas de emergencia para la restauración más rápida posible.
+Negocio Familiar
+No somos una franquicia ni un centro de llamadas. Somos personas reales que viven y trabajan en Jacksonville, que se preocupan por su comodidad y su presupuesto.
+Administradores de Propiedades
+Acuerdos de mantenimiento para múltiples unidades, respuesta prioritaria para emergencias de inquilinos, precios por unidad transparentes y comunicación directa con inquilinos en español.
+
+Same 6-card grid design as English homepage.
+
+4.8 Service Areas (Spanish)
+H2
+Sirviendo a Jacksonville y el Condado de Duval
+Subheading
+De Mandarin a las playas, de Riverside a Arlington — Cool & Cozy cubre su vecindario.
+Same neighborhood link grid and Google Maps embed as English homepage. Neighborhood names stay in English (they are proper nouns). “Ver Todas las Áreas de Servicio →” links to /service-areas.
+
+4.9 FAQ Section (Spanish, 4 Questions)
+Shorter FAQ than English homepage (4 questions vs. 6). Targets the most common Spanish-language AC queries in Jacksonville.
+Layout
+Property
+Specification
+Container
+#F0E6D3, 800px, accordion, same as English FAQ
+FAQ 1
+P: ¿Cuánto cuesta la reparación de aire acondicionado en Jacksonville?
+R: El costo de reparación de aire acondicionado en Jacksonville generalmente oscila entre $150 y $600, dependiendo del problema. Reparaciones sencillas como reemplazo de capacitores cuestan menos, mientras que reparaciones mayores como compresores cuestan más. Cool & Cozy proporciona un diagnóstico claro y un presupuesto por escrito antes de comenzar cualquier trabajo. El precio que le damos es el precio que paga. Llame al (904) 555-0199 para un presupuesto gratis.
+
+FAQ 2
+P: ¿Cool & Cozy ofrece servicio completamente en español?
+R: Sí. Nuestro equipo bilingüe proporciona servicio completo en español desde la primera llamada telefónica hasta la finalización del trabajo y el seguimiento posterior. No utilizamos traductores ni servicios de terceros — nuestros técnicos hablan español directamente con usted. Esto incluye presupuestos, explicaciones técnicas, facturación y comunicación con inquilinos para administradores de propiedades.
+
+FAQ 3
+P: ¿Cool & Cozy tiene licencia y seguro?
+R: Sí. Cool & Cozy AC Repair tiene la licencia de contratista de aire acondicionado de Florida CAC1819948, verificada como activa por el Departamento de Regulación Profesional y de Negocios de Florida. BuildZoom clasifica a la empresa en el top 13% de los 191,428 contratistas con licencia en Florida. Contamos con seguro de responsabilidad civil y daños a la propiedad según lo requiere la Junta de la Industria de la Construcción de Florida.
+
+FAQ 4
+P: ¿Ofrecen servicio para administradores de propiedades con múltiples unidades?
+R: Sí. Cool & Cozy sirve a administradores de propiedades, dueños de propiedades de alquiler y operadores de Airbnb en todo Jacksonville y el Condado de Duval. Ofrecemos acuerdos de mantenimiento con precios por unidad, programación coordinada en bloque, respuesta prioritaria para emergencias de inquilinos, y comunicación directa con inquilinos en español e inglés. Nuestra licencia CAC1819948 cubre trabajo tanto residencial como comercial.
+
+FAQPage JSON-LD: 4 questions in Spanish, full answer text, embedded in <head>.
+
+4.10 Final CTA Block (Spanish)
+H2
+¿Listo Para un Servicio de Aire Acondicionado Confiable en Jacksonville?
+Body
+Ya sea una reparación, una instalación nueva, o un plan de mantenimiento para sus propiedades — el primer paso es una conversación. Llámenos directamente o solicite un presupuesto gratis en línea. Nos encargamos del resto.
+Word Count: 39 words
+CTAs
+Property
+Specification
+Primary
+Llame Ahora: (904) 555-0199 — Coral bg, pill, tel: link
+Secondary
+Solicitar Presupuesto Gratis — white border, pill, /contact?lang=es
+Evergreen solid bg, 720px centered, 72px/40px padding.
+Phone-first primary CTA on the Spanish page, matching the hero CTA order.
+
+5. Reference: Checklist
+5.1 Critical Items
+<html lang="es"> on this page (NOT "en")
+hreflang tags: all 3 tags present on BOTH / and /es
+Title tag in Spanish, unique from English homepage
+Meta description in Spanish with phone number
+Canonical URL: https://coolcozyac.com/es (not pointing to English homepage)
+og:locale set to es_US
+JSON-LD inLanguage: "es"
+FAQPage schema with Spanish questions and answers
+Language toggle: EN links to /, ES is current (highlighted)
+Nav labels in Spanish, links to English pages until Phase 2 Spanish pages exist
+Contact form link: /contact?lang=es pre-selects Spanish language preference
+All phone numbers click-to-call
+5.2 Content Quality
+ALL Spanish content reviewed by native Spanish speaker before launch
+Dialect appropriateness verified for Jacksonville Hispanic community (Caribbean/Central American influenced)
+No machine translation artifacts (awkward phrasing, false cognates, unnatural syntax)
+Proper Spanish punctuation: opening question marks (¿), opening exclamation marks (¡), accented characters (áéíóúñü)
+Brand name stays in English: "Cool & Cozy AC Repair" (legal name, not translated)
+Neighborhood names stay in English (proper nouns): Southside, Mandarin, Arlington, etc.
+No Spanglish: use full Spanish terms (aire acondicionado, not AC; reparación, not repair)
+5.3 Performance & SEO
+PageSpeed Mobile > 90
+Same hero image as English homepage (shared, already cached for returning visitors)
+XML sitemap includes /es with priority 0.8
+Google Search Console: submit both / and /es for indexing, verify hreflang signals
+No duplicate content penalty risk: hreflang tells Google these are language alternates, not duplicates
+Spanish meta description targets “reparación aire acondicionado Jacksonville” (different keyword from English homepage)
+
+— Fin del Documento —
+
+Prepared by TradeWorks AI  ·  May 2026  ·  v1.0
+Phase 1 complete. Next: Phase 2 service pages, area landing pages, and resource articles.
+

@@ -1,0 +1,480 @@
+﻿EDGE TO HEDGES
+Channel, Directory & Backlink Strategy
+Local Lawn Service — New Client Onboarding
+
+
+
+
+
+
+Prepared by TradeWorks AI
+May 2026
+________________
+
+
+1. Executive Summary
+Edge to Hedges is a local lawn service company entering the TradeWorks AI client roster as a free onboarding client. Based on research, the business currently has minimal to no established digital presence, which is actually advantageous: we can build the entire foundation from scratch with consistent NAP (Name, Address, Phone) data, unified branding, and zero legacy cleanup required.
+This analysis identifies every channel, directory, and profile opportunity appropriate for a local lawn care company. Recommendations are organized into four tiers based on priority and impact on local search visibility, backlink authority, lead generation, and brand trust.
+
+
+Priority Tier Summary
+Tier
+	Timeline
+	Description
+	Tier 1: Critical
+	Week 1
+	Foundation platforms that directly impact local search ranking and lead generation. Must be live before any content or advertising begins.
+	Tier 2: High
+	Weeks 2–3
+	Social media profiles and lead-gen directories that build brand visibility, generate backlinks, and create engagement channels.
+	Tier 3: Medium
+	Weeks 3–4
+	Industry-specific directories, data aggregators, and secondary platforms that reinforce NAP consistency and niche authority.
+	Tier 4: Low
+	Month 2+
+	Supplemental directories and emerging platforms. Lower priority but contribute to long-tail citation coverage.
+	________________
+
+
+2. Tier 1: Critical Foundation (Week 1)
+These platforms must be set up first. They are the backbone of local search visibility and the primary channels homeowners use to find lawn service providers. Nothing else matters until these are live with accurate, complete information.
+
+
+2.1 Google Business Profile
+Type: Local business listing (free)
+SEO Impact: Highest single factor for Map Pack ranking and local search visibility.
+Backlink Value: Direct entity authority signal to Google. Not a traditional backlink but the most important local signal.
+Google Business Profile is non-negotiable. It controls whether Edge to Hedges appears in the Local 3-Pack when homeowners search for lawn care in the service area. 46% of all Google searches have local intent, and the Map Pack appears above organic results.
+Setup Requirements
+* Primary category: Lawn care service
+* Secondary categories: Landscaper, Garden service (if applicable)
+* Complete NAP with exact business name, street address, phone number
+* Service area defined by zip codes or city radius
+* Business hours including seasonal variations
+* All service types listed with keyword-aligned descriptions
+* Minimum 10 original photos: crew at work, equipment, before/after results, team headshots
+* Business description (750 characters) with primary keywords and service area
+* Website URL linked to homepage
+* Messaging enabled for direct inquiries
+Ongoing Requirements
+* 1–2 GBP Posts per week (offers, updates, service announcements)
+* Respond to every review within 24–48 hours
+* Add new photos monthly (job completions, seasonal work)
+* Update seasonal services and hours proactively
+
+
+2.2 Company Website
+Type: Owned property (investment required)
+SEO Impact: The central hub that every other channel links to. Controls organic ranking potential.
+Backlink Value: Every directory and social profile links here. This is the destination for all citation authority.
+Even as a free client, Edge to Hedges needs a website. It does not need to be complex. A well-built 5–7 page site is sufficient to start: Home, Services, About, Service Areas, Contact, and a blog for ongoing content. Without a website, every directory listing links to nothing and the GBP profile has no URL destination.
+Minimum Pages
+* Homepage with service overview, service area, and primary CTA
+* Services page (or individual pages per service: mowing, edging, hedge trimming, cleanup, mulching)
+* About page with owner story, team photos, and trust signals
+* Service area page with city/neighborhood targeting
+* Contact page with form, phone, email, and embedded map
+
+
+2.3 Facebook Business Page
+Type: Social media (free)
+SEO Impact: High domain authority backlink. GBP and Facebook together create foundational entity signals.
+Backlink Value: DA 96 backlink from profile URL. Facebook Business Pages are indexed and crawled.
+Facebook remains the dominant social platform for local home service discovery. For lawn care specifically, Facebook is where homeowners ask for recommendations in neighborhood groups, share before/after photos, and leave reviews. The business page also powers Facebook Ads and Marketplace visibility.
+Setup Requirements
+* Business Page (not personal profile) with complete business info
+* NAP matching GBP exactly (critical for citation consistency)
+* Cover photo and profile photo (logo or branded image)
+* All services listed in the Services tab
+* CTA button configured: Call Now or Send Message
+* Auto-responder enabled for after-hours messages
+* Reviews tab enabled and seeded with initial customer reviews
+
+
+2.4 Yelp Business Profile
+Type: Review directory (free listing; paid advertising optional)
+SEO Impact: Yelp pages rank independently for "[service] + [city]" searches. High domain authority.
+Backlink Value: DA 93 backlink. Yelp listings frequently outrank local business websites in organic results.
+Yelp is a Tier 1 priority because its pages rank organically in Google for lawn care searches and it appears in Apple Maps results. Even without paid advertising, a complete free Yelp profile with accurate NAP and a few reviews generates visibility. Yelp also feeds data to Apple Maps, Siri, and Alexa.
+Setup Requirements
+* Claim or create business listing with exact NAP
+* Select primary category: Lawn Services
+* Add secondary categories: Landscaping, Hedge Trimming
+* Upload minimum 5 photos of completed work
+* Write business description with keywords and service area
+* Set service area and hours
+* Enable quote requests
+________________
+
+
+3. Tier 2: High Priority (Weeks 2–3)
+These platforms build on the Tier 1 foundation. They generate backlinks, create additional discovery channels, and establish the social media presence needed for content marketing and community engagement.
+
+
+3.1 Social Media Profiles
+
+
+Platform
+	Primary Use for Lawn Care
+	DA
+	Cost
+	Instagram Business
+	Visual portfolio, brand identity, before/after transformations, Reels for reach
+	DA 92
+	FREE
+	TikTok Business
+	Educational content, viral reach, younger homeowner segment, satisfying lawn videos
+	DA 92
+	FREE
+	Nextdoor Business
+	Hyper-local trust, neighborhood recommendations, community engagement
+	DA 82
+	FREE
+	YouTube Channel
+	Long-form authority, SEO/AEO value, evergreen how-to content, Shorts for reach
+	DA 99
+	FREE
+	LinkedIn Company Page
+	B2B commercial accounts, owner thought leadership, professional credibility
+	DA 98
+	FREE
+	Pinterest Business
+	Before/after boards, lawn inspiration, seasonal content, drives website traffic
+	DA 94
+	FREE
+	
+
+Instagram Priority Notes
+Lawn care is one of the most visually rewarding trades on Instagram. Before/after transformations, satisfying edging videos, and lush lawn reveals perform extremely well. Reels featuring time-lapse mowing or precision edging consistently generate high engagement in the lawn care niche. Instagram should be the primary visual portfolio alongside Facebook.
+Nextdoor Priority Notes
+Nextdoor is the single most underutilized platform for local lawn care. Homeowners actively ask for lawn service recommendations in their neighborhood feeds. A claimed Nextdoor business profile allows Edge to Hedges to appear in those recommendation threads. The owner should also maintain a personal account to engage organically in neighborhood conversations. This is the closest thing to digital word-of-mouth.
+TikTok Priority Notes
+Lawn care TikTok is a proven content vertical. Accounts like @cleancuts_lawns and similar have built massive followings with satisfying mowing content, before/after reveals, and quick lawn care tips. The barrier to entry is low: a phone camera and real job-site footage. TikTok also reaches younger first-time homeowners who are actively entering the market.
+
+
+3.2 Lead-Generation Directories
+These platforms function as both directories and active lead sources. They charge for leads or advertising, but the free profile tiers still provide backlinks and citation authority. For a free client, we set up the free profiles and monitor which ones generate organic inquiries before investing in paid tiers.
+
+
+Platform
+	Notes
+	DA
+	Cost
+	Angi (Angie’s List)
+	Free profile with paid advertising options. Now called Angi Leads (formerly HomeAdvisor). Strong domain authority. Generates organic leads from category searches. Reviews indexed by Google.
+	DA 91
+	FREEMIUM
+	Thumbtack
+	Active marketplace. Homeowners post lawn care requests; pros respond with quotes. $400M+ revenue in 2025. Partnerships with ChatGPT, Alexa, Zillow, Redfin for AI search referrals. Pay-per-lead model.
+	DA 90
+	PAID
+	HomeAdvisor (Angi Leads)
+	Now merged with Angi. Separate listing may still exist. Yearly fee (~$350) plus $15–$40 per lead. Worth claiming the free profile even if not running paid leads.
+	DA 88
+	FREEMIUM
+	Thumbtack (via ChatGPT/AI)
+	Thumbtack’s AI integrations mean a Thumbtack profile may surface in ChatGPT, Alexa, and Zillow recommendations. This is a passive AEO signal that requires no extra setup beyond the Thumbtack profile.
+	N/A
+	FREE
+	Bark
+	Growing under PE ownership. Best for smaller residential jobs. Free to create a profile; pay to respond to leads. Lower cost-per-lead than Thumbtack for mowing and basic services.
+	DA 80
+	FREEMIUM
+	LawnStarter / Lawn Love
+	Marketplace platforms where homeowners book lawn care directly. These function more like gig platforms than directories. Worth monitoring but not a priority for brand building.
+	DA 70+
+	PAID
+	
+
+Recommendation: Create free profiles on Angi, Thumbtack, and Bark immediately for backlink value and citation consistency. Do not activate paid lead-gen until the business has a website, GBP, and review foundation in place. Thumbtack’s AI integrations make it especially valuable for future AEO visibility.
+________________
+
+
+4. Tier 3: Medium Priority (Weeks 3–4)
+These directories reinforce NAP consistency, generate additional backlinks, and ensure Edge to Hedges appears in data aggregator networks that feed hundreds of smaller directories automatically.
+
+
+4.1 General Business Directories
+
+
+Directory
+	Notes
+	DA
+	Cost
+	Better Business Bureau (BBB)
+	Accredited listing builds consumer trust. BBB profile pages rank well organically. Accreditation costs $300–$500/year but the free listing is still valuable.
+	DA 93
+	FREEMIUM
+	Apple Maps (via Apple Business Connect)
+	Controls how Edge to Hedges appears in Apple Maps, Siri, and Safari suggestions. Free. Often overlooked. Yelp data feeds here but a claimed profile takes priority.
+	DA 99
+	FREE
+	Bing Places for Business
+	Microsoft’s equivalent of GBP. Covers Bing Search, Bing Maps, Cortana, and Copilot AI responses. Free. Import directly from GBP for fast setup.
+	DA 99
+	FREE
+	Yellow Pages / YP.com
+	Legacy directory with high DA. Still generates citation signals even though consumer usage has declined.
+	DA 87
+	FREE
+	Manta
+	Business directory with free profile. Moderate DA. Contributes to citation breadth.
+	DA 72
+	FREE
+	Foursquare / Swarm
+	Location data platform that feeds data to Apple Maps, Uber, Samsung, and other apps. Claiming the listing ensures accuracy across the data network.
+	DA 90
+	FREE
+	MapQuest
+	Still used by some consumers and feeds data aggregator networks.
+	DA 82
+	FREE
+	Whitepages / Superpages
+	Legacy directories. Low consumer usage but contribute to citation consistency scores.
+	DA 75+
+	FREE
+	
+
+4.2 Data Aggregators
+Data aggregators are the wholesale distributors of business listing data. They feed NAP information to hundreds of smaller directories, GPS systems, and apps. Submitting to these four aggregators ensures Edge to Hedges’ information propagates across the entire local data ecosystem.
+
+
+Aggregator
+	Why It Matters
+	DA
+	Cost
+	Data Axle (formerly Infogroup)
+	Feeds data to 70+ directories including YP, Superpages, and city directories.
+	Varies
+	FREE
+	Neustar Localeze
+	Major aggregator feeding data to search engines and navigation systems.
+	Varies
+	FREE
+	Foursquare (Factual)
+	Location data powering Apple Maps, Uber, Samsung, Snapchat, and more.
+	DA 90
+	FREE
+	Acxiom
+	Consumer data aggregator. Submitting directly ensures NAP accuracy in their network.
+	Varies
+	FREE
+	
+
+4.3 Industry-Specific & Home Service Directories
+
+
+Directory
+	Notes
+	DA
+	Cost
+	Houzz
+	Design-forward platform. Strong for landscaping portfolio display. Houzz Pro is SaaS ($49–$99/mo). Free profile still provides a high-DA backlink and photo gallery.
+	DA 90
+	FREEMIUM
+	Porch
+	Pivoted to insurance but directory still exists. Free profile provides citation. Not a lead priority.
+	DA 77
+	FREE
+	BuildZoom
+	Connects homeowners with contractors. Uses public licensing data for verification.
+	DA 65
+	FREE
+	Home Depot Pro Referral
+	Lead-gen through Home Depot. Good fit if Edge to Hedges purchases supplies there.
+	DA 95
+	FREE
+	TaskRabbit
+	Marketplace for small jobs. Lower-ticket but provides another citation and potential lead source.
+	DA 80
+	FREE
+	Lawn & Landscape Directory
+	Industry trade publication directory. Niche authority signal.
+	DA 55
+	FREE
+	GreenPal
+	"Uber for lawn care" marketplace. Active in many Florida markets. Worth checking availability.
+	DA 50
+	FREEMIUM
+	________________
+
+
+5. Tier 4: Supplemental (Month 2+)
+These are lower-priority directories and platforms that contribute to long-tail citation coverage. None are urgent, but collectively they fill gaps in the citation profile and provide marginal backlink value.
+
+
+5.1 Local & Community Directories
+* Local Chamber of Commerce (if available in service area) — High trust signal, DA varies by chamber
+* City/county business directory (many municipalities maintain free listings)
+* Local newspaper or community blog business directories
+* Neighborhood HOA directories or community newsletters (not online but builds local recognition)
+* Church, school, or community organization sponsor pages (backlink + community trust)
+
+
+5.2 Review & Rating Platforms
+* Birdeye — Review management platform; listing provides citation (DA 70+)
+* Trustpilot — Less common for local services but provides a high-DA backlink (DA 93)
+* Google Reviews (via GBP) — Already covered in Tier 1 but the review generation strategy is ongoing
+* Facebook Reviews — Already covered; cross-promote review requests
+
+
+5.3 Emerging & AI Search Platforms
+AI search engines are increasingly sourcing local business data from structured platforms. While there is no direct way to submit to ChatGPT, Perplexity, or Google AI Overviews, the following actions increase the likelihood of being referenced:
+* Maintain a complete Thumbtack profile (partnership with ChatGPT for service recommendations)
+* Publish structured FAQ content on the website (schema markup for AI extraction)
+* Maintain consistent entity data across all platforms (name, services, location, phone)
+* Create YouTube content with clear question-format titles for AEO
+* Post on LinkedIn and Reddit (both are heavily indexed by AI models for training and retrieval)
+________________
+
+
+6. Backlink Strategy Beyond Directories
+Directory listings provide the citation foundation, but true backlink authority requires earned links from relevant, authoritative sources. These strategies are appropriate for a lawn care company at any stage.
+
+
+6.1 Local Partnership Backlinks
+* Real estate agents: Offer a preferred vendor relationship. Many agents maintain resource pages on their websites linking to trusted service providers.
+* Property management companies: Same approach. Property managers need reliable lawn care and often list vendors on their sites.
+* Complementary home services: Exchange referral links with non-competing contractors (pool service, pressure washing, fence companies, pest control).
+* HOA management companies: Many HOAs maintain approved vendor lists on their websites.
+
+
+6.2 Content-Driven Backlinks
+* Seasonal lawn care guides: Publish original content (e.g., "Florida Lawn Care Calendar: Month-by-Month Guide") that local blogs and community sites will reference and link to.
+* Before/after gallery: A well-organized project gallery becomes a linkable asset when shared in community groups and forums.
+* Local expertise content: "Best Grass Types for [City] Soil" or "How Florida Humidity Affects Your Lawn" — hyper-local content that competitors in generic directories cannot replicate.
+
+
+6.3 Community Involvement Backlinks
+* Sponsor local events: 5K runs, school fundraisers, and little league teams. Many event pages link to sponsors.
+* Volunteer for community beautification: Offer free lawn care for a community space and get mentioned in local press or community newsletters.
+* Local press: Submit seasonal lawn care tips as a local expert to community newspapers. Many publish contributor content with a business link.
+________________
+
+
+7. Master Buildout Checklist
+Complete this checklist in order. Each tier builds on the previous one. NAP consistency across all platforms is the single most important technical detail.
+
+
+Week 1: Critical Foundation
+* Set up Google Business Profile with complete information, photos, and services
+* Launch or verify company website (minimum 5 pages)
+* Create Facebook Business Page with matching NAP
+* Claim Yelp Business Profile with matching NAP
+* Verify NAP is identical across all four platforms (character-for-character)
+
+
+Weeks 2–3: High Priority
+* Create Instagram Business account; link to Facebook page
+* Create TikTok Business account
+* Claim Nextdoor Business Profile
+* Create YouTube channel with branded banner and about section
+* Create LinkedIn Company Page
+* Create Pinterest Business account
+* Set up free profiles on Angi, Thumbtack, and Bark
+* Begin collecting customer reviews on Google and Facebook (aim for 5+ each in first month)
+
+
+Weeks 3–4: Medium Priority
+* Claim Apple Business Connect listing
+* Create Bing Places for Business listing (import from GBP)
+* Submit to BBB (free listing; consider accreditation later)
+* Create YP.com listing
+* Claim Foursquare listing
+* Submit to all four data aggregators (Data Axle, Neustar Localeze, Foursquare/Factual, Acxiom)
+* Create Houzz profile with project photos
+* Create Porch and BuildZoom profiles
+* Verify Manta, MapQuest, and Whitepages listings
+
+
+Month 2+: Supplemental & Ongoing
+* Research and join local Chamber of Commerce if available
+* Identify 3–5 local partnership backlink opportunities (real estate agents, property managers)
+* Publish first piece of linkable content on website (seasonal lawn guide)
+* Begin Nextdoor organic engagement (owner personal account in neighborhood feeds)
+* Begin review generation cadence: request review 48–72 hours after each completed service
+* Audit all listings quarterly for NAP consistency
+* Refresh hashtag sets and social posting cadence based on first-month analytics
+* Evaluate paid lead-gen activation on Thumbtack or Angi based on inquiry volume
+________________
+
+
+8. Channels & Directories to Avoid or Deprioritize
+Not every directory or platform is worth the time. These are specific recommendations on what to skip or delay for a local lawn care company at this stage.
+
+
+Platform/Practice
+	Why to Avoid
+	Craigslist
+	Low trust signal, no backlink value, attracts price-shopping leads. Skip entirely for brand building.
+	LawnStarter / Lawn Love
+	These are gig marketplaces, not directories. They control the customer relationship and set pricing. Using them undermines brand ownership.
+	Twitter/X
+	Minimal local discovery value for lawn care. Homeowners do not search X for service providers. Deprioritize unless the owner has a personal following.
+	Threads
+	Meta’s text platform. No local search relevance for home services. Skip.
+	Paid directory bundles
+	Services like Yext or BrightLocal can automate directory submissions but cost $300–$500+/year. For a free client, manual submission to the directories listed above is sufficient and costs nothing.
+	Link farms / PBNs
+	Any service offering hundreds of backlinks for a fee is selling toxic links that will harm rankings. Zero tolerance.
+	Duplicate GBP listings
+	Never create multiple Google Business Profiles for the same business at the same address. Google penalizes this severely.
+	________________
+
+
+9. NAP Consistency Standards
+NAP consistency is the single most important technical factor in local citation building. Google uses NAP data across all directories to verify that a business is real and that its contact information is trustworthy. Inconsistencies — even small ones — erode ranking authority.
+
+
+Rules for Edge to Hedges
+* Business Name: Use the exact same business name on every platform. If the legal name is "Edge to Hedges LLC," decide whether to use "Edge to Hedges" or "Edge to Hedges LLC" and stick with it everywhere. Do not alternate between variations.
+* Address: Use the exact format from the USPS address lookup tool. If the USPS says "123 Main St" (not "Street"), use "St" everywhere. Include or exclude the suite/unit number consistently.
+* Phone Number: One primary phone number across all platforms. Format it identically: (555) 555-5555 or 555-555-5555 — pick one and use it everywhere.
+* Website URL: Use the same URL format everywhere. If the website is https://www.edgetohedges.com, do not link to https://edgetohedges.com (without www) on some platforms and with www on others.
+
+
+Quarterly Audit Process
+* Search for the business name on Google and review the first 3 pages of results
+* Check every listed directory for NAP accuracy
+* Update any inconsistencies immediately
+* Document corrections in a tracking spreadsheet
+
+
+10. Total Profile & Listing Count
+
+
+Category
+	Count
+	Platforms
+	Tier 1: Critical Foundation
+	4
+	Google Business Profile, Website, Facebook, Yelp
+	Tier 2: Social Media
+	6
+	Instagram, TikTok, Nextdoor, YouTube, LinkedIn, Pinterest
+	Tier 2: Lead-Gen Directories
+	3–5
+	Angi, Thumbtack, Bark (+ HomeAdvisor, GreenPal optional)
+	Tier 3: General Directories
+	6–8
+	Apple Maps, Bing Places, BBB, YP, Foursquare, Manta, MapQuest, Whitepages
+	Tier 3: Data Aggregators
+	4
+	Data Axle, Neustar, Foursquare/Factual, Acxiom
+	Tier 3: Industry Directories
+	4–7
+	Houzz, Porch, BuildZoom, Home Depot Pro, TaskRabbit, Lawn & Landscape, GreenPal
+	Tier 4: Local/Community
+	2–5
+	Chamber, city directory, local press, community orgs
+	TOTAL
+	29–39
+	Complete local citation foundation for a lawn care company
+	
+
+
+
+
+
+TradeWorks AI — Riverview, FL
+Edge to Hedges — Channel & Directory Strategy v1.0

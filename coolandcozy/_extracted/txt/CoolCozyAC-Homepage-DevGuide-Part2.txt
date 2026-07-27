@@ -1,0 +1,741 @@
+﻿
+DEVELOPER IMPLEMENTATION GUIDE
+
+COOL & COZY AC REPAIR
+Licensed HVAC Contractor  ·  Jacksonville, Florida
+
+HOMEPAGE
+Part 2 of 2
+Property Management Through Footer & Reference Appendix
+
+URL: coolcozyac.com/
+Prepared by: TradeWorks AI  |  Version 1.0  |  May 2026
+Classification: Client Confidential
+
+Table of Contents
+
+5.  Section-by-Section Build (Part 2, continued)
+5.7  Property Management Section
+5.8  Why Choose Cool & Cozy
+5.9  Testimonials Carousel
+5.10  Service Areas Map Section
+5.11  FAQ Section
+5.12  Final CTA Block
+6.  Footer Specification
+7.  Sticky Mobile CTA Bar
+8.  Reference: Image Asset Inventory
+9.  Reference: GA4 Event Tracking Summary
+10.  Reference: Implementation Checklist
+
+5. Section-by-Section Build (Part 2, continued)
+This document continues the homepage build from Part 1. Sections 5.1–5.6 (Emergency Banner through Services Grid) are defined in Part 1.
+
+5.7 Property Management Section
+Section Overview
+This section speaks directly to property managers, landlords, and commercial operators. It is positioned immediately after the services grid because property managers who have scrolled past the service offerings are now evaluating whether Cool & Cozy can handle their specific scale and reliability requirements. The section uses a slightly more structured, metrics-forward layout than the residential-focused sections above — property managers make decisions based on data, not emotional appeals.
+This is a key competitive differentiator. No Tier 1 Jacksonville HVAC competitor has a dedicated property management section on their homepage. Cool & Cozy’s specific expertise with multi-unit properties and rental portfolios is called out here with concrete proof points.
+Conversion Role: Drive property management inquiries via a dedicated CTA linking to /services/commercial-hvac or /contact with a pre-selected “Commercial / Property Management” option.
+Target Audience: Property managers (5–50+ units), landlords, Airbnb hosts, commercial building operators
+Layout Specifications
+Property
+Specification
+Container
+Full-width, #1A5653 (Evergreen) background — visual break from the cream/white sections above
+Content Width
+1280px centered
+Padding
+80px top/bottom (desktop), 48px (mobile)
+Desktop Layout
+2-column: Left = text content (55% width), Right = metrics/proof panel (45% width)
+Tablet
+2-column maintained, equal width, tighter padding
+Mobile
+Single column, text first, metrics panel stacked below
+Content Specifications
+Section Eyebrow
+FOR PROPERTY MANAGERS & COMMERCIAL OPERATORS
+Style: Poppins 12px/600, uppercase, letter-spacing 2.5px, #5CB8B2 (Seafoam)
+H2 Heading
+The HVAC Partner Your Properties Deserve
+Style: Poppins 36px/700, #FFFFFF, line-height 1.2
+Body Copy
+Managing 5 units or 50, you need an AC contractor who picks up the phone, shows up on time, and gets the job done right without a callback. Cool & Cozy AC Repair serves Jacksonville property managers with the same licensed expertise and honest pricing our residential customers trust — backed by response-time commitments and maintenance agreements built for portfolio-scale operations.
+Word Count: 61 words
+Style: Poppins 16px/400, #F0E6D3 (Warm Sand), line-height 1.7
+
+Feature Bullets (Left Column, Below Body Copy)
+Priority response for multi-unit emergencies — your tenants don’t wait
+Maintenance agreements with scheduled seasonal tune-ups across your entire portfolio
+Single point of contact — one licensed contractor for all your Jacksonville properties
+Transparent per-unit pricing with no hidden service call fees
+Bilingual technicians for tenant communication in English and Spanish
+Branded email and professional invoicing — not a Gmail receipt
+Bullet Style: Poppins 15px/400, #F0E6D3, check-circle Seafoam icon (SVG) replacing bullet character
+
+Right Column: Metrics Panel
+A card-style panel on the Evergreen background, slightly lighter (#1E6460 or 10% lightened Evergreen), with rounded corners (16px), containing 3 proof-point metrics stacked vertically:
+Metric
+Value
+Subtext
+Licensed Since
+2018
+Florida CAC1819948
+BuildZoom Ranking
+Top 13%
+of 191,428 FL contractors
+Permitted Projects
+21
+on file with Duval County
+
+Metric number style: Poppins 48px/700, #E8603C (Coral)
+Metric label style: Poppins 14px/500, #FFFFFF
+Metric subtext style: Poppins 12px/400, #5CB8B2 (Seafoam)
+Panel padding: 32px all sides
+
+Section CTA
+Button text: “Discuss Your Properties”
+Link: /contact?service=commercial (pre-selects Commercial / Property Management in the contact form)
+Style: #E8603C (Coral) bg, #FFFFFF text, pill shape (border-radius 28px), 52px height, Poppins 16px/600
+Secondary link: “Or call us directly: (904) 555-0199” — tel: link, #F0E6D3 text, underline on hover
+Design Specifications
+Property
+Specification
+Section background
+#1A5653 (Evergreen) — creates dramatic visual break
+Text colors
+H2: #FFFFFF, body: #F0E6D3 (Warm Sand), bullets: #F0E6D3
+Metrics panel bg
+rgba(255,255,255,0.08) — subtle lightening on Evergreen
+Metrics panel border
+1px solid rgba(255,255,255,0.12), border-radius 16px
+CTA hover
+#D04E2A (darken Coral 10%), box-shadow 0 4px 16px rgba(232,96,60,0.35)
+Section transition
+Subtle gradient at top edge from previous cream section into Evergreen, 40px height
+The Evergreen background section is a deliberate pattern interrupt. After three cream/white sections, the dark background re-engages scrolling visitors and signals “this is different” — which is exactly the positioning for the commercial/PM audience.
+Image Specifications
+No background image in this section (clean Evergreen). The metrics panel uses SVG icons only: shield icon (licensed), trophy icon (ranking), document icon (permits). Same icon style as trust bar — line, 2px stroke, Seafoam color.
+Internal Links
+“Discuss Your Properties” → /contact?service=commercial
+(904) 555-0199 → tel:+19045550199
+Implicit link opportunity: “maintenance agreements” in body copy → /services/ac-maintenance
+GA4 Event Tracking
+Property
+Specification
+cta_click
+button_text: “Discuss Your Properties”, destination_url: “/contact?service=commercial”, page_section: “property_management”
+phone_click
+page_section: “property_management”
+Accessibility
+Ensure color contrast on Evergreen background: Warm Sand (#F0E6D3) on Evergreen (#1A5653) = 7.8:1 (passes AAA)
+Coral CTA on Evergreen = 3.4:1 (passes AA for large text; button text is 16px semi-bold, qualifies)
+Metrics panel numbers must be readable with screen readers — use aria-label on each metric container: e.g., aria-label=“Licensed since 2018, Florida license CAC1819948”
+
+5.8 Why Choose Cool & Cozy
+Section Overview
+A benefits-driven section that answers the visitor’s unspoken question: “Why should I call you instead of the bigger companies?” This section leans into Cool & Cozy’s genuine differentiators — affordable pricing, bilingual service, verifiable credentials, and the family-owned trust factor — rather than trying to match competitors on fleet size or manufacturer partnerships.
+Conversion Role: Overcome objections and build confidence. Reduces the gap between “interested” and “calling.”
+Layout Specifications
+Property
+Specification
+Container
+Full-width, #FFFFFF (White) background
+Content Width
+1280px centered
+Padding
+64px top/bottom (desktop), 32px (mobile)
+Desktop Layout
+Left: H2 + intro paragraph (40% width). Right: 2×3 benefit cards grid (60% width)
+Tablet
+Intro paragraph full-width above, 2×3 cards below
+Mobile
+Single column: intro paragraph, then cards stacked 1-up
+Content Specifications
+H2 Heading
+Why Jacksonville Homeowners and Property Managers Choose Cool & Cozy
+Intro Paragraph
+We are not the biggest HVAC company in Jacksonville. We are the one that answers your call, shows up when we say we will, charges what we quoted, and does the job right the first time. That’s been the promise since 2018, and our BuildZoom ranking in the top 13% of Florida contractors proves we deliver on it.
+Word Count: 56 words
+
+Benefit Cards (6 Cards)
+Card Title
+Icon Subject
+Body Text (2 sentences)
+Honest Pricing
+Dollar/tag icon
+No surprise charges, no upselling. You get a clear quote before any work begins, and that’s the price you pay.
+Licensed & Verified
+Shield/check icon
+Florida license CAC1819948, active and verifiable. BuildZoom ranks us in the top 13% of all state contractors.
+Se Habla Español
+Globe/speech icon
+Our bilingual team communicates clearly with every customer. Jacksonville’s Hispanic community deserves service in the language they prefer.
+Same-Day Response
+Clock/bolt icon
+When your AC fails on a Florida summer afternoon, waiting until tomorrow is not an option. We prioritize emergency calls for fast restoration.
+Family-Owned Values
+Home/heart icon
+We are not a franchise or a call center. You talk to real people who live and work in Jacksonville, who care about your comfort and your budget.
+Property Manager Ready
+Building/key icon
+Multi-unit maintenance agreements, priority scheduling, transparent per-unit pricing. Built for the demands of rental portfolios and commercial properties.
+
+Design Specifications
+Benefit Cards
+Property
+Specification
+Card background
+#FFFDF8 (Cream)
+Border
+1px solid #E8E3DB
+Border-radius
+16px
+Padding
+24px
+Icon
+40×40px SVG, #1A5653 Evergreen stroke, centered top of card
+Title
+Poppins 16px/600, #2C2C2C Charcoal, 12px below icon
+Body
+Poppins 14px/400, #3D3D3D, line-height 1.55, 8px below title
+Hover
+border-color #5CB8B2 (Seafoam), box-shadow 0 4px 16px rgba(0,0,0,0.06), transition 0.2s
+Grid gap
+20px desktop, 16px mobile
+GA4 Event Tracking
+No specific events for this section — it is informational, not interactive. Scroll depth tracking (built into GA4 enhanced measurement) captures engagement.
+
+5.9 Testimonials Carousel
+Section Overview
+Social proof from real customers. This section displays 3–5 testimonial cards in a carousel/slider that auto-advances slowly and supports manual navigation. Testimonials should include a mix of residential repair, installation, and (once available) property management clients. Until Google reviews accumulate, Thumbtack reviews can be quoted with attribution.
+Conversion Role: Overcome trust hesitation. Real voices validate the claims made in the preceding sections.
+Layout Specifications
+Property
+Specification
+Container
+Full-width, #EAF3F2 (Sky Mist) background
+Content Width
+1280px centered
+Padding
+64px top/bottom (desktop), 32px (mobile)
+Desktop
+3 cards visible at a time, side-by-side, with left/right navigation arrows
+Tablet
+2 cards visible
+Mobile
+1 card visible, swipeable left/right, pagination dots below
+Auto-advance
+6-second interval, pauses on hover/focus/touch
+Content Specifications
+Section Heading
+What Our Customers Say
+Subheading: Real reviews from Jacksonville homeowners and property managers.
+
+Testimonial Cards (Placeholder Content — Replace With Real Reviews)
+#
+Quote
+Attribution
+1
+They were very nice and got the job done. I’m very pleased with what they did for me.
+Kimberly S. — AC Installation, via Thumbtack
+2
+On time and know exactly what they are doing. Thank you!
+Verified Customer — AC Repair, via Thumbtack
+3
+Very good experience! They were on time, professional, clean and quick. The price was exceptional as well.
+Danielle D. — AC Repair, via Thumbtack
+4
+[PLACEHOLDER — Property manager testimonial. Source once commercial clients engage.]
+[PM Client Name] — Commercial HVAC
+5
+[PLACEHOLDER — Google review. Source once review campaign generates results.]
+[Customer Name] — via Google
+
+DEV ACTION: PLACEHOLDER: Testimonials 4 and 5 require real customer content. Launch with the 3 Thumbtack reviews. Add Google reviews and PM testimonials as they become available. The carousel dynamically adjusts to the number of cards present.
+Design Specifications
+Property
+Specification
+Card background
+#FFFFFF
+Border-radius
+16px
+Box-shadow
+0 2px 8px rgba(0,0,0,0.05)
+Padding
+28px
+Quote text
+Poppins 15px/400 italic, #3D3D3D, line-height 1.65
+Quote marks
+60px decorative open-quote in #5CB8B2 (Seafoam), 0.15 opacity, positioned top-left of card
+Star rating
+5 filled stars, 18px, #E6A817 (Warning/Gold) color, above quote
+Attribution
+Poppins 13px/500, #7A7A7A, 16px below quote
+Nav arrows
+40×40px circles, #1A5653 bg, white arrow icon, hover: scale(1.05)
+Pagination dots
+8px circles, #DDD8D0 inactive, #1A5653 active, 12px gap
+If AggregateRating schema is used, it requires a minimum number of reviews. Do NOT add AggregateRating JSON-LD until at least 5 Google reviews exist. For launch, individual review display without aggregate schema is the safe approach.
+Accessibility
+Carousel implements aria-roledescription="carousel", each slide has role="tabpanel"
+Previous/Next buttons have aria-label="Previous testimonial" / "Next testimonial"
+Pause auto-advance on keyboard focus inside the carousel
+Ensure all testimonial text is accessible to screen readers (not background images or SVG text)
+GA4 Event Tracking
+Property
+Specification
+review_click
+Fires if a “Read more reviews” link is added. destination_url: “/reviews”, page_section: “testimonials”
+
+5.10 Service Areas Map Section
+Section Overview
+A visual representation of Cool & Cozy’s service coverage across Jacksonville and Duval County. Combines a Google Maps embed with a list of linked neighborhood names that drive visitors to dedicated area landing pages. This section serves both local SEO (geographic keyword signals) and user experience (confirming coverage before calling).
+Conversion Role: Confirm service area coverage. Drive traffic to neighborhood-specific landing pages that rank for “AC repair [neighborhood]” queries.
+Layout Specifications
+Property
+Specification
+Container
+Full-width, #FFFFFF (White) background
+Content Width
+1280px centered
+Padding
+64px top/bottom (desktop), 32px (mobile)
+Desktop Layout
+Left: heading + neighborhood link grid (50%). Right: Google Maps embed (50%)
+Tablet
+Maps embed full-width above, neighborhood grid below
+Mobile
+Maps embed full-width (300px height), neighborhood links 2-column grid below
+Content Specifications
+H2 Heading
+Serving Jacksonville & Duval County
+Subheading: From Mandarin to the Beaches, from Riverside to Arlington — Cool & Cozy covers your neighborhood.
+Neighborhood Links
+Column 1
+Column 2
+Column 3
+Southside
+San Marco
+Murray Hill
+Mandarin
+Baymeadows
+Springfield
+Arlington
+Jacksonville Beach
+Orange Park
+Riverside-Avondale
+(link to full list)
+
+Each name: Links to /service-areas/[neighborhood-slug]
+Bottom link: “View All Service Areas →” links to /service-areas
+Google Maps Embed
+Center: Jacksonville, FL (approximate center of Duval County)
+Zoom: Level 11 (shows full county)
+Dimensions: Desktop: 100% width × 400px height. Mobile: 100% width × 300px height
+Loading: Lazy-loaded (loading="lazy" on iframe)
+Border-radius: 16px (matching card style)
+DEV ACTION: Use Google Maps Embed API (free, no API key required for simple embed). Wrap in a container with border-radius 16px and overflow: hidden. Add a subtle box-shadow to match card style.
+Design Specifications
+Property
+Specification
+Neighborhood link style
+Poppins 15px/500, #1A5653 Evergreen, hover: #E8603C Coral, underline-offset 4px
+Link grid
+3-column desktop, 2-column mobile, 12px gap
+Maps container
+border-radius 16px, box-shadow 0 2px 12px rgba(0,0,0,0.06), overflow hidden
+“View All” link
+Poppins 14px/600, #5CB8B2 Seafoam, arrow animates right on hover
+Internal Links
+10 neighborhood links → individual /service-areas/[slug] pages
+“View All Service Areas” → /service-areas
+GA4 Event Tracking
+Property
+Specification
+cta_click
+Fires on each neighborhood link click. Parameters: button_text: neighborhood name, destination_url, page_section: “service_areas”
+
+5.11 FAQ Section
+Section Overview
+Six frequently asked questions structured for featured snippet extraction and AI answer engine discoverability. Each question is phrased in natural conversational language matching voice search patterns. Answers lead with a direct response (featured snippet target: 40–60 words) followed by supporting detail. FAQPage schema is required.
+Conversion Role: Capture long-tail informational queries. Build trust through transparency. AEO/GEO target.
+Layout Specifications
+Property
+Specification
+Container
+Full-width, #F0E6D3 (Warm Sand) background
+Content Width
+800px centered (narrower for readability)
+Padding
+64px top/bottom (desktop), 32px (mobile)
+Accordion behavior
+Click/tap to expand. One open at a time (close previous when opening new). First question open by default.
+Mobile
+Same accordion, full-width, 48px minimum touch targets for question rows
+Content Specifications
+Section Heading
+Frequently Asked Questions
+
+FAQ 1
+Q: How much does AC repair cost in Jacksonville?
+A: AC repair costs in Jacksonville typically range from $150 to $600 depending on the issue. Simple fixes like capacitor replacements or refrigerant top-offs fall toward the lower end, while compressor repairs or major component replacements cost more. Cool & Cozy provides a clear diagnostic and upfront quote before any work begins — the price we quote is the price you pay. We never charge hidden service fees. Call (904) 555-0199 for a free estimate tailored to your specific situation.
+Word Count: 78 words
+
+FAQ 2
+Q: Does Cool & Cozy AC Repair serve property managers and commercial buildings?
+A: Yes. Cool & Cozy serves property managers, landlords, Airbnb hosts, and commercial building operators throughout Jacksonville and Duval County. We offer maintenance agreements with scheduled seasonal tune-ups across multi-unit portfolios, priority emergency response, transparent per-unit pricing, and bilingual technicians who can communicate directly with tenants in English or Spanish. Our Florida CAC1819948 license covers both residential and commercial HVAC work.
+Word Count: 62 words
+
+FAQ 3
+Q: Is Cool & Cozy AC Repair licensed and insured?
+A: Yes. Cool & Cozy AC Repair holds Florida Certified Air Conditioning Contractor license CAC1819948, verified as active by the Florida Department of Business and Professional Regulation. BuildZoom ranks the company in the top 13% of all 191,428 licensed contractors in Florida with a score of 100. We carry full liability and property damage insurance as required by the Florida Construction Industry License Board.
+Word Count: 62 words
+
+FAQ 4
+Q: Do you offer emergency AC repair in Jacksonville?
+A: Yes. When your AC fails during a Jacksonville summer — and indoor temperatures can reach dangerous levels quickly in our subtropical climate — Cool & Cozy offers priority emergency service. We understand that a non-functional air conditioner in 95-degree heat with 80% humidity is not a next-week problem. Call (904) 555-0199 and let us know it’s an emergency. We prioritize these calls for the fastest possible response.
+Word Count: 68 words
+
+FAQ 5
+Q: What areas in Jacksonville do you serve?
+A: Cool & Cozy AC Repair serves all of Duval County including Southside, Mandarin, Arlington, Riverside-Avondale, San Marco, Baymeadows, Jacksonville Beach, Murray Hill, Springfield, and Orange Park. We also serve select areas of Clay County and St. Johns County. Visit our service areas page for a complete list of neighborhoods and coverage details.
+Word Count: 52 words
+
+FAQ 6
+Q: Do you offer service in Spanish?
+A: Sí. Cool & Cozy AC Repair provides fully bilingual service in English and Spanish. Our technicians communicate directly with customers in their preferred language — from the initial phone call and estimate through job completion and follow-up. Jacksonville’s growing Hispanic community deserves HVAC service without a language barrier. Visítenos en coolcozyac.com/es para información en español.
+Word Count: 57 words
+
+FAQPage JSON-LD Schema
+The following JSON-LD block must be embedded in the <head> section alongside the HVACBusiness and BreadcrumbList schemas from Part 1, Section 4.3:
+{ "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
+  { "@type": "Question", "name": "How much does AC repair cost in Jacksonville?", "acceptedAnswer": { "@type": "Answer", "text": "AC repair costs in Jacksonville typically range from $150 to $600 depending on the issue..." } },
+  { "@type": "Question", "name": "Does Cool & Cozy AC Repair serve property managers and commercial buildings?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Cool & Cozy serves property managers, landlords, Airbnb hosts..." } },
+  ...four more Question entries matching the content above...
+] }
+DEV ACTION: Include the FULL text of each answer in the JSON-LD “text” field, not truncated. Google requires the full answer to be in the schema for FAQ rich results eligibility.
+Design Specifications
+Property
+Specification
+Question row
+Poppins 17px/600, #2C2C2C Charcoal, padding 20px 24px, cursor pointer
+Question row hover
+background rgba(26,86,83,0.04)
+Expand/collapse icon
+Plus (+) / minus (–) icon, 20px, #5CB8B2 Seafoam, right-aligned, rotates 180° on expand
+Answer text
+Poppins 15px/400, #3D3D3D, line-height 1.65, padding 0 24px 20px 24px
+Dividers
+1px solid #DDD8D0 between each FAQ item
+Open animation
+max-height transition 0.3s ease, opacity fade-in
+Accessibility
+Each FAQ uses <details>/<summary> or aria-expanded pattern with proper keyboard support
+Enter/Space toggles the active question
+Collapsed answers are aria-hidden="true" and removed from tab order
+Phone numbers within answers are click-to-call links
+
+5.12 Final CTA Block
+Section Overview
+The last conversion-focused section before the footer. For visitors who scrolled the entire page, this is the final ask. It combines an emotional appeal (“your comfort matters”) with a practical action (call or click). The design is bold, warm, and unmissable.
+Conversion Role: Final conversion opportunity. Captures the visitor who read everything but hasn’t acted yet.
+Layout Specifications
+Property
+Specification
+Container
+Full-width, background image with Evergreen overlay (similar to hero but distinct image)
+Content Width
+720px centered
+Padding
+80px top/bottom (desktop), 48px (mobile)
+Text alignment
+Centered
+Content Specifications
+H2 Heading
+Ready for Reliable AC Service in Jacksonville?
+Style: Poppins 36px/700, #FFFFFF, centered
+Supporting Text
+Whether it’s a repair, a new installation, or a maintenance plan for your property portfolio — the first step is a conversation. Call us directly or request a free estimate online. We’ll take it from there.
+Word Count: 38 words
+Style: Poppins 17px/400, #F0E6D3 (Warm Sand), centered, max-width 600px
+Dual CTAs (Matching Hero Style)
+Property
+Specification
+Primary CTA
+Call (904) 555-0199 — Coral bg, white text, pill shape, phone icon, tel: link
+Secondary CTA
+Request a Free Estimate — transparent bg, white border, white text, pill shape, links to /contact
+Layout
+Side-by-side desktop, stacked full-width mobile
+Image Specifications
+Property
+Specification
+Image Name
+cta-bg-homepage
+Subject
+Jacksonville skyline at golden hour OR technician shaking hands with homeowner at front door
+Format
+WebP + JPEG fallback, lazy-loaded
+Overlay
+linear-gradient rgba(26,86,83,0.82) — slightly more opaque than hero for text readability
+File Size
+< 150KB (WebP)
+Alt Text
+Jacksonville Florida skyline at sunset with Cool & Cozy AC Repair branding
+DEV ACTION: PLACEHOLDER: Background image needed. Use a different image than the hero section to avoid visual repetition.
+GA4 Event Tracking
+Property
+Specification
+phone_click
+page_section: “final_cta”
+cta_click
+button_text: “Request a Free Estimate”, destination_url: “/contact”, page_section: “final_cta”
+
+6. Footer Specification
+The footer appears on every page. It is defined here as part of the homepage guide and referenced (not duplicated) by all subsequent page guides.
+Layout
+Property
+Specification
+Container
+Full-width, #1A5653 (Evergreen) background
+Content Width
+1280px centered
+Padding
+64px top, 32px bottom (desktop); 40px top, 24px bottom (mobile)
+Desktop
+4-column grid (25% each)
+Tablet
+2×2 grid
+Mobile
+Single column, stacked, each section with collapsible accordion header
+Column 1: Company
+Logo (white/light version, max 36px height)
+Tagline: “Jacksonville’s affordable, family-owned AC experts. Licensed. Insured. Se habla español.”
+FL License: CAC1819948
+Social icons: Facebook (/coolncozyac), Google Business Profile
+Text style: Poppins 13px/400, #F0E6D3 (Warm Sand)
+Column 2: Services
+AC Repair → /services/ac-repair
+AC Installation → /services/ac-installation
+AC Maintenance → /services/ac-maintenance
+Emergency AC Repair → /services/emergency-ac-repair
+Commercial HVAC → /services/commercial-hvac
+Indoor Air Quality → /services/indoor-air-quality
+All Services → /services
+Link style: Poppins 14px/400, #F0E6D3, hover: #FFFFFF, underline-offset 3px
+Column 3: Service Areas
+Southside, Mandarin, Arlington, Riverside-Avondale, San Marco, Baymeadows (each linking to /service-areas/[slug])
+All Areas → /service-areas
+Column 4: Contact
+Phone: (904) 555-0199 — click-to-call, #E8603C (Coral) text, bold
+Email: info@coolcozyac.com — mailto link
+Service Area: Jacksonville & Duval County, FL
+Hours: Mon–Sat 7:00 AM – 7:00 PM
+“Request a Free Estimate” button → /contact (Coral bg, white text, pill, full-width within column)
+Footer Bottom Bar
+Property
+Specification
+Background
+rgba(0,0,0,0.15) overlay on Evergreen
+Padding
+16px vertical
+Content
+© 2026 Cool & Cozy AC Repair LLC. All rights reserved.  |  Privacy Policy  |  Terms of Service  |  Accessibility  |  Sitemap
+Link style
+Poppins 12px/400, #F0E6D3 at 0.7 opacity, hover: 1.0 opacity
+Language toggle
+“EN | ES” far right, links to / and /es respectively
+
+7. Sticky Mobile CTA Bar
+A fixed-position bar at the bottom of the mobile viewport. Only visible on viewports < 768px. Appears after scrolling 200px past the hero. Hides when the footer enters the viewport. This is the persistent mobile conversion element.
+Property
+Specification
+Height
+64px
+Position
+fixed, bottom: 0, left: 0, width: 100%, z-index: 100
+Background
+#1A5653 (Evergreen) with top box-shadow 0 -2px 8px rgba(0,0,0,0.1)
+Left button
+Phone icon + “Call Now” — #E8603C (Coral) bg, white text, 50% width, links to tel:+19045550199
+Right button
+“Free Estimate” — #5CB8B2 (Seafoam) bg, white text, 50% width, links to /contact
+Button height
+48px minimum (touch target compliant)
+Gap
+2px between buttons (Evergreen peek-through)
+Text style
+Poppins 14px/600, #FFFFFF
+DEV ACTION: Use Intersection Observer to detect footer visibility. When footer is in viewport, add a CSS class that hides the sticky bar with opacity transition. This prevents overlap between the footer CTAs and the sticky bar.
+GA4 Event Tracking
+Property
+Specification
+phone_click
+page_section: “sticky_mobile_cta”
+cta_click
+button_text: “Free Estimate”, page_section: “sticky_mobile_cta”
+
+8. Reference: Image Asset Inventory
+Complete inventory of all images required for the homepage. Status indicates whether the asset is ready, needs sourcing, or is a placeholder.
+Image Name
+Section
+Dims
+Max KB
+Format
+Status
+hero-homepage
+5.3 Hero
+1920×1080
+180
+WebP+JPEG
+PLACEHOLDER
+og-homepage
+4.2 OG
+1200×630
+200
+WebP+JPEG
+PLACEHOLDER
+cta-bg-homepage
+5.12 CTA
+1920×1080
+150
+WebP+JPEG
+PLACEHOLDER
+icon-licensed
+5.4 Trust
+36×36
+2
+SVG inline
+Create
+icon-ranking
+5.4 Trust
+36×36
+2
+SVG inline
+Create
+icon-permits
+5.4 Trust
+36×36
+2
+SVG inline
+Create
+icon-bilingual
+5.4 Trust
+36×36
+2
+SVG inline
+Create
+8 service icons
+5.6 Grid
+48×48 ea
+3 ea
+SVG inline
+Create
+6 benefit icons
+5.8 Why
+40×40 ea
+2 ea
+SVG inline
+Create
+3 PM metric icons
+5.7 PM
+32×32 ea
+2 ea
+SVG inline
+Create
+logo-full-color
+Header
+200×40
+10
+SVG
+PLACEHOLDER
+logo-white
+Footer
+200×40
+10
+SVG
+PLACEHOLDER
+favicon set (5)
+Head
+Various
+5 ea
+ICO+PNG
+PLACEHOLDER
+
+PLACEHOLDER images must be sourced from the client (real job photos, team photos, branded truck) or licensed stock photography before launch. SVG icons in “Create” status should be produced from Lucide, Heroicons, or custom design matching the rounded/organic brand style defined in the Strategy document.
+
+9. Reference: GA4 Event Tracking Summary
+Complete inventory of all GA4 custom events fired on the homepage. All events are implemented via Google Tag Manager triggers, not inline JavaScript.
+Event Name
+Trigger Location
+Parameters
+phone_click
+Emergency banner, header, hero, AEO intro, PM section, FAQ answers, final CTA, sticky mobile bar
+phone_number, page_section, page_url
+cta_click
+Header CTA, hero “Free Estimate”, PM “Discuss Your Properties”, service cards, neighborhood links, final CTA, sticky bar
+button_text, destination_url, page_section, service_type (if applicable)
+banner_dismiss
+Emergency banner X button
+banner_type: emergency|seasonal
+review_click
+Testimonials “Read more reviews” link (if present)
+destination_url: /reviews, page_section: testimonials
+
+Enhanced Measurement events (page_view, scroll, outbound_click) are handled automatically by GA4 and do not require custom implementation.
+DEV ACTION: All phone_click events must fire on EVERY tel: link on the page. Use a GTM trigger matching Click URL contains “tel:”. Add a data-ga-section attribute to each tel: link’s parent container to populate the page_section parameter.
+
+10. Reference: Implementation Checklist
+This checklist must be completed before the homepage is considered launch-ready. Every item maps to a specific section in this guide.
+10.1 Pre-Build Requirements
+Canonical phone number confirmed (replace all instances of (904) 555-0199)
+Canonical business address confirmed (replace all [PLACEHOLDER] values in schema)
+Google Workspace set up: info@coolcozyac.com active and receiving mail
+DNS configured: coolcozyac.com pointing to GCP hosting
+SSL certificate provisioned and HTTPS enforced
+Logo files delivered (full-color SVG + white SVG)
+Hero background image sourced (real job photo or licensed stock)
+CTA background image sourced (different from hero)
+10.2 Build Verification
+All HTML validates (W3C validator, zero critical errors)
+All JSON-LD validates (Google Rich Results Test, zero errors)
+Title tag, meta description, OG tags, Twitter Card tags all present and correct
+Canonical URL set to https://coolcozyac.com/
+hreflang tags link / (en) and /es (es)
+All internal links verified (zero 404s, correct destinations)
+Click-to-call functional on every phone number instance (test on iOS + Android)
+Contact form submission flows to info@coolcozyac.com (test end-to-end)
+Emergency banner dismiss persists for session (test sessionStorage)
+FAQ accordion expand/collapse works on all devices (test keyboard + touch)
+10.3 Performance Verification
+Google PageSpeed Insights: Mobile > 90, Desktop > 95
+LCP < 2.5s on mobile (hero image preloaded, critical CSS inlined)
+CLS < 0.1 (all images have width/height, fonts use display: swap)
+INP < 200ms (no render-blocking JS, minimal third-party scripts at launch)
+All images: WebP served with JPEG fallback, srcset for responsive sizes
+Lazy loading on all images below the fold (hero preloaded, not lazy)
+10.4 Accessibility Verification
+Color contrast passes WCAG 2.1 AA on all text/background combinations
+Skip-to-content link is first focusable element
+All interactive elements keyboard accessible (Tab, Enter, Space, Escape)
+Visible focus indicators on all interactive elements (3px solid, 3:1 contrast)
+ARIA landmarks on all major sections (banner, navigation, main, contentinfo)
+Mobile menu implements focus trap and scroll lock
+Carousel pauses on hover/focus, keyboard navigable
+All images have descriptive alt text (not filenames)
+Form labels associated via <label for="id"> (not placeholder-only)
+10.5 Analytics Verification
+GA4 property ID configured in GTM container
+GTM container installed (<head> script + <body> noscript)
+phone_click event firing on all tel: links (verify in GA4 DebugView)
+cta_click event firing on all CTA buttons (verify in DebugView)
+banner_dismiss event firing on emergency banner close (verify)
+Enhanced measurement events (page_view, scroll, outbound_click) verified
+Google Search Console property verified, XML sitemap submitted
+Google Business Profile website URL updated to https://coolcozyac.com/
+
+— End of Document —
+
+Prepared by TradeWorks AI  ·  May 2026  ·  v1.0
+This document, combined with Part 1, constitutes the complete Homepage Developer Implementation Guide.
+

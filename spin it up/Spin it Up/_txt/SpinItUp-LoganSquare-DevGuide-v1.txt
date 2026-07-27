@@ -1,0 +1,302 @@
+
+SPIN IT UP LAUNDRY
+LOGAN SQUARE AREA PAGEDEVELOPER GUIDE
+Section-by-Section Implementation Specification
+
+URL: spinituplaundry.net/areas/logan-square/
+Prepared by: TradeWorks AI  |  Version 1.0  |  May 2026
+Classification: Client Confidential
+
+Table of Contents
+1  How to Use This Guide
+2  Page Identity & Architecture
+3  Keyword Strategy
+4  Complete <head> Section
+5  Section 1: Header
+6  Section 2: Hero Banner
+7  Section 3: AEO Introduction
+8  Section 4: About Logan Square
+9  Section 5: Why Laundry Service Matters Here
+10  Section 6: Services Available
+11  Section 7: Getting Here / Getting Delivery
+12  Section 8: Nearby Neighborhoods
+13  Section 9: FAQ Section
+14  Section 10: CTA Block
+15  Section 11: Footer & Sticky CTA
+16  Reference: Image Assets, GA4, Checklist
+
+1. How to Use This Guide
+This guide covers the Logan Square area landing page (/areas/logan-square/). It is a child page in the Areas silo targeting local search queries for laundry services in the Logan Square neighborhood. The page must contain genuinely unique local content — neighborhood-specific housing details, landmarks, transit options, and demographic context — to avoid thin doorway page classification.
+Each area page follows the same structural template but with completely unique content. No content is shared or swapped between neighborhood pages.
+
+2. Page Identity & Architecture
+URL Path
+/areas/logan-square/
+Page Type
+Child — Areas Silo
+Canonical URL
+https://spinituplaundry.net/areas/logan-square/
+Breadcrumb
+Home > Service Areas > Logan Square
+Parent Page
+/areas/ (Service Areas Hub)
+Sibling Pages
+/areas/avondale/, /areas/irving-park/, /areas/hermosa/, /areas/albany-park/
+Primary Keyword
+laundromat logan square chicago (110–210/mo)
+Search Intent
+Local
+Target Word Count
+700–900 words
+Primary Conversion Goal
+Cents app pickup order or phone call
+Robots
+index, follow
+Sitemap
+Include — priority 0.7
+
+3. Keyword Strategy
+Keyword
+Intent
+Placement
+laundromat logan square chicago
+Local
+H1, title, AEO paragraph, schema
+laundry service logan square chicago
+Local
+Title tag, body content
+wash and fold logan square
+Transactional
+Services Available section
+laundry pickup logan square
+Transactional
+Getting Delivery section
+laundromat near logan square
+Local
+AEO paragraph, FAQ
+
+4. Complete <head> Section
+Tag
+Content
+<title>
+Laundromat Near Logan Square, Chicago | Spin It Up — Delivery Available (60 chars)
+<meta description>
+Laundry services for Logan Square, Chicago. Self-service, wash & fold from $1.50/lb, pickup & delivery. 130 lb machines. Open 6 AM–11 PM daily. (143 chars)
+<meta robots>
+index, follow
+<link canonical>
+https://spinituplaundry.net/areas/logan-square/
+
+JSON-LD: Service schema (areaServed: Logan Square) + BreadcrumbList (Home > Service Areas > Logan Square).
+DEV ACTION:  Validate Service + BreadcrumbList + FAQPage schemas via Google Rich Results Test. The Service schema should use areaServed with @type "Neighborhood" and name "Logan Square".
+
+5. Section 1: Header
+Global header. Solid white. “Areas” nav item active. Mobile: “Areas” expanded, “Logan Square” highlighted.
+
+6. Section 2: Hero Banner
+Breadcrumb: Home > Service Areas > Logan Square
+
+H1: "Laundry Services for Logan Square, Chicago" — Font: 40px/800 (desktop), 28px (mobile). White.
+
+Subheadline: "~1.5 miles south of our facility. A 5–8 minute drive via Kimball Ave or California Ave." — 18px/400, rgba(255,255,255,0.85). Max-width: 600px.
+
+Hero CTAs: "Schedule Pickup" (CTA Orange, Cents app) + "Call (773) 654-1275" (white outline)
+Background: Spin Blue gradient. Padding: 56px 0 desktop, 40px 16px mobile.
+
+7. Section 3: AEO Introduction
+NEW:  AEO paragraph — unique to this neighborhood.
+
+"Spin It Up Laundry serves Logan Square residents from our facility at 3710 N Kimball Ave in neighboring Avondale, approximately 1.5 miles north of the Logan Square Blue Line station. Logan Square customers can visit our facility for self-service laundry with 41 washers and 52 dryers, drop off for professional wash-and-fold starting at $1.50 per pound, or schedule pickup and delivery through the Cents app for door-to-door service. Delivery throughout Logan Square and Palmer Square is available seven days a week, with most orders completed within 24 hours of pickup." — 90 words.
+Font: 18px/400 Body Text. Line-height: 1.65. Max-width: 800px, centered. Background: White.
+
+8. Section 4: About Logan Square
+Section Overview
+Genuinely local content about the Logan Square neighborhood. This is what makes this page unique and avoids doorway page classification. Background: Ice Blue (#F0F9FF).
+H2: "About the Logan Square Neighborhood" — Font: 36px/700, Dark Slate. Margin-bottom 32px.
+
+Detail
+Content
+Population
+70,869
+Demographics
+51.5% White, 34.5% Hispanic, 5.3% Black, 4.9% Asian
+Median Household Income
+$103,469
+ZIP Code(s)
+60614, 60618, 60622, 60647
+Housing Stock
+Mix of vintage brick two-flats, renovated bungalows, luxury condo conversions, and new-construction apartment buildings. The historic boulevard system features ornamental graystones and mansion-style homes. Palmer Square has leafy tree-lined streets with single-family homes. High density of renters, especially along Milwaukee Ave corridor.
+Local Landmarks
+Illinois Centennial Memorial column in Logan Square, Palmer Square Park, Logan Boulevard historic homes, Revolution Brewing, Longman & Eagle, Lula Cafe, The Logan Theatre, Emporium Arcade Bar
+Transit Access
+CTA Blue Line (Logan Square station, California station), CTA buses on Fullerton Ave, Milwaukee Ave, Diversey Ave, California Ave
+
+Logan Square is Chicago’s largest neighboring community area with nearly 71,000 residents and the highest median income in our delivery zone. The neighborhood’s density and renter-heavy demographics create strong demand for laundry services. Logan Square’s busy professional population makes pickup and delivery especially attractive — these are exactly the customers who value convenience and are willing to pay for door-to-door service.
+Font: 17px/400 Body Text, line-height 1.65. Section padding: 64px 0 desktop, 40px 16px mobile.
+
+9. Section 5: Why Laundry Service Matters Here
+Section Overview
+Connects Logan Square’s specific housing stock and demographics to the need for laundry services. This is NOT generic “laundry is important” content — it’s specific to this neighborhood’s building types and resident profiles. Background: White.
+H2: "Why Logan Square Residents Choose Spin It Up" — Font: 32px/700. Margin-bottom 24px.
+
+Logan Square’s building stock ranges from century-old brick two-flats to modern condo conversions. Many vintage buildings have limited or no in-unit laundry. Even newer buildings may only offer shared laundry rooms. For the neighborhood’s large renter population, apartment laundry rooms are often insufficient — limited machines, long wait times, and aging equipment. A professional laundry service eliminates this friction entirely.
+Font: 17px/400, line-height 1.65, max-width 800px centered.
+
+10. Section 6: Services Available
+Services available to Logan Square residents. Three compact cards linking to service pages. Background: Ice Blue.
+H2: "Services Available to Logan Square Residents" — Font: 32px/700. Margin-bottom 40px.
+
+Card
+Service
+Description
+CTA
+1
+Pickup & Delivery
+Schedule from the Cents app. We pick up from your door in Logan Square and deliver back within 24 hours.
+Schedule Pickup →
+2
+Wash & Fold Drop-Off
+Drive to 3710 N Kimball Ave (1.5 miles south of our facility. A 5–8 minute drive via Kimball Ave or California Ave.). Drop off dirty, pick up clean. $1.50/lb.
+View Wash & Fold →
+3
+Self-Service Laundry
+Visit our facility. 41 washers, 52 dryers, 130 lb machines. EBT accepted.
+View Self-Service →
+Same compact card spec as prior guides. Three cards in row (desktop), stacked (mobile). Each links to respective service page.
+Below cards: "Pickup & delivery available throughout Logan Square and Palmer Square via the Cents app." — 16px/600 Fresh Cyan, centered.
+
+11. Section 7: Getting Here / Getting Delivery
+Two-column layout: directions info left, mini map right. Background: White.
+H2: "Getting to Spin It Up from Logan Square"
+
+Method
+Details
+By Car
+~1.5 miles south of our facility. A 5–8 minute drive via Kimball Ave or California Ave. Free parking in front of the building.
+By Bus
+CTA Blue Line (Logan Square station, California station), CTA buses on Fullerton Ave, Milwaukee Ave, Diversey Ave, California Ave
+By Pickup & Delivery
+Schedule through the Cents app. Enter your address to confirm coverage. Most orders completed within 24 hours.
+Right column: Google Maps embed showing route from Logan Square to 3710 N Kimball Ave. Small format: 400x300px, border-radius 12px, lazy loaded.
+Below: "Get Directions" button (ghost/outline Spin Blue) linking to Google Maps directions URL.
+
+12. Section 8: Nearby Neighborhoods
+Cross-links to sibling area pages. Background: Ice Blue.
+H2: "We Also Serve" — Font: 28px/700. Centered. Margin-bottom 32px.
+
+Neighborhood
+Link
+Avondale
+/areas/avondale/
+Irving Park
+/areas/irving-park/
+Hermosa
+/areas/hermosa/
+Albany Park
+/areas/albany-park/
+Display as horizontal pills/badges (desktop), stacked list (mobile). Each links to the respective area page. Current page (Logan Square) not shown.
+
+13. Section 9: FAQ Section
+Logan Square-specific FAQ. FAQPage schema required. Background: White.
+H2: "Logan Square Laundry FAQ" — Centered. Font: 32px/700. Margin-bottom 40px.
+
+#
+Question
+Answer
+1
+How far is Spin It Up from Logan Square?
+Our facility at 3710 N Kimball Ave is approximately 1.5 miles north of the Logan Square Blue Line station. That’s about a 5–8 minute drive via Kimball Ave or California Ave. The Kimball (#82) CTA bus also runs directly to our location.
+2
+Do you deliver to Logan Square and Palmer Square?
+Yes. Both Logan Square and Palmer Square are in our primary delivery zone. Schedule a pickup through the Cents app from anywhere in the neighborhood, and we’ll pick up and deliver to your door.
+3
+I’m an Airbnb host in Logan Square. Do you offer commercial service?
+Yes. We provide commercial laundry services for Airbnb and vacation rental hosts throughout Logan Square. Volume-based pricing, reliable turnaround, and scheduled pickup are available. Visit our Commercial Services page or call (773) 654-1275 for a quote.
+4
+What’s the closest laundromat to Logan Square?
+Spin It Up Laundry at 3710 N Kimball Ave in Avondale is one of the closest full-service laundromats to Logan Square, with the largest machines in the area (130 lb capacity). We also offer pickup and delivery so you don’t have to leave your neighborhood at all.
+DEV ACTION:  Implement FAQPage JSON-LD schema with 4 Q&A pairs. Validate via Google Rich Results Test.
+Same accordion design spec. Max-width 800px, centered.
+Below FAQ: "View All FAQs" link to /faq/.
+
+14. Section 10: CTA Block
+H2: "Logan Square’s Neighborhood Laundromat" — White. Centered. Font: 36px/700.
+Subtitle: "3710 N Kimball Ave, Avondale • Open 6 AM–11 PM • Free drying Tue–Wed–Thu." — 18px/400.
+
+Button
+Text
+Link
+Style
+1
+Schedule Pickup
+Cents app URL
+CTA Orange
+2
+Call (773) 654-1275
+tel:+17736541275
+White outline
+Background: Spin Blue gradient.
+
+15. Section 11: Footer & Sticky CTA
+Global footer: no modifications.
+Sticky CTA: Default — "Call Now" + "Schedule Pickup" (delivery focus).
+
+16. Reference: Image Assets, GA4, Checklist
+Image Assets
+Image ID
+Section
+Format
+Max Size
+Alt Text
+og-logan-square
+Social
+JPEG 1200x630
+<200KB
+Spin It Up Laundry service in Logan Square Chicago
+map-logan-square
+Getting Here
+iframe
+N/A
+Map showing route from Logan Square to Spin It Up Laundry
+logo-light
+Header/Footer
+SVG
+<10KB
+Logo
+GA4 Events
+Event
+Trigger
+Parameters
+phone_click
+Click tel: link
+phone_number, page_section
+schedule_pickup
+Click primary CTA
+page_section, area_name: Logan Square
+faq_expand
+Expand FAQ accordion
+question_text, area_name
+sibling_area_click
+Click nearby neighborhood link
+area_name, destination_url
+service_card_click
+Click service card
+service_name, area_name
+Implementation Checklist
+HTML validates
+Service + BreadcrumbList + FAQPage schemas validate
+Mobile PageSpeed >90, Desktop >95
+All links return 200
+tel: links functional
+Title tag within 60 chars: Laundromat Near Logan Square, Chicago | Spin It Up — Delivery Available
+AEO paragraph within first 100 words
+Breadcrumb: Home > Service Areas > Logan Square
+Neighborhood content is genuinely unique (not shared with other area pages)
+All sibling area links point to correct pages
+Service cards link to correct service pages
+Map embed renders with correct route
+XML sitemap includes at priority 0.7
+
+
+End of Document
+TradeWorks AI — Spin It Up Laundry Logan Square Area Page Developer Guide v1.0

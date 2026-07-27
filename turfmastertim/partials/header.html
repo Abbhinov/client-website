@@ -1,0 +1,73 @@
+<!--
+  ===============================================================
+  SITE HEADER — edit this file once, applies to every page.
+  Loaded into <div id="site-header"></div> by js/include.js
+
+  Internal hrefs are written as if this partial lives at the
+  site root (depth 0). include.js prepends the correct number
+  of "../" segments at runtime based on the current page's
+  depth — that is what makes a single shared partial work for
+  pages stored at varying directory depths on a raw file host
+  (e.g. Google Cloud Storage).
+  ===============================================================
+-->
+<header class="site-header" data-header>
+  <a href="#main" class="skip-link">Skip to main content</a>
+  <div class="container header-inner">
+
+    <a href="index.html" class="brand" aria-label="Edge 2 Hedges — home">
+      <span class="brand__line1">EDGE 2</span>
+      <span class="brand__line2">HEDGES</span>
+    </a>
+
+    <nav class="nav nav--desktop" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html" data-nav="home">Home</a></li>
+        <li class="has-dropdown">
+          <a href="services/index.html" data-nav="services">Services ▾</a>
+          <ul class="dropdown">
+            <li><a href="services/lawn-mowing/index.html">Lawn Mowing</a></li>
+            <li><a href="services/lawn-health/index.html">Lawn Health Programs</a></li>
+            <li><a href="services/landscaping/index.html">Landscaping &amp; Design</a></li>
+            <li><a href="services/sod-installation/index.html">Sod Installation</a></li>
+            <li><a href="services/irrigation/index.html">Irrigation Services</a></li>
+            <li><a href="services/pressure-washing/index.html">Pressure Washing</a></li>
+            <li><a href="services/seasonal-services/index.html">Seasonal Services</a></li>
+          </ul>
+        </li>
+        <li><a href="service-areas/index.html" data-nav="service-areas">Service Areas</a></li>
+        <li><a href="about/index.html" data-nav="about">About Tim</a></li>
+        <li><a href="blog/index.html" data-nav="blog">Lawn Tips</a></li>
+        <li><a href="contact/index.html" data-nav="contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <a href="tel:+18135558873" class="phone-link" data-event="phone_click">
+        <span class="phone-link__label">Call Tim:</span>
+        <span class="phone-link__number">(813) 555-TURF</span>
+      </a>
+      <a href="tel:+18135558873" class="btn btn--rust btn--small header-cta" data-event="cta_click">
+        Call Tim
+      </a>
+    </div>
+
+    <button class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav" data-hamburger>
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <nav class="nav nav--mobile" id="mobile-nav" aria-label="Mobile navigation" data-mobile-nav hidden>
+    <ul>
+      <li><a href="index.html" data-nav="home">Home</a></li>
+      <li><a href="services/index.html" data-nav="services">Services</a></li>
+      <li><a href="service-areas/index.html" data-nav="service-areas">Service Areas</a></li>
+      <li><a href="about/index.html" data-nav="about">About Tim</a></li>
+      <li><a href="blog/index.html" data-nav="blog">Lawn Tips</a></li>
+      <li><a href="contact/index.html" data-nav="contact">Contact</a></li>
+      <li class="mobile-cta">
+        <a href="tel:+18135558873" class="btn btn--rust">Call Tim: (813) 555-TURF</a>
+      </li>
+    </ul>
+  </nav>
+</header>

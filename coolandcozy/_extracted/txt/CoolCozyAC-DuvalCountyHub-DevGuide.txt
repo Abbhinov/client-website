@@ -1,0 +1,166 @@
+﻿
+DEVELOPER IMPLEMENTATION GUIDE
+
+COOL & COZY AC REPAIR
+Licensed HVAC Contractor  ·  Jacksonville, Florida
+
+DUVAL COUNTY HUB
+
+URL: coolcozyac.com/service-areas/duval-county
+Prepared by: TradeWorks AI  |  Version 1.0  |  May 2026
+
+1. Page Identity
+Property
+Specification
+URL
+/service-areas/duval-county
+Canonical
+https://coolcozyac.com/service-areas/duval-county
+Page Type
+County hub (intermediate geographic silo)
+Parent
+/service-areas (Service Areas Hub)
+Breadcrumb
+Home > Service Areas > Duval County
+Primary Keyword
+AC repair Duval County FL
+Intent
+Local
+Word Count
+800–1,200 words
+Conversion
+Click-through to neighborhood pages or phone call
+Sitemap
+Priority 0.8
+
+1.1 Architecture Role
+This page adds a county-level layer to the geographic silo: /service-areas → /service-areas/duval-county → /service-areas/[neighborhood]. It targets the “Duval County” geographic modifier that some searchers use instead of specific neighborhoods, and provides county-level HVAC context (building code jurisdiction, JEA service territory, permit authority) that individual area pages reference but don’t explain in depth.
+1.2 Child Pages
+Neighborhood
+URL
+Character
+Southside
+/service-areas/southside
+Mixed housing, commercial hub
+Mandarin
+/service-areas/mandarin
+Canopy roads, aging ductwork
+Arlington
+/service-areas/arlington
+Mid-century, diverse eras
+Riverside-Avondale
+/service-areas/riverside-avondale
+Historic homes, ductless
+San Marco
+/service-areas/san-marco
+Multi-era renovation, compact lots
+Baymeadows
+/service-areas/baymeadows
+Diverse, high rental density
+Jacksonville Beach
+/service-areas/jacksonville-beach
+Salt air, coastal humidity
+Murray Hill
+/service-areas/murray-hill
+1940s bungalows, revitalization
+Springfield
+/service-areas/springfield
+1880s–1930s Victorian, historic
+
+Orange Park is NOT listed here — it is in Clay County and links directly from the /service-areas hub. The Duval County hub contains only Duval County neighborhoods.
+
+2. <head> Section
+Property
+Specification
+Title
+AC Repair Duval County FL | Jacksonville HVAC Service | Cool & Cozy
+Meta Desc
+Cool & Cozy AC Repair serves all of Duval County — Southside, Mandarin, Arlington, Riverside, San Marco, Beaches, Murray Hill, Springfield. Licensed, bilingual. Call (904) 555-0199.
+Canonical
+https://coolcozyac.com/service-areas/duval-county
+JSON-LD: Service schema with areaServed: { "@type": "AdministrativeArea", "name": "Duval County", "containedInPlace": { "@type": "State", "name": "Florida" } }. BreadcrumbList (3-level: Home > Service Areas > Duval County).
+
+3. Section-by-Section Build
+
+3.1 Hero
+Breadcrumb
+Home > Service Areas > Duval County
+H1
+AC Repair & HVAC Services Across Duval County, Florida
+Subheadline
+Cool & Cozy AC Repair serves every corner of Duval County — from the historic homes of Riverside and Springfield to the coastal properties at Jacksonville Beach, from the established suburbs of Mandarin and Arlington to the commercial corridors of the Southside. Licensed, bilingual, always fairly priced.
+Evergreen CSS-pattern hero, 240px.
+
+3.2 AEO Introduction
+H2
+Licensed HVAC Contractor Serving All of Duval County, FL
+Cool & Cozy AC Repair is a Florida-licensed HVAC contractor (CAC1819948) serving residential homes, commercial properties, and managed rental portfolios throughout Duval County. The county encompasses the entire consolidated city of Jacksonville — the largest city by area in the contiguous United States at 875 square miles — spanning inland suburbs, riverfront neighborhoods, the Downtown urban core, and the Atlantic coast Beaches communities. Duval County’s housing stock ranges from 1880s Victorian homes in Springfield to 2020s new construction in the Southside, creating an HVAC service environment that demands expertise across every era of building construction, every type of AC system, and every microclimate from salt-air coast to humid inland. Cool & Cozy provides bilingual service in English and Spanish. Call (904) 555-0199.
+Word Count: 130 words
+
+3.3 Duval County HVAC Context
+H2
+What Makes HVAC Service in Duval County Unique
+
+875 Square Miles of Service Territory — Duval County is geographically vast. A contractor based in Mandarin may be 45 minutes from Jacksonville Beach and 30 minutes from Springfield. Cool & Cozy’s service routing and vehicle positioning ensures timely response across the entire county, with emergency calls prioritized regardless of location.
+
+140 Years of Housing Construction — From Springfield’s 1880s Victorian balloon-frame homes to Deerwood’s 2020s new construction, Duval County contains homes from every decade and every construction method. Each era presents different HVAC challenges: plaster walls vs. drywall, knob-and-tube vs. modern electrical, original ductwork vs. modern sealed systems. Cool & Cozy’s technicians are trained across this full spectrum.
+
+JEA as the Sole Electric Utility — Duval County is served exclusively by JEA (Jacksonville Electric Authority), a community-owned utility. JEA’s residential electricity rates directly determine the financial impact of AC efficiency: every SEER2 point of efficiency translates to measurable JEA bill savings. Cool & Cozy calculates energy savings using actual JEA rate structures, not national averages.
+
+Duval County Building Code and Permit Authority — HVAC installations and major modifications in Duval County require mechanical permits from the City of Jacksonville Building Inspection Division. Cool & Cozy handles all permit applications and coordinates required post-installation inspections as part of every installation project. Florida Building Code requirements — including hurricane tie-downs for outdoor equipment — apply countywide.
+
+Coastal to Inland Microclimate Variation — The Beaches neighborhoods face salt air corrosion and persistent marine humidity. Inland neighborhoods like Mandarin and the Southside experience higher summer heat indices without ocean breeze moderation. Riverfront properties in Riverside, San Marco, and Mandarin face elevated humidity from the St. Johns River. Each microclimate requires different maintenance priorities and equipment considerations.
+
+3.4 Neighborhood Link Grid
+Same 9-card grid as the Service Areas Hub, but limited to Duval County neighborhoods (no Orange Park). Each card links to the neighborhood’s area page with a 1-line description of its primary HVAC characteristic.
+Layout
+Property
+Specification
+Container
+#EAF3F2, 1280px, 3-column desktop, 1-column mobile
+Design
+Same card design as /service-areas hub
+The neighborhood descriptions on this page can differ slightly from the /service-areas hub descriptions to avoid duplicate content. Focus on the county-level context (e.g., “Oldest housing stock in the county” for Springfield vs. “1880s–1930s Victorian, historic preservation” on the main hub).
+
+3.5 Services Available Countywide
+Compact list of all 8 services with links, confirming full service availability across Duval County:
+AC Repair → /services/ac-repair
+AC Installation → /services/ac-installation
+AC Maintenance → /services/ac-maintenance
+Emergency AC Repair → /services/emergency-ac-repair
+Commercial HVAC → /services/commercial-hvac
+Ductwork → /services/ductwork
+Indoor Air Quality → /services/indoor-air-quality
+Thermostat Installation → /services/thermostat-installation
+
+3.6 Also Serving Clay County
+In addition to all of Duval County, Cool & Cozy serves Orange Park and surrounding communities in Clay County. Our Florida contractor license covers work statewide.
+Link: See Orange Park service area → /service-areas/orange-park
+
+3.7 CTA
+H2
+HVAC Service Anywhere in Duval County
+Find your neighborhood above, or call (904) 555-0199 for immediate service anywhere in Duval County. Licensed, bilingual, always fairly priced.
+Property
+Specification
+Primary
+Call (904) 555-0199 — Coral, pill, tel: link
+Secondary
+Request Free Estimate — white border, pill, /contact
+Evergreen bg, 720px centered.
+
+4. Checklist
+Service schema with AdministrativeArea areaServed validates
+BreadcrumbList: Home > Service Areas > Duval County
+All 9 Duval County neighborhood links verified (no Orange Park on this page)
+8 service links verified
+Orange Park cross-link present with Clay County context
+County-specific content (875 sq mi, JEA, permit authority, 140-year housing range) is unique to this page
+No duplicate content with /service-areas hub (different angle: county context vs. simple directory)
+Click-to-call on all phone instances
+PageSpeed Mobile > 95
+XML sitemap: /service-areas/duval-county priority 0.8
+
+— End of Document —
+Prepared by TradeWorks AI  ·  May 2026  ·  v1.0
+

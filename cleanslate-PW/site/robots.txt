@@ -1,0 +1,20 @@
+# Clean Slate Pressure Washing — robots.txt
+# https://cleanslatepw.com/robots.txt
+
+User-agent: *
+Allow: /
+
+# Block backend endpoints — never useful to crawlers
+Disallow: /api/
+
+# Block parameterized URLs that duplicate canonical pages
+# (e.g. /free-estimate/?service=foo is the same content as /free-estimate/)
+Disallow: /*?service=
+Disallow: /*?area=
+Disallow: /*?promo=
+
+# NOTE: /assets/ and /partials/ are intentionally NOT blocked.
+# Google needs to crawl CSS/JS/HTML partials to render pages correctly.
+
+# Sitemap
+Sitemap: https://cleanslatepw.com/sitemap.xml

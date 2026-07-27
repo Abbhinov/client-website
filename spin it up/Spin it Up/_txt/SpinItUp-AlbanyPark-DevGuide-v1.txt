@@ -1,0 +1,263 @@
+
+SPIN IT UP LAUNDRY
+ALBANY PARK AREA PAGEDEVELOPER GUIDE
+Section-by-Section Implementation Specification
+
+URL: spinituplaundry.net/areas/albany-park/
+Prepared by: TradeWorks AI  |  Version 1.0  |  May 2026
+Classification: Client Confidential
+
+Table of Contents
+1  How to Use This Guide
+2  Page Identity & Architecture
+3  Keyword Strategy
+4  Complete <head> Section
+5  Section 1: Header
+6  Section 2: Hero Banner
+7  Section 3: AEO Introduction
+8  Section 4: About Albany Park
+9  Section 5: Why Laundry Service Matters Here
+10  Section 6: Services Available
+11  Section 7: Getting Here / Getting Delivery
+12  Section 8: Nearby Neighborhoods
+13  Section 9: FAQ Section
+14  Section 10: CTA Block
+15  Section 11: Footer & Sticky CTA
+16  Reference: Image Assets, GA4, Checklist
+
+1. How to Use This Guide
+This guide covers the Albany Park area landing page (/areas/albany-park/). Albany Park is the extended delivery zone — the farthest neighborhood from our facility (~2.5 miles). The page must clearly communicate delivery availability while being transparent that walk-in visits require a slightly longer trip. The page also highlights Albany Park’s extraordinary cultural diversity, which is directly relevant to our bilingual service commitment.
+
+2. Page Identity & Architecture
+URL Path
+/areas/albany-park/
+Page Type
+Child — Areas Silo
+Canonical URL
+https://spinituplaundry.net/areas/albany-park/
+Breadcrumb
+Home > Service Areas > Albany Park
+Parent Page
+/areas/ (Service Areas Hub)
+Sibling Pages
+/areas/avondale/, /areas/irving-park/, /areas/logan-square/, /areas/hermosa/
+Primary Keyword
+laundromat albany park chicago (30–70/mo)
+Search Intent
+Local
+Target Word Count
+700–900 words
+Primary Conversion Goal
+Cents app pickup order or phone call
+Robots
+index, follow
+Sitemap
+Include — priority 0.7
+
+3. Keyword Strategy
+Keyword
+Intent
+Placement
+laundromat albany park chicago
+Local
+H1, title, AEO, schema
+laundry service albany park
+Local
+Title, body
+laundry delivery albany park
+Transactional
+Services, Getting Delivery
+wash and fold albany park
+Transactional
+Services section
+laundromat near albany park
+Local
+AEO, FAQ
+
+4. Complete <head> Section
+Tag
+Content
+<title>
+Laundromat Near Albany Park, Chicago | Spin It Up — Delivery Available (60 chars)
+<meta description>
+Laundry services for Albany Park, Chicago. Pickup & delivery via Cents app. Wash & fold $1.50/lb. 130 lb machines. Se habla español. (133 chars)
+<meta robots>
+index, follow
+<link canonical>
+https://spinituplaundry.net/areas/albany-park/
+JSON-LD: Service schema (areaServed: Albany Park) + BreadcrumbList.
+DEV ACTION:  Validate Service + BreadcrumbList + FAQPage schemas via Google Rich Results Test.
+
+5. Section 1: Header
+Global header. “Areas” active. Mobile: “Albany Park” highlighted.
+
+6. Section 2: Hero Banner
+Breadcrumb: Home > Service Areas > Albany Park
+
+H1: "Laundry Services for Albany Park, Chicago" — White. 40px/800 desktop, 28px mobile.
+
+Subheadline: "~2.5 miles north of our facility. Pickup & delivery available — schedule from the Cents app and we’ll come to you." — 18px/400.
+Hero CTAs: "Schedule Pickup" (CTA Orange, Cents app) + "Call (773) 654-1275" (white outline).
+Background: Spin Blue gradient.
+
+7. Section 3: AEO Introduction
+NEW:  AEO paragraph — unique to Albany Park.
+
+"Spin It Up Laundry serves Albany Park residents from our facility at 3710 N Kimball Ave in neighboring Avondale, approximately 2.5 miles south. Albany Park customers can schedule laundry pickup and delivery through the Cents app without leaving the neighborhood — we pick up from your door, wash, dry, and fold everything at our facility, and deliver it back within 24 hours. For customers who prefer to visit in person, our facility is a quick drive south on Kimball Ave or Kedzie Ave. We offer 41 washers and 52 dryers, professional wash-and-fold starting at $1.50 per pound, and EBT acceptance for self-service laundry. Se habla español." — 103 words.
+Font: 18px/400 Body Text. Max-width: 800px, centered. Background: White.
+
+8. Section 4: About Albany Park
+Genuinely local content about the Albany Park neighborhood. Background: Ice Blue.
+H2: "About the Albany Park Neighborhood" — Font: 36px/700.
+
+Detail
+Content
+Population
+46,620
+Demographics
+44.5% Hispanic, 33.3% White, 15.0% Asian, 3.8% Black — one of the most ethnically diverse neighborhoods in the United States
+Languages
+Over 40 languages spoken in Albany Park public schools
+Median Income
+~$61,759
+ZIP Codes
+60625, 60630
+Housing Stock
+Charming bungalows, large Victorians, multi-unit apartment buildings. Median construction year: 1938. Over 53% of homes built before 1940. 59.2% of housing units are renter-occupied.
+Local Landmarks
+West Lawrence Ave international food corridor (Korean BBQ, Mexican bakeries, Middle Eastern restaurants, Filipino groceries), River Park (30+ acres with playground, canoe launch, riverside paths), Ronan Park, Eugene Field Park, North Branch of the Chicago River, Ravenswood Manor sub-neighborhood
+Transit Access
+CTA Brown Line (Kedzie, Francisco, Montrose stations), CTA buses on Lawrence Ave (#81), Kedzie Ave (#82B), Kimball Ave (#82)
+
+"Albany Park is one of Chicago’s most culturally diverse neighborhoods — over 40 languages are spoken in its public schools, and its food corridor along West Lawrence Avenue represents cuisines from Korea, Mexico, the Middle East, the Philippines, Guatemala, and beyond. With 46,000 residents and a housing stock where nearly 60% of units are renter-occupied, the neighborhood has strong demand for accessible, affordable laundry services. Many of Albany Park’s pre-war bungalows and multi-unit apartment buildings lack in-unit laundry. Our pickup and delivery service brings modern laundry directly to these residents’ doors."
+
+9. Section 5: Why Laundry Service Matters Here
+H2: "Why Albany Park Residents Choose Spin It Up" — Font: 32px/700.
+
+"Albany Park’s housing is among the oldest in our delivery zone, with a median construction date of 1938. Most of the neighborhood’s bungalows and apartment buildings were built decades before in-unit laundry machines existed. For renters in multi-unit buildings — who make up nearly 60% of Albany Park households — shared laundry rooms with limited, aging machines are common. Our pickup and delivery service through the Cents app eliminates this friction entirely: schedule from your phone, and we handle the rest. For residents who prefer to visit our facility, the drive south on Kimball Ave or Kedzie Ave takes about 8 minutes."
+Font: 17px/400, max-width 800px. Background: White.
+
+10. Section 6: Services Available
+H2: "Services Available to Albany Park Residents" — Font: 32px/700.
+
+Card
+Service
+Description
+CTA
+1
+Pickup & Delivery
+Schedule from the Cents app. We pick up from your door in Albany Park and deliver back within 24 hours.
+Schedule Pickup →
+2
+Wash & Fold Drop-Off
+Drive to 3710 N Kimball Ave (~2.5 miles, 8 min). Drop off dirty, pick up clean. $1.50/lb.
+View Wash & Fold →
+3
+Self-Service Laundry
+Visit our facility. 41 washers, 52 dryers, 130 lb machines. EBT accepted.
+View Self-Service →
+Delivery Zone Note: "Albany Park is in our extended delivery zone. Delivery is available — enter your address in the Cents app to confirm coverage for your specific location." — 16px/500 Caption Gray.
+Background: Ice Blue.
+
+11. Section 7: Getting Here / Getting Delivery
+H2: "Getting to Spin It Up from Albany Park"
+
+Method
+Details
+By Car
+~2.5 miles south via Kimball Ave or Kedzie Ave. About 8 minutes in normal traffic. Free parking in front of the building.
+By Bus
+CTA #82 Kimball bus runs directly between Albany Park and our facility. #82B Kedzie bus also connects. ~15–20 minute ride.
+By Pickup & Delivery
+Schedule through the Cents app. We come to you. Enter your address to confirm you’re in our delivery zone.
+Right column: mini map with route. Same spec as other area pages.
+Background: White.
+
+12. Section 8: Nearby Neighborhoods
+Neighborhood
+Link
+Irving Park
+/areas/irving-park/
+Avondale
+/areas/avondale/
+Logan Square
+/areas/logan-square/
+Hermosa
+/areas/hermosa/
+Background: Ice Blue.
+
+13. Section 9: FAQ Section
+H2: "Albany Park Laundry FAQ" — Centered. Font: 32px/700.
+
+#
+Question
+Answer
+1
+Do you deliver to Albany Park?
+Yes. Albany Park is in our extended delivery zone. Most Albany Park addresses are covered. Enter your address in the Cents app to confirm delivery availability for your specific location. If your address falls outside our current zone, call us at (773) 654-1275 — we may be able to arrange delivery.
+2
+How far is Spin It Up from Albany Park?
+Our facility at 3710 N Kimball Ave in Avondale is approximately 2.5 miles south of central Albany Park. That’s about an 8-minute drive via Kimball Ave or Kedzie Ave. The CTA #82 Kimball bus runs directly between Albany Park and our location.
+3
+Do you have staff who speak Spanish?
+Yes. Se habla español. Our attendants can assist Spanish-speaking customers at our facility. Our website will also have a Spanish-language version in a future update.
+4
+What payment methods do you accept?
+We accept cash, credit cards, debit cards, EBT (for self-service washing and drying), and our reloadable laundry card. Pickup and delivery orders are paid via credit or debit card through the Cents app.
+DEV ACTION:  Implement FAQPage JSON-LD schema. 4 Q&A pairs. Validate via Rich Results Test.
+Same accordion spec. Background: White.
+
+14. Section 10: CTA Block
+H2: "Albany Park’s Laundry Solution" — White. Centered. Font: 36px/700.
+Subtitle: "Schedule pickup from your phone or visit us at 3710 N Kimball Ave, Avondale. Se habla español."
+
+Button
+Text
+Link
+Style
+1
+Schedule Pickup
+Cents app URL
+CTA Orange
+2
+Call (773) 654-1275
+tel:+17736541275
+White outline
+Background: Spin Blue gradient.
+
+15. Section 11: Footer & Sticky CTA
+Global footer. Sticky CTA: default — "Call Now" + "Schedule Pickup."
+
+16. Reference: Image Assets, GA4, Checklist
+GA4 Events
+Event
+Trigger
+Parameters
+schedule_pickup
+Click Schedule Pickup CTA
+page_section, area_name: Albany Park
+phone_click
+Click tel: link
+phone_number, page_section
+faq_expand
+Expand FAQ accordion
+question_text, area_name
+sibling_area_click
+Click nearby neighborhood
+area_name, destination_url
+service_card_click
+Click service card
+service_name, area_name
+Checklist
+HTML validates; Service + BreadcrumbList + FAQPage schemas validate
+Mobile PageSpeed >90, Desktop >95
+Extended zone badge and delivery confirmation note present
+Content genuinely unique to Albany Park (diversity stats, Lawrence Ave food corridor, pre-war housing, 40+ languages)
+Se habla español referenced in AEO paragraph and CTA block
+All sibling area and service links correct
+tel: links functional; OG tags correct
+XML sitemap includes at priority 0.7
+
+
+End of Document
+TradeWorks AI — Spin It Up Laundry Albany Park Developer Guide v1.0

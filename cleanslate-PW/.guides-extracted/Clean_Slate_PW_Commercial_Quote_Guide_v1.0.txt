@@ -1,0 +1,298 @@
+﻿
+
+ 
+
+COMMERCIAL QUOTE DEVELOPER GUIDE
+
+Commercial Quote
+
+
+ 
+
+Commercial Lead Capture Form
+
+Clean Slate Pressure Washing
+
+A Fresh Start for Every Surface
+
+Brandon, Florida  |  Hillsborough County
+
+cleanslatepw.com
+
+Prepared by TradeWorks AI
+
+Version 1.0  |  April 2026
+
+Client Confidential
+
+
+
+
+
+
+
+
+Section 1: Page Identity
+
+Attribute
+
+Value
+
+URL Path
+
+/commercial-quote/
+
+Canonical URL
+
+https://cleanslatepw.com/commercial-quote/
+
+Page Type
+
+Conversion / Lead Capture
+
+Breadcrumb
+
+Home → Commercial Quote
+
+Primary Keyword
+
+Commercial pressure washing quote Tampa Bay
+
+Target Word Count
+
+400–600 words (form-first)
+
+LCP Target
+
+&lt;1.5s
+
+&lt;title&gt;
+
+Commercial Pressure Washing Quote | Clean Slate PW | Tampa Bay
+
+&lt;meta description&gt;
+
+Request a commercial pressure washing quote from Clean Slate PW. Storefronts, HOAs, parking lots, property management. COI on file. $2M general liability. Call (813) 555-0283.
+
+
+
+Section 2: Page Layout
+
+Same form-first two-column layout as /free-estimate/ but with commercial-specific fields and messaging. Form left (60%), trust panel right (40%).
+
+
+2.1 H1
+
+Request a Commercial Cleaning Quote
+
+
+2.2 Subheadline
+
+Storefronts, parking lots, HOA common areas, and multi-property portfolios. $2M general liability in liability coverage. COI provided on request. Volume pricing available for recurring contracts.
+
+
+
+Section 3: Commercial Quote Form
+
+
+3.1 Form Fields
+
+Field
+
+Type
+
+Required
+
+Notes
+
+Company / Organization Name
+
+text
+
+Yes
+
+autocomplete=&apos;organization&apos;
+
+Contact Name
+
+text
+
+Yes
+
+autocomplete=&apos;name&apos;
+
+Title / Role
+
+text
+
+No
+
+e.g., Property Manager, HOA President
+
+Email
+
+email
+
+Yes
+
+autocomplete=&apos;email&apos;
+
+Phone
+
+tel
+
+Yes
+
+autocomplete=&apos;tel&apos;
+
+Property Address
+
+text
+
+Yes
+
+Google Places autocomplete
+
+Property Type
+
+select
+
+Yes
+
+Options: Retail/Storefront, Office Building, Restaurant, Medical Office, HOA Common Area, Apartment/Condo Complex, Industrial/Warehouse, Gas Station, Church/School, Other
+
+Approximate Square Footage
+
+number
+
+No
+
+inputmode=&apos;numeric&apos;
+
+Number of Properties
+
+select
+
+No
+
+Options: 1, 2-5, 6-10, 11-25, 25+
+
+Services Needed
+
+multi-select
+
+Yes (min 1)
+
+Same 10 services as residential + &apos;Parking Lot&apos; + &apos;Dumpster Pad&apos; + &apos;Drive-Through&apos;
+
+Service Frequency
+
+select
+
+No
+
+Options: One-Time, Weekly, Bi-Weekly, Monthly, Quarterly, Annual
+
+Additional Details
+
+textarea
+
+No
+
+Max 500 chars
+
+Honeypot
+
+hidden
+
+—
+
+Bot trap
+
+
+3.2 Form Behavior
+
+
+Same submission flow as /free-estimate/: Cloud Functions → Zoho CRM (tagged as &apos;Commercial&apos;) + SendGrid.
+
+
+Auto-response email includes: &apos;We will contact you within one business day with a detailed commercial quote. For urgent requests, call (813) 555-0283.&apos;
+
+
+On-page confirmation: &apos;Thank you, [Contact Name]. Your commercial quote request for [Company Name] has been received. Expect a detailed proposal within 24 hours.&apos;
+
+
+GA4: form_submit tagged with property_type and service_frequency dimensions.
+
+
+Submit button: &apos;Request My Commercial Quote&apos; — orange, 56px height.
+
+
+
+Section 4: Trust Panel
+
+
+&quot;$2M general liability General Liability Insurance&quot; with shield icon.
+
+
+&apos;COI Provided Within 24 Hours&apos; — important for property managers who need COI before approving vendors.
+
+
+&apos;W-9 on File&apos; — for vendor onboarding with property management companies.
+
+
+&apos;Flexible Scheduling — Early Morning, Evening, Weekend&apos; — businesses need off-hours service.
+
+
+&apos;Volume Pricing for Multi-Property Portfolios&apos; — signals enterprise capability.
+
+
+&apos;Call (813) 555-0283 for Immediate Assistance&apos; — click-to-call fallback.
+
+
+
+Section 5: Below-Form Content
+
+
+5.1 Property Types We Service
+
+Horizontal icon row showing the property types we clean commercially: Retail, Restaurant, Office, Medical, HOA, Multi-Family, Industrial, Church/School. Each icon is 48px with a label below.
+
+
+5.2 Commercial Process Summary
+
+Brief 3-step commercial process: 1) Submit your request. 2) We survey the property and deliver a written proposal within 48 hours. 3) You choose your service schedule — one-time or recurring.
+
+
+
+Section 6: Implementation Checklist
+
+
+Form submits and creates Zoho CRM lead tagged &apos;Commercial&apos;.
+
+
+Auto-response email delivers correctly.
+
+
+Google Places autocomplete on address field.
+
+
+All property type options render in dropdown.
+
+
+LCP under 1.5 seconds.
+
+
+form_submit event fires with commercial dimensions.
+
+
+Phone (813) 555-0283 is working tel: link.
+
+
+
+— End of Commercial Quote Guide —
+
+Clean Slate Pressure Washing — Commercial Quote v1.0 | TradeWorks AI | April 2026
+
+
+

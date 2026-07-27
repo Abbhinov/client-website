@@ -1,0 +1,673 @@
+﻿
+DEVELOPER IMPLEMENTATION GUIDE
+
+COOL & COZY AC REPAIR
+Licensed HVAC Contractor  ·  Jacksonville, Florida
+
+SERVICES HUB
+Complete Page Build — Single Document
+
+URL: coolcozyac.com/services
+Prepared by: TradeWorks AI  |  Version 1.0  |  May 2026
+Classification: Client Confidential
+
+Table of Contents
+
+1.  How to Use This Guide
+2.  Page Identity & Architecture
+3.  Keyword Strategy & Content Map
+4.  Complete <head> Section
+5.  Section-by-Section Build
+5.1  Page Hero
+5.2  AEO Introduction Block
+5.3  Residential Services Grid
+5.4  Commercial & Property Management Services
+5.5  Our Process (How We Work)
+5.6  FAQ Section
+5.7  Final CTA Block
+6.  Reference: Image Asset Inventory
+7.  Reference: GA4 Event Tracking
+8.  Reference: Implementation Checklist
+
+1. How to Use This Guide
+This guide defines the Services Hub page at /services. It is the anchor of the Services silo — the organizational parent of all eight service child pages. Its primary function is authority distribution: it receives link equity from the homepage, internal cross-links, and external sources, then distributes that authority downstream to each service child through contextual links.
+The Services Hub is NOT a content-light index page. It carries substantive copy, an AEO opening paragraph, a dedicated property management callout, a process section, and its own FAQ with schema. It must stand alone as a valuable page for visitors who arrive directly from search, not just as a navigation waypoint.
+Header, footer, sticky mobile CTA bar, and emergency banner are defined in the Homepage Developer Guide and apply identically to this page. They are referenced but not re-documented here.
+1.1 Content Authoring Rules
+All content fresh and original. No duplication from the homepage or any service child page.
+The hub provides overview-depth content. Detailed service information lives on each child page.
+Hub content must be genuinely useful to someone who does not click through to a child — it answers “What HVAC services does Cool & Cozy offer?” comprehensively.
+Property management positioning is reinforced here with a dedicated section, distinct from the homepage PM section in angle and copy.
+AEO opening paragraph answers: “What HVAC services are available in Jacksonville, FL?”
+
+2. Page Identity & Architecture
+Property
+Specification
+URL Path
+/services
+Canonical URL
+https://coolcozyac.com/services
+Page Type
+Hub (silo anchor)
+Parent Page
+/ (Homepage)
+Breadcrumb
+Home > Services
+Silo Placement
+Top of Services silo — parent to all 8 service child pages
+Primary Keyword
+HVAC services Jacksonville FL
+Secondary Keywords
+AC services Jacksonville, air conditioning services Duval County, heating and cooling Jacksonville
+Search Intent
+Commercial investigation (comparing services), navigational (finding specific service)
+Target Word Count
+1,400–1,800 words (visible body content)
+Primary Conversion Goal
+Navigate visitor to the most relevant service child page
+Secondary Conversion Goals
+Phone call, contact form submission, property management inquiry
+Robots Directive
+index, follow
+XML Sitemap
+Included, priority 0.9, changefreq monthly
+Content Update Frequency
+As-needed (when new services are added or existing services updated)
+
+2.1 Child Pages (This Page Is Parent To)
+Child Page
+URL
+Category
+AC Repair
+/services/ac-repair
+Residential + Commercial
+AC Installation
+/services/ac-installation
+Residential + Commercial
+AC Maintenance
+/services/ac-maintenance
+Residential + Commercial
+Emergency AC Repair
+/services/emergency-ac-repair
+Residential + Commercial
+Commercial HVAC
+/services/commercial-hvac
+Commercial / PM only
+Ductwork
+/services/ductwork
+Residential + Commercial
+Indoor Air Quality
+/services/indoor-air-quality
+Residential + Commercial
+Thermostat Installation
+/services/thermostat-installation
+Residential
+
+2.2 Internal Linking Requirements
+Links TO each service child page: 8 (one per service, via the services grid cards)
+Links TO /contact: at least 2 (hero CTA + final CTA block)
+Links TO /service-areas: 1 (service areas callout within the CTA or intro)
+Links TO /services/commercial-hvac: additional contextual link from PM callout section
+Links FROM homepage: /services is linked from homepage nav, services grid “All Services” link, and footer
+Links FROM each child page: every child links back to /services as its parent
+
+3. Keyword Strategy & Content Map
+3.1 Primary Keyword
+Property
+Specification
+Primary Keyword
+HVAC services Jacksonville FL
+Estimated Monthly Volume
+200–400
+Search Intent
+Commercial investigation
+Placement
+H1, title tag, meta description, AEO opening paragraph
+
+3.2 Full Keyword Cluster
+Keyword
+Est. Vol.
+Intent
+Placement on Hub
+HVAC services Jacksonville FL
+200–400
+Comm.
+H1, title, meta desc, AEO para
+AC services Jacksonville
+150–300
+Comm.
+AEO paragraph, grid intro
+air conditioning services Duval County
+50–150
+Local
+AEO paragraph, body content
+HVAC contractor Jacksonville services
+50–100
+Comm.
+Process section, schema
+residential AC services Jacksonville
+30–80
+Comm.
+Residential grid heading
+commercial HVAC services Jacksonville
+50–120
+Comm.
+PM callout section
+property management HVAC Jacksonville
+30–80
+Comm.
+PM callout section heading
+AC repair installation maintenance Jax
+20–50
+Comm.
+Grid card titles collectively
+
+3.3 Semantic Terms
+heating and cooling, central air, HVAC system, air conditioning unit, condenser, air handler, ductwork, thermostat, refrigerant, indoor air quality, dehumidification
+licensed contractor, CAC1819948, insured, BuildZoom, family-owned, bilingual, se habla español, free estimate
+Jacksonville, Duval County, Southside, Mandarin, Arlington, Riverside, Northeast Florida, subtropical, humidity, salt air
+property manager, rental property, multi-unit, maintenance agreement, commercial building, Airbnb host
+
+4. Complete <head> Section
+4.1 Meta Tags
+Property
+Specification
+Title Tag
+HVAC Services Jacksonville FL | AC Repair, Installation & Maintenance | Cool & Cozy
+Title Character Count
+78 characters
+Meta Description
+Complete HVAC services for Jacksonville homes, businesses & property managers. AC repair, installation, maintenance, emergency service, ductwork & more. Licensed (CAC1819948). Call (904) 555-0199.
+Meta Desc. Character Count
+155 characters
+Canonical URL
+https://coolcozyac.com/services
+Robots
+index, follow
+Viewport
+width=device-width, initial-scale=1
+4.2 Open Graph & Twitter
+Property
+Specification
+og:title
+HVAC Services Jacksonville FL | Cool & Cozy AC Repair
+og:description
+AC repair, installation, maintenance, emergency service, ductwork, indoor air quality & commercial HVAC. Licensed contractor serving Duval County.
+og:type
+website
+og:url
+https://coolcozyac.com/services
+og:image
+https://coolcozyac.com/images/og-services.jpg (1200×630px)
+twitter:card
+summary_large_image
+4.3 JSON-LD Structured Data
+The Services Hub carries two schema blocks: Service (with multiple serviceType entries) and BreadcrumbList.
+4.3.1 Service Schema
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": ["AC Repair", "AC Installation", "AC Maintenance", "Emergency AC Repair", "Commercial HVAC", "Ductwork Repair", "Indoor Air Quality", "Thermostat Installation"],
+  "provider": {
+    "@type": "HVACBusiness",
+    "name": "Cool & Cozy AC Repair",
+    "url": "https://coolcozyac.com/",
+    "telephone": "+19045550199",
+    "address": { "@type": "PostalAddress", "addressLocality": "Jacksonville", "addressRegion": "FL", "addressCountry": "US" },
+    "hasCredential": { "@type": "EducationalOccupationalCredential", "credentialCategory": "Certified Air Conditioning Contractor", "identifier": "CAC1819948" }
+  },
+  "areaServed": { "@type": "City", "name": "Jacksonville", "containedInPlace": { "@type": "State", "name": "Florida" } },
+  "description": "Complete HVAC services for homes, businesses, and property managers in Jacksonville and Duval County. Licensed, insured, bilingual.",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD", "description": "Free estimates on all services" }
+}
+
+4.3.2 BreadcrumbList Schema
+{ "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
+  { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://coolcozyac.com/" },
+  { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://coolcozyac.com/services" }
+] }
+
+4.3.3 FAQPage Schema
+Specified inline with FAQ content in Section 5.6 below.
+4.4 Preload & Font Hints
+Preload hero image: <link rel="preload" href="/images/hero-services.webp" as="image" type="image/webp">
+Font preload: same Poppins 400/500/600/700 strategy as homepage (shared across all pages)
+Preconnect: fonts.googleapis.com, fonts.gstatic.com
+
+5. Section-by-Section Build
+The Services Hub contains 7 content blocks in scroll order. Emergency banner, header, footer, and sticky mobile CTA are defined in the Homepage Developer Guide and apply identically. Breadcrumbs appear on this page (unlike the homepage).
+
+5.1 Page Hero
+Section Overview
+A compact hero section for the services hub. Smaller than the homepage hero — this is an interior page, not a landing page. The hero provides context (you’re on the services page), reinforces the brand, and presents a breadcrumb trail for navigation clarity.
+Conversion Role: Orient the visitor. Confirm they are on the right page. Present phone number and CTA.
+Layout Specifications
+Property
+Specification
+Desktop
+Full-width, 320px height, content left-aligned within 1280px container
+Tablet
+Full-width, 280px height
+Mobile
+Full-width, auto height (min 240px), centered text, stacked CTAs
+Background
+Solid #1A5653 (Evergreen) with subtle diagonal mesh pattern overlay at 5% opacity — NOT a photo background (keeps load fast and avoids LCP competition with service grid images)
+Content Specifications
+Breadcrumb
+Home > Services
+Style: Poppins 13px/400, #5CB8B2 (Seafoam), “Home” is a link to /, “Services” is current page (not linked), separator: “>”
+H1 Headline
+HVAC Services for Jacksonville Homes, Businesses & Property Managers
+Character Count: 68 characters
+Keywords: “HVAC Services” + “Jacksonville” + “Property Managers” in the H1 naturally
+Style: Poppins 36px/700 (desktop), 28px/700 (mobile), #FFFFFF, max-width 680px
+Subheadline
+From same-day AC repair to long-term maintenance agreements for your property portfolio — licensed, insured, bilingual, and always fairly priced.
+Word Count: 25 words
+Style: Poppins 17px/400, #F0E6D3 (Warm Sand), max-width 600px
+Inline CTA
+Single CTA button: “Call for a Free Estimate: (904) 555-0199” → tel: link
+Style: Coral bg, white text, pill shape, phone icon left. Same spec as homepage hero primary CTA.
+Image Specifications
+No background photo. The Evergreen solid background with a subtle CSS-generated pattern (diagonal lines or dot grid at 5% white opacity) keeps this section fast-loading and visually distinct from the photo-heavy homepage hero.
+DEV ACTION: The mesh/pattern overlay is pure CSS: use a repeating-linear-gradient or SVG pattern reference. No image file needed. This ensures zero LCP impact from the hero.
+GA4 Event Tracking
+Property
+Specification
+phone_click
+page_section: “hero”, phone_number: (904) 555-0199
+
+5.2 AEO Introduction Block
+Section Overview
+The first body-text section. Directly answers the query “What HVAC services are available in Jacksonville?” within 150 words for AI answer engine extraction. This block bridges the hero into the services grid.
+Layout Specifications
+Property
+Specification
+Container
+Full-width, #FFFFFF background
+Content Width
+760px centered
+Padding
+56px top, 40px bottom (desktop); 32px (mobile)
+Content Specifications
+H2 Heading
+Complete AC & HVAC Services in Jacksonville, FL
+AEO Opening Paragraph
+Cool & Cozy AC Repair provides a full range of air conditioning and HVAC services for residential homeowners, commercial businesses, and property management companies across Jacksonville and Duval County. Services include AC repair and diagnostics, new system installation and replacement, preventive maintenance and tune-ups, emergency AC repair, commercial HVAC for offices and multi-unit properties, ductwork repair and sealing, indoor air quality solutions including filtration and dehumidification, and smart thermostat installation and configuration. Cool & Cozy is a Florida-licensed contractor (CAC1819948) ranked in the top 13% of state contractors by BuildZoom, with 21 permitted building projects on file. The team offers bilingual service in English and Spanish, free estimates on all work, and transparent pricing with no hidden fees. Call (904) 555-0199 to schedule service.
+Word Count: 132 words
+AEO Targeting: Directly answers: “What HVAC services does Cool & Cozy offer?” “What AC services are available in Jacksonville?” “Does Cool & Cozy do commercial HVAC?”
+This paragraph intentionally enumerates all services in a parseable list format. AI systems extract lists more reliably than prose when answering “what services” queries.
+Supporting Paragraph
+Every service below includes a detailed page with pricing guidance, our process, frequently asked questions, and a direct line to schedule. Whether it’s a quick repair or a full system build-out for a 40-unit property, the first step is the same: call us or request a free estimate, and we’ll handle it from there.
+Word Count: 52 words
+Design Specifications
+Property
+Specification
+H2
+Poppins 32px/700, #2C2C2C, left-aligned
+Body
+Poppins 16px/400, #3D3D3D, line-height 1.7
+Phone link
+#E8603C (Coral), bold, click-to-call
+GA4 Event Tracking
+Property
+Specification
+phone_click
+page_section: “aeo_intro”
+
+5.3 Residential Services Grid
+Section Overview
+The primary content block of the hub page. Displays all eight services as rich cards with more detail than the homepage grid. Each card includes an icon, title, 3–4 sentence description, a list of common issues/applications, and a “Learn More” link. The grid is split visually into two groups: Residential/General services (6 cards) and Commercial/Specialty services (2 cards in the next section). This split reinforces the dual-audience positioning.
+Conversion Role: Navigate visitors to the most relevant service child page. Every card is a pathway to conversion.
+Layout Specifications
+Property
+Specification
+Container
+Full-width, #EAF3F2 (Sky Mist) background
+Content Width
+1280px centered
+Padding
+64px top/bottom (desktop), 32px (mobile)
+Grid
+2 columns on desktop (gap: 24px), 1 column on mobile (gap: 16px)
+Cards
+Horizontal layout within each card: icon left (80px), content right
+Content Specifications
+Section Heading
+Residential & General HVAC Services
+Subheading: Keeping Jacksonville homes comfortable year-round.
+
+Card 1: AC Repair
+Title: AC Repair & Diagnostics
+When your air conditioner stops cooling, makes unusual noises, cycles on and off rapidly, or simply won’t turn on, Cool & Cozy’s licensed technicians diagnose the root cause and fix it — often the same day you call. We work on all major brands and system types, from central air to ductless mini-splits.
+Common issues: Warm air blowing, frozen evaporator coil, refrigerant leak, capacitor failure, compressor issues, thermostat malfunction
+Link: /services/ac-repair
+Word Count: 60 words + issues list
+
+Card 2: AC Installation & Replacement
+Title: AC Installation & System Replacement
+Whether you’re building new, replacing a failed system, or upgrading to a high-efficiency unit, Cool & Cozy sizes, recommends, and installs the right equipment for your Jacksonville home. We calculate your cooling load based on square footage, insulation, window exposure, and Florida’s specific humidity demands — not a one-size-fits-all approach.
+Common applications: New construction, end-of-life replacement, efficiency upgrade, system upsizing, ductless mini-split conversion
+Link: /services/ac-installation
+Word Count: 60 words + applications list
+
+Card 3: AC Maintenance & Tune-Ups
+Title: Preventive Maintenance & Tune-Ups
+Jacksonville’s year-round cooling demand puts constant stress on your AC system. Regular maintenance catches small issues before they become expensive repairs, extends equipment life, maintains warranty coverage, and keeps your energy bills predictable. Cool & Cozy offers one-time tune-ups and recurring maintenance agreements with priority scheduling.
+Includes: Coil cleaning, filter replacement, refrigerant check, electrical inspection, condensate drain flush, thermostat calibration
+Link: /services/ac-maintenance
+Word Count: 55 words + includes list
+
+Card 4: Emergency AC Repair
+Title: Emergency AC Repair
+When it’s 95 degrees in July, high humidity is pushing the heat index past 105, and your AC just stopped working — that’s not a next-week problem. Cool & Cozy offers priority emergency response for Jacksonville homeowners and property managers. Call and tell us it’s an emergency — we prioritize these calls above routine service.
+Emergency scenarios: Complete system failure in summer heat, AC tripping breaker repeatedly, water flooding from unit, dangerous indoor temperatures for elderly or children
+Link: /services/emergency-ac-repair
+Word Count: 60 words + scenarios list
+
+Card 5: Ductwork Repair & Sealing
+Title: Ductwork Repair, Sealing & Replacement
+Your AC system is only as effective as the ducts delivering cooled air throughout your home. Leaking, disconnected, or poorly designed ductwork wastes 20–30% of your cooling energy and creates hot spots in certain rooms. Cool & Cozy inspects, seals, repairs, and replaces ductwork to restore proper airflow and efficiency.
+Signs of duct problems: Uneven cooling room to room, high energy bills, excessive dust, whistling or rattling from vents, rooms that never cool
+Link: /services/ductwork
+Word Count: 58 words + signs list
+
+Card 6: Indoor Air Quality
+Title: Indoor Air Quality Solutions
+Jacksonville’s subtropical humidity creates ideal conditions for mold, mildew, dust mites, and airborne allergens inside your home. Cool & Cozy installs whole-home air purification, UV germicidal lights, HEPA filtration upgrades, and dehumidification systems that work with your existing HVAC to deliver cleaner, healthier indoor air.
+Solutions offered: Whole-home dehumidifiers, air purifiers, UV lights for mold prevention, HEPA filter upgrades, ERV/HRV ventilation
+Link: /services/indoor-air-quality
+Word Count: 52 words + solutions list
+
+Card Design Specifications
+Property
+Specification
+Card background
+#FFFFFF
+Border-radius
+16px
+Box-shadow
+0 2px 10px rgba(0,0,0,0.05)
+Hover
+box-shadow 0 6px 20px rgba(0,0,0,0.09), translateY(-2px), 0.25s ease
+Layout
+Horizontal: icon container (80px width, centered vertically) | content area (remaining width)
+Icon
+48×48px SVG, #1A5653 stroke, 2px, same icon set as homepage
+Title
+Poppins 20px/600, #2C2C2C, 0 margin top
+Body
+Poppins 14px/400, #3D3D3D, line-height 1.6, 8px below title
+Issues/includes list
+Poppins 13px/400, #7A7A7A, comma-separated, italic, 8px below body
+“Learn More →” link
+Poppins 14px/600, #5CB8B2 Seafoam, arrow animates 4px right on hover, 12px below list
+Padding
+28px (desktop), 20px (mobile)
+On mobile, the card layout switches from horizontal (icon left / content right) to vertical (icon centered above content) to prevent cramped text at narrow viewports.
+
+5.4 Commercial & Property Management Services
+Section Overview
+A visually distinct subsection of the services grid that separates the commercial/property management offerings from general residential. This separation signals to property managers that Cool & Cozy treats their needs as a first-class category, not an afterthought appended to a residential page. The section uses a slightly different card style with the Evergreen background to create visual hierarchy.
+Layout Specifications
+Property
+Specification
+Container
+Full-width, #1A5653 (Evergreen) background — matching the homepage PM section pattern
+Content Width
+1280px centered
+Padding
+56px top/bottom (desktop), 32px (mobile)
+Grid
+2 columns on desktop, 1 column on mobile
+Content Specifications
+Section Heading
+Commercial & Property Management HVAC
+Subheading: Reliable, licensed service built for the demands of multi-unit portfolios, offices, and commercial spaces.
+Style: H2: Poppins 28px/700, #FFFFFF. Subheading: Poppins 15px/400, #F0E6D3
+
+Card 7: Commercial HVAC
+Title: Commercial HVAC Services
+Offices, restaurants, retail spaces, medical facilities, and multi-unit residential properties demand HVAC systems that run reliably under heavier loads and longer operating hours than residential units. Cool & Cozy is licensed for commercial work (CAC1819948) and serves Jacksonville property managers with maintenance agreements, priority response, and transparent per-unit pricing.
+Ideal for: Property managers (5–100+ units), Airbnb operators, restaurant owners, retail tenants, small office buildings, medical/dental practices
+Link: /services/commercial-hvac
+Word Count: 58 words + ideal-for list
+
+Card 8: Thermostat Installation & Smart Controls
+Title: Thermostat Installation & Smart Controls
+From basic programmable thermostats to Wi-Fi-connected smart systems like Nest, Ecobee, and Honeywell Home, proper installation and calibration ensures accurate temperature readings, energy savings, and reliable scheduling. For property managers, smart thermostats enable remote monitoring across multiple units and alert you to HVAC failures before tenants call.
+Options: Programmable, Wi-Fi smart (Nest, Ecobee), commercial zone controls, multi-unit remote monitoring
+Link: /services/thermostat-installation
+Word Count: 55 words + options list
+
+Card Design (Commercial Variant)
+Property
+Specification
+Card background
+rgba(255,255,255,0.06) — subtle glass effect on Evergreen
+Card border
+1px solid rgba(255,255,255,0.12)
+Border-radius
+16px
+Title
+Poppins 20px/600, #FFFFFF
+Body
+Poppins 14px/400, #F0E6D3, line-height 1.6
+Issues list
+Poppins 13px/400, #5CB8B2 (Seafoam), italic
+“Learn More →”
+Poppins 14px/600, #E8603C (Coral), arrow animation
+Icon
+48×48px SVG, #5CB8B2 (Seafoam) stroke — lighter than residential icons to read on dark bg
+Hover
+background rgba(255,255,255,0.10), translateY(-2px)
+
+5.5 Our Process — How We Work
+Section Overview
+A step-by-step visual process section that demystifies what happens when a customer calls Cool & Cozy. This section serves two purposes: (1) it reduces friction by setting expectations (the visitor knows what will happen before they pick up the phone), and (2) it targets HowTo-style queries that AI answer engines prioritize (“What happens when you call an AC repair company?”).
+Conversion Role: Reduce anxiety about calling. Make the process feel simple and predictable.
+Layout Specifications
+Property
+Specification
+Container
+Full-width, #FFFFFF background
+Content Width
+960px centered (narrower for clean visual flow)
+Padding
+64px top/bottom (desktop), 32px (mobile)
+Desktop
+Horizontal timeline: 4 steps in a row with connecting lines
+Mobile
+Vertical stack: step circles left-aligned with content right, vertical connecting line
+Content Specifications
+H2 Heading
+How It Works: 4 Simple Steps
+
+Step
+Title
+Description
+1
+Call or Request Online
+Call (904) 555-0199 or fill out the form on our contact page. Tell us what’s happening with your AC and we’ll schedule a visit — often the same day.
+2
+Diagnostic & Quote
+Our licensed technician arrives on time, inspects your system, and provides a clear, written quote before any work begins. No surprises, no pressure.
+3
+Expert Service
+Once you approve the quote, we complete the repair, installation, or maintenance right. We clean up after ourselves and walk you through what we did.
+4
+Follow-Up & Support
+We follow up to make sure everything is running properly. If something doesn’t feel right, call us back — we stand behind our work.
+
+Design Specifications
+Property
+Specification
+Step circles
+56px diameter, #1A5653 (Evergreen) background, white number text Poppins 22px/700
+Connecting lines
+2px solid #DDD8D0, horizontal on desktop (connecting circle edges), vertical on mobile
+Step title
+Poppins 18px/600, #2C2C2C, 12px below circle
+Step description
+Poppins 14px/400, #3D3D3D, line-height 1.55, 8px below title, max-width 240px per step (desktop)
+Active step (optional)
+If implementing a hover/scroll reveal, active step circle scales to 1.1 with Coral border
+This process section does NOT need HowTo schema — it describes a business process, not a user-actionable how-to. HowTo schema is reserved for resource articles like “How to troubleshoot your AC.”
+
+5.6 FAQ Section
+Section Overview
+Five questions specific to the services hub. These are distinct from the homepage FAQ — they focus on service scope, coverage, and process rather than pricing and licensing (which the homepage FAQ already addresses).
+Layout
+Property
+Specification
+Container
+#F0E6D3 (Warm Sand) background, same accordion style as homepage FAQ
+Content Width
+800px centered
+Accordion
+Click to expand, one open at a time, first question open by default
+Content
+FAQ 1
+Q: What brands of AC equipment do you service?
+A: Cool & Cozy services all major residential and commercial AC brands including Carrier, Trane, Lennox, Rheem, Goodman, Daikin, York, Bryant, Amana, and Mitsubishi. Whether your system was installed by us or by another contractor, we can diagnose, repair, and maintain it. We are not locked into any single manufacturer — our recommendations are based on what is best for your specific situation and budget.
+
+FAQ 2
+Q: Do you offer maintenance plans or service agreements?
+A: Yes. Cool & Cozy offers maintenance agreements for both residential homeowners and property managers. Plans include scheduled seasonal tune-ups (typically twice per year — spring and fall), priority scheduling for service calls, and discounted diagnostic fees. For property managers with multiple units, we build custom agreements with per-unit pricing and coordinated scheduling across your entire portfolio.
+
+FAQ 3
+Q: Can you handle both residential and commercial HVAC work?
+A: Yes. Our Florida contractor license CAC1819948 covers both residential and commercial HVAC work. We serve single-family homeowners, multi-unit property managers, Airbnb hosts, restaurants, retail spaces, medical offices, and small commercial buildings throughout Jacksonville and Duval County. Our commercial services page has more detail on how we work with business clients.
+
+FAQ 4
+Q: How quickly can you get to me for an AC repair?
+A: For standard repair requests, we typically schedule service within 24–48 hours. For emergency situations — especially during Jacksonville’s summer months when indoor temperatures can become unsafe — we offer same-day priority response. Call (904) 555-0199 and let us know it’s urgent.
+
+FAQ 5
+Q: Do I need to be home for a service call?
+A: For most AC repairs and maintenance, yes — we need access to both the indoor and outdoor components of your system. We’ll give you a specific arrival window so you are not waiting all day. For property managers, we coordinate access directly with tenants or use your lock-box/key procedures so you do not need to be on-site for every unit.
+
+FAQPage JSON-LD
+Same schema pattern as homepage FAQ (Section 5.11 in Homepage Part 2). All 5 questions with full answer text in the JSON-LD “text” field.
+DEV ACTION: Embed FAQPage JSON-LD in the <head> alongside Service and BreadcrumbList schemas. All three schema blocks co-exist on this page.
+
+5.7 Final CTA Block
+Section Overview
+Same pattern as the homepage final CTA but with services-specific messaging. This is the last conversion opportunity on the page.
+Layout
+Property
+Specification
+Container
+Full-width, #1A5653 (Evergreen) solid background (no image — keeps page fast)
+Content Width
+720px centered, text centered
+Padding
+72px top/bottom (desktop), 40px (mobile)
+Content
+H2 Heading
+Not Sure Which Service You Need?
+Style: Poppins 36px/700, #FFFFFF, centered
+Body
+That’s fine — most people don’t. Call us, describe what’s happening, and we’ll figure out the right service, schedule a visit, and give you a clear quote before any work begins. No guesswork, no pressure.
+Word Count: 37 words
+Style: Poppins 17px/400, #F0E6D3, centered
+Dual CTAs
+Property
+Specification
+Primary
+Call (904) 555-0199 — Coral bg, white text, pill shape, tel: link
+Secondary
+Request a Free Estimate — transparent bg, white border, white text, /contact
+GA4 Event Tracking
+Property
+Specification
+phone_click
+page_section: “final_cta”
+cta_click
+button_text: “Request a Free Estimate”, page_section: “final_cta”
+
+6. Reference: Image Asset Inventory
+Image
+Section
+Dims
+Max KB
+Format
+Status
+hero-services
+5.1 Hero
+N/A (CSS)
+0
+CSS pattern
+Ready
+og-services
+4.2 OG
+1200×630
+200
+WebP+JPEG
+PLACEHOLDER
+8 service icons
+5.3–5.4
+48×48 ea
+3 ea
+SVG inline
+Create
+4 step icons
+5.5 Process
+24×24 ea
+1 ea
+SVG inline
+Create
+
+The Services Hub intentionally has a minimal image footprint. The hero uses a CSS pattern (not a photo), service cards use SVG icons, and the process section uses numbered circles. This makes the page extremely fast-loading — PageSpeed Mobile should hit 95+ easily.
+
+7. Reference: GA4 Event Tracking
+Event
+Trigger Locations
+Parameters
+phone_click
+Hero CTA, AEO intro, FAQ answers, final CTA, header, sticky bar
+phone_number, page_section, page_url
+cta_click
+Service cards (8), final CTA “Request Estimate”, header CTA
+button_text, destination_url, page_section, service_type (card title)
+
+All service card clicks track the specific service_type parameter (e.g., “AC Repair”, “Commercial HVAC”) enabling analysis of which services drive the most hub-to-child navigation.
+
+8. Reference: Implementation Checklist
+8.1 Pre-Build
+Homepage guide (Part 1 + Part 2) completed and approved as reference for shared components
+All 8 service child page URLs confirmed (no changes to slug structure after hub goes live)
+OG image for /services sourced or created
+8.2 Build Verification
+HTML validates (W3C validator)
+JSON-LD validates: Service, BreadcrumbList, FAQPage (Google Rich Results Test)
+Title tag, meta description, OG tags correct and unique (not duplicating homepage)
+Canonical URL set to https://coolcozyac.com/services
+Breadcrumb renders: Home > Services (Home links to /)
+All 8 service cards link to correct child page URLs
+Click-to-call works on all tel: links
+FAQ accordion expands/collapses on desktop, tablet, and mobile (keyboard + touch)
+Commercial section cards render correctly on dark (Evergreen) background
+8.3 Performance
+PageSpeed Mobile > 95 (this page should score very high given CSS-only hero and SVG icons)
+LCP < 1.5s (no large images above fold)
+CLS < 0.1
+8.4 Accessibility
+Breadcrumb uses <nav aria-label="Breadcrumb"> with <ol> and structured data
+Commercial cards on Evergreen background: verify Warm Sand text contrast passes AA (7.8:1 — passes AAA)
+FAQ accordion: keyboard navigable, aria-expanded states, screen-reader accessible
+All SVG icons have aria-hidden="true" (decorative)
+Skip-to-content link present (same as homepage)
+8.5 SEO Validation
+Title tag unique (does not match homepage or any child page)
+Meta description unique
+H1 unique, contains primary keyword
+Internal links: 8 child pages + /contact + /service-areas all linked
+XML sitemap includes /services with priority 0.9
+No keyword cannibalization with homepage (hub targets “HVAC services”, homepage targets “AC repair”)
+
+— End of Document —
+
+Prepared by TradeWorks AI  ·  May 2026  ·  v1.0
+Next recommended guide: AC Repair service child page (/services/ac-repair)
+

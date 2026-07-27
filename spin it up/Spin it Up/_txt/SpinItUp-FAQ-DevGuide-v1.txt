@@ -1,0 +1,521 @@
+
+SPIN IT UP LAUNDRY
+FAQ PAGEDEVELOPER GUIDE
+Section-by-Section Implementation Specification
+
+URL: spinituplaundry.net/faq/
+Prepared by: TradeWorks AI  |  Version 1.0  |  May 2026
+Classification: Client Confidential
+
+Table of Contents
+1  How to Use This Guide
+2  Page Identity & Architecture
+3  Keyword Strategy
+4  Complete <head> Section
+5  Section 1: Site Header & Navigation
+6  Section 2: Hero Banner
+7  Section 3: AEO Introduction
+8  Section 4: General Questions
+9  Section 5: Self-Service Questions
+10  Section 6: Wash & Fold Questions
+11  Section 7: Pickup & Delivery Questions
+12  Section 8: Commercial Questions
+13  Section 9: Pricing & Payment Questions
+14  Section 10: Still Have Questions CTA
+15  Section 11: Footer & Sticky Mobile CTA
+16  Reference: Complete FAQ Schema
+17  Reference: GA4 Event Tracking
+18  Reference: Implementation Checklist
+
+1. How to Use This Guide
+This developer guide provides the complete implementation specification for the FAQ page (/faq/). This is the site’s comprehensive question-and-answer hub — 18 questions organized into 6 categories. The page serves three purposes: capturing long-tail search queries and voice search traffic, providing answers that reduce friction before conversion, and cross-linking visitors to the relevant service pages.
+Each service child page has its own 5–7 question FAQ section. This page consolidates the most important questions from across the site plus additional questions that don’t fit on individual service pages. There is intentional overlap between this page and the per-page FAQs — the same question can appear in both places because users land on different pages. The FAQ schema on this page covers all 18 questions.
+Content Authoring Rules
+All content written fresh.
+Every answer includes a direct, extractable first sentence before elaboration.
+Answers that reference a specific service link to that service’s page.
+Phone number in any answer renders as a tel: link.
+
+2. Page Identity & Architecture
+URL Path
+/faq/
+Page Type
+Standalone — Company
+Canonical URL
+https://spinituplaundry.net/faq/
+Breadcrumb
+Home > FAQ
+Parent Page
+/ (Homepage)
+Primary Keyword
+spin it up laundry FAQ (branded)
+Secondary Keywords
+laundromat FAQ, EBT laundromat questions, laundry pickup FAQ, wash and fold FAQ
+Search Intent
+Informational
+Target Word Count
+1,200–1,500 words
+Primary Conversion Goal
+Answer → service page click-through
+Secondary Conversion Goals
+Phone call, Cents app order
+Robots Directive
+index, follow
+XML Sitemap
+Include — priority 0.7
+Content Update Frequency
+Update when services, pricing, or policies change
+hreflang
+<link rel="alternate" hreflang="es" href="https://spinituplaundry.net/es/preguntas-frecuentes/">
+
+3. Keyword Strategy
+The FAQ page targets question-format long-tail queries and voice search patterns. Each question is phrased in natural conversational language matching how people actually search.
+Target Query
+Est. Volume
+FAQ #
+Category
+does spin it up accept EBT
+Branded
+Q4
+General
+laundromat that accepts EBT near me
+720
+Q4
+General
+how much does wash and fold cost
+320
+Q12
+Pricing
+can you wash a comforter at a laundromat
+170–320
+Q7
+Self-Service
+how does laundry pickup work
+110–210
+Q9
+Pickup
+what time is last wash at laundromat
+50–110
+Q2
+General
+free drying laundromat chicago
+110–210
+Q13
+Pricing
+laundry pickup delivery area chicago
+50–110
+Q10
+Pickup
+commercial laundry minimum order
+30–70
+Q14
+Commercial
+is there parking at spin it up
+Branded
+Q5
+General
+
+4. Complete <head> Section
+4.1 Meta Tags
+Tag
+Content
+<title>
+FAQ | Spin It Up Laundry — Hours, Pricing, EBT, Delivery & More (56 characters)
+<meta name="description">
+Answers to common questions about Spin It Up Laundry: hours, pricing, EBT, wash & fold, pickup & delivery, parking, machine sizes & commercial services. (152 characters)
+<meta name="robots">
+index, follow
+<meta name="viewport">
+width=device-width, initial-scale=1
+<meta charset>
+UTF-8
+<html lang>
+en
+<link rel="canonical">
+https://spinituplaundry.net/faq/
+<link rel="alternate" hreflang="es">
+https://spinituplaundry.net/es/preguntas-frecuentes/
+4.2 Open Graph & Twitter
+Tag
+Content
+og:title
+FAQ | Spin It Up Laundry — Avondale, Chicago
+og:description
+Answers about hours, pricing, EBT, wash & fold, pickup & delivery, parking, machines & commercial services.
+og:type
+website
+og:url
+https://spinituplaundry.net/faq/
+og:image
+https://spinituplaundry.net/images/og-faq.jpg (1200x630, <200KB)
+og:locale
+en_US
+og:site_name
+Spin It Up Laundry
+twitter:card
+summary_large_image
+twitter:title
+FAQ | Spin It Up Laundry
+twitter:description
+Hours, pricing, EBT, services, parking, delivery areas & more.
+twitter:image
+https://spinituplaundry.net/images/og-faq.jpg
+4.3 JSON-LD
+FAQPage schema covering all 18 questions + BreadcrumbList. The complete FAQPage schema code is in the Reference section (Section 16) due to length.
+
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://spinituplaundry.net/" },
+    { "@type": "ListItem", "position": 2, "name": "FAQ", "item": "https://spinituplaundry.net/faq/" }
+  ]
+}
+
+
+5. Section 1: Site Header & Navigation
+Global header. Solid white. “FAQ” nav item active.
+
+6. Section 2: Hero Banner
+Content Specifications
+Breadcrumb: Home > FAQ — standard spec.
+
+H1 Headline: "Frequently Asked Questions" — 3 words. Font: 40px/800 (desktop), 32px (mobile). Color: white.
+
+Subheadline: "Everything you need to know about our laundry services, pricing, hours, and more." — 13 words. Font: 18px/400, rgba(255,255,255,0.85). Max-width: 580px, centered.
+
+Category quick-nav links below subheadline (horizontal, centered):
+Anchor Link
+Scrolls To
+Text
+#general
+General category
+General
+#self-service
+Self-Service category
+Self-Service
+#wash-fold
+Wash & Fold category
+Wash & Fold
+#pickup-delivery
+Pickup & Delivery category
+Pickup & Delivery
+#commercial
+Commercial category
+Commercial
+#pricing
+Pricing & Payment category
+Pricing & Payment
+Links: 15px/600 rgba(255,255,255,0.8), separated by “·”, hover: white + underline. Smooth scroll.
+Background: Spin Blue gradient. Padding: 56px 0 (desktop), 40px 16px (mobile).
+
+7. Section 3: AEO Introduction
+NEW:  Brief AEO paragraph before the FAQ categories.
+
+"Spin It Up Laundry is located at 3710 N Kimball Ave in Avondale, Chicago and is open from 6:00 AM to 11:00 PM, seven days a week. We offer self-service laundry, wash-and-fold drop-off, pickup and delivery via the Cents app, commercial laundry services, and ironing and pressing. We accept cash, credit, debit, EBT, and laundry cards. Below you’ll find answers to the questions our customers ask most often." — 68 words.
+Font: 17px/400 Body Text. Max-width: 800px, centered. Section padding: 40px 0 (desktop), 28px 16px (mobile). Background: White.
+
+8. Section 4: General Questions
+Category anchor: id="general". Background: White (#FFFFFF).
+Category H2: "General" — displayed as a category label above the accordion group. Font: 24px/700, Spin Blue, with a bottom border 2px #E2E8F0. Margin-bottom 24px.
+
+Q#
+Question
+Answer
+Internal Link
+Q1
+What are your hours?
+Spin It Up Laundry is open from 6:00 AM to 11:00 PM, seven days a week, including all major holidays. Our last wash cycle starts at 9:30 PM to ensure all loads complete before closing. We recommend arriving by 9:00 PM for evening visits to allow time for a full wash-and-dry cycle.
+None
+Q2
+Where are you located?
+We are located at 3710 N Kimball Ave in the Avondale neighborhood of Chicago, Illinois 60618. We are on Kimball Ave between Irving Park Rd and Addison St, near the intersection with School St. Free parking is available directly in front of the laundromat, and there is additional free street parking on Kimball Ave and surrounding residential streets.
+Google Maps link
+Q3
+What services do you offer?
+We offer five laundry services: self-service laundry with 41 washers and 52 dryers including 130 lb commercial machines, professional wash-and-fold drop-off starting at $1.50 per pound, pickup and delivery ordered through the Cents app, commercial laundry services for businesses, and garment ironing and pressing. Visit our Services page for details on each.
+/services/
+Q4
+Do you accept EBT?
+Yes. Spin It Up Laundry accepts EBT (Electronic Benefit Transfer) payments for self-service washing and drying. We are one of the few laundromats in the Avondale area that accepts EBT. Swipe your EBT card at the front counter to load a laundry card and use it at any machine. Wash-and-fold, pickup and delivery, and commercial services are paid via credit card, debit card, cash, or laundry card.
+None
+Q5
+Is there parking?
+Yes. Free parking is available directly in front of the laundromat at 3710 N Kimball Ave. There is also free street parking on Kimball Ave and surrounding residential streets. We do not have a dedicated lot, but street parking is typically available within one block.
+None
+
+9. Section 5: Self-Service Questions
+Category anchor: id="self-service". Background: Ice Blue (#F0F9FF).
+Category H2: "Self-Service Laundry"
+
+Q#
+Question
+Answer
+Internal Link
+Q6
+What is the largest washer you have?
+Our largest machines hold up to 130 pounds — the biggest washers in the Avondale area. We have two commercial-capacity machines that handle king-size comforters, sleeping bags, large blankets, and bulk loads that will not fit in standard laundromat machines. See our Self-Service page for the full machine inventory.
+/services/self-service/
+Q7
+Can I wash a king-size comforter?
+Yes. Our extra-large (60–80 lb) and commercial (130 lb) washers handle king-size comforters easily. We recommend the extra-large machine for most comforters and the commercial machine for thick, heavy king-size comforters or if you want to wash the comforter with pillows and sheets in the same load. Drop-off flat-rate pricing: king-size comforter is $18.00.
+/pricing/
+Q8
+Do I need quarters?
+No. You can use a reloadable laundry card, credit card, debit card, cash, or EBT. Load your laundry card at the front counter with any payment method and use it at any machine. The card stores your balance and works across all washers and dryers. Quarters are not required but are accepted if you prefer.
+None
+
+10. Section 6: Wash & Fold Questions
+Category anchor: id="wash-fold". Background: White.
+Category H2: "Wash & Fold"
+
+Q#
+Question
+Answer
+Internal Link
+Q9
+How long does wash and fold take?
+Standard turnaround is next day. If you drop off before 10:00 AM, same-day service is available at the $2.00 per pound rate. We call or text you when your order is ready for pickup. If you cannot pick up on the expected day, we hold your order for up to 7 days at no additional charge.
+/services/wash-and-fold/
+Q10
+Do you separate colors and whites?
+Yes. Our attendants sort every order by color, fabric type, and washing temperature before loading. Whites, darks, and colors are washed separately. Delicate items are identified and handled with appropriate care. Your laundry is never mixed with another customer’s clothes.
+None
+Q11
+Is stain treatment included?
+Yes. Pre-wash stain treatment is included on every wash-and-fold and pickup-and-delivery order at no extra charge. We use commercial-grade stain removers appropriate for each fabric type. If a stain cannot be fully removed, we will let you know when you pick up.
+None
+
+11. Section 7: Pickup & Delivery Questions
+Category anchor: id="pickup-delivery". Background: Ice Blue.
+Category H2: "Pickup & Delivery"
+
+Q#
+Question
+Answer
+Internal Link
+Q12
+How does laundry pickup and delivery work?
+Download the free Cents app on your phone, enter your address, select a pickup window, and confirm your order. Our driver picks up your laundry from your door during the selected time. We wash, dry, and fold everything at our facility. Your clean laundry is delivered back to your door, typically within 24 hours. You do not need to be home for pickup or delivery.
+/services/pickup-delivery/
+Q13
+What neighborhoods do you deliver to?
+We currently deliver to Avondale, Irving Park, Logan Square, Hermosa, and Albany Park on Chicago’s Northwest Side. The Cents app confirms whether your address is in our delivery zone when you enter it. If you are nearby but outside the listed areas, call us at (773) 654-1275 — we may be able to arrange delivery.
+/areas/
+Q14
+Can I schedule a recurring pickup?
+Yes. The Cents app allows you to set up recurring pickups on a weekly or biweekly schedule. Your address, preferences, and payment method are saved so reordering takes a single tap. You can pause or cancel anytime without fees.
+/services/pickup-delivery/
+
+12. Section 8: Commercial Questions
+Category anchor: id="commercial". Background: White.
+Category H2: "Commercial Services"
+
+Q#
+Question
+Answer
+Internal Link
+Q15
+Do you offer commercial laundry for businesses?
+Yes. We provide commercial laundry services for Airbnb and vacation rental hosts, hair salons, gyms, restaurants, small hotels, and property management companies. We offer volume-based pricing, consistent turnaround, and scheduled pickup and delivery for commercial accounts. No long-term contracts required. Visit our Commercial Services page or call (773) 654-1275 for a custom quote.
+/services/commercial/
+Q16
+Is there a minimum for commercial accounts?
+There is no strict minimum. Volume-based pricing discounts begin at approximately 50 lb per week. Orders below that threshold are processed at our standard wash-and-fold rates, which are still competitive for small businesses like Airbnb hosts with one or two properties.
+/services/commercial/
+
+13. Section 9: Pricing & Payment Questions
+Category anchor: id="pricing". Background: Ice Blue.
+Category H2: "Pricing & Payment"
+
+Q#
+Question
+Answer
+Internal Link
+Q17
+How much does wash and fold cost?
+Standard wash-and-fold pricing starts at $1.50 per pound with a 10 lb minimum. Same-day service is $2.00 per pound for orders dropped off before 10:00 AM. Pickup and delivery is $1.75 per pound plus a $5.00 pickup fee. Comforters are priced at a flat rate: full/twin $12.00, queen $15.00, king $18.00. Stain treatment is included on every order. Visit our Pricing page for the complete list.
+/pricing/
+Q18
+Is drying really free on Tuesday, Wednesday, and Thursday?
+Yes. Every Tuesday, Wednesday, and Thursday, all dryers at Spin It Up Laundry are free when you wash with us. There is no minimum wash size. Wash any load on any machine and dry for free in any dryer, any size, all day from 6:00 AM to 11:00 PM. This is a permanent weekly promotion, not a limited-time offer.
+/pricing/
+
+14. Section 10: Still Have Questions CTA
+Section Overview
+Conversion block for visitors whose question wasn’t answered. Background: Spin Blue gradient.
+Content Specifications
+H2: "Still Have Questions?" — 3 words. White. Centered. Font: 36px/700.
+Subtitle: "We’re happy to help. Give us a call or send a message." — 10 words. 18px/400 rgba(255,255,255,0.85). Centered.
+
+Button
+Text
+Link
+Style
+1
+Call (773) 654-1275
+tel:+17736541275
+CTA Orange
+2
+Contact Us
+/ contact/
+White outline
+Section padding: 64px 0 desktop, 48px 16px mobile. Below buttons: "3710 N Kimball Ave, Avondale • Open 6 AM–11 PM • Se Habla Español" in 14px/500 rgba(255,255,255,0.7). “Se Habla Español” links to /es/preguntas-frecuentes/.
+
+15. Section 11: Footer & Sticky Mobile CTA
+Global footer: no modifications.
+
+Sticky Mobile CTA Bar: default configuration — "Call Now" (orange) + "Schedule Pickup" (blue, Cents app). FAQ visitors span all intents, so the default dual-purpose bar is appropriate.
+
+16. Reference: Complete FAQ Schema
+Full FAQPage JSON-LD schema covering all 18 questions. Implement as a single <script type="application/ld+json"> block.
+DEV ACTION:  This schema block is large (18 Q&A pairs). Implement it as a separate JSON-LD script block alongside the BreadcrumbList block. Both blocks go in the <head>. Validate the complete schema with the Google Rich Results Test after deployment — FAQPage schema supports up to ~20 questions for rich result eligibility.
+
+Schema structure:
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "[Question text exactly as written in Sections 8-13]",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "[Answer text exactly as written, with HTML links preserved]"
+      }
+    }
+    // ... repeat for all 18 questions (Q1-Q18)
+  ]
+}
+
+NOTE:  The developer must populate the schema with all 18 Q&A pairs using the exact question and answer text from Sections 8–13 of this guide. Answers in the schema should include <a href> links where the guide specifies internal links (e.g., links to service pages). Google supports HTML within FAQPage answer text.
+Question Index for Schema
+Q#
+Question (for schema "name" field)
+Category
+Q1
+What are your hours?
+General
+Q2
+Where are you located?
+General
+Q3
+What services do you offer?
+General
+Q4
+Do you accept EBT?
+General
+Q5
+Is there parking?
+General
+Q6
+What is the largest washer you have?
+Self-Service
+Q7
+Can I wash a king-size comforter?
+Self-Service
+Q8
+Do I need quarters?
+Self-Service
+Q9
+How long does wash and fold take?
+Wash & Fold
+Q10
+Do you separate colors and whites?
+Wash & Fold
+Q11
+Is stain treatment included?
+Wash & Fold
+Q12
+How does laundry pickup and delivery work?
+Pickup & Delivery
+Q13
+What neighborhoods do you deliver to?
+Pickup & Delivery
+Q14
+Can I schedule a recurring pickup?
+Pickup & Delivery
+Q15
+Do you offer commercial laundry for businesses?
+Commercial
+Q16
+Is there a minimum for commercial accounts?
+Commercial
+Q17
+How much does wash and fold cost?
+Pricing
+Q18
+Is drying really free on Tuesday, Wednesday, and Thursday?
+Pricing
+
+17. Reference: GA4 Event Tracking
+Event Name
+Trigger
+Parameters
+Section
+faq_expand
+Expand any FAQ accordion item
+question_text, question_number (Q1–Q18), category
+All FAQ sections
+faq_category_click
+Click a category anchor link in hero
+category_name
+Hero Banner
+faq_service_link
+Click an internal service link within an answer
+destination_url, question_number
+Answer content
+phone_click
+Click tel: link (in answers or CTAs)
+phone_number, page_section
+Global
+cta_click
+Click CTA button
+button_text, destination_url
+Still Have Questions
+schedule_pickup
+Click “Schedule Pickup” in sticky bar
+page_section
+Sticky Bar
+
+18. Reference: Implementation Checklist
+Technical Validation
+HTML validates
+FAQPage schema (18 Q&A pairs) + BreadcrumbList validate in Google Rich Results Test
+FAQPage schema contains all 18 questions with exact text from this guide
+HTTPS enforced
+Mobile PageSpeed >90, Desktop >95
+All 6 category anchor links (#general, #self-service, etc.) scroll correctly
+All internal links within answers point to correct pages
+All tel: links functional
+OG tags render correctly
+Hreflang points to /es/preguntas-frecuentes/
+Content & SEO
+All 18 Q&A pairs match this guide exactly
+Title tag within 60 characters
+Meta description within 155 characters
+Single H1
+H2 category headings in correct order
+AEO paragraph present before first FAQ category
+Breadcrumb: Home > FAQ
+Canonical URL correct
+Every answer’s first sentence is a direct, extractable answer
+XML sitemap includes at priority 0.7
+Accessibility
+Skip-to-content link present
+Each accordion item: <button> trigger with aria-expanded, aria-controls pointing to answer panel
+Answer panels: role="region", aria-labelledby pointing to question button
+Keyboard: Enter/Space to toggle, focus moves logically
+Color contrast WCAG 2.1 AA
+ARIA landmarks
+All collapsed on mobile by default
+Analytics
+faq_expand event fires with question_text and question_number
+faq_category_click fires on hero anchor links
+faq_service_link fires on internal links within answers
+phone_click confirmed on all tel: links
+
+
+End of Document
+TradeWorks AI — Spin It Up Laundry FAQ Page Developer Guide v1.0
+Prepared by TradeWorks AI — May 2026

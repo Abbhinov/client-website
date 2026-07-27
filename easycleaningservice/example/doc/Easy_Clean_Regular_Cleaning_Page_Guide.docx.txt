@@ -1,0 +1,589 @@
+﻿SERVICE PAGE DEVELOPER GUIDE
+Regular House Cleaning
+Tampa, FL
+
+
+easycleaningservice.com/services/regular-house-cleaning-tampa/
+Easy Clean Service • (813) 534-9216
+
+
+Complete page copy, meta tags, structured data, section layouts, frequency
+comparison content, cleaning checklist, image specs, and technical SEO
+requirements for the Regular House Cleaning service landing page.
+Version 1.0 • March 25, 2026
+1. Page Strategy & Keyword Targets
+1.1 Page Purpose
+This is the dedicated landing page for Easy Clean Service’s recurring house cleaning offering – the core revenue driver for the business. Unlike one-time services such as deep cleaning or move-in/out, regular cleaning generates predictable monthly income and builds long-term customer relationships. The page must attract Tampa residents searching for ongoing cleaning help, clearly communicate what each visit includes, help them choose the right frequency (weekly, biweekly, or monthly), and convert them into recurring customers.
+1.2 URL & Breadcrumb
+URL: https://easycleaningservice.com/services/regular-house-cleaning-tampa/
+Breadcrumb: Home > Services > Regular House Cleaning Tampa
+1.3 Keyword Targets
+Keyword
+	Type
+	Est. Monthly Vol.
+	Difficulty
+	Intent
+	house cleaning Tampa
+	Primary
+	1,300
+	Medium
+	Transactional
+	house cleaning services Tampa FL
+	Primary
+	880
+	Medium
+	Transactional
+	maid service Tampa
+	Primary
+	720
+	Medium
+	Transactional
+	recurring cleaning service Tampa
+	Secondary
+	210
+	Low
+	Transactional
+	weekly cleaning service Tampa FL
+	Secondary
+	260
+	Low
+	Transactional
+	biweekly cleaning service Tampa
+	Secondary
+	170
+	Low
+	Transactional
+	house cleaning near me
+	Secondary
+	2,400
+	High
+	Transactional
+	residential cleaning Tampa FL
+	Secondary
+	390
+	Low-Med
+	Transactional
+	how often should I have my house cleaned
+	Long-tail
+	720
+	Low
+	Informational
+	house cleaning cost Tampa
+	Long-tail
+	320
+	Low
+	Commercial
+	what is included standard cleaning
+	Long-tail
+	590
+	Low
+	Informational
+	
+
+1.4 Content Targets
+Word count: 1,500–2,000 words of body copy
+Unique angle: This page differentiates itself from the deep cleaning page by emphasizing consistency, convenience, the recurring relationship, and the value of maintaining a home versus restoring one. The language should feel lighter and more lifestyle-oriented compared to the task-heavy deep cleaning page.
+________________
+
+
+2. HTML Head – Meta Tags & Structured Data
+2.1 Title Tag
+
+
+<title>Regular House Cleaning Services in Tampa, FL |
+  Easy Clean Service</title>
+
+
+Character count: 59 characters. Leads with the exact primary keyword, geo-modifier, and brand name. Distinct from the homepage and deep cleaning page titles.
+2.2 Meta Description
+
+
+<meta name="description" content="Reliable weekly, biweekly,
+  and monthly house cleaning services in Tampa, FL. Same
+  trusted team every visit. Eco-friendly products. No
+  contracts. 10+ years experience. Get your free estimate
+  today. (813) 534-9216" />
+
+
+2.3 Open Graph Tags
+
+
+<meta property="og:title" content="Regular House Cleaning
+  in Tampa, FL | Easy Clean Service" />
+<meta property="og:description" content="Weekly, biweekly,
+  and monthly cleaning for Tampa homes. Same trusted
+  cleaner, eco-friendly products, no contracts.
+  Free estimates." />
+<meta property="og:url" content="https://easycleaningservice
+  .com/services/regular-house-cleaning-tampa/" />
+<meta property="og:image" content="https://easycleaningservice
+  .com/images/regular-house-cleaning-tampa.jpg" />
+<link rel="canonical" href="https://easycleaningservice.com/
+  services/regular-house-cleaning-tampa/" />
+
+
+2.4 Service Schema (JSON-LD)
+
+
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Regular House Cleaning in Tampa, FL",
+  "description": "Recurring residential cleaning service
+    for Tampa homes. Available weekly, biweekly, or
+    monthly. Includes dusting, vacuuming, mopping,
+    kitchen and bathroom cleaning, and surface
+    sanitization. Eco-friendly products, same trusted
+    team on every visit.",
+  "provider": {
+    "@type": "HousekeepingService",
+    "name": "Easy Clean Service",
+    "telephone": "+1-813-534-9216",
+    "url": "https://easycleaningservice.com",
+    "areaServed": [
+      { "@type": "City", "name": "Tampa" },
+      { "@type": "City", "name": "Brandon" },
+      { "@type": "City", "name": "Riverview" },
+      { "@type": "City", "name": "Westchase" },
+      { "@type": "City", "name": "Carrollwood" },
+      { "@type": "City", "name": "South Tampa" },
+      { "@type": "City", "name": "Lutz" }
+    ],
+    "priceRange": "$$"
+  },
+  "serviceType": "Recurring House Cleaning",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Cleaning Frequencies",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": {
+        "@type": "Service",
+        "name": "Weekly House Cleaning" } },
+      { "@type": "Offer", "itemOffered": {
+        "@type": "Service",
+        "name": "Biweekly House Cleaning" } },
+      { "@type": "Offer", "itemOffered": {
+        "@type": "Service",
+        "name": "Monthly House Cleaning" } }
+    ]
+  }
+}
+
+
+2.5 FAQPage Schema
+Include a separate JSON-LD block with the 6 FAQ questions and answers from Section 3.8. Additionally include BreadcrumbList schema following the same pattern as the deep cleaning page.
+________________
+
+
+3. Page Layout, Headings & Body Copy
+3.1 Hero Section
+  SECTION ID: #regular-cleaning-hero  
+H1 Heading (Only H1 on Page)
+Reliable House Cleaning Services in Tampa, FL – Weekly, Biweekly & Monthly
+Hero Subheading Paragraph
+Life in Tampa moves fast. Between work, family, errands, and everything else on your plate, scrubbing bathrooms and mopping floors should not be competing for your weekend. Easy Clean Service takes the weight of housekeeping off your shoulders with dependable recurring cleaning that keeps every room in your home fresh, tidy, and welcoming. Pick a schedule that fits your life – weekly, biweekly, or monthly – and enjoy coming home to a clean house without lifting a finger.
+* Primary: "Start Your Recurring Cleaning" → #estimate-form
+* Secondary: "Call (813) 534-9216" → tel:+18135349216
+Hero Image
+Subject: Bright, naturally lit Tampa living room or open-concept kitchen that looks effortlessly clean and inviting. Emphasis on lifestyle – a home you want to relax in. Avoid staging with cleaning supplies.
+Alt text: "Clean and bright Tampa FL living room maintained by Easy Clean Service regular house cleaning"
+3.2 What Every Regular Cleaning Includes
+  SECTION ID: #whats-included  
+KEYWORD TARGETS: what is included standard cleaning, house cleaning Tampa
+H2 Heading
+What Every Regular Cleaning Visit Covers
+Section Intro
+Our regular cleaning service is designed to keep your entire home maintained at a consistently high standard. Every visit follows the same thorough routine, so you always know exactly what to expect when our team walks through the door. We bring all supplies and equipment – you do not need to provide anything.
+DEV ACTION: Present each room as a styled card or accordion panel. Use icons to visually distinguish kitchen, bathroom, bedrooms, and living areas.
+* Wipe and sanitize all countertops and backsplash areas
+* Clean and polish sink basin and faucet
+* Wipe exterior of all appliances (refrigerator, oven, microwave, dishwasher)
+* Clean stovetop surface and drip pans
+* Wipe down cabinet fronts and handles
+* Clean interior and exterior of microwave
+* Empty trash and replace liner
+* Sweep and mop floor
+* Scrub and disinfect toilet inside and out including base and handle
+* Clean and sanitize bathtub, shower walls, and shower door
+* Scrub sink basin and polish faucet and hardware
+* Clean and streak-free mirrors
+* Wipe countertops and vanity surfaces
+* Empty trash and replace liner
+* Sweep and mop floor
+* Dust all accessible surfaces (nightstands, dressers, shelves, headboard)
+* Make beds and straighten linens
+* Vacuum carpet or sweep and mop hard floors
+* Empty small trash cans
+* Dust all accessible surfaces including shelves, entertainment centers, and tables
+* Dust lampshades and picture frames
+* Vacuum carpet, rugs, and upholstered furniture surfaces
+* Sweep and mop hard floors
+* Straighten cushions and light tidying of visible areas
+* Empty trash cans
+* Dust all accessible surfaces top to bottom
+* Vacuum all carpeted areas and rugs
+* Sweep and mop all hard floors
+* Wipe light switches and door handles in high-traffic areas
+* Spot-clean visible marks on walls and doors
+* Cobweb removal from accessible ceiling corners
+________________
+
+
+3.3 Choosing the Right Cleaning Frequency
+  SECTION ID: #frequency-guide  
+KEYWORD TARGETS: weekly cleaning service Tampa, biweekly cleaning, how often should I have my house cleaned
+H2 Heading
+How Often Should You Have Your Tampa Home Cleaned?
+Intro Paragraph
+There is no one-size-fits-all answer, and the right schedule depends on your household’s lifestyle. The good news is that you can switch frequencies at any time with no penalty or contract. Here is a general guide to help you decide:
+Frequency Comparison Table
+Frequency
+	Best For
+	What You Get
+	Cost Savings
+	Weekly
+	Busy families with kids and pets, allergy sufferers, households where someone works from home, entertaining regularly
+	Highest level of consistency. Home always feels guest-ready. Dust, pet hair, and kitchen buildup never have time to accumulate.
+	Lowest per-visit rate. Best overall value for busy households.
+	Biweekly
+	Dual-income couples, smaller households, homeowners who handle light tidying between visits
+	Our most popular schedule. Balances a consistently clean home with a manageable budget. Enough frequency to stay ahead of Tampa humidity and allergens.
+	Strong value. Most customers choose this option.
+	Monthly
+	Individuals or couples with minimal daily mess, seasonal residents, vacation homes between guests
+	A reliable monthly refresh that covers all the rooms and resets your home. More thorough than a quick weekly visit since more buildup occurs between appointments.
+	Lowest total monthly cost. Good for lighter households.
+	
+
+Body Copy Below Table
+Not sure which schedule works best? Start with biweekly – it is our most popular option for a reason. After a few visits, you will have a good sense of whether your home needs more or less frequent attention. You can increase to weekly or dial back to monthly at any point. We never lock you into a contract, so adjusting your schedule is always one phone call away.
+One important note: if your home has not been professionally cleaned recently, we recommend starting with a one-time deep cleaning before transitioning to a regular schedule. This establishes a clean baseline and allows our recurring visits to focus on maintaining that freshness rather than playing catch-up with months of buildup.
+CTA link: "Start with a deep cleaning" → /services/deep-cleaning-tampa/ (contextual internal link)
+3.4 Why Recurring Cleaning Is Worth It
+  SECTION ID: #why-recurring  
+H2 Heading
+* Consistency You Can Count On: Your home stays at a reliable standard week after week. No more scrambling before guests arrive or spending your Saturday scrubbing bathrooms. You always know your next cleaning is on the calendar.
+* Same Trusted Team Every Visit: We assign the same cleaner or team to your home on every visit. They learn your preferences, know where things go, and understand which areas need extra attention. That familiarity translates to better, faster results each time.
+* Better Value Per Visit: Recurring customers receive better per-visit pricing than one-time bookings. The more frequently we clean, the less time each visit takes because there is less buildup between appointments – and that savings gets passed on to you.
+* Healthier Home Environment: Tampa’s humidity, pollen, and sandy outdoor conditions mean dust, allergens, and mildew build up quickly. Regular professional cleaning keeps these under control so your household breathes easier – literally.
+* Total Flexibility, Zero Commitment: No contracts, no cancellation fees. Pause when you go on vacation, skip a visit when family is in town, or change your frequency anytime. The service works around your life, not the other way around.
+* Protect Your Home’s Value: Regular cleaning prevents the kind of grime buildup that causes long-term damage – stained grout, deteriorating caulk, scratched floors from embedded dirt, and mildew that eats into surfaces. It is an investment in the longevity of your home.
+3.5 How It Works
+  SECTION ID: #how-it-works  
+H2 Heading
+1. Tell Us About Your Home: Call (813) 534-9216 or fill out the form on this page. Share your home’s size, the number of bedrooms and bathrooms, whether you have pets, and how often you would like us to come. We will send you a clear, straightforward quote within a few hours.
+2. Pick Your Schedule: Choose weekly, biweekly, or monthly visits. Select your preferred day of the week and a morning or afternoon window. We will confirm your recurring spot and send you a calendar reminder before each visit.
+3. We Handle the Rest: Our team arrives on schedule with all supplies and equipment. We follow our cleaning checklist, lock up when we leave if you are not home, and send you a quick notification when the job is done. Your home is clean, your evening is free.
+4. Adjust Anytime: Need to skip a week? Want to add on a refrigerator interior clean? Thinking about bumping up to weekly? Just let us know. Changes are always free and take effect on your next visit.
+________________
+
+
+3.6 Pricing Guidance
+  SECTION ID: #pricing  
+KEYWORD TARGET: house cleaning cost Tampa, maid service Tampa cost
+H2 Heading
+How Much Does Regular House Cleaning Cost in Tampa?
+Body Copy
+The cost of regular house cleaning in Tampa depends on the size of your home, its condition, the frequency of visits, and any special requests. Here are typical ranges for recurring cleaning services in the Tampa area:
+Home Size
+	Weekly
+	Biweekly
+	Monthly
+	1–2 Bedrooms
+	$100 – $160
+	$120 – $180
+	$150 – $220
+	3 Bedrooms / 2 Bath
+	$140 – $200
+	$160 – $240
+	$200 – $300
+	4+ Bedrooms / 3+ Bath
+	$180 – $280
+	$220 – $340
+	$280 – $420
+	
+
+Weekly customers receive the best per-visit rate because less buildup occurs between visits, which means less time and product needed per cleaning. Monthly visits take longer per appointment since more dirt and dust accumulates over four weeks, which is reflected in the slightly higher per-visit cost. All prices include supplies, equipment, and our satisfaction guarantee.
+NOTE: Confirm all price ranges with Kessia before publishing. Adjust to reflect Easy Clean’s actual rates.
+CTA: "Get Your Personalized Cleaning Estimate" button → #estimate-form
+3.7 Why Choose Easy Clean for Your Recurring Cleaning
+  SECTION ID: #why-easy-clean  
+H2 Heading
+* Locally Owned by Kessia Marquez: When you call Easy Clean, you reach the owner directly – not an answering service. We take personal pride in every home we clean.
+* 10+ Years Serving Tampa: We have been earning the trust of Tampa homeowners since 2014. That experience shows in the speed, thoroughness, and professionalism of every visit.
+* Fully Insured & Vetted Team: Every team member is background-checked, trained in our cleaning standards, and covered by our insurance policy for your complete peace of mind.
+* Eco-Friendly & Pet-Safe Products: We clean with products that are effective on grime but gentle on your family, your pets, and the environment. No harsh fumes or toxic residues.
+* 100% Satisfaction Guarantee: If any area of your home does not meet your standards after a visit, let us know within 24 hours and we will return to make it right at no charge.
+________________
+
+
+3.8 Frequently Asked Questions
+  SECTION ID: #faq  
+H2 Heading
+House Cleaning Questions Tampa Residents Ask Us
+DEV ACTION: Accordion format. All panels collapsed by default. Must exactly match the FAQPage schema JSON-LD.
+Q1: How much does regular house cleaning cost in Tampa?
+Regular house cleaning in Tampa typically ranges from $100 to $340 per visit depending on your home’s size and how often we come. Weekly cleaning has the lowest per-visit rate because there is less buildup between appointments. We provide free, no-obligation estimates tailored to your specific home and needs. Call (813) 534-9216 or fill out the form on this page to get your personalized quote.
+Q2: How often should I have my house professionally cleaned?
+That depends on your household’s lifestyle. Families with children and pets usually benefit from weekly cleaning to keep allergens and daily messes in check. Dual-income couples and smaller households often find biweekly visits hit the right balance between cleanliness and budget. Individuals or seasonal residents may prefer monthly visits for a dependable refresh. You can change your frequency at any time, so there is no pressure to commit to one schedule forever.
+Q3: What is the difference between regular cleaning and deep cleaning?
+Regular cleaning maintains your home’s everyday cleanliness: dusting surfaces, vacuuming and mopping floors, sanitizing kitchens and bathrooms, and keeping things tidy. Deep cleaning goes much further by tackling areas that are not part of a standard visit, such as inside appliances, behind furniture, baseboard detailing, grout scrubbing, and ceiling fan dusting. If your home has not been professionally cleaned recently, we recommend starting with a deep cleaning before transitioning to a regular schedule.
+Internal link: "Learn more about our deep cleaning service" → /services/deep-cleaning-tampa/
+Q4: Do I need to be home during the cleaning?
+Not at all. Many of our recurring customers provide a key or a door code so we can clean while they are at work or out running errands. Others prefer to be home, and that works just as well. We respect your space and your preferences either way. When the cleaning is finished, we lock up behind us and send you a notification that the job is done.
+Q5: Will I get the same cleaner every time?
+Yes. We assign the same trusted team member or team to your home on every recurring visit. They learn your home’s layout, your specific preferences, and which areas you want extra attention on. This consistency leads to faster, better results over time. In the rare case that your regular cleaner is unavailable, we will let you know in advance and send a trained substitute who has been briefed on your home’s cleaning plan.
+Q6: Can I customize what gets cleaned on each visit?
+Absolutely. While our standard cleaning checklist covers all the essentials, you can always add special requests or skip certain areas. Want us to pay extra attention to the kitchen this week because you hosted a dinner party? No problem. Prefer we focus on bedrooms and bathrooms and skip the guest room that no one has used? We can do that. Just communicate your preferences and we will adjust accordingly.
+3.9 Estimate Request Form
+  SECTION ID: #estimate-form  
+H2 Heading
+Get Your Free House Cleaning Estimate
+Section Copy
+Tell us about your home and we will put together a personalized cleaning plan and quote. No contracts, no obligations – just clear pricing and great service. Call us at (813) 534-9216 or fill out the form below and we will get back to you within a few hours.
+Form Fields
+Same form structure as the homepage and deep cleaning page. Pre-select "Regular Cleaning" in the Service Needed dropdown. Add an additional dropdown field for this page only:
+Preferred Frequency: Dropdown with options: Weekly, Biweekly (Every 2 Weeks), Monthly, Not Sure Yet
+Submit button: "Get My Cleaning Estimate"
+3.10 Related Services & Internal Links
+  SECTION ID: #related-services  
+H2 Heading
+* Deep Cleaning – "Need a one-time reset before starting your regular schedule? Our deep cleaning covers every hidden corner." → /services/deep-cleaning-tampa/
+* Move-In / Move-Out Cleaning – "Making a move? We handle the heavy-duty cleaning so you can focus on packing." → /services/move-in-move-out-cleaning-tampa/
+* Airbnb & Vacation Rental Cleaning – "Keep your rental property guest-ready between every booking." → /services/airbnb-cleaning-tampa/
+* Commercial Cleaning – "We also keep Tampa offices and retail spaces spotless." → /services/commercial-cleaning-tampa/
+________________
+
+
+4. Image Strategy & Alt Text
+#
+	Placement
+	Subject
+	File Name
+	Loading
+	1
+	Hero
+	Clean, bright Tampa living room or kitchen – lifestyle focus
+	regular-cleaning-tampa-hero.webp
+	Preload
+	2
+	Kitchen checklist
+	Sparkling clean kitchen countertops and sink
+	kitchen-cleaning-tampa.webp
+	Lazy
+	3
+	Bathroom checklist
+	Fresh, clean bathroom with polished mirror and fixtures
+	bathroom-cleaning-tampa.webp
+	Lazy
+	4
+	Frequency section
+	Calendar or planner visual with cleaning schedule concept
+	cleaning-schedule-tampa.webp
+	Lazy
+	5
+	Why recurring
+	Family enjoying time in a clean home – kids playing, parent relaxing
+	tampa-family-clean-home.webp
+	Lazy
+	6
+	How it works
+	Kessia or team member at front door with supplies, smiling
+	easy-clean-team-arrival.webp
+	Lazy
+	7
+	Trust section
+	Close-up of eco-friendly cleaning products being used
+	eco-friendly-cleaning-products.webp
+	Lazy
+	8
+	Estimate form area
+	Before/after of a regular cleaning visit result
+	before-after-regular-clean.webp
+	Lazy
+	
+
+* "Bright clean living room in a Tampa FL home maintained by Easy Clean Service regular house cleaning"
+* "Sanitized kitchen countertops and polished sink after Easy Clean weekly house cleaning visit in Tampa"
+* "Tampa family relaxing in a clean home after Easy Clean Service biweekly house cleaning"
+* "Easy Clean Service team arriving at a Tampa home for a scheduled recurring cleaning appointment"
+5. On-Page SEO Checklist & Keyword Map
+5.1 Keyword Placement Map
+Keyword
+	Title
+	H1
+	H2
+	Body
+	Alt
+	Schema
+	URL
+	house cleaning Tampa
+	✓
+	✓
+	✓
+	✓
+	✓
+	✓
+	✓
+	house cleaning services Tampa FL
+	✓
+	✓
+	
+
+	✓
+	
+
+	✓
+	
+
+	maid service Tampa
+	
+
+	
+
+	✓
+	✓
+	
+
+	
+
+	
+
+	weekly cleaning Tampa
+	
+
+	✓
+	✓
+	✓
+	
+
+	✓
+	
+
+	biweekly cleaning Tampa
+	
+
+	✓
+	✓
+	✓
+	
+
+	✓
+	
+
+	recurring cleaning Tampa
+	
+
+	
+
+	✓
+	✓
+	
+
+	✓
+	
+
+	residential cleaning Tampa
+	
+
+	
+
+	
+
+	✓
+	
+
+	✓
+	✓
+	house cleaning near me
+	
+
+	
+
+	
+
+	✓
+	
+
+	
+
+	
+
+	house cleaning cost Tampa
+	
+
+	
+
+	✓
+	✓
+	
+
+	
+
+	
+
+	how often house cleaned
+	
+
+	
+
+	✓
+	✓
+	
+
+	
+
+	
+
+	
+
+1. Title tag unique and distinct from homepage and deep cleaning page
+2. Meta description unique, includes primary keyword and phone number
+3. Canonical URL self-referencing to /services/regular-house-cleaning-tampa/
+4. H1 is the only H1 and contains primary keyword + frequency modifiers
+5. All H2 headings contain at least one target keyword naturally
+6. Heading hierarchy is sequential (H1 > H2 > H3, no skipping)
+7. At least 1,500 words of substantive body content
+8. Primary keyword appears in the first 100 words of body copy
+9. Internal links to at least 3 other service pages (deep cleaning, move-in/out, Airbnb)
+10. Internal link FROM the deep cleaning page TO this page and vice versa
+11. Breadcrumb visible and matches BreadcrumbList schema
+12. All images have descriptive, keyword-rich alt text
+13. Service schema and FAQPage schema validated at validator.schema.org
+14. Page loads under 3 seconds on mobile 4G
+15. Frequency dropdown field added to the estimate form on this page
+6. Internal Linking Strategy
+* Homepage services section: "Regular House Cleaning" card → /services/regular-house-cleaning-tampa/
+* Deep cleaning page: From the FAQ answer about regular vs. deep cleaning and from the Related Services section
+* Move-in/out page: "Transition to regular cleaning after your move" contextual link
+* Main /services/ page: Prominent regular cleaning section with Learn More link
+* Blog posts (future): Posts about cleaning schedules, time-saving tips, and Tampa lifestyle content should link here
+* Service area pages (future): Each neighborhood page should link to regular cleaning as the primary recurring service
+* Deep Cleaning: Link from FAQ Q3 (regular vs. deep), frequency guide section recommendation, and Related Services
+* Move-In/Out Cleaning: Related Services section
+* Airbnb Cleaning: Related Services section
+* Commercial Cleaning: Related Services section
+* Homepage: Via breadcrumb and logo
+* Service Areas: Link from relevant FAQ answers or body copy mentioning Tampa neighborhoods
+7. Conversion Elements & Developer Notes
+7.1 Mid-Page CTA Banner
+Insert between the Frequency Guide and the Why Recurring section:
+Headline: "Stop Spending Weekends Cleaning – Let Us Handle It"
+Subtext: "Tampa’s trusted recurring house cleaning service. No contracts, no hassle."
+Button: "Start My Cleaning Schedule" → #estimate-form
+7.2 Social Proof Integration
+Display 2–3 customer reviews between the Why Recurring and How It Works sections. Pull reviews that specifically mention recurring or ongoing cleaning experiences. As new Google reviews come in, prioritize those that reference phrases like "every visit," "always," or "weekly/biweekly."
+7.3 Trust Badges Above Estimate Form
+Same four trust badges as the deep cleaning page: 10+ Years, Fully Insured, Eco-Friendly, Satisfaction Guaranteed.
+7.4 Sticky Mobile CTA Bar
+Same implementation as all other pages. Fixed bottom bar on mobile: "Call Now" + "Free Estimate."
+* Create as a WordPress Page with slug: services/regular-house-cleaning-tampa
+* Set parent page to /services/
+* Pre-select "Regular Cleaning" in the form’s Service Needed dropdown via page-specific JavaScript or a hidden field
+* Add the "Preferred Frequency" dropdown field to the form on this page (this field does not appear on other service pages)
+* Use the same visual template as the deep cleaning page for brand consistency across all service pages
+* Set Yoast/Rank Math focus keyword to "house cleaning Tampa"
+
+
+End of Regular House Cleaning Page Developer Guide
+Version 1.0 • March 2026 • All content is original and proprietary

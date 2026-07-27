@@ -1,0 +1,85 @@
+﻿
+DEVELOPER IMPLEMENTATION GUIDE
+
+COOL & COZY AC REPAIR
+Licensed HVAC Contractor  ·  Jacksonville, Florida
+
+TERMS OF SERVICE
+
+URL: coolcozyac.com/terms
+Prepared by: TradeWorks AI  |  Version 1.0  |  May 2026
+
+1. Page Identity
+URL: /terms
+Canonical: https://coolcozyac.com/terms
+Page Type: Legal / Required
+Breadcrumb: Home > Terms of Service
+Robots: index, follow
+Sitemap: Priority 0.3
+
+DEV ACTION: CRITICAL: This guide provides a content framework. The final text MUST be reviewed by a Florida-licensed attorney before publication. TradeWorks AI does not provide legal advice.
+Title: Terms of Service | Cool & Cozy AC Repair Jacksonville FL
+Meta Desc: Terms of service for Cool & Cozy AC Repair’s website and HVAC services in Jacksonville, FL. Service terms, warranties, liability, and dispute resolution.
+
+2. Terms Content Framework
+Same readable format as Privacy Policy: Poppins 15px, 720px, white bg, Evergreen headings. Last Updated date at top.
+
+2.1 Introduction & Acceptance
+By using the Cool & Cozy AC Repair website (coolcozyac.com) or engaging our HVAC services, you agree to these Terms of Service. If you do not agree, please do not use our website or services.
+
+2.2 Services Description
+Cool & Cozy AC Repair LLC provides residential and commercial HVAC services including repair, installation, maintenance, ductwork, indoor air quality, and thermostat installation in Jacksonville, FL and surrounding areas. We are a Florida-licensed contractor (CAC1819948). All services are performed by or under the supervision of licensed technicians.
+
+2.3 Estimates and Pricing
+Written estimates are provided before work begins for all non-emergency services
+Estimates are valid for [PLACEHOLDER: 30/60/90 days — confirm with client]
+Actual cost may differ from estimates if hidden conditions are discovered during work (e.g., concealed damage, code violations). Any additional cost is discussed and approved before proceeding.
+Emergency service pricing is discussed before technician dispatch
+Payment is due upon completion unless financing terms have been arranged
+
+2.4 Warranties
+Cool & Cozy provides a labor warranty on all installation and repair work. [PLACEHOLDER: Confirm warranty duration — typically 1 year labor on repairs, 1–2 years on installations.]
+Manufacturer equipment warranties are separate and subject to the manufacturer’s terms. Cool & Cozy registers manufacturer warranties on behalf of the customer for new installations.
+Warranty claims must be reported within [PLACEHOLDER] days of discovering the issue
+Warranty does not cover damage caused by third-party modification, misuse, power surges, acts of nature, or failure to maintain the system per manufacturer recommendations
+
+2.5 Limitation of Liability
+To the maximum extent permitted by Florida law, Cool & Cozy AC Repair LLC’s total liability for any claim arising from our services shall not exceed the amount paid by the customer for the specific service giving rise to the claim. We are not liable for indirect, incidental, consequential, or punitive damages including lost profits, property damage beyond the service area, or business interruption.
+DEV ACTION: This section requires attorney review for enforceability under Florida law. Standard limitation of liability language may need customization for HVAC-specific scenarios (water damage from condensate drain failure, electrical damage from installation, etc.).
+
+2.6 Cancellation and Rescheduling
+Service appointments may be cancelled or rescheduled with at least [PLACEHOLDER: 24 hours] notice at no charge
+Same-day cancellations may be subject to a trip fee if a technician has already been dispatched
+Customers may decline to proceed with a quoted repair after diagnosis — the diagnostic fee still applies
+
+2.7 Dispute Resolution
+Any disputes arising from these terms or our services shall be governed by Florida law and resolved in the courts of Duval County, Florida. Before initiating formal proceedings, both parties agree to attempt resolution through direct communication. Cool & Cozy’s management can be reached at info@coolcozyac.com or (904) 555-0199.
+DEV ACTION: Attorney should advise whether an arbitration clause is appropriate for this business type and customer base.
+
+2.8 Intellectual Property
+All content on coolcozyac.com — including text, images, design, logos, and code — is the property of Cool & Cozy AC Repair LLC. You may not reproduce, distribute, or create derivative works from our content without written permission.
+
+2.9 Third-Party Links
+Our website may contain links to third-party websites (Google Maps, Thumbtack, review platforms, financing partners). We are not responsible for the content, privacy practices, or terms of third-party sites.
+
+2.10 Changes to Terms
+We may update these Terms of Service at any time. Changes take effect when posted on this page. Continued use of our website or services after changes constitutes acceptance.
+
+2.11 Contact
+Email: info@coolcozyac.com
+Phone: (904) 555-0199
+Address: [PLACEHOLDER], Jacksonville, FL
+
+3. Checklist
+Attorney review completed before publication
+Warranty terms confirmed with client (duration, scope, exclusions)
+Estimate validity period confirmed
+Cancellation policy confirmed
+Dispute resolution clause reviewed by attorney
+Linked from footer on EVERY page
+Last Updated date displayed and accurate
+BreadcrumbList schema validates
+
+— End of Document —
+Prepared by TradeWorks AI  ·  May 2026  ·  v1.0
+

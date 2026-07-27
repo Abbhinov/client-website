@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <title>Lawn Mowing</title>
+  <!-- diamond-cut stripes ground -->
+  <rect x="20" y="148" width="160" height="8" rx="2" fill="#A8D17C"/>
+  <rect x="20" y="158" width="160" height="8" rx="2" fill="#6BAA45"/>
+  <rect x="20" y="168" width="160" height="8" rx="2" fill="#A8D17C"/>
+  <!-- handle -->
+  <path d="M118 60 L150 30 L162 30" stroke="#1A3826" stroke-width="7" stroke-linecap="round" fill="none"/>
+  <rect x="148" y="22" width="22" height="6" rx="2" fill="#1A3826"/>
+  <!-- mower body -->
+  <rect x="44" y="68" width="92" height="14" rx="2" fill="#1A3826"/>
+  <rect x="52" y="78" width="76" height="48" rx="6" fill="#2D5C3A"/>
+  <rect x="60" y="86" width="60" height="18" rx="2" fill="#1A3826"/>
+  <circle cx="74" cy="95" r="3" fill="#6BAA45"/>
+  <circle cx="90" cy="95" r="3" fill="#D4A744"/>
+  <circle cx="106" cy="95" r="3" fill="#6BAA45"/>
+  <!-- wheels -->
+  <circle cx="62" cy="128" r="14" fill="#1A3826"/>
+  <circle cx="118" cy="128" r="14" fill="#1A3826"/>
+  <circle cx="62" cy="128" r="5" fill="#F5F0E1"/>
+  <circle cx="118" cy="128" r="5" fill="#F5F0E1"/>
+</svg>

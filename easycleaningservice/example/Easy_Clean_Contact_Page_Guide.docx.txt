@@ -1,0 +1,370 @@
+﻿PAGE DEVELOPER GUIDE
+Contact Us
+Easy Clean Service
+
+
+easycleaningservice.com/contact/
+Easy Clean Service • (813) 534-9216
+
+
+Complete developer guide including contact form, NAP consistency requirements,
+Google Maps embed, business hours, multi-channel contact options, schema markup,
+conversion optimization, and local SEO requirements.
+Version 1.0 • March 2026
+1. Page Strategy & Purpose
+1.1 Page Purpose
+The Contact page serves three critical functions that affect the entire site’s performance. First, it is the primary conversion endpoint – the destination where every “Get Your Free Estimate” CTA button across the site ultimately sends visitors who are ready to act. Second, it is a foundational local SEO asset – the page where Google validates the business’s NAP (Name, Address, Phone) data, which must match the Google Business Profile and every other directory listing exactly. Third, it is the page that AI answer engines and voice assistants reference when a user asks “how do I contact Easy Clean Service in Tampa” or “what are their hours.”
+Unlike most other pages on the site, the Contact page prioritizes immediate action over content consumption. The design should lead with the phone number, the form, and the WhatsApp link – putting every contact channel within one scroll on mobile and visible without scrolling on desktop.
+1.2 URL & Breadcrumb
+URL: https://easycleaningservice.com/contact/
+Breadcrumb: Home > Contact Us
+1.3 Keyword Targets
+Keyword
+	Type
+	Est. Vol.
+	Diff.
+	Intent
+	Easy Clean Service Tampa contact
+	Branded
+	20
+	Low
+	Navigational
+	Easy Clean Service phone number
+	Branded
+	10
+	Low
+	Navigational
+	cleaning service Tampa free estimate
+	Secondary
+	170
+	Low
+	Transactional
+	house cleaning quote Tampa FL
+	Secondary
+	90
+	Low
+	Transactional
+	book cleaning service Tampa
+	Secondary
+	70
+	Low
+	Transactional
+	
+
+________________
+
+
+2. HTML Head – Meta Tags & Structured Data
+2.1 Title Tag
+
+
+<title>Contact Easy Clean Service | Free Cleaning
+  Estimate in Tampa, FL</title>
+
+
+2.2 Meta Description
+
+
+<meta name="description" content="Contact Easy Clean
+  Service for a free house cleaning estimate in Tampa, FL.
+  Call (813) 534-9216, message us on WhatsApp, or fill out
+  our online form. Se habla español. Mon–Fri 8AM–6PM,
+  Sat 9AM–2PM." />
+
+
+2.3 Canonical & Open Graph
+
+
+<link rel="canonical" href="https://easycleaningservice
+  .com/contact/" />
+<meta property="og:title" content="Contact Easy Clean
+  Service | Tampa FL Cleaning Estimate" />
+<meta property="og:url" content="https://easycleaningservice
+  .com/contact/" />
+
+
+2.4 Schema – ContactPage + LocalBusiness
+This page should include a ContactPage schema type plus a LocalBusiness schema with full NAP data, business hours, and contact points. This is the most complete business data schema on the site.
+
+
+{
+  "@context": "https://schema.org",
+  "@type": "HousekeepingService",
+  "name": "Easy Clean Service",
+  "telephone": "+1-813-534-9216",
+  "url": "https://easycleaningservice.com",
+  "email": "info@easycleaningservice.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Tampa",
+    "addressRegion": "FL",
+    "postalCode": "33601",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 27.9506,
+    "longitude": -82.4572
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday",
+        "Thursday","Friday"],
+      "opens": "08:00", "closes": "18:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Saturday",
+      "opens": "09:00", "closes": "14:00"
+    }
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+1-813-534-9216",
+    "contactType": "customer service",
+    "availableLanguage": ["en", "es"],
+    "areaServed": {
+      "@type": "City", "name": "Tampa" }
+  },
+  "availableLanguage": ["en", "es"],
+  "priceRange": "$$",
+  "image": "https://easycleaningservice.com/images/
+    easy-clean-service-tampa.jpg",
+  "sameAs": [
+    "https://www.facebook.com/easycleanservicetampa",
+    "https://www.instagram.com/easycleanservicetampa"
+  ]
+}
+
+
+WARNING: The NAP data in this schema MUST match the Google Business Profile exactly – same business name spelling, same phone number format, same address. Any inconsistency weakens local SEO. Confirm with Kessia before publishing.
+DEV ACTION: Also include BreadcrumbList schema: Home (1) → Contact Us (2). Update the email address and social URLs once confirmed.
+________________
+
+
+3. Page Layout, Headings & Body Copy
+3.1 Hero Section
+  SECTION ID: #contact-hero  
+H1 Heading
+Contact Easy Clean Service – Free Cleaning Estimate in Tampa, FL
+Hero Subheading
+Ready for a cleaner home? We make it easy to get started. Call us, message us on WhatsApp, or fill out the form below – we respond to every inquiry within a few hours during business hours. Whether you need a one-time deep cleaning, a recurring weekly visit, or help deciding which service is right for your home, Kessia and the Easy Clean team are here to help. Se habla español.
+Hero Layout
+* Phone: (813) 534-9216 → tel:+18135349216 | Icon: phone | Label: "Call Us"
+* WhatsApp: wa.me/18135349216 → Opens WhatsApp chat | Icon: WhatsApp logo | Label: "Message on WhatsApp"
+* Email: info@easycleaningservice.com → mailto: link | Icon: envelope | Label: "Email Us"
+NOTE: The phone number must be tappable (tel: link) on every instance on this page. WhatsApp should pre-fill a greeting message: "Hi Easy Clean! I would like a free cleaning estimate."
+3.2 Estimate Request Form
+  SECTION ID: #contact-form  
+H2 Heading
+Request Your Free Cleaning Estimate
+Form Intro Copy
+Tell us about your home and what you need. We will get back to you within a few hours with a clear, no-obligation estimate. If you need an immediate quote, call (813) 534-9216 – you will reach Kessia directly.
+Form Fields
+Field
+	Type
+	Required
+	Notes
+	Full Name
+	Text
+	Yes
+	
+
+	Phone Number
+	Tel
+	Yes
+	type="tel" for mobile numeric keypad
+	Email Address
+	Email
+	Yes
+	
+
+	Service Needed
+	Dropdown
+	Yes
+	Options: Not Sure, Regular Cleaning, Deep Cleaning, Move-In/Out, Airbnb Turnover, Kitchen & Bath, Commercial, Other
+	Neighborhood
+	Dropdown
+	No
+	Options: South Tampa, Westchase, Carrollwood, Brandon, Riverview, Lutz, Wesley Chapel, Town N Country, Temple Terrace, New Tampa, Seminole Heights, Hyde Park, Other / Not Listed
+	Home Size
+	Dropdown
+	No
+	Options: Studio/1BR, 2BR, 3BR, 4BR, 5BR+, Small Office, Large Office/Retail
+	Preferred Date
+	Date picker
+	No
+	Min date = tomorrow
+	Preferred Language
+	Radio
+	No
+	Options: English, Español. Default: English. Unique to this page.
+	Message / Notes
+	Textarea
+	No
+	Placeholder: "Tell us about your home and any special requests..."
+	
+
+Submit button: "Get My Free Estimate"
+Below submit: "We respond within a few hours during business hours. For immediate assistance, call (813) 534-9216."
+1. Submit via AJAX (no page reload). Show inline success message with confirmation.
+2. Send notification email to Kessia with all form data immediately upon submission.
+3. Send confirmation email to the customer acknowledging receipt and stating expected response time.
+4. If "Español" is selected as preferred language, send the customer confirmation email in Spanish.
+5. Track form submissions as conversions in GA4 and Google Tag Manager.
+6. Include honeypot field (hidden CSS field) for spam prevention. Do not use CAPTCHA – it adds friction.
+7. Include a hidden UTM parameter field that captures the referral source for lead attribution.
+8. Store submissions in WordPress database or CRM for follow-up tracking.
+NOTE: This is the most comprehensive form on the site. It includes the Neighborhood dropdown (from /service-areas/), the Service Needed dropdown (from /services/), and a unique Preferred Language radio button. This form serves as the master template – the forms on service pages and neighborhood pages are simplified versions of this one.
+________________
+
+
+3.3 Business Information
+  SECTION ID: #business-info  
+H2 Heading
+How to Reach Easy Clean Service
+WARNING: The business name, address, and phone number (NAP) on this page MUST be an exact character-for-character match with the Google Business Profile listing and every other online directory citation. Inconsistencies – even small ones like “St.” vs. “Street” or “(813) 534-9216” vs. “813-534-9216” – weaken local SEO. Choose one format and use it everywhere.
+Contact Details – Display in a styled card or sidebar
+Field
+	Value
+	Business Name
+	Easy Clean Service
+	Phone
+	(813) 534-9216 → click-to-call tel:+18135349216
+	WhatsApp
+	(813) 534-9216 → wa.me/18135349216
+	Email
+	info@easycleaningservice.com → mailto: link
+	Service Area
+	Tampa, FL and surrounding communities (Hillsborough & Pasco Counties)
+	Languages
+	English and Spanish (Se habla español)
+	
+
+DEV ACTION: Confirm the exact email address and physical address (if applicable) with Kessia before publishing. If Easy Clean operates from a home address and Kessia prefers not to publish it, list only the city and state (“Tampa, FL”) and use a service-area business model in the Google Business Profile.
+Business Hours
+Day
+	Hours
+	Monday – Friday
+	8:00 AM – 6:00 PM
+	Saturday
+	9:00 AM – 2:00 PM
+	Sunday
+	Closed
+	
+
+We respond to form submissions and WhatsApp messages during business hours. For urgent requests outside of hours, leave a voicemail and we will return your call first thing the next business day.
+DEV ACTION: Confirm business hours with Kessia. These must match the hours in the Google Business Profile and the LocalBusiness schema exactly.
+3.4 Service Area Map
+  SECTION ID: #contact-map  
+H2 Heading
+Our Tampa Service Area
+We serve homes and businesses across the greater Tampa Bay area. The map below shows our coverage across Hillsborough and Pasco Counties.
+DEV ACTION: Embed a Google Map centered on Tampa (27.9506, -82.4572) at zoom level 10, showing the general service area. If the /service-areas/ page map with 12 pins is already built, reuse the same map embed here for consistency. Lazy-load the map to avoid page speed impact.
+Below map CTA: "View all neighborhoods we serve" → /service-areas/
+3.5 Contact-Specific FAQ
+  SECTION ID: #contact-faq  
+H2 Heading
+Common Questions About Getting Started
+Q1: How quickly will you respond to my estimate request?
+During business hours (Monday–Friday 8AM–6PM, Saturday 9AM–2PM), we respond to form submissions and WhatsApp messages within a few hours. Phone calls are answered live whenever possible. If you reach voicemail, we return calls the same business day.
+Q2: Is the estimate really free?
+Yes, completely free with no obligation. We will ask about your home’s size, its current condition, and what service you need, then provide a clear quote with no hidden fees or surprise charges. You are under no pressure to book.
+Q3: Can I get an estimate in Spanish?
+Absolutely. Our owner Kessia speaks fluent Spanish. Select “Español” as your preferred language on the form, or simply call (813) 534-9216 and ask for your estimate in Spanish. We will communicate in whichever language is most comfortable for you throughout the entire process.
+Q4: What information do I need to provide for an accurate estimate?
+The more detail, the better, but at minimum we need your home’s size (number of bedrooms and bathrooms), your zip code or neighborhood, and what type of cleaning you need. Helpful extras include how long it has been since your last professional cleaning, whether you have pets, and any specialty surfaces (marble, terrazzo, hardwood) that require specific products.
+Q5: Do I need to be home for the estimate?
+For most standard estimates, we can provide an accurate quote based on the information you share by phone or form. We do not require an in-home walkthrough before booking. Once we arrive for the first cleaning, we will verify the scope and adjust if needed – always communicating any changes to you before proceeding.
+DEV ACTION: Include FAQPage schema for these 5 questions in a separate JSON-LD block.
+3.6 Trust Reinforcement
+  SECTION ID: #trust-section  
+* 10+ Years Serving Tampa Homes
+* Fully Insured & Background-Checked Team
+* Eco-Friendly & Pet-Safe Products
+* 100% Satisfaction Guarantee
+* Se Habla Español
+* No Contracts – Cancel Anytime
+These trust signals are especially important on the Contact page because this is where the visitor commits to sharing their personal information and inviting a service provider into their home.
+________________
+
+
+4. Image Strategy & Alt Text
+#
+	Placement
+	Subject
+	Alt Text
+	Loading
+	1
+	Hero / sidebar
+	Kessia smiling, on the phone or greeting a client – warm and approachable
+	"Contact Kessia Marquez at Easy Clean Service Tampa FL"
+	Preload
+	2
+	Form area
+	Clean Tampa home interior – the result the visitor is requesting
+	"Clean Tampa home by Easy Clean Service"
+	Lazy
+	3
+	Map section
+	Google Maps embed of Tampa service area
+	"Easy Clean Service area map Tampa FL"
+	Lazy (map deferred)
+	4
+	Trust section
+	Team arriving at a Tampa home with supplies
+	"Easy Clean Service team arriving at Tampa FL home"
+	Lazy
+	
+
+5. On-Page SEO, Internal Linking & Conversion
+5.1 NAP Consistency Requirements
+* Business name: "Easy Clean Service" – use this exact format everywhere. Not "Easy Clean," not "Easy Clean Services" (plural), not "Easy Cleaning Service."
+* Phone: (813) 534-9216 – use this exact format with parentheses. Match in schema, GBP, Yelp, Facebook, and all directory listings.
+* Address: Match whatever is used in the Google Business Profile. If GBP uses a service-area model without a street address, do NOT publish a street address on the website.
+* Hours: Must match GBP hours exactly. If Kessia changes hours seasonally, update both simultaneously.
+WARNING: NAP inconsistencies across the web are one of the top reasons local businesses fail to rank in Google’s Local 3-Pack. Every directory listing, social profile, and on-site mention of the business name, phone, and address must be identical.
+5.2 Internal Linking Strategy
+* Every CTA button on the site: "Get Your Free Estimate" buttons across all 20+ pages link to either this page or to on-page #estimate-form anchors. The Contact page is the universal conversion endpoint.
+* Homepage: "Contact" nav link
+* Footer: "Contact" quick link on every page
+* About Us: "Get Your Free Estimate" CTA in Section 3.7
+* /services/: "Not sure which service?" link from the form intro or a sidebar
+* /service-areas/: "View all neighborhoods we serve" below the map
+* /about/: "Learn more about our team" contextual link from the trust section
+* Homepage: Via breadcrumb and logo
+1. Title tag unique with brand name + "Free Estimate" + geo-modifier
+2. Meta description includes phone number, hours, bilingual capability
+3. Canonical self-referencing to /contact/
+4. H1 unique, contains brand + "Free Cleaning Estimate" + "Tampa FL"
+5. NAP data matches Google Business Profile character-for-character
+6. Business hours match GBP and schema exactly
+7. Phone number wrapped in tel: link on every instance
+8. WhatsApp link uses wa.me format with pre-filled message
+9. Email uses mailto: link
+10. LocalBusiness schema includes contactPoint with availableLanguage
+11. FAQPage schema for 5 contact-specific questions
+12. BreadcrumbList schema validated
+13. Google Map embed lazy-loaded
+14. Form submits via AJAX with inline success message
+15. Form submissions tracked as conversions in GA4/GTM
+16. Page loads under 3 seconds on mobile
+* Sticky mobile CTA bar: Same as all pages – "Call Now" + "Free Estimate."
+* WhatsApp floating button: Same as all pages. On the Contact page, position it adjacent to but not overlapping the form.
+* Form above the fold: On desktop, the form should be visible without scrolling. Use a two-column layout: contact details + map on the left, form on the right. On mobile, stack with form first.
+* Phone number prominence: The phone number should appear at least 3 times on the page: in the hero contact channels, in the business info card, and in the form intro copy. Each instance must be a tel: link.
+* Confirmation message: After form submission, display: "Thank you, [Name]! We received your request and will respond within a few hours. If you need immediate assistance, call (813) 534-9216." Include a link back to the homepage or services page.
+* Preferred Language field: This is the only form on the site with a language preference field. It signals respect for Tampa’s Spanish-speaking community and differentiates Easy Clean from every competitor whose forms are English-only.
+* Create as WordPress Page: slug "contact"
+* No parent page – top-level page
+* Yoast/Rank Math focus keyword: "contact Easy Clean Service Tampa"
+* Configure form plugin (WPForms, Gravity Forms, or Contact Form 7) with all fields specified
+* Set up email notifications to Kessia’s email for every submission
+* Set up auto-reply confirmation email (English and Spanish versions)
+* Connect form submissions to GA4 via GTM event tracking
+* After GBP is created, link GBP “Website” field to homepage and “Appointment” link to /contact/
+
+
+End of Contact Us Page Developer Guide
+Version 1.0 • March 2026 • All content is original and proprietary

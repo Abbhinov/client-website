@@ -1,0 +1,343 @@
+
+SPIN IT UP LAUNDRY
+CENTS APP GUIDEDEVELOPER GUIDE
+Resource Article — Section-by-Section Implementation Specification
+
+URL: spinituplaundry.net/resources/how-to-use-cents-app/
+Prepared by: TradeWorks AI  |  Version 1.0  |  May 2026
+Classification: Client Confidential
+
+Table of Contents
+1  How to Use This Guide
+2  Page Identity & Architecture
+3  Keyword Strategy
+4  Complete <head> Section
+5  Section 1: Header
+6  Section 2: Article Header
+7  Section 3: AEO Introduction
+8  Section 4: What Is the Cents App
+9  Section 5: Download & Setup
+10  Section 6: How to Schedule Your First Pickup
+11  Section 7: Tracking Your Order
+12  Section 8: Tips & Troubleshooting
+13  Section 9: Related Services
+14  Section 10: FAQ Section
+15  Section 11: CTA Block
+16  Section 12: Footer & Sticky CTA
+17  Reference: GA4, Checklist
+
+1. How to Use This Guide
+This guide covers the Cents App tutorial article (/resources/how-to-use-cents-app/). This is the first page in the Resources/Blog silo — an educational article that walks customers through downloading, setting up, and ordering their first laundry pickup through the Cents app. It was flagged in the Pickup & Delivery developer guide as a Phase 2 deliverable.
+The article serves dual purposes: it supports the Pickup & Delivery service page by providing detailed how-to content that would be too long for a service page, and it captures informational queries like “how to use Cents app” and “laundry pickup app Chicago.”
+Article tone: educational, step-by-step, friendly. Not a marketing page. Written as if explaining to a customer who has never used an app-based service before.
+
+2. Page Identity & Architecture
+URL Path
+/resources/how-to-use-cents-app/
+Page Type
+Resource Article — Resources/Blog Silo
+Canonical URL
+https://spinituplaundry.net/resources/how-to-use-cents-app/
+Breadcrumb
+Home > Resources > How to Use the Cents App
+Parent Page
+/resources/ (Resources Hub, Phase 3)
+Primary Keyword
+how to use cents app laundry (50–110/mo)
+Secondary Keywords
+cents laundry app, schedule laundry pickup app, laundry delivery app chicago
+Search Intent
+Informational
+Target Word Count
+1,000–1,200 words
+Primary Conversion Goal
+Cents app download or order
+Secondary Goals
+Phone call, Pickup & Delivery page click
+Robots
+index, follow
+Sitemap
+Include — priority 0.6
+Content Update Frequency
+Update when Cents app UI changes
+Article Date
+Published: [DATE] | Updated: [DATE]
+
+3. Keyword Strategy
+Keyword
+Volume
+Placement
+how to use cents app laundry
+50–110
+H1, title, AEO
+cents laundry app
+30–70
+Body, Download section
+schedule laundry pickup app
+50–110
+Step-by-step section
+laundry delivery app chicago
+30–70
+AEO paragraph
+laundry pickup app near me
+110–210
+Served via GBP + this article
+how to order laundry pickup
+50–110
+Step-by-step section
+
+4. Complete <head> Section
+Tag
+Content
+<title>
+How to Use the Cents App for Laundry Pickup | Spin It Up Guide (56 chars)
+<meta description>
+Step-by-step guide to using the Cents app for laundry pickup & delivery with Spin It Up Laundry. Download, set up, order your first pickup in under 2 minutes. (155 chars)
+<meta robots>
+index, follow
+<link canonical>
+https://spinituplaundry.net/resources/how-to-use-cents-app/
+
+JSON-LD: Article schema (headline, author: Spin It Up Laundry, publisher, datePublished, dateModified) + HowTo schema (for the step-by-step ordering section) + BreadcrumbList.
+
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "How to Use the Cents App for Laundry Pickup & Delivery",
+  "description": "Step-by-step guide to downloading, setting up, and ordering your first laundry pickup through the Cents app with Spin It Up Laundry.",
+  "url": "https://spinituplaundry.net/resources/how-to-use-cents-app/",
+  "datePublished": "[DATE]",
+  "dateModified": "[DATE]",
+  "author": { "@type": "Organization", "name": "Spin It Up Laundry" },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Spin It Up Laundry",
+    "url": "https://spinituplaundry.net/"
+  }
+}
+
+DEV ACTION:  Replace [DATE] with publication date. Also implement HowTo schema for the 6-step ordering process (Section 10) and BreadcrumbList. Validate all three schemas.
+
+5. Section 1: Header
+Global header. Solid white. “Resources” nav item active (or no item active if Resources isn’t in primary nav yet — Phase 3 will add it).
+
+6. Section 2: Article Header
+Article pages use a different header pattern than service pages — no full-width hero banner. Instead: breadcrumb + H1 + article meta on a white background.
+Breadcrumb: Home > Resources > How to Use the Cents App
+
+H1: "How to Use the Cents App for Laundry Pickup & Delivery" — 10 words. Font: 36px/800 (desktop), 28px (mobile). Color: Dark Slate. Left-aligned.
+
+Article Meta: "By Spin It Up Laundry • Published [DATE] • 5 min read" — 15px/400 Caption Gray. Below H1.
+Section padding: 40px 0. Max content width: 800px. Left-aligned (article layout, not centered like service pages).
+
+7. Section 3: AEO Introduction
+NEW:  AEO paragraph
+
+"The Cents app is the fastest way to schedule laundry pickup and delivery with Spin It Up Laundry in Chicago. Available free on iOS and Android, the app lets you enter your address, choose a pickup time, add special instructions, and pay securely — all in under two minutes. Once you’ve placed an order, our driver picks up your laundry from your door, we wash, dry, and fold everything at our facility at 3710 N Kimball Ave, and deliver it back clean within 24 hours. This guide walks you through every step, from downloading the app to receiving your first delivery." — 96 words.
+Font: 18px/400 Body Text. Max-width: 800px.
+
+8. Section 4: What Is the Cents App
+H2: "What Is the Cents App?"
+
+"Cents is a mobile app used by laundromats across the country to offer pickup and delivery services. Think of it like ordering food delivery, but for your laundry. Spin It Up Laundry uses Cents as our ordering platform — when you open the app and search for laundromats near you, you’ll find us listed as a provider in the Avondale area. The app handles scheduling, payment, and order tracking. You can also place orders through the Cents website on any browser without downloading the app." — 80 words.
+Below text: App Store + Google Play badges. "Download free on iOS or Android — or order at [CENTS_WEB_URL] from any browser."
+
+9. Section 5: Download & Setup
+H2: "Step 1: Download the App & Create Your Account"
+
+Sub-Step
+Instruction
+1a
+Open the App Store (iPhone) or Google Play Store (Android) on your phone.
+1b
+Search for "Cents" — the app icon is a blue circle with a white “C”.
+1c
+Tap "Install" or "Get" to download the app. It’s free.
+1d
+Open the app and tap "Create Account."
+1e
+Enter your name, email address, and create a password.
+1f
+Enter your phone number for order notifications.
+1g
+Add a payment method (credit or debit card). This is required to place orders.
+"The entire setup takes less than 2 minutes. You’ll only need to do this once — your account saves your information for all future orders."
+NOTE:  Include a screenshot or phone mockup of each key screen if available from the client. Placeholder: [APP SCREENSHOT: Account creation screen]. Replace with real screenshots when the client provides them.
+
+10. Section 6: How to Schedule Your First Pickup
+H2: "Step 2: Schedule Your First Pickup"
+This is the HowTo schema section. Each step maps to a HowTo step in the JSON-LD.
+
+Step
+Title
+Instruction
+1
+Enter Your Address
+Open the Cents app and enter your pickup address. The app will confirm whether you’re in Spin It Up’s delivery zone (Avondale, Irving Park, Logan Square, Hermosa, Albany Park).
+2
+Choose a Pickup Window
+Select a date and time window for pickup. We offer windows throughout the day, seven days a week. Pick the time that works best for your schedule.
+3
+Add Special Instructions
+Note any preferences: stain locations, fabric care requests, detergent preferences (fragrance-free, hypoallergenic), or sorting instructions. This step is optional but helps us give you the best results.
+4
+Review Your Order
+The app shows your estimated price based on the per-pound rate ($1.75/lb standard, $2.25/lb express) plus the $5.00 pickup fee. Confirm everything looks right.
+5
+Place Your Order
+Tap "Confirm Order." Your payment method is charged after your laundry is weighed at our facility — not at the time of ordering. The app estimate is based on typical load weight.
+6
+Leave Your Bag Out
+Place your laundry bag at your door, in your building lobby, or at the designated pickup spot before your window starts. You don’t need to be home — the driver will collect it. You’ll receive a notification when pickup is complete.
+"That’s it. Your laundry is now in our hands. We’ll wash, dry, and fold everything and deliver it back within 24 hours (or same day for express orders placed before 10 AM)."
+
+11. Section 7: Tracking Your Order
+H2: "Step 3: Track Your Order & Receive Delivery"
+
+"After your laundry is picked up, you can track the order status in the Cents app:"
+Status
+What It Means
+Pickup Confirmed
+Your driver has collected your laundry bag.
+In Progress
+Your laundry is being washed, dried, and folded at our facility.
+Ready for Delivery
+Your clean laundry is packaged and waiting for the next delivery route.
+Out for Delivery
+Your driver is on the way to your address.
+Delivered
+Your clean laundry has been left at your door.
+"You’ll receive push notifications at each stage. For future orders, the app saves your address, preferences, and payment method — reordering takes a single tap."
+
+12. Section 8: Tips & Troubleshooting
+H2: "Tips for the Best Experience"
+
+Tip
+Detail
+Use a sturdy bag
+A drawstring laundry bag or large garbage bag works well. Make sure it’s sealed so nothing falls out during pickup.
+Note stain locations
+If you have items with stains, mention them in the special instructions. We treat all visible stains, but a heads-up helps us catch everything.
+Set up recurring pickups
+If you order weekly, use the app’s recurring pickup feature to schedule automatically. One less thing to remember.
+Check your delivery area
+Albany Park is our extended zone. If you’re at the edge of our area, the app will let you know at checkout.
+Contact us if anything’s off
+If your order has any issues, call (773) 654-1275 or message us through the app. We’ll make it right.
+Troubleshooting
+Issue
+Solution
+App says my address isn’t in the delivery zone
+Try the exact address format (include apartment number). If it still doesn’t work, call (773) 654-1275 — we may be able to arrange delivery.
+Payment method declined
+Verify your card details. The app accepts Visa, Mastercard, Amex, and Discover. Prepaid cards may not work.
+I missed the pickup window
+Reschedule through the app for the next available window. No cancellation fee.
+I need to cancel my order
+Cancel through the app before the driver departs. No charge if cancelled before pickup.
+
+13. Section 9: Related Services
+Cross-links below the article body. Same compact card format.
+Card
+Title
+One-Liner
+CTA
+Link
+1
+Pickup & Delivery
+Full details on our door-to-door service, pricing, and delivery areas.
+View Service →
+/services/pickup-delivery/
+2
+Pricing
+Complete pricing for pickup & delivery, wash & fold, and self-service.
+View Pricing →
+/pricing/
+3
+Service Areas
+See which neighborhoods we deliver to.
+View Areas →
+/areas/
+Background: Ice Blue.
+
+14. Section 10: FAQ Section
+H2: "Cents App FAQ"
+
+#
+Question
+Answer
+1
+Is the Cents app free?
+Yes. The Cents app is free to download and free to create an account. You only pay when you place a laundry order.
+2
+Can I order without downloading the app?
+Yes. You can place orders through the Cents website on any browser. Go to [CENTS_WEB_URL] and follow the same steps. The website works on desktop and mobile.
+3
+How is the price calculated?
+Your order is priced by weight. Standard pickup & delivery is $1.75 per pound with a $5.00 pickup fee. Your laundry is weighed at our facility after pickup, and the final charge is applied to your payment method at that time.
+4
+What if I want to switch to drop-off instead?
+You can cancel your pickup order through the app (before the driver departs) and visit our facility at 3710 N Kimball Ave for drop-off wash-and-fold at $1.50 per pound instead.
+DEV ACTION:  Implement FAQPage schema. 4 Q&A pairs. Validate.
+Same accordion spec. Background: White.
+
+15. Section 11: CTA Block
+H2: "Ready to Try It?" — White. Centered. Font: 36px/700.
+Subtitle: "Download the Cents app and schedule your first pickup in under 2 minutes."
+
+Button
+Text
+Link
+Style
+1
+Schedule Your First Pickup
+Cents app URL
+CTA Orange (large)
+2
+Call (773) 654-1275
+tel:+17736541275
+White outline
+Below: App Store + Google Play badges (small). Background: Spin Blue gradient.
+
+16. Section 12: Footer & Sticky CTA
+Global footer. Sticky CTA: default — "Call Now" + "Schedule Pickup."
+
+17. Reference: GA4, Checklist
+GA4 Events
+Event
+Trigger
+Parameters
+schedule_pickup
+Click Schedule Pickup CTA
+page_section, source: cents_guide
+app_download_click
+Click App Store or Google Play badge
+platform (ios/android)
+phone_click
+Click tel: link
+phone_number, page_section
+faq_expand
+Expand FAQ accordion
+question_text
+related_article_click
+Click related service card
+service_name, destination_url
+article_scroll_depth
+Scroll 25/50/75/100%
+depth_percent
+Checklist
+HTML validates; Article + HowTo + BreadcrumbList + FAQPage schemas validate
+[DATE] placeholders replaced with publication date
+[CENTS_WEB_URL] replaced with actual URL
+App Store and Google Play links confirmed with client
+Mobile PageSpeed >90, Desktop >95
+All tel: links functional
+Article schema has correct headline, dates, author, publisher
+HowTo schema maps to the 6 ordering steps exactly
+Internal links: /services/pickup-delivery/, /pricing/, /areas/
+Reading time estimate correct (~5 min for 1,000–1,200 words)
+XML sitemap includes at priority 0.6
+
+
+End of Document
+TradeWorks AI — Spin It Up Laundry Cents App Guide Developer Guide v1.0

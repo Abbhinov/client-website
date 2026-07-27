@@ -1,0 +1,102 @@
+﻿
+
+ 
+
+ACCESSIBILITY PAGE GUIDE
+
+Accessibility
+
+
+ 
+
+Legal / Utility Page Specifications
+
+Clean Slate Pressure Washing
+
+A Fresh Start for Every Surface
+
+Brandon, Florida  |  Hillsborough County
+
+cleanslatepw.com
+
+Prepared by TradeWorks AI
+
+Version 1.0  |  April 2026
+
+Client Confidential
+
+
+
+
+
+
+
+
+Section 1: Accessibility Statement Page Guide
+
+URL: /accessibility/. Linked from footer on every page. Documents the company&apos;s commitment to WCAG 2.1 AA compliance and provides a contact method for accessibility concerns.
+
+
+
+Section 2: Page Specifications
+
+Attribute
+
+Value
+
+URL Path
+
+/accessibility/
+
+Canonical URL
+
+https://cleanslatepw.com/accessibility/
+
+&lt;title&gt;
+
+Accessibility Statement | Clean Slate Pressure Washing
+
+&lt;meta description&gt;
+
+Clean Slate Pressure Washing is committed to digital accessibility. Our website targets WCAG 2.1 Level AA compliance. Contact us with accessibility concerns.
+
+Robots
+
+index, follow
+
+
+
+Section 3: Required Content Sections
+
+
+Commitment Statement: Clean Slate Pressure Washing is committed to ensuring digital accessibility for people with disabilities. We are continually improving the user experience for everyone and applying the relevant accessibility standards.
+
+
+Conformance Target: This website targets conformance with the Web Content Accessibility Guidelines (WCAG) 2.1 at Level AA.
+
+
+Measures Taken: Semantic HTML structure, ARIA landmarks and labels, keyboard navigation support, color contrast ratios meeting or exceeding 4.5:1 for text, alt text on all meaningful images, skip-to-content navigation link, focus indicators on all interactive elements, and form labels associated with inputs.
+
+
+Known Limitations: Third-party content (Google Maps embeds, review widgets) may not fully meet WCAG 2.1 AA standards. We provide text alternatives where possible.
+
+
+Feedback &amp; Contact: If you encounter an accessibility barrier on this website, please contact us: info@cleanslatepw.com or (813) 555-0283. We will make reasonable efforts to provide the information or service you need through an alternative accessible method.
+
+
+Assessment: This website was assessed using automated tools (axe DevTools, WAVE) and manual keyboard/screen reader testing.
+
+
+Last Reviewed: Display the date of the most recent accessibility review.
+
+
+Section 4: Design
+
+Same single-column layout. Clean, readable, no images. The accessibility statement page itself must be fully accessible — it is the first page a screen reader user will check.
+
+
+
+— End of Accessibility Statement Guide —
+
+
+

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <title>Lawn Health Programs</title>
+  <!-- shield -->
+  <path d="M100 22 L160 42 L160 110 Q160 150 100 178 Q40 150 40 110 L40 42 Z" fill="#2D5C3A" stroke="#1A3826" stroke-width="3"/>
+  <!-- inner border accent -->
+  <path d="M100 32 L150 49 L150 108 Q150 142 100 167 Q50 142 50 108 L50 49 Z" fill="none" stroke="#D4A744" stroke-width="1.5" opacity="0.6"/>
+  <!-- grass blades -->
+  <path d="M100 138 Q100 100 90 70 Q100 56 110 70 Q100 100 100 138 Z" fill="#A8D17C"/>
+  <path d="M78 140 Q78 108 68 88 Q80 80 90 100 Q82 120 78 140 Z" fill="#6BAA45"/>
+  <path d="M122 140 Q122 108 132 88 Q120 80 110 100 Q118 120 122 140 Z" fill="#6BAA45"/>
+  <path d="M62 142 Q62 120 55 105 Q66 100 74 116 Q66 130 62 142 Z" fill="#7BB85A"/>
+  <path d="M138 142 Q138 120 145 105 Q134 100 126 116 Q134 130 138 142 Z" fill="#7BB85A"/>
+</svg>

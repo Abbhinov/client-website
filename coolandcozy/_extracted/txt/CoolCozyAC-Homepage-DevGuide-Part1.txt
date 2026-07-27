@@ -1,0 +1,798 @@
+﻿
+DEVELOPER IMPLEMENTATION GUIDE
+
+COOL & COZY AC REPAIR
+Licensed HVAC Contractor  ·  Jacksonville, Florida
+
+HOMEPAGE
+Part 1 of 2
+Page Identity Through Services Grid
+
+URL: coolcozyac.com/
+Prepared by: TradeWorks AI  |  Version 1.0  |  May 2026
+Classification: Client Confidential
+
+Table of Contents
+
+1.  How to Use This Guide
+2.  Page Identity & Architecture
+3.  Keyword Strategy & Content Map
+4.  Complete <head> Section
+4.1  Meta Tags
+4.2  Open Graph & Social Meta
+4.3  JSON-LD Structured Data
+5.  Section-by-Section Build (Part 1)
+5.1  Emergency / Seasonal Banner
+5.2  Site Header & Navigation
+5.3  Hero Section
+5.4  Trust Bar / Credentials Strip
+5.5  AEO Introduction Block
+5.6  Services Overview Grid
+  (Part 2 continues: Property Management, Why Choose Us, Testimonials, Service Areas, FAQ, CTA, Footer)
+
+1. How to Use This Guide
+1.1 Relationship to Strategy Document
+This developer implementation guide is one of approximately 40 page-level guides that collectively define the complete coolcozyac.com website. It implements the brand system, design tokens, content standards, and architectural decisions established in the Cool & Cozy AC Repair Website Strategy & Architecture document (v1.0, May 2026). That strategy document is the canonical reference for site-wide patterns.
+This guide covers the Homepage (/) — the single most important page on the site. The homepage serves four simultaneous roles: primary landing page for brand searches and Map Pack clicks, referral validation endpoint for word-of-mouth leads, trust gateway for property managers evaluating a new contractor, and the conversion funnel that drives phone calls and form submissions. Every design decision, content block, and technical specification in this guide traces directly to one of these roles.
+1.2 Design Philosophy: Jacksonville Coastal
+The Cool & Cozy visual identity draws from Jacksonville’s coastal subtropical character — evergreen canopies, warm sand, sea-misted horizons, and sunset coral. This is intentionally distinct from the corporate navy-and-orange palette common in the HVAC industry. The brand says “comfortable, approachable, trustworthy” before the visitor reads a single word. Rounded corners, warm backgrounds, and breathing whitespace reinforce the “cozy” in the brand name. Professional credibility comes through content density and verifiable claims, not through dark corporate aesthetics.
+The dual audience — homeowners seeking comfort and property managers seeking reliability — is served by a design that feels warm to residential visitors and organized enough to satisfy commercial evaluators. The property management section of the homepage uses a slightly more structured layout with metrics and proof points that speak directly to that audience.
+1.3 Content Authoring Rules
+All content is written fresh and original. No content from competitors, directory listings, or the audit documents.
+Content targets 8th–10th grade reading level for residential sections; professional-but-clear for property management sections.
+Every claim is factually verifiable: CAC1819948 license, BuildZoom top 13%, 21 permitted projects, incorporated 2018.
+Jacksonville-specific references: St. Johns River humidity, coastal salt air corrosion, Florida Building Code, JEA utility context, neighborhood names.
+AEO opening paragraph within first 100–150 words of visible body content answers: “Who provides AC repair in Jacksonville, FL?”
+Bilingual indicator (“Se habla español”) appears in trust bar and footer; full Spanish content lives on /es.
+1.4 Label Legend
+Property
+Specification
+NEW
+Content or section being created for the first time
+DEV ACTION
+Requires developer implementation, configuration, or technical decision
+NOTE
+Contextual guidance for the developer — not visible to end users
+PLACEHOLDER
+Requires client-supplied content (photo, phone number, etc.) before launch
+
+2. Page Identity & Architecture
+Property
+Specification
+URL Path
+/
+Canonical URL
+https://coolcozyac.com/
+Page Type
+Homepage (standalone)
+Parent Page
+None (root)
+Breadcrumb
+Not displayed on homepage (BreadcrumbList schema still included for structural signal)
+Silo Placement
+Root — connects to all four silos (Services, Areas, Resources, Trust/Conversion)
+Primary Keyword
+AC repair Jacksonville FL
+Secondary Keywords
+HVAC contractor Jacksonville, air conditioning repair Jacksonville, AC service Jacksonville FL
+Search Intent
+Mixed: navigational (brand searches), transactional (AC repair near me), local (map pack)
+Target Word Count
+1,800–2,200 words (visible body content, excluding navigation and footer)
+Primary Conversion Goal
+Phone call via click-to-call (tel: link)
+Secondary Conversion Goals
+Contact form submission (/contact), property management inquiry, service page navigation
+Robots Directive
+index, follow
+XML Sitemap
+Included, priority 1.0, changefreq weekly
+Content Update Frequency
+Seasonal (update promotions quarterly, testimonials monthly)
+
+2.1 Internal Linking Requirements
+The homepage is the site’s authority hub. It links out to every major silo while receiving backlinks from external sources and directory listings. Minimum internal link targets:
+Links TO service pages: at least 6 (one per primary service in the grid)
+Links TO area pages: at least 4 (via the service areas section)
+Links TO /contact: at least 3 (hero CTA, mid-page CTA, end-of-page CTA)
+Links TO /about: at least 1 (from trust/credentials section)
+Links TO /resources: at least 1 (from the resource preview or footer)
+Links TO /services/commercial-hvac: at least 1 (from property management section)
+Links TO /es: 1 (language toggle in header utility bar)
+2.2 Child Pages Linked From Homepage
+The homepage references but does not replace these pages. Every card, button, and contextual link in the homepage content drives visitors deeper into the appropriate silo:
+/services (hub) and all service children: /services/ac-repair, /services/ac-installation, /services/ac-maintenance, /services/ductwork, /services/emergency-ac-repair, /services/commercial-hvac, /services/thermostat-installation, /services/indoor-air-quality
+/service-areas (hub) and featured neighborhoods: /service-areas/southside, /service-areas/mandarin, /service-areas/arlington, /service-areas/riverside-avondale
+/about, /contact, /reviews, /financing, /resources, /es
+
+3. Keyword Strategy & Content Map
+3.1 Primary Keyword
+Property
+Specification
+Primary Keyword
+AC repair Jacksonville FL
+Estimated Monthly Volume
+1,600–2,400
+Search Intent
+Transactional / Local
+Placement
+H1, title tag, meta description, AEO opening paragraph, first H2, alt text on hero image
+
+3.2 Full Keyword Cluster
+Keyword
+Est. Vol.
+Intent
+Homepage Placement
+AC repair Jacksonville FL
+1,600–2,400
+Trans.
+H1, title, meta desc, AEO para, hero
+HVAC contractor Jacksonville
+300–500
+Comm.
+About snippet, trust bar, schema
+air conditioning repair Jacksonville
+400–800
+Trans.
+AEO paragraph, services section
+AC service Jacksonville FL
+200–400
+Trans.
+Services grid intro text
+emergency AC repair Jacksonville
+300–600
+Emerg.
+Emergency banner, services card
+AC installation Jacksonville
+400–700
+Comm.
+Services card link
+property management HVAC Jacksonville
+50–150
+Comm.
+Property management section, schema
+bilingual AC repair Jacksonville
+20–50
+Local
+Trust bar, se habla español indicator
+licensed AC contractor Duval County
+50–100
+Trust
+Credentials strip, footer, schema
+affordable AC repair Jacksonville
+100–250
+Trans.
+Hero subheadline, why choose us
+
+3.3 Semantic / LSI Terms
+These terms appear naturally throughout the homepage content to build topical depth. They are not keyword-stuffed — they occur where editorially appropriate:
+Cooling system, HVAC system, central air, air handler, condenser unit, refrigerant, compressor, ductwork, thermostat, indoor air quality
+Jacksonville FL, Duval County, Northeast Florida, Southside, Mandarin, Arlington, Riverside, San Marco, Baymeadows, Jacksonville Beach, Orange Park
+Florida humidity, salt air corrosion, Florida Building Code, JEA, subtropical climate, hurricane season, cooling season
+Licensed, insured, CAC1819948, BuildZoom, family-owned, se habla español, free estimate, same-day, satisfaction guarantee
+Property manager, rental property, multi-unit, maintenance agreement, response time, commercial HVAC
+3.4 Keywords to Avoid
+Competitor brand names in any meta tag or schema markup
+Keyword-stuffed phrases that read unnaturally (“best cheap AC repair Jacksonville FL near me”)
+Unverifiable superlatives (“#1 HVAC company”, “best in Jacksonville”) without citation
+
+4. Complete <head> Section
+4.1 Meta Tags
+Property
+Specification
+Title Tag
+AC Repair Jacksonville FL | Cool & Cozy AC Repair — Licensed HVAC Contractor
+Title Character Count
+73 characters (within 70–75 target for full display)
+Meta Description
+Family-owned, licensed AC repair in Jacksonville, FL. Top 13% FL contractor (CAC1819948). Residential, commercial & property management HVAC. Se habla español. Call (904) 555-0199.
+Meta Desc. Character Count
+155 characters
+Canonical URL
+https://coolcozyac.com/
+Robots
+<meta name="robots" content="index, follow">
+Viewport
+<meta name="viewport" content="width=device-width, initial-scale=1">
+Charset
+<meta charset="UTF-8">
+Language
+<html lang="en">
+4.2 Open Graph & Social Meta
+Property
+Specification
+og:title
+AC Repair Jacksonville FL | Cool & Cozy AC Repair
+og:description
+Family-owned, licensed HVAC contractor serving Jacksonville & Duval County. Residential, commercial, property management. Se habla español.
+og:type
+website
+og:url
+https://coolcozyac.com/
+og:image
+https://coolcozyac.com/images/og-homepage.jpg (1200×630px, <200KB, WebP+JPEG)
+og:locale
+en_US
+og:site_name
+Cool & Cozy AC Repair
+twitter:card
+summary_large_image
+twitter:title
+AC Repair Jacksonville FL | Cool & Cozy AC Repair
+twitter:description
+Licensed HVAC contractor. Residential, commercial & property management. Se habla español. Call (904) 555-0199.
+twitter:image
+Same as og:image
+4.3 JSON-LD Structured Data
+The homepage carries three schema blocks: HVACBusiness (primary), BreadcrumbList, and FAQPage. All three are embedded as <script type="application/ld+json"> in the <head>.
+4.3.1 HVACBusiness Schema
+This is the primary entity schema for the business. Every property below must be included and must match NAP data exactly across all platforms.
+The HVACBusiness type is a specific subtype of HomeAndConstructionBusiness > LocalBusiness. Using it gives Google more precise entity classification than generic LocalBusiness.
+DEV ACTION: Copy this JSON-LD block exactly. Replace [PLACEHOLDER] values with confirmed client data before launch. The telephone value (904) 555-0199 is a placeholder — replace with the confirmed canonical number.
+
+{
+  "@context": "https://schema.org",
+  "@type": "HVACBusiness",
+  "name": "Cool & Cozy AC Repair",
+  "alternateName": "Cool & Cozy AC Repair LLC",
+  "url": "https://coolcozyac.com/",
+  "telephone": "+19045550199",
+  "email": "info@coolcozyac.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "[PLACEHOLDER — confirmed address]",
+    "addressLocality": "Jacksonville",
+    "addressRegion": "FL",
+    "postalCode": "[PLACEHOLDER]",
+    "addressCountry": "US"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": "[PLACEHOLDER]", "longitude": "[PLACEHOLDER]" },
+  "areaServed": [
+    { "@type": "City", "name": "Jacksonville", "containedInPlace": { "@type": "State", "name": "Florida" } },
+    { "@type": "AdministrativeArea", "name": "Duval County" }
+  ],
+  "serviceType": ["AC Repair","AC Installation","AC Maintenance","Emergency AC Repair","Commercial HVAC","Ductwork","Indoor Air Quality","Thermostat Installation"],
+  "description": "Family-owned, licensed HVAC contractor serving Jacksonville and Duval County. Residential, commercial, and property management AC services. Se habla español.",
+  "foundingDate": "2018-10-17",
+  "numberOfEmployees": { "@type": "QuantitativeValue", "value": "[PLACEHOLDER]" },
+  "knowsLanguage": ["en", "es"],
+  "hasCredential": {
+    "@type": "EducationalOccupationalCredential",
+    "credentialCategory": "Certified Air Conditioning Contractor",
+    "recognizedBy": { "@type": "Organization", "name": "Florida DBPR" },
+    "identifier": "CAC1819948"
+  },
+  "image": "https://coolcozyac.com/images/cool-cozy-team.jpg",
+  "logo": "https://coolcozyac.com/images/cool-cozy-logo.png",
+  "priceRange": "$$",
+  "paymentAccepted": ["Cash","Check","Credit Card","Debit Card"],
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "07:00", "closes": "19:00" }
+  ],
+  "sameAs": ["https://www.facebook.com/coolncozyac/","https://www.thumbtack.com/fl/jacksonville/central-air-conditioning-installation/cool-cozy-ac-repair/service/360968336522641413","https://www.buildzoom.com/contractor/cool-cozy-ac-repair-llc","https://nextdoor.com/pages/cool-cozy-ac-repair-jacksonville-fl/"]
+}
+
+4.3.2 BreadcrumbList Schema
+Single-item breadcrumb for the homepage:
+{ "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://coolcozyac.com/" }] }
+
+4.3.3 FAQPage Schema
+The homepage FAQ section (Section 5.9 in Part 2) contains 6 questions. The complete FAQPage JSON-LD is specified in Part 2 alongside the FAQ content.
+4.4 Preload Hints & Font Loading
+<link rel="preload" href="/images/hero-homepage.webp" as="image" type="image/webp"> — Hero image preloaded for LCP
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" as="style"> — Primary font
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+font-display: swap on all @font-face declarations to prevent FOIT
+DEV ACTION: Inline critical CSS (above-fold styles) in the <head> for fastest FCP. Load remaining CSS asynchronously via media="print" onload trick or rel="preload".
+
+4.5 Favicon Set
+32×32 ICO: /favicon.ico
+16×16 ICO: /favicon-16x16.png
+180×180 Apple Touch Icon: /apple-touch-icon.png
+192×192 Android Icon: /android-chrome-192x192.png
+512×512 Android Icon: /android-chrome-512x512.png
+manifest.json with name, short_name, theme_color (#1A5653), background_color (#FFFDF8)
+
+5. Section-by-Section Build (Part 1)
+The homepage contains 12 content blocks rendered in scroll order. Part 1 covers blocks 1–6 (Emergency Banner through Services Grid). Part 2 covers blocks 7–12 (Property Management through Footer). Each block is documented with: Section Overview, Layout Specifications, Content Specifications, Design Specifications, Image Specifications, Internal Links, HTML Code, and Developer Notes.
+
+5.1 Emergency / Seasonal Banner
+Section Overview
+A slim, dismissible banner pinned to the very top of the viewport, above the header. During summer cooling season (May–October), it displays an emergency/urgency message. During winter (November–April), it can switch to a heating or tune-up promotion. The banner creates immediate relevance and positions Cool & Cozy as responsive to Jacksonville’s current weather conditions.
+Conversion Role: Drive emergency calls during peak season; promote seasonal offers during shoulder months
+Visibility: Appears on first page load; dismissible via X button; dismissed state persists for session via sessionStorage
+Layout Specifications
+Property
+Specification
+Position
+Fixed top, above header, full viewport width
+Height
+40px desktop / 48px mobile (single line of text)
+Z-index
+1000 (highest — above everything including header)
+Desktop
+Full-width bar, centered text, X dismiss button far right
+Mobile
+Full-width, text may wrap to 2 lines, 48px minimum height for touch target
+Dismiss behavior
+X button (24×24px touch target padded to 44×44px); sessionStorage flag prevents re-display during session
+Content Specifications
+Summer Version (May–October) [DEFAULT]
+⚡ AC emergency? We’re here. Call now for same-day service: (904) 555-0199
+Word Count: 14 words
+Phone Number: Click-to-call (tel:+19045550199) on the number
+Winter Version (November–April)
+❄️ Pre-season AC tune-up special — Book now before summer hits. Call (904) 555-0199
+Word Count: 14 words
+DEV ACTION: Implement seasonal detection via JavaScript date check or manual toggle. Default to summer version. The banner text swap does NOT require a rebuild — just a content string change.
+Design Specifications
+Property
+Specification
+Background
+#E8603C (Coral) — creates urgency without being alarm-red
+Text
+#FFFFFF, Poppins 14px/600 weight, letter-spacing 0.3px
+Phone number style
+#FFFFFF, underline on hover, bold
+X dismiss button
+#FFFFFF, 14px × icon, opacity 0.8 → 1.0 on hover
+Transition
+Banner slides up 300ms ease-out on dismiss; page content shifts up smoothly
+The coral background distinguishes this from competitors who universally use red or dark blue emergency banners. It’s urgent but on-brand.
+Image Specifications
+No images in the emergency banner. The lightning bolt (⚡) and snowflake (❄️) are Unicode emoji characters, not image files.
+GA4 Event Tracking
+Property
+Specification
+phone_click
+Fires on click/tap of the banner phone number. Parameters: phone_number, page_section: “emergency_banner”
+banner_dismiss
+Fires when user clicks X. Parameters: banner_type: “emergency” or “seasonal”
+HTML Code
+<div id="emergency-banner" role="alert" aria-label="Emergency contact banner">
+  <div class="banner-content">
+    <p>⚡ AC emergency? We’re here. Call now for same-day service:
+      <a href="tel:+19045550199" data-ga-event="phone_click" data-ga-section="emergency_banner">(904) 555-0199</a>
+    </p>
+    <button id="banner-dismiss" aria-label="Dismiss banner">&times;</button>
+  </div>
+</div>
+Developer Notes
+DEV ACTION: Banner dismiss state stored in sessionStorage(“bannerDismissed”). On page load, check this flag before rendering. Do NOT use localStorage — the banner should reappear on new sessions.
+DEV ACTION: Phone number is a placeholder (904) 555-0199. Replace with confirmed canonical number before launch.
+
+5.2 Site Header & Navigation
+Section Overview
+The primary site header contains the logo, navigation links, language toggle, phone number, and primary CTA button. It is sticky on scroll (compact version) and serves as the persistent trust anchor and conversion path throughout the browsing session.
+Conversion Role: Persistent phone number and CTA button visible at all times; language toggle for bilingual visitors
+Layout Specifications
+Desktop Header (Full Height)
+Property
+Specification
+Total Height
+80px (including utility bar)
+Utility Bar
+32px height, #1A5653 (Evergreen) background. Contains: left = “Se habla español” + license badge; right = “ES | EN” language toggle + hours
+Main Nav Bar
+48px height, #FFFDF8 (Cream) background, subtle bottom shadow
+Max Content Width
+1280px centered
+Logo
+Left-aligned, max height 40px, links to /
+Nav Links
+Center-aligned: Home, Services↓, Service Areas↓, About, Resources, Contact
+Right Side
+Phone number (Coral color, click-to-call) + “Free Estimate” CTA button (Coral bg, white text)
+Desktop Header (Scrolled / Compact)
+Property
+Specification
+Trigger
+Activates after scrolling 100px past hero section
+Total Height
+56px (utility bar hidden)
+Background
+#FFFDF8 with box-shadow 0 2px 8px rgba(0,0,0,0.06)
+Behavior
+position: sticky, top: 0, z-index: 200
+Logo
+Smaller (32px height)
+Nav + CTA
+Same items, tighter spacing
+Mobile Header
+Property
+Specification
+Total Height
+64px
+Background
+#FFFDF8 (Cream)
+Left
+Logo (32px height)
+Center
+Phone number with phone icon (visible, not behind menu)
+Right
+Hamburger menu icon (24px, Evergreen color)
+Phone
+Always visible as tap-to-call — never hidden behind the hamburger menu
+Content Specifications
+Utility Bar (Desktop Only)
+Left side: “Se habla español” · FL License CAC1819948 · Serving Jacksonville & Duval County
+Right side: Mon–Sat 7 AM – 7 PM · ES | EN
+Navigation Items
+Label
+URL
+Dropdown Items
+Home
+/
+—
+Services
+/services
+AC Repair, AC Installation, AC Maintenance, Emergency AC Repair, Commercial HVAC, Ductwork, Indoor Air Quality, Thermostat Installation
+Service Areas
+/service-areas
+Southside, Mandarin, Arlington, Riverside-Avondale, San Marco, Baymeadows, Jax Beach, Orange Park, Murray Hill, Springfield
+About
+/about
+—
+Resources
+/resources
+3–4 latest article titles (dynamic)
+Contact
+/contact
+—
+
+Design Specifications
+Property
+Specification
+Utility bar bg
+#1A5653 (Evergreen)
+Utility bar text
+#F0E6D3 (Warm Sand), Poppins 12px/400
+Main nav bg
+#FFFDF8 (Cream)
+Nav link text
+#2C2C2C (Charcoal), Poppins 15px/500
+Nav link hover
+Color: #1A5653, underline-offset 4px, transition 0.2s
+Nav active state
+Color: #1A5653, 2px bottom border Coral
+Dropdown bg
+#FFFDF8, box-shadow 0 8px 24px rgba(0,0,0,0.08), border-radius 12px
+Dropdown item hover
+Background: #EAF3F2 (Sky Mist), border-radius 8px
+Phone number
+#E8603C (Coral), Poppins 16px/600, underline on hover
+CTA button
+Background #E8603C, text #FFFFFF, Poppins 14px/600, border-radius 24px (pill shape), padding 10px 24px
+CTA hover
+Background #D04E2A (darken 10%), box-shadow 0 4px 12px rgba(232,96,60,0.25)
+Hamburger icon
+#1A5653, 3 lines, 24px wide, 2px stroke, 6px spacing
+The pill-shaped CTA button and rounded dropdown corners reinforce the “cozy” brand feel — distinct from the sharp-cornered, corporate style of competitors.
+Mobile Navigation Overlay
+Property
+Specification
+Trigger
+Hamburger icon tap
+Overlay
+Full-screen, #1A5653 (Evergreen) background, z-index 400
+Animation
+Slide in from right, 300ms ease-out
+Close
+X button (top-right, 48×48px touch target), outside tap, device back button
+Nav items
+#FFFDF8 (Cream) text, Poppins 20px/500, 56px row height, full-width tap targets
+Sub-menus
+Accordion expand on tap (Services, Service Areas), Poppins 16px/400, #5CB8B2 (Seafoam) text
+Bottom section
+Phone number (large, tap-to-call) + “Free Estimate” button (full-width, Coral bg)
+Active page
+Coral left-border (3px) on current page item
+DEV ACTION: Implement focus trap inside mobile nav overlay. Escape key closes the menu. Body scroll locked while overlay is open.
+GA4 Event Tracking
+Property
+Specification
+phone_click
+Fires on header phone number click. Parameters: phone_number, page_section: “header”
+cta_click
+Fires on “Free Estimate” button. Parameters: button_text, destination_url: “/contact”, page_section: “header”
+Accessibility
+Skip-to-content link as the first focusable element: <a href="#main-content" class="skip-link">Skip to main content</a>
+ARIA landmarks: <header role="banner">, <nav role="navigation" aria-label="Main navigation">
+Dropdown menus: aria-expanded, aria-haspopup, keyboard navigable (Enter/Space to toggle, Escape to close, Arrow keys between items)
+Language toggle: aria-label="Switch to Spanish" on ES link
+Mobile hamburger: aria-expanded="false/true", aria-controls="mobile-nav", aria-label="Open navigation menu"
+
+5.3 Hero Section
+Section Overview
+The hero is the first major visual element visitors see. It must accomplish three things in under 5 seconds: communicate what Cool & Cozy does, establish credibility, and present a clear action. The hero uses a full-width background image of a real Jacksonville residential setting (not a stock photo of a generic AC unit) with a warm overlay that reinforces the coastal brand palette.
+Conversion Role: Primary: phone call via hero CTA. Secondary: “Get a Free Estimate” button linking to /contact.
+Layout Specifications
+Property
+Specification
+Desktop
+Full-viewport-width container, 600px height, content left-aligned in a max-width 580px text block within the 1280px centered container
+Tablet (768px)
+Full-width, 500px height, text block max-width 480px, same left alignment
+Mobile (< 768px)
+Full-width, auto height (content-driven, minimum 420px), text centered, stacked CTAs full-width
+Background
+Full-bleed image with linear-gradient overlay: rgba(26,86,83,0.75) to rgba(26,86,83,0.55) left-to-right
+Content alignment
+Desktop/tablet: left-aligned text block over the darker overlay region. Mobile: centered text.
+Content Specifications
+Eyebrow Text
+Jacksonville’s Family-Owned HVAC Experts
+Style: Poppins 14px/500, uppercase, letter-spacing 2px, #5CB8B2 (Seafoam)
+H1 Headline
+Keeping Jacksonville Cool, Comfortable & Cozy Since 2018
+Character Count: 52 characters
+Primary Keyword: “Jacksonville” and “Cool” and “Cozy” in the headline naturally. “AC repair” appears in the subheadline below to avoid stuffing the H1.
+Style: Poppins 44px/700 desktop, 32px/700 mobile, color #FFFFFF, line-height 1.15, max-width 560px
+Subheadline
+Licensed AC repair, installation & maintenance for homes, businesses, and property managers across Duval County. Honest pricing. Expert service. Se habla español.
+Word Count: 26 words
+Style: Poppins 18px/400, #F0E6D3 (Warm Sand), line-height 1.6, max-width 520px
+Dual CTA Buttons
+Button
+Action
+Style
+Call (904) 555-0199
+tel:+19045550199
+Coral bg (#E8603C), white text, pill shape (border-radius 28px), 52px height, phone icon left
+Get a Free Estimate
+/contact
+Transparent bg, white border (2px), white text, pill shape, 52px height. Hover: white bg, Evergreen text
+
+Desktop layout: Buttons side-by-side, 16px gap
+Mobile layout: Stacked full-width, 12px gap between
+Trust Indicators Below CTAs
+✓ FL License CAC1819948  ·  ✓ Top 13% FL Contractors  ·  ✓ Free Estimates  ·  ✓ Se habla español
+Style: Poppins 13px/400, #F0E6D3 (Warm Sand), opacity 0.9. Check marks in Seafoam.
+Mobile: Wraps to 2 lines, centered
+Image Specifications
+Property
+Specification
+Image Name
+hero-homepage
+Subject
+Jacksonville residential home exterior on a sunny day — ideally showing a real Cool & Cozy technician or branded truck. If not available at launch, use a well-composed exterior shot of a Florida ranch-style home with AC condenser visible.
+Dimensions
+1920×1080px (source), served responsive via srcset: 1920w, 1280w, 768w, 480w
+Format
+WebP primary with JPEG fallback via <picture> element
+File Size
+< 180KB at 1920w (WebP), < 250KB (JPEG fallback)
+Alt Text
+HVAC technician from Cool & Cozy AC Repair servicing an air conditioning unit at a Jacksonville, Florida home
+Loading
+Preloaded via <link rel="preload" as="image"> — this is the LCP element
+DEV ACTION: PLACEHOLDER: Hero image must be sourced from client (real job site photo preferred) or licensed stock photography of a Florida residential setting. Do NOT use AI-generated imagery without disclosure.
+GA4 Event Tracking
+Property
+Specification
+phone_click
+page_section: “hero”, phone_number: “(904) 555-0199”
+cta_click
+button_text: “Get a Free Estimate”, destination_url: “/contact”, page_section: “hero”
+Developer Notes
+DEV ACTION: The hero image is the LCP element. It MUST be preloaded in <head> and served with explicit width/height to prevent CLS. Do not lazy-load the hero.
+DEV ACTION: Overlay gradient must be CSS (not baked into the image) so the image can be swapped seasonally without recreating the overlay.
+DEV ACTION: On mobile, if the background image is too dark or too busy behind centered text, consider a solid Evergreen background option as fallback for very small viewports (< 380px).
+
+5.4 Trust Bar / Credentials Strip
+Section Overview
+A horizontal strip of trust signals immediately below the hero. This section exists to validate credibility in the first scroll — before the visitor commits to reading further. It displays verifiable credentials, not marketing claims. The visual style is clean and understated: icons + text on a warm background.
+Conversion Role: Reduces bounce by establishing trust in the first 5–10 seconds. Especially important for referral validators and property managers who need rapid credibility confirmation.
+Layout Specifications
+Property
+Specification
+Container
+Full-viewport-width, Warm Sand (#F0E6D3) background
+Content Width
+1280px centered, 4-column grid on desktop
+Desktop
+4 equal columns, each with icon + text, separated by subtle vertical dividers
+Tablet
+2×2 grid, 16px gap
+Mobile
+Horizontal scroll carousel (swipeable) or 2×2 stacked grid
+Padding
+24px vertical (desktop), 20px (mobile)
+Content Specifications
+Four trust signals, each with an SVG icon and 2-line text block:
+#
+Headline
+Subtext
+1
+Florida Licensed
+CAC1819948 — Certified Air Conditioning Contractor
+2
+Top 13% in Florida
+BuildZoom score of 100 out of 191,428 licensed contractors
+3
+21 Permitted Projects
+Documented building permits on file with Duval County
+4
+Se Habla Español
+Bilingual service for Jacksonville’s diverse communities
+
+Design Specifications
+Property
+Specification
+Background
+#F0E6D3 (Warm Sand)
+Icon style
+Custom SVG line icons, 36×36px, stroke: #1A5653 (Evergreen), 2px stroke width
+Headline text
+Poppins 16px/600, #2C2C2C (Charcoal)
+Subtext
+Poppins 13px/400, #7A7A7A (Caption Gray)
+Vertical dividers
+1px solid #DDD8D0, height 40px, desktop only
+Hover
+Subtle scale(1.02) on individual credential item, 0.2s ease
+Image Specifications
+Four SVG icons (inline or sprite). No raster images. Icons should represent: shield/badge (licensed), trophy/ranking (top 13%), document/permit (21 projects), and speech bubble with globe (bilingual).
+DEV ACTION: SVG icons should use currentColor for stroke so they can be themed with CSS. Recommended icon libraries: Lucide, Heroicons, or custom SVGs matching the rounded/organic brand style.
+
+5.5 AEO Introduction Block
+Section Overview
+This is the first block of body text on the page. It serves a critical dual purpose: (1) AEO/GEO — the opening paragraph directly answers the query “Who provides AC repair in Jacksonville, FL?” within 150 words so AI answer engines can extract and cite it, and (2) Conversion — it frames Cool & Cozy’s value proposition for human readers scanning the page.
+Conversion Role: Validates the visitor’s intent. Tells them they’re in the right place. Sets up the services grid below.
+Layout Specifications
+Property
+Specification
+Container
+Full-width, #FFFFFF (White) background
+Content Width
+720px max-width centered (readability optimized)
+Padding
+64px top, 48px bottom (desktop); 32px top/bottom (mobile)
+Text alignment
+Left-aligned (not centered — easier to read at body text length)
+Content Specifications
+H2 Heading
+Trusted AC Repair, Installation & Maintenance in Jacksonville, FL
+Character Count: 60 characters
+Keyword: “AC Repair” + “Installation” + “Maintenance” + “Jacksonville, FL”
+AEO Opening Paragraph (Must Be First 100–150 Words)
+Cool & Cozy AC Repair is a family-owned, Florida-licensed HVAC contractor (CAC1819948) serving homeowners, businesses, and property managers across Jacksonville and Duval County. Founded in 2018, the company holds a BuildZoom score of 100 — placing it in the top 13% of all 191,428 licensed contractors in the state — with 21 documented building permits on file. Cool & Cozy provides AC repair, new system installation, preventive maintenance, ductwork services, indoor air quality solutions, emergency repair, and commercial HVAC for multi-unit properties. The team offers bilingual service in English and Spanish, honest upfront pricing with no hidden fees, and a commitment to same-day response for AC emergencies in the Jacksonville area. Call (904) 555-0199 for a free estimate.
+Word Count: 128 words
+AEO Targeting: Directly answers: “Who provides AC repair in Jacksonville?” “What HVAC company serves property managers in Jacksonville?” “Is Cool & Cozy AC Repair licensed?”
+This paragraph is intentionally dense with verifiable facts (license number, BuildZoom score, permit count, founding year). AI systems prioritize factual, parseable content with specific data points over vague marketing language.
+Supporting Paragraph
+Whether your home’s AC stopped cooling on a July afternoon, your rental property needs a reliable maintenance partner, or your commercial space requires a licensed contractor who shows up on time — Cool & Cozy delivers the same honest service and fair pricing that Jacksonville families and property managers have trusted since day one.
+Word Count: 51 words
+This paragraph bridges from the fact-heavy AEO opening to the emotional/benefit language that resonates with residential visitors. It also explicitly names property managers as a target audience, which reinforces the commercial positioning.
+Design Specifications
+Property
+Specification
+H2 style
+Poppins 32px/700 (desktop), 26px/700 (mobile), color #2C2C2C (Charcoal)
+Paragraph text
+Poppins 17px/400, color #3D3D3D, line-height 1.7, max-width 720px
+Phone number inline
+#E8603C (Coral), bold, click-to-call link
+Spacing
+24px between H2 and first paragraph, 16px between paragraphs
+Internal Links
+(904) 555-0199 → tel:+19045550199 (click-to-call)
+Implicit links to service pages will be provided via the services grid immediately below
+GA4 Event Tracking
+Property
+Specification
+phone_click
+page_section: “aeo_intro”
+
+5.6 Services Overview Grid
+Section Overview
+A visually rich grid of service cards that gives visitors a comprehensive view of everything Cool & Cozy offers. Each card links to the corresponding service page. The grid covers residential, commercial, and specialty services — reinforcing the breadth of the company’s capabilities for both homeowners and property managers. This section is the primary internal-linking engine on the homepage.
+Conversion Role: Navigate visitors to the service page most relevant to their need. Every card is a pathway to a conversion-optimized service page with its own form and phone CTA.
+Layout Specifications
+Property
+Specification
+Container
+Full-width, #FFFDF8 (Cream) background
+Content Width
+1280px centered
+Padding
+64px top/bottom (desktop), 32px (mobile)
+Grid
+3 columns on desktop (gap: 24px), 2 columns on tablet (gap: 20px), 1 column on mobile (gap: 16px)
+Cards
+Equal height within each row (CSS Grid with align-items: stretch or flexbox)
+Content Specifications
+Section Heading
+Our HVAC Services
+Subheading: Residential, commercial, and property management AC solutions for Jacksonville and Duval County.
+Service Cards
+Eight service cards, each following the same structure: icon + title + 2-sentence description + “Learn More →” link.
+
+Service
+Card Description
+Link
+AC Repair
+Is your AC blowing warm air, making strange noises, or not turning on at all? Our licensed technicians diagnose and fix the problem fast — often same-day.
+/services/ac-repair
+AC Installation
+New construction, full system replacement, or upgrading to a high-efficiency unit. We size, recommend, and install the right system for your Jacksonville home or business.
+/services/ac-installation
+AC Maintenance
+Preventive tune-ups keep your system running efficiently and catch small problems before they become expensive repairs. Ask about our maintenance agreements.
+/services/ac-maintenance
+Emergency AC Repair
+When your AC fails on a 95-degree Jacksonville afternoon, you can’t wait until Monday. We offer priority emergency service to get you cool again fast.
+/services/emergency-ac-repair
+Commercial HVAC
+Offices, restaurants, retail spaces, and multi-unit properties. Licensed for commercial systems with the reliability property managers demand.
+/services/commercial-hvac
+Ductwork
+Leaking, damaged, or poorly designed ductwork wastes energy and reduces comfort. We repair, seal, and replace ductwork to restore airflow throughout your space.
+/services/ductwork
+Indoor Air Quality
+Jacksonville’s humidity creates ideal conditions for mold, allergens, and poor indoor air. We install filtration, purification, and dehumidification solutions.
+/services/indoor-air-quality
+Thermostat Installation
+From basic programmable thermostats to smart systems like Nest and Ecobee. Proper installation and calibration for accurate temperature control and energy savings.
+/services/thermostat-installation
+
+Card Word Count: 30–40 words per card description
+CTA per Card: “Learn More →” text link (Seafoam color, underline on hover)
+Total Internal Links: 8 links to service child pages
+Design Specifications
+Card Component
+Property
+Specification
+Background
+#FFFFFF
+Border-radius
+16px (more rounded than competitors, reinforces “cozy” brand)
+Box-shadow
+0 2px 12px rgba(0,0,0,0.06)
+Hover
+box-shadow 0 6px 20px rgba(0,0,0,0.10), transform translateY(-3px), transition 0.25s ease
+Padding
+28px (desktop), 24px (mobile)
+Icon
+48×48px SVG, #1A5653 (Evergreen) stroke, 2px weight, centered above title
+Title
+Poppins 18px/600, #2C2C2C (Charcoal), 8px below icon
+Description
+Poppins 14px/400, #3D3D3D, line-height 1.6, 12px below title
+CTA link
+Poppins 14px/500, #5CB8B2 (Seafoam), 16px below description, arrow animates right 4px on hover
+Section Heading
+Property
+Specification
+H2 style
+Poppins 32px/700, #2C2C2C, centered
+Subheading
+Poppins 16px/400, #7A7A7A, centered, max-width 600px, 12px below H2
+Spacing
+40px between subheading and first card row
+Image Specifications
+Eight SVG icons (inline). No raster images for service icons. Icon style must be consistent: line-style, 2px stroke, rounded joins, Evergreen color. Recommended icon subjects: wrench (repair), plus/house (installation), checklist (maintenance), lightning bolt (emergency), building (commercial), air duct (ductwork), leaf/air (IAQ), dial/thermostat.
+DEV ACTION: Use a consistent icon set throughout (Lucide or Heroicons recommended). Do NOT mix icon styles between sections.
+Accessibility
+Each card is a clickable region (<a> wrapping the card or aria-label on a card-level link)
+Icon has aria-hidden="true" (decorative — the title conveys meaning)
+Focus state: 3px solid #5CB8B2 outline, 2px offset, border-radius matching card
+Cards maintain readable color contrast at all viewport sizes
+GA4 Event Tracking
+Property
+Specification
+cta_click
+Fires on each card click. Parameters: button_text: “Learn More”, destination_url: service page URL, page_section: “services_grid”, service_type: card title
+Developer Notes
+DEV ACTION: Cards must be equal-height within each row. Use CSS Grid with grid-template-rows: masonry (if supported) or align-items: stretch with min-height to prevent uneven card heights.
+DEV ACTION: On mobile (1-column), cards stack vertically with 16px gap. Consider a horizontal scroll option if 8 cards feels too long on mobile — test both and pick based on scroll-depth data from Clarity after launch.
+The service card descriptions are intentionally brief. The full service pages carry the detailed content, keyword targeting, and conversion elements. The homepage cards are navigation aids, not content destinations.
+
+— End of Part 1 —
+
+Part 2 continues with: Property Management Section, Why Choose Cool & Cozy,
+Testimonials, Service Areas Map, FAQ Section, Final CTA Block, and Footer.
+
+Prepared by TradeWorks AI  ·  May 2026  ·  v1.0
+

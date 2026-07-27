@@ -1,0 +1,339 @@
+﻿
+
+ 
+
+ABOUT PAGE DEVELOPER GUIDE
+
+About Us
+
+
+ 
+
+Trust, Story &amp; Team Implementation
+
+Clean Slate Pressure Washing
+
+A Fresh Start for Every Surface
+
+Brandon, Florida  |  Hillsborough County
+
+cleanslatepw.com
+
+Prepared by TradeWorks AI
+
+Version 1.0  |  April 2026
+
+Client Confidential
+
+
+
+
+
+
+
+
+Section 1: How to Use This Guide
+
+This guide covers the About page (/about/) — the primary trust-building page on the site. It tells the founder&apos;s story, displays the company&apos;s values with behavioral proof, showcases credentials, and humanizes the brand with real team photography. The About page is the #2 most-visited page after the homepage for home service companies and directly influences whether a visitor converts or bounces to a competitor.
+
+
+
+Section 2: Page Identity &amp; Architecture
+
+Attribute
+
+Value
+
+URL Path
+
+/about/
+
+Canonical URL
+
+https://cleanslatepw.com/about/
+
+Page Type
+
+Trust / Company
+
+Parent
+
+/ (Homepage)
+
+Breadcrumb
+
+Home → About
+
+Primary Keyword
+
+About Clean Slate Pressure Washing Brandon FL
+
+Search Intent
+
+Navigational / Trust
+
+Target Word Count
+
+1,200–1,800 words
+
+Primary Conversion Goal
+
+Build trust → route to Free Estimate or phone call
+
+Child Pages
+
+/about/our-process/ (Phase 2)
+
+
+
+Section 3: Complete &lt;head&gt; Section
+
+Tag
+
+Value
+
+&lt;title&gt;
+
+About Clean Slate Pressure Washing | Brandon FL Exterior Cleaning
+
+&lt;meta description&gt;
+
+Meet Jason Caldwell, founder of Clean Slate Pressure Washing. Licensed, insured, serving Tampa Bay since 2021. Our story, values, and commitment to safe exterior cleaning.
+
+&lt;link rel=canonical&gt;
+
+https://cleanslatepw.com/about/
+
+og:title
+
+About Us | Clean Slate PW
+
+og:image
+
+https://cleanslatepw.com/images/og-about-1200x630.jpg
+
+JSON-LD: LocalBusiness (reference @id from homepage). BreadcrumbList (Home → About). No FAQPage on this page.
+
+
+
+Section 4: Hero Section
+
+Property
+
+Value
+
+Min Height
+
+360px desktop / 280px mobile
+
+Background
+
+Team photograph — founder + crew in branded shirts standing beside service truck. Navy gradient overlay.
+
+H1
+
+About Clean Slate Pressure Washing
+
+Subheadline
+
+Founded in 2021 by Jason Caldwell. Licensed, insured, and committed to doing exterior cleaning the right way — every surface, every time.
+
+Hero Image Alt
+
+Jason Caldwell and the Clean Slate Pressure Washing team standing beside a service truck in Brandon, Florida
+
+
+
+Section 5: Founder Story
+
+
+5.1 Section Heading
+
+H2: How Clean Slate PW Got Started
+
+
+5.2 Founder Narrative (~250 words)
+
+Jason Caldwell started Clean Slate Pressure Washing in 2021 after watching a well-meaning pressure washing contractor blast the paint off his neighbor&apos;s stucco home in their Brandon neighborhood. The contractor had used a 4,000 PSI surface wand on painted stucco — a surface that should never see anything above 500 PSI. The resulting damage cost the homeowner over $8,000 in repainting and stucco repair.
+
+That experience became the founding principle of Clean Slate PW: the right method matters more than the equipment. Jason Caldwell spent six months studying soft wash chemistry, surface compatibility, manufacturer warranty requirements, and Florida-specific algae biology before cleaning a single customer&apos;s home. He earned UAMCC certification, secured $2M general liability in general liability insurance, and built a service protocol that matches the cleaning approach to the surface — not the other way around.
+
+Today, Clean Slate PW serves over 40 Tampa Bay homeowners per month across Brandon, Riverview, Valrico, Lithia, FishHawk, and surrounding communities. The company has grown entirely through referrals and repeat customers — a track record that reflects Jason Caldwell&apos;s belief that the best marketing is work that speaks for itself.
+
+The story continues to be the same: know the surface, choose the right method, use the right chemistry, and stand behind every result with a written guarantee.
+
+
+
+Section 6: Our Values — With Behavioral Proof
+
+Four values, each paired with a specific behavioral example that proves the value is real — not just a tagline. This section uses the same card layout as the homepage Why Choose Us pillars.
+
+
+6.1 Values
+
+Value (H3)
+
+Description
+
+Proof Point
+
+Icon
+
+Method Over Muscle
+
+We choose the cleaning method that protects your surface, not the fastest or cheapest approach.
+
+We turn down jobs where the customer insists on high-pressure cleaning on a surface that requires soft washing. Protecting your home matters more than closing the sale.
+
+Gauge
+
+Radical Transparency
+
+Flat-rate quotes, itemized by service, delivered in writing within 24 hours. No surprises, no hidden fees.
+
+Every estimate includes a line-by-line breakdown of what we will clean, how we will clean it, and exactly what it costs. If the scope changes on-site, we get approval before proceeding.
+
+Receipt
+
+Stand Behind Every Job
+
+100% satisfaction guarantee — written, not verbal. If you are not happy, we return at no charge.
+
+In 2021 through today, we have had a 0% dispute rate on completed projects. When a rare issue arises, we address it within 48 hours.
+
+Shield
+
+Florida-First Expertise
+
+We specialize in Florida&apos;s climate, Florida&apos;s algae, Florida&apos;s building materials, and Florida&apos;s HOA landscape.
+
+Our technicians can identify Gloeocapsa magma, lichen, and oxidation on sight — and they know which chemistry treats each one without damaging the underlying surface.
+
+Sun+Palm
+
+
+
+Section 7: Credentials &amp; Certifications
+
+Display all verifiable credentials with links to verification sources where available.
+
+Credential
+
+Details
+
+Florida Business License
+
+FL Lic. #BL-2021-04417 — verify at sunbiz.org
+
+General Liability Insurance
+
+$2M general liability — COI available on request
+
+UAMCC Membership
+
+United Association of Mobile Contract Cleaners — verify at uamcc.org
+
+Google Business Profile
+
+4.9★ average, 150+ verified reviews
+
+BBB Rating
+
+A+ rated — verify at bbb.org
+
+Each credential displays as a badge row similar to the homepage trust bar, but with full text labels and verification links. Do not display any credential not yet earned or verified.
+
+
+
+Section 8: Team Section
+
+Real team photographs — no stock photos. At minimum, display the founder with a 3-4 sentence bio. As the team grows, add technician profiles with first name, role, and a brief sentence about their specialty or experience.
+
+
+8.1 Founder Profile
+
+Field
+
+Value
+
+Name
+
+Jason Caldwell
+
+Title
+
+Founder &amp; Lead Technician
+
+Photo
+
+Professional headshot or candid work photo. 400×400px square crop.
+
+Bio
+
+Jason Caldwell founded Clean Slate Pressure Washing in 2021 after seeing firsthand the damage caused by improper pressure washing techniques. He is UAMCC certified, personally trains every technician on soft wash chemistry and surface compatibility, and still leads the team on complex or high-value projects.
+
+Alt Text
+
+Jason Caldwell, founder of Clean Slate Pressure Washing, in Brandon, Florida
+
+Team member cards: 300×300px photos, first name, role title, 1-sentence specialty. Grid layout: 3 across desktop, 2 tablet, 1 mobile.
+
+
+
+Section 9: Community Involvement
+
+Authentic community connection content. Display real involvement — do not fabricate. If the business does not yet have community involvement activities, omit this section and add it when real content is available.
+
+Suggested content when available: local charity sponsorships, neighborhood clean-up days, veteran and first-responder discounts, school and church pro-bono work, local business association membership, Brandon Chamber involvement.
+
+
+
+Section 10: Review Aggregation
+
+Display aggregate review statistics with AggregateRating schema. Link to the dedicated /reviews/ page for full review display.
+
+H2: What Tampa Bay Homeowners Are Saying
+
+Show 3 featured testimonials (same card component as homepage Section 13). Below: &apos;Read all 150+ reviews on Google →&apos; linking to GBP.
+
+
+
+Section 11: Final CTA Block
+
+H2: Ready to See the Clean Slate Difference?
+
+Dual CTAs: &apos;Get My Free Estimate&apos; (orange) + &apos;Call (813) 555-0283&apos; (ghost). Standard pattern.
+
+
+
+Section 12: Implementation Checklist
+
+
+Founder story is original content (not from any audit or rewrite doc).
+
+
+All 4 values include behavioral proof points.
+
+
+All credentials are verified and links work.
+
+
+Team photos are real (no stock).
+
+
+AggregateRating schema validates.
+
+
+Canonical: https://cleanslatepw.com/about/
+
+
+PageSpeed mobile &gt;85, desktop &gt;95.
+
+
+
+— End of About Page Guide —
+
+Clean Slate Pressure Washing — About Page v1.0 | TradeWorks AI | April 2026
+
+
+

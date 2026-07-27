@@ -1,0 +1,538 @@
+﻿
+
+ 
+
+RUST &amp; STAIN REMOVAL DEVELOPER GUIDE
+
+Rust &amp; Stain Removal
+
+
+ 
+
+Section-by-Section Implementation Specifications
+
+Clean Slate Pressure Washing
+
+A Fresh Start for Every Surface
+
+Brandon, Florida  |  Hillsborough County
+
+cleanslatepw.com
+
+Prepared by TradeWorks AI
+
+Version 1.0  |  April 2026
+
+Client Confidential
+
+
+
+
+
+
+
+
+Table of Contents
+
+
+
+OVERVIEW
+
+1.  How to Use This Guide
+
+2.  Page Identity &amp; Architecture
+
+3.  Complete &lt;head&gt; Section
+
+
+
+PAGE SECTIONS
+
+4.  Breadcrumb
+
+5.  Hero Section
+
+6.  AEO Introduction Paragraph
+
+7.  The Problem — What Homeowners Experience
+
+8.  Our Process (5 Steps)
+
+9.  Why Choose Clean Slate PW
+
+10.  Before &amp; After Examples
+
+11.  Related Services
+
+12.  Service Areas Callout
+
+13.  FAQ Section
+
+14.  Final CTA Block
+
+15.  Footer
+
+
+
+REFERENCE
+
+16.  Image Specs
+
+17.  GA4 Events
+
+18.  Implementation Checklist
+
+
+
+Section 1: How to Use This Guide
+
+This guide provides everything needed to build the Rust &amp; Stain Removal service page (/services/rust-removal/) from scratch. This is a child page in the Services silo, sitting under the Services Hub (/services/). Content here goes deep on this single service — 1,500–2,500 words of production-ready copy with exact specifications for every section.
+
+Content differentiation: The homepage introduces this service in ~15 words. The services hub expands to ~60 words. This page delivers the full depth — methodology, process steps, FAQ, and service-specific trust signals.
+
+
+
+Section 2: Page Identity &amp; Architecture
+
+Attribute
+
+Value
+
+URL Path
+
+/services/rust-removal/
+
+Canonical URL
+
+https://cleanslatepw.com/services/rust-removal/
+
+Page Type
+
+Service Child Page
+
+Parent
+
+/services/ (Services Hub)
+
+Breadcrumb
+
+Home › Services › Rust &amp; Stain Removal
+
+Primary Keyword
+
+Rust stain removal concrete Florida
+
+Secondary Keywords
+
+rust removal driveway Brandon FL, battery acid stain removal, fertilizer stain concrete, irrigation rust stain, orange stain removal pavers
+
+Search Intent
+
+Commercial / Transactional
+
+Target Word Count
+
+1,500–2,500 words
+
+Primary Conversion Goal
+
+Free Estimate form submission OR phone call
+
+Content Update Frequency
+
+Evergreen with annual review
+
+
+
+
+2.2 Related Service Links (Siblings)
+
+
+Driveway Cleaning: /services/driveway-cleaning/ — linked in Related Services section and inline where natural.
+
+
+Pool Deck &amp; Pavers: /services/pool-deck-cleaning/ — linked in Related Services section and inline where natural.
+
+
+Commercial PW: /services/commercial/ — linked in Related Services section and inline where natural.
+
+
+
+Section 3: Complete &lt;head&gt; Section
+
+Tag
+
+Value
+
+&lt;title&gt;
+
+Rust &amp; Stain Removal Brandon FL | Concrete &amp; Pavers | Clean Slate PW
+
+&lt;meta description&gt;
+
+Professional rust and stain removal from concrete, pavers, and stone in Brandon, FL. Battery acid, fertilizer, irrigation rust, and organic stains. Call (813) 555-0283.
+
+&lt;link rel=canonical&gt;
+
+https://cleanslatepw.com/services/rust-removal/
+
+&lt;meta name=robots&gt;
+
+index, follow
+
+og:title
+
+Rust &amp; Stain Removal Brandon FL | Concrete &amp; Pavers | Clean Slate PW
+
+og:description
+
+Professional rust and stain removal from concrete, pavers, and stone in Brandon, FL. Battery acid, fertilizer, irrigation rust, and organic stains. Ca
+
+og:image
+
+https://cleanslatepw.com/images/og-rust-removal-1200x630.jpg
+
+og:url
+
+https://cleanslatepw.com/services/rust-removal/
+
+
+
+
+3.2 JSON-LD
+
+Deploy Service schema with @type &quot;Service&quot;, serviceType &quot;Rust &amp; Stain Removal&quot;, provider referencing LocalBusiness @id. Deploy BreadcrumbList (3 items: Home → Services → Rust &amp; Stain Removal). Deploy FAQPage mirroring the 5 Q&amp;As in Section 13.
+
+
+
+Section 4: Breadcrumb
+
+Display: Home › Services › Rust &amp; Stain Removal. &quot;Home&quot; links to /. &quot;Services&quot; links to /services/. &quot;Rust &amp; Stain Removal&quot; is current page (unlinked). Font 14px, #6C757D for links, #2B2B2B for current.
+
+
+
+Section 5: Hero Section
+
+Property
+
+Value
+
+Min Height
+
+380px desktop / 320px tablet / 280px mobile
+
+Background
+
+Service-specific hero image with navy gradient overlay
+
+Content
+
+Left-aligned on desktop, centered on mobile
+
+Padding
+
+72px top/bottom desktop, 48px mobile
+
+
+5.1 H1
+
+Rust &amp; Stain Removal for Concrete &amp; Pavers in Brandon, FL
+
+44px desktop / 36px tablet / 28px mobile. Weight 700. White.
+
+
+5.2 Hero Image
+
+Alt text: Before and after rust stain removal on a concrete driveway showing complete restoration in Brandon, Florida
+
+1920×800 WebP, under 150KB. Preloaded for LCP.
+
+
+5.3 Hero CTA
+
+&apos;Get a Free Rust &amp; Stain Removal Estimate&apos; → /free-estimate/?service=rust-removal. Orange button. GA4: cta_click (location: rust-removal_hero).
+
+
+
+Section 6: AEO Introduction Paragraph
+
+Direct-answer paragraph targeting the page&apos;s primary query. Centered max-width 880px. No images, no CTAs.
+
+
+6.1 H2
+
+Rust &amp; Stain Removal for Concrete &amp; Pavers
+
+
+6.2 AEO Body — Exact Copy
+
+Clean Slate Pressure Washing provides specialized rust and stain removal services for concrete, pavers, and natural stone surfaces throughout Brandon, Riverview, Valrico, and the Tampa Bay region. Standard pressure washing cannot remove many common Florida stains — rust from irrigation well water, orange marks from fertilizer granules, battery acid drips on garage floors, tannin stains from oak leaves and acorns, and black marks from decomposing landscape mulch all require specific chemical treatments matched to the stain chemistry. Our technicians identify the stain type, select the appropriate removal agent (oxalic acid for rust and tannins, sodium hydroxide for organic stains, hydrofluoric acid compounds for severe mineral deposits), apply the treatment, and pressure clean the area after the chemistry has done its work. Most stains require 1–2 treatment cycles for complete removal.
+
+
+
+Section 7: The Problem — What Homeowners Experience
+
+This section empathizes with the customer&apos;s situation before presenting the solution. It describes in specific, relatable terms what the homeowner is seeing on their property and why it is happening — framed through Florida&apos;s climate and the specific surface type this service addresses. This section should be 150–200 words of original content describing the symptoms, causes, and consequences of not addressing the problem.
+
+[Content to be written fresh for each service page during implementation — not templated. The developer guide provides the structural framework; the content writer fills this section with service-specific problem-state copy that connects emotionally with the homeowner&apos;s frustration.]
+
+
+
+Section 8: Our Process (5 Steps)
+
+Numbered 5-step process showing exactly how the rust &amp; stain removal service is performed. Each step has a bold heading and 1–2 sentence description. This section builds trust through transparency — homeowners want to know what will happen on their property before they commit.
+
+
+8.1 Process Steps
+
+Step 1 — Stain identification: We determine the stain type (rust, tannin, battery acid, fertilizer, organic, mineral) and the surface material (concrete, pavers, travertine, flagstone) to select the correct chemistry.
+
+Step 2 — Test spot: A small inconspicuous area is treated first to verify the selected chemistry reacts correctly with both the stain and the surface material without discoloration or etching.
+
+Step 3 — Treatment application: The matched removal agent is applied to the stained area and allowed to dwell for the prescribed time. Rust stains require 15–30 minutes; organic stains require 10–20 minutes.
+
+Step 4 — Agitation and rinse: Stubborn stains receive light mechanical agitation with a stiff brush before rinsing. The treatment area is pressure cleaned to remove all chemistry and dissolved stain material.
+
+Step 5 — Second cycle (if needed): Deeply penetrated stains may require a second application. We assess results after the first cycle dries (15–20 minutes) and retreat as necessary at no additional charge within the same visit.
+
+
+
+Section 9: Why Choose Clean Slate PW
+
+Four compact trust differentiators. Same component pattern as services hub Section 10 — 48px orange icon, H3, 2-line description. Differentiators are: Method-Matched Cleaning, Licensed &amp; Insured, 24-Hour Estimates, Satisfaction Guaranteed. Refer to Services Hub Guide Section 10 for exact copy and design specs.
+
+
+
+Section 10: Before &amp; After Examples
+
+Two before/after slider pairs specific to this service type. Same interactive slider component as homepage Section 11. Each slider shows a real project photo pair with caption including city and property type.
+
+Alt text format: &quot;Before/After: rust &amp; stain removal on a [property type] in [city], FL&quot;.
+
+Images: 1080×720 WebP, under 120KB each. loading=&apos;lazy&apos;.
+
+
+
+Section 11: Related Services
+
+Three sibling service cards in a horizontal row linking to the most relevant cross-sell services. Same card component as services hub — image, H3, 2-line description, &apos;Learn More →&apos; link.
+
+
+11.1 Related Services for This Page
+
+
+Driveway Cleaning → /services/driveway-cleaning/
+
+
+Pool Deck &amp; Pavers → /services/pool-deck-cleaning/
+
+
+Commercial PW → /services/commercial/
+
+
+
+Section 12: Service Areas Callout
+
+Same compact block as services hub Section 11. Background #E8EEF2. Lists 10 service cities as inline links. Links to /service-areas/. Refer to Services Hub Guide for exact specs.
+
+
+
+Section 13: FAQ Section
+
+Five questions specific to rust &amp; stain removal. These must match the FAQPage JSON-LD schema exactly.
+
+
+Q: Can you remove orange rust stains from my driveway?
+
+In most cases, yes. Orange rust stains on Florida driveways are almost always caused by irrigation well water with high iron content. These stains respond well to oxalic acid-based treatments that dissolve the iron oxide without damaging the concrete. Very old, deeply penetrated rust stains may require multiple treatment cycles.
+
+
+Q: What about fertilizer stains?
+
+Fertilizer granule stains (dark orange or brown spots) are iron-based and respond to the same oxalic acid treatment used for irrigation rust. We recommend applying fertilizer to dry surfaces and watering it in immediately to prevent future staining, or switching to a low-iron formulation.
+
+
+Q: Can battery acid stains be removed from a garage floor?
+
+Battery acid etches concrete by dissolving the calcium compounds in the surface. We can remove the discoloration and significantly improve the appearance, but if the acid has physically pitted the concrete surface, those texture changes are permanent. We assess the damage during the estimate and provide honest expectations.
+
+
+Q: Do you remove stains from pavers and natural stone?
+
+Yes, with specific chemistry matched to the material. Concrete pavers tolerate a wide range of treatments. Travertine and natural stone require gentler, pH-specific chemistry to avoid etching. We always test a small area first on any natural stone surface.
+
+
+Q: How much does stain removal cost?
+
+Stain removal is priced per stain or per area rather than per square foot, because a single rust stain on an otherwise clean driveway requires the same setup and chemistry as a stain on a dirty one. We provide specific pricing after assessing the stain type, size, and surface material during the free estimate.
+
+
+
+Section 14: Final CTA Block
+
+Same pattern as services hub and homepage — full-width navy background, centered content, dual CTAs.
+
+H2: Get a Free Rust &amp; Stain Removal Estimate Today.
+
+Primary: &apos;Get My Free Estimate&apos; → /free-estimate/?service=rust-removal
+
+Secondary: &apos;Call (813) 555-0283&apos; → tel:+18135550283
+
+
+
+Section 15: Footer
+
+Shared component — identical to all pages. Refer to Homepage Guide Section 18.
+
+
+
+Section 16: Image Specifications
+
+#
+
+Asset
+
+Dimensions
+
+Alt Text
+
+1
+
+Hero background
+
+1920×800 WebP
+
+Before and after rust stain removal on a concrete driveway showing complete restoration in Brandon, Florida
+
+2-3
+
+Before/After pairs (2)
+
+1080×720 WebP ×2 each
+
+Before/After: rust &amp; stain removal on a Florida home
+
+4-6
+
+Related service cards (3)
+
+800×533 WebP (3:2)
+
+Per sibling service image
+
+7
+
+OG image
+
+1200×630 JPG
+
+Rust &amp; Stain Removal — Clean Slate Pressure Washing
+
+
+
+Section 17: GA4 Event Tracking
+
+Event
+
+Trigger
+
+Parameters
+
+Type
+
+page_view
+
+Load (auto)
+
+page_location
+
+Standard
+
+cta_click
+
+Any CTA
+
+cta_label, cta_location
+
+Engagement
+
+phone_click
+
+tel: link
+
+phone_number
+
+Conversion
+
+faq_expand
+
+FAQ open
+
+question_text, index
+
+Engagement
+
+before_after_interact
+
+Slider drag
+
+project_name
+
+Engagement
+
+related_service_click
+
+Sibling card click
+
+service_name, service_url
+
+Engagement
+
+
+
+Section 18: Implementation Checklist
+
+
+H1 matches: &quot;Rust &amp; Stain Removal for Concrete &amp; Pavers in Brandon, FL&quot;
+
+
+AEO body paragraph matches word-for-word.
+
+
+All 5 process steps match exact copy.
+
+
+All 5 FAQ answers match and are mirrored in FAQPage schema.
+
+
+Phone (813) 555-0283 is working tel: link.
+
+
+Canonical points to https://cleanslatepw.com/services/rust-removal/
+
+
+Breadcrumb displays: Home › Services › Rust &amp; Stain Removal
+
+
+OG image renders correctly on share preview.
+
+
+Hero preloaded. Below-fold images lazy-loaded.
+
+
+PageSpeed mobile &gt;85, desktop &gt;95.
+
+
+Schema validates at validator.schema.org.
+
+
+All 3 related service URLs resolve.
+
+
+
+— End of Rust &amp; Stain Removal Developer Guide —
+
+Clean Slate Pressure Washing — Rust &amp; Stain Removal Guide v1.0 | Prepared by TradeWorks AI | April 2026
+
+
+

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <title>Irrigation Services</title>
+  <!-- ground -->
+  <rect x="20" y="168" width="160" height="6" rx="2" fill="#6BAA45" opacity="0.3"/>
+  <!-- riser pipe -->
+  <rect x="94" y="130" width="12" height="40" fill="#1A3826"/>
+  <rect x="88" y="166" width="24" height="6" rx="1" fill="#1A3826"/>
+  <!-- sprinkler head -->
+  <ellipse cx="100" cy="130" rx="18" ry="8" fill="#2D5C3A"/>
+  <ellipse cx="100" cy="128" rx="14" ry="5" fill="#1A3826"/>
+  <!-- water spray arcs -->
+  <path d="M100 122 Q50 80 28 112" stroke="#6BAA45" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M100 122 Q70 40 100 28" stroke="#6BAA45" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M100 122 Q150 80 172 112" stroke="#6BAA45" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- water droplets -->
+  <circle cx="28" cy="112" r="4" fill="#A8D17C"/>
+  <circle cx="100" cy="28" r="4" fill="#A8D17C"/>
+  <circle cx="172" cy="112" r="4" fill="#A8D17C"/>
+  <circle cx="56" cy="88" r="3" fill="#A8D17C"/>
+  <circle cx="144" cy="88" r="3" fill="#A8D17C"/>
+  <circle cx="82" cy="56" r="2.5" fill="#A8D17C"/>
+  <circle cx="118" cy="56" r="2.5" fill="#A8D17C"/>
+</svg>

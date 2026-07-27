@@ -1,0 +1,481 @@
+﻿
+DEVELOPER IMPLEMENTATION GUIDE
+
+COOL & COZY AC REPAIR
+Licensed HVAC Contractor  ·  Jacksonville, Florida
+
+AC REPAIR
+Service Child Page  ·  Part 2 of 2
+Pricing Through Footer & Reference Appendix
+
+URL: coolcozyac.com/services/ac-repair
+Prepared by: TradeWorks AI  |  Version 1.0  |  May 2026
+Classification: Client Confidential
+
+Table of Contents
+
+5.  Section-by-Section Build (Part 2, continued)
+5.6  AC Repair Pricing Guidance
+5.7  Why Choose Cool & Cozy for AC Repair
+5.8  Property Manager & Commercial AC Repair
+5.9  Testimonials
+5.10  FAQ Section (6 Questions + Schema)
+5.11  Related Services
+5.12  Final CTA Block
+6.  Reference: Image Asset Inventory
+7.  Reference: GA4 Event Tracking Summary
+8.  Reference: Implementation Checklist
+
+5. Section-by-Section Build (Part 2, continued)
+This document continues the AC Repair page build from Part 1. Sections 5.1–5.5 (Hero through Equipment & Components) are defined in Part 1.
+
+5.6 AC Repair Pricing Guidance
+Section Overview
+This section answers the second most common AC repair query after “who does AC repair near me”: “How much does AC repair cost?” It provides honest price ranges with the factors that influence cost, positioned as a transparency signal rather than a hard quote. This section directly targets “AC repair cost Jacksonville” (200–400 monthly searches) and feeds the FAQ section below.
+Conversion Role: Reduce price anxiety. Visitors who understand typical ranges are more likely to call because they know what to expect. The section ends with a CTA: “Get your specific quote — call for a free estimate.”
+Layout
+Property
+Specification
+Container
+Full-width, #FFFFFF background
+Content Width
+960px centered
+Padding
+64px top/bottom (desktop), 32px (mobile)
+Desktop
+Pricing table (3-column) + factors paragraph below
+Mobile
+Table scrolls horizontally or reflows to card layout
+Content
+H2 Heading
+How Much Does AC Repair Cost in Jacksonville?
+AEO Target: This heading directly matches the voice-search query. The first paragraph below is the featured-snippet target (40–60 words).
+Featured Snippet Paragraph
+AC repair in Jacksonville typically costs between $150 and $600 for most common repairs. Simple fixes like capacitor replacements or condensate drain clearing fall in the $150–$250 range. Mid-range repairs including refrigerant leak detection and recharge, blower motor replacement, or contactor issues typically run $250–$450. Major repairs involving compressor work or evaporator coil replacement can range from $450 to $1,200 or more depending on system type and parts availability.
+Word Count: 70 words
+These ranges are approximate and based on typical Jacksonville-market HVAC repair pricing. They should be reviewed annually by the client and adjusted if their actual pricing shifts significantly. Do NOT present these as Cool & Cozy’s specific prices — frame them as typical market ranges with a CTA to get a specific quote.
+
+Pricing Table
+Repair Category
+Typical Range
+Common Examples
+Minor Repairs
+$150 – $250
+Capacitor replacement, contactor replacement, condensate drain clearing, thermostat replacement
+Mid-Range Repairs
+$250 – $450
+Refrigerant leak repair + recharge, blower motor replacement, fan motor replacement, circuit board repair
+Major Repairs
+$450 – $1,200+
+Compressor replacement, evaporator coil replacement, condenser coil replacement, major electrical work
+Diagnostic Fee
+Free*
+*Free with completed repair. Cool & Cozy provides a clear diagnostic and written quote before any work begins.
+
+Factors That Affect Your AC Repair Cost
+Every repair is different. Here are the main factors that move your cost within these ranges:
+Type of failure — A failed capacitor ($15 part, 30-minute install) costs far less than a failed compressor ($400–$800 part, 2–3 hour job).
+System age and type — Older systems (10+ years) may require discontinued parts that cost more to source. R-22 (Freon) systems require expensive alternative refrigerants since R-22 was phased out.
+Accessibility — Attic-mounted air handlers in Jacksonville homes are harder to access than closet or garage installations, adding labor time.
+Time of service — Emergency or after-hours service may carry a premium, though Cool & Cozy works to keep emergency pricing fair.
+Repair vs. replace decision — If the repair cost exceeds 50% of a new system’s price and the system is 12+ years old, replacement often makes more financial sense. We’ll be honest about this — we don’t profit from repairing a system that should be replaced.
+
+Section CTA
+Every situation is different. Call (904) 555-0199 for a free diagnostic estimate specific to your system and your situation. We provide a written quote before any work begins — the price we quote is the price you pay.
+Phone: Click-to-call tel: link
+Design
+Property
+Specification
+H2
+Poppins 28px/700, #2C2C2C
+Table header
+Evergreen bg, white text, same spec as all tables
+Table body
+Poppins 14px/400, #3D3D3D
+Free* note
+Poppins 13px/400 italic, #7A7A7A
+Factor bullets
+Poppins 15px/400, bold label + regular description
+CTA paragraph
+Poppins 16px/500, #1A5653 Evergreen, phone in Coral
+Internal Links
+Compressor replacement, evaporator coil → contextual links already established in Part 1 Section 5.5
+“Replacement often makes more financial sense” → link to /services/ac-installation
+“Call (904) 555-0199” → tel:+19045550199
+
+5.7 Why Choose Cool & Cozy for AC Repair
+Section Overview
+Service-page-specific version of the Why Choose Us content. Unlike the homepage’s general benefits, this section focuses specifically on what makes Cool & Cozy the right choice for an AC repair (not installation, not maintenance — specifically repair). The differentiators are angled toward someone who has a broken AC right now and is comparing options.
+Layout
+Property
+Specification
+Container
+Full-width, #EAF3F2 (Sky Mist) background
+Content Width
+1280px centered
+Padding
+56px top/bottom (desktop), 32px (mobile)
+Desktop
+3-column card grid
+Mobile
+Single column stacked
+Content
+H2 Heading
+Why Jacksonville Chooses Cool & Cozy for AC Repair
+
+Card Title
+Body (2–3 sentences)
+Diagnose First, Quote Second
+We never start work without telling you exactly what’s wrong and what it will cost. Our written quote is the final price — no “while we’re here” surprises, no pressure to approve work you don’t understand.
+Repair What Can Be Repaired
+We don’t push replacement when a repair will solve the problem. If your system has years of life left, we’ll fix it and tell you how to maintain it. If replacement genuinely makes more sense, we’ll explain why honestly.
+Same-Day When It’s Urgent
+In Jacksonville’s summer heat, a broken AC is not a convenience problem — it’s a health risk. We prioritize emergency calls and carry common parts on our service trucks so most repairs are completed in a single visit.
+Licensed and Verified
+Florida license CAC1819948, BuildZoom top 13%, 21 permitted projects on record. These are not marketing claims — they’re verifiable public records. Check for yourself at BuildZoom.com.
+We Speak Your Language
+Our bilingual team serves Jacksonville’s English and Spanish-speaking communities equally. When your AC is broken and you’re stressed, communicating in your preferred language makes everything easier.
+Property Manager Trusted
+Multi-unit emergencies get priority treatment. We understand that a broken AC in a rental means an angry tenant call, a potential lease issue, and a problem that needs resolution today — not Thursday.
+
+Design
+Property
+Specification
+Cards
+#FFFFFF bg, 16px border-radius, 24px padding, same card spec as homepage benefits
+Title
+Poppins 16px/600, #2C2C2C
+Body
+Poppins 14px/400, #3D3D3D, line-height 1.55
+Grid gap
+20px
+
+5.8 Property Manager & Commercial AC Repair
+Section Overview
+A targeted callout for property managers and commercial operators who need AC repair services specifically. This is a shorter, more focused version of the homepage PM section — anchored in the repair context. It acknowledges the unique pain points of a property manager dealing with a tenant’s broken AC: urgency, tenant communication, access coordination, and multi-unit efficiency.
+Conversion Role: Drive PM-specific inquiries via /contact?service=commercial or phone. Differentiate Cool & Cozy from competitors who treat commercial as an afterthought.
+Layout
+Property
+Specification
+Container
+Full-width, #1A5653 (Evergreen) background
+Content Width
+1080px centered
+Padding
+56px top/bottom (desktop), 32px (mobile)
+Desktop
+Left column text (60%), right column with 3 proof metrics (40%)
+Mobile
+Single column, text first, metrics below
+Content
+Eyebrow
+FOR PROPERTY MANAGERS & COMMERCIAL OPERATORS
+H3 Heading
+AC Repair for Multi-Unit Properties and Commercial Spaces
+Style: Poppins 26px/700, #FFFFFF
+Body
+When a tenant calls about a broken AC, you need a contractor who answers the phone, gets to the unit fast, and handles tenant communication professionally. Cool & Cozy provides priority emergency response for managed properties, coordinates access directly with tenants or through your lock-box procedures, and communicates in English or Spanish. One call, one contractor, all your Jacksonville properties covered.
+Word Count: 62 words
+Style: Poppins 15px/400, #F0E6D3
+Feature List
+Priority response for tenant AC emergencies — same-day service
+Direct tenant communication in English and Spanish
+Access coordination: key lockbox, tenant scheduling, or manager-escorted
+Transparent per-unit invoicing with no hidden service call fees
+Maintenance agreements to prevent emergency calls in the first place
+Metrics Panel (Right Column)
+Metric
+Value
+Subtext
+Licensed Since
+2018
+FL CAC1819948
+Contractor Ranking
+Top 13%
+of 191,428 FL contractors
+Permitted Projects
+21
+documented in Duval County
+
+CTA
+Button: “Discuss Your Properties” → /contact?service=commercial
+Secondary: “Or call directly: (904) 555-0199” → tel: link
+Design
+Same visual treatment as the homepage PM section — Evergreen bg, Warm Sand text, Coral CTA, Seafoam accents. The metrics panel uses the glass-card effect (rgba(255,255,255,0.08) bg, subtle white border).
+Internal Links
+“Discuss Your Properties” → /contact?service=commercial
+“Maintenance agreements” → /services/ac-maintenance
+(904) 555-0199 → tel:+19045550199
+
+5.9 Testimonials
+Section Overview
+Same carousel component as the homepage, but filtered to show AC repair-specific testimonials where available. At launch, the same 3 Thumbtack reviews may be used since they reference AC work. As Google reviews accumulate, this section should prioritize reviews that mention repair specifically.
+Layout & Design
+Identical to Homepage Part 2, Section 5.9. Sky Mist background, 3-card carousel desktop, 1-card mobile, same card design.
+Content
+#
+Quote
+Attribution
+1
+They were very nice and got the job done. I’m very pleased with what they did for me.
+Kimberly S. — AC Installation, Thumbtack
+2
+On time and know exactly what they are doing. Thank you!
+Verified Customer — AC Repair, Thumbtack
+3
+Very good experience! They were on time, professional, clean and quick. The price was exceptional as well.
+Danielle D. — AC Repair, Thumbtack
+
+DEV ACTION: PLACEHOLDER: As Google reviews accumulate, swap in repair-specific Google reviews. Prioritize reviews that mention the specific repair problem and resolution.
+
+5.10 FAQ Section
+Section Overview
+Six questions specific to AC repair, distinct from the homepage FAQ (which covers general business questions) and the services hub FAQ (which covers service scope). These questions target repair-specific search queries and voice-search patterns.
+Layout
+Property
+Specification
+Container
+#F0E6D3 (Warm Sand) background, 800px centered
+Accordion
+Same as homepage: click to expand, one at a time, first open by default
+Content
+FAQ 1
+Q: How long does an AC repair typically take?
+A: Most common AC repairs — capacitor replacement, contactor replacement, refrigerant recharge, or condensate drain clearing — are completed in 1 to 2 hours. More complex repairs like compressor replacement, evaporator coil replacement, or extensive electrical work may take 3 to 5 hours. Cool & Cozy aims to complete every repair in a single visit. Our service trucks carry the most commonly needed parts so we do not have to schedule a return trip for standard components.
+Word Count: 74 words
+
+FAQ 2
+Q: Should I repair or replace my AC system?
+A: As a general guideline, if the repair cost exceeds 50% of what a new system would cost and your current system is 12 or more years old, replacement often makes better financial sense in the long run. Other factors include refrigerant type (R-22 systems are increasingly expensive to maintain), energy efficiency of the existing unit versus modern systems, and how frequently you have needed repairs in the past 2 years. Cool & Cozy evaluates all of these factors and provides an honest recommendation. We will never push a replacement when a repair will solve the problem. For a detailed comparison, see our guide: When to Repair vs. Replace Your AC.
+Word Count: 110 words
+Internal Link: “When to Repair vs. Replace Your AC” → /resources/when-to-repair-vs-replace-ac
+
+FAQ 3
+Q: Do you charge a diagnostic or service call fee?
+A: Cool & Cozy provides free diagnostic estimates. Our technician inspects your system, identifies the problem, and provides a written quote at no charge. If you approve the repair, the diagnostic is included in the repair price. If you choose not to proceed, you owe nothing. There are no trip charges, no service call fees, and no pressure.
+Word Count: 55 words
+
+FAQ 4
+Q: Can you repair my AC the same day I call?
+A: In most cases, yes. Cool & Cozy offers same-day AC repair service throughout Jacksonville and Duval County, especially during emergency situations in summer. Our service vehicles are stocked with the most commonly needed parts — capacitors, contactors, fan motors, and refrigerant — so most repairs can be completed in a single visit without ordering parts. For less common components, we order the part and return to complete the repair as quickly as possible, typically within 1 to 2 business days.
+Word Count: 83 words
+
+FAQ 5
+Q: What brands of AC do you repair?
+A: Cool & Cozy repairs all major residential and commercial AC brands including Carrier, Trane, Lennox, Rheem, Goodman, Daikin, York, Bryant, Amana, Mitsubishi, Fujitsu, LG, and more. We are not locked into any single manufacturer. Whether your system was installed by us, by another contractor, or came with your home, we can diagnose and repair it.
+Word Count: 55 words
+
+FAQ 6
+Q: What should I do if my AC stops working in the middle of the night?
+A: First, check your thermostat settings and batteries, and check your circuit breaker panel for a tripped breaker — these are the two most common causes of sudden AC failure that you can resolve without a technician. If neither fixes the problem, turn the system off to prevent further damage (especially if you hear unusual noises or see ice forming), open windows if outdoor temperature allows, and call Cool & Cozy at (904) 555-0199 first thing in the morning. We prioritize emergency calls and will get to you as early as possible. If indoor temperatures become unsafe for elderly residents, infants, or pets, consider relocating temporarily and let us know the urgency when you call.
+Word Count: 120 words
+
+FAQPage JSON-LD Schema
+Embed in <head> alongside Service and BreadcrumbList schemas. All 6 questions with FULL answer text in the JSON-LD:
+{ "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
+  { "@type": "Question", "name": "How long does an AC repair typically take?",
+    "acceptedAnswer": { "@type": "Answer", "text": "Most common AC repairs...completed in a single visit..." } },
+  { "@type": "Question", "name": "Should I repair or replace my AC system?",
+    "acceptedAnswer": { "@type": "Answer", "text": "As a general guideline..." } },
+  { "@type": "Question", "name": "Do you charge a diagnostic or service call fee?",
+    "acceptedAnswer": { "@type": "Answer", "text": "Cool & Cozy provides free diagnostic estimates..." } },
+  { "@type": "Question", "name": "Can you repair my AC the same day I call?",
+    "acceptedAnswer": { "@type": "Answer", "text": "In most cases, yes..." } },
+  { "@type": "Question", "name": "What brands of AC do you repair?",
+    "acceptedAnswer": { "@type": "Answer", "text": "Cool & Cozy repairs all major..." } },
+  { "@type": "Question", "name": "What should I do if my AC stops working in the middle of the night?",
+    "acceptedAnswer": { "@type": "Answer", "text": "First, check your thermostat settings..." } }
+] }
+DEV ACTION: Include FULL answer text in every JSON-LD Answer.text field — not truncated. Google requires complete answers for FAQ rich results eligibility.
+Accessibility
+Same accordion accessibility pattern as homepage FAQ: aria-expanded, keyboard nav, focus management
+Phone numbers in FAQ 6 answer are click-to-call links
+Internal links within answers (repair vs replace guide) use standard <a> tags
+
+5.11 Related Services
+Section Overview
+A cross-linking section that connects the AC Repair page to sibling service pages within the silo. This serves both SEO (internal link equity distribution between siblings) and UX (visitors who came for repair may also need maintenance or may be evaluating replacement). Three cards for the highest-priority siblings.
+Layout
+Property
+Specification
+Container
+Full-width, #FFFFFF background
+Content Width
+1280px centered
+Padding
+48px top/bottom (desktop), 32px (mobile)
+Grid
+3 columns desktop, 1 column mobile
+Content
+Section Heading
+Related HVAC Services
+
+Service
+Card Description
+Link
+AC Installation
+If your repair cost approaches replacement territory, a new high-efficiency system may save you more in the long run. We size and install the right system for your Jacksonville home.
+/services/ac-installation
+AC Maintenance
+The best repair is the one you never need. Regular maintenance catches small issues early, extends system life, and keeps your energy bills predictable.
+/services/ac-maintenance
+Emergency AC Repair
+AC failure during a Jacksonville summer is an emergency. When indoor temperatures become unsafe, call us for priority same-day response.
+/services/emergency-ac-repair
+
+Design
+Property
+Specification
+Cards
+Same card component as homepage service cards: white bg, 16px radius, shadow, hover lift
+Icon
+48×48px SVG, Evergreen stroke, matching the service’s icon from the hub page
+Title
+Poppins 18px/600, #2C2C2C
+Description
+Poppins 14px/400, #3D3D3D
+CTA
+Poppins 14px/500, #5CB8B2, “Learn More →”
+
+5.12 Final CTA Block
+Section Overview
+Repair-specific final conversion block. Speaks to the visitor who read the entire page and understands their situation but hasn’t called yet. The message is direct and warm: “your AC problem is not going to fix itself — but we can fix it today.”
+Layout
+Property
+Specification
+Container
+Full-width, #1A5653 (Evergreen) solid background
+Content Width
+720px centered, text centered
+Padding
+72px top/bottom (desktop), 40px (mobile)
+Content
+H2 Heading
+Your AC Problem Won’t Fix Itself — But We Can Fix It Today
+Style: Poppins 32px/700, #FFFFFF
+Body
+You already know something is wrong. You’ve read about the symptoms, the process, and the pricing. The only thing left is picking up the phone or filling out the form. We’ll take it from there — same-day service, clear quote, no surprises.
+Word Count: 44 words
+Style: Poppins 17px/400, #F0E6D3, centered
+Dual CTAs
+Property
+Specification
+Primary
+Call Now: (904) 555-0199 — Coral bg, white text, pill, tel: link
+Secondary
+Schedule AC Repair — transparent bg, white border, white text, /contact?service=ac-repair
+GA4
+Property
+Specification
+phone_click
+page_section: “final_cta”
+cta_click
+button_text: “Schedule AC Repair”, destination_url: /contact?service=ac-repair, page_section: “final_cta”
+
+6. Reference: Image Asset Inventory
+Image
+Section
+Dims
+Max KB
+Format
+Status
+hero-ac-repair
+5.1 Hero
+1920×1080
+180
+WebP+JPEG
+PLACEHOLDER
+og-ac-repair
+4.1 OG
+1200×630
+200
+WebP+JPEG
+PLACEHOLDER
+8 symptom icons
+5.3 Symptoms
+32×32 ea
+2 ea
+SVG inline
+Create
+5 step indicators
+5.4 Process
+56×56 ea
+CSS
+CSS circles
+Ready
+6 benefit icons
+5.7 Why
+40×40 ea
+2 ea
+SVG inline
+Create
+3 related svc icons
+5.11 Related
+48×48 ea
+3 ea
+SVG inline
+Reuse
+3 PM metric icons
+5.8 PM
+32×32 ea
+2 ea
+SVG inline
+Reuse
+
+Most SVG icons are reused from the homepage and services hub. Only the 8 symptom-specific warning icons are new to this page.
+
+7. Reference: GA4 Event Tracking Summary
+Event
+Trigger Locations
+Parameters
+phone_click
+Hero, AEO intro, pricing CTA, PM section, FAQ answers, final CTA, header, sticky bar
+phone_number, page_section, page_url
+cta_click
+Hero “Schedule AC Repair”, PM “Discuss Properties”, symptom cards “Call for diagnosis”, related service cards, final CTA, header
+button_text, destination_url, page_section, service_type
+
+The AC Repair page is expected to be the highest-traffic service page. Monitor phone_click events with page_section breakdown to identify which sections drive the most calls. If the symptom grid generates significant call volume, consider expanding it with additional symptoms in a future update.
+
+8. Reference: Implementation Checklist
+8.1 Pre-Build
+AC Repair Part 1 reviewed and approved alongside this Part 2
+Hero image sourced (technician working on AC unit, Florida residential setting)
+OG image created or sourced for /services/ac-repair
+Pricing ranges reviewed and confirmed by client (annual review cadence)
+8.2 Build Verification
+HTML validates (W3C)
+JSON-LD validates: Service (AC Repair), BreadcrumbList (3-level), FAQPage (6 questions) — Google Rich Results Test
+Title tag unique (not duplicating homepage, hub, or any other page)
+Meta description unique
+H1 unique, contains primary keyword “AC repair” + “Jacksonville”
+Canonical URL: https://coolcozyac.com/services/ac-repair
+Breadcrumb renders: Home > Services > AC Repair (all links functional)
+All internal links verified: 3 sibling service pages, /contact?service=ac-repair, /services hub, area pages, resource article
+Click-to-call on all tel: links (test iOS + Android)
+FAQ accordion: expand/collapse, keyboard, touch, first question open by default
+Symptom cards render correctly at all breakpoints (2-col desktop, 1-col mobile)
+Pricing table readable on mobile (horizontal scroll or card reflow)
+PM section Evergreen background: text contrast verified (Warm Sand on Evergreen = 7.8:1 AAA)
+8.3 Performance
+PageSpeed Mobile > 90
+LCP < 2.5s (hero image preloaded)
+CLS < 0.1
+8.4 Content Quality
+AEO opening paragraph verified: answers “Who does AC repair in Jacksonville?” within 150 words
+All 8 symptom descriptions technically accurate (verified by HVAC professional if possible)
+Pricing ranges reflect current Jacksonville market (not outdated or misleading)
+All brand names in “What We Repair” section are spelled correctly
+No duplicate content with homepage, services hub, or sibling service pages
+FAQ answers are complete and accurate — no placeholder text remaining
+8.5 SEO Validation
+No keyword cannibalization: this page targets “AC repair Jacksonville FL,” homepage uses same but with broader intent signals; monitor in Search Console and add canonical annotation if needed
+Internal link equity flows: homepage → hub → this page → siblings. Verify all links are crawlable (not blocked by nofollow or JS-only navigation)
+XML sitemap includes /services/ac-repair with priority 0.8
+Page is indexed within 7 days of launch (monitor in Search Console)
+
+— End of Document —
+
+Prepared by TradeWorks AI  ·  May 2026  ·  v1.0
+Next recommended guide: AC Installation (/services/ac-installation)
+

@@ -1,0 +1,1097 @@
+﻿
+
+ 
+
+SERVICES HUB DEVELOPER GUIDE
+
+Services Hub
+
+
+ 
+
+Section-by-Section Implementation Specifications
+
+Clean Slate Pressure Washing
+
+A Fresh Start for Every Surface
+
+Brandon, Florida  |  Hillsborough County
+
+cleanslatepw.com
+
+Prepared by TradeWorks AI
+
+Version 1.0  |  April 2026
+
+Client Confidential
+
+
+
+
+
+
+
+
+Table of Contents
+
+
+
+OVERVIEW
+
+1.  How to Use This Guide
+
+2.  Page Identity &amp; Architecture
+
+3.  Complete &lt;head&gt; Section
+
+
+
+PAGE SECTIONS (scroll order)
+
+4.  Breadcrumb
+
+5.  Hero Section
+
+6.  AEO Introduction Paragraph
+
+7.  Residential Services Grid (7 Cards)
+
+8.  Commercial &amp; Specialty Services
+
+9.  Our Cleaning Methods Explainer
+
+10.  Why Choose Clean Slate PW
+
+11.  Service Areas Callout
+
+12.  Testimonials Row
+
+13.  FAQ Section
+
+14.  Final CTA Block
+
+15.  Footer (Shared)
+
+
+
+REFERENCE
+
+16.  Image Asset Inventory
+
+17.  GA4 Event Tracking
+
+18.  Implementation Checklist
+
+
+
+Section 1: How to Use This Guide
+
+This guide provides everything a developer needs to build the Clean Slate PW Services Hub page (/services/) from scratch. The Services Hub is the top-level gateway to all 10 individual service pages. It serves as the central routing page for visitors who arrive with general pressure washing intent and need to self-select the specific service matching their needs.
+
+This page sits one level below the homepage in the site hierarchy and one level above all individual service child pages. It receives internal link equity from the homepage services grid, the header navigation, and the footer. It distributes that equity downward to every child service page through its card grid and inline content links.
+
+
+1.1 Page Role in the Services Silo
+
+The Services Hub is the parent page of the Services silo. All 10 child service pages are direct children. The hub carries broader, category-level keywords (&apos;pressure washing services Tampa Bay&apos;) while child pages carry specific service + location keywords (&apos;roof cleaning Brandon FL&apos;). Content on this hub must be distinct from both the homepage services grid (which is a compact routing element) and the individual child pages (which go deep on a single service).
+
+Content differentiation rule: The homepage introduces services in ~15 words per card. This hub expands each service to ~40-60 words in an alternating layout with images. Child pages then provide 1,500-2,500 words of dedicated depth per service. No content is duplicated across these three levels.
+
+
+
+Section 2: Page Identity &amp; Architecture
+
+
+2.1 Page Specifications
+
+Attribute
+
+Value
+
+URL Path
+
+/services/
+
+Canonical URL
+
+https://cleanslatepw.com/services/
+
+Page Type
+
+Hub / Collection
+
+Parent Page
+
+/ (Homepage)
+
+Child Pages
+
+10 service pages (house-washing through soft-washing)
+
+Breadcrumb
+
+Home → Services
+
+Primary Keyword
+
+Pressure washing services Tampa Bay
+
+Secondary Keywords
+
+exterior cleaning services Brandon FL, soft washing services, commercial pressure washing Tampa, residential pressure washing
+
+Search Intent
+
+Commercial / Navigational
+
+Target Word Count
+
+1,200–1,600 words (visible content)
+
+Primary Conversion Goal
+
+Click-through to specific service page OR direct Free Estimate submission
+
+Secondary Conversion Goals
+
+Phone call, Commercial Quote request
+
+Content Update Frequency
+
+Quarterly (add new services, update seasonal messaging)
+
+
+
+
+2.2 Internal Links FROM This Page
+
+Link Target
+
+Placement
+
+/services/house-washing/
+
+Residential grid card 1, inline text
+
+/services/roof-cleaning/
+
+Residential grid card 2
+
+/services/driveway-cleaning/
+
+Residential grid card 3
+
+/services/pool-deck-cleaning/
+
+Residential grid card 4
+
+/services/lanai-screen-cleaning/
+
+Residential grid card 5
+
+/services/fence-cleaning/
+
+Residential grid card 6
+
+/services/gutter-cleaning/
+
+Residential grid card 7
+
+/services/commercial/
+
+Commercial section card, CTA block
+
+/services/rust-removal/
+
+Specialty section
+
+/services/soft-washing/
+
+Methods explainer section, inline text
+
+/free-estimate/
+
+Hero CTA, mid-page CTA, final CTA
+
+/service-areas/
+
+Service areas callout section
+
+/gallery/
+
+Before/after reference link
+
+/reviews/
+
+Testimonials &apos;Read All&apos; link
+
+/commercial-quote/
+
+Commercial section CTA
+
+
+2.3 Pages That Link TO This Page
+
+
+Homepage: header nav &apos;Services&apos; link, services grid &apos;View All Services&apos; link
+
+
+Every child service page: breadcrumb &apos;Services&apos; link
+
+
+Every city/area page: &apos;See all services&apos; link in service grid
+
+
+Footer: &apos;Services&apos; link in navigation column (sitewide)
+
+
+
+Section 3: Complete &lt;head&gt; Section
+
+
+3.1 Meta Tags
+
+Tag
+
+Exact Value
+
+&lt;title&gt;
+
+Pressure Washing Services Tampa Bay | Clean Slate PW
+
+&lt;meta description&gt;
+
+Residential and commercial pressure washing and soft washing services in Brandon, FL and Tampa Bay. House washing, roof cleaning, driveways, pavers, lanai screens. Free estimates — call (813) 555-0283.
+
+Title char count
+
+53 chars
+
+Meta desc char count
+
+158 chars
+
+&lt;link rel=canonical&gt;
+
+https://cleanslatepw.com/services/
+
+&lt;meta name=robots&gt;
+
+index, follow, max-image-preview:large, max-snippet:-1
+
+
+3.2 Open Graph
+
+Tag
+
+Value
+
+og:type
+
+website
+
+og:url
+
+https://cleanslatepw.com/services/
+
+og:title
+
+Pressure Washing &amp; Soft Washing Services | Clean Slate PW
+
+og:description
+
+Full-service exterior cleaning for Tampa Bay homes and businesses. House washing, roof cleaning, driveways, pool decks, lanai screens, and more.
+
+og:image
+
+https://cleanslatepw.com/images/og-services-1200x630.jpg
+
+og:site_name
+
+Clean Slate Pressure Washing
+
+twitter:card
+
+summary_large_image
+
+
+3.3 JSON-LD Structured Data
+
+
+Service Schema
+
+Deploy a Service schema with @type &quot;Service&quot;, provider referencing the LocalBusiness @id from the homepage (https://cleanslatepw.com/#business), serviceType &quot;Pressure Washing&quot;, areaServed array of 10 cities, and hasOfferCatalog listing all 10 service types. This enables Google to associate the services hub with the business entity and display rich service information.
+
+
+BreadcrumbList Schema
+
+Two-item breadcrumb: Item 1 = &quot;Home&quot; (https://cleanslatepw.com/), Item 2 = &quot;Services&quot; (https://cleanslatepw.com/services/). Deploy as separate JSON-LD block.
+
+
+FAQPage Schema
+
+Mirrors the 5 questions in Section 13 of this guide. Each Q&amp;A must match visible DOM content verbatim.
+
+
+
+Section 4: Breadcrumb
+
+Display: Home › Services. &apos;Home&apos; links to /. &apos;Services&apos; is the current page (not linked). Font 14px, color #6C757D for links, #2B2B2B for current. Separator character: › (right-pointing angle). Padding: 16px top, 8px bottom. Background inherits from hero section below.
+
+The breadcrumb sits inside the hero section at the top-left, above the H1. On mobile, it remains visible but wraps if needed.
+
+
+
+Section 5: Hero Section
+
+The services hub hero is simpler than the homepage hero — it leads with a clear H1, a supporting paragraph, and a single primary CTA. No dual CTA needed here because the page&apos;s primary goal is routing visitors to specific service pages, not converting directly.
+
+
+5.1 Layout
+
+Property
+
+Value
+
+Min Height
+
+400px desktop / 340px tablet / 300px mobile
+
+Background
+
+Hero image with navy gradient overlay rgba(11,37,69,0.80) to rgba(11,37,69,0.50)
+
+Content Alignment
+
+Left-aligned on desktop/tablet, center on mobile
+
+Content Max-Width
+
+640px
+
+Padding
+
+80px top, 80px bottom desktop / 56px mobile
+
+
+5.2 Background Image
+
+Professional photograph showing a Clean Slate PW technician in branded gear operating a surface cleaner on a residential driveway, with a Florida home visible in the background. Action shot — equipment in use, water fanning across concrete. WebP, 1920×800 desktop, under 150KB. Preload for LCP.
+
+Alt text: &apos;Clean Slate PW technician pressure washing a residential driveway in Brandon, Florida&apos;
+
+
+5.3 Hero Content — Exact Copy
+
+
+H1
+
+Residential &amp; Commercial Pressure Washing Services in Tampa Bay
+
+Font 48px desktop / 38px tablet / 32px mobile. Weight 700. White. Line-height 1.15.
+
+
+Subheadline
+
+From soft washing your roof to brightening your driveway, Clean Slate PW uses the right method and pressure for every surface — so your home looks better and lasts longer.
+
+20px desktop / 17px mobile. White at 90% opacity. Max-width 580px.
+
+
+Primary CTA
+
+&apos;Get a Free Estimate&apos; → /free-estimate/. Orange button (#E8761A), 56px height, white text, 8px radius. GA4 event: cta_click (location: services_hero).
+
+
+5.4 Trust Microcopy
+
+✓ Licensed &amp; insured  •  ✓ Soft wash certified  •  ✓ Free estimates in 24 hours
+
+14px, white at 75% opacity, 20px below CTA.
+
+
+
+Section 6: AEO Introduction Paragraph
+
+Directly below the hero. The AEO anchor for this page targets queries like &apos;what pressure washing services are available near me&apos; and &apos;exterior cleaning services Tampa Bay.&apos;
+
+
+6.1 Layout
+
+Background #FFFFFF. Padding 56px top, 40px bottom. Centered max-width 880px. No images, no CTAs — pure content density block.
+
+
+6.2 H2 Heading
+
+Complete Exterior Cleaning Services for Homes &amp; Businesses
+
+
+6.3 AEO Body — Exact Copy (~140 words)
+
+Clean Slate Pressure Washing provides a full range of residential and commercial exterior cleaning services throughout Brandon, Riverview, Valrico, Lithia, and the greater Tampa Bay region. Our service catalog includes house soft washing for painted siding and stucco, roof soft washing for asphalt shingle and tile roofs, high-pressure surface cleaning for concrete driveways and sidewalks, paver cleaning and sealing for pool decks and patios, lanai and screen enclosure cleaning, fence restoration, gutter clean-out and exterior brightening, commercial storefront and parking area cleaning, and specialized rust and stain removal. Every service uses the appropriate cleaning method for the surface type — soft washing at 100–500 PSI for delicate materials, pressure washing at 1,500–4,000 PSI for durable concrete and stone. All work is performed by licensed, insured technicians using commercial-grade equipment and biodegradable cleaning agents.
+
+
+
+Section 7: Residential Services Grid (7 Cards)
+
+The primary service routing section. Seven residential service cards in an alternating layout — image left/text right on odd rows, reversed on even rows. This alternating pattern creates visual rhythm and gives each service enough real estate for a 40-60 word description that differentiates it from the homepage&apos;s 15-word card descriptions.
+
+
+7.1 Section Heading
+
+Eyebrow: RESIDENTIAL SERVICES
+
+H2: Exterior Cleaning for Every Surface of Your Home
+
+Subheadline: Each service below uses the cleaning method specifically matched to the surface type — because in Florida&apos;s climate, the wrong approach does more harm than good.
+
+
+7.2 Layout
+
+Breakpoint
+
+Layout
+
+Image Size
+
+Gap
+
+Desktop ≥1200px
+
+Alternating 2-column (image left/right)
+
+50% width, 3:2 aspect
+
+48px vertical between rows
+
+Tablet 768–1199px
+
+Same alternating 2-column
+
+50% width
+
+32px vertical
+
+Mobile &lt;768px
+
+Stacked single column (image above text)
+
+Full width, 16:9
+
+24px vertical
+
+
+7.3 Service Card Inventory
+
+#
+
+Service (H3)
+
+Description (40-60 words)
+
+Link
+
+1
+
+House Soft Washing
+
+Florida&apos;s humidity coats vinyl siding, stucco, and painted surfaces with a persistent layer of mildew, algae, and grime. Our low-pressure soft wash system uses biodegradable cleaning agents at under 500 PSI to safely dissolve organic growth and restore your home&apos;s original finish — without stripping paint, cracking stucco, or voiding manufacturer warranties.
+
+/services/house-washing/
+
+2
+
+Roof Soft Washing
+
+Black streaks on your roof are Gloeocapsa magma — a cyanobacteria that feeds on the limestone filler in asphalt shingles. Our roof soft wash kills the algae at its root using industry-approved chemistry at under 100 PSI. No high-pressure wands ever touch your shingles, protecting both the roof and your manufacturer&apos;s warranty.
+
+/services/roof-cleaning/
+
+3
+
+Driveway &amp; Sidewalk Cleaning
+
+Concrete driveways and sidewalks can handle what delicate surfaces cannot: high-pressure surface cleaning at 2,500–4,000 PSI. Our commercial surface cleaners eliminate oil stains, tire marks, rust, mildew, and years of embedded dirt in a single pass, leaving a uniform, streak-free finish across the entire surface.
+
+/services/driveway-cleaning/
+
+4
+
+Pool Deck &amp; Paver Cleaning
+
+Tampa Bay pool decks take a beating from chlorine splash, Florida rain, and constant foot traffic. We clean travertine, brick pavers, stamped concrete, and cool-deck coatings using the appropriate pressure for each material. Paver re-sanding and sealing services available to lock in the clean and prevent weed growth.
+
+/services/pool-deck-cleaning/
+
+5
+
+Lanai &amp; Screen Cleaning
+
+Pool cages and lanai screens accumulate a film of pollen, mildew, and oxidation that blocks light and traps humidity inside the enclosure. Our soft wash process cleans screens, frames, and the ceiling without tearing a single screen panel — guaranteed. We also clean the concrete or paver floor inside the cage.
+
+/services/lanai-screen-cleaning/
+
+6
+
+Fence Cleaning &amp; Restoration
+
+Vinyl fences yellow and stain. Wood fences gray and mildew. Aluminum fences oxidize and pit. We match the cleaning method to the material: soft wash for vinyl and painted aluminum, low-pressure wood brightening for cedar and pine, and targeted stain removal for rust and irrigation marks on any fence type.
+
+/services/fence-cleaning/
+
+7
+
+Gutter Cleaning &amp; Brightening
+
+Interior gutter clean-out removes leaves, debris, and standing water that breed mosquitoes and cause fascia rot. Exterior gutter brightening removes the dark &apos;tiger stripes&apos; — oxidation streaks caused by water runoff interacting with the aluminum finish. Both services performed in a single visit.
+
+/services/gutter-cleaning/
+
+
+7.4 Card Design
+
+
+Image: 3:2 aspect ratio photograph showing the specific service being performed on a Florida home. WebP, under 100KB. Alt text: &apos;[Service name] on a [property type] in [city], FL&apos;.
+
+
+H3: 24px, weight 700, #0B2545. Margin-bottom 12px.
+
+
+Description: 16px, weight 400, #2B2B2B, line-height 1.65. Max 4 lines on desktop.
+
+
+&apos;Learn More →&apos; link: 16px, weight 600, #3E6990. Underline on hover. Margin-top 16px.
+
+
+Image hover: Subtle scale 1.03 with overflow hidden. 200ms ease.
+
+
+
+Section 8: Commercial &amp; Specialty Services
+
+Separate section below the residential grid for commercial pressure washing, rust/stain removal, and the soft washing methodology page. This separation serves two purposes: it prevents commercial content from diluting the residential-focused SEO of the main grid, and it gives property managers a clear entry point without scrolling through residential services.
+
+
+8.1 Section Heading
+
+Eyebrow: COMMERCIAL &amp; SPECIALTY
+
+H2: Services for Businesses, Property Managers &amp; HOAs
+
+
+8.2 Layout
+
+Background #F5F7F9 (Off-white). Three cards in a horizontal row on desktop, stacked on mobile. Each card is a compact version of the residential cards — icon + H3 + 2-line description + CTA link.
+
+
+8.3 Card Inventory
+
+#
+
+Service (H3)
+
+Description
+
+Link
+
+1
+
+Commercial Pressure Washing
+
+Storefronts, parking lots, dumpster pads, sidewalks, and HOA common areas. Scheduled weekly, monthly, or quarterly maintenance contracts. Volume pricing for multi-property portfolios.
+
+/services/commercial/
+
+2
+
+Rust &amp; Stain Removal
+
+Battery acid drips, fertilizer rust, irrigation overspray stains, and organic discoloration on concrete, pavers, and stone. Specialized chemistry matched to the stain type for complete removal without surface damage.
+
+/services/rust-removal/
+
+3
+
+Soft Washing Methods
+
+Not every surface can handle high pressure. Learn how our soft washing methodology protects roofs, siding, stucco, and screens while delivering a deeper, longer-lasting clean than pressure washing alone.
+
+/services/soft-washing/
+
+
+8.4 Commercial CTA Row
+
+Below the three cards, a centered CTA row for commercial prospects:
+
+&apos;Request a Commercial Quote&apos; → /commercial-quote/. Orange button, 52px height. Secondary link: &apos;Or call (813) 555-0283&apos; as text link below the button.
+
+
+
+Section 9: Our Cleaning Methods Explainer
+
+A concise visual explainer that educates visitors on the difference between soft washing and pressure washing. This section exists because the #1 customer objection in the category is &apos;will this damage my surfaces?&apos; — and the answer depends on which method is used. Addressing this on the services hub prevents bounce from visitors who arrive uncertain.
+
+
+9.1 Section Heading
+
+H2: Two Methods. One Clean Guarantee.
+
+
+9.2 Layout
+
+Two-column comparison on desktop (side-by-side), stacked on mobile. Left column: Soft Washing. Right column: Pressure Washing. Each column has an icon, method name, PSI range, surface list, and when-to-use guidance.
+
+
+9.3 Content
+
+Attribute
+
+Soft Washing
+
+Pressure Washing
+
+PSI Range
+
+100–500 PSI
+
+1,500–4,000 PSI
+
+How It Works
+
+Low-pressure water + biodegradable cleaning agents dissolve algae, mildew, and stains at the root
+
+High-pressure water physically blasts embedded dirt, oil, and grime from hard surfaces
+
+Best For
+
+Roofs, stucco, vinyl siding, painted surfaces, lanai screens, wood fences
+
+Concrete driveways, sidewalks, pavers, pool decks, parking lots, brick
+
+Why It Matters
+
+Protects shingles, paint, and delicate finishes. Required by most shingle manufacturers to maintain warranty.
+
+Delivers deep cleaning on surfaces that can withstand force. Removes stains soft washing alone cannot.
+
+Risk If Wrong Method Used
+
+Using high pressure on roofs strips granules, voids warranties, and causes leaks
+
+Using soft wash on concrete leaves embedded stains; insufficient cleaning power
+
+
+9.4 Below-Comparison CTA
+
+&apos;Learn more about our soft washing process →&apos; Links to /services/soft-washing/. Text link, #3E6990, 16px, weight 600.
+
+
+
+Section 10: Why Choose Clean Slate PW
+
+Compact trust reinforcement section — four differentiators in a horizontal row. Lighter than the homepage&apos;s six-pillar version because the services hub is a routing page, not a conversion landing page.
+
+
+10.1 Layout
+
+Background #FFFFFF. Four cards in a single row on desktop (3 on tablet, stacked on mobile). Each card: 48px orange icon + H3 + 2-line description.
+
+
+10.2 Differentiators
+
+#
+
+Differentiator (H3)
+
+Description
+
+Icon
+
+1
+
+Method-Matched Cleaning
+
+We choose the right PSI for each surface — never a one-pressure-fits-all approach.
+
+Gauge
+
+2
+
+Licensed &amp; Insured
+
+FL Lic. FL Lic. #BL-2021-04417. $2M general liability in general liability coverage on every project.
+
+Shield
+
+3
+
+24-Hour Estimates
+
+Submit a request and receive a written, flat-rate estimate within 24 hours — often same day.
+
+Clock
+
+4
+
+Satisfaction Guaranteed
+
+Not satisfied? We return and address it at no additional cost. Written guarantee, no exceptions.
+
+Star
+
+
+
+Section 11: Service Areas Callout
+
+A compact geographic reinforcement block. Lists the primary service cities and links to the service areas hub. Reinforces local SEO signals on the services hub page.
+
+
+11.1 Layout
+
+Background #E8EEF2 (Mist). Padding 48px top/bottom. Centered max-width 1000px. Single-column centered text with city names as inline links.
+
+
+11.2 Content — Exact Copy
+
+H3: Serving Brandon &amp; the Greater Tampa Bay Region
+
+We provide all services listed above throughout Hillsborough County, including Brandon, Riverview, Valrico, Lithia, FishHawk, Apollo Beach, Plant City, Seffner, Bloomingdale, and Tampa. Each city name is a hyperlink to its respective /service-areas/[city]/ page.
+
+&apos;See Full Service Area Map →&apos; → /service-areas/. Text link, #3E6990, 16px, weight 600. Centered below city list.
+
+
+
+Section 12: Testimonials Row
+
+Three testimonials in a horizontal row, specifically selected for service diversity — one house wash, one roof, one commercial. Links to the full reviews page.
+
+
+12.1 Layout
+
+Background #FFFFFF. Three cards side-by-side on desktop, carousel on mobile. Same card design as homepage testimonials (Section 13 of homepage guide).
+
+
+12.2 Selected Testimonials
+
+Customer
+
+Service
+
+Excerpt (shortened)
+
+Sarah M., Brandon
+
+House Wash
+
+Jason and his team transformed our stucco house. Explained soft washing before starting, finished in under three hours. Best exterior cleaning we&apos;ve had.
+
+David K., Riverview
+
+Roof Wash
+
+Our tile roof had black streaks I thought were permanent. Clean Slate removed them without pressure damage. Quote came same-day.
+
+James P., Apollo Beach
+
+Commercial
+
+Commercial cleaning for our storefront. Quick turnaround, worked around our business hours. Will use them quarterly.
+
+&apos;Read all 150+ reviews on Google →&apos; → GBP reviews URL. Centered below cards. #3E6990, 16px, weight 600.
+
+
+
+Section 13: FAQ Section
+
+Five questions targeting service-selection queries. These differ from the homepage FAQ (which targets cost, safety, and geographic questions). The services hub FAQ focuses on helping visitors choose the right service and understand the process.
+
+
+13.1 FAQ Inventory — Exact Q&amp;A Copy
+
+
+Q1: How do I know which cleaning service I need?
+
+The simplest way is to tell us what surface you want cleaned and we will recommend the right service and method. Generally: roofs, siding, stucco, and screens require soft washing (low pressure + cleaning agents). Driveways, sidewalks, pool decks, and pavers require pressure washing (high pressure surface cleaning). If you are unsure, request a free estimate and we will assess your property and recommend the correct service.
+
+
+Q2: Can you clean multiple surfaces in one visit?
+
+Yes. Most homeowners book two or three services in a single appointment — the most common combination is house soft wash plus driveway cleaning. Bundling services in one visit reduces setup time and we offer a discount when you book two or more services together. Our team brings all equipment needed for both soft washing and pressure washing on every truck.
+
+
+Q3: How long does a typical residential cleaning take?
+
+A standard house soft wash takes 2–3 hours for a single-story home and 3–4 hours for a two-story. Driveway cleaning typically takes 1–2 hours depending on size and staining. Roof soft washing takes 2–4 hours depending on roof size and algae severity. Most bundled appointments (house + driveway) are completed in a single morning or afternoon.
+
+
+Q4: Do you offer recurring maintenance contracts?
+
+Yes. We offer annual, semi-annual, and quarterly maintenance schedules for both residential and commercial properties. Recurring customers receive priority scheduling, a locked-in rate for 12 months, and automatic reminders before each scheduled service. Contact us to set up a maintenance plan that matches your property&apos;s needs and Florida&apos;s cleaning cycle.
+
+
+Q5: What areas do you serve?
+
+Clean Slate PW serves Brandon, Riverview, Valrico, Lithia, FishHawk, Apollo Beach, Plant City, Seffner, Bloomingdale, Tampa, and surrounding Hillsborough County communities. For larger commercial projects, we travel throughout the Tampa Bay region. Call (813) 555-0283 to confirm service availability for your specific location.
+
+
+13.2 Schema Requirement
+
+All 5 Q&amp;A pairs above must be mirrored exactly in the FAQPage JSON-LD schema in the &lt;head&gt;. Update both simultaneously when any question or answer is modified.
+
+
+
+Section 14: Final CTA Block
+
+Full-width navy background (#0B2545). Centered content max-width 720px. Padding 96px top/bottom desktop.
+
+
+14.1 Content — Exact Copy
+
+Eyebrow: READY TO GET STARTED?
+
+H2: Get a Free Estimate for Any Service.
+
+Subheadline: Tell us what you need cleaned. We will send a written, flat-rate estimate within 24 hours — usually same-day.
+
+
+14.2 Dual CTAs
+
+Element
+
+Primary
+
+Secondary
+
+Label
+
+Get My Free Estimate
+
+Call (813) 555-0283
+
+Link
+
+/free-estimate/
+
+tel:+18135550283
+
+Style
+
+Orange solid, 60px height
+
+White ghost, 60px height
+
+GA4
+
+cta_click (services_final, primary)
+
+phone_click
+
+Trust microcopy: ✓ No-obligation quote  •  ✓ Response within 24 hours  •  ✓ Licensed &amp; insured
+
+
+
+Section 15: Footer (Shared Component)
+
+The footer is a shared component identical across all pages. Refer to the Homepage Developer Guide Section 18 for complete footer specifications. No modifications are needed for the services hub page — the footer renders identically.
+
+
+
+Section 16: Image Asset Inventory
+
+#
+
+Asset / Section
+
+Dimensions / Format
+
+Alt Text
+
+1
+
+Hero background — technician on driveway
+
+1920×800 WebP; 828×600 mobile
+
+Clean Slate PW technician pressure washing a residential driveway in Brandon, Florida
+
+2–8
+
+Residential service images (7)
+
+800×533 WebP (3:2) each
+
+Per service: [Service name] on a Florida [property type]
+
+9–11
+
+Commercial/specialty icons (3)
+
+64×64 SVG each
+
+Per service: [service] icon
+
+12–15
+
+Why Choose Us icons (4)
+
+48×48 SVG (orange) each
+
+Per differentiator: [concept] icon
+
+16
+
+OG image for services page
+
+1200×630 JPG
+
+Clean Slate PW exterior cleaning services in Tampa Bay
+
+
+16.1 Standards
+
+
+Hero &lt;150KB. Service images &lt;100KB. Icons &lt;8KB.
+
+
+Hero preloaded. All other images loading=&apos;lazy&apos;.
+
+
+WebP primary with JPEG fallback via &lt;picture&gt;.
+
+
+Every image MUST have alt attribute.
+
+
+
+Section 17: GA4 Event Tracking
+
+
+17.1 Page-Specific Events
+
+Event
+
+Trigger
+
+Parameters
+
+Type
+
+page_view
+
+Page load (auto)
+
+page_location, page_title
+
+Standard
+
+cta_click
+
+Any CTA button
+
+cta_label, cta_location, cta_target_url
+
+Engagement
+
+phone_click
+
+Any tel: link
+
+phone_number, click_location
+
+Conversion
+
+service_card_click
+
+Service card click
+
+service_name, service_url, card_position
+
+Engagement
+
+faq_expand
+
+FAQ accordion open
+
+question_text, question_index
+
+Engagement
+
+scroll
+
+25/50/75/90% depth
+
+percent_scrolled
+
+Engagement
+
+commercial_quote_click
+
+Commercial quote CTA
+
+cta_location
+
+Conversion
+
+
+
+Section 18: Implementation Checklist
+
+
+18.1 Content
+
+
+All H1/H2/H3 headings match exact copy in this guide.
+
+
+All 7 residential service descriptions match word-for-word.
+
+
+All 3 commercial/specialty descriptions match.
+
+
+All 5 FAQ answers match and are mirrored in FAQPage schema.
+
+
+Phone (813) 555-0283 is a working tel: link everywhere it appears.
+
+
+All 10 service page URLs resolve (no 404s).
+
+
+/free-estimate/ and /commercial-quote/ resolve.
+
+
+18.2 Technical
+
+
+Title tag and meta description match spec.
+
+
+Canonical points to https://cleanslatepw.com/services/.
+
+
+Service schema, BreadcrumbList, and FAQPage schemas validate at validator.schema.org.
+
+
+Breadcrumb displays &apos;Home › Services&apos; correctly.
+
+
+OG image renders correctly on Facebook/LinkedIn share preview.
+
+
+Hero image preloaded. All below-fold images lazy-loaded.
+
+
+PageSpeed mobile &gt;85, desktop &gt;95.
+
+
+GTM container fires page_view, cta_click, service_card_click events correctly.
+
+
+
+— End of Services Hub Developer Guide —
+
+Clean Slate Pressure Washing — Services Hub Guide v1.0 | Prepared by TradeWorks AI | April 2026
+
+
+

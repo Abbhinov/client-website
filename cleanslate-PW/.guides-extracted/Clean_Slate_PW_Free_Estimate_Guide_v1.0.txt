@@ -1,0 +1,345 @@
+﻿
+
+ 
+
+FREE ESTIMATE PAGE DEVELOPER GUIDE
+
+Free Estimate
+
+
+ 
+
+Lead Capture Form Implementation
+
+Clean Slate Pressure Washing
+
+A Fresh Start for Every Surface
+
+Brandon, Florida  |  Hillsborough County
+
+cleanslatepw.com
+
+Prepared by TradeWorks AI
+
+Version 1.0  |  April 2026
+
+Client Confidential
+
+
+
+
+
+
+
+
+Section 1: How to Use This Guide
+
+This guide covers the Free Estimate page (/free-estimate/) — the single most important conversion page on the site. Every primary CTA across the entire site routes here. The page is designed as a focused conversion funnel with minimal content, maximum form visibility, and layered trust signals immediately adjacent to the form.
+
+
+
+Section 2: Page Identity &amp; Architecture
+
+Attribute
+
+Value
+
+URL Path
+
+/free-estimate/
+
+Canonical URL
+
+https://cleanslatepw.com/free-estimate/
+
+Page Type
+
+Conversion / Lead Capture
+
+Parent
+
+/ (Homepage)
+
+Breadcrumb
+
+Home → Free Estimate
+
+Primary Keyword
+
+Free pressure washing estimate Brandon FL
+
+Search Intent
+
+Transactional
+
+Target Word Count
+
+300–500 words (minimal — form IS the content)
+
+LCP Target
+
+&lt;1.5s
+
+Primary Conversion Goal
+
+Form submission (this IS the conversion endpoint)
+
+
+
+Section 3: &lt;head&gt; Section
+
+Tag
+
+Value
+
+&lt;title&gt;
+
+Free Estimate | Clean Slate Pressure Washing | Brandon FL
+
+&lt;meta description&gt;
+
+Get a free, flat-rate pressure washing estimate from Clean Slate PW in Brandon, FL. Written estimate within 24 hours. No obligation, no high-pressure sales. Call (813) 555-0283.
+
+&lt;link rel=canonical&gt;
+
+https://cleanslatepw.com/free-estimate/
+
+
+
+Section 4: Page Layout
+
+Two-column on desktop: estimate form (left, 60%) and trust panel (right, 40%). Stacked on mobile: trust badges first (compact), then form. Background: clean white. No hero image, no distracting visuals. The form is above the fold on all viewports.
+
+
+4.1 H1
+
+Get Your Free Estimate
+
+
+4.2 Subheadline
+
+Tell us what you need cleaned. We will send a written, flat-rate estimate within 24 hours — usually same-day. No obligation. No sales pressure.
+
+
+
+Section 5: Estimate Form Specification
+
+
+5.1 Form Fields
+
+Field
+
+Type
+
+Required
+
+Validation / Notes
+
+Full Name
+
+text
+
+Yes
+
+Min 2 chars, autocomplete=&apos;name&apos;
+
+Email
+
+email
+
+Yes
+
+RFC 5322, autocomplete=&apos;email&apos;
+
+Phone
+
+tel
+
+Yes
+
+10-digit US, autocomplete=&apos;tel&apos;
+
+Service Address
+
+text
+
+Yes
+
+Google Places autocomplete. autocomplete=&apos;street-address&apos;
+
+City
+
+text
+
+Auto-filled
+
+Auto-populated from Google Places. autocomplete=&apos;address-level2&apos;
+
+ZIP Code
+
+text
+
+Auto-filled
+
+Auto-populated. inputmode=&apos;numeric&apos;. autocomplete=&apos;postal-code&apos;
+
+Services Needed
+
+multi-select checkboxes
+
+Yes (min 1)
+
+Options: House Washing, Roof Cleaning, Driveway, Pool Deck/Pavers, Lanai/Screens, Fence, Gutters, Commercial, Rust Removal, Other
+
+Property Type
+
+select
+
+Yes
+
+Options: Single-Family Home, Townhouse/Condo, Multi-Family, Commercial, HOA Common Area
+
+Best Time to Contact
+
+select
+
+No
+
+Options: Morning (8-12), Afternoon (12-5), Evening (5-7), Anytime
+
+Additional Details
+
+textarea
+
+No
+
+Max 500 chars, 3 rows. Placeholder: &apos;Any specifics? Square footage, special concerns, HOA deadline, etc.&apos;
+
+Honeypot
+
+hidden
+
+—
+
+Bot trap
+
+
+5.2 Conditional Logic
+
+
+If &apos;Commercial&apos; is selected in Services Needed, show additional field: &apos;Property Size (approx. sq ft)&apos; — number input.
+
+
+If &apos;HOA Common Area&apos; is selected in Property Type, show additional field: &apos;Management Company Name&apos; — text input.
+
+
+URL parameter pre-selection: if ?service=roof-cleaning is in URL, pre-check &apos;Roof Cleaning&apos; in Services Needed. If ?area=brandon is in URL, pre-fill City with &apos;Brandon&apos;.
+
+
+5.3 Form Behavior
+
+
+Inline validation on blur with specific error messages.
+
+
+reCAPTCHA v3 (invisible). Rate limit: 3 submissions per IP per hour.
+
+
+Submission → Cloud Functions → Zoho CRM (create Lead) + SendGrid (auto-response email + internal alert).
+
+
+Auto-response email: branded template confirming receipt, listing services requested, and setting 24-hour response expectation.
+
+
+On-page success: replace form with confirmation panel: &apos;Thank you, [Name]! Your estimate request for [services] at [address] has been received. Expect a written estimate within 24 hours. Questions? Call (813) 555-0283.&apos;
+
+
+GA4: form_start (first focus), form_submit (success). form_submit marked as Conversion.
+
+
+Submit button: &apos;Request My Free Estimate&apos; — orange, full-width on mobile, 56px height, 700 weight.
+
+
+
+Section 6: Trust Panel (Right Column)
+
+Adjacent to the form on desktop, above form on mobile. Stacks these trust elements vertically:
+
+
+Review badge: &apos;4.9★ from 150+ Google Reviews&apos; with star icons and Google logo.
+
+
+Guarantee badge: &apos;100% Satisfaction Guarantee — Written, Not Verbal.&apos;
+
+
+License badge: &apos;Licensed &amp; Insured — FL Lic. #BL-2021-04417, $2M general liability.&apos;
+
+
+Response promise: &apos;Estimates returned within 24 hours. Usually same-day.&apos;
+
+
+Mini testimonial: One 2-sentence review with customer name and city. Rotates from a pool of 3.
+
+
+Phone fallback: &apos;Prefer to talk? Call (813) 555-0283 — we answer 7 days a week.&apos; Click-to-call link.
+
+
+
+Section 7: Below-Form Content
+
+Minimal content below the form — only a brief &apos;What Happens Next&apos; section to set expectations.
+
+
+7.1 What Happens Next (3 Steps)
+
+
+We review your request within 4 business hours and may reach out with clarifying questions about your property.
+
+
+We send a written estimate via email within 24 hours — flat-rate, itemized by service, with no hidden fees.
+
+
+You decide on your timeline. No follow-up pressure, no expiring quotes. When you are ready, we schedule your service.
+
+
+
+Section 8: Implementation Checklist
+
+
+Form submits and creates Zoho CRM lead record.
+
+
+Auto-response email delivers within 60 seconds.
+
+
+Google Places autocomplete works on address field.
+
+
+Conditional fields appear/hide correctly.
+
+
+URL parameters pre-select service and city correctly.
+
+
+On-page confirmation displays after successful submit.
+
+
+form_submit GA4 event fires and is configured as Conversion.
+
+
+reCAPTCHA v3 scoring active.
+
+
+LCP under 1.5 seconds.
+
+
+Form is fully above the fold on mobile (no scrolling to reach first field).
+
+
+
+— End of Free Estimate Page Guide —
+
+Clean Slate Pressure Washing — Free Estimate v1.0 | TradeWorks AI | April 2026
+
+
+

@@ -1,0 +1,76 @@
+<!-- =========================================================================
+     GLOBAL HEADER PARTIAL — Announcement Bar + Sticky Header/Nav
+     Reused on every page via data-include="partials/header.html" + main.js
+     ========================================================================= -->
+
+<!-- Section 1: Announcement Bar -->
+<div id="announcement-bar" class="announcement-bar" role="complementary" aria-label="Announcement">
+  <div class="announcement-bar__content">
+    <p>Schedule your free painting estimate today &mdash;
+      <a href="/contact/" class="announcement-bar__link" data-cta="announcement_bar">now serving Riverview, Brandon &amp; all of south Hillsborough County!</a>
+    </p>
+  </div>
+  <button class="announcement-bar__close" aria-label="Dismiss announcement" type="button">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+      <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+    </svg>
+  </button>
+</div>
+
+<!-- Section 2: Header & Navigation -->
+<header class="header" id="site-header" role="banner">
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <div class="header__container">
+    <button class="header__hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav" type="button">
+      <span class="header__hamburger-line"></span>
+      <span class="header__hamburger-line"></span>
+      <span class="header__hamburger-line"></span>
+    </button>
+
+    <a href="/" class="header__logo" aria-label="Ayala Pro Painting - Home">
+      <img src="/images/logo.svg" alt="Ayala Pro Painting" width="180" height="48">
+    </a>
+
+    <nav class="header__nav" id="main-nav" role="navigation" aria-label="Main navigation">
+      <ul class="header__nav-list">
+        <li class="header__nav-item header__nav-item--dropdown" data-path="/services/">
+          <a href="/services/" class="header__nav-link" aria-haspopup="true" aria-expanded="false">Services</a>
+          <ul class="header__dropdown" role="menu">
+            <li><a href="/services/interior-painting/" role="menuitem">Interior Painting</a></li>
+            <li><a href="/services/exterior-painting/" role="menuitem">Exterior Painting</a></li>
+            <li><a href="/services/cabinet-painting/" role="menuitem">Cabinet Painting</a></li>
+            <li><a href="/services/commercial-painting/" role="menuitem">Commercial Painting</a></li>
+            <li><a href="/services/pressure-washing/" role="menuitem">Pressure Washing</a></li>
+            <li class="header__dropdown-all"><a href="/services/" role="menuitem">All Services &rarr;</a></li>
+          </ul>
+        </li>
+        <li class="header__nav-item header__nav-item--dropdown" data-path="/areas/">
+          <a href="/areas/" class="header__nav-link" aria-haspopup="true" aria-expanded="false">Areas We Serve</a>
+          <ul class="header__dropdown" role="menu">
+            <li><a href="/areas/riverview/" role="menuitem">Riverview</a></li>
+            <li><a href="/areas/brandon/" role="menuitem">Brandon</a></li>
+            <li><a href="/areas/valrico/" role="menuitem">Valrico</a></li>
+            <li><a href="/areas/fish-hawk/" role="menuitem">Fish Hawk</a></li>
+            <li><a href="/areas/apollo-beach/" role="menuitem">Apollo Beach</a></li>
+            <li class="header__dropdown-all"><a href="/areas/" role="menuitem">All Areas &rarr;</a></li>
+          </ul>
+        </li>
+        <li class="header__nav-item" data-path="/gallery/"><a href="/gallery/" class="header__nav-link">Our Work</a></li>
+        <li class="header__nav-item" data-path="/about/"><a href="/about/" class="header__nav-link">About</a></li>
+      </ul>
+    </nav>
+
+    <div class="header__actions">
+      <a href="tel:8135550199" class="header__phone" data-phone aria-label="Call (813) 555-0199">
+        <svg class="header__phone-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/>
+        </svg>
+        <span class="header__phone-text">(813) 555-0199</span>
+        <span class="header__phone-icon-mobile sr-only">Call us</span>
+      </a>
+      <a href="/contact/" class="btn btn--primary header__cta" data-cta="header">Free Estimate</a>
+    </div>
+  </div>
+</header>
+
+<div class="nav-backdrop" id="nav-backdrop" hidden></div>

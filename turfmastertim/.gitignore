@@ -1,0 +1,11 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# editor
+.vscode/*
+!.vscode/extensions.json
+.idea
+
+# project-local
+extracted/

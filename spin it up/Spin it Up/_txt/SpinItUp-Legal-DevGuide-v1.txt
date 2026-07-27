@@ -1,0 +1,354 @@
+
+SPIN IT UP LAUNDRY
+LEGAL PAGESDEVELOPER GUIDE
+Privacy Policy • Terms of Service • Accessibility Statement
+
+URL: spinituplaundry.net
+Prepared by: TradeWorks AI  |  Version 1.0  |  May 2026
+Classification: Client Confidential
+
+Table of Contents
+1  How to Use This Guide
+2  Shared Specifications
+3  Privacy Policy — Page Identity
+4  Privacy Policy — Content
+5  Terms of Service — Page Identity
+6  Terms of Service — Content
+7  Accessibility Statement — Page Identity
+8  Accessibility Statement — Content
+9  Shared: Header, Footer, Sticky CTA
+10  Reference: Implementation Checklist
+
+1. How to Use This Guide
+This guide covers three legal pages bundled into a single document because they share the same layout pattern, design system, and structural approach. Each page is a standalone legal document linked from the site footer on every page.
+These pages are legally significant. The content provided here is a starting framework based on standard practices for a Chicago laundromat collecting form data and using analytics tools. The client should have the final published versions reviewed by a legal professional before launch, particularly the Privacy Policy (which involves EBT/payment data handling and Illinois-specific consent requirements).
+Important Legal Disclaimer
+NOTE:  TradeWorks AI is not a law firm. The legal content in this guide is a reasonable starting framework based on standard web practices, Illinois state law references, and common compliance patterns. It is NOT legal advice. The client is responsible for having all legal pages reviewed by a qualified attorney before publication. This is especially important for the Privacy Policy given EBT data handling, Illinois’ Biometric Information Privacy Act (BIPA), and the state’s two-party consent requirement for call recording.
+Content Authoring Rules
+All content written fresh.
+Legal content must be client-reviewed by an attorney before publication.
+Tone: clear, plain-language, not dense legalese. Readable by a laundromat customer, not just a lawyer.
+Effective date and last-updated date must be set at publication time.
+
+2. Shared Specifications
+All three legal pages share identical layout, navigation, and design specifications.
+2.1 Shared Layout
+Property
+Value
+Page Type
+Legal — footer-only navigation
+Navigation Placement
+Footer links only (not in primary nav)
+Robots Directive
+index, follow (legal pages should be indexable)
+XML Sitemap
+Include — priority 0.3
+Header
+Global header, solid white, no nav item active
+Hero
+Minimal: Spin Blue gradient, breadcrumb + H1 only, padding 48px 0 (desktop), 36px 16px (mobile)
+Content Layout
+Single column, max-width 800px centered, no sidebar
+Typography
+Body: 17px/400 Body Text, line-height 1.7. H2: 28px/700 Dark Slate. H3: 22px/700 Spin Blue.
+Section Spacing
+H2 sections separated by 48px. H3 subsections by 24px.
+Background
+White (#FFFFFF) for content. No alternating backgrounds.
+Footer
+Global footer, no modifications
+Sticky CTA
+Hidden on legal pages. No conversion CTAs on legal content.
+DEV ACTION:  Disable the sticky mobile CTA bar on all three legal pages. Legal pages should not have conversion-oriented elements overlaying the content. Implement via a body class (e.g., body.page-legal) that hides the sticky bar.
+2.2 Shared Design Elements
+Effective date displayed below H1: "Effective: [DATE]" in 15px/500 Caption Gray.
+Last updated date at bottom of content: "Last updated: [DATE]" in 14px/400 Caption Gray.
+Table of contents at the top of long pages (Privacy Policy, Terms): linked anchor list to H2 sections.
+Contact info block at the bottom of each page with email (mailto:) and phone (tel:) links.
+Print-friendly: no background colors on text, adequate margins. Users may print legal pages.
+
+3. Privacy Policy — Page Identity
+URL Path
+/privacy-policy/
+Page Type
+Legal
+Canonical URL
+https://spinituplaundry.net/privacy-policy/
+Breadcrumb
+Home > Privacy Policy
+Title Tag
+Privacy Policy | Spin It Up Laundry (42 characters)
+Meta Description
+Privacy policy for Spin It Up Laundry. How we collect, use, and protect your information when you visit our website or use our services. (135 characters)
+Robots
+index, follow
+Schema
+BreadcrumbList only (no special legal schema needed)
+hreflang
+None (legal pages English-only for Phase 1)
+Target Word Count
+800–1,200 words
+Hero Content
+H1: "Privacy Policy" — 2 words. White. Font: 36px/800 (desktop), 28px (mobile).
+Below H1: "Effective: [DATE]" — 15px/500 rgba(255,255,255,0.7).
+
+4. Privacy Policy — Content
+The following content sections form the complete Privacy Policy. Each H2 is a linkable section from the in-page table of contents.
+
+H2: Introduction
+"Spin It Up Laundry (“we,” “us,” or “our”) operates the website spinituplaundry.net and provides laundry services at 3710 N Kimball Ave, Chicago, IL 60618. This Privacy Policy describes how we collect, use, and protect your personal information when you visit our website, submit a contact form, use our pickup and delivery service through the Cents app, or interact with us in person at our facility."
+
+"By using our website or services, you agree to the practices described in this policy. If you do not agree, please do not use our website or services."
+H2: Information We Collect
+H3: Information You Provide
+"When you fill out a contact form, request a commercial quote, or communicate with us, you may provide: your name, email address, phone number, business name (for commercial inquiries), service preferences, and any message content you submit. When you use our pickup and delivery service through the Cents app, the information you provide is collected and processed by Cents (our third-party ordering platform) under their own privacy policy."
+H3: Information Collected Automatically
+"When you visit our website, we automatically collect certain information through cookies and analytics tools, including: your IP address, browser type, device type, operating system, pages visited, time spent on pages, referring website, and general geographic location. We use Google Analytics 4 (GA4) and Google Tag Manager (GTM) for website analytics. These tools use cookies to collect anonymized usage data."
+H3: Payment Information
+"We do not collect, store, or process credit card, debit card, or EBT card numbers through our website. In-store payments (including EBT) are processed at the point of sale through our payment terminal. Online payments for pickup and delivery are processed through the Cents app, which handles payment information under their own privacy and security policies."
+H2: How We Use Your Information
+"We use the information we collect to:"
+Respond to your contact form submissions and commercial inquiries
+Provide and improve our laundry services
+Send order confirmations and service-related communications
+Analyze website usage to improve our site and user experience
+Comply with legal obligations
+
+"We do not sell, rent, or share your personal information with third parties for their marketing purposes."
+H2: Cookies & Tracking Technologies
+"Our website uses cookies and similar technologies for analytics and functionality. The cookies we use include:"
+Cookie/Tool
+Purpose
+Type
+Google Analytics 4
+Website traffic analysis, page views, user behavior
+Analytics
+Google Tag Manager
+Tag management for analytics and conversion tracking
+Functional
+reCAPTCHA v3
+Spam prevention on contact forms
+Security
+"You can control cookies through your browser settings. Disabling cookies may affect some website functionality but will not prevent you from viewing our content."
+H2: Third-Party Services
+"We use the following third-party services that may collect or process data:"
+Service
+Purpose
+Their Privacy Policy
+Google Analytics / GTM
+Website analytics
+policies.google.com/privacy
+Google Maps
+Location maps on our website
+policies.google.com/privacy
+Google reCAPTCHA
+Form spam prevention
+policies.google.com/privacy
+Cents
+Pickup & delivery ordering platform
+[CENTS_PRIVACY_URL]
+SendGrid (if used)
+Transactional email delivery
+twilio.com/legal/privacy
+"We encourage you to review the privacy policies of these third-party services."
+H2: Data Retention
+"We retain contact form submissions and commercial inquiry data for as long as necessary to respond to your request and maintain our business records, typically up to 24 months. Website analytics data is retained according to our Google Analytics configuration. You may request deletion of your personal information at any time by contacting us."
+H2: Your Rights
+"You have the right to: request access to the personal information we hold about you, request correction of inaccurate information, request deletion of your personal information, opt out of non-essential cookies through your browser settings, and unsubscribe from any marketing communications (if applicable). To exercise any of these rights, contact us at info@spinituplaundry.net or (773) 654-1275."
+H2: Illinois-Specific Disclosures
+"Illinois is a two-party consent state for audio recording. If we implement call recording for quality assurance purposes in the future, all parties will be notified at the beginning of the call and recording will only proceed with consent."
+
+"We do not collect biometric information (fingerprints, facial recognition, etc.) through our website or at our facility. If this changes in the future, we will update this policy and provide appropriate notice and consent mechanisms as required by the Illinois Biometric Information Privacy Act (BIPA)."
+H2: Children’s Privacy
+"Our website is not directed at children under 13. We do not knowingly collect personal information from children under 13. If we become aware that we have collected information from a child under 13, we will delete it promptly."
+H2: Changes to This Policy
+"We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated effective date. We encourage you to review this page periodically."
+H2: Contact Us
+"If you have questions about this Privacy Policy or our data practices, contact us at:"
+"Spin It Up Laundry • 3710 N Kimball Ave, Chicago, IL 60618 • info@spinituplaundry.net • (773) 654-1275"
+
+"Last updated: [DATE]"
+DEV ACTION:  Replace [DATE] with the actual publication date in both the hero effective date and the bottom last-updated date. Replace [CENTS_PRIVACY_URL] with the actual Cents app privacy policy URL. Client must have an attorney review before publishing.
+
+5. Terms of Service — Page Identity
+URL Path
+/terms-of-service/
+Page Type
+Legal
+Canonical URL
+https://spinituplaundry.net/terms-of-service/
+Breadcrumb
+Home > Terms of Service
+Title Tag
+Terms of Service | Spin It Up Laundry (42 characters)
+Meta Description
+Terms of service for Spin It Up Laundry website and laundry services at 3710 N Kimball Ave, Avondale, Chicago. (110 characters)
+Robots
+index, follow
+Schema
+BreadcrumbList only
+Target Word Count
+600–900 words
+Hero Content
+H1: "Terms of Service" — 3 words.
+Below H1: "Effective: [DATE]"
+
+6. Terms of Service — Content
+H2: Agreement to Terms
+"By accessing or using the Spin It Up Laundry website (spinituplaundry.net) or any of our laundry services, you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our website or services."
+H2: Services Description
+"Spin It Up Laundry provides self-service laundry, wash-and-fold drop-off, pickup and delivery, commercial laundry services, and ironing and pressing at our facility located at 3710 N Kimball Ave, Chicago, IL 60618. Pickup and delivery service is ordered through the Cents app, a third-party platform with its own terms of service."
+H2: Use of Our Website
+"You agree to use our website for lawful purposes only. You may not: use our website in any way that violates applicable laws, submit false or misleading information through our contact forms, attempt to interfere with the website’s functionality or security, or use automated tools to scrape content from our website."
+H2: Pricing & Payment
+"Prices listed on our website are current as of the date shown and are subject to change without notice. While we make every effort to keep pricing accurate, the prices displayed at our facility or in the Cents app at the time of service are the final and binding prices. We accept cash, credit cards, debit cards, EBT (for self-service only), and our reloadable laundry card."
+H2: Laundry Service Terms
+"When you use our wash-and-fold, pickup and delivery, or commercial laundry services, you agree that: items are cleaned using standard commercial laundry processes, we are not responsible for damage to items with pre-existing wear, defects, or items not suitable for machine washing (e.g., dry-clean-only garments submitted without disclosure), colors may bleed on items that are not colorfast, and we take reasonable care but cannot guarantee the removal of all stains."
+
+"Unclaimed laundry: orders not picked up within 30 days of completion may be donated or disposed of at our discretion. We will make reasonable efforts to contact you before taking this action."
+H2: Limitation of Liability
+"Spin It Up Laundry’s liability for any lost, damaged, or destroyed items is limited to 10 times the service charge for the affected order, or the reasonable replacement value of the item, whichever is less. We are not liable for items left unattended in our self-service facility, damage caused by pre-existing conditions of garments, or any indirect, incidental, or consequential damages."
+H2: Intellectual Property
+"All content on this website — including text, graphics, logos, images, and code — is the property of Spin It Up Laundry or its licensors and is protected by copyright law. You may not reproduce, distribute, or create derivative works from our website content without written permission."
+H2: Third-Party Links & Services
+"Our website may contain links to third-party websites and services, including the Cents app for ordering. We are not responsible for the content, terms, or privacy practices of third-party services. Your use of the Cents app is subject to Cents’ own terms of service."
+H2: Governing Law
+"These Terms of Service are governed by the laws of the State of Illinois. Any disputes arising from these terms or your use of our services will be resolved in the courts of Cook County, Illinois."
+H2: Changes to Terms
+"We may update these Terms of Service at any time. Changes will be posted on this page with an updated effective date. Continued use of our website or services after changes are posted constitutes acceptance of the revised terms."
+H2: Contact
+"Questions about these terms? Contact us: Spin It Up Laundry • 3710 N Kimball Ave, Chicago, IL 60618 • info@spinituplaundry.net • (773) 654-1275"
+
+"Last updated: [DATE]"
+
+7. Accessibility Statement — Page Identity
+URL Path
+/accessibility/
+Page Type
+Legal
+Canonical URL
+https://spinituplaundry.net/accessibility/
+Breadcrumb
+Home > Accessibility
+Title Tag
+Accessibility Statement | Spin It Up Laundry (45 characters)
+Meta Description
+Spin It Up Laundry is committed to digital accessibility. Learn about our WCAG 2.1 AA compliance efforts and how to report issues. (128 characters)
+Robots
+index, follow
+Schema
+BreadcrumbList only
+Target Word Count
+300–500 words
+Hero Content
+H1: "Accessibility Statement" — 2 words.
+Below H1: "Effective: [DATE]"
+
+8. Accessibility Statement — Content
+H2: Our Commitment
+"Spin It Up Laundry is committed to ensuring that our website is accessible to all visitors, including people with disabilities. We strive to conform to the Web Content Accessibility Guidelines (WCAG) 2.1 at the AA level, which defines standards for making web content more accessible to people with visual, auditory, physical, speech, cognitive, and neurological disabilities."
+H2: What We’re Doing
+"We have taken the following steps to make our website accessible:"
+Using semantic HTML to ensure proper document structure for screen readers
+Providing alternative text for all meaningful images
+Ensuring sufficient color contrast between text and backgrounds (minimum 4.5:1 ratio for normal text)
+Making all interactive elements accessible via keyboard navigation
+Providing visible focus indicators on all focusable elements
+Using ARIA landmarks and labels to improve screen reader navigation
+Ensuring forms have properly associated labels and clear error messaging
+Making phone numbers clickable for assistive technology and mobile users
+Not disabling pinch-to-zoom on mobile devices
+Ensuring all content is readable at 200% zoom
+H2: Known Limitations
+"While we strive for full WCAG 2.1 AA compliance, some limitations may exist: embedded Google Maps content is controlled by Google and may have accessibility limitations beyond our control, the Cents app for pickup and delivery ordering is a third-party platform with its own accessibility practices, and some older images may not yet have fully descriptive alternative text. We are actively working to address these gaps."
+H2: Feedback & Assistance
+"If you encounter any accessibility barriers on our website or need assistance accessing our content or services, please contact us. We welcome your feedback and will work to resolve any issues promptly."
+
+"Contact us about accessibility:"
+Email: info@spinituplaundry.net
+Phone: (773) 654-1275
+In person: 3710 N Kimball Ave, Chicago, IL 60618
+
+"We aim to respond to accessibility feedback within 3 business days."
+H2: Third-Party Content
+"Our website includes content from third-party services including Google Maps, the Cents ordering platform, and social media embeds. While we select partners who share our commitment to accessibility, we cannot guarantee the accessibility of third-party content. If you experience difficulty with any third-party features, please contact us and we will help you access the information or service through an alternative method."
+H2: Compliance Standard
+"This website targets conformance with WCAG 2.1 Level AA. This is an ongoing effort, and we regularly review and update our site to improve accessibility."
+
+"Last updated: [DATE]"
+
+9. Shared: Header, Footer, Sticky CTA
+Header: global header, solid white background. No nav item highlighted as active (legal pages are not in primary nav).
+
+Footer: global footer, no modifications. The footer is where visitors navigate to these pages — "Privacy Policy | Terms of Service | Accessibility Statement" in the bottom bar.
+
+Sticky Mobile CTA Bar: HIDDEN on all three legal pages. Apply body class .page-legal to suppress. Legal pages should be free of conversion-oriented overlay elements.
+
+BreadcrumbList Schema (All Three Pages)
+Each page gets its own BreadcrumbList schema. Structure is identical except for the page name and URL:
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://spinituplaundry.net/" },
+    { "@type": "ListItem", "position": 2, "name": "[PAGE NAME]", "item": "https://spinituplaundry.net/[URL PATH]/" }
+  ]
+}
+
+Page
+[PAGE NAME]
+[URL PATH]
+Privacy Policy
+Privacy Policy
+privacy-policy
+Terms of Service
+Terms of Service
+terms-of-service
+Accessibility Statement
+Accessibility
+accessibility
+
+10. Reference: Implementation Checklist
+Pre-Development (CLIENT ACTION REQUIRED)
+Client has all three legal pages reviewed by an attorney
+Attorney approves or revises Privacy Policy (EBT, BIPA, two-party consent)
+Attorney approves or revises Terms of Service (liability limitation, unclaimed laundry)
+Client confirms effective date for all three pages
+Cents app privacy policy URL obtained for Privacy Policy link
+Cents app terms of service URL obtained for Terms link
+Technical Validation
+All three pages HTML validate
+BreadcrumbList schema validates on each page
+HTTPS enforced
+All [DATE] placeholders replaced with actual dates
+[CENTS_PRIVACY_URL] replaced with actual URL
+All mailto: and tel: links functional
+OG tags render correctly on each page
+Sticky CTA bar is hidden on all three pages
+Footer links to all three pages work from every page on the site
+Content & SEO
+All content attorney-reviewed and approved
+No [BRACKETS] or placeholder text remaining
+Title tags within 60 characters
+Meta descriptions within 155 characters
+Single H1 per page
+Breadcrumbs correct on each page
+Canonical URLs correct
+XML sitemap includes all three at priority 0.3
+Effective dates and last-updated dates present
+Accessibility
+Skip-to-content link on each page
+Heading hierarchy logical (H1 > H2 > H3, no skipping)
+Color contrast WCAG 2.1 AA
+Content readable at 200% zoom
+Print-friendly: content prints without background colors or cutoffs
+ARIA landmarks present
+Cross-Site Verification
+Footer on EVERY page links correctly to all three legal pages
+Privacy Policy linked from every form on the site (contact form, commercial inquiry form)
+Cookie consent banner (if implemented) links to Privacy Policy
+
+
+End of Document
+TradeWorks AI — Spin It Up Laundry Legal Pages Developer Guide v1.0
+Prepared by TradeWorks AI — May 2026

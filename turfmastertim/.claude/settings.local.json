@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -c ' *)",
+      "Read(//tmp/**)",
+      "Bash(npm --version)",
+      "Bash(npm install *)",
+      "Bash(npx astro *)",
+      "Bash(curl -s -o /tmp/check.html -w \"HTTP %{http_code} | %{size_download} bytes | %{time_total}s\\\\n\" http://localhost:4321/)",
+      "Bash(python -m http.server 8000)",
+      "Bash(curl -s http://localhost:8000/)",
+      "PowerShell(node --version)",
+      "PowerShell(node _refactor_paths.js)"
+    ]
+  }
+}

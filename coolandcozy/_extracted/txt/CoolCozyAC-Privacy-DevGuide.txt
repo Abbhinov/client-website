@@ -1,0 +1,129 @@
+﻿
+DEVELOPER IMPLEMENTATION GUIDE
+
+COOL & COZY AC REPAIR
+Licensed HVAC Contractor  ·  Jacksonville, Florida
+
+PRIVACY POLICY
+
+URL: coolcozyac.com/privacy
+Prepared by: TradeWorks AI  |  Version 1.0  |  May 2026
+
+1. Page Identity
+URL
+/privacy
+Canonical
+https://coolcozyac.com/privacy
+Page Type
+Legal / Required page
+Breadcrumb
+Home > Privacy Policy
+Robots
+index, follow (privacy pages should be indexable for trust)
+Sitemap
+Priority 0.3
+
+DEV ACTION: CRITICAL: This guide provides a framework and content outline for the privacy policy. The final text MUST be reviewed by an attorney licensed in Florida before publication. TradeWorks AI is not a law firm and this document does not constitute legal advice. All content below should be treated as a starting template, not as a ready-to-publish legal document.
+
+2. <head> Section
+Title
+Privacy Policy | Cool & Cozy AC Repair Jacksonville FL
+Meta Desc
+Cool & Cozy AC Repair’s privacy policy. How we collect, use, and protect your information when you use our website, submit forms, or call our team in Jacksonville, FL.
+Canonical
+https://coolcozyac.com/privacy
+JSON-LD: BreadcrumbList only (2-level). No other schema needed.
+
+3. Privacy Policy Content Framework
+The privacy policy uses a clean, readable layout (not a wall of legalese). Poppins 15px/400, #3D3D3D, 720px max-width, white background. Section headings in Evergreen. Last updated date prominent at top.
+DEV ACTION: Display “Last Updated: [DATE]” prominently below the H1. Update this date whenever the policy content changes.
+
+3.1 Introduction
+H1: Privacy Policy
+Last Updated: [DATE]
+Cool & Cozy AC Repair LLC (“we,” “our,” “us”) respects your privacy and is committed to protecting the personal information you share with us. This Privacy Policy explains what information we collect, how we use it, and your rights regarding your data when you visit our website at coolcozyac.com, submit forms, call our phone number, or interact with our services.
+
+3.2 Information We Collect
+Information You Provide Directly
+Contact form submissions: name, phone number, email address, service type, property type, number of units (if applicable), preferred language, and message content
+Phone calls: phone number, call duration, and call content (if recorded — see Section 3.5 below)
+Career applications: name, contact information, resume, work history, and qualifications
+Review submissions: name, service received, and review content
+
+Information Collected Automatically
+Website usage data via Google Analytics 4: pages visited, time on page, referral source, device type, browser type, approximate geographic location (city-level, not street address)
+Cookies and similar technologies: Google Analytics cookies, Google Tag Manager, reCAPTCHA tokens. See Section 3.6 for cookie details.
+Server logs: IP address, browser user agent, pages requested, timestamps
+
+3.3 How We Use Your Information
+To respond to your service inquiries and schedule appointments
+To provide HVAC services you request
+To send confirmation emails and follow-up communications related to your service request
+To improve our website and services based on usage patterns
+To process career applications
+To comply with legal obligations (Florida contractor licensing, tax reporting)
+We do NOT sell, rent, or trade your personal information to third parties for marketing purposes.
+
+3.4 Information Sharing
+We may share your information with:
+Service providers who assist our operations: email delivery (SendGrid/Google Workspace), CRM (Zoho), analytics (Google), spam prevention (Google reCAPTCHA), financing partners (when you apply for financing)
+Legal authorities when required by law, court order, or to protect the safety of our customers, employees, or the public
+Professional advisors: accountants, attorneys, and insurance providers as needed for business operations
+All service providers are bound by their own privacy policies and data handling agreements. We do not authorize them to use your data for purposes other than providing services to Cool & Cozy AC Repair.
+
+3.5 Call Recording Disclosure
+Florida is a two-party consent state for call recording (Florida Statute §934.03). If Cool & Cozy records phone calls for quality assurance or training purposes, you will be notified at the beginning of the call via an automated message or verbal disclosure. By continuing the call after notification, you consent to recording. If you do not consent, you may request that the call not be recorded, and we will accommodate that request.
+DEV ACTION: PLACEHOLDER: Confirm with client whether calls are recorded. If yes, implement pre-call recording disclosure (automated message or live verbal notification). If no, remove this section or state “Cool & Cozy does not currently record phone calls.” Florida’s two-party consent law requires affirmative disclosure — silence or fine-print disclaimers are not sufficient.
+
+3.6 Cookies and Tracking Technologies
+Our website uses the following cookies and tracking technologies:
+Google Analytics 4 (GA4): measures website traffic and usage patterns. GA4 uses first-party cookies. Data is processed by Google LLC under their privacy policy.
+Google Tag Manager (GTM): manages analytics and marketing tags. GTM itself does not collect personal data; it loads other tools that may.
+Google reCAPTCHA v3: prevents spam form submissions. reCAPTCHA collects hardware and software information and sends it to Google for analysis.
+Google Maps: embedded map on the contact page. Google’s privacy policy governs map data collection.
+
+You can control cookies through your browser settings. Disabling cookies may affect website functionality, including form submissions and map displays.
+If a cookie consent banner is implemented (recommended for GDPR visitors, optional for US-only traffic), integrate with Google Consent Mode v2 via GTM. The cookie consent banner should allow visitors to accept or reject non-essential cookies (analytics, marketing) while allowing essential cookies (reCAPTCHA, form functionality) to function.
+
+3.7 Data Security
+We implement reasonable technical and organizational measures to protect your personal information, including: HTTPS encryption on all pages (SSL/TLS), encrypted form submission data in transit, access controls limiting employee access to personal data on a need-to-know basis, and regular review of our security practices.
+No internet transmission is 100% secure. While we strive to protect your data, we cannot guarantee absolute security.
+
+3.8 Data Retention
+We retain your personal information for as long as necessary to provide the services you requested, comply with legal obligations (Florida contractor record-keeping requirements), resolve disputes, and enforce our agreements. Contact form data is retained in our CRM for customer relationship management. You may request deletion of your data at any time (see Section 3.10).
+
+3.9 California Residents (CCPA)
+If you are a California resident, you have additional rights under the California Consumer Privacy Act (CCPA), including the right to know what personal information we collect and how it is used, the right to request deletion, and the right to opt out of the sale of personal information. Cool & Cozy does not sell personal information. To exercise your CCPA rights, contact us at info@coolcozyac.com or call (904) 555-0199.
+CCPA disclosure is included as a precaution even though Cool & Cozy’s primary market is Jacksonville. If the website receives traffic from California (it will), this disclosure provides baseline compliance.
+
+3.10 Your Rights
+You may request access to, correction of, or deletion of your personal information at any time by contacting us at info@coolcozyac.com or calling (904) 555-0199. We will respond to your request within 30 days.
+
+3.11 Children’s Privacy
+Our website and services are not directed at children under 13. We do not knowingly collect personal information from children under 13. If we become aware that we have collected data from a child under 13, we will delete it promptly.
+
+3.12 Changes to This Policy
+We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated “Last Updated” date. We encourage you to review this policy periodically.
+
+3.13 Contact Information
+If you have questions about this Privacy Policy or your personal information, contact us:
+Email: info@coolcozyac.com
+Phone: (904) 555-0199
+Address: [PLACEHOLDER: Confirmed business address], Jacksonville, FL
+
+4. Checklist
+Attorney review completed before publication
+Last Updated date displayed and accurate
+Call recording disclosure matches actual practice (recording or not)
+Cookie/tracking technology list matches actual implementations
+CCPA section included for California visitor coverage
+Contact email and phone are accurate and monitored
+Business address confirmed and inserted
+Linked from footer on EVERY page
+BreadcrumbList schema validates
+Page is indexed (robots: index, follow — privacy pages should be findable)
+Readable formatting (not a wall of legalese) — 720px, Poppins, clear headings
+
+— End of Document —
+Prepared by TradeWorks AI  ·  May 2026  ·  v1.0
+
