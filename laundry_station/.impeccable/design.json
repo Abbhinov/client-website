@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-07-30T00:00:00+05:30",
+  "title": "Design System: Laundry Station",
+  "extensions": {
+    "colorMeta": {
+      "station-navy": {
+        "role": "primary",
+        "displayName": "Station Navy",
+        "canonical": "#0C479C",
+        "tonalRamp": ["#07132B", "#071F4D", "#042E74", "#0C479C", "#2F67B7", "#5786C7", "#B0C8E6", "#F3F7FC"]
+      },
+      "signal-amber": {
+        "role": "tertiary",
+        "displayName": "Signal Amber",
+        "canonical": "#FFB020",
+        "tonalRamp": ["#4A2A07", "#7A430C", "#A35C18", "#C67712", "#E89719", "#FFB020", "#FDC76C", "#FCDB9F"]
+      },
+      "signal-blue": {
+        "role": "secondary",
+        "displayName": "Signal Blue",
+        "canonical": "#066FE5",
+        "tonalRamp": ["#03214A", "#042E74", "#0C479C", "#066FE5", "#5786C7", "#83A7D7", "#CFDEF0", "#F3F7FC"]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Archivo Display",
+        "purpose": "Hero H1 and the strongest answer-first statements."
+      },
+      "body": {
+        "displayName": "Inter Body",
+        "purpose": "Long service copy, navigation, FAQ answers, and footer details."
+      }
+    },
+    "shadows": [
+      {
+        "name": "hover-lift",
+        "value": "0 1px 2px rgba(7, 19, 43, .06)",
+        "purpose": "Subtle response for linked service cards."
+      },
+      {
+        "name": "sticky-lift",
+        "value": "0 2px 8px rgba(7, 19, 43, .08)",
+        "purpose": "Sticky header and mobile action bar."
+      },
+      {
+        "name": "overlay-lift",
+        "value": "0 8px 24px rgba(7, 19, 43, .10)",
+        "purpose": "Dropdown panels."
+      }
+    ],
+    "motion": [
+      {
+        "name": "micro",
+        "value": "120ms cubic-bezier(.2, 0, .2, 1)",
+        "purpose": "Button and link state changes."
+      },
+      {
+        "name": "base",
+        "value": "180ms cubic-bezier(.2, 0, .2, 1)",
+        "purpose": "Card lift, header shadow, and menu transitions."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "mobile",
+        "value": "0-599px"
+      },
+      {
+        "name": "tablet",
+        "value": "900-1199px"
+      },
+      {
+        "name": "desktop",
+        "value": "1200px+"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The single conversion action: Schedule Pickup.",
+      "html": "<button class=\"ds-btn-primary\">Schedule Pickup</button>",
+      "css": ".ds-btn-primary { min-height: 48px; padding: 14px 24px; border: 1.5px solid #FFB020; border-radius: 10px; background: #FFB020; color: #07132B; font-family: Archivo, system-ui, sans-serif; font-size: 16px; font-weight: 600; line-height: 1; transition: background 120ms cubic-bezier(.2,0,.2,1), border-color 120ms cubic-bezier(.2,0,.2,1), transform 120ms cubic-bezier(.2,0,.2,1); } .ds-btn-primary:hover { background: #E89719; border-color: #E89719; transform: translateY(-1px); } .ds-btn-primary:focus-visible { outline: 3px solid #066FE5; outline-offset: 2px; }"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "The alternate action, usually Call or Directions.",
+      "html": "<button class=\"ds-btn-secondary\">Call</button>",
+      "css": ".ds-btn-secondary { min-height: 48px; padding: 14px 24px; border: 1.5px solid #2F67B7; border-radius: 10px; background: transparent; color: #0C479C; font-family: Archivo, system-ui, sans-serif; font-size: 16px; font-weight: 600; line-height: 1; transition: background 120ms cubic-bezier(.2,0,.2,1), border-color 120ms cubic-bezier(.2,0,.2,1); } .ds-btn-secondary:hover { background: #F3F7FC; color: #042E74; border-color: #042E74; } .ds-btn-secondary:focus-visible { outline: 3px solid #066FE5; outline-offset: 2px; }"
+    },
+    {
+      "name": "Service Card",
+      "kind": "card",
+      "refersTo": "card-service",
+      "description": "Linked card for routing visitors to one service page.",
+      "html": "<a class=\"ds-service-card\" href=\"#\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><rect x=\"5\" y=\"3\" width=\"14\" height=\"18\" rx=\"1.5\"></rect><circle cx=\"12\" cy=\"14\" r=\"4\"></circle></svg><h3>Wash &amp; Fold</h3><p>Drop it off and pick it up washed, dried, and folded.</p></a>",
+      "css": ".ds-service-card { display: grid; gap: 12px; min-height: 220px; padding: 24px; border: 1px solid #CFDEF0; border-radius: 14px; background: #FFFFFF; color: #042E74; text-decoration: none; transition: transform 180ms cubic-bezier(.2,0,.2,1), box-shadow 180ms cubic-bezier(.2,0,.2,1); } .ds-service-card:hover { transform: translateY(-2px); box-shadow: 0 1px 2px rgba(7,19,43,.06); } .ds-service-card svg { width: 24px; height: 24px; fill: none; stroke: #066FE5; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; } .ds-service-card h3 { margin: 0; color: #0C479C; font-family: Archivo, system-ui, sans-serif; font-size: 24px; line-height: 1.3; } .ds-service-card p { margin: 0; font-family: Inter, system-ui, sans-serif; font-size: 17px; line-height: 1.65; }"
+    },
+    {
+      "name": "Staging Token",
+      "kind": "chip",
+      "refersTo": "staging-token",
+      "description": "Visible owner-input gap for facts that must not be guessed.",
+      "html": "<span class=\"ds-swap\">Phone needed</span>",
+      "css": ".ds-swap { display: inline-flex; min-height: 32px; align-items: center; padding: 2px 10px; color: #07132B; background: #FCEAC4; border: 1.5px dashed #E89719; border-radius: 6px; font-family: ui-monospace, monospace; font-size: 14px; line-height: 1.5; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Well-Run Workshop",
+    "overview": "Laundry Station should feel orderly, repaired, direct, and local. The homepage uses a shop-floor visual language: white and pale-blue work surfaces, navy structural type, squared controls with softened corners, and visible facts instead of promotional noise.",
+    "keyCharacteristics": [
+      "Alternating white and pale-blue bands with one dark footer.",
+      "Amber appears only on Schedule Pickup.",
+      "Service cards, Board tables, chips, and FAQ rows form the reusable component base.",
+      "Unknown owner values render as dashed amber staging gaps, never as guessed copy."
+    ],
+    "rules": [
+      {
+        "name": "The Amber Budget Rule",
+        "body": "Amber is for Schedule Pickup only, with deep navy text. Never use white text on amber.",
+        "section": "colors"
+      },
+      {
+        "name": "The No Eyebrow Rule",
+        "body": "Headings stand alone. Do not add kicker, overline, or label text above a heading.",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat-At-Rest Rule",
+        "body": "Cards and tables rest on a hairline border. They lift only when interaction or overlay state requires it.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do keep the homepage answer-first and local.",
+      "Do use the supplied logo and replace photo placeholders with real Laundry Station photography.",
+      "Do keep amber rare enough that Schedule Pickup is visible at a glance.",
+      "Do leave owner-supplied unknowns as visible staging gaps until confirmed."
+    ],
+    "donts": [
+      "Don't add star ratings, review counts, availability figures, savings percentages, or cheapest-language without real evidence.",
+      "Don't use \"under new management\" as a banner or trust-strip phrase.",
+      "Don't add decorative eyebrows above headings.",
+      "Don't use stock laundromat photos for the hero or Open Graph image."
+    ]
+  }
+}
